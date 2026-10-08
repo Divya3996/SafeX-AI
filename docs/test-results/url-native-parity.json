@@ -1,0 +1,13 @@
+{
+  "kind": "256 historical held-out native parity fixtures; not a representative accuracy benchmark",
+  "cases": 256,
+  "maximum_score_difference": 8.940697E-7,
+  "pipeline_tp": 122,
+  "pipeline_fp": 0,
+  "pipeline_fn": 6,
+  "pipeline_tn": 128,
+  "duration_ms_p50": 27,
+  "duration_ms_p95": 51,
+  "duration_ms_max": 116,
+  "model_version": "url-phiusiil-augmented-v2"
+}

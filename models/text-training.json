@@ -1,0 +1,502 @@
+[
+  {
+    "text": "Bank support urgent share your OTP to avoid account suspension",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Please send your password immediately to restore your account",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Enter your security code and bank details to verify your KYC",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Your bank account is blocked submit your OTP now",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "You have won a lottery pay the processing fee to claim your prize",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Congratulations winner transfer money to claim your reward",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Get a guaranteed loan deposit the registration fee first",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Work from home job pay an advance fee to start earning",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Your refund is ready scan this QR and enter your UPI PIN to receive money",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Police digital arrest transfer payment now and do not tell anyone",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Install anydesk and send me your bank login password",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Government income tax refund enter your card number and CVV",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Your parcel cannot be delivered pay a small customs fee now",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "I am your manager urgently buy gift cards and send the codes",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Tell me your verification code to confirm your identity",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Free gift offer send your bank details and password to claim",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Your account will be suspended verify your login at https://verify-bank.example",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Investment guaranteed double returns transfer to my wallet now",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Send the one time code you received so I can unlock your account",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Pay a security deposit to get this guaranteed job offer",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Account hacked give us your PIN immediately for security verification",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "You won cashback enter your UPI PIN on this link",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Loan approved pay a processing fee before disbursement",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Bank verification send OTP jaldi account block ho jayega",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Aap lottery jeet gaye prize ke liye paise bhejo",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "बैंक खाता बंद होगा तुरंत अपना ओटीपी भेजो",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "इनाम पाने के लिए पैसे भेजो अभी",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "आपकी नौकरी के लिए पहले registration fee pay करो",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "KYC update urgent provide your account password",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Delivery support asks you to confirm your card details on this unfamiliar link",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "तुरंत अपना ओटीपी और पासवर्ड भेजें वरना बैंक खाता बंद होगा",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "केवाईसी के लिए अपना पिन और गोपनीय कोड बताएं",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "आप लॉटरी जीते हैं इनाम पाने के लिए पहले शुल्क जमा करें",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "नौकरी पक्की है पहले पंजीकरण फीस भुगतान करें",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "रिफंड प्राप्त करने के लिए क्यूआर स्कैन करें और यूपीआई पिन डालें",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "पुलिस बोल रही है डिजिटल गिरफ्तारी से बचने के लिए पैसे भेजें",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "बैंक सहायता को अपना पासवर्ड बताइए अभी",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "सरकारी पुरस्कार जीत गए पुरस्कार पाने के लिए रुपये भेजें",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "लोन मंजूर है पहले प्रोसेसिंग शुल्क जमा करें",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "अपना सुरक्षा कोड साझा करें बैंक विवरण दें तुरंत",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "બેંક સહાય હમણાં તમારો ઓટીપી અને પાસવર્ડ મોકલો",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "કેવાયસી માટે તમારો પિન અને સુરક્ષા કોડ આપો",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "તમે લોટરી જીત્યા છો ઇનામ મેળવવા માટે પહેલા ફી ચૂકવો",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "નોકરીની ગેરંટી છે પહેલા રજિસ્ટ્રેશન ફી જમા કરો",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "રિફંડ મેળવવા માટે ક્યુઆર સ્કેન કરો અને યુપીઆઈ પિન દાખલ કરો",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "પોલીસ બોલે છે ડિજિટલ અરેસ્ટથી બચવા હમણાં પૈસા મોકલો",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "તમારું ખાતું બંધ થશે તરત બેંકને પાસવર્ડ જણાવો",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "સરકારી ઇનામ જીત્યા છો પૈસા મોકલો અને ઇનામ મેળવો",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "લોન મંજૂર છે પહેલા પ્રોસેસિંગ ફી ચૂકવો",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "તાત્કાલિક તમારો ગુપ્ત કોડ શેર કરો બેંકની વિગતો મોકલો",
+    "label": 1,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Never share your OTP password or PIN with anyone",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Do not send your password to bank support",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Your OTP is 123456 do not share it with anyone",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Your account payment was successful thank you",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Bank transaction completed balance updated",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Your refund has been credited to your bank account",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Your package will arrive tomorrow track delivery in the official app",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Your meeting is urgent please join the office call",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Please verify the report and send it to the team",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "We are hiring apply on our company careers page no fees required",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Your job interview is scheduled for tomorrow",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Your loan statement is available in the banking app",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Limited offer on shoes at the local store",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "You earned cashback on your recent purchase",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Use a strong password and enable two factor authentication",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "The police advise you not to transfer money to unknown callers",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Beware of lottery scams never pay to claim a prize",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Please pay the electricity bill through the official utility app",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "I sent you the payment check your balance",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "The bank never asks for your PIN or security code",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Do not scan QR codes to receive refunds",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Please share your project notes with the study group",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Your security code expires in five minutes do not disclose it",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Congratulations on winning the school competition",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "We received your registration for the free workshop",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Apna OTP kabhi share mat karo bank password nahi mangta",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "अपना ओटीपी किसी को न बताएं",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "आपका भुगतान सफल हुआ धन्यवाद",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "See the official guide at https://support.example about account security",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "Your delivery address has been updated as requested",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "अपना ओटीपी या पासवर्ड किसी को न बताएं",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "बैंक कभी आपका पिन नहीं माँगता गोपनीय कोड न दें",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "आपका भुगतान सफल हुआ धन्यवाद",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "आपकी नौकरी का साक्षात्कार सोमवार को है कोई शुल्क नहीं है",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "रिफंड आपके खाते में जमा हो गया है",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "पुलिस अनजान लोगों को पैसे भेजने से बचने की सलाह देती है",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "सुरक्षा के लिए पासवर्ड किसी को न भेजें",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "स्कूल के पुरस्कार समारोह में आपका स्वागत है",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "आपके लोन का विवरण आधिकारिक बैंक ऐप में उपलब्ध है",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "तुरंत कार्यालय की बैठक में शामिल हों",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "તમારો ઓટીપી કે પાસવર્ડ ક્યારેય કોઈને આપશો નહીં",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "બેંક તમારો પિન માગતી નથી સુરક્ષા કોડ શેર ન કરો",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "તમારી ચુકવણી સફળ થઈ આભાર",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "નોકરીનો ઇન્ટરવ્યૂ સોમવારે છે કોઈ ફી નથી",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "રિફંડ તમારા ખાતામાં જમા થઈ ગયું છે",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "પોલીસ અજાણ્યા વ્યક્તિને પૈસા ન મોકલવાની સલાહ આપે છે",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "સુરક્ષા માટે પાસવર્ડ કોઈને મોકલશો નહીં",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "શાળાના ઇનામ વિતરણ સમારોહમાં તમારું સ્વાગત છે",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "લોનનું સ્ટેટમેન્ટ બેંકની સત્તાવાર એપમાં ઉપલબ્ધ છે",
+    "label": 0,
+    "source": "authored synthetic"
+  },
+  {
+    "text": "હમણાં ઓફિસની બેઠકમાં જોડાઓ",
+    "label": 0,
+    "source": "authored synthetic"
+  }
+]

@@ -1,0 +1,608 @@
+SafeX AI|SafeX AI|SafeX AI
+Home|होम|હોમ
+Scan|जाँच|સ્કેન
+History|इतिहास|ઇતિહાસ
+Settings|सेटिंग्स|સેટિંગ્સ
+Alerts|चेतावनियाँ|ચેતવણીઓ
+About|परिचय|પરિચય
+Tools|उपकरण|સાધનો
+Back|वापस|પાછા
+Cancel|रद्द करें|રદ કરો
+Done|पूरा हुआ|પૂર્ણ
+Close|बंद करें|બંધ કરો
+Close result|परिणाम बंद करें|પરિણામ બંધ કરો
+View details|विवरण देखें|વિગતો જુઓ
+Show more|और दिखाएँ|વધુ બતાવો
+Show less|कम दिखाएँ|ઓછું બતાવો
+Retry|फिर प्रयास करें|ફરી પ્રયાસ કરો
+Return to dashboard|मुख्य स्क्रीन पर लौटें|મુખ્ય સ્ક્રીન પર પાછા જાઓ
+Open navigation drawer|नेविगेशन मेनू खोलें|નેવિગેશન મેનૂ ખોલો
+Status|स्थिति|સ્થિતિ
+Device protection|डिवाइस सुरक्षा|ઉપકરણની સુરક્ષા
+Enabled|चालू|ચાલુ
+Listening|सूचनाएँ जाँची जा रही हैं|સૂચનાઓ તપાસાઈ રહી છે
+Ready to scan|जाँच के लिए तैयार|તપાસ માટે તૈયાર
+Reconnecting|फिर जुड़ रहा है|ફરી જોડાઈ રહ્યું છે
+Paused|रुका हुआ|રોકાયેલું
+Real-time protection|तुरंत सुरक्षा जाँच|તાત્કાલિક સુરક્ષા તપાસ
+On|चालू|ચાલુ
+Off|बंद|બંધ
+Checking supported incoming notifications locally. Shared and pasted content can be scanned anytime.|समर्थित ऐप की आने वाली सूचनाएँ इसी डिवाइस पर जाँची जाती हैं। साझा या पेस्ट की गई सामग्री कभी भी जाँचें।|સમર્થિત ઍપની આવતી સૂચનાઓ આ ઉપકરણ પર તપાસાય છે. શેર કરેલી કે પેસ્ટ કરેલી સામગ્રી કોઈ પણ સમયે તપાસો.
+Manual checks work offline. Enable notification access and warnings for incoming-message protection.|खुद की गई जाँच ऑफ़लाइन चलती है। आने वाले संदेशों की सुरक्षा के लिए सूचना पहुँच और चेतावनियाँ चालू करें।|તમારી પોતાની તપાસ ઑફલાઇન ચાલે છે. આવતા સંદેશોની સુરક્ષા માટે સૂચનાની ઍક્સેસ અને ચેતવણીઓ ચાલુ કરો.
+Notification listener is disconnected. Manual analysis remains available.|सूचना सेवा का संपर्क टूट गया है। आप खुद सामग्री की जाँच कर सकते हैं।|સૂચના સેવા સાથેનો સંપર્ક તૂટી ગયો છે. તમે જાતે સામગ્રીની તપાસ કરી શકો છો.
+Real-time protection is turned off.|तुरंत सुरक्षा जाँच बंद है।|તાત્કાલિક સુરક્ષા તપાસ બંધ છે.
+Recent Activity|हाल की गतिविधि|તાજેતરની પ્રવૃત્તિ
+No recent scans|अभी कोई हाल की जाँच नहीं|હજુ કોઈ તાજેતરની તપાસ નથી
+No notifications scanned yet|अभी कोई सूचना नहीं जाँची गई|હજુ કોઈ સૂચના તપાસાઈ નથી
+Completed scans will appear here.|पूरी हुई जाँच यहाँ दिखेगी।|પૂર્ણ થયેલી તપાસ અહીં દેખાશે.
+Completed link scans will appear here.|पूरी हुई लिंक जाँच यहाँ दिखेगी।|પૂર્ણ થયેલી લિંક તપાસ અહીં દેખાશે.
+Scanned messages and recent alerts|जाँचे गए संदेश और हाल की चेतावनियाँ|તપાસેલા સંદેશા અને તાજેતરની ચેતવણીઓ
+Safe|कम जोखिम|ઓછું જોખમ
+Safe status|कम जोखिम वाली स्थिति|ઓછા જોખમની સ્થિતિ
+Low risk|कम जोखिम|ઓછું જોખમ
+LOW RISK|कम जोखिम|ઓછું જોખમ
+Dangerous|उच्च जोखिम|ઉચ્ચ જોખમ
+DANGEROUS|उच्च जोखिम|ઉચ્ચ જોખમ
+Dangerous status|उच्च जोखिम वाली स्थिति|ઉચ્ચ જોખમની સ્થિતિ
+Suspicious|संदिग्ध|શંકાસ્પદ
+Suspicious status|संदिग्ध स्थिति|શંકાસ્પદ સ્થિતિ
+Neutral|तटस्थ|તટસ્થ
+Neutral status|तटस्थ स्थिति|તટસ્થ સ્થિતિ
+Scanning|जाँच जारी है|તપાસ ચાલુ છે
+Scanning status|जाँच की स्थिति|તપાસની સ્થિતિ
+Loading|लोड हो रहा है|લોડ થઈ રહ્યું છે
+Waiting|प्रतीक्षा|રાહ જોઈ રહ્યું છે
+Complete|पूरा हुआ|પૂર્ણ
+In progress|जारी है|ચાલુ છે
+Expanded|विस्तृत|વિસ્તૃત
+Collapsed|संक्षिप्त|સંક્ષિપ્ત
+Check before you trust|भरोसा करने से पहले जाँचें|વિશ્વાસ કરતાં પહેલાં તપાસો
+Find phishing and scam signals in the content you receive.|मिली हुई सामग्री में फ़िशिंग और धोखाधड़ी के संकेत पहचानें।|તમને મળેલી સામગ્રીમાં ફિશિંગ અને છેતરપિંડીના સંકેતો ઓળખો.
+On-device • works offline|डिवाइस पर • ऑफ़लाइन काम करता है|ઉપકરણ પર • ઑફલાઇન કામ કરે છે
+On-device scam protection|डिवाइस पर धोखाधड़ी से सुरक्षा|ઉપકરણ પર છેતરપિંડીથી સુરક્ષા
+Message|संदेश|સંદેશ
+Link|लिंक|લિંક
+File|फ़ाइल|ફાઇલ
+Screenshot|स्क्रीनशॉट|સ્ક્રીનશૉટ
+QR code|क्यूआर कोड|ક્યુઆર કોડ
+QR image|क्यूआर की तस्वीर|ક્યુઆરની છબી
+Web address|वेब पता|વેબ સરનામું
+Message to analyze|जाँचने के लिए संदेश|તપાસવા માટેનો સંદેશ
+Paste an unexpected message…|अनपेक्षित संदेश पेस्ट करें…|અણધાર્યો સંદેશ પેસ્ટ કરો…
+Paste from clipboard|क्लिपबोर्ड से पेस्ट करें|ક્લિપબોર્ડમાંથી પેસ્ટ કરો
+Analyze privately|निजी रूप से जाँचें|ખાનગી રીતે તપાસો
+Analyzing on your device|डिवाइस पर जाँच हो रही है|ઉપકરણ પર તપાસ થઈ રહી છે
+Analyzing on your device…|डिवाइस पर जाँच हो रही है…|ઉપકરણ પર તપાસ થઈ રહી છે…
+Your content stays private.|आपकी सामग्री निजी रहती है।|તમારી સામગ્રી ખાનગી રહે છે.
+Try a sample|उदाहरण आज़माएँ|ઉદાહરણ અજમાવો
+Synthetic examples run through the real detector. No link needs to be opened.|कृत्रिम उदाहरण असली जाँच प्रणाली से जाँचे जाते हैं। कोई लिंक खोलने की ज़रूरत नहीं।|કૃત્રિમ ઉદાહરણો સાચી તપાસ પ્રણાલીથી તપાસાય છે. કોઈ લિંક ખોલવાની જરૂર નથી.
+OTP scam|ओटीपी धोखाधड़ी|ઓટીપી છેતરપિંડી
+Safety advice|सुरक्षा सलाह|સુરક્ષા સલાહ
+Suspicious link|संदिग्ध लिंक|શંકાસ્પદ લિંક
+Ordinary link|सामान्य लिंक|સામાન્ય લિંક
+A low-risk result is not a guarantee of safety. Verify unexpected requests independently.|कम जोखिम वाला परिणाम सुरक्षा की गारंटी नहीं है। अनपेक्षित अनुरोध की अलग से पुष्टि करें।|ઓછા જોખમનો પરિણામ સુરક્ષાની ખાતરી નથી. અણધારી વિનંતીની સ્વતંત્ર રીતે ખાતરી કરો.
+Item selected • ready to analyze|सामग्री चुनी गई • जाँच के लिए तैयार|સામગ્રી પસંદ કરી • તપાસ માટે તૈયાર
+Choose a different file|दूसरी फ़ाइल चुनें|બીજી ફાઇલ પસંદ કરો
+Choose a clear image. Recognition runs locally and the image is not stored.|साफ़ तस्वीर चुनें। पहचान इसी डिवाइस पर होती है और तस्वीर सहेजी नहीं जाती।|સ્પષ્ટ છબી પસંદ કરો. ઓળખ આ ઉપકરણ પર થાય છે અને છબી સાચવાતી નથી.
+Checks file type, suspicious names and bounded archive contents. Files are never executed.|फ़ाइल का प्रकार, संदिग्ध नाम और सीमित संग्रह सामग्री जाँची जाती है। फ़ाइल कभी चलाई नहीं जाती।|ફાઇલનો પ્રકાર, શંકાસ્પદ નામ અને મર્યાદિત આર્કાઇવ સામગ્રી તપાસાય છે. ફાઇલ ક્યારેય ચલાવવામાં આવતી નથી.
+Analysis result|जाँच का परिणाम|તપાસનું પરિણામ
+No strong risk signals|कोई मज़बूत जोखिम संकेत नहीं|કોઈ મજબૂત જોખમ સંકેત નથી
+Review before acting|कुछ करने से पहले जाँचें|પગલું લેતાં પહેલાં તપાસો
+High-risk content|उच्च जोखिम वाली सामग्री|ઉચ્ચ જોખમવાળી સામગ્રી
+Why this result|यह परिणाम क्यों मिला|આ પરિણામ કેમ આવ્યું
+What to do next|अब क्या करें|હવે શું કરવું
+Analyzed content|जाँची गई सामग्री|તપાસેલી સામગ્રી
+Analyzed destination|जाँचा गया गंतव्य|તપાસેલું ગંતવ્ય
+Open in browser|ब्राउज़र में खोलें|બ્રાઉઝરમાં ખોલો
+Review opening this link|लिंक खोलने से पहले समीक्षा करें|લિંક ખોલતાં પહેલાં સમીક્ષા કરો
+Open a suspicious link?|संदिग्ध लिंक खोलना है?|શંકાસ્પદ લિંક ખોલવી છે?
+This destination has risk signals. Verify it independently before entering any personal or payment information.|इस पते में जोखिम के संकेत हैं। निजी या भुगतान जानकारी भरने से पहले इसकी अलग से पुष्टि करें।|આ સરનામામાં જોખમના સંકેતો છે. વ્યક્તિગત કે ચુકવણીની માહિતી આપતાં પહેલાં તેની સ્વતંત્ર રીતે ખાતરી કરો.
+Open anyway|फिर भी खोलें|તેમ છતાં ખોલો
+Stay here|यहीं रहें|અહીં જ રહો
+Open with|इससे खोलें|આની સાથે ખોલો
+Continue|आगे बढ़ें|આગળ વધો
+Continue Anyway|फिर भी आगे बढ़ें|તેમ છતાં આગળ વધો
+ • synthetic sample| • कृत्रिम उदाहरण| • કૃત્રિમ ઉદાહરણ
+General|सामान्य|સામાન્ય
+Credential theft|गोपनीय जानकारी की चोरी|ગોપનીય માહિતીની ચોરી
+Bank / KYC impersonation|बैंक / केवाईसी का झूठा दावा|બૅન્ક / કેવાયસીનો ખોટો દાવો
+Prize / reward scam|इनाम की धोखाधड़ी|ઇનામની છેતરપિંડી
+Job / loan scam|नौकरी / ऋण धोखाधड़ी|નોકરી / લોનની છેતરપિંડી
+Payment / UPI scam|भुगतान / यूपीआई धोखाधड़ी|ચુકવણી / યુપીઆઈ છેતરપિંડી
+Payment request|भुगतान का अनुरोध|ચુકવણીની વિનંતી
+Impersonation / coercion|झूठी पहचान / दबाव|ખોટી ઓળખ / દબાણ
+Phishing risk|फ़िशिंग का जोखिम|ફિશિંગનું જોખમ
+Link check|लिंक जाँच|લિંક તપાસ
+File integrity|फ़ाइल की वास्तविकता|ફાઇલની ખરાઈ
+Message scan|संदेश जाँच|સંદેશ તપાસ
+File scan|फ़ाइल जाँच|ફાઇલ તપાસ
+Local analysis|स्थानीय जाँच|સ્થાનિક તપાસ
+Local heuristic analysis|स्थानीय नियमों से जाँच|સ્થાનિક નિયમોથી તપાસ
+On-device URL model|डिवाइस पर लिंक मॉडल|ઉપકરણ પર લિંક મૉડલ
+On-device text classifier • synthetic prototype|डिवाइस पर संदेश वर्गीकरण • कृत्रिम डेटा का नमूना मॉडल|ઉપકરણ પર સંદેશ વર્ગીકરણ • કૃત્રિમ ડેટાનું પ્રાયોગિક મૉડલ
+Text classifier unavailable; local rules active|संदेश मॉडल उपलब्ध नहीं; स्थानीय नियम चालू हैं|સંદેશ મૉડલ ઉપલબ્ધ નથી; સ્થાનિક નિયમો ચાલુ છે
+URL model unavailable; local rules active|लिंक मॉडल उपलब्ध नहीं; स्थानीय नियम चालू हैं|લિંક મૉડલ ઉપલબ્ધ નથી; સ્થાનિક નિયમો ચાલુ છે
+Not used|इस्तेमाल नहीं हुआ|ઉપયોગ થયો નથી
+Local text and up to eight distinct links. No sender identity verification.|स्थानीय संदेश और अधिकतम आठ अलग लिंक जाँचे गए। भेजने वाले की पहचान की पुष्टि नहीं हुई।|સ્થાનિક સંદેશ અને વધુમાં વધુ આઠ અલગ લિંક તપાસાઈ. મોકલનારની ઓળખની ખાતરી થઈ નથી.
+URL structure and local snapshot. Page content and redirect destinations are not inspected.|लिंक की बनावट और स्थानीय सूची जाँची गई। वेब पेज या रीडायरेक्ट का अंतिम पता नहीं जाँचा गया।|લિંકની રચના અને સ્થાનિક યાદી તપાસાઈ. વેબ પેજ કે રીડાયરેક્ટનું અંતિમ સરનામું તપાસાયું નથી.
+Extracted content only. Image quality can hide or change text.|केवल पहचानी गई सामग्री। तस्वीर की गुणवत्ता से कुछ शब्द छूट या बदल सकते हैं।|માત્ર ઓળખાયેલી સામગ્રી. છબીની ગુણવત્તાથી કેટલાક શબ્દો છૂટી કે બદલાઈ શકે છે.
+File metadata, header and bounded archive checks. Not a full malware scan.|फ़ाइल विवरण, हेडर और सीमित संग्रह जाँच। यह पूरी मैलवेयर जाँच नहीं है।|ફાઇલની માહિતી, હેડર અને મર્યાદિત આર્કાઇવ તપાસ. આ સંપૂર્ણ માલવેર તપાસ નથી.
+Verify unexpected requests through a trusted channel.|अनपेक्षित अनुरोध की भरोसेमंद माध्यम से पुष्टि करें।|અણધારી વિનંતીની વિશ્વસનીય માધ્યમથી ખાતરી કરો.
+Do not share passwords, PINs or one-time codes. Contact the organization through its official app.|पासवर्ड, पिन या ओटीपी न दें। संस्था के आधिकारिक ऐप से संपर्क करें।|પાસવર્ડ, પિન કે ઓટીપી આપશો નહીં. સંસ્થાની સત્તાવાર ઍપથી સંપર્ક કરો.
+Do not pay to claim a prize. Verify the offer independently.|इनाम पाने के लिए पैसे न दें। प्रस्ताव की अलग से पुष्टि करें।|ઇનામ મેળવવા માટે પૈસા આપશો નહીં. ઑફરની સ્વતંત્ર રીતે ખાતરી કરો.
+Verify the company or lender independently before paying an upfront fee.|अग्रिम शुल्क देने से पहले कंपनी या ऋणदाता की अलग से पुष्टि करें।|અગાઉથી ફી આપતાં પહેલાં કંપની કે ધિરાણ આપનારની સ્વતંત્ર રીતે ખાતરી કરો.
+A UPI PIN authorizes outgoing payments. Check the payee and amount in your payment app.|यूपीआई पिन पैसे भेजने की अनुमति देता है। भुगतान ऐप में पाने वाले का नाम और राशि जाँचें।|યુપીઆઈ પિન પૈસા મોકલવાની મંજૂરી આપે છે. ચુકવણીની ઍપમાં પ્રાપ્તકર્તાનું નામ અને રકમ તપાસો.
+Stop the conversation. Verify independently and do not install remote-access software.|बातचीत रोक दें। अलग से पुष्टि करें और रिमोट ऐक्सेस सॉफ़्टवेयर न लगाएँ।|વાતચીત બંધ કરો. સ્વતંત્ર રીતે ખાતરી કરો અને રિમોટ ઍક્સેસ સૉફ્ટવેર ઇન્સ્ટૉલ કરશો નહીં.
+Requests a password, PIN, one-time code, or sensitive account details|पासवर्ड, पिन, ओटीपी या गोपनीय खाते की जानकारी माँगता है|પાસવર્ડ, પિન, ઓટીપી કે ખાતાની ગોપનીય માહિતી માગે છે
+Uses time pressure or threatens loss of access|जल्दी करने का दबाव डालता है या खाता बंद करने की धमकी देता है|ઉતાવળ કરવાનું દબાણ કરે છે કે ખાતું બંધ કરવાની ધમકી આપે છે
+Claims trusted authority while requesting sensitive action|गोपनीय कार्रवाई माँगते समय भरोसेमंद संस्था होने का दावा करता है|ગોપનીય કાર્યવાહી માગતી વખતે વિશ્વસનીય સંસ્થા હોવાનો દાવો કરે છે
+Offers an unexpected prize or reward and asks you to take action|अनपेक्षित इनाम का प्रस्ताव देता है और कार्रवाई करने को कहता है|અણધાર્યા ઇનામની ઑફર આપે છે અને કાર્યવાહી કરવા કહે છે
+Requests an upfront fee for a job or loan|नौकरी या ऋण के लिए अग्रिम शुल्क माँगता है|નોકરી કે લોન માટે અગાઉથી ફી માગે છે
+Asks you to scan or enter a UPI PIN to receive money|पैसे पाने के लिए स्कैन करने या यूपीआई पिन भरने को कहता है|પૈસા મેળવવા માટે સ્કેન કરવા કે યુપીઆઈ પિન દાખલ કરવા કહે છે
+Uses coercion, secrecy, or remote-access requests|दबाव, गोपनीयता या रिमोट ऐक्सेस की माँग करता है|દબાણ, ગુપ્તતા કે રિમોટ ઍક્સેસની માગ કરે છે
+Pressures you to act on a financial request|पैसे से जुड़े अनुरोध पर जल्दी कार्रवाई का दबाव डालता है|પૈસા સંબંધિત વિનંતી પર ઝડપથી પગલું લેવાનું દબાણ કરે છે
+Combines a link with pressure to act quickly|लिंक के साथ जल्दी कार्रवाई का दबाव डालता है|લિંક સાથે ઝડપથી પગલું લેવાનું દબાણ કરે છે
+Local text classifier detected patterns associated with scam requests|स्थानीय संदेश मॉडल को धोखाधड़ी वाले अनुरोध के संकेत मिले|સ્થાનિક સંદેશ મૉડલને છેતરપિંડીની વિનંતીના સંકેતો મળ્યા
+On-device URL classifier detected phishing-like structural patterns|डिवाइस के लिंक मॉडल को फ़िशिंग जैसी बनावट मिली|ઉપકરણના લિંક મૉડલને ફિશિંગ જેવી રચના મળી
+No strong scam signals found in the available content.|उपलब्ध सामग्री में धोखाधड़ी के मज़बूत संकेत नहीं मिले।|ઉપલબ્ધ સામગ્રીમાં છેતરપિંડીના મજબૂત સંકેતો મળ્યા નથી.
+No strong signals found in the supported file checks.|समर्थित फ़ाइल जाँच में मज़बूत जोखिम संकेत नहीं मिले।|સમર્થિત ફાઇલ તપાસમાં મજબૂત જોખમ સંકેતો મળ્યા નથી.
+No heuristic risk signals found. Page content was not inspected.|नियमों से कोई जोखिम संकेत नहीं मिला। वेब पेज नहीं जाँचा गया।|નિયમોથી કોઈ જોખમ સંકેત મળ્યો નથી. વેબ પેજ તપાસાયું નથી.
+No heuristic risk signals found. Only supported file properties were checked.|नियमों से कोई जोखिम संकेत नहीं मिला। केवल समर्थित फ़ाइल गुण जाँचे गए।|નિયમોથી કોઈ જોખમ સંકેત મળ્યો નથી. માત્ર સમર્થિત ફાઇલના ગુણધર્મો તપાસાયા.
+Local model and URL signals suggest caution. Verify this destination before opening.|स्थानीय मॉडल और लिंक के संकेत सावधानी बताते हैं। खोलने से पहले पते की पुष्टि करें।|સ્થાનિક મૉડલ અને લિંકના સંકેતો સાવચેતી સૂચવે છે. ખોલતાં પહેલાં સરનામાની ખાતરી કરો.
+Check the destination before entering sensitive information.|गोपनीय जानकारी भरने से पहले पते की जाँच करें।|ગોપનીય માહિતી આપતાં પહેલાં સરનામું તપાસો.
+Use the organization's official app or type its address yourself.|संस्था का आधिकारिक ऐप खोलें या पता खुद टाइप करें।|સંસ્થાની સત્તાવાર ઍપ ખોલો કે સરનામું જાતે લખો.
+Only open files from a verified source. These checks cannot certify a file as malware-free.|केवल सत्यापित स्रोत की फ़ाइल खोलें। यह जाँच फ़ाइल को मैलवेयर-मुक्त प्रमाणित नहीं करती।|માત્ર ચકાસેલા સ્ત્રોતની ફાઇલ ખોલો. આ તપાસ ફાઇલને માલવેરમુક્ત પ્રમાણિત કરતી નથી.
+Payment QR: verify the recipient and amount in your payment app|भुगतान क्यूआर: भुगतान ऐप में पाने वाले का नाम और राशि की पुष्टि करें|ચુકવણીનો ક્યુઆર: ચુકવણીની ઍપમાં પ્રાપ્તકર્તાનું નામ અને રકમની ખાતરી કરો
+Your checks, saved only on this device.|आपकी जाँच, केवल इसी डिवाइस पर सुरक्षित।|તમારી તપાસ, માત્ર આ ઉપકરણ પર સાચવેલી.
+Search local history|स्थानीय इतिहास खोजें|સ્થાનિક ઇતિહાસ શોધો
+Warnings only|केवल चेतावनियाँ|માત્ર ચેતવણીઓ
+Delete all|सब मिटाएँ|બધું કાઢી નાખો
+Delete all history|पूरा इतिहास मिटाएँ|આખો ઇતિહાસ કાઢી નાખો
+Delete all history?|पूरा इतिहास मिटाना है?|આખો ઇતિહાસ કાઢી નાખવો છે?
+Delete saved analyses?|सहेजी गई जाँच मिटानी है?|સાચવેલી તપાસ કાઢી નાખવી છે?
+All history on this device will be removed permanently.|इस डिवाइस का पूरा इतिहास हमेशा के लिए मिट जाएगा।|આ ઉપકરણનો આખો ઇતિહાસ કાયમ માટે કાઢી નાખવામાં આવશે.
+This removes the saved analyses from this device. This cannot be undone.|इस डिवाइस की सहेजी गई जाँच मिट जाएगी। इसे वापस नहीं लाया जा सकता।|આ ઉપકરણની સાચવેલી તપાસ કાઢી નાખવામાં આવશે. તેને પાછી મેળવી શકાશે નહીં.
+No scan history|अभी कोई जाँच इतिहास नहीं|હજુ તપાસનો ઇતિહાસ નથી
+Local history|स्थानीय इतिहास|સ્થાનિક ઇતિહાસ
+Local history deleted|स्थानीय इतिहास मिटाया गया|સ્થાનિક ઇતિહાસ કાઢી નાખ્યો
+Protection, your way|आपकी पसंद की सुरक्षा|તમારી પસંદગીની સુરક્ષા
+Your content stays on your phone. This build has no internet permission, no account and no cloud inference.|आपकी सामग्री फ़ोन पर रहती है। इस ऐप को इंटरनेट की अनुमति नहीं है; कोई खाता या क्लाउड जाँच नहीं।|તમારી સામગ્રી ફોન પર રહે છે. આ ઍપને ઇન્ટરનેટની મંજૂરી નથી; કોઈ ખાતું કે ક્લાઉડ તપાસ નથી.
+Protection|सुरक्षा|સુરક્ષા
+Incoming-message protection|आने वाले संदेशों की सुरक्षा|આવતા સંદેશોની સુરક્ષા
+Pause or resume supported notification checks|समर्थित सूचना जाँच रोकें या चालू करें|સમર્થિત સૂચના તપાસ રોકો કે ચાલુ કરો
+Notification analysis|सूचना जाँच|સૂચના તપાસ
+Scan available message content locally|उपलब्ध संदेश इसी डिवाइस पर जाँचें|ઉપલબ્ધ સંદેશ આ ઉપકરણ પર તપાસો
+Link handoff checks|लिंक खोलने से पहले जाँच|લિંક ખોલતાં પહેલાં તપાસ
+Analyze links routed through SafeX AI|SafeX AI से खोले गए लिंक जाँचें|SafeX AI દ્વારા ખોલેલી લિંક તપાસો
+Selected-text analysis|चुने हुए पाठ की जाँच|પસંદ કરેલા લખાણની તપાસ
+Analyze a message from Android's selection menu|एंड्रॉइड के पाठ चयन मेनू से संदेश जाँचें|ઍન્ડ્રોઇડના લખાણ પસંદગી મેનૂથી સંદેશ તપાસો
+Notification access|सूचना पहुँच|સૂચનાની ઍક્સેસ
+Access enabled|पहुँच चालू है|ઍક્સેસ ચાલુ છે
+Access not enabled|पहुँच चालू नहीं है|ઍક્સેસ ચાલુ નથી
+Only supported notifications are checked. Hidden previews and protected OTP notifications may not expose readable content.|केवल समर्थित सूचनाएँ जाँची जाती हैं। छिपे हुए संदेश और सुरक्षित ओटीपी सूचनाओं का पाठ उपलब्ध नहीं हो सकता।|માત્ર સમર્થિત સૂચનાઓ તપાસાય છે. છુપાયેલા સંદેશા અને સુરક્ષિત ઓટીપી સૂચનાઓનું લખાણ ઉપલબ્ધ ન હોઈ શકે.
+Manage notification access|सूचना पहुँच प्रबंधित करें|સૂચનાની ઍક્સેસનું સંચાલન કરો
+Manage warning notifications|चेतावनी सूचनाएँ प्रबंधित करें|ચેતવણી સૂચનાઓનું સંચાલન કરો
+Apps to check|जाँचने वाले ऐप|તપાસવા માટેની ઍપ
+Notification content only|केवल सूचना की सामग्री|માત્ર સૂચનાની સામગ્રી
+Automatically remove records older than|इससे पुराने रिकॉर्ड अपने आप मिटाएँ|આનાથી જૂના રેકૉર્ડ આપમેળે કાઢી નાખો
+Private history is excluded from cloud backup and device transfer.|निजी इतिहास क्लाउड बैकअप या डिवाइस ट्रांसफ़र में शामिल नहीं है।|ખાનગી ઇતિહાસ ક્લાઉડ બૅકઅપ કે ઉપકરણ ટ્રાન્સફરમાં સામેલ નથી.
+Offline threat snapshot|ऑफ़लाइन ख़तरे की सूची|ઑફલાઇન જોખમની યાદી
+Import a trusted list with one full URL per line. Matches from your imported list are blocked locally; lists can be incomplete or outdated.|हर पंक्ति में एक पूरा लिंक वाली विश्वसनीय सूची जोड़ें। सूची से मिले लिंक डिवाइस पर रोके जाते हैं; सूची अधूरी या पुरानी हो सकती है।|દરેક પંક્તિમાં એક સંપૂર્ણ લિંક હોય તેવી વિશ્વસનીય યાદી ઉમેરો. યાદી સાથે મેળ ખાતી લિંક ઉપકરણ પર રોકાય છે; યાદી અધૂરી કે જૂની હોઈ શકે.
+Import threat list|ख़तरे की सूची जोड़ें|જોખમની યાદી ઉમેરો
+Remove imported list|जोड़ी गई सूची हटाएँ|ઉમેરેલી યાદી દૂર કરો
+Appearance|दिखावट|દેખાવ
+Dark|गहरा|ઘેરો
+Neon|एमराल्ड|એમરાલ્ડ
+System|फ़ोन के अनुसार|ફોન મુજબ
+Language & reading|भाषा और पढ़ने की सुविधा|ભાષા અને વાંચવાની સુવિધા
+App language|ऐप की भाषा|ઍપની ભાષા
+Choose the language for menus, explanations and warnings.|मेनू, जानकारी और चेतावनियों की भाषा चुनें।|મેનૂ, સમજણ અને ચેતવણીઓની ભાષા પસંદ કરો.
+Text size|अक्षर का आकार|અક્ષરનું કદ
+Adjust text size without changing your phone settings.|फ़ोन की सेटिंग बदले बिना अक्षरों का आकार बदलें।|ફોનની સેટિંગ બદલ્યા વગર અક્ષરોનું કદ બદલો.
+Preview: clear guidance, in your language.|उदाहरण: आपकी भाषा में स्पष्ट सलाह।|ઉદાહરણ: તમારી ભાષામાં સ્પષ્ટ સલાહ.
+Reset text size|अक्षर का आकार रीसेट करें|અક્ષરનું કદ ફરી મૂળભૂત કરો
+English|English|English
+Hindi|हिन्दी|હિન્દી
+Gujarati|गुजराती|ગુજરાતી
+Private, on-device security assistance|निजी, डिवाइस पर सुरक्षा सहायता|ખાનગી, ઉપકરણ પર સુરક્ષા સહાય
+Your data never leaves your device.|जाँच की सामग्री आपके डिवाइस पर रहती है।|તપાસની સામગ્રી તમારા ઉપકરણ પર રહે છે.
+All analysis is performed locally.|पूरी जाँच इसी डिवाइस पर होती है।|આખી તપાસ આ ઉપકરણ પર થાય છે.
+What it does|ऐप क्या करता है|ઍપ શું કરે છે
+How it works|यह कैसे काम करता है|આ કેવી રીતે કામ કરે છે
+Privacy|गोपनीयता|ગોપનીયતા
+Version|संस्करण|આવૃત્તિ
+Analyze selected text|चुना हुआ पाठ जाँचें|પસંદ કરેલું લખાણ તપાસો
+Detect scams from incoming messages|आने वाले संदेशों में धोखाधड़ी पहचानें|આવતા સંદેશોમાં છેતરપિંડી ઓળખો
+Scan links before opening|खोलने से पहले लिंक जाँचें|ખોલતાં પહેલાં લિંક તપાસો
+Uses on-device machine learning|डिवाइस पर मशीन लर्निंग का उपयोग|ઉપકરણ પર મશીન લર્નિંગનો ઉપયોગ
+Text classifier trained on synthetic examples; real-world accuracy is not established|संदेश मॉडल कृत्रिम उदाहरणों पर प्रशिक्षित है; वास्तविक उपयोग की सटीकता प्रमाणित नहीं है|સંદેશ મૉડલ કૃત્રિમ ઉદાહરણો પર તાલીમ પામેલું છે; વાસ્તવિક ઉપયોગની ચોકસાઈ પ્રમાણિત નથી
+Hidden previews, page content, and call audio are outside the current coverage|छिपे संदेश, वेब पेज और कॉल की आवाज़ वर्तमान जाँच में शामिल नहीं हैं|છુપાયેલા સંદેશા, વેબ પેજ અને કૉલનો અવાજ હાલની તપાસમાં સામેલ નથી
+Set up SafeX AI|SafeX AI सेट करें|SafeX AI સેટ કરો
+Continue to SafeX AI|SafeX AI में जाएँ|SafeX AIમાં આગળ વધો
+Private checks, right on your phone. Enable notification access for incoming-message checks; all permissions are optional for manual scanning.|निजी जाँच, आपके फ़ोन पर। आने वाले संदेशों के लिए सूचना पहुँच चालू करें; खुद जाँच करने के लिए सभी अनुमतियाँ वैकल्पिक हैं।|ખાનગી તપાસ, તમારા ફોન પર. આવતા સંદેશો માટે સૂચનાની ઍક્સેસ ચાલુ કરો; જાતે તપાસવા માટે બધી મંજૂરી વૈકલ્પિક છે.
+You can scan manually without notification access. Enable real-time checks whenever you are ready.|सूचना पहुँच के बिना भी आप खुद जाँच कर सकते हैं। जब चाहें तुरंत सुरक्षा जाँच चालू करें।|સૂચનાની ઍક્સેસ વગર પણ તમે જાતે તપાસ કરી શકો છો. જ્યારે ઇચ્છો ત્યારે તાત્કાલિક સુરક્ષા તપાસ ચાલુ કરો.
+Notifications|सूचनाएँ|સૂચનાઓ
+Show urgent security warnings|ज़रूरी सुरक्षा चेतावनियाँ दिखाएँ|જરૂરી સુરક્ષા ચેતવણીઓ બતાવો
+Monitor incoming notifications for threats|आने वाली सूचनाओं में ख़तरे जाँचें|આવતી સૂચનાઓમાં જોખમ તપાસો
+Contacts|संपर्क|સંપર્કો
+Recognize known senders in alerts|चेतावनियों में परिचित भेजने वाले पहचानें|ચેતવણીઓમાં ઓળખીતા મોકલનાર ઓળખો
+Granted|अनुमति है|મંજૂરી છે
+Not Granted|अनुमति नहीं है|મંજૂરી નથી
+Grant permission|अनुमति दें|મંજૂરી આપો
+Setup needed|सेटअप ज़रूरी है|સેટઅપ જરૂરી છે
+Enable only the protection features you want.|केवल अपनी पसंद की सुरक्षा सुविधाएँ चालू करें।|માત્ર તમારી પસંદગીની સુરક્ષા સુવિધાઓ ચાલુ કરો.
+Protection features|सुरक्षा सुविधाएँ|સુરક્ષા સુવિધાઓ
+Checks available notification content in real time|उपलब्ध सूचनाओं की तुरंत जाँच|ઉપલબ્ધ સૂચનાઓની તાત્કાલિક તપાસ
+Analyzes links before opening|खोलने से पहले लिंक की जाँच|ખોલતાં પહેલાં લિંકની તપાસ
+Requires notification access|सूचना पहुँच ज़रूरी है|સૂચનાની ઍક્સેસ જરૂરી છે
+Quick actions|तुरंत कार्रवाई|ઝડપી કાર્યવાહી
+Scan link|लिंक जाँचें|લિંક તપાસો
+Check a link before opening it|खोलने से पहले लिंक जाँचें|ખોલતાં પહેલાં લિંક તપાસો
+Explanation|जानकारी|સમજણ
+Recommendation|सलाह|સલાહ
+Recommended action|सुझाई गई कार्रवाई|સૂચવેલ કાર્યવાહી
+Threat details|ख़तरे का विवरण|જોખમની વિગતો
+Threat details unavailable|ख़तरे का विवरण उपलब्ध नहीं|જોખમની વિગતો ઉપલબ્ધ નથી
+Threat explanation|ख़तरे की जानकारी|જોખમની સમજણ
+No threat details are available for this item yet.|इस सामग्री के ख़तरे का विवरण अभी उपलब्ध नहीं है।|આ સામગ્રીના જોખમની વિગતો હજુ ઉપલબ્ધ નથી.
+No strong threat evidence detected|ख़तरे का मज़बूत प्रमाण नहीं मिला|જોખમનો મજબૂત પુરાવો મળ્યો નથી
+Why this message was flagged by the security pipeline|सुरक्षा जाँच में यह संदेश क्यों चिन्हित हुआ|સુરક્ષા તપાસમાં આ સંદેશ કેમ ચિહ્નિત થયો
+Signals that contributed to the risk score|जोखिम के अंक बढ़ाने वाले संकेत|જોખમના ગુણ વધારનારા સંકેતો
+Suspicious indicators|संदिग्ध संकेत|શંકાસ્પદ સંકેતો
+Message preview|संदेश की झलक|સંદેશની ઝલક
+Message review recommended|संदेश की समीक्षा करें|સંદેશની સમીક્ષા કરો
+Authority impersonation|अधिकारी की झूठी पहचान|અધિકારીની ખોટી ઓળખ
+Urgency pressure|जल्दी करने का दबाव|ઉતાવળ કરવાનું દબાણ
+Code request|कोड की माँग|કોડની માગ
+Unknown sender|अज्ञात भेजने वाला|અજાણ્યો મોકલનાર
+Unknown Sender|अज्ञात भेजने वाला|અજાણ્યો મોકલનાર
+Unknown Contact|अज्ञात संपर्क|અજાણ્યો સંપર્ક
+HIGH|उच्च|ઊંચું
+High|उच्च|ઊંચું
+LOW|कम|ઓછું
+Low|कम|ઓછું
+MEDIUM|मध्यम|મધ્યમ
+Moderate|मध्यम|મધ્યમ
+CRITICAL|गंभीर|ગંભીર
+Critical|गंभीर|ગંભીર
+WARNING|चेतावनी|ચેતવણી
+Warning|चेतावनी|ચેતવણી
+Failed|असफल|નિષ્ફળ
+Potential Scam Detected|संभावित धोखाधड़ी मिली|સંભવિત છેતરપિંડી મળી
+SafeX AI security warning|SafeX AI सुरक्षा चेतावनी|SafeX AI સુરક્ષા ચેતવણી
+Scam Warnings|धोखाधड़ी की चेतावनियाँ|છેતરપિંડીની ચેતવણીઓ
+High Priority Scam Warnings|ज़रूरी धोखाधड़ी चेतावनियाँ|જરૂરી છેતરપિંડીની ચેતવણીઓ
+Unlock your phone to review the details|विवरण देखने के लिए फ़ोन अनलॉक करें|વિગતો જોવા માટે ફોન અનલૉક કરો
+This warning is no longer in your local history.|यह चेतावनी अब आपके स्थानीय इतिहास में नहीं है।|આ ચેતવણી હવે તમારા સ્થાનિક ઇતિહાસમાં નથી.
+This file has suspicious properties. Verify its source before opening or installing.|इस फ़ाइल में संदिग्ध गुण हैं। खोलने या लगाने से पहले स्रोत की पुष्टि करें।|આ ફાઇલમાં શંકાસ્પદ ગુણધર્મો છે. ખોલતાં કે ઇન્સ્ટૉલ કરતાં પહેલાં સ્ત્રોતની ખાતરી કરો.
+Claims to be a PDF but its file signature does not match|फ़ाइल पीडीएफ होने का दावा करती है, लेकिन उसका प्रारूप मेल नहीं खाता|ફાઇલ પીડીએફ હોવાનો દાવો કરે છે, પરંતુ તેનું સ્વરૂપ મેળ ખાતું નથી
+Claims to be an APK but has no package archive signature|फ़ाइल एपीके होने का दावा करती है, लेकिन उसमें पैकेज प्रारूप नहीं है|ફાઇલ એપીકે હોવાનો દાવો કરે છે, પરંતુ તેમાં પૅકેજનું સ્વરૂપ નથી
+Contains a Windows executable signature|विंडोज़ प्रोग्राम चलाने वाला प्रारूप मिला|વિન્ડોઝ પ્રોગ્રામ ચલાવતું સ્વરૂપ મળ્યું
+Archive contains executable or script content|संग्रह में चलाने योग्य प्रोग्राम या स्क्रिप्ट है|આર્કાઇવમાં ચલાવી શકાય એવો પ્રોગ્રામ કે સ્ક્રિપ્ટ છે
+Archive contains unsafe paths|संग्रह में असुरक्षित फ़ाइल पथ हैं|આર્કાઇવમાં અસુરક્ષિત ફાઇલના પાથ છે
+Archive inspection stopped at safety limits; contents are partially checked|सुरक्षा सीमा पर संग्रह जाँच रोकी गई; सामग्री की आंशिक जाँच हुई|સુરક્ષાની મર્યાદાએ આર્કાઇવ તપાસ રોકાઈ; સામગ્રીની આંશિક તપાસ થઈ
+Disguised Android installation package: filename does not end in .apk|छिपाया गया एंड्रॉइड पैकेज: फ़ाइल का नाम .apk से समाप्त नहीं होता|છુપાવેલું ઍન્ડ્રોઇડ પૅકેજ: ફાઇલનું નામ .apkથી પૂર્ણ થતું નથી
+Android installation package; verify its developer before installation|एंड्रॉइड पैकेज; लगाने से पहले बनाने वाले की पुष्टि करें|ઍન્ડ્રોઇડ પૅકેજ; ઇન્સ્ટૉલ કરતાં પહેલાં બનાવનારની ખાતરી કરો
+Local threat snapshot|स्थानीय ख़तरे की सूची|સ્થાનિક જોખમની યાદી
+Matches a known phishing URL in the on-device snapshot|डिवाइस की सूची में ज्ञात फ़िशिंग लिंक से मेल मिला|ઉપકરણની યાદીમાં જાણીતી ફિશિંગ લિંક સાથે મેળ મળ્યો
+No local snapshot match; this is not a guarantee of safety|स्थानीय सूची से मेल नहीं मिला; यह सुरक्षा की गारंटी नहीं है|સ્થાનિક યાદી સાથે મેળ નથી; આ સુરક્ષાની ખાતરી નથી
+Trusted domain text is placed before a different actual domain|भरोसेमंद वेबसाइट का नाम किसी दूसरे असली पते के आगे रखा गया है|વિશ્વસનીય વેબસાઇટનું નામ બીજા સાચા સરનામા પહેલાં મૂક્યું છે
+Embedded external URL detected|अंदर छिपा दूसरे पते का लिंक मिला|અંદર છુપાયેલી બીજા સરનામાની લિંક મળી
+Contains excessive digits in the domain|वेबसाइट के नाम में बहुत अधिक अंक हैं|વેબસાઇટના નામમાં વધુ પડતા અંક છે
+Contains excessive subdomains|बहुत अधिक उप-डोमेन हैं|વધુ પડતા સબડોમેન છે
+Contains repeated or multiple hyphens in domain|वेबसाइट के नाम में बार-बार या बहुत से हाइफ़न हैं|વેબસાઇટના નામમાં વારંવાર કે ઘણા હાઇફન છે
+Uses a random-looking hostname|वेबसाइट का नाम बेतरतीब दिखता है|વેબસાઇટનું નામ અવ્યવસ્થિત લાગે છે
+Punycode domain name detected|प्यूनिकोड वेबसाइट नाम मिला|પ્યુનિકોડ વેબસાઇટનું નામ મળ્યું
+Uses insecure HTTP protocol|असुरक्षित एचटीटीपी प्रोटोकॉल इस्तेमाल करता है|અસુરક્ષિત એચટીટીપી પ્રોટોકૉલ વાપરે છે
+Uses IP address instead of domain|वेबसाइट के नाम के बजाय आईपी पता है|વેબસાઇટના નામને બદલે આઈપી સરનામું છે
+The URL contains deceptive user information before the actual host|लिंक में असली वेबसाइट से पहले भ्रामक उपयोगकर्ता जानकारी है|લિંકમાં સાચી વેબસાઇટ પહેલાં ભ્રામક વપરાશકર્તાની માહિતી છે
+The URL uses a non-standard network port|लिंक एक गैर-मानक नेटवर्क पोर्ट इस्तेमाल करता है|લિંક બિનપ્રમાણભૂત નેટવર્ક પોર્ટ વાપરે છે
+URL uses a redirect parameter pointing to another destination|लिंक का रीडायरेक्ट किसी दूसरे पते पर जाता है|લિંકનું રીડાયરેક્ટ બીજા સરનામે જાય છે
+URL contains an unusually long filename|लिंक में असामान्य रूप से लंबा फ़ाइल नाम है|લિંકમાં અસામાન્ય રીતે લાંબું ફાઇલનું નામ છે
+URL contains many encoded characters|लिंक में बहुत से एन्कोड किए हुए अक्षर हैं|લિંકમાં ઘણા એન્કોડ કરેલા અક્ષરો છે
+URL contains tracking parameters|लिंक में ट्रैक करने वाले पैरामीटर हैं|લિંકમાં ટ્રૅક કરતા પૅરામીટર છે
+URL has excessive query parameters|लिंक में बहुत अधिक क्वेरी पैरामीटर हैं|લિંકમાં વધુ પડતા ક્વેરી પૅરામીટર છે
+URL is unusually long|लिंक असामान्य रूप से लंबा है|લિંક અસામાન્ય રીતે લાંબી છે
+URL path is deeply nested|लिंक का पथ बहुत गहराई तक जाता है|લિંકનો પાથ વધુ ઊંડાઈ સુધી જાય છે
+File disguises executable content as a document|फ़ाइल चलाने योग्य सामग्री को दस्तावेज़ जैसा दिखाती है|ફાઇલ ચલાવી શકાય એવી સામગ્રીને દસ્તાવેજ જેવી બતાવે છે
+File is an archive that may hide unsafe content|फ़ाइल एक संग्रह है जिसमें असुरक्षित सामग्री छिपी हो सकती है|ફાઇલ આર્કાઇવ છે જેમાં અસુરક્ષિત સામગ્રી છુપાયેલી હોઈ શકે
+File uses multiple extensions|फ़ाइल में कई एक्सटेंशन हैं|ફાઇલમાં ઘણા એક્સ્ટેન્શન છે
+Filename appears randomly generated|फ़ाइल का नाम बेतरतीब बनाया हुआ दिखता है|ફાઇલનું નામ અવ્યવસ્થિત રીતે બનાવેલું લાગે છે
+Add content to analyze first.|पहले जाँचने वाली सामग्री जोड़ें।|પહેલાં તપાસવા માટેની સામગ્રી ઉમેરો.
+Paste a message before scanning.|जाँचने से पहले संदेश पेस्ट करें।|તપાસતાં પહેલાં સંદેશ પેસ્ટ કરો.
+Enter a valid web link.|सही वेब लिंक डालें।|માન્ય વેબ લિંક દાખલ કરો.
+Analysis timed out. Try a smaller or clearer item.|जाँच में बहुत समय लगा। छोटी या साफ़ सामग्री आज़माएँ।|તપાસમાં વધુ સમય લાગ્યો. નાની કે સ્પષ્ટ સામગ્રી અજમાવો.
+Could not analyze this content.|इस सामग्री की जाँच नहीं हो सकी।|આ સામગ્રીની તપાસ થઈ શકી નહીં.
+Unable to analyze this item.|इस सामग्री की जाँच नहीं हो सकी।|આ સામગ્રીની તપાસ થઈ શકી નહીં.
+No readable QR code found. Choose a clearer image.|पढ़ने योग्य क्यूआर नहीं मिला। साफ़ तस्वीर चुनें।|વાંચી શકાય એવો ક્યુઆર મળ્યો નથી. સ્પષ્ટ છબી પસંદ કરો.
+No readable text found. Choose a clearer screenshot.|पढ़ने योग्य पाठ नहीं मिला। साफ़ स्क्रीनशॉट चुनें।|વાંચી શકાય એવું લખાણ મળ્યું નથી. સ્પષ્ટ સ્ક્રીનશૉટ પસંદ કરો.
+Choose a file smaller than 10 MB.|10 एमबी से छोटी फ़ाइल चुनें।|10 એમબીથી નાની ફાઇલ પસંદ કરો.
+Choose an image smaller than 15 MB.|15 एमबी से छोटी तस्वीर चुनें।|15 એમબીથી નાની છબી પસંદ કરો.
+Choose a file using the system document picker.|फ़ोन के दस्तावेज़ चयन से फ़ाइल चुनें।|ફોનના દસ્તાવેજ પસંદગીમાંથી ફાઇલ પસંદ કરો.
+Choose an image using the system picker.|फ़ोन के फ़ाइल चयन से तस्वीर चुनें।|ફોનની ફાઇલ પસંદગીમાંથી છબી પસંદ કરો.
+File cannot be opened. Choose it again to grant read access.|फ़ाइल खुल नहीं सकती। पढ़ने की अनुमति देने के लिए फिर चुनें।|ફાઇલ ખૂલી શકતી નથી. વાંચવાની મંજૂરી આપવા માટે ફરી પસંદ કરો.
+This image could not be opened.|यह तस्वीर खुल नहीं सकी।|આ છબી ખૂલી શકી નહીં.
+This image could not be decoded.|इस तस्वीर को पढ़ा नहीं जा सका।|આ છબી વાંચી શકાઈ નહીં.
+Unsupported image format.|तस्वीर का यह प्रारूप समर्थित नहीं है।|છબીનું આ સ્વરૂપ સમર્થિત નથી.
+This item exceeds the size limit.|सामग्री निर्धारित आकार से बड़ी है।|સામગ્રી નક્કી કરેલા કદથી મોટી છે.
+Unsupported shared content.|साझा की गई सामग्री समर्थित नहीं है।|શેર કરેલી સામગ્રી સમર્થિત નથી.
+Share a message, web link, or a supported file.|संदेश, वेब लिंक या समर्थित फ़ाइल साझा करें।|સંદેશ, વેબ લિંક કે સમર્થિત ફાઇલ શેર કરો.
+Share one item at a time for a complete scan.|पूरी जाँच के लिए एक बार में एक सामग्री साझा करें।|સંપૂર્ણ તપાસ માટે એક સમયે એક સામગ્રી શેર કરો.
+No browser available.|कोई ब्राउज़र उपलब्ध नहीं है।|કોઈ બ્રાઉઝર ઉપલબ્ધ નથી.
+No external browser available.|बाहरी ब्राउज़र उपलब्ध नहीं है।|બાહ્ય બ્રાઉઝર ઉપલબ્ધ નથી.
+Link is too long (maximum 8,192 characters).|लिंक बहुत लंबा है (अधिकतम 8,192 अक्षर)।|લિંક ખૂબ લાંબી છે (વધુમાં વધુ 8,192 અક્ષર).
+Message is too long (maximum 12,000 characters).|संदेश बहुत लंबा है (अधिकतम 12,000 अक्षर)।|સંદેશ ખૂબ લાંબો છે (વધુમાં વધુ 12,000 અક્ષર).
+Unable to save scan history|जाँच का इतिहास सहेजा नहीं जा सका|તપાસનો ઇતિહાસ સાચવી શકાયો નહીં
+Could not delete history|इतिहास मिटाया नहीं जा सका|ઇતિહાસ કાઢી શકાયો નહીં
+Unable to delete history. Try again.|इतिहास मिटाया नहीं जा सका। फिर प्रयास करें।|ઇતિહાસ કાઢી શકાયો નહીં. ફરી પ્રયાસ કરો.
+Could not apply retention|इतिहास की समय सीमा लागू नहीं हुई|ઇતિહાસની સમયમર્યાદા લાગુ થઈ નહીં
+Could not import threat list|ख़तरे की सूची जोड़ी नहीं जा सकी|જોખમની યાદી ઉમેરી શકાઈ નહીં
+Cannot open this threat list.|यह ख़तरे की सूची खुल नहीं सकी।|આ જોખમની યાદી ખૂલી શકી નહીં.
+The threat list contains no URLs.|ख़तरे की सूची में कोई लिंक नहीं है।|જોખમની યાદીમાં કોઈ લિંક નથી.
+Threat list has too many entries.|ख़तरे की सूची में बहुत अधिक प्रविष्टियाँ हैं।|જોખમની યાદીમાં વધુ પડતી નોંધો છે.
+Threat list is too large.|ख़तरे की सूची बहुत बड़ी है।|જોખમની યાદી ખૂબ મોટી છે.
+Threat list line is too long.|ख़तरे की सूची की पंक्ति बहुत लंबी है।|જોખમની યાદીની પંક્તિ ખૂબ લાંબી છે.
+Threat lists must contain one complete HTTP(S) URL per line.|ख़तरे की सूची की हर पंक्ति में एक पूरा एचटीटीपी(एस) लिंक होना चाहिए।|જોખમની યાદીની દરેક પંક્તિમાં એક સંપૂર્ણ એચટીટીપી(એસ) લિંક હોવી જોઈએ.
+Shared file|साझा की गई फ़ाइल|શેર કરેલી ફાઇલ
+Shared item|साझा की गई सामग्री|શેર કરેલી સામગ્રી
+Notification listener access|सूचना सेवा की पहुँच|સૂચના સેવાની ઍક્સેસ
+Notification permission|सूचना की अनुमति|સૂચનાની મંજૂરી
+Do not engage with the message and block the sender if needed.|संदेश का जवाब न दें और ज़रूरत पड़ने पर भेजने वाले को ब्लॉक करें।|સંદેશનો જવાબ આપશો નહીં અને જરૂર હોય તો મોકલનારને બ્લૉક કરો.
+Do not engage. Block the sender and report the message.|जवाब न दें। भेजने वाले को ब्लॉक करें और संदेश की शिकायत करें।|જવાબ આપશો નહીં. મોકલનારને બ્લૉક કરો અને સંદેશની ફરિયાદ કરો.
+Block the sender, preserve evidence, and report the threat immediately.|भेजने वाले को ब्लॉक करें, प्रमाण सहेजें और ख़तरे की तुरंत शिकायत करें।|મોકલનારને બ્લૉક કરો, પુરાવા સાચવો અને જોખમની તરત ફરિયાદ કરો.
+Verify the sender through a trusted channel before responding.|जवाब देने से पहले भरोसेमंद माध्यम से भेजने वाले की पुष्टि करें।|જવાબ આપતાં પહેલાં વિશ્વસનીય માધ્યમથી મોકલનારની ખાતરી કરો.
+No immediate action is required.|अभी किसी कार्रवाई की ज़रूरत नहीं है।|હાલ કોઈ પગલાં લેવાની જરૂર નથી.
+Monitor this conversation for further signals.|इस बातचीत में आगे के संकेतों पर ध्यान दें।|આ વાતચીતમાં આગળના સંકેતો પર ધ્યાન આપો.
+This notification looks legitimate. No action needed.|इस सूचना में मज़बूत जोखिम संकेत नहीं मिले।|આ સૂચનામાં મજબૂત જોખમ સંકેતો મળ્યા નથી.
+$days days|%1$s दिन|%1$s દિવસ
+$snapshotCount imported URLs|%1$s जोड़े गए लिंक|%1$s ઉમેરેલી લિંક
+Imported $snapshotCount local threat URLs|ख़तरे की सूची में %1$s लिंक जोड़े गए|જોખમની યાદીમાં %1$s લિંક ઉમેરાઈ
+About SafeX AI • $appVersion|SafeX AI के बारे में • %1$s|SafeX AI વિશે • %1$s
+Version $displayVersion|संस्करण %1$s|આવૃત્તિ %1$s
+${result.durationMs} ms|%1$s मिलीसेकंड|%1$s મિલિસેકન્ડ
+Risk index ${result.riskScore.toInt()} / 100|जोखिम अंक %1$s / 100|જોખમના ગુણ %1$s / 100
+Risk score ${result.riskScore.toInt().coerceIn(0, 100)} / 100|जोखिम अंक %1$s / 100|જોખમના ગુણ %1$s / 100
+Choose ${label(scanType).lowercase()}|%1$s चुनें|%1$s પસંદ કરો
+Analyzing ${label(scanType).lowercase()} locally…|%1$s की स्थानीय जाँच हो रही है…|%1$sની સ્થાનિક તપાસ થઈ રહી છે…
+Possible $brand brand impersonation|संभावित %1$s ब्रांड का झूठा दावा|સંભવિત %1$s બ્રાન્ડનો ખોટો દાવો
+Possible $brand look-alike domain|संभावित %1$s जैसी नकली वेबसाइट|સંભવિત %1$s જેવી નકલી વેબસાઇટ
+Uses .$matchedTld domain|.%1$s वेबसाइट पते का उपयोग|.%1$s વેબસાઇટના સરનામાનો ઉપયોગ
+Uses social engineering keyword in domain: $matchedKeyword|वेबसाइट नाम में बहकाने वाला शब्द: %1$s|વેબસાઇટના નામમાં ગેરમાર્ગે દોરતો શબ્દ: %1$s
+Uses social engineering keyword in path/query: $matchedKeyword|लिंक के पथ में बहकाने वाला शब्द: %1$s|લિંકના પાથમાં ગેરમાર્ગે દોરતો શબ્દ: %1$s
+File uses dangerous .$extension extension|फ़ाइल का .%1$s एक्सटेंशन जोखिम वाला है|ફાઇલનું .%1$s એક્સ્ટેન્શન જોખમવાળું છે
+Filename uses sensitive lure word: $matched|फ़ाइल नाम में बहकाने वाला शब्द: %1$s|ફાઇલના નામમાં ગેરમાર્ગે દોરતો શબ્દ: %1$s
+Embedded link: $detail|संदेश का लिंक: %1$s|સંદેશની લિંક: %1$s
+Risk Level: ${model.riskLevelLabel}|जोखिम स्तर: %1$s|જોખમનું સ્તર: %1$s
+Risk Score: $score|जोखिम अंक: %1$s|જોખમના ગુણ: %1$s
+Protection score: $clampedScore out of 100|सुरक्षा अंक: %1$s / 100|સુરક્ષાના ગુણ: %1$s / 100
+Local heuristic rule ${index + 1}|स्थानीय जाँच नियम %1$s|સ્થાનિક તપાસનો નિયમ %1$s
+No strong threat evidence was detected.|ख़तरे का मज़बूत प्रमाण नहीं मिला।|જોખમનો મજબૂત પુરાવો મળ્યો નથી.
+No strong signals were found by the available checks.|उपलब्ध जाँच में मज़बूत संकेत नहीं मिले।|ઉપલબ્ધ તપાસમાં મજબૂત સંકેતો મળ્યા નથી.
+Local URL analysis found meaningful risk signals. Proceed with caution.|स्थानीय लिंक जाँच में जोखिम के संकेत मिले। सावधानी से आगे बढ़ें।|સ્થાનિક લિંક તપાસમાં જોખમના સંકેતો મળ્યા. સાવચેતીથી આગળ વધો.
+Critical local URL evidence was detected. Do not continue.|स्थानीय लिंक जाँच में गंभीर ख़तरे मिले। आगे न बढ़ें।|સ્થાનિક લિંક તપાસમાં ગંભીર જોખમ મળ્યું. આગળ વધશો નહીં.
+A reputation provider identified this destination as malicious. Do not continue.|ख़तरे की सूची ने इस पते को नुकसानदेह बताया। आगे न बढ़ें।|જોખમની યાદીએ આ સરનામું નુકસાનકારક જણાવ્યું. આગળ વધશો નહીં.
+A reputation provider reported suspicious evidence. Proceed only after verification.|ख़तरे की सूची को संदिग्ध संकेत मिले। पुष्टि के बाद ही आगे बढ़ें।|જોખમની યાદીને શંકાસ્પદ સંકેતો મળ્યા. ખાતરી પછી જ આગળ વધો.
+Suspicious evidence was detected. Proceed with caution.|संदिग्ध संकेत मिले। सावधानी से आगे बढ़ें।|શંકાસ્પદ સંકેતો મળ્યા. સાવચેતીથી આગળ વધો.
+Limited online verification. Proceed with caution.|ऑनलाइन पुष्टि सीमित है। सावधानी से आगे बढ़ें।|ઑનલાઇન ખાતરી મર્યાદિત છે. સાવચેતીથી આગળ વધો.
+No strong threat evidence was detected by local analysis; no online reputation result was available.|स्थानीय जाँच में मज़बूत ख़तरे नहीं मिले; ऑनलाइन पुष्टि उपलब्ध नहीं थी।|સ્થાનિક તપાસમાં મજબૂત જોખમ મળ્યું નથી; ઑનલાઇન ખાતરી ઉપલબ્ધ નહોતી.
+No strong threat evidence was detected; reputation providers returned no conclusive verdict.|मज़बूत ख़तरे नहीं मिले; ख़तरे की सूची से निश्चित परिणाम नहीं मिला।|મજબૂત જોખમ મળ્યું નથી; જોખમની યાદીથી નિશ્ચિત પરિણામ મળ્યું નથી.
+Critical threat evidence detected|गंभीर ख़तरे का प्रमाण मिला|ગંભીર જોખમનો પુરાવો મળ્યો
+Suspicious content detected|संदिग्ध सामग्री मिली|શંકાસ્પદ સામગ્રી મળી
+Suspicious link evidence detected|संदिग्ध लिंक के संकेत मिले|શંકાસ્પદ લિંકના સંકેતો મળ્યા
+User verification needed|आपकी पुष्टि ज़रूरी है|તમારી ખાતરી જરૂરી છે
+Risk scoring triggered|जोखिम की गणना चालू हुई|જોખમની ગણતરી શરૂ થઈ
+Authorization|अनुमति|મંજૂરી
+Click Protection|लिंक सुरक्षा|લિંક સુરક્ષા
+Notification Protection|सूचना सुरक्षा|સૂચના સુરક્ષા
+Text Selection|पाठ का चयन|લખાણની પસંદગી
+Intent (Link)|साझा किया गया लिंक|શેર કરેલી લિંક
+Intent (File)|साझा की गई फ़ाइल|શેર કરેલી ફાઇલ
+Provider lookup failed.|ख़तरे की सूची जाँची नहीं जा सकी।|જોખમની યાદી તપાસી શકાઈ નહીં.
+Provider lookup timed out.|ख़तरे की सूची जाँचने में बहुत समय लगा।|જોખમની યાદી તપાસવામાં વધુ સમય લાગ્યો.
+Provider returned no result.|ख़तरे की सूची से परिणाम नहीं मिला।|જોખમની યાદીથી પરિણામ મળ્યું નથી.
+Brand Impersonation|ब्रांड का झूठा दावा|બ્રાન્ડનો ખોટો દાવો
+Dangerous Extension|जोखिम वाला एक्सटेंशन|જોખમવાળું એક્સ્ટેન્શન
+Deep Path|गहरा पथ|ઊંડો પાથ
+Double Extension|दोहरा एक्सटेंशन|બેવડું એક્સ્ટેન્શન
+Embedded URL|अंदर छिपा लिंक|અંદર છુપાયેલી લિંક
+Encoded Characters|एन्कोड किए हुए अक्षर|એન્કોડ કરેલા અક્ષરો
+Excessive Digits|बहुत अधिक अंक|વધુ પડતા અંક
+Excessive Query Parameters|बहुत अधिक क्वेरी पैरामीटर|વધુ પડતા ક્વેરી પૅરામીટર
+Excessive Subdomains|बहुत अधिक उप-डोमेन|વધુ પડતા સબડોમેન
+Fake Document|नकली दस्तावेज़|નકલી દસ્તાવેજ
+IP Address Host|आईपी वाला पता|આઈપી ધરાવતું સરનામું
+Insecure HTTP|असुरक्षित एचटीटीपी|અસુરક્ષિત એચટીટીપી
+Long Filename|लंबा फ़ाइल नाम|લાંબું ફાઇલનું નામ
+Long URL|लंबा लिंक|લાંબી લિંક
+Misleading Filename|भ्रामक फ़ाइल नाम|ભ્રામક ફાઇલનું નામ
+Non-Standard Port|गैर-मानक पोर्ट|બિનપ્રમાણભૂત પોર્ટ
+Punycode Detection|प्यूनिकोड की पहचान|પ્યુનિકોડની ઓળખ
+Random Filename|बेतरतीब फ़ाइल नाम|અવ્યવસ્થિત ફાઇલનું નામ
+Random Hostname|बेतरतीब वेबसाइट नाम|અવ્યવસ્થિત વેબસાઇટનું નામ
+Redirect Parameter|रीडायरेक्ट पैरामीटर|રીડાયરેક્ટ પૅરામીટર
+Repeated Hyphens|बार-बार आने वाले हाइफ़न|વારંવાર આવતા હાઇફન
+Social Engineering Keywords|बहकाने वाले शब्द|ગેરમાર્ગે દોરતા શબ્દો
+Suspicious Archive|संदिग्ध संग्रह|શંકાસ્પદ આર્કાઇવ
+Suspicious TLD|संदिग्ध डोमेन प्रकार|શંકાસ્પદ ડોમેન પ્રકાર
+Tracking Parameters|ट्रैक करने वाले पैरामीटर|ટ્રૅક કરતા પૅરામીટર
+Userinfo Deception|भ्रामक उपयोगकर्ता जानकारी|ભ્રામક વપરાશકર્તાની માહિતી
+SafeX AI analyzes shared content and supported notifications locally, explains risk signals, and helps you make safer decisions.|SafeX AI साझा सामग्री और समर्थित सूचनाएँ डिवाइस पर जाँचता है, जोखिम समझाता है और सुरक्षित निर्णय लेने में मदद करता है।|SafeX AI શેર કરેલી સામગ્રી અને સમર્થિત સૂચનાઓ ઉપકરણ પર તપાસે છે, જોખમ સમજાવે છે અને સુરક્ષિત નિર્ણય લેવામાં મદદ કરે છે.
+SafeX AI will list scanned messages here as they arrive.|SafeX AI जाँचे गए संदेश यहाँ दिखाएगा।|SafeX AI તપાસેલા સંદેશા અહીં બતાવશે.
+Requires SafeX AI as the default browser|SafeX AI को डिफ़ॉल्ट लिंक ऐप बनाना ज़रूरी है|SafeX AIને મૂળભૂત લિંક ઍપ બનાવવું જરૂરી છે
+To enable this feature, set SafeX AI as your default browser|यह सुविधा चालू करने के लिए SafeX AI को डिफ़ॉल्ट लिंक ऐप बनाएँ|આ સુવિધા ચાલુ કરવા માટે SafeX AIને મૂળભૂત લિંક ઍપ બનાવો
+Default browser required|डिफ़ॉल्ट लिंक ऐप ज़रूरी है|મૂળભૂત લિંક ઍપ જરૂરી છે
+Detects credential requests, financial pressure and suspicious links in English, Hindi and Gujarati.|अंग्रेज़ी, हिन्दी और गुजराती में गोपनीय जानकारी की माँग, पैसे का दबाव और संदिग्ध लिंक पहचानता है।|અંગ્રેજી, હિન્દી અને ગુજરાતીમાં ગોપનીય માહિતીની માગ, પૈસાનું દબાણ અને શંકાસ્પદ લિંક ઓળખે છે.
+Screenshots are read offline in English, Hindi and Gujarati; unclear images may need a retry.|अंग्रेज़ी, हिन्दी और गुजराती स्क्रीनशॉट ऑफ़लाइन पढ़े जाते हैं; अस्पष्ट तस्वीर फिर आज़मानी पड़ सकती है।|અંગ્રેજી, હિન્દી અને ગુજરાતી સ્ક્રીનશૉટ ઑફલાઇન વંચાય છે; અસ્પષ્ટ છબી ફરી અજમાવવી પડી શકે છે.
+Sample analysis|उदाहरण की जाँच|ઉદાહરણની તપાસ
+Offline by design|ऑफ़लाइन सुरक्षा के लिए बनाया गया|ઑફલાઇન સુરક્ષા માટે બનાવેલું
+Private. Clear. In your language.|निजी। स्पष्ट। आपकी भाषा में।|ખાનગી. સ્પષ્ટ. તમારી ભાષામાં.
+message|संदेश|સંદેશ
+link|लिंक|લિંક
+file|फ़ाइल|ફાઇલ
+screenshot|स्क्रीनशॉट|સ્ક્રીનશૉટ
+qr code|क्यूआर कोड|ક્યુઆર કોડ
+SafeX AI logo|SafeX AI का लोगो|SafeX AIનો લોગો
+synthetic sample|कृत्रिम उदाहरण|કૃત્રિમ ઉદાહરણ
+Emerald|हरा|લીલું
+Reasons|कारण|કારણો
+Reasons:|कारण:|કારણો:
+A practical next step for the user|आपके लिए उपयोगी अगला कदम|તમારા માટે ઉપયોગી આગળનું પગલું
+Deep-dive view of the selected detection with guidance for response.|चुनी हुई चेतावनी का विवरण और आगे क्या करें इसकी सलाह।|પસંદ કરેલી ચેતવણીની વિગતો અને આગળ શું કરવું તેની સલાહ.
+Review the sender and avoid tapping any links inside.|भेजने वाले की जाँच करें और संदेश के लिंक न खोलें।|મોકલનારની તપાસ કરો અને સંદેશાની લિંક ન ખોલો.
+Image scanning unavailable|तस्वीर की जाँच उपलब्ध नहीं है|છબીની તપાસ ઉપલબ્ધ નથી
+Message scanning unavailable|संदेश की जाँच उपलब्ध नहीं है|સંદેશની તપાસ ઉપલબ્ધ નથી
+Invalid URL|अमान्य लिंक|અમાન્ય લિંક
+Scan still in progress.|जाँच अभी जारी है।|તપાસ હજી ચાલુ છે.
+Offline language model could not be opened.|ऑफ़लाइन भाषा मॉडल खुल नहीं सका।|ઑફલાઇન ભાષા મૉડલ ખૂલી શક્યું નથી.
+Offline language model could not be prepared.|ऑफ़लाइन भाषा मॉडल तैयार नहीं हो सका।|ઑફલાઇન ભાષા મૉડલ તૈયાર થઈ શક્યું નથી.
+Detected ${triggered.size} file risk signal(s): $reasons.|फ़ाइल में %1$s जोखिम संकेत मिले: %2$s।|ફાઇલમાં %1$s જોખમના સંકેત મળ્યા: %2$s.
+Detected ${triggered.size} link risk signal(s): $reasons.|लिंक में %1$s जोखिम संकेत मिले: %2$s।|લિંકમાં %1$s જોખમના સંકેત મળ્યા: %2$s.
+${analysis.explanation} Type: $fileType|%1$s प्रकार: %2$s|%1$s પ્રકાર: %2$s
+$summary Evidence: $detail.|%1$s कारण: %2$s।|%1$s કારણ: %2$s.
+$summary. Status: ${status.displayLabel()}. Risk: ${risk.displayLabel()}. Date: $date|%1$s। स्थिति: %2$s। जोखिम: %3$s। तारीख: %4$s|%1$s. સ્થિતિ: %2$s. જોખમ: %3$s. તારીખ: %4$s
+$title $percentage% complete. $subtitle|%1$s %2$s% पूरा। %3$s|%1$s %2$s% પૂર્ણ. %3$s
+$title at $time|%1$s • %2$s|%1$s • %2$s
+${state.displayLabel()} protection status. $title. $description|सुरक्षा स्थिति: %1$s। %2$s। %3$s|સુરક્ષાની સ્થિતિ: %1$s. %2$s. %3$s
+Step $stepNumber. $title. ${subtitle ?: state.name}|चरण %1$s। %2$s। %3$s|પગલું %1$s. %2$s. %3$s
+Short link hides its final destination; it is not automatically fraudulent|छोटा लिंक अपना अंतिम पता छिपाता है; यह अपने आप धोखाधड़ी का प्रमाण नहीं है|ટૂંકો લિંક તેનું અંતિમ સરનામું છુપાવે છે; તે આપમેળે છેતરપિંડીનો પુરાવો નથી
+Numeric host uses an unusual IP address encoding|लिंक में आईपी पते को असामान्य तरीके से लिखा गया है|લિંકમાં આઇપી સરનામું અસામાન્ય રીતે લખાયું છે
+Redirect destination is deeply encoded, hidden in Base64, or requests an unsafe handoff|रीडायरेक्ट का पता कई बार एन्कोड किया गया है, Base64 में छिपा है, या असुरक्षित ऐप क्रिया माँगता है|રીડાયરેક્ટનું સરનામું ઘણી વાર એન્કોડ થયું છે, Base64 માં છુપાયું છે અથવા અસુરક્ષિત એપ ક્રિયા માંગે છે
+Link downloads executable content or disguises a program as a document; file contents were not inspected|लिंक प्रोग्राम डाउनलोड करता है या उसे दस्तावेज़ जैसा दिखाता है; फ़ाइल की सामग्री नहीं जाँची गई|લિંક પ્રોગ્રામ ડાઉનલોડ કરે છે અથવા તેને દસ્તાવેજ જેવો દેખાડે છે; ફાઇલની અંદરની સામગ્રી તપાસાઈ નથી
+Domain combines sensitive-action cues or deep nesting with an account-action path|डोमेन संवेदनशील काम के संकेतों को जोड़ता है या खाते की क्रिया के साथ बहुत सारे उपडोमेन इस्तेमाल करता है|ડોમેન સંવેદનશીલ ક્રિયાના સંકેતો જોડે છે અથવા ખાતાની ક્રિયા સાથે ઘણા પેટા ડોમેન વાપરે છે
+Trusted brand text appears in the path, query, or fragment instead of the actual destination host|असली वेबसाइट के डोमेन की जगह पथ, पैरामीटर या अंतिम हिस्से में भरोसेमंद ब्रांड का नाम दिखाया गया है|અસલી વેબસાઇટના ડોમેનને બદલે પથ, પરિમાણ અથવા અંતિમ ભાગમાં વિશ્વસનીય બ્રાન્ડનું નામ બતાવ્યું છે
+Message contains a malformed or unsupported web link; its destination could not be verified|संदेश में गलत या असमर्थित वेब लिंक है; उसका पता सत्यापित नहीं हो सका|સંદેશમાં ખોટો અથવા અસમર્થિત વેબ લિંક છે; તેનું સરનામું ચકાસી શકાયું નથી
+Content requests executable data or an app handoff instead of an inspectable web link|सामग्री जाँच योग्य वेब लिंक की जगह चलने वाला डेटा या ऐप खोलने की क्रिया माँगती है|સામગ્રી તપાસી શકાય તેવા વેબ લિંકને બદલે ચલાવી શકાય તેવો ડેટા અથવા એપ ખોલવાની ક્રિયા માંગે છે
+URL structure, visible encoded destinations and local snapshot. No webpage fetch or redirect following; clean-looking links can still be fraudulent.|लिंक की बनावट, दिखाई देने वाले एन्कोड किए पते और स्थानीय सूची जाँची गई। वेब पेज या रीडायरेक्ट नहीं खोले गए; सामान्य दिखने वाले लिंक भी धोखाधड़ी हो सकते हैं।|લિંકની રચના, દેખાતા એન્કોડ સરનામાં અને સ્થાનિક યાદી તપાસાઈ. વેબ પેજ કે રીડાયરેક્ટ ખોલાયા નથી; સામાન્ય દેખાતા લિંક પણ છેતરપિંડી હોઈ શકે છે.
+Hidden Short-Link Destination|छोटे लिंक का छिपा पता|ટૂંકા લિંકનું છુપાયેલું સરનામું
+Disguised Numeric Host|छिपाया गया संख्यात्मक डोमेन|છુપાવેલું આંકડાવાળું ડોમેન
+Layered or Encoded Destination|कई स्तरों में छिपा या एन्कोड किया पता|ઘણા સ્તરોમાં છુપાયેલું અથવા એન્કોડ કરેલું સરનામું
+Executable or Disguised Download|प्रोग्राम या छिपाया गया डाउनलोड|પ્રોગ્રામ અથવા છુપાવેલું ડાઉનલોડ
+Combined Sensitive-Action Host Cues|डोमेन में संवेदनशील क्रिया के मिले-जुले संकेत|ડોમેનમાં સંવેદનશીલ ક્રિયાના જોડાયેલા સંકેતો
+Trusted Brand Outside Actual Host|असली डोमेन से बाहर भरोसेमंद ब्रांड का नाम|અસલી ડોમેનની બહાર વિશ્વસનીય બ્રાન્ડનું નામ
+Punycode domain could not be decoded by the local IDN parser|स्थानीय अंतरराष्ट्रीय डोमेन जाँच इस Punycode नाम को पढ़ नहीं सकी|સ્થાનિક આંતરરાષ્ટ્રીય ડોમેન તપાસ આ Punycode નામ વાંચી શકી નથી
+Message has more than eight distinct links; additional destinations were not analyzed|संदेश में आठ से अधिक अलग लिंक हैं; अतिरिक्त पतों की जाँच नहीं हुई|સંદેશમાં આઠથી વધુ અલગ લિંક છે; વધારાના સરનામાંની તપાસ થઈ નથી
+On-device URL model • context limited|डिवाइस पर लिंक मॉडल • इस संदर्भ में सीमित कवरेज|ઉપકરણ પર લિંક મોડેલ • આ સંદર્ભમાં મર્યાદિત કવરેજ
+Understand this destination|इस गंतव्य को समझें|આ ગંતવ્યને સમજો
+Website domain|वेबसाइट का डोमेन|વેબસાઇટનું ડોમેન
+Full host|पूरा होस्ट|સંપૂર્ણ હોસ્ટ
+The website domain identifies the destination. Brand names elsewhere in a link do not prove ownership.|वेबसाइट का डोमेन गंतव्य बताता है। लिंक में दूसरी जगह लिखा ब्रांड नाम स्वामित्व का प्रमाण नहीं है।|વેબસાઇટનું ડોમેન ગંતવ્ય ઓળખાવે છે. લિંકમાં અન્ય જગ્યાએ લખેલું બ્રાન્ડ નામ માલિકીનો પુરાવો નથી.
+International spelling|अंतरराष्ट्रीय वर्तनी|આંતરરાષ્ટ્રીય જોડણી
+International characters can resemble another brand. Compare both spellings carefully.|अंतरराष्ट्रीय अक्षर दूसरे ब्रांड जैसे दिख सकते हैं। दोनों वर्तनियों की ध्यान से तुलना करें।|આંતરરાષ્ટ્રીય અક્ષરો અન્ય બ્રાન્ડ જેવા દેખાઈ શકે છે. બંને જોડણી ધ્યાનથી સરખાવો.
+HTTPS encrypts the connection; it does not prove that a website is legitimate.|HTTPS कनेक्शन को एन्क्रिप्ट करता है; यह वेबसाइट की प्रामाणिकता का प्रमाण नहीं है।|HTTPS કનેક્શનને એન્ક્રિપ્ટ કરે છે; તે વેબસાઇટ વિશ્વસનીય હોવાનો પુરાવો નથી.
+This link uses HTTP. Information entered there may not be protected in transit.|यह लिंक HTTP का उपयोग करता है। वहाँ दर्ज जानकारी भेजते समय सुरक्षित नहीं हो सकती।|આ લિંક HTTP વાપરે છે. ત્યાં દાખલ કરેલી માહિતી મોકલતી વખતે સુરક્ષિત ન હોઈ શકે.
+Text before @ is login information, not the destination website.|@ से पहले का पाठ लॉगिन जानकारी है, गंतव्य वेबसाइट नहीं।|@ પહેલાંનું લખાણ લૉગિનની માહિતી છે, ગંતવ્ય વેબસાઇટ નથી.
+The destination is a numeric network address, not a named website.|गंतव्य एक संख्यात्मक नेटवर्क पता है, नाम वाली वेबसाइट नहीं।|ગંતવ્ય આંકડાકીય નેટવર્ક સરનામું છે, નામ ધરાવતી વેબસાઇટ નથી.
+Other destinations written inside this link|इस लिंक के अंदर लिखे अन्य गंतव्य|આ લિંકમાં લખેલાં અન્ય ગંતવ્યો
+Embedded host|लिंक में शामिल होस्ट|લિંકમાં સમાવિષ્ટ હોસ્ટ
+These are visible instructions only. SafeX AI has not followed redirects or opened the page.|ये केवल दिखाई देने वाले निर्देश हैं। SafeX AI ने रीडायरेक्ट का अनुसरण या पेज को नहीं खोला है।|આ માત્ર દેખાતી સૂચનાઓ છે. SafeX AI એ રીડાયરેક્ટ અનુસર્યા નથી કે પાનું ખોલ્યું નથી.
+Review this UPI payment|इस UPI भुगतान की समीक्षा करें|આ UPI ચુકવણીની સમીક્ષા કરો
+Payment address|भुगतान का पता|ચુકવણીનું સરનામું
+Not readable|पढ़ने योग्य नहीं|વાંચી શકાય તેમ નથી
+Name supplied by QR • unverified|QR में दिया नाम • अप्रमाणित|QR માં આપેલું નામ • ચકાસાયેલું નથી
+Not supplied|दिया नहीं गया|આપેલું નથી
+Requested amount|माँगी गई राशि|માગેલી રકમ
+Not fixed in QR|QR में राशि तय नहीं है|QR માં રકમ નક્કી નથી
+SafeX AI cannot verify the bank account or recipient identity offline. Confirm the bank-verified name and final amount in your trusted payment app.|SafeX AI ऑफलाइन बैंक खाते या प्राप्तकर्ता की पहचान सत्यापित नहीं कर सकता। अपने भरोसेमंद भुगतान ऐप में बैंक द्वारा सत्यापित नाम और अंतिम राशि की पुष्टि करें।|SafeX AI ઑફલાઇન બેંક ખાતું કે પ્રાપ્તકર્તાની ઓળખ ચકાસી શકતું નથી. તમારી વિશ્વસનીય ચુકવણી ઍપમાં બેંક દ્વારા ચકાસેલું નામ અને અંતિમ રકમની ખાતરી કરો.
+Scanning a payment QR is not necessary to receive money. Never enter a UPI PIN to receive a payment.|पैसे प्राप्त करने के लिए भुगतान QR स्कैन करना आवश्यक नहीं है। भुगतान प्राप्त करने के लिए कभी UPI पिन दर्ज न करें।|પૈસા મેળવવા માટે ચુકવણીનો QR સ્કેન કરવાની જરૂર નથી. ચુકવણી મેળવવા ક્યારેય UPI PIN દાખલ ન કરો.
+Hide comparison|तुलना छिपाएँ|સરખામણી છુપાવો
+Compare expected details|अपेक्षित विवरण से तुलना करें|અપેક્ષિત વિગતો સરખાવો
+Expected UPI address|अपेक्षित UPI पता|અપેક્ષિત UPI સરનામું
+Expected amount • optional|अपेक्षित राशि • वैकल्पिक|અપેક્ષિત રકમ • વૈકલ્પિક
+The QR payment address does not match the recipient you expected.|QR का भुगतान पता आपके अपेक्षित प्राप्तकर्ता से मेल नहीं खाता।|QR નું ચુકવણી સરનામું તમારા અપેક્ષિત પ્રાપ્તકર્તા સાથે મેળ ખાતું નથી.
+The QR payment amount is missing or does not match the amount you expected.|QR में भुगतान राशि नहीं है या वह आपकी अपेक्षित राशि से मेल नहीं खाती।|QR માં ચુકવણીની રકમ નથી અથવા તે તમારી અપેક્ષિત રકમ સાથે મેળ ખાતી નથી.
+Matches the details you entered. Recipient identity is still unverified.|आपके दर्ज विवरण से मेल खाता है। प्राप्तकर्ता की पहचान अभी भी अप्रमाणित है।|તમે દાખલ કરેલી વિગતો સાથે મેળ ખાય છે. પ્રાપ્તકર્તાની ઓળખ હજુ ચકાસાયેલી નથી.
+Add mismatch to this result|इस परिणाम में अंतर जोड़ें|આ પરિણામમાં તફાવત ઉમેરો
+Check the situation|परिस्थिति की जाँच करें|પરિસ્થિતિ તપાસો
+A normal-looking link can still be used in a scam. Your answers can add caution; they never remove existing warnings.|सामान्य दिखने वाला लिंक भी धोखाधड़ी में इस्तेमाल हो सकता है। आपके उत्तर सावधानी बढ़ा सकते हैं; वे मौजूदा चेतावनियाँ कभी नहीं हटाते।|સામાન્ય દેખાતી લિંક પણ છેતરપિંડીમાં વપરાઈ શકે છે. તમારા જવાબો સાવચેતી વધારી શકે છે; તેઓ હાલની ચેતવણીઓ ક્યારેય દૂર કરતા નથી.
+Hide questions|प्रश्न छिपाएँ|પ્રશ્નો છુપાવો
+Add context|परिस्थिति की जानकारी जोड़ें|પરિસ્થિતિની માહિતી ઉમેરો
+Were you not expecting this message or request?|क्या आपको इस संदेश या अनुरोध की अपेक्षा नहीं थी?|શું તમને આ સંદેશ કે વિનંતીની અપેક્ષા નહોતી?
+Does it ask you to share an OTP, PIN or password?|क्या यह आपसे ओटीपी, पिन या पासवर्ड साझा करने को कहता है?|શું તે તમને OTP, PIN કે પાસવર્ડ આપવાનું કહે છે?
+Does it ask you to send money or pay a fee?|क्या यह आपसे पैसे भेजने या शुल्क देने को कहता है?|શું તે તમને પૈસા મોકલવાનું કે ફી ચૂકવવાનું કહે છે?
+Does it ask you to install an app or allow remote access?|क्या यह ऐप इंस्टॉल करने या रिमोट एक्सेस देने को कहता है?|શું તે ઍપ ઇન્સ્ટોલ કરવા કે રિમોટ ઍક્સેસ આપવા કહે છે?
+Are you being pressured to act immediately?|क्या आप पर तुरंत कार्रवाई करने का दबाव है?|શું તમારા પર તાત્કાલિક પગલું લેવાનું દબાણ છે?
+Select the statements that apply. Leave others unchecked.|लागू होने वाले कथन चुनें। बाकी को बिना चुने छोड़ें।|લાગુ પડતાં નિવેદનો પસંદ કરો. બાકીનાં પસંદ ન કરો.
+Saving review…|समीक्षा सहेजी जा रही है…|સમીક્ષા સાચવાઈ રહી છે…
+Update risk review|जोखिम समीक्षा अपडेट करें|જોખમની સમીક્ષા અપડેટ કરો
+I opened a link|मैंने लिंक खोला|મેં લિંક ખોલી
+Close the page. Do not enter information, download files or grant permissions.|पेज बंद करें। जानकारी दर्ज न करें, फ़ाइलें डाउनलोड न करें और अनुमतियाँ न दें।|પાનું બંધ કરો. માહિતી દાખલ ન કરો, ફાઇલો ડાઉનલોડ ન કરો કે પરવાનગીઓ ન આપો.
+If you only opened the page, that alone does not prove your device is compromised. Check for unexpected downloads and permission changes.|केवल पेज खोलना आपके डिवाइस के संक्रमित होने का प्रमाण नहीं है। अनपेक्षित डाउनलोड और अनुमति में बदलाव जाँचें।|માત્ર પાનું ખોલવું તમારા ઉપકરણ સાથે ચેડાં થયાનો પુરાવો નથી. અનપેક્ષિત ડાઉનલોડ અને પરવાનગીમાં ફેરફાર તપાસો.
+If you shared information, installed an app or paid, choose that situation below for additional steps.|यदि आपने जानकारी साझा की, ऐप इंस्टॉल किया या भुगतान किया, तो आगे के चरणों के लिए वह परिस्थिति चुनें।|જો તમે માહિતી આપી, ઍપ ઇન્સ્ટોલ કરી કે ચુકવણી કરી હોય, તો વધુ પગલાં માટે તે પરિસ્થિતિ પસંદ કરો.
+I shared a password|मैंने पासवर्ड साझा किया|મેં પાસવર્ડ આપ્યો
+From a device you trust, open the service's official app or type its website address yourself. Change the exposed password.|भरोसेमंद डिवाइस से सेवा का आधिकारिक ऐप खोलें या वेबसाइट का पता स्वयं लिखें। उजागर हुआ पासवर्ड बदलें।|વિશ્વસનીય ઉપકરણથી સેવાની સત્તાવાર ઍપ ખોલો અથવા તેનું વેબસાઇટ સરનામું જાતે લખો. જાહેર થયેલો પાસવર્ડ બદલો.
+Change that password anywhere else you reused it. Review active sessions and sign out unknown devices.|जहाँ भी वही पासवर्ड दोबारा इस्तेमाल किया है, उसे बदलें। सक्रिय सत्र जाँचें और अनजान डिवाइस से साइन आउट करें।|જ્યાં પણ એ જ પાસવર્ડ ફરી વાપર્યો હોય ત્યાં બદલો. સક્રિય સત્રો તપાસો અને અજાણ્યાં ઉપકરણોમાંથી સાઇન આઉટ કરો.
+Enable multi-factor authentication and check recovery email, phone number and recent account activity.|बहु-कारक प्रमाणीकरण चालू करें और रिकवरी ईमेल, फोन नंबर तथा हाल की खाता गतिविधि जाँचें।|બહુ-પરિબળ પ્રમાણીકરણ ચાલુ કરો અને પુનઃપ્રાપ્તિ ઇમેઇલ, ફોન નંબર તથા ખાતાની તાજેતરની પ્રવૃત્તિ તપાસો.
+I shared an OTP or PIN|मैंने ओटीपी या पिन साझा किया|મેં OTP કે PIN આપ્યો
+Contact the affected bank or service immediately through its official app or a number you already trust.|प्रभावित बैंक या सेवा से उसके आधिकारिक ऐप या पहले से भरोसेमंद नंबर द्वारा तुरंत संपर्क करें।|અસરગ્રસ્ત બેંક કે સેવાનો તેની સત્તાવાર ઍપ અથવા પહેલેથી વિશ્વસનીય નંબર દ્વારા તરત સંપર્ક કરો.
+Ask about securing the account and stopping unauthorized transactions. Change an exposed PIN through the official service.|खाते को सुरक्षित करने और अनधिकृत लेनदेन रोकने के बारे में पूछें। आधिकारिक सेवा के जरिए उजागर हुआ पिन बदलें।|ખાતું સુરક્ષિત કરવા અને અનધિકૃત વ્યવહારો રોકવા વિશે પૂછો. સત્તાવાર સેવા દ્વારા જાહેર થયેલો PIN બદલો.
+Check recent transactions. If money was lost, use the payment incident steps and report promptly.|हाल के लेनदेन जाँचें। यदि पैसे खोए हैं, तो भुगतान वाले चरणों का पालन करें और तुरंत रिपोर्ट करें।|તાજેતરના વ્યવહારો તપાસો. પૈસા ગુમાવ્યા હોય તો ચુકવણી સંબંધિત પગલાં અનુસરો અને તરત જાણ કરો.
+I installed an app|मैंने ऐप इंस्टॉल किया|મેં ઍપ ઇન્સ્ટોલ કરી
+Stop using the suspicious app. If someone is remotely controlling your phone, disconnect it from the internet.|संदिग्ध ऐप का उपयोग बंद करें। यदि कोई दूर से फोन नियंत्रित कर रहा है, तो फोन को इंटरनेट से अलग करें।|શંકાસ્પદ ઍપ વાપરવાનું બંધ કરો. કોઈ દૂરથી તમારો ફોન નિયંત્રિત કરતું હોય તો ફોનને ઇન્ટરનેટથી અલગ કરો.
+Use a different trusted device to contact your bank and secure affected accounts.|बैंक से संपर्क और प्रभावित खाते सुरक्षित करने के लिए दूसरा भरोसेमंद डिवाइस इस्तेमाल करें।|બેંકનો સંપર્ક કરવા અને અસરગ્રસ્ત ખાતાં સુરક્ષિત કરવા બીજું વિશ્વસનીય ઉપકરણ વાપરો.
+Review and revoke the app's accessibility and device administrator access, then uninstall it. Run Google Play Protect and install security updates.|ऐप की एक्सेसिबिलिटी और डिवाइस प्रशासक अनुमतियाँ जाँचकर हटाएँ, फिर ऐप अनइंस्टॉल करें। Google Play Protect चलाएँ और सुरक्षा अपडेट इंस्टॉल करें।|ઍપની ઍક્સેસિબિલિટી અને ઉપકરણ સંચાલક પરવાનગીઓ તપાસીને દૂર કરો, પછી ઍપ અનઇન્સ્ટોલ કરો. Google Play Protect ચલાવો અને સુરક્ષા અપડેટ ઇન્સ્ટોલ કરો.
+Preserve the app name and relevant evidence. SafeX AI cannot confirm or remove a device infection.|ऐप का नाम और संबंधित साक्ष्य सुरक्षित रखें। SafeX AI डिवाइस के संक्रमण की पुष्टि या उसे हटा नहीं सकता।|ઍપનું નામ અને સંબંધિત પુરાવા સાચવો. SafeX AI ઉપકરણના ચેપની ખાતરી કરી કે તેને દૂર કરી શકતું નથી.
+I sent money|मैंने पैसे भेजे|મેં પૈસા મોકલ્યા
+Contact your bank or payment provider immediately using official contact details. Report the transaction and ask what actions are available.|आधिकारिक संपर्क विवरण से बैंक या भुगतान प्रदाता से तुरंत संपर्क करें। लेनदेन की रिपोर्ट करें और उपलब्ध कदमों के बारे में पूछें।|સત્તાવાર સંપર્ક વિગતો દ્વારા બેંક કે ચુકવણી પ્રદાતાનો તરત સંપર્ક કરો. વ્યવહારની જાણ કરો અને ઉપલબ્ધ પગલાં વિશે પૂછો.
+In India, call 1930 for financial cyber fraud and submit a complaint at cybercrime.gov.in.|भारत में वित्तीय साइबर धोखाधड़ी के लिए 1930 पर कॉल करें और cybercrime.gov.in पर शिकायत दर्ज करें।|ભારતમાં નાણાકીય સાયબર છેતરપિંડી માટે 1930 પર કૉલ કરો અને cybercrime.gov.in પર ફરિયાદ નોંધાવો.
+Keep the transaction reference, date, amount and relevant messages. Never include passwords, PINs or OTPs in shared evidence.|लेनदेन संदर्भ, तारीख, राशि और संबंधित संदेश रखें। साझा किए गए साक्ष्य में पासवर्ड, पिन या ओटीपी कभी शामिल न करें।|વ્યવહારનો સંદર્ભ, તારીખ, રકમ અને સંબંધિત સંદેશા સાચવો. શેર કરેલા પુરાવામાં પાસવર્ડ, PIN કે OTP ક્યારેય સામેલ ન કરો.
+Do not pay anyone who promises to recover your money. Reporting does not guarantee recovery.|पैसे वापस दिलाने का वादा करने वाले को भुगतान न करें। रिपोर्ट करने से वापसी की गारंटी नहीं मिलती।|પૈસા પાછા અપાવવાનું વચન આપનારને ચુકવણી ન કરો. જાણ કરવાથી પૈસા પાછા મળવાની ખાતરી નથી.
+No app is available for this action.|इस कार्रवाई के लिए कोई ऐप उपलब्ध नहीं है।|આ પગલાં માટે કોઈ ઍપ ઉપલબ્ધ નથી.
+Take the next safe step|अगला सुरक्षित कदम उठाएँ|આગળનું સુરક્ષિત પગલું લો
+Choose what happened. These checklists work offline; calls and official websites open only when you choose them.|चुनें कि क्या हुआ। ये सूचियाँ ऑफलाइन काम करती हैं; कॉल और आधिकारिक वेबसाइट केवल आपके चुनने पर खुलती हैं।|શું થયું તે પસંદ કરો. આ યાદીઓ ઑફલાઇન કામ કરે છે; કૉલ અને સત્તાવાર વેબસાઇટ તમે પસંદ કરો ત્યારે જ ખૂલે છે.
+Official help in India|भारत में आधिकारिक सहायता|ભારતમાં સત્તાવાર મદદ
+1930 • financial cyber fraud helpline|1930 • वित्तीय साइबर धोखाधड़ी हेल्पलाइन|1930 • નાણાકીય સાયબર છેતરપિંડી હેલ્પલાઇન
+Open dialer • 1930|डायलर खोलें • 1930|ડાયલર ખોલો • 1930
+Open official reporting website|आधिकारिक रिपोर्टिंग वेबसाइट खोलें|સત્તાવાર જાણ કરવાની વેબસાઇટ ખોલો
+SafeX AI does not submit reports or call anyone automatically. Website access needs an internet connection in your browser.|SafeX AI अपने आप रिपोर्ट या कॉल नहीं करता। वेबसाइट खोलने के लिए ब्राउज़र में इंटरनेट कनेक्शन चाहिए।|SafeX AI આપમેળે જાણ કે કોઈને કૉલ કરતું નથી. વેબસાઇટ ખોલવા બ્રાઉઝરમાં ઇન્ટરનેટ જોડાણ જરૂરી છે.
+Sources: National Cybercrime Reporting Portal, NPCI and Google Account Help.|स्रोत: राष्ट्रीय साइबर अपराध रिपोर्टिंग पोर्टल, NPCI और Google खाता सहायता।|સ્રોત: રાષ્ટ્રીય સાયબર અપરાધ જાણ પોર્ટલ, NPCI અને Google ખાતા મદદ.
+Scan a QR code|QR कोड स्कैन करें|QR કોડ સ્કેન કરો
+Point your camera at a QR code. SafeX AI checks its contents before you open anything.|कैमरा QR कोड की ओर करें। SafeX AI कुछ खोलने से पहले उसकी सामग्री जाँचता है।|કેમેરો QR કોડ તરફ રાખો. SafeX AI કંઈ ખોલતાં પહેલાં તેની સામગ્રી તપાસે છે.
+Camera access was not granted. You can choose a QR image instead, or enable camera access in app settings.|कैमरे की अनुमति नहीं मिली। आप QR चित्र चुन सकते हैं या ऐप सेटिंग्स में कैमरे की अनुमति चालू कर सकते हैं।|કેમેરાની પરવાનગી મળી નથી. તમે QR ચિત્ર પસંદ કરી શકો છો અથવા ઍપ સેટિંગ્સમાં કેમેરાની પરવાનગી ચાલુ કરી શકો છો.
+Camera access is used only while this scanner is open. Frames are not saved.|कैमरा केवल यह स्कैनर खुला रहने पर इस्तेमाल होता है। फ्रेम सहेजे नहीं जाते।|આ સ્કેનર ખુલ્લું હોય ત્યારે જ કેમેરો વપરાય છે. ફ્રેમ સાચવાતી નથી.
+Allow camera access|कैमरे की अनुमति दें|કેમેરાની પરવાનગી આપો
+Open app settings|ऐप सेटिंग्स खोलें|ઍપ સેટિંગ્સ ખોલો
+Keep the code steady and well lit. Decoding works offline.|कोड को स्थिर और पर्याप्त रोशनी में रखें। कोड पढ़ना ऑफलाइन काम करता है।|કોડને સ્થિર અને પૂરતા પ્રકાશમાં રાખો. કોડ વાંચવાનું ઑફલાઇન કામ કરે છે.
+Choose a QR code to analyze|जाँचने के लिए QR कोड चुनें|તપાસવા QR કોડ પસંદ કરો
+Only the code you choose will be analyzed. No destination opens automatically.|केवल चुने हुए कोड की जाँच होगी। कोई गंतव्य अपने आप नहीं खुलता।|તમે પસંદ કરો તે કોડ જ તપાસાશે. કોઈ ગંતવ્ય આપમેળે ખૂલતું નથી.
+Scan again|फिर स्कैन करें|ફરી સ્કેન કરો
+Try again|फिर प्रयास करें|ફરી પ્રયાસ કરો
+Close camera|कैमरा बंद करें|કેમેરો બંધ કરો
+This QR code is too large to analyze. Choose a smaller code.|यह QR कोड जाँच के लिए बहुत बड़ा है। छोटा कोड चुनें।|આ QR કોડ તપાસવા માટે ખૂબ મોટો છે. નાનો કોડ પસંદ કરો.
+QR recognition failed. Try again or choose an image.|QR पहचान विफल हुई। फिर प्रयास करें या चित्र चुनें।|QR ઓળખ નિષ્ફળ થઈ. ફરી પ્રયાસ કરો અથવા ચિત્ર પસંદ કરો.
+Camera could not start. Choose a QR image instead.|कैमरा शुरू नहीं हो सका। इसके बजाय QR चित्र चुनें।|કેમેરો શરૂ થઈ શક્યો નથી. તેના બદલે QR ચિત્ર પસંદ કરો.
+You were not expecting this communication. Verify the sender independently.|आपको इस संदेश की अपेक्षा नहीं थी। भेजने वाले की पहचान स्वतंत्र रूप से जाँचें।|તમને આ સંદેશની અપેક્ષા નહોતી. મોકલનારની ઓળખ સ્વતંત્ર રીતે તપાસો.
+You reported a request for an OTP, PIN or password. Do not share these secrets.|आपने ओटीपी, पिन या पासवर्ड माँगे जाने की जानकारी दी। ये गोपनीय जानकारी साझा न करें।|તમે OTP, PIN કે પાસવર્ડ માંગ્યાની માહિતી આપી. આ ગુપ્ત વિગતો આપશો નહીં.
+You reported a payment request. Confirm its purpose and recipient independently.|आपने भुगतान अनुरोध की जानकारी दी। उसका उद्देश्य और प्राप्तकर्ता स्वतंत्र रूप से जाँचें।|તમે ચુકવણીની વિનંતીની માહિતી આપી. તેનો હેતુ અને પ્રાપ્તકર્તા સ્વતંત્ર રીતે ચકાસો.
+You reported an app installation or remote-access request. Verify it before proceeding.|आपने ऐप इंस्टॉल या रिमोट एक्सेस अनुरोध की जानकारी दी। आगे बढ़ने से पहले उसकी जाँच करें।|તમે ઍપ ઇન્સ્ટોલ કે રિમોટ ઍક્સેસની વિનંતીની માહિતી આપી. આગળ વધતાં પહેલાં તેની તપાસ કરો.
+You reported pressure to act quickly. Pause and verify the request.|आपने जल्दी कार्रवाई का दबाव बताया। रुकें और अनुरोध की जाँच करें।|તમે ઝડપથી પગલું લેવાનું દબાણ જણાવ્યું. થોભો અને વિનંતી તપાસો.
+Your answers add risk signals. Verify this request before acting.|आपके उत्तर जोखिम के संकेत जोड़ते हैं। कार्रवाई से पहले अनुरोध की जाँच करें।|તમારા જવાબો જોખમના સંકેતો ઉમેરે છે. પગલું લેતાં પહેલાં વિનંતી તપાસો.
+Pause. Contact the person or organization using a number or app you already trust.|रुकें। पहले से भरोसेमंद नंबर या ऐप से व्यक्ति या संस्था से संपर्क करें।|થોભો. પહેલેથી વિશ્વસનીય નંબર કે ઍપથી વ્યક્તિ અથવા સંસ્થાનો સંપર્ક કરો.
+Payment QR could not be read reliably. Do not use these details to make a payment.|भुगतान QR भरोसेमंद तरीके से नहीं पढ़ा जा सका। इन विवरण से भुगतान न करें।|ચુકવણીનો QR વિશ્વસનીય રીતે વાંચી શકાયો નથી. આ વિગતો વડે ચુકવણી ન કરો.
+A readable UPI address is missing. This payment format is not supported for recipient review.|पढ़ने योग्य UPI पता नहीं है। इस भुगतान प्रारूप में प्राप्तकर्ता की समीक्षा समर्थित नहीं है।|વાંચી શકાય એવું UPI સરનામું નથી. આ ચુકવણી સ્વરૂપમાં પ્રાપ્તકર્તાની સમીક્ષા સમર્થિત નથી.
+The QR contains an invalid payment amount.|QR में अमान्य भुगतान राशि है।|QR માં અમાન્ય ચુકવણીની રકમ છે.
+The payment currency is unsupported. Verify it independently.|भुगतान मुद्रा समर्थित नहीं है। उसे स्वतंत्र रूप से जाँचें।|ચુકવણીનું ચલણ સમર્થિત નથી. તેને સ્વતંત્ર રીતે ચકાસો.
+Urgent security warnings|तत्काल सुरक्षा चेतावनियाँ|તાત્કાલિક સુરક્ષા ચેતવણીઓ
+Security review warnings|सुरक्षा समीक्षा चेतावनियाँ|સુરક્ષા સમીક્ષા ચેતવણીઓ
+Warnings use a short SafeX AI tune. Sound and vibration remain under your control.|चेतावनियों में छोटी SafeX AI धुन बजती है। ध्वनि और कंपन आपके नियंत्रण में रहते हैं।|ચેતવણીઓમાં ટૂંકી SafeX AI ધૂન વાગે છે. અવાજ અને કંપન તમારા નિયંત્રણમાં રહે છે.
+SafeX AI • warning sound test|SafeX AI • चेतावनी ध्वनि परीक्षण|SafeX AI • ચેતવણીના અવાજની કસોટી
+This is a test notification. No threat was detected.|यह परीक्षण सूचना है। कोई खतरा नहीं मिला है।|આ કસોટીની સૂચના છે. કોઈ જોખમ મળ્યું નથી.
+Warning sound|चेतावनी की ध्वनि|ચેતવણીનો અવાજ
+Threat notifications use the SafeX AI warning tune. Android notification volume, channel settings and Do Not Disturb control playback.|खतरे की सूचनाओं में SafeX AI की चेतावनी धुन बजती है। Android सूचना ध्वनि, चैनल सेटिंग्स और डू नॉट डिस्टर्ब इसे नियंत्रित करते हैं।|જોખમની સૂચનાઓમાં SafeX AI ની ચેતવણી ધૂન વાગે છે. Android સૂચના અવાજ, ચેનલ સેટિંગ્સ અને ડુ નૉટ ડિસ્ટર્બ તેને નિયંત્રિત કરે છે.
+Test notification sent. If silent, check the channel sound and notification volume.|परीक्षण सूचना भेजी गई। आवाज न आए तो चैनल की ध्वनि और सूचना आवाज जाँचें।|કસોટીની સૂચના મોકલાઈ. અવાજ ન આવે તો ચેનલનો અવાજ અને સૂચના અવાજ તપાસો.
+Enable warning notifications before testing the sound.|ध्वनि जाँचने से पहले चेतावनी सूचनाएँ चालू करें।|અવાજ તપાસતાં પહેલાં ચેતવણીની સૂચનાઓ ચાલુ કરો.
+Test warning notification|चेतावनी सूचना की जाँच करें|ચેતવણીની સૂચના તપાસો
+Urgent warning sound settings|तत्काल चेतावनी ध्वनि सेटिंग्स|તાત્કાલિક ચેતવણી અવાજ સેટિંગ્સ
+Review warning sound settings|समीक्षा चेतावनी ध्वनि सेटिंग्स|સમીક્ષા ચેતવણી અવાજ સેટિંગ્સ
+Could not save this review. Try again.|यह समीक्षा नहीं सहेजी जा सकी। फिर प्रयास करें।|આ સમીક્ષા સાચવી શકાઈ નથી. ફરી પ્રયાસ કરો.
+I already clicked or shared information|मैंने पहले ही क्लिक किया या जानकारी साझा की|મેં પહેલેથી ક્લિક કર્યું કે માહિતી આપી
+Help after a scam|धोखाधड़ी के बाद सहायता|છેતરપિંડી પછી મદદ
+Scan with camera|कैमरे से स्कैन करें|કેમેરાથી સ્કેન કરો
+Analyze content|सामग्री की जाँच करें|સામગ્રી તપાસો
+Check a message, link, screenshot or QR code|संदेश, लिंक, स्क्रीनशॉट या QR कोड जाँचें|સંદેશ, લિંક, સ્ક્રીનશૉટ કે QR કોડ તપાસો
+Steps for clicks, shared secrets and payments|क्लिक, साझा गोपनीय जानकारी और भुगतान के लिए कदम|ક્લિક, આપેલી ગુપ્ત વિગતો અને ચુકવણી માટે પગલાં
+Live QR scan|कैमरे से QR जाँच|કેમેરાથી QR તપાસ
+QR content is empty or too long to analyze.|QR की सामग्री खाली है या जाँच के लिए बहुत लंबी है।|QR ની સામગ્રી ખાલી છે અથવા તપાસવા માટે ખૂબ લાંબી છે.
+
+This image has more than eight QR codes. Use the camera scanner to choose one code.|इस चित्र में आठ से अधिक QR कोड हैं। एक कोड चुनने के लिए कैमरा स्कैनर इस्तेमाल करें।|આ ચિત્રમાં આઠથી વધુ QR કોડ છે. એક કોડ પસંદ કરવા કેમેરા સ્કેનર વાપરો.
+Camera ready|कैमरा तैयार है|કેમેરો તૈયાર છે
+Currency|मुद्रा|ચલણ

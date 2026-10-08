@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-08",
+  "app": "SafeX AI",
+  "version": "1.2.0",
+  "jvm": {
+    "core": {
+      "tests": 51,
+      "failures": 0,
+      "errors": 0
+    },
+    "agents": {
+      "tests": 18,
+      "failures": 0,
+      "errors": 0
+    },
+    "ui": {
+      "tests": 3,
+      "failures": 0,
+      "errors": 0
+    },
+    "app": {
+      "tests": 228,
+      "failures": 0,
+      "errors": 0
+    }
+  },
+  "native": {
+    "passed": 12,
+    "failed": 0,
+    "api": 34,
+    "airplane_mode": true,
+    "suite_seconds": 48.356
+  },
+  "localization": {
+    "languages": [
+      "en",
+      "hi",
+      "gu"
+    ],
+    "strings_per_language": 466,
+    "matching_keys_and_placeholders": true
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 43
+  },
+  "apk_sha256": "2492c4c09fb25aba90b6ad47b18b908c952a64627411e6743254aaa8452c467f"
+}

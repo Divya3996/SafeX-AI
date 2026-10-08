@@ -1,0 +1,33 @@
+# Gradle
+.gradle/
+.gradle-home/
+.gradle-dist/
+.gradle-local/
+**/.gradle/
+**/.gradle-home/
+**/.gradle-dist/
+**/.gradle-local/
+
+# Build outputs
+build/
+**/build/
+
+# Android Studio
+.idea/
+*.iml
+
+# Local SDK
+local.properties
+
+# OS files
+.DS_Store
+Thumbs.db
+.kilo
+.gradle-lint-home/
+.kotlin/
+.gradle-home-codex
+
+# Downloaded URL research data and training dependencies (never ship raw URLs)
+models/cache/
+.url-training-venv/
+android-app/app/src/androidTest/assets/native-url-evaluation.json

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08151d">
+  <meta name="description" content="The complete SafeX AI mentor briefing: an offline, multilingual Android security assistant, its working features, validation evidence, development roadmap and hackathon demo.">
+  <title>SafeX AI — Mentor Briefing & Project Plan</title>
+  <link rel="icon" type="image/svg+xml" href="{{FAVICON}}">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to meeting plan</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+  <header class="mobile-header">
+    <a class="brand brand-mobile" href="#top"><img src="assets/safex-logo.svg" width="36" height="36" alt=""><span>SafeX <strong>AI</strong></span></a>
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>Contents</span></button>
+  </header>
+  <div id="nav-backdrop" class="nav-backdrop" hidden></div>
+  <aside class="sidebar" id="sidebar" aria-label="Meeting plan navigation">
+    <div class="sidebar-top"><a class="brand" href="#top"><img src="assets/safex-logo.svg" width="46" height="46" alt=""><span>SafeX <strong>AI</strong></span></a><button id="menu-close" class="menu-close" type="button" aria-label="Close contents">×</button></div>
+    <div class="brief-label"><span>PROJECT BRIEFING</span></div>
+    <nav class="section-nav" aria-label="Contents">{{NAV}}</nav>
+    <div class="sidebar-footer"><span class="version-chip">v1.2.0</span><span>Working Android prototype</span><small>Prepared 8 October 2026</small></div>
+  </aside>
+  <main id="main" tabindex="-1">
+    <div class="page-shell" id="top">
+      <div class="document-toolbar"><div class="breadcrumb">SafeX AI <span>/</span> Mentor briefing</div><div class="toolbar-actions"><a class="button button-quiet" href="resources/mentor-meeting-plan.md" download="SafeX-AI-Mentor-Plan.md"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 15v5h14v-5"/></svg>Download plan</a><button id="print-plan" class="button button-quiet" type="button" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M7 8V3h10v5M7 17H4V9h16v8h-3M7 14h10v7H7z"/></svg>Print / PDF</button></div></div>
+      <header class="hero">
+        <div class="hero-main"><div class="hero-kicker"><span class="edition">MEETING EDITION</span><span>08 OCT 2026</span></div><h1>Security that stays<br>on your <em>device.</em></h1><p class="hero-summary">The complete SafeX AI project plan.<br>Private analysis. Clear explanations. Three languages.</p><div class="language-line"><span>English</span><span lang="hi">हिन्दी</span><span lang="gu">ગુજરાતી</span></div></div>
+        <div class="hero-aside"><img class="hero-logo" src="assets/safex-logo.svg" width="106" height="106" alt="SafeX AI shield with an X and connected intelligence nodes"><span class="prototype-tag">WORKING PROTOTYPE</span><p>Built to help people recognize suspicious requests before they act.</p><div class="hero-note"><span>Next milestone</span><strong>Independent accuracy<br> and real-device evaluation</strong></div></div>
+      </header>
+      <div class="evidence-strip" aria-label="Recorded project facts"><div><strong>300</strong><span>JVM tests passed</span></div><div><strong>12</strong><span>Offline Android tests passed</span></div><div><strong>3</strong><span>Supported languages</span></div><div><strong>0</strong><span>Internet permissions</span></div></div>
+      <div class="meeting-callout"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7v1"/></svg><p><strong>Today’s decision:</strong> agree on the hackathon scope, evaluation method and next priorities. Passing software tests establish tested functionality; independent detection accuracy still needs validation.</p></div>
+      <div class="document-content">{{SECTIONS}}</div>
+      <footer class="page-footer"><a class="brand brand-footer" href="#top"><img src="assets/safex-logo.svg" width="32" height="32" alt=""><span>SafeX <strong>AI</strong></span></a><p>Mentor meeting plan · 8 October 2026<br>Current build: 1.2.0 · Working hackathon prototype</p><a href="#top" class="back-top">Back to top</a></footer>
+    </div>
+  </main>
+</body>
+</html>

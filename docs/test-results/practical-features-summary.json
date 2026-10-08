@@ -1,0 +1,125 @@
+{
+  "version": "1.4.0",
+  "version_code": 5,
+  "verified_at_utc": "2026-10-08T17:47:31.051906+00:00",
+  "features": [
+    "Foreground live QR capture with explicit private analysis",
+    "Offline UPI detail parsing and expected-detail comparison",
+    "Actual website domain explanations",
+    "Persisted contextual warnings that cannot lower existing risk",
+    "Offline incident-help checklists",
+    "Bundled warning tune and user-controlled notification channels"
+  ],
+  "unit_tests": {
+    "totals": {
+      "tests": 476,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 3,
+      "passed": 473
+    },
+    "modules": {
+      "app": {
+        "tests": 387,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 3,
+        "passed": 384
+      },
+      "core": {
+        "tests": 68,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 68
+      },
+      "ui": {
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 3
+      },
+      "agents": {
+        "tests": 18,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 18
+      }
+    },
+    "skipped_reason": "Three opt-in URL research export tests; not part of the ordinary test run"
+  },
+  "native_tests": {
+    "passed": 25,
+    "failures": 0,
+    "duration_seconds": 107.545,
+    "device": "SentinelDemo Android emulator",
+    "airplane_mode": true,
+    "real_camera_frame_decode": true,
+    "camera_fixture_flag": "safexCameraFixture=true",
+    "large_history_regression": "400 records, each with 8000 content characters, during concurrent reads and record replacements"
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 48,
+    "issue_counts": {
+      "UnusedAttribute": 1,
+      "GradleDependency": 3,
+      "LogNotTimber": 14,
+      "PluralsCandidate": 1,
+      "ObsoleteSdkInt": 2,
+      "Overdraw": 1,
+      "UnusedResources": 13,
+      "ButtonStyle": 2,
+      "UseTomlInstead": 11
+    }
+  },
+  "localization": {
+    "languages": [
+      "English",
+      "Hindi",
+      "Gujarati"
+    ],
+    "catalog_strings": 607,
+    "keys_and_placeholders": "matched",
+    "largest_text_scale_native_ui_test": 1.5
+  },
+  "privacy": {
+    "internet_permission": false,
+    "camera_hardware_optional": true,
+    "camera_frames_saved_or_uploaded": false,
+    "bank_recipient_verification": false
+  },
+  "warning_sound": {
+    "asset": "android-app/core/src/main/res/raw/safex_warning.wav",
+    "android_wav_decoding": "passed",
+    "channel_sound_uri": "passed",
+    "actual_threat_notification_posting": "passed",
+    "physical_speaker_playback": "Not verified; emulator host audio backend unavailable. Check Settings → Warning sound → Test warning notification on a phone."
+  },
+  "apk": {
+    "path": "android-app/app/build/outputs/apk/debug/SafeX-AI-1.4.0-debug.apk",
+    "bytes": 134223382,
+    "sha256": "391e67778c5bf345949a19954fff76b687bb24de5503a952b83d2a9f546e6baa",
+    "build_type": "debug"
+  },
+  "screenshots": [
+    "docs/screenshots/practical-features/camera-qr-choice.png",
+    "docs/screenshots/practical-features/context-review.png",
+    "docs/screenshots/practical-features/incident-help.png",
+    "docs/screenshots/practical-features/upi-review-en-150.png",
+    "docs/screenshots/practical-features/upi-review-gu-150.png",
+    "docs/screenshots/practical-features/upi-review-hi-150.png"
+  ],
+  "limitations": [
+    "UPI parsing and comparisons do not verify bank ownership or initiate payment.",
+    "Functional regression checks are not a new independent phishing accuracy benchmark.",
+    "Existing URL model and its documented evaluation limits are unchanged."
+  ],
+  "evidence": [
+    "docs/test-results/practical-features-unit-build.txt",
+    "docs/test-results/practical-features-final-build.txt",
+    "docs/test-results/practical-features-native.txt"
+  ]
+}

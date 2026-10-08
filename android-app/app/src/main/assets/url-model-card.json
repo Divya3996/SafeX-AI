@@ -1,0 +1,7 @@
+{
+  "version": "url-phiusiil-augmented-v2",
+  "warning_threshold": 0.4296,
+  "kind": "URL-only structural classifier; not calibrated scam probability",
+  "training_source": "PhiUSIIL, Prasad and Chandra (2024), UCI dataset 967, CC BY 4.0",
+  "sha256": "79c67a5bfd775d36141a345d5e3b49a253215c3d484fe3dc3eb4ddbd54f1aba1"
+}

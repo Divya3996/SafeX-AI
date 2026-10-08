@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SafeX AI</string>
+    <string name="text_selection_analyze_label">Analyze with SafeX AI</string>
+    <string name="critical_alert_title">SUSPICIOUS MESSAGE DETECTED</string>
+    <string name="critical_alert_score">Scam Score: %1$d</string>
+    <string name="critical_alert_reasons_label">Reasons</string>
+    <string name="critical_alert_no_reasons">No detailed reasons were provided.</string>
+    <string name="critical_alert_countdown">Safety unlock in %1$d seconds</string>
+    <string name="critical_alert_go_back">GO BACK</string>
+    <string name="critical_alert_view_details">VIEW DETAILS</string>
+    <string name="critical_alert_icon_description">Critical warning</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sentinel_green">#2E7D32</color>
+    <color name="sentinel_background">#121212</color>
+    <color name="sentinel_launcher_background">#08151D</color>
+    <color name="sentinel_launcher_accent">#35DEBC</color>
+    <color name="sentinel_launcher_check">#EFF9F8</color>
+</resources>

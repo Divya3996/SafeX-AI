@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SafeX AI: a protective shield, an X to stop threats, and connected intelligence nodes">
+<path fill="#35DEBC" d="M32,5 L55,14 V31 C55,46 45,56 32,61 C19,56 9,46 9,31 V14 Z"/>
+<path fill="#08151D" d="M32,10 L50,17 V31 C50,43 42,52 32,56 C22,52 14,43 14,31 V17 Z"/>
+<path fill="#EFF9F8" d="M21,24 L26,24 L32,32 L38,24 L43,24 L35,35 L43,46 L38,46 L32,38 L26,46 L21,46 L29,35 Z"/>
+<path fill="#35DEBC" d="M31,14 H33 V22 H31 Z M23,18 H32 V20 H23 Z M32,18 H41 V20 H32 Z"/>
+<g fill="#35DEBC"><circle cx="23" cy="19" r="2"/><circle cx="41" cy="19" r="2"/><circle cx="32" cy="15" r="2"/></g>
+</svg>

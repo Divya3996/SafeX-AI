@@ -1,0 +1,155 @@
+{
+  "version": "url-phiusiil-v1",
+  "seed": 20261008,
+  "source_url": "https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset",
+  "license": "CC BY 4.0",
+  "dataset_zip_sha256": "0a639fd03aea6308c5b1c10c92aa23c2ce1505447a9137271865cd0badc9a59a",
+  "input_features": "15 production Kotlin URL features only; no HTML/title/reputation/dataset probability features",
+  "excluded_unparseable_or_oversized": 0,
+  "split_method": "SHA-256 of public-suffix-aware registrable domain; 70/15/15 buckets",
+  "splits": {
+    "train": {
+      "rows": 164568,
+      "phishing": 70132,
+      "benign": 94436,
+      "groups": 137338
+    },
+    "validation": {
+      "rows": 35883,
+      "phishing": 15534,
+      "benign": 20349,
+      "groups": 29375
+    },
+    "test": {
+      "rows": 35344,
+      "phishing": 15279,
+      "benign": 20065,
+      "groups": 29333
+    }
+  },
+  "threshold": 0.07597263157894737,
+  "threshold_selection": "Validation only: maximize recall subject to at most 1% model-only false-positive rate",
+  "validation": {
+    "tp": 15436,
+    "fp": 194,
+    "fn": 98,
+    "tn": 20155,
+    "recall": 0.9936912578859276,
+    "precision": 0.9875879718490084,
+    "false_positive_rate": 0.009533638016610153,
+    "accuracy": 0.9918624418248195
+  },
+  "test": {
+    "tp": 15177,
+    "fp": 178,
+    "fn": 102,
+    "tn": 19887,
+    "recall": 0.993324170430002,
+    "precision": 0.9884076847932269,
+    "false_positive_rate": 0.008871168701719412,
+    "accuracy": 0.992077863286555
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "validation_loss": 0.0952567383646965
+    },
+    {
+      "epoch": 2,
+      "validation_loss": 0.043455176055431366
+    },
+    {
+      "epoch": 3,
+      "validation_loss": 0.028974443674087524
+    },
+    {
+      "epoch": 4,
+      "validation_loss": 0.024112729355692863
+    },
+    {
+      "epoch": 5,
+      "validation_loss": 0.022722981870174408
+    },
+    {
+      "epoch": 6,
+      "validation_loss": 0.02191789261996746
+    },
+    {
+      "epoch": 7,
+      "validation_loss": 0.021098120138049126
+    },
+    {
+      "epoch": 8,
+      "validation_loss": 0.021135201677680016
+    },
+    {
+      "epoch": 9,
+      "validation_loss": 0.020433207973837852
+    },
+    {
+      "epoch": 10,
+      "validation_loss": 0.02061946503818035
+    },
+    {
+      "epoch": 11,
+      "validation_loss": 0.020412402227520943
+    },
+    {
+      "epoch": 12,
+      "validation_loss": 0.02023160271346569
+    },
+    {
+      "epoch": 13,
+      "validation_loss": 0.02039191499352455
+    },
+    {
+      "epoch": 14,
+      "validation_loss": 0.020046185702085495
+    },
+    {
+      "epoch": 15,
+      "validation_loss": 0.01995367370545864
+    },
+    {
+      "epoch": 16,
+      "validation_loss": 0.020278099924325943
+    },
+    {
+      "epoch": 17,
+      "validation_loss": 0.01983337290585041
+    },
+    {
+      "epoch": 18,
+      "validation_loss": 0.020164892077445984
+    }
+  ],
+  "model_sha256": "c0a0e866f50b6c493be06dcdf659c8afbb9ac1cbbded3a8c3e7d8633d84fb61b",
+  "limitations": [
+    "Historical single-source dataset; not current-world accuracy.",
+    "Dataset transport/source biases can inflate results.",
+    "URL text cannot reveal compromised pages, opaque redirects, consent abuse or changing website contents.",
+    "Authored pattern corpus is a separate regression suite and is not independent evaluation data."
+  ],
+  "legacy_pipeline_test": {
+    "tp": 14129,
+    "fp": 124,
+    "fn": 1150,
+    "tn": 19941,
+    "recall": 0.9247332940637476,
+    "precision": 0.9913000771767347,
+    "false_positive_rate": 0.006179915275355096,
+    "accuracy": 0.9639542779538253
+  },
+  "new_pipeline_test": {
+    "tp": 15177,
+    "fp": 187,
+    "fn": 102,
+    "tn": 19878,
+    "recall": 0.993324170430002,
+    "precision": 0.9878286904451966,
+    "false_positive_rate": 0.009319710939446798,
+    "accuracy": 0.9918232231779086
+  },
+  "disposition": "REJECTED: ordinary non-www/login/native-script benign controls over-warned; not shipped",
+  "authored_benign_control_warnings": 27
+}

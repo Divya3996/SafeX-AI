@@ -1,0 +1,180 @@
+{
+  "version": "url-phiusiil-augmented-v2",
+  "seed": 20261008,
+  "source_url": "https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset",
+  "license": "CC BY 4.0",
+  "dataset_zip_sha256": "0a639fd03aea6308c5b1c10c92aa23c2ce1505447a9137271865cd0badc9a59a",
+  "input_features": "15 production Kotlin URL features only; no HTML/title/reputation/dataset probability features",
+  "excluded_unparseable_or_oversized": 0,
+  "split_method": "SHA-256 of public-suffix-aware registrable domain; 70/15/15 buckets",
+  "splits": {
+    "train": {
+      "rows": 422014,
+      "phishing": 138762,
+      "benign": 283252,
+      "groups": 137338
+    },
+    "validation": {
+      "rows": 91968,
+      "phishing": 30933,
+      "benign": 61035,
+      "groups": 29375
+    },
+    "test": {
+      "rows": 90567,
+      "phishing": 30382,
+      "benign": 60185,
+      "groups": 29333
+    }
+  },
+  "threshold": 0.4296,
+  "threshold_selection": "Validation only: maximize recall with at most 1% model-only false positives in original and augmented validation sets separately",
+  "augmentation": "Mechanical www/root alternatives and benign path/query variants; synthetic labels, not live site observations",
+  "original_rows": 235795,
+  "augmentation_rows": 368754,
+  "validation": {
+    "tp": 29629,
+    "fp": 455,
+    "fn": 1304,
+    "tn": 60580,
+    "recall": 0.9578443733229884,
+    "precision": 0.9848756814253423,
+    "false_positive_rate": 0.007454739084132056,
+    "accuracy": 0.9808737821851079
+  },
+  "test": {
+    "tp": 14435,
+    "fp": 47,
+    "fn": 844,
+    "tn": 20018,
+    "recall": 0.9447607827737418,
+    "precision": 0.9967545919071952,
+    "false_positive_rate": 0.002342387241465238,
+    "accuracy": 0.9747906292440018
+  },
+  "augmented_test": {
+    "tp": 14665,
+    "fp": 429,
+    "fn": 438,
+    "tn": 39691,
+    "recall": 0.9709991392438588,
+    "precision": 0.9715781105074864,
+    "false_positive_rate": 0.010692921236291127,
+    "accuracy": 0.9843000199192365
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "validation_loss": 0.15446840226650238
+    },
+    {
+      "epoch": 2,
+      "validation_loss": 0.08956801146268845
+    },
+    {
+      "epoch": 3,
+      "validation_loss": 0.07844997942447662
+    },
+    {
+      "epoch": 4,
+      "validation_loss": 0.07433494180440903
+    },
+    {
+      "epoch": 5,
+      "validation_loss": 0.07168454676866531
+    },
+    {
+      "epoch": 6,
+      "validation_loss": 0.07091552764177322
+    },
+    {
+      "epoch": 7,
+      "validation_loss": 0.06972644478082657
+    },
+    {
+      "epoch": 8,
+      "validation_loss": 0.06874846667051315
+    },
+    {
+      "epoch": 9,
+      "validation_loss": 0.0679892897605896
+    },
+    {
+      "epoch": 10,
+      "validation_loss": 0.06773114949464798
+    },
+    {
+      "epoch": 11,
+      "validation_loss": 0.06649879366159439
+    },
+    {
+      "epoch": 12,
+      "validation_loss": 0.06622999161481857
+    },
+    {
+      "epoch": 13,
+      "validation_loss": 0.06576230376958847
+    },
+    {
+      "epoch": 14,
+      "validation_loss": 0.06595320999622345
+    },
+    {
+      "epoch": 15,
+      "validation_loss": 0.06699959188699722
+    },
+    {
+      "epoch": 16,
+      "validation_loss": 0.06570182740688324
+    },
+    {
+      "epoch": 17,
+      "validation_loss": 0.0646679550409317
+    },
+    {
+      "epoch": 18,
+      "validation_loss": 0.06370961666107178
+    }
+  ],
+  "model_sha256": "79c67a5bfd775d36141a345d5e3b49a253215c3d484fe3dc3eb4ddbd54f1aba1",
+  "limitations": [
+    "Historical single-source dataset; not current-world accuracy.",
+    "Dataset transport/source biases can inflate results.",
+    "URL text cannot reveal compromised pages, opaque redirects, consent abuse or changing website contents.",
+    "Authored pattern corpus is a separate regression suite and is not independent evaluation data."
+  ],
+  "new_pipeline_test": {
+    "tp": 12635,
+    "fp": 58,
+    "fn": 2644,
+    "tn": 20007,
+    "recall": 0.8269520256561294,
+    "precision": 0.9954305522729063,
+    "false_positive_rate": 0.002890605532020932,
+    "accuracy": 0.9235513807152558
+  },
+  "legacy_pipeline_test": {
+    "tp": 14129,
+    "fp": 124,
+    "fn": 1150,
+    "tn": 19941,
+    "recall": 0.9247332940637476,
+    "precision": 0.9913000771767347,
+    "false_positive_rate": 0.006179915275355096,
+    "accuracy": 0.9639542779538253
+  },
+  "ungated_pipeline_test": {
+    "tp": 14459,
+    "fp": 58,
+    "fn": 820,
+    "tn": 20007,
+    "recall": 0.9463315662019766,
+    "precision": 0.9960046841633946,
+    "false_positive_rate": 0.002890605532020932,
+    "accuracy": 0.9751584427342689
+  },
+  "model_abstention_policy": "Standalone model warnings disabled for IDN, known hosted services, exact official-brand domains and non-userinfo @ contexts; heuristics/snapshot remain active",
+  "test_model_eligible_rows": 33243,
+  "test_model_limited_rows": 2101,
+  "disposition": "REJECTED: broad hosted-service abstention lost historical phishing recall"
+}

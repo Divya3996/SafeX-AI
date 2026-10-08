@@ -1,0 +1,944 @@
+{
+  "schema_version": 1,
+  "kind": "authored regression corpus, not independent accuracy data",
+  "cases": [
+    {
+      "id": "brand-typo-01",
+      "family": "brand-typo",
+      "url": "https://paypa1.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-typo-02",
+      "family": "brand-typo",
+      "url": "https://paypl.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-typo-03",
+      "family": "brand-typo",
+      "url": "https://payapl.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-typo-04",
+      "family": "brand-typo",
+      "url": "https://paypall.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-typo-05",
+      "family": "brand-typo",
+      "url": "https://p4ypal.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-typo-06",
+      "family": "brand-typo",
+      "url": "https://micros0ft.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-typo-07",
+      "family": "brand-typo",
+      "url": "https://microsof.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-typo-08",
+      "family": "brand-typo",
+      "url": "https://microsoftt.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-typo-09",
+      "family": "brand-typo",
+      "url": "https://amaz0n.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-typo-10",
+      "family": "brand-typo",
+      "url": "https://netf1ix.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-affix-01",
+      "family": "brand-affix",
+      "url": "https://paypal-verify.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-affix-02",
+      "family": "brand-affix",
+      "url": "https://secure-paypal.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-affix-03",
+      "family": "brand-affix",
+      "url": "https://paypalaccount.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-affix-04",
+      "family": "brand-affix",
+      "url": "https://loginpaypal.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-affix-05",
+      "family": "brand-affix",
+      "url": "https://paypal-support-service.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-affix-06",
+      "family": "brand-affix",
+      "url": "https://hdfc-kyc.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-affix-07",
+      "family": "brand-affix",
+      "url": "https://sbi-update.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-affix-08",
+      "family": "brand-affix",
+      "url": "https://phonepe-refund.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "trusted-domain-prefix-01",
+      "family": "trusted-domain-prefix",
+      "url": "https://paypal.com.attacker.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "trusted-domain-prefix-02",
+      "family": "trusted-domain-prefix",
+      "url": "https://www.paypal.com.attacker.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "trusted-domain-prefix-03",
+      "family": "trusted-domain-prefix",
+      "url": "https://accounts.google.com.attacker.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "trusted-domain-prefix-04",
+      "family": "trusted-domain-prefix",
+      "url": "https://login.microsoftonline.com.attacker.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "branded-subdomain-01",
+      "family": "branded-subdomain",
+      "url": "https://paypal.login.attacker.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "branded-subdomain-02",
+      "family": "branded-subdomain",
+      "url": "https://microsoft.verify.attacker.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "branded-subdomain-03",
+      "family": "branded-subdomain",
+      "url": "https://sbi.kyc.attacker.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "unicode-homograph-01",
+      "family": "unicode-homograph",
+      "url": "https://раураl.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "unicode-homograph-02",
+      "family": "unicode-homograph",
+      "url": "https://xn--l-7sba6dbr.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "unicode-homograph-03",
+      "family": "unicode-homograph",
+      "url": "https://аррӏе.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "unicode-homograph-04",
+      "family": "unicode-homograph",
+      "url": "https://xn--80ak6aa92e.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "unicode-homograph-05",
+      "family": "unicode-homograph",
+      "url": "https://gοοgle.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "unicode-homograph-06",
+      "family": "unicode-homograph",
+      "url": "https://xn--ggle-0nda.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "unicode-homograph-07",
+      "family": "unicode-homograph",
+      "url": "https://microsоft.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "unicode-homograph-08",
+      "family": "unicode-homograph",
+      "url": "https://xn--microsft-sbh.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "userinfo-01",
+      "family": "userinfo",
+      "url": "https://paypal.com@attacker.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "userinfo-02",
+      "family": "userinfo",
+      "url": "https://user:pass@attacker.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "userinfo-03",
+      "family": "userinfo",
+      "url": "https://google.com%40support@attacker.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "numeric-host-01",
+      "family": "numeric-host",
+      "url": "https://203.0.113.52/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "numeric-host-02",
+      "family": "numeric-host",
+      "url": "https://[2001:db8::52]/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "numeric-host-03",
+      "family": "numeric-host",
+      "url": "http://2130706433/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "numeric-host-04",
+      "family": "numeric-host",
+      "url": "https://0x7f000001/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "numeric-host-05",
+      "family": "numeric-host",
+      "url": "https://0177.0.0.1/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "numeric-host-06",
+      "family": "numeric-host",
+      "url": "https://127.1/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "redirect-01",
+      "family": "redirect",
+      "url": "https://portal.example/?next=https://paypal-verify.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "layered-redirect-01",
+      "family": "layered-redirect",
+      "url": "https://portal.example/?redirect=https%3A%2F%2Fpaypal-verify.example%2Flogin",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "layered-redirect-02",
+      "family": "layered-redirect",
+      "url": "https://portal.example/?redirect=https%253A%252F%252Fpaypal-verify.example%252Flogin",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "layered-redirect-03",
+      "family": "layered-redirect",
+      "url": "https://portal.example/?redirect=https%25253A%25252F%25252Fpaypal-verify.example%25252Flogin",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "layered-redirect-04",
+      "family": "layered-redirect",
+      "url": "https://portal.example/?redirect=https%2525253A%2525252F%2525252Fpaypal-verify.example%2525252Flogin",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "base64-redirect-01",
+      "family": "base64-redirect",
+      "url": "https://portal.example/?url=aHR0cHM6Ly9wYXlwYWwtdmVyaWZ5LmV4YW1wbGUvbG9naW4=",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "redirect-02",
+      "family": "redirect",
+      "url": "https://portal.example/?next=//paypal-verify.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "layered-redirect-05",
+      "family": "layered-redirect",
+      "url": "https://portal.example/?redirect=%2F%2Fpaypal-verify.example%2Flogin",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "layered-redirect-06",
+      "family": "layered-redirect",
+      "url": "https://portal.example/?redirect=%252F%252Fpaypal-verify.example%252Flogin",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "layered-redirect-07",
+      "family": "layered-redirect",
+      "url": "https://portal.example/?redirect=%25252F%25252Fpaypal-verify.example%25252Flogin",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "layered-redirect-08",
+      "family": "layered-redirect",
+      "url": "https://portal.example/?redirect=%2525252F%2525252Fpaypal-verify.example%2525252Flogin",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "base64-redirect-02",
+      "family": "base64-redirect",
+      "url": "https://portal.example/?url=Ly9wYXlwYWwtdmVyaWZ5LmV4YW1wbGUvbG9naW4=",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "nested-redirect-01",
+      "family": "nested-redirect",
+      "url": "https://portal.example/?next=https%3A%2F%2Fmiddle.example%2F%3Furl%3Dhttps%3A%2F%2Fpaypal-verify.example",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "shortened-destination-01",
+      "family": "shortened-destination",
+      "url": "https://bit.ly/ExampleDemo",
+      "expected": "WARN",
+      "note": "Hidden destination caution; shorteners are not intrinsically phishing."
+    },
+    {
+      "id": "shortened-destination-02",
+      "family": "shortened-destination",
+      "url": "https://tinyurl.com/ExampleDemo",
+      "expected": "WARN",
+      "note": "Hidden destination caution; shorteners are not intrinsically phishing."
+    },
+    {
+      "id": "shortened-destination-03",
+      "family": "shortened-destination",
+      "url": "https://t.co/ExampleDemo",
+      "expected": "WARN",
+      "note": "Hidden destination caution; shorteners are not intrinsically phishing."
+    },
+    {
+      "id": "shortened-destination-04",
+      "family": "shortened-destination",
+      "url": "https://cutt.ly/ExampleDemo",
+      "expected": "WARN",
+      "note": "Hidden destination caution; shorteners are not intrinsically phishing."
+    },
+    {
+      "id": "shortened-destination-05",
+      "family": "shortened-destination",
+      "url": "https://is.gd/ExampleDemo",
+      "expected": "WARN",
+      "note": "Hidden destination caution; shorteners are not intrinsically phishing."
+    },
+    {
+      "id": "shortened-destination-06",
+      "family": "shortened-destination",
+      "url": "https://ow.ly/ExampleDemo",
+      "expected": "WARN",
+      "note": "Hidden destination caution; shorteners are not intrinsically phishing."
+    },
+    {
+      "id": "shortened-destination-07",
+      "family": "shortened-destination",
+      "url": "https://lnkd.in/ExampleDemo",
+      "expected": "WARN",
+      "note": "Hidden destination caution; shorteners are not intrinsically phishing."
+    },
+    {
+      "id": "shortened-destination-08",
+      "family": "shortened-destination",
+      "url": "https://rebrand.ly/ExampleDemo",
+      "expected": "WARN",
+      "note": "Hidden destination caution; shorteners are not intrinsically phishing."
+    },
+    {
+      "id": "sensitive-host-cues-01",
+      "family": "sensitive-host-cues",
+      "url": "https://account-verify.attacker.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "sensitive-host-cues-02",
+      "family": "sensitive-host-cues",
+      "url": "https://bank-kyc-update.attacker.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "sensitive-host-cues-03",
+      "family": "sensitive-host-cues",
+      "url": "https://free-gift-claim.attacker.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "sensitive-host-cues-04",
+      "family": "sensitive-host-cues",
+      "url": "https://wallet-connect.attacker.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "sensitive-host-cues-05",
+      "family": "sensitive-host-cues",
+      "url": "https://otp-verification.attacker.example/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "hosted-tenant-01",
+      "family": "hosted-tenant",
+      "url": "https://paypal-verify.pages.dev/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "hosted-tenant-02",
+      "family": "hosted-tenant",
+      "url": "https://microsoft-login.netlify.app/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "hosted-tenant-03",
+      "family": "hosted-tenant",
+      "url": "https://sbi-kyc.vercel.app/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "hosted-tenant-04",
+      "family": "hosted-tenant",
+      "url": "https://paypal-login.github.io/",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "executable-download-01",
+      "family": "executable-download",
+      "url": "https://files.example/invoice.pdf.exe",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "executable-download-02",
+      "family": "executable-download",
+      "url": "https://files.example/bank-statement.pdf.apk",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "executable-download-03",
+      "family": "executable-download",
+      "url": "https://files.example/photo.jpg.scr",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "executable-download-04",
+      "family": "executable-download",
+      "url": "https://files.example/refund.docm.exe",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "executable-download-05",
+      "family": "executable-download",
+      "url": "https://files.example/invoice%2Epdf%2Eapk",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "executable-download-06",
+      "family": "executable-download",
+      "url": "https://files.example/statement.pdf%20.exe",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "executable-download-07",
+      "family": "executable-download",
+      "url": "https://files.example/security-update.apk",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "executable-download-08",
+      "family": "executable-download",
+      "url": "https://files.example/script.ps1",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-outside-host-01",
+      "family": "brand-outside-host",
+      "url": "https://attacker.example/paypal.com/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-outside-host-02",
+      "family": "brand-outside-host",
+      "url": "https://attacker.example/login#https://paypal.com",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "brand-outside-host-03",
+      "family": "brand-outside-host",
+      "url": "https://attacker.example/?login=https://paypal.com",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "combined-structure-01",
+      "family": "combined-structure",
+      "url": "http://account-verify.example:8080/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "combined-structure-02",
+      "family": "combined-structure",
+      "url": "https://bank--verify--reward.example/login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "combined-structure-03",
+      "family": "combined-structure",
+      "url": "https://a.b.c.d.attacker.example/verify",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "canonical-evasion-01",
+      "family": "canonical-evasion",
+      "url": "https://paypa1.example./login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "canonical-evasion-02",
+      "family": "canonical-evasion",
+      "url": "HTTPS://PAYPA1.EXAMPLE/Login",
+      "expected": "WARN",
+      "note": "Structural warning; not verified live fraud."
+    },
+    {
+      "id": "rejected-ambiguity-01",
+      "family": "rejected-ambiguity",
+      "url": "https://example.com\\@attacker.example/",
+      "expected": "REJECT",
+      "note": "Unsupported or ambiguous input must not be opened."
+    },
+    {
+      "id": "rejected-ambiguity-02",
+      "family": "rejected-ambiguity",
+      "url": "https://exa​mple.com/",
+      "expected": "REJECT",
+      "note": "Unsupported or ambiguous input must not be opened."
+    },
+    {
+      "id": "rejected-ambiguity-03",
+      "family": "rejected-ambiguity",
+      "url": "https://example.com/‮exe.pdf",
+      "expected": "REJECT",
+      "note": "Unsupported or ambiguous input must not be opened."
+    },
+    {
+      "id": "rejected-ambiguity-04",
+      "family": "rejected-ambiguity",
+      "url": "https://%70aypal.com.attacker.example/",
+      "expected": "REJECT",
+      "note": "Unsupported or ambiguous input must not be opened."
+    },
+    {
+      "id": "rejected-ambiguity-05",
+      "family": "rejected-ambiguity",
+      "url": "https://example.com:99999/",
+      "expected": "REJECT",
+      "note": "Unsupported or ambiguous input must not be opened."
+    },
+    {
+      "id": "rejected-ambiguity-06",
+      "family": "rejected-ambiguity",
+      "url": "https://user@@example.com/",
+      "expected": "REJECT",
+      "note": "Unsupported or ambiguous input must not be opened."
+    },
+    {
+      "id": "rejected-ambiguity-07",
+      "family": "rejected-ambiguity",
+      "url": "https://example.com/?x=%ZZ",
+      "expected": "REJECT",
+      "note": "Unsupported or ambiguous input must not be opened."
+    },
+    {
+      "id": "rejected-ambiguity-08",
+      "family": "rejected-ambiguity",
+      "url": "javascript:alert(1)",
+      "expected": "REJECT",
+      "note": "Unsupported or ambiguous input must not be opened."
+    },
+    {
+      "id": "rejected-ambiguity-09",
+      "family": "rejected-ambiguity",
+      "url": "data:text/html,example",
+      "expected": "REJECT",
+      "note": "Unsupported or ambiguous input must not be opened."
+    },
+    {
+      "id": "rejected-ambiguity-10",
+      "family": "rejected-ambiguity",
+      "url": "intent://example/#Intent;scheme=https;end",
+      "expected": "REJECT",
+      "note": "Unsupported or ambiguous input must not be opened."
+    },
+    {
+      "id": "rejected-ambiguity-11",
+      "family": "rejected-ambiguity",
+      "url": "file:///tmp/example",
+      "expected": "REJECT",
+      "note": "Unsupported or ambiguous input must not be opened."
+    },
+    {
+      "id": "benign-control-01",
+      "family": "benign-control",
+      "url": "https://example.com/",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-02",
+      "family": "benign-control",
+      "url": "https://www.paypal.com/signin",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-03",
+      "family": "benign-control",
+      "url": "https://paypal.com./signin",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-04",
+      "family": "benign-control",
+      "url": "https://accounts.google.com/login",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-05",
+      "family": "benign-control",
+      "url": "https://login.microsoftonline.com/common/oauth2/authorize",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-06",
+      "family": "benign-control",
+      "url": "https://support.apple.com/",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-07",
+      "family": "benign-control",
+      "url": "https://www.amazon.in/",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-08",
+      "family": "benign-control",
+      "url": "https://onlinesbi.sbi/",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-09",
+      "family": "benign-control",
+      "url": "https://hdfcbank.com/",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-10",
+      "family": "benign-control",
+      "url": "https://icicibank.com/",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-11",
+      "family": "benign-control",
+      "url": "https://phonepe.com/",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-12",
+      "family": "benign-control",
+      "url": "https://docs.example/guides/phishing/paypal.com",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-13",
+      "family": "benign-control",
+      "url": "https://example.com/?email=person@example.com",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-14",
+      "family": "benign-control",
+      "url": "https://example.com/path/a+b",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-15",
+      "family": "benign-control",
+      "url": "https://example.com/?next=%2Fdashboard",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-16",
+      "family": "benign-control",
+      "url": "https://example.com/?next=https://example.com/dashboard",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-17",
+      "family": "benign-control",
+      "url": "https://example.com/?redirect=https%3A%2F%2Fexample.com%2Fdashboard",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-18",
+      "family": "benign-control",
+      "url": "https://example.com/?url=https://example.com/help",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-19",
+      "family": "benign-control",
+      "url": "https://example.com/search?q=https://example.com/help",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-20",
+      "family": "benign-control",
+      "url": "https://github.io/",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-21",
+      "family": "benign-control",
+      "url": "https://ordinary-project.pages.dev/",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-22",
+      "family": "benign-control",
+      "url": "https://xn--bcher-kva.example/",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-23",
+      "family": "benign-control",
+      "url": "https://bücher.example/",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-24",
+      "family": "benign-control",
+      "url": "https://हिन्दी.example/",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-25",
+      "family": "benign-control",
+      "url": "https://ગુજરાતી.example/",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-26",
+      "family": "benign-control",
+      "url": "https://apply.example/",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-27",
+      "family": "benign-control",
+      "url": "https://ubi.example/",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-28",
+      "family": "benign-control",
+      "url": "https://example.com/%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-29",
+      "family": "benign-control",
+      "url": "https://example.com/?utm_source=mail&utm_campaign=launch&gclid=abc",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-30",
+      "family": "benign-control",
+      "url": "https://download.example/manual.pdf",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "benign-control-31",
+      "family": "benign-control",
+      "url": "https://example.com/static/app.js?build=42",
+      "expected": "ALLOW",
+      "note": "Authored benign control, not a live safety certification."
+    },
+    {
+      "id": "offline-blind-spot-01",
+      "family": "offline-blind-spot",
+      "url": "https://ordinary.example/",
+      "expected": "UNKNOWN",
+      "note": "Compromised legitimate website: URL text alone cannot expose page content."
+    },
+    {
+      "id": "offline-blind-spot-02",
+      "family": "offline-blind-spot",
+      "url": "https://ordinary.example/a7Qf",
+      "expected": "UNKNOWN",
+      "note": "Opaque redirect or newly registered clean-looking domain."
+    },
+    {
+      "id": "offline-blind-spot-03",
+      "family": "offline-blind-spot",
+      "url": "https://docs.google.com/forms/d/example/viewform",
+      "expected": "UNKNOWN",
+      "note": "Legitimate hosted form can be abused; content unavailable offline."
+    },
+    {
+      "id": "offline-blind-spot-04",
+      "family": "offline-blind-spot",
+      "url": "https://login.microsoftonline.com/common/oauth2/deviceauth",
+      "expected": "UNKNOWN",
+      "note": "Device-code or consent lure needs communication context."
+    }
+  ]
+}

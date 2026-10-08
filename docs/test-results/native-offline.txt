@@ -1,0 +1,10 @@
+
+com.sentinel.ai.i18n.MultilingualExperienceTest:..
+com.sentinel.ai.ml.InternalScanMlIntegrationTest:.
+com.sentinel.ai.ml.OfflinePipelineTest:.........
+
+Time: 48.356
+
+OK (12 tests)
+
+

@@ -1,0 +1,812 @@
+{
+  "kind": "Authored regression examples, not independent fraud accuracy",
+  "warn_cases_warned": 87,
+  "warn_cases_unsupported": 1,
+  "benign_controls_warned_by_pipeline": 1,
+  "cases": [
+    {
+      "id": "brand-typo-01",
+      "family": "brand-typo",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-typo-02",
+      "family": "brand-typo",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-typo-03",
+      "family": "brand-typo",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-typo-04",
+      "family": "brand-typo",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-typo-05",
+      "family": "brand-typo",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-typo-06",
+      "family": "brand-typo",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-typo-07",
+      "family": "brand-typo",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-typo-08",
+      "family": "brand-typo",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-typo-09",
+      "family": "brand-typo",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-typo-10",
+      "family": "brand-typo",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-affix-01",
+      "family": "brand-affix",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-affix-02",
+      "family": "brand-affix",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-affix-03",
+      "family": "brand-affix",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-affix-04",
+      "family": "brand-affix",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-affix-05",
+      "family": "brand-affix",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-affix-06",
+      "family": "brand-affix",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-affix-07",
+      "family": "brand-affix",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-affix-08",
+      "family": "brand-affix",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "trusted-domain-prefix-01",
+      "family": "trusted-domain-prefix",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "trusted-domain-prefix-02",
+      "family": "trusted-domain-prefix",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "trusted-domain-prefix-03",
+      "family": "trusted-domain-prefix",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "trusted-domain-prefix-04",
+      "family": "trusted-domain-prefix",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "branded-subdomain-01",
+      "family": "branded-subdomain",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "branded-subdomain-02",
+      "family": "branded-subdomain",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "branded-subdomain-03",
+      "family": "branded-subdomain",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "unicode-homograph-01",
+      "family": "unicode-homograph",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "unicode-homograph-02",
+      "family": "unicode-homograph",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "unicode-homograph-03",
+      "family": "unicode-homograph",
+      "expected": "WARN",
+      "decision": "REJECT"
+    },
+    {
+      "id": "unicode-homograph-04",
+      "family": "unicode-homograph",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "unicode-homograph-05",
+      "family": "unicode-homograph",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "unicode-homograph-06",
+      "family": "unicode-homograph",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "unicode-homograph-07",
+      "family": "unicode-homograph",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "unicode-homograph-08",
+      "family": "unicode-homograph",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "userinfo-01",
+      "family": "userinfo",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "userinfo-02",
+      "family": "userinfo",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "userinfo-03",
+      "family": "userinfo",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "numeric-host-01",
+      "family": "numeric-host",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "numeric-host-02",
+      "family": "numeric-host",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "numeric-host-03",
+      "family": "numeric-host",
+      "expected": "WARN",
+      "decision": "BLOCK"
+    },
+    {
+      "id": "numeric-host-04",
+      "family": "numeric-host",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "numeric-host-05",
+      "family": "numeric-host",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "numeric-host-06",
+      "family": "numeric-host",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "redirect-01",
+      "family": "redirect",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "layered-redirect-01",
+      "family": "layered-redirect",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "layered-redirect-02",
+      "family": "layered-redirect",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "layered-redirect-03",
+      "family": "layered-redirect",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "layered-redirect-04",
+      "family": "layered-redirect",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "base64-redirect-01",
+      "family": "base64-redirect",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "redirect-02",
+      "family": "redirect",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "layered-redirect-05",
+      "family": "layered-redirect",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "layered-redirect-06",
+      "family": "layered-redirect",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "layered-redirect-07",
+      "family": "layered-redirect",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "layered-redirect-08",
+      "family": "layered-redirect",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "base64-redirect-02",
+      "family": "base64-redirect",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "nested-redirect-01",
+      "family": "nested-redirect",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "shortened-destination-01",
+      "family": "shortened-destination",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "shortened-destination-02",
+      "family": "shortened-destination",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "shortened-destination-03",
+      "family": "shortened-destination",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "shortened-destination-04",
+      "family": "shortened-destination",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "shortened-destination-05",
+      "family": "shortened-destination",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "shortened-destination-06",
+      "family": "shortened-destination",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "shortened-destination-07",
+      "family": "shortened-destination",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "shortened-destination-08",
+      "family": "shortened-destination",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "sensitive-host-cues-01",
+      "family": "sensitive-host-cues",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "sensitive-host-cues-02",
+      "family": "sensitive-host-cues",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "sensitive-host-cues-03",
+      "family": "sensitive-host-cues",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "sensitive-host-cues-04",
+      "family": "sensitive-host-cues",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "sensitive-host-cues-05",
+      "family": "sensitive-host-cues",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "hosted-tenant-01",
+      "family": "hosted-tenant",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "hosted-tenant-02",
+      "family": "hosted-tenant",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "hosted-tenant-03",
+      "family": "hosted-tenant",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "hosted-tenant-04",
+      "family": "hosted-tenant",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "executable-download-01",
+      "family": "executable-download",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "executable-download-02",
+      "family": "executable-download",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "executable-download-03",
+      "family": "executable-download",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "executable-download-04",
+      "family": "executable-download",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "executable-download-05",
+      "family": "executable-download",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "executable-download-06",
+      "family": "executable-download",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "executable-download-07",
+      "family": "executable-download",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "executable-download-08",
+      "family": "executable-download",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-outside-host-01",
+      "family": "brand-outside-host",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-outside-host-02",
+      "family": "brand-outside-host",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "brand-outside-host-03",
+      "family": "brand-outside-host",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "combined-structure-01",
+      "family": "combined-structure",
+      "expected": "WARN",
+      "decision": "BLOCK"
+    },
+    {
+      "id": "combined-structure-02",
+      "family": "combined-structure",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "combined-structure-03",
+      "family": "combined-structure",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "canonical-evasion-01",
+      "family": "canonical-evasion",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "canonical-evasion-02",
+      "family": "canonical-evasion",
+      "expected": "WARN",
+      "decision": "WARN"
+    },
+    {
+      "id": "rejected-ambiguity-01",
+      "family": "rejected-ambiguity",
+      "expected": "REJECT",
+      "decision": "REJECT"
+    },
+    {
+      "id": "rejected-ambiguity-02",
+      "family": "rejected-ambiguity",
+      "expected": "REJECT",
+      "decision": "REJECT"
+    },
+    {
+      "id": "rejected-ambiguity-03",
+      "family": "rejected-ambiguity",
+      "expected": "REJECT",
+      "decision": "REJECT"
+    },
+    {
+      "id": "rejected-ambiguity-04",
+      "family": "rejected-ambiguity",
+      "expected": "REJECT",
+      "decision": "REJECT"
+    },
+    {
+      "id": "rejected-ambiguity-05",
+      "family": "rejected-ambiguity",
+      "expected": "REJECT",
+      "decision": "REJECT"
+    },
+    {
+      "id": "rejected-ambiguity-06",
+      "family": "rejected-ambiguity",
+      "expected": "REJECT",
+      "decision": "REJECT"
+    },
+    {
+      "id": "rejected-ambiguity-07",
+      "family": "rejected-ambiguity",
+      "expected": "REJECT",
+      "decision": "REJECT"
+    },
+    {
+      "id": "rejected-ambiguity-08",
+      "family": "rejected-ambiguity",
+      "expected": "REJECT",
+      "decision": "REJECT"
+    },
+    {
+      "id": "rejected-ambiguity-09",
+      "family": "rejected-ambiguity",
+      "expected": "REJECT",
+      "decision": "REJECT"
+    },
+    {
+      "id": "rejected-ambiguity-10",
+      "family": "rejected-ambiguity",
+      "expected": "REJECT",
+      "decision": "REJECT"
+    },
+    {
+      "id": "rejected-ambiguity-11",
+      "family": "rejected-ambiguity",
+      "expected": "REJECT",
+      "decision": "REJECT"
+    },
+    {
+      "id": "benign-control-01",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-02",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-03",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-04",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-05",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-06",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-07",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-08",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-09",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-10",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-11",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-12",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-13",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-14",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-15",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-16",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-17",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-18",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-19",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-20",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-21",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "WARN"
+    },
+    {
+      "id": "benign-control-22",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-23",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-24",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-25",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-26",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-27",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-28",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-29",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-30",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "benign-control-31",
+      "family": "benign-control",
+      "expected": "ALLOW",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "offline-blind-spot-01",
+      "family": "offline-blind-spot",
+      "expected": "UNKNOWN",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "offline-blind-spot-02",
+      "family": "offline-blind-spot",
+      "expected": "UNKNOWN",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "offline-blind-spot-03",
+      "family": "offline-blind-spot",
+      "expected": "UNKNOWN",
+      "decision": "ALLOW"
+    },
+    {
+      "id": "offline-blind-spot-04",
+      "family": "offline-blind-spot",
+      "expected": "UNKNOWN",
+      "decision": "ALLOW"
+    }
+  ]
+}

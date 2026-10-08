@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="app_name">SafeX AI</string>
+  <string name="text_selection_analyze_label">SafeX AI से जाँचें</string>
+  <string name="critical_alert_title">संदिग्ध संदेश मिला</string>
+  <string name="critical_alert_score">जोखिम अंक: %1$d</string>
+  <string name="critical_alert_reasons_label">कारण</string>
+  <string name="critical_alert_no_reasons">विस्तृत कारण उपलब्ध नहीं हैं।</string>
+  <string name="critical_alert_countdown">%1$d सेकंड में सुरक्षा लॉक खुलेगा</string>
+  <string name="critical_alert_go_back">वापस जाएँ</string>
+  <string name="critical_alert_view_details">विवरण देखें</string>
+  <string name="critical_alert_icon_description">गंभीर चेतावनी</string>
+</resources>

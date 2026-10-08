@@ -1,0 +1,63 @@
+{
+  "jvm": {
+    "app": {
+      "tests": 380,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "core": {
+      "tests": 51,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "agents": {
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "ui": {
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "apk_sha256": "577677d80a81d08552259056f76847bda123e7ca556d66a6864dec59698c5f41",
+  "apk_bytes": 132806256,
+  "version": "1.3.0",
+  "version_code": 4,
+  "verified_date": "2026-10-08",
+  "jvm_total_passed": 452,
+  "native_tests_passed": 14,
+  "native_suite_seconds": 72.97,
+  "android": "API 34 Google APIs x86_64 emulator",
+  "airplane_mode": true,
+  "internet_permission": false,
+  "lint_errors": 0,
+  "lint_warnings": 43,
+  "translation_strings_per_language": 484,
+  "native_parity": {
+    "kind": "256 historical held-out native parity fixtures; not a representative accuracy benchmark",
+    "cases": 256,
+    "maximum_score_difference": 8.940697e-07,
+    "pipeline_tp": 122,
+    "pipeline_fp": 0,
+    "pipeline_fn": 6,
+    "pipeline_tn": 128,
+    "duration_ms_p50": 27,
+    "duration_ms_p95": 51,
+    "duration_ms_max": 116,
+    "model_version": "url-phiusiil-augmented-v2"
+  },
+  "apk_relative_path": "android-app/app/build/outputs/apk/debug/SafeX-AI-1.3.0-debug.apk",
+  "model_sha256": "79c67a5bfd775d36141a345d5e3b49a253215c3d484fe3dc3eb4ddbd54f1aba1",
+  "authored_patterns": {
+    "kind": "Authored regression examples, not independent fraud accuracy",
+    "warn_cases_warned": 87,
+    "warn_cases_unsupported": 1,
+    "benign_controls_warned_by_pipeline": 1
+  }
+}

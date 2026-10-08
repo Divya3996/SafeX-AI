@@ -1,0 +1,64 @@
+package com.sentinel.ai.core.model
+
+import org.junit.Assert.*
+import org.junit.Test
+
+class MessageSignalsTest {
+    @Test fun `detects no link credential theft`() {
+        val result = MessageSignals.analyze("Bank support: urgent! Share your OTP and password immediately or your account will be blocked.")
+        assertEquals(100f, result.score, 0f)
+        assertEquals("Credential theft", result.category)
+    }
+    @Test fun `advice does not erase a separate attack sentence`() {
+        assertTrue(MessageSignals.analyze("Never share your OTP. But send your OTP to me immediately.").score >= 70)
+    }
+    @Test fun `benign controls remain low risk`() {
+        listOf("Never share your OTP or PIN with anyone.", "Your payment was successful.",
+            "Beware of anyone asking you to send an OTP for a refund", "Your meeting is urgent please join the office call").forEach {
+            assertTrue(it, MessageSignals.analyze(it).score < 30)
+        }
+    }
+    @Test fun `supports basic hindi and hinglish rules`() {
+        assertTrue(MessageSignals.analyze("बैंक खाता बंद होगा तुरंत अपना ओटीपी भेजो").score >= 70)
+        assertTrue(MessageSignals.analyze("Bank verification send OTP jaldi account block ho jayega").score >= 70)
+    }
+    @Test fun `normalizes hidden characters and limits distinct links`() {
+        assertTrue(MessageSignals.analyze("Urgent share your O\u200BTP password").score >= 70)
+        val urls = MessageSignals.urls((1..20).joinToString(" ") { "https://$it.example/path" })
+        assertEquals(8, urls.size)
+        assertEquals(listOf("https://example.com"), MessageSignals.urls("See https://example.com)."))
+    }
+    @Test fun `block cannot open and non links cannot open`() {
+        val result = ScanResult("a", "test", riskLevel = RiskLevel.CRITICAL, riskScore = 100f, explanation = "risk", timestamp = 0, target = "https://example.com")
+        assertFalse(DecisionPolicy.canOpen(result))
+        assertFalse(DecisionPolicy.canOpen(result.copy(riskLevel = RiskLevel.GREEN, decision = ProtectionDecision.ALLOW, contentType = "message")))
+    }
+    @Test fun `native hindi and gujarati credential scams and safety advice are distinct`() {
+        listOf("बैंक सहायता तुरंत अपना ओटीपी और पासवर्ड भेजें", "બેંક સહાય હમણાં તમારો ઓટીપી અને પાસવર્ડ મોકલો",
+            "કેવાયસી માટે તમારો પિન અને સુરક્ષા કોડ આપો").forEach { text ->
+            val result = MessageSignals.analyze(text)
+            assertTrue(text, result.score >= 70f)
+            assertEquals("Credential theft", result.category)
+        }
+        listOf("अपना ओटीपी या पासवर्ड किसी को न बताएं।", "તમારો ઓટીપી કે પાસવર્ડ ક્યારેય કોઈને આપશો નહીં.",
+            "बैंक कभी आपका पिन नहीं माँगता", "બેંક તમારો પિન માગતી નથી સુરક્ષા કોડ શેર ન કરો.").forEach { text ->
+            assertEquals(text, 0f, MessageSignals.analyze(text).score, 0f)
+        }
+    }
+    @Test fun `native reward employment and payment traps are detected`() {
+        listOf("आप लॉटरी जीते हैं इनाम पाने के लिए पहले शुल्क जमा करें", "તમે લોટરી જીત્યા છો ઇનામ મેળવવા માટે પહેલા ફી ચૂકવો",
+            "नौकरी पक्की है पहले पंजीकरण फीस भुगतान करें", "નોકરીની ગેરંટી છે પહેલા રજિસ્ટ્રેશન ફી જમા કરો",
+            "रिफंड प्राप्त करने के लिए क्यूआर स्कैन करें और यूपीआई पिन डालें", "રિફંડ મેળવવા માટે ક્યુઆર સ્કેન કરો અને યુપીઆઈ પિન દાખલ કરો"
+        ).forEach { text -> assertTrue(text, MessageSignals.analyze(text).score >= 55f) }
+    }
+    @Test fun `native advice does not erase separate attack sentence`() {
+        assertTrue(MessageSignals.analyze("अपना ओटीपी किसी को न बताएं। लेकिन अभी मुझे अपना ओटीपी भेजें।").score >= 70f)
+        assertTrue(MessageSignals.analyze("ઓટીપી ક્યારેય શેર ન કરો. પરંતુ હમણાં તમારો ઓટીપી મને મોકલો.").score >= 70f)
+    }
+    @Test fun `secrecy clause cannot suppress coercion`() {
+        listOf("Police digital arrest transfer payment now and do not tell anyone",
+            "पुलिस डिजिटल गिरफ्तारी से बचने के लिए पैसे भेजें और किसी को न बताएं",
+            "પોલીસ ડિજિટલ અરેસ્ટથી બચવા હમણાં પૈસા મોકલો અને કોઈને જણાવશો નહીં"
+        ).forEach { assertTrue(it, MessageSignals.analyze(it).score >= 70f) }
+    }
+}

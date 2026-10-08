@@ -1,0 +1,2 @@
+# Local snapshot placeholder. No fabricated malicious verdicts.
+# Replace through explicit generic feed update in the connected build.
