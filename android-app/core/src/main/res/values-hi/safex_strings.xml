@@ -715,4 +715,77 @@
     <string name="sx_selected_link_only_surrounding_message_text__59bd2436" formatted="false">"केवल चुना गया लिंक। आसपास के संदेश की जाँच नहीं की गई।"</string>
     <string name="sx_selected_qr_payload_only_surrounding_image_t_2ba0bbbe" formatted="false">"केवल चुना गया QR डेटा। आसपास के चित्र के पाठ की जाँच नहीं की गई।"</string>
     <string name="sx_tap_the_shield_to_choose_content_screen_capt_aa297a34" formatted="false">"सामग्री चुनने के लिए ढाल पर टैप करें। स्क्रीन कैप्चर के लिए आपकी अनुमति चाहिए।"</string>
+    <string name="sx_start_a_new_input_743f1d20" formatted="false">"नया इनपुट शुरू करें?"</string>
+    <string name="sx_your_current_review_will_be_replaced_when_ne_713468c6" formatted="false">"नई सामग्री स्वीकार करने पर आपकी मौजूदा समीक्षा बदल जाएगी। इसे रखने के लिए चयन या स्क्रीन कैप्चर अनुरोध रद्द करें।"</string>
+    <string name="sx_keep_review_f7a329cd" formatted="false">"समीक्षा रखें"</string>
+    <string name="sx_confirm_link_spelling_03b5a367" formatted="false">"लिंक की वर्तनी जाँचें"</string>
+    <string name="sx_original_visible_text_0f600237" formatted="false">"मूल दिखाई देने वाला पाठ"</string>
+    <string name="sx_destination_to_inspect_2a987a56" formatted="false">"जाँच के लिए गंतव्य"</string>
+    <string name="sx_safex_ai_normalized_visible_characters_for_i_08acede3" formatted="false">"SafeX AI ने जाँच के लिए दिखाई देने वाले अक्षरों को सामान्य किया है। मूल संदेश से मिलान करें। कुछ भी अपने आप नहीं खुलेगा।"</string>
+    <string name="sx_inspect_destination_811861b0" formatted="false">"गंतव्य जाँचें"</string>
+    <string name="sx_keep_editing_e76fd2ad" formatted="false">"संपादन जारी रखें"</string>
+    <string name="sx_1_3_choose_an_area_8e2c8e00" formatted="false">"1 / 3 • क्षेत्र चुनें"</string>
+    <string name="sx_2_3_review_content_630c7af9" formatted="false">"2 / 3 • सामग्री की समीक्षा"</string>
+    <string name="sx_3_3_private_result_7b90f852" formatted="false">"3 / 3 • निजी परिणाम"</string>
+    <string name="sx_protection_within_reach_8e39bb07" formatted="false">"सुरक्षा अब आपके पास"</string>
+    <string name="sx_choose_content_review_privately_decide_safel_4c327f1e" formatted="false">"सामग्री चुनें। निजी तौर पर जाँचें। सुरक्षित निर्णय लें।"</string>
+    <string name="sx_privacy_and_capture_limits_bf542aad" formatted="false">"गोपनीयता और कैप्चर की सीमाएँ"</string>
+    <string name="sx_assistant_preferences_2b3a039a" formatted="false">"सहायक की प्राथमिकताएँ"</string>
+    <string name="sx_shield_size_5557b004" formatted="false">"शील्ड का आकार"</string>
+    <string name="sx_reduce_motion_297ef4c7" formatted="false">"एनीमेशन कम करें"</string>
+    <string name="sx_warning_sound_follows_android_volume_do_not__79c57742" formatted="false">"चेतावनी की ध्वनि Android की आवाज़, परेशान न करें और सूचना चैनल सेटिंग के अनुसार चलती है।"</string>
+    <string name="sx_pan_image_23d256fa" formatted="false">"चित्र को खिसकाएँ"</string>
+    <string name="sx_reading_another_area_replaces_the_extracted__7a524c0b" formatted="false">"दूसरा क्षेत्र पढ़ने पर निकाला गया पाठ और संपादन बदल जाएँगे। वापस जाने से मौजूदा समीक्षा बनी रहेगी।"</string>
+    <string name="sx_change_area_ac0223bc" formatted="false">"क्षेत्र बदलें"</string>
+    <string name="sx_all_text_cc4201cc" formatted="false">"पूरा पाठ"</string>
+    <string name="sx_selected_lines_8eb4915a" formatted="false">"चुनी गई पंक्तियाँ"</string>
+    <string name="sx_edited_text_a440abe2" formatted="false">"संपादित पाठ"</string>
+    <string name="sx_select_at_least_one_line_or_choose_all_text_04218640" formatted="false">"कम से कम एक पंक्ति चुनें या पूरा पाठ चुनें।"</string>
+    <string name="sx_include_surrounding_message_f4a45d6b" formatted="false">"आसपास का संदेश शामिल करें"</string>
+    <string name="sx_edit_and_rescan_9a0a5a59" formatted="false">"संपादित करें और फिर जाँचें"</string>
+    <string name="sx_analyze_selected_link_8f2d69c0" formatted="false">"चुना गया लिंक जाँचें"</string>
+    <string name="sx_https_assumed_for_inspection_824728b7" formatted="false">"जाँच के लिए HTTPS माना गया"</string>
+    <string name="sx_english_ocr_5645234c" formatted="false">"अंग्रेज़ी OCR"</string>
+    <string name="sx_hindi_ocr_a66e13d2" formatted="false">"हिन्दी OCR"</string>
+    <string name="sx_gujarati_ocr_91379849" formatted="false">"गुजराती OCR"</string>
+    <string name="sx_qr_detection_e7c0089c" formatted="false">"QR पहचान"</string>
+    <string name="sx_low_quality_957aea80" formatted="false">"कम गुणवत्ता"</string>
+    <string name="sx_completed_22a970d2" formatted="false">"पूरा हुआ"</string>
+    <string name="sx_web_link_617dd08d" formatted="false">"वेब लिंक"</string>
+    <string name="sx_text_message_ca47049e" formatted="false">"पाठ संदेश"</string>
+    <string name="sx_contact_details_9681395d" formatted="false">"संपर्क विवरण"</string>
+    <string name="sx_wi_fi_configuration_54f2e202" formatted="false">"Wi-Fi विन्यास"</string>
+    <string name="sx_email_action_9e6896c9" formatted="false">"ईमेल कार्रवाई"</string>
+    <string name="sx_sms_action_d139d07f" formatted="false">"SMS कार्रवाई"</string>
+    <string name="sx_phone_action_fcf70724" formatted="false">"फ़ोन कार्रवाई"</string>
+    <string name="sx_app_action_75a6e8b5" formatted="false">"ऐप कार्रवाई"</string>
+    <string name="sx_selected_content_assessed_2e18402f" formatted="false">"चुनी गई सामग्री की जाँच हुई"</string>
+    <string name="sx_limited_assessment_133427fa" formatted="false">"सीमित जाँच"</string>
+    <string name="sx_unsupported_payload_9bc67356" formatted="false">"असमर्थित सामग्री प्रकार"</string>
+    <string name="sx_this_payload_type_cannot_be_fully_assessed_n_60d9324c" formatted="false">"इस सामग्री प्रकार की पूरी जाँच नहीं हो सकती। कुछ भी खोला या चलाया नहीं गया।"</string>
+    <string name="sx_assessment_is_limited_some_selected_content__9c72deb9" formatted="false">"जाँच सीमित है। कुछ चुनी गई सामग्री या गंतव्यों की जाँच नहीं हो सकी।"</string>
+    <string name="sx_show_fewer_reasons_c522a320" formatted="false">"कम कारण दिखाएँ"</string>
+    <string name="sx_show_all_reasons_3eb32d92" formatted="false">"सभी कारण दिखाएँ"</string>
+    <string name="sx_more_d47d7cb0" formatted="false">"और विकल्प"</string>
+    <string name="sx_less_ae5239ec" formatted="false">"कम विकल्प"</string>
+    <string name="sx_private_image_was_released_to_free_memory_ca_9565d818" formatted="false">"मेमोरी खाली करने के लिए निजी चित्र हटा दिया गया। फिर से कैप्चर करें या चित्र चुनें।"</string>
+    <string name="sx_floating_imported_image_5935c6aa" formatted="false">"फ़्लोटिंग सहायक में चुना चित्र"</string>
+    <string name="sx_floating_manual_content_dc748d3b" formatted="false">"फ़्लोटिंग सहायक में लिखा पाठ"</string>
+    <string name="sx_a_visible_link_was_normalized_for_inspection_ca440fc0" formatted="false">"दिखाई देने वाला लिंक जाँच के लिए सामान्य किया गया। इसकी मूल वर्तनी और गंतव्य की पुष्टि करें।"</string>
+    <string name="sx_a_visible_domain_without_a_scheme_was_inspec_5d34c1a9" formatted="false">"बिना स्कीम वाला दिखाई देने वाला डोमेन HTTPS मानकर जाँचा गया; कनेक्शन की सुरक्षा की पुष्टि नहीं हुई।"</string>
+    <string name="sx_1_s_lines_selected_5aad5870" formatted="false">"%1$s पंक्तियाँ चुनी गईं"</string>
+    <string name="sx_message_and_link_together_exceed_12_000_char_e28796ec" formatted="false">"संदेश और लिंक मिलाकर 12,000 अक्षरों से अधिक हैं। पाठ छोटा करें या केवल लिंक की जाँच करें।"</string>
+    <string name="sx_capture_1_s_ms_bbda95d4" formatted="false">"कैप्चर: %1$s मिलीसेकंड"</string>
+    <string name="sx_ocr_1_s_ms_f568d82d" formatted="false">"OCR: %1$s मिलीसेकंड"</string>
+    <string name="sx_image_processing_is_still_finishing_try_agai_61b336e1" formatted="false">"चित्र की प्रक्रिया अभी पूरी हो रही है। थोड़ी देर बाद फिर कोशिश करें या पाठ पेस्ट करें।"</string>
+    <string name="sx_check_this_reading_c282a4b6" formatted="false">"इस पाठ की जाँच करें"</string>
+    <string name="sx_dismiss_48845bff" formatted="false">"हटाएँ"</string>
+    <string name="sx_links_9024c197" formatted="false">"लिंक"</string>
+    <string name="sx_qr_a439fba4" formatted="false">"क्यूआर"</string>
+    <string name="sx_selected_57fd7a0c" formatted="false">"चुना गया"</string>
+    <string name="sx_test_warning_sound_69f8a715" formatted="false">"चेतावनी ध्वनि जाँचें"</string>
+    <string name="sx_image_was_resized_to_fit_device_memory_check_d4374280" formatted="false">"डिवाइस की मेमोरी के अनुसार चित्र छोटा किया गया। छोटे अक्षरों को ध्यान से जाँचें।"</string>
+    <string name="sx_user_provided_text_only_3ed4d0b6" formatted="false">"केवल उपयोगकर्ता द्वारा दिया गया पाठ।"</string>
+    <string name="sx_some_warning_channels_are_disabled_review_an_f2101eb8" formatted="false">"कुछ चेतावनी चैनल बंद हैं। Android की सूचना सेटिंग जाँचें।"</string>
+    <string name="sx_private_image_was_released_to_free_memory_re_9712f574" formatted="false">"मेमोरी खाली करने के लिए निजी चित्र हटा दिया गया। समीक्षा का पाठ उपलब्ध है।"</string>
 </resources>

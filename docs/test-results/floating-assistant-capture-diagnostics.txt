@@ -1,4 +1,11 @@
 --------- beginning of main
-10-09 02:58:28.201  3714  3714 D SafeXCapture: Display prepared: 720x1600
-10-09 02:58:28.211  3714  3714 D SafeXCapture: Same-size resize ignored: 720x1600
-10-09 02:58:28.258  3714  4067 D SafeXCapture: Frame received: 720x1600, rowStride=2880, pixelStride=4
+10-09 13:22:09.768  6849  6849 D SafeXCapture: Display prepared: 720x1600
+10-09 13:22:11.324  6849  6849 D SafeXCapture: No frame yet; surface refreshed (1/2): 720x1600
+10-09 13:22:11.374  6849  6849 D SafeXCapture: Same-size resize ignored: 720x1600
+10-09 13:22:11.434  6849  7094 D SafeXCapture: Frame received: 720x1600, rowStride=2880, pixelStride=4
+10-09 13:22:57.224  6849  6849 D SafeXCapture: Display prepared: 720x1600
+10-09 13:22:57.230  6849  6849 D SafeXCapture: Same-size resize ignored: 720x1600
+10-09 13:22:57.309  6849  7266 D SafeXCapture: Frame received: 720x1600, rowStride=2880, pixelStride=4
+10-09 13:23:39.863  6849  6849 D SafeXCapture: Display prepared: 1600x720
+10-09 13:23:39.874  6849  6849 D SafeXCapture: Same-size resize ignored: 1600x720
+10-09 13:23:39.946  6849  7408 D SafeXCapture: Frame received: 1600x720, rowStride=6400, pixelStride=4

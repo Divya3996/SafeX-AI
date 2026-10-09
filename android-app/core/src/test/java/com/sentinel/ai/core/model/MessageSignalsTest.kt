@@ -61,4 +61,20 @@ class MessageSignalsTest {
             "પોલીસ ડિજિટલ અરેસ્ટથી બચવા હમણાં પૈસા મોકલો અને કોઈને જણાવશો નહીં"
         ).forEach { assertTrue(it, MessageSignals.analyze(it).score >= 70f) }
     }
+    @Test fun `refund safety advice is not a payment request in any language`() {
+        for (text in listOf("Do not scan a QR code to receive a refund.", "रिफंड पाने के लिए क्यूआर स्कैन मत करें।", "રિફંડ મેળવવા માટે ક્યુઆર સ્કેન ન કરો."))
+            assertEquals(text, 0f, MessageSignals.analyze(text).score, 0f)
+    }
+    @Test fun `financial secrecy is not filtered as protective advice`() {
+        for (text in listOf("Send money immediately do not tell anyone.", "पुलिस ने कहा तुरंत पैसे भेजो किसी को मत बताओ।", "પોલીસ કહે છે તરત પૈસા મોકલો કોઈને કહેશો નહીં."))
+            assertTrue(text, MessageSignals.analyze(text).score >= 30f)
+    }
+    @Test fun `prototype classifier needs sensitive action context across languages`() {
+        for (text in listOf("Read example.com/help for public information.", "सार्वजनिक जानकारी के लिए example.com/help देखें।", "જાહેર માહિતી માટે example.com/help જુઓ.", "Never share your bank PIN.")) {
+            assertFalse(text, MessageSignals.analyze(text).modelWarningEligible)
+        }
+        for (text in listOf("Urgent bank notice", "तुरंत बैंक सूचना", "તાત્કાલિક બેંક સૂચના")) {
+            assertTrue(text, MessageSignals.analyze(text).modelWarningEligible)
+        }
+    }
 }

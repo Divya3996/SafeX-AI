@@ -714,3 +714,76 @@ Private review expired while SafeX AI was in the background. Start a new scan.|S
 Selected link only. Surrounding message text was not analyzed.|केवल चुना गया लिंक। आसपास के संदेश की जाँच नहीं की गई।|ફક્ત પસંદ કરેલી લિંક. આસપાસના સંદેશની તપાસ કરવામાં આવી નથી.
 Selected QR payload only. Surrounding image text was not analyzed.|केवल चुना गया QR डेटा। आसपास के चित्र के पाठ की जाँच नहीं की गई।|ફક્ત પસંદ કરેલો QR ડેટા. આસપાસના ચિત્રના લખાણની તપાસ કરવામાં આવી નથી.
 Tap the shield to choose content. Screen capture requires your approval.|सामग्री चुनने के लिए ढाल पर टैप करें। स्क्रीन कैप्चर के लिए आपकी अनुमति चाहिए।|સામગ્રી પસંદ કરવા ઢાલ પર ટેપ કરો. સ્ક્રીન કૅપ્ચર માટે તમારી મંજૂરી જરૂરી છે.
+Start a new input?|नया इनपुट शुरू करें?|નવું ઇનપુટ શરૂ કરવું છે?
+Your current review will be replaced when new content is accepted. Cancel the picker or capture prompt to keep it.|नई सामग्री स्वीकार करने पर आपकी मौजूदा समीक्षा बदल जाएगी। इसे रखने के लिए चयन या स्क्रीन कैप्चर अनुरोध रद्द करें।|નવી સામગ્રી સ્વીકાર્યા પછી તમારી હાલની સમીક્ષા બદલાશે. તેને રાખવા માટે પસંદગી અથવા સ્ક્રીન કેપ્ચર વિનંતી રદ કરો.
+Keep review|समीक्षा रखें|સમીક્ષા રાખો
+Confirm link spelling|लिंक की वर्तनी जाँचें|લિંકની જોડણી ચકાસો
+Original visible text|मूल दिखाई देने वाला पाठ|મૂળ દેખાતું લખાણ
+Destination to inspect|जाँच के लिए गंतव्य|તપાસ માટેનું ગંતવ્ય
+SafeX AI normalized visible characters for inspection. Compare this with the original message. Nothing opens automatically.|SafeX AI ने जाँच के लिए दिखाई देने वाले अक्षरों को सामान्य किया है। मूल संदेश से मिलान करें। कुछ भी अपने आप नहीं खुलेगा।|SafeX AI એ તપાસ માટે દેખાતા અક્ષરોને સામાન્ય કર્યા છે. મૂળ સંદેશ સાથે સરખાવો. કંઈપણ આપમેળે ખૂલતું નથી.
+Inspect destination|गंतव्य जाँचें|ગંતવ્ય તપાસો
+Keep editing|संपादन जारी रखें|ફેરફાર ચાલુ રાખો
+1 / 3 • Choose an area|1 / 3 • क्षेत्र चुनें|1 / 3 • વિસ્તાર પસંદ કરો
+2 / 3 • Review content|2 / 3 • सामग्री की समीक्षा|2 / 3 • સામગ્રીની સમીક્ષા
+3 / 3 • Private result|3 / 3 • निजी परिणाम|3 / 3 • ખાનગી પરિણામ
+Protection within reach|सुरक्षा अब आपके पास|સુરક્ષા તમારી પહોંચમાં
+Choose content. Review privately. Decide safely.|सामग्री चुनें। निजी तौर पर जाँचें। सुरक्षित निर्णय लें।|સામગ્રી પસંદ કરો. ખાનગી રીતે તપાસો. સુરક્ષિત નિર્ણય લો.
+Privacy and capture limits|गोपनीयता और कैप्चर की सीमाएँ|ગોપનીયતા અને કેપ્ચરની મર્યાદાઓ
+Assistant preferences|सहायक की प्राथमिकताएँ|સહાયકની પસંદગીઓ
+Shield size|शील्ड का आकार|શીલ્ડનું કદ
+Reduce motion|एनीमेशन कम करें|એનિમેશન ઓછું કરો
+Warning sound follows Android volume, Do Not Disturb and notification channel settings.|चेतावनी की ध्वनि Android की आवाज़, परेशान न करें और सूचना चैनल सेटिंग के अनुसार चलती है।|ચેતવણીનો અવાજ Android ના વોલ્યુમ, ખલેલ ન પહોંચાડો અને સૂચના ચેનલ સેટિંગ મુજબ ચાલે છે.
+Pan image|चित्र को खिसकाएँ|ચિત્ર ખસેડો
+Reading another area replaces the extracted text and edits. Back keeps your current review.|दूसरा क्षेत्र पढ़ने पर निकाला गया पाठ और संपादन बदल जाएँगे। वापस जाने से मौजूदा समीक्षा बनी रहेगी।|બીજો વિસ્તાર વાંચવાથી કાઢેલું લખાણ અને ફેરફારો બદલાશે. પાછા જવાથી હાલની સમીક્ષા જળવાશે.
+Change area|क्षेत्र बदलें|વિસ્તાર બદલો
+All text|पूरा पाठ|આખું લખાણ
+Selected lines|चुनी गई पंक्तियाँ|પસંદ કરેલી પંક્તિઓ
+Edited text|संपादित पाठ|સંપાદિત લખાણ
+Select at least one line or choose All text.|कम से कम एक पंक्ति चुनें या पूरा पाठ चुनें।|ઓછામાં ઓછી એક પંક્તિ પસંદ કરો અથવા આખું લખાણ પસંદ કરો.
+Include surrounding message|आसपास का संदेश शामिल करें|આસપાસનો સંદેશ સામેલ કરો
+Edit and rescan|संपादित करें और फिर जाँचें|ફેરફાર કરીને ફરી તપાસો
+Analyze selected link|चुना गया लिंक जाँचें|પસંદ કરેલી લિંક તપાસો
+HTTPS assumed for inspection|जाँच के लिए HTTPS माना गया|તપાસ માટે HTTPS ધાર્યું છે
+English OCR|अंग्रेज़ी OCR|અંગ્રેજી OCR
+Hindi OCR|हिन्दी OCR|હિન્દી OCR
+Gujarati OCR|गुजराती OCR|ગુજરાતી OCR
+QR detection|QR पहचान|QR ઓળખ
+Low quality|कम गुणवत्ता|ઓછી ગુણવત્તા
+Completed|पूरा हुआ|પૂર્ણ થયું
+Web link|वेब लिंक|વેબ લિંક
+Text message|पाठ संदेश|લખાણ સંદેશ
+Contact details|संपर्क विवरण|સંપર્ક વિગતો
+Wi-Fi configuration|Wi-Fi विन्यास|Wi-Fi ગોઠવણી
+Email action|ईमेल कार्रवाई|ઈમેઇલ ક્રિયા
+SMS action|SMS कार्रवाई|SMS ક્રિયા
+Phone action|फ़ोन कार्रवाई|ફોન ક્રિયા
+App action|ऐप कार्रवाई|ઍપ ક્રિયા
+Selected content assessed|चुनी गई सामग्री की जाँच हुई|પસંદ કરેલી સામગ્રી તપાસાઈ
+Limited assessment|सीमित जाँच|મર્યાદિત તપાસ
+Unsupported payload|असमर्थित सामग्री प्रकार|અસમર્થિત સામગ્રી પ્રકાર
+This payload type cannot be fully assessed. Nothing was opened or executed.|इस सामग्री प्रकार की पूरी जाँच नहीं हो सकती। कुछ भी खोला या चलाया नहीं गया।|આ સામગ્રી પ્રકારની સંપૂર્ણ તપાસ થઈ શકતી નથી. કંઈપણ ખોલવામાં કે ચલાવવામાં આવ્યું નથી.
+Assessment is limited. Some selected content or destinations could not be checked.|जाँच सीमित है। कुछ चुनी गई सामग्री या गंतव्यों की जाँच नहीं हो सकी।|તપાસ મર્યાદિત છે. કેટલીક પસંદ કરેલી સામગ્રી અથવા ગંતવ્યો તપાસી શકાયાં નથી.
+Show fewer reasons|कम कारण दिखाएँ|ઓછાં કારણો બતાવો
+Show all reasons|सभी कारण दिखाएँ|બધાં કારણો બતાવો
+More|और विकल्प|વધુ વિકલ્પો
+Less|कम विकल्प|ઓછા વિકલ્પો
+Private image was released to free memory. Capture or choose the image again.|मेमोरी खाली करने के लिए निजी चित्र हटा दिया गया। फिर से कैप्चर करें या चित्र चुनें।|મેમરી ખાલી કરવા માટે ખાનગી ચિત્ર દૂર કર્યું છે. ફરી કેપ્ચર કરો અથવા ચિત્ર પસંદ કરો.
+Floating imported image|फ़्लोटिंग सहायक में चुना चित्र|ફ્લોટિંગ સહાયકમાં પસંદ કરેલું ચિત્ર
+Floating manual content|फ़्लोटिंग सहायक में लिखा पाठ|ફ્લોટિંગ સહાયકમાં લખેલું લખાણ
+A visible link was normalized for inspection. Verify its original spelling and destination.|दिखाई देने वाला लिंक जाँच के लिए सामान्य किया गया। इसकी मूल वर्तनी और गंतव्य की पुष्टि करें।|દેખાતી લિંક તપાસ માટે સામાન્ય કરી છે. તેની મૂળ જોડણી અને ગંતવ્ય ચકાસો.
+A visible domain without a scheme was inspected using assumed HTTPS; transport security was not verified.|बिना स्कीम वाला दिखाई देने वाला डोमेन HTTPS मानकर जाँचा गया; कनेक्शन की सुरक्षा की पुष्टि नहीं हुई।|સ્કીમ વગરના દેખાતા ડોમેનને HTTPS માનીને તપાસ્યું છે; કનેક્શનની સુરક્ષા ચકાસાઈ નથી.
+${count} lines selected|%1$s पंक्तियाँ चुनी गईं|%1$s પંક્તિઓ પસંદ કરી
+Message and link together exceed 12,000 characters. Shorten the text or analyze the link alone.|संदेश और लिंक मिलाकर 12,000 अक्षरों से अधिक हैं। पाठ छोटा करें या केवल लिंक की जाँच करें।|સંદેશ અને લિંક મળીને 12,000 અક્ષરોથી વધુ છે. લખાણ ટૂંકું કરો અથવા માત્ર લિંક તપાસો.
+Capture: ${duration} ms|कैप्चर: %1$s मिलीसेकंड|કેપ્ચર: %1$s મિલિસેકન્ડ
+OCR: ${duration} ms|OCR: %1$s मिलीसेकंड|OCR: %1$s મિલિસેકન્ડ
+Image processing is still finishing. Try again shortly or paste content.|चित्र की प्रक्रिया अभी पूरी हो रही है। थोड़ी देर बाद फिर कोशिश करें या पाठ पेस्ट करें।|ચિત્રની પ્રક્રિયા હજી પૂરી થઈ રહી છે. થોડી વારમાં ફરી પ્રયાસ કરો અથવા લખાણ પેસ્ટ કરો.
+Check this reading|इस पाठ की जाँच करें|આ લખાણ ચકાસો
+Dismiss|हटाएँ|દૂર કરો
+Links|लिंक|લિંક્સ
+QR|क्यूआर|ક્યુઆર
+Selected|चुना गया|પસંદ કરેલું
+Test warning sound|चेतावनी ध्वनि जाँचें|ચેતવણીનો અવાજ તપાસો
+Image was resized to fit device memory. Check small text carefully.|डिवाइस की मेमोरी के अनुसार चित्र छोटा किया गया। छोटे अक्षरों को ध्यान से जाँचें।|ડિવાઇસની મેમરી મુજબ ચિત્ર નાનું કર્યું છે. નાનાં અક્ષરો ધ્યાનથી ચકાસો.
+User-provided text only.|केवल उपयोगकर्ता द्वारा दिया गया पाठ।|ફક્ત વપરાશકર્તાએ આપેલું લખાણ.
+Some warning channels are disabled. Review Android notification settings.|कुछ चेतावनी चैनल बंद हैं। Android की सूचना सेटिंग जाँचें।|કેટલીક ચેતવણી ચેનલો બંધ છે. Android ની સૂચના સેટિંગ તપાસો.
+Private image was released to free memory. Review text remains available.|मेमोरी खाली करने के लिए निजी चित्र हटा दिया गया। समीक्षा का पाठ उपलब्ध है।|મેમરી ખાલી કરવા માટે ખાનગી ચિત્ર દૂર કર્યું છે. સમીક્ષાનું લખાણ ઉપલબ્ધ છે.

@@ -11,7 +11,7 @@ object CaptureSessionStore {
     sealed interface State {
         data object Empty : State
         data class Waiting(val id: String) : State
-        data class Ready(val id: String, val bitmap: Bitmap) : State
+        data class Ready(val id: String, val bitmap: Bitmap, val elapsedMs: Long? = null, val downsampled: Boolean = false) : State
         data class Failed(val id: String, val message: String) : State
     }
     private val mutable = MutableStateFlow<State>(State.Empty)
@@ -28,9 +28,9 @@ object CaptureSessionStore {
     fun sourceVisible(id: String) {
         if ((mutable.value as? State.Waiting)?.id == id) sourceVisibleAt = SystemClock.elapsedRealtime()
     }
-    @Synchronized fun deliver(id: String, bitmap: Bitmap): Boolean {
+    @Synchronized fun deliver(id: String, bitmap: Bitmap, downsampled: Boolean = false): Boolean {
         if ((mutable.value as? State.Waiting)?.id != id) { bitmap.recycle(); return false }
-        mutable.value = State.Ready(id, bitmap)
+        mutable.value = State.Ready(id, bitmap, sourceVisibleAt.takeIf { it > 0 }?.let { SystemClock.elapsedRealtime() - it }, downsampled)
         return true
     }
     @Synchronized fun take(id: String): Bitmap? {

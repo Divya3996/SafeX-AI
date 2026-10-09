@@ -1,5 +1,7 @@
 # SafeX AI 1.5.0 — floating security assistant
 
+Historical release: see [SafeX AI 1.6](floating-assistant-1.6.md) for the current workflow. The checks below belong to 1.5.0.
+
 The floating shield gives users an on-demand way to check content encountered in other apps. It does not continuously record the screen or read other apps. Android must allow overlays, and each screen capture requires a fresh system consent prompt.
 
 ## Enable and use
@@ -22,9 +24,9 @@ These screenshots use authored demonstration content:
 
 | Crop captured content | Review extracted text | Private risk explanation |
 | --- | --- | --- |
-| ![Crop the captured screen](screenshots/floating-assistant/captured-crop.png) | ![Review and edit recognized content](screenshots/floating-assistant/extracted-review.png) | ![Private risk result](screenshots/floating-assistant/private-risk-result.png) |
+| ![Crop the captured screen](screenshots/floating-assistant-1.5.0/captured-crop.png) | ![Review and edit recognized content](screenshots/floating-assistant-1.5.0/extracted-review.png) | ![Private risk result](screenshots/floating-assistant-1.5.0/private-risk-result.png) |
 
-[English at 150%](screenshots/floating-assistant/setup-en-150.png) · [Hindi at 150%](screenshots/floating-assistant/setup-hi-150.png) · [Gujarati at 150%](screenshots/floating-assistant/setup-gu-150.png)
+[English at 150%](screenshots/floating-assistant-1.5.0/setup-en-150.png) · [Hindi at 150%](screenshots/floating-assistant-1.5.0/setup-hi-150.png) · [Gujarati at 150%](screenshots/floating-assistant-1.5.0/setup-gu-150.png)
 
 ## Private capture and analysis
 
@@ -73,7 +75,7 @@ A Play Store release needs the foreground-service declaration and review for thi
 
 The final 1.5.0 debug APK passed **500 active unit tests** (503 discovered; three optional research-export tests skipped) and **35 Android device tests in airplane mode**. The native suite took 171.361 seconds; this is suite duration, not a scan-latency benchmark. Android lint reported **zero errors and 51 warnings**. All 714 translated interface strings have matching English/Hindi/Gujarati keys and placeholders.
 
-[Installable APK](../android-app/app/build/outputs/apk/debug/SafeX-AI-1.5.0-debug.apk) · [Verification summary](test-results/floating-assistant-summary.json) · [Final build output](test-results/floating-assistant-final-build.txt) · [Device test output](test-results/floating-assistant-native.txt) · [Capture lifecycle evidence](test-results/floating-assistant-capture-diagnostics.txt)
+[Installable APK](../releases/SafeX-AI-1.5.0-debug.apk) · [Verification summary](test-results/1.5.0/floating-assistant-summary.json) · [Final build output](test-results/1.5.0/floating-assistant-final-build.txt) · [Device test output](test-results/1.5.0/floating-assistant-native.txt) · [Capture lifecycle evidence](test-results/1.5.0/floating-assistant-capture-diagnostics.txt)
 
 APK version code: 6. Development debug signing; size: 134,569,534 bytes. SHA-256:
 

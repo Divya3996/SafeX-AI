@@ -19,7 +19,7 @@ The configured model threshold raises the risk index to at least 35 (WARN). It c
 - Training: 100 authored synthetic English, Hindi, Gujarati and Hinglish examples.
 - Validation: 36 authored synthetic examples, used to select warning threshold 0.60. This is not independent test data or a real-world benchmark.
 - Model-only validation: TP 11, FP 0, FN 7, TN 18; recall 61.1% on these 18 synthetic scam examples. Zero false positives on 18 synthetic benign examples does not establish real-world precision.
-- Runtime: a positive model score raises the risk index to at least 35. It does not independently BLOCK. Rules and embedded links can raise severity further.
+- Runtime in 1.6: a positive model score raises the risk index to at least 35 only with corroborating sensitive-action context. Neutral educational text and filtered protective advice cannot trigger that model warning alone. This restriction may miss scams outside that context; the model-only validation figures above do not measure the complete pipeline. It does not independently BLOCK. Rules and embedded links can raise severity further.
 - Rebuild: `python3 scripts/train_text_model.py` (requires NumPy); examples and report are in `models/`.
 - Artifact SHA-256: `6fd873b8c8569a06dbfa1bdc16668fe9545b690231adc3cb0cac2efb075dfd9f`.
 

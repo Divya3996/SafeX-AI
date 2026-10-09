@@ -11,6 +11,8 @@
 # Build outputs
 build/
 **/build/
+releases/
+**/__pycache__/
 
 # Android Studio
 .idea/

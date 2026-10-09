@@ -4,7 +4,9 @@ An Android security assistant for checking suspicious messages, links, screensho
 
 ## What works
 
-- User-enabled floating shield supports consented screen capture, precise cropping, editable OCR and private text/link/QR review.
+- Branded floating shield supports fresh consented capture, crop/zoom, independent OCR outcomes and private text/link/QR review.
+- Explicit All/Selected/Edited modes retain drafts; Back, recrop and cancellation preserve intended input.
+- Visible fixed actions, coverage explanations, link-normalization confirmation and typed QR payloads keep the review clear.
 - Shared messages, selected text and manual input use the same local scam analysis.
 - Links combine 26 structural rules, a bundled TensorFlow Lite classifier and an optional imported local threat list.
 - Supported app notifications are checked after the user enables Android notification access. Findings produce a private warning with saved explanations.
@@ -33,9 +35,9 @@ cd android-app
 
 Install `app/build/outputs/apk/debug/app-debug.apk`. The optional `demo-sender/build/outputs/apk/debug/demo-sender-debug.apk` posts clearly labeled local fixtures to demonstrate actual notification capture in debug builds.
 
-See [the 1.5.0 floating assistant](docs/floating-assistant.md), [the 1.4.0 practical features](docs/practical-features.md), [setup](docs/setup.md), [demo rehearsal](docs/demo.md), [privacy](docs/privacy.md), [features and scope](docs/features.md), [architecture](docs/architecture.md), [model card](docs/ml-model.md), [languages and branding](docs/languages-and-branding.md), and the [project audit and upgrade plan](docs/hackathon-upgrade-plan.md).
+See [the 1.6.0 floating assistant](docs/floating-assistant-1.6.md), [the 1.4.0 practical features](docs/practical-features.md), [setup](docs/setup.md), [demo rehearsal](docs/demo.md), [privacy](docs/privacy.md), [features and scope](docs/features.md), [architecture](docs/architecture.md), [model card](docs/ml-model.md), [languages and branding](docs/languages-and-branding.md), and the [project audit and upgrade plan](docs/hackathon-upgrade-plan.md).
 
-Design rationale: [floating assistant implementation plan](docs/floating-assistant-plan.md).
+Design rationale: [floating assistant implementation plan](docs/floating-assistant-plan.md) · [Enhancement audit: UX, detection and logo](docs/floating-assistant-enhancement-plan.md).
 
 ## Screenshots
 
@@ -49,9 +51,9 @@ Design rationale: [floating assistant implementation plan](docs/floating-assista
 
 ## Validation
 
-SafeX AI **1.5.0**: **500 active unit tests and 35 offline device tests passed**, with zero lint errors (51 warnings). Three optional research-export tests were skipped.
+SafeX AI **1.6.0**: **518 active unit tests and 51 offline device tests passed**, with zero lint errors (54 warnings). Three optional research-export tests were skipped. All 55 authored detection contracts matched; these are development fixtures, not independent accuracy evidence.
 
-[Debug APK](android-app/app/build/outputs/apk/debug/SafeX-AI-1.5.0-debug.apk) · [Release verification](docs/test-results/floating-assistant-summary.json) · [Verification report and limits](docs/validation.md)
+[Debug APK](releases/SafeX-AI-1.6.0-debug.apk) · [Release verification](docs/test-results/floating-assistant-summary.json) · [Verification report and limits](docs/validation.md)
 
 ```sh
 cd android-app

@@ -715,4 +715,77 @@
     <string name="sx_selected_link_only_surrounding_message_text__59bd2436" formatted="false">"Selected link only. Surrounding message text was not analyzed."</string>
     <string name="sx_selected_qr_payload_only_surrounding_image_t_2ba0bbbe" formatted="false">"Selected QR payload only. Surrounding image text was not analyzed."</string>
     <string name="sx_tap_the_shield_to_choose_content_screen_capt_aa297a34" formatted="false">"Tap the shield to choose content. Screen capture requires your approval."</string>
+    <string name="sx_start_a_new_input_743f1d20" formatted="false">"Start a new input?"</string>
+    <string name="sx_your_current_review_will_be_replaced_when_ne_713468c6" formatted="false">"Your current review will be replaced when new content is accepted. Cancel the picker or capture prompt to keep it."</string>
+    <string name="sx_keep_review_f7a329cd" formatted="false">"Keep review"</string>
+    <string name="sx_confirm_link_spelling_03b5a367" formatted="false">"Confirm link spelling"</string>
+    <string name="sx_original_visible_text_0f600237" formatted="false">"Original visible text"</string>
+    <string name="sx_destination_to_inspect_2a987a56" formatted="false">"Destination to inspect"</string>
+    <string name="sx_safex_ai_normalized_visible_characters_for_i_08acede3" formatted="false">"SafeX AI normalized visible characters for inspection. Compare this with the original message. Nothing opens automatically."</string>
+    <string name="sx_inspect_destination_811861b0" formatted="false">"Inspect destination"</string>
+    <string name="sx_keep_editing_e76fd2ad" formatted="false">"Keep editing"</string>
+    <string name="sx_1_3_choose_an_area_8e2c8e00" formatted="false">"1 / 3 • Choose an area"</string>
+    <string name="sx_2_3_review_content_630c7af9" formatted="false">"2 / 3 • Review content"</string>
+    <string name="sx_3_3_private_result_7b90f852" formatted="false">"3 / 3 • Private result"</string>
+    <string name="sx_protection_within_reach_8e39bb07" formatted="false">"Protection within reach"</string>
+    <string name="sx_choose_content_review_privately_decide_safel_4c327f1e" formatted="false">"Choose content. Review privately. Decide safely."</string>
+    <string name="sx_privacy_and_capture_limits_bf542aad" formatted="false">"Privacy and capture limits"</string>
+    <string name="sx_assistant_preferences_2b3a039a" formatted="false">"Assistant preferences"</string>
+    <string name="sx_shield_size_5557b004" formatted="false">"Shield size"</string>
+    <string name="sx_reduce_motion_297ef4c7" formatted="false">"Reduce motion"</string>
+    <string name="sx_warning_sound_follows_android_volume_do_not__79c57742" formatted="false">"Warning sound follows Android volume, Do Not Disturb and notification channel settings."</string>
+    <string name="sx_pan_image_23d256fa" formatted="false">"Pan image"</string>
+    <string name="sx_reading_another_area_replaces_the_extracted__7a524c0b" formatted="false">"Reading another area replaces the extracted text and edits. Back keeps your current review."</string>
+    <string name="sx_change_area_ac0223bc" formatted="false">"Change area"</string>
+    <string name="sx_all_text_cc4201cc" formatted="false">"All text"</string>
+    <string name="sx_selected_lines_8eb4915a" formatted="false">"Selected lines"</string>
+    <string name="sx_edited_text_a440abe2" formatted="false">"Edited text"</string>
+    <string name="sx_select_at_least_one_line_or_choose_all_text_04218640" formatted="false">"Select at least one line or choose All text."</string>
+    <string name="sx_include_surrounding_message_f4a45d6b" formatted="false">"Include surrounding message"</string>
+    <string name="sx_edit_and_rescan_9a0a5a59" formatted="false">"Edit and rescan"</string>
+    <string name="sx_analyze_selected_link_8f2d69c0" formatted="false">"Analyze selected link"</string>
+    <string name="sx_https_assumed_for_inspection_824728b7" formatted="false">"HTTPS assumed for inspection"</string>
+    <string name="sx_english_ocr_5645234c" formatted="false">"English OCR"</string>
+    <string name="sx_hindi_ocr_a66e13d2" formatted="false">"Hindi OCR"</string>
+    <string name="sx_gujarati_ocr_91379849" formatted="false">"Gujarati OCR"</string>
+    <string name="sx_qr_detection_e7c0089c" formatted="false">"QR detection"</string>
+    <string name="sx_low_quality_957aea80" formatted="false">"Low quality"</string>
+    <string name="sx_completed_22a970d2" formatted="false">"Completed"</string>
+    <string name="sx_web_link_617dd08d" formatted="false">"Web link"</string>
+    <string name="sx_text_message_ca47049e" formatted="false">"Text message"</string>
+    <string name="sx_contact_details_9681395d" formatted="false">"Contact details"</string>
+    <string name="sx_wi_fi_configuration_54f2e202" formatted="false">"Wi-Fi configuration"</string>
+    <string name="sx_email_action_9e6896c9" formatted="false">"Email action"</string>
+    <string name="sx_sms_action_d139d07f" formatted="false">"SMS action"</string>
+    <string name="sx_phone_action_fcf70724" formatted="false">"Phone action"</string>
+    <string name="sx_app_action_75a6e8b5" formatted="false">"App action"</string>
+    <string name="sx_selected_content_assessed_2e18402f" formatted="false">"Selected content assessed"</string>
+    <string name="sx_limited_assessment_133427fa" formatted="false">"Limited assessment"</string>
+    <string name="sx_unsupported_payload_9bc67356" formatted="false">"Unsupported payload"</string>
+    <string name="sx_this_payload_type_cannot_be_fully_assessed_n_60d9324c" formatted="false">"This payload type cannot be fully assessed. Nothing was opened or executed."</string>
+    <string name="sx_assessment_is_limited_some_selected_content__9c72deb9" formatted="false">"Assessment is limited. Some selected content or destinations could not be checked."</string>
+    <string name="sx_show_fewer_reasons_c522a320" formatted="false">"Show fewer reasons"</string>
+    <string name="sx_show_all_reasons_3eb32d92" formatted="false">"Show all reasons"</string>
+    <string name="sx_more_d47d7cb0" formatted="false">"More"</string>
+    <string name="sx_less_ae5239ec" formatted="false">"Less"</string>
+    <string name="sx_private_image_was_released_to_free_memory_ca_9565d818" formatted="false">"Private image was released to free memory. Capture or choose the image again."</string>
+    <string name="sx_floating_imported_image_5935c6aa" formatted="false">"Floating imported image"</string>
+    <string name="sx_floating_manual_content_dc748d3b" formatted="false">"Floating manual content"</string>
+    <string name="sx_a_visible_link_was_normalized_for_inspection_ca440fc0" formatted="false">"A visible link was normalized for inspection. Verify its original spelling and destination."</string>
+    <string name="sx_a_visible_domain_without_a_scheme_was_inspec_5d34c1a9" formatted="false">"A visible domain without a scheme was inspected using assumed HTTPS; transport security was not verified."</string>
+    <string name="sx_1_s_lines_selected_5aad5870" formatted="false">"%1$s lines selected"</string>
+    <string name="sx_message_and_link_together_exceed_12_000_char_e28796ec" formatted="false">"Message and link together exceed 12,000 characters. Shorten the text or analyze the link alone."</string>
+    <string name="sx_capture_1_s_ms_bbda95d4" formatted="false">"Capture: %1$s ms"</string>
+    <string name="sx_ocr_1_s_ms_f568d82d" formatted="false">"OCR: %1$s ms"</string>
+    <string name="sx_image_processing_is_still_finishing_try_agai_61b336e1" formatted="false">"Image processing is still finishing. Try again shortly or paste content."</string>
+    <string name="sx_check_this_reading_c282a4b6" formatted="false">"Check this reading"</string>
+    <string name="sx_dismiss_48845bff" formatted="false">"Dismiss"</string>
+    <string name="sx_links_9024c197" formatted="false">"Links"</string>
+    <string name="sx_qr_a439fba4" formatted="false">"QR"</string>
+    <string name="sx_selected_57fd7a0c" formatted="false">"Selected"</string>
+    <string name="sx_test_warning_sound_69f8a715" formatted="false">"Test warning sound"</string>
+    <string name="sx_image_was_resized_to_fit_device_memory_check_d4374280" formatted="false">"Image was resized to fit device memory. Check small text carefully."</string>
+    <string name="sx_user_provided_text_only_3ed4d0b6" formatted="false">"User-provided text only."</string>
+    <string name="sx_some_warning_channels_are_disabled_review_an_f2101eb8" formatted="false">"Some warning channels are disabled. Review Android notification settings."</string>
+    <string name="sx_private_image_was_released_to_free_memory_re_9712f574" formatted="false">"Private image was released to free memory. Review text remains available."</string>
 </resources>

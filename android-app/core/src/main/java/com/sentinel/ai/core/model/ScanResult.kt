@@ -27,7 +27,10 @@ data class ScanResult(
     val guidance: String = "Verify unexpected requests through a trusted channel.",
     val linkInspections: List<LinkInspection>? = null,
     val paymentReviews: List<PaymentQrReview>? = null,
-    val contextReview: ContextAnswers? = null
+    val contextReview: ContextAnswers? = null,
+    val provenance: InputProvenance? = null,
+    val coverageDetails: ScanCoverageDetails? = null,
+    val timings: ScanTimings? = null
 )
 
 enum class ProtectionDecision {

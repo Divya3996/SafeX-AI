@@ -36,4 +36,16 @@ class PrivateAnalysisTest {
     }
     @Test(expected = IllegalArgumentException::class) fun privateOversizedMessageFailsWithoutTruncation() = runBlocking { repository.analyzeTextPrivately("x".repeat(12001)); Unit }
     @Test(expected = IllegalArgumentException::class) fun executableUrlCannotBecomeBrowserAction() = runBlocking { repository.analyzeLinkPrivately("javascript:alert(1)"); Unit }
+    @Test fun unsupportedQrIsLimitedAndCannotLaunch() = runBlocking {
+        val result = repository.analyzeQrPrivately("WIFI:T:WPA;S:fixture;P:private;;")
+        assertEquals(AssessmentCoverage.UNSUPPORTED, result.coverageDetails!!.assessment)
+        assertEquals(ProtectionDecision.WARN, result.decision)
+        assertFalse(DecisionPolicy.canOpen(result))
+    }
+    @Test fun bareAndDefangedLinksUseTheFullLinkPipeline() = runBlocking {
+        val result = repository.analyzeTextPrivately("Check example.com/Account and hxxps://other[.]example/login")
+        assertEquals(setOf("example.com", "other.example"), result.linkInspections.orEmpty().map { it.host }.toSet())
+        assertTrue(result.reasons.any { it.message.contains("normalized") })
+        assertEquals(2, result.coverageDetails!!.analyzedLinks)
+    }
 }

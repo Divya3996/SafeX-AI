@@ -10,13 +10,14 @@ import kotlin.math.*
 class ScreenCropView(context: Context) : View(context) {
     var bitmap: Bitmap? = null
         set(value) { field = value; invalidate() }
-    var selection = ScreenSelection(.05f, .1f, .95f, .85f)
+    var selection = ScreenSelection.FULL
         set(value) { field = value; invalidate() }
     var lines = emptyList<ExtractedLine>()
     var selectedLines = emptySet<Int>()
     var onSelection: (ScreenSelection) -> Unit = {}
     var onLine: (Int) -> Unit = {}
     var reviewMode = false
+    var panMode = false
     var zoomed = false
         set(value) { field = value; focusX = (selection.left + selection.right) / 2; focusY = (selection.top + selection.bottom) / 2; invalidate() }
     private var focusX = .5f
@@ -27,6 +28,8 @@ class ScreenCropView(context: Context) : View(context) {
     private var down = PointF()
     private var original = selection
     private var handle = -1
+    private var panStart = PointF()
+    private var panMoved = false
     private fun imageRect(): RectF {
         val image = bitmap ?: return RectF()
         val scale = min(width.toFloat() / image.width, height.toFloat() / image.height) * if (zoomed) 2 else 1
@@ -81,11 +84,24 @@ class ScreenCropView(context: Context) : View(context) {
     override fun onTouchEvent(event: MotionEvent): Boolean {
         val image = bitmap ?: return false
         val point = normalized(event.x, event.y)
+        if (panMode && zoomed) {
+            when (event.actionMasked) {
+                MotionEvent.ACTION_DOWN -> { down = PointF(event.x, event.y); panStart = down; panMoved = false; parent?.requestDisallowInterceptTouchEvent(true) }
+                MotionEvent.ACTION_MOVE -> {
+                    if (hypot(event.x - panStart.x, event.y - panStart.y) > ViewConfiguration.get(context).scaledTouchSlop) panMoved = true
+                    val r = imageRect(); val minX = (width / (2f * r.width())).coerceAtMost(.5f); val minY = (height / (2f * r.height())).coerceAtMost(.5f)
+                    focusX = (focusX - (event.x - down.x) / r.width()).coerceIn(minX, 1 - minX)
+                    focusY = (focusY - (event.y - down.y) / r.height()).coerceIn(minY, 1 - minY); down = PointF(event.x, event.y); invalidate()
+                }
+                MotionEvent.ACTION_UP -> { parent?.requestDisallowInterceptTouchEvent(false); if (reviewMode && !panMoved) selectAt(event.x, event.y) }
+                MotionEvent.ACTION_CANCEL -> parent?.requestDisallowInterceptTouchEvent(false)
+            }
+            return true
+        }
         if (reviewMode) {
+            if (!imageRect().contains(event.x, event.y)) return false
             if (event.actionMasked == MotionEvent.ACTION_UP) {
-                val x = point.x * image.width; val y = point.y * image.height
-                val index = lines.indexOfFirst { it.region?.let { r -> x >= r.left && x <= r.right && y >= r.top && y <= r.bottom } == true }
-                if (index >= 0) { onLine(index); performClick() }
+                selectAt(event.x, event.y)
             }
             return true
         }
@@ -119,9 +135,17 @@ class ScreenCropView(context: Context) : View(context) {
                 }
                 onSelection(selection); return true
             }
-            MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> { parent?.requestDisallowInterceptTouchEvent(false); performClick(); return true }
+            MotionEvent.ACTION_UP -> { parent?.requestDisallowInterceptTouchEvent(false); performClick(); return true }
+            MotionEvent.ACTION_CANCEL -> { selection = original; onSelection(selection); parent?.requestDisallowInterceptTouchEvent(false); return true }
         }
         return true
+    }
+    private fun selectAt(x: Float, y: Float) {
+        val image = bitmap ?: return
+        if (!imageRect().contains(x, y)) return
+        val p = normalized(x, y)
+        val index = lines.indexOfFirst { it.region?.let { r -> p.x * image.width >= r.left && p.x * image.width <= r.right && p.y * image.height >= r.top && p.y * image.height <= r.bottom } == true }
+        if (index >= 0) { onLine(index); performClick() }
     }
     override fun performClick(): Boolean { super.performClick(); return true }
 }

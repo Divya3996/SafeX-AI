@@ -24,8 +24,9 @@ data class PixelRegion(val left: Int, val top: Int, val right: Int, val bottom: 
         return area.toFloat() / max(1, min(width * height, other.width * other.height)) > .65f
     }
 }
-data class ExtractedLine(val text: String, val region: PixelRegion?, val script: String)
-data class ExtractionResult(val lines: List<ExtractedLine>, val qrCodes: List<String> = emptyList(), val partial: Boolean = false) {
+data class ExtractedLine(val text: String, val region: PixelRegion?, val script: String, val confidence: Float? = null)
+data class ExtractionResult(val lines: List<ExtractedLine>, val qrCodes: List<String> = emptyList(), val partial: Boolean = false, val outcomes: List<ExtractionOutcome> = emptyList(), val textTruncated: Boolean = false, val qrTruncated: Boolean = false) {
+    val limited get() = partial || outcomes.any { it.status != EvidenceSourceStatus.COMPLETED }
     val text get() = lines.joinToString("\n") { it.text }
     companion object {
         private val latinTokens = Regex("[A-Za-z0-9][A-Za-z0-9._/:?&=@%+-]*")
@@ -51,7 +52,7 @@ data class ExtractionResult(val lines: List<ExtractedLine>, val qrCodes: List<St
             var length = 0
             var count = 0
             val bounded = ordered.take(250).takeWhile { line -> length += line.text.length + if (count++ > 0) 1 else 0; length <= 12000 }
-            return ExtractionResult(bounded, qr.filter { it.isNotBlank() }.distinct().take(8), bounded.size < ordered.size || qr.distinct().size > 8)
+            return ExtractionResult(bounded, qr.filter { it.isNotBlank() }.distinct().take(8), bounded.size < ordered.size || qr.distinct().size > 8, textTruncated = bounded.size < ordered.size, qrTruncated = qr.distinct().size > 8)
         }
     }
 }

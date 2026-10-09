@@ -19,7 +19,7 @@ import com.sentinel.ai.ui.components.riskColor
 
 @Composable
 fun AnalysisResultContent(result: ScanResult, onClose: () -> Unit, onOpen: (() -> Unit)? = null, modifier: Modifier = Modifier,
-    persistReviews: Boolean = true, onResultUpdated: (ScanResult) -> Unit = {}) {
+    persistReviews: Boolean = true, onResultUpdated: (ScanResult) -> Unit = {}, showChrome: Boolean = true, compactReasons: Boolean = false) {
     val journal by com.sentinel.ai.core.event.ThreatJournal.scanResults.collectAsState()
     val latest = if (persistReviews) journal.firstOrNull { it.id == result.id && it.contextReview != null } ?: result else result
     var displayed by remember(result.id) { mutableStateOf(result) }
@@ -31,14 +31,16 @@ fun AnalysisResultContent(result: ScanResult, onClose: () -> Unit, onOpen: (() -
     val focus = androidx.compose.ui.platform.LocalFocusManager.current
     if (help) {
         BackHandler { help = false }
-        com.sentinel.ai.ui.screens.help.IncidentHelpScreen { help = false }
+        Box(modifier.fillMaxSize()) {
+            com.sentinel.ai.ui.screens.help.IncidentHelpScreen { help = false }
+        }
         return
     }
     val open = onOpen ?: {
         if (DecisionPolicy.canOpen(displayed) && !launchBrowser(context, displayed.target!!))
             android.widget.Toast.makeText(context, com.sentinel.ai.core.i18n.I18n.translate(context, "No external browser available."), android.widget.Toast.LENGTH_LONG).show()
     }
-    ResultBody(displayed, onClose, open, modifier, saving, onHelp = { help = true }, onContext = { answers ->
+    ResultBody(displayed, onClose, open, modifier, saving, showChrome, compactReasons, onHelp = { help = true }, onContext = { answers ->
         if (!saving) {
             focus.clearFocus()
             val prior = displayed.contextReview ?: ContextAnswers()
@@ -69,7 +71,7 @@ fun AnalysisResultContent(result: ScanResult, onClose: () -> Unit, onOpen: (() -
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 private fun ResultBody(result: ScanResult, onClose: () -> Unit, onOpen: () -> Unit, modifier: Modifier,
-    saving: Boolean, onContext: (ContextAnswers) -> Unit, onHelp: () -> Unit) {
+    saving: Boolean, showChrome: Boolean, compactReasons: Boolean, onContext: (ContextAnswers) -> Unit, onHelp: () -> Unit) {
     val color = riskColor(result.riskLevel)
     val scroll = rememberScrollState()
     LaunchedEffect(result.contextReview) { if (result.contextReview != null) scroll.scrollTo(0) }
@@ -79,7 +81,7 @@ private fun ResultBody(result: ScanResult, onClose: () -> Unit, onOpen: () -> Un
         confirmButton = { TextButton(onClick = { confirm = false; if (DecisionPolicy.canOpen(result)) onOpen() }) { Text("Open anyway") } },
         dismissButton = { TextButton(onClick = { confirm = false }) { Text("Stay here") } })
     Column(modifier.fillMaxSize().verticalScroll(scroll).padding(20.dp), verticalArrangement = Arrangement.spacedBy(20.dp)) {
-        Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
+        if (showChrome) Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
             Text("Analysis result", style = MaterialTheme.typography.titleLarge, modifier = Modifier.weight(1f))
             IconButton(onClick = onClose) { Icon(Icons.Default.Close, com.sentinel.ai.ui.i18n.localized("Close result")) }
         }
@@ -92,18 +94,24 @@ private fun ResultBody(result: ScanResult, onClose: () -> Unit, onOpen: () -> Un
                 FlowRow(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween,
                     verticalArrangement = Arrangement.spacedBy(4.dp)) {
                     Text("Risk index ${result.riskScore.toInt()} / 100", style = MaterialTheme.typography.labelLarge)
-                    Text("${result.durationMs} ms", style = MaterialTheme.typography.labelLarge)
+                    if (result.durationMs > 0 || result.timings?.analysisMs != null) Text("${result.durationMs} ms", style = MaterialTheme.typography.labelLarge)
                 }
                 LinearProgressIndicator(progress = { result.riskScore / 100f }, modifier = Modifier.fillMaxWidth(), color = color)
                 Text(result.category + if (result.isDemo) " • synthetic sample" else "", style = MaterialTheme.typography.labelMedium)
             }
         }
+        result.coverageDetails?.let { details ->
+            Text(when (details.assessment) { AssessmentCoverage.COMPLETE -> "Selected content assessed"; AssessmentCoverage.LIMITED -> "Limited assessment"; AssessmentCoverage.UNSUPPORTED -> "Unsupported payload" },
+                style = MaterialTheme.typography.titleSmall, color = if (details.assessment == AssessmentCoverage.COMPLETE) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.error)
+        }
+        Text(result.coverage, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
         Text("Why this result", style = MaterialTheme.typography.titleMedium)
         val reasons = result.reasons.filter { it.source != ScanReasonSource.PROVIDER_STATUS }.map { it.message }.distinct()
+        var reasonsExpanded by remember(result.id) { mutableStateOf(false) }
         Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
             Column(Modifier.padding(20.dp), verticalArrangement = Arrangement.spacedBy(14.dp)) {
                 if (reasons.isEmpty()) Text("No strong signals were found by the available checks.", color = MaterialTheme.colorScheme.onSurfaceVariant)
-                reasons.take(8).forEach { reason ->
+                reasons.take(if (compactReasons && !reasonsExpanded) 3 else 8).forEach { reason ->
                     Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                         Icon(Icons.Default.Info, null, tint = color, modifier = Modifier.size(18.dp))
                         Text(reason, style = MaterialTheme.typography.bodyMedium)
@@ -111,6 +119,7 @@ private fun ResultBody(result: ScanResult, onClose: () -> Unit, onOpen: () -> Un
                 }
             }
         }
+        if (compactReasons && reasons.size > 3) TextButton(onClick = { reasonsExpanded = !reasonsExpanded }) { Text(if (reasonsExpanded) "Show fewer reasons" else "Show all reasons") }
         result.linkInspections.orEmpty().take(8).forEach { LinkIdentityCard(it) }
         result.paymentReviews.orEmpty().take(8).forEach { PaymentReviewCard(it, onContext, saving) }
         if (result.contentType != "file") ContextReviewCard(result, onContext, saving)
@@ -126,9 +135,12 @@ private fun ResultBody(result: ScanResult, onClose: () -> Unit, onOpen: () -> Un
             }
         }
         HorizontalDivider()
+        result.timings?.let { timings ->
+            timings.captureMs?.let { Text("Capture: $it ms", style = MaterialTheme.typography.labelSmall) }
+            timings.extractionMs?.let { Text("OCR: $it ms", style = MaterialTheme.typography.labelSmall) }
+        }
         Text(result.modelStatus, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
-        Text(result.coverage, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-        Button(onClick = onClose, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp)) { Text("Done") }
+        if (showChrome) Button(onClick = onClose, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp)) { Text("Done") }
         if (DecisionPolicy.canOpen(result)) OutlinedButton(onClick = {
             if (result.decision == ProtectionDecision.WARN) confirm = true else onOpen()
         }, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp)) {

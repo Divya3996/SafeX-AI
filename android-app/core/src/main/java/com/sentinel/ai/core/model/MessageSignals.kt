@@ -7,19 +7,18 @@ import java.util.Locale
 object MessageSignals {
     fun normalize(text: String): String = Normalizer.normalize(text, Normalizer.Form.NFKC)
         .replace(Regex("[\\u200B-\\u200D\\uFEFF]"), "").lowercase(Locale.ROOT)
-    fun urls(text: String, limit: Int = 8): List<String> = Regex("(?:https?://|www\\.)[^\\s<>]+", RegexOption.IGNORE_CASE)
-        .findAll(text).map { it.value.trimEnd('.', ',', ';', ')', ']', '}', '!', '?', '\'', '"') }
-        .map { if (it.startsWith("www.", true)) "https://$it" else it }
-        .distinct().take(limit.coerceIn(1, 32)).toList()
+    fun urls(text: String, limit: Int = 8): List<String> = ContentCandidateExtractor.extract(text, limit).map { it.inspectionValue }
 
-    data class Result(val score: Float, val category: String, val reasons: List<String>, val advice: String)
+    data class Result(val score: Float, val category: String, val reasons: List<String>, val advice: String, val classifierInput: String = "", val modelWarningEligible: Boolean = false)
 
     fun analyze(text: String): Result {
         val lower = normalize(text)
         val active = lower.split(Regex("[.!?।॥\\n]+\\s*|\\b(?:but|however|and)\\b|लेकिन|परंतु|मगर| और |પરંતુ| અને ")).filterNot {
             (Regex("\\b(never|do not|don't)\\s+(share|send|reveal|disclose|give|tell|provide|scan|pay|transfer|install|enter)\\b").containsMatchIn(it) || it.trimStart().startsWith("beware of") ||
-                Regex("(कभी.*नहीं|कभी.*(न बत|न दें|न भेज|साझा न|शेयर न)|मत (बत|भेज|दे|शेयर|साझा)|(?:^|\\s)न\\s+(बत|दें|भेज|करें|करे|शेयर)|साझा न|शेयर न|बताएं नहीं|भेजें नहीं|ઓટીપી.*(શેર ન|આપશો નહીં|જણાવશો નહીં)|ક્યારેય.*(ન કરો|ન આપ|ન મોકલ|ન જણાવ|ન શેર)|શેર (ન|ના) કરો|આપશો નહીં|મોકલશો નહીં|જણાવશો નહીં|સાવધાન રહો|સावधान रहें)").containsMatchIn(it)) &&
+                Regex("""(कभी.*नहीं|कभी.*(न बत|न दें|न भेज|साझा न|शेयर न)|मत (बत|भेज|दे|शेयर|साझा|स्कैन|स्केन|कर|भुगतान)|(?:^|\s)न\s+(बत|दें|भेज|करें|करे|शेयर)|साझा न|शेयर न|बताएं नहीं|भेजें नहीं|ઓટીપી.*(શેર ન|આપશો નહીં|જણાવશો નહીં)|ક્યારેય.*(ન કરો|ન આપ|ન મોકલ|ન જણાવ|ન શેર)|શેર (ન|ના) કરો|આપશો નહીં|મોકલશો નહીં|જણાવશો નહીં|(સ્કેન|સ્કૅન|ચુકવણી|ઇન્સ્ટોલ).*ન કરો|સાવધાન રહો|सावधान रहें)""").containsMatchIn(it)) &&
                 !Regex("\\b(but|except|however|instead)\\b|लेकिन|परंतु|मगर|लेकिन अभी|પરંતુ|પણ હમણાં|પણ હવે").containsMatchIn(it)
+                && !(Regex("do not tell (anyone|your family)|किसी को मत बता|કોઈને (કહેશો|જણાવશો) નહીં").containsMatchIn(it) &&
+                    Regex("pay|transfer|send|money|bank|police|पैसे|भुगतान|बैंक|पुलिस|પૈસા|ચુકવણી|બેંક|પોલીસ").containsMatchIn(it))
         }.joinToString(". ")
         val reasons = mutableListOf<String>()
         var score = 0f
@@ -69,6 +68,9 @@ object MessageSignals {
             category = "Payment request"
         }
         if (urls(text).isNotEmpty() && urgency) signal(12f, "Combines a link with pressure to act quickly")
-        return Result(score.coerceIn(0f, 100f), category, reasons.distinct(), advice)
+        // The small synthetic classifier needs corroborating sensitive-action context.
+        // A language token or ordinary educational link alone must not become a scam warning.
+        val modelWarningEligible = (credentials || money || prize || jobs || authority) && (request || urgency)
+        return Result(score.coerceIn(0f, 100f), category, reasons.distinct(), advice, active, modelWarningEligible)
     }
 }

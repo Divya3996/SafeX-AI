@@ -53,6 +53,11 @@ object WarningChannels {
         }
     }
 
+    fun warningEnabled(context: Context): Boolean {
+        ensure(context)
+        val manager = context.getSystemService(android.app.NotificationManager::class.java)
+        return canPost(context) && listOf(id(false), id(true)).all { manager.getNotificationChannel(it)?.importance != android.app.NotificationManager.IMPORTANCE_NONE }
+    }
     fun canPost(context: Context): Boolean =
         (Build.VERSION.SDK_INT < 33 || ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) &&
             NotificationManagerCompat.from(context).areNotificationsEnabled()

@@ -2,6 +2,8 @@
 
 Prepared: 9 October 2026. Status: **design reference for the 1.5.0 implementation**. See [implemented behavior and limits](floating-assistant.md); the verification report records the final test results. Some aspirational items below remain future work.
 
+Next iteration: [full UX, detection and logo audit with prioritized enhancements](floating-assistant-enhancement-plan.md).
+
 ## Product goal
 
 Give users a small SafeX AI shield button while using other apps. They can capture a screen or app with consent, crop the suspicious content, review extracted text or links, and run the existing offline security checks. Direct Share and selected-text actions remain available when capture is unavailable.

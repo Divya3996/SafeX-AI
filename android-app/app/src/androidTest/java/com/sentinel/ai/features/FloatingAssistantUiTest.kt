@@ -20,14 +20,14 @@ class FloatingAssistantUiTest {
         file.parentFile!!.mkdirs()
         file.outputStream().use { compose.onRoot().captureToImage().asAndroidBitmap().compress(android.graphics.Bitmap.CompressFormat.PNG, 100, it) }
     }
-    @Before fun resetLanguage() { compose.runOnUiThread { DisplayPreferences.setLanguage(compose.activity, AppLanguage.ENGLISH); DisplayPreferences.setTextScale(1f) } }
+    @Before fun resetLanguage() { compose.runOnUiThread { ViewModelProvider(compose.activity)[FloatingSessionViewModel::class.java].reset(); DisplayPreferences.setLanguage(compose.activity, AppLanguage.ENGLISH); DisplayPreferences.setTextScale(1f) } }
     @After fun cleanup() {
-        compose.runOnUiThread { DisplayPreferences.setLanguage(compose.activity, AppLanguage.ENGLISH); DisplayPreferences.setTextScale(1f); FloatingAssistantControl.stop(compose.activity) }
+        compose.runOnUiThread { ViewModelProvider(compose.activity)[FloatingSessionViewModel::class.java].reset(); DisplayPreferences.setLanguage(compose.activity, AppLanguage.ENGLISH); DisplayPreferences.setTextScale(1f); FloatingAssistantControl.stop(compose.activity) }
     }
     @Test fun privatePasteAndContextStayUnsavedUntilExplicitSave() {
         compose.onNodeWithText("Paste link or message").performScrollTo().performClick()
         compose.onNodeWithText("Text to analyze").performTextInput("https://example.com/")
-        compose.onNodeWithText("Analyze privately").performScrollTo().performClick()
+        compose.onNodeWithText("Analyze privately").assertIsDisplayed().performClick()
         compose.waitUntil(10000) { compose.onAllNodesWithText("Private review • not saved").fetchSemanticsNodes().isNotEmpty() }
         lateinit var model: FloatingSessionViewModel
         compose.runOnUiThread { model = ViewModelProvider(compose.activity)[FloatingSessionViewModel::class.java] }
@@ -58,8 +58,16 @@ class FloatingAssistantUiTest {
             screenshot("setup-${language.tag}-150")
             compose.onNodeWithText(paste).performScrollTo().performClick()
             compose.onNodeWithText(I18n.translate(compose.activity, "Text to analyze", language)).performTextInput("https://example.com/")
-            compose.onNodeWithText(I18n.translate(compose.activity, "Analyze privately", language)).performScrollTo().assertHasClickAction()
             screenshot("paste-${language.tag}-150")
+            compose.onNodeWithText(I18n.translate(compose.activity, "Analyze privately", language)).assertIsDisplayed().performClick()
+            compose.waitUntil(15000) { runCatching { compose.onNodeWithText(I18n.translate(compose.activity, "Private review • not saved", language)).assertIsDisplayed() }.isSuccess }
+            compose.onNodeWithText(I18n.translate(compose.activity, "Save result", language)).assertIsDisplayed()
+            screenshot("result-${language.tag}-150")
+            if (language != AppLanguage.ENGLISH) {
+                val coverage = "URL structure, visible encoded destinations and local snapshot. No webpage fetch or redirect following; clean-looking links can still be fraudulent."
+                compose.onNodeWithText(coverage, substring = true).assertDoesNotExist()
+                compose.onNodeWithText(I18n.translate(compose.activity, coverage, language), substring = true).assertExists()
+            }
         }
     }
 
@@ -94,9 +102,9 @@ class FloatingAssistantUiTest {
     }
     @Test fun blankAndOversizedTextCannotStartAnalysis() {
         compose.onNodeWithText("Paste link or message").performScrollTo().performClick()
-        compose.onNodeWithText("Analyze privately").performScrollTo().assertIsNotEnabled()
+        compose.onNodeWithText("Analyze privately").assertIsDisplayed().assertIsNotEnabled()
         compose.onNodeWithText("Text to analyze").performTextInput("x".repeat(12001))
-        compose.onNodeWithText("Analyze privately").performScrollTo().assertIsNotEnabled()
+        compose.onNodeWithText("Analyze privately").assertIsDisplayed().assertIsNotEnabled()
         assertFalse(ThreatJournal.scanResults.value.any { it.source == "Floating pasted content" && it.target == "x".repeat(12001) })
     }
 }

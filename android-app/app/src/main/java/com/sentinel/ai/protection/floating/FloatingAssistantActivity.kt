@@ -27,6 +27,7 @@ class FloatingAssistantActivity : ComponentActivity() {
     private val model: FloatingSessionViewModel by viewModels()
     private var command by mutableStateOf("setup" to 0)
     private var consentPending = false
+    private var pendingInput by mutableStateOf<String?>(null)
     private val screenOff = object : BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) { if (intent?.action == Intent.ACTION_SCREEN_OFF) model.reset() }
     }
@@ -55,16 +56,29 @@ class FloatingAssistantActivity : ComponentActivity() {
         // Crop/text previews are sensitive; never expose them through recents or third-party screenshots.
         window.addFlags(WindowManager.LayoutParams.FLAG_SECURE)
         enableEdgeToEdge()
-        command = intent.getStringExtra("mode").orEmpty().ifBlank { "setup" } to 0
+        command = (if (savedInstanceState != null) "resume" else intent.getStringExtra("mode").orEmpty().ifBlank { "setup" }) to 0
         setContent {
             SentinelTheme(mode = ThemePreferences.get(this)) {
                 Surface(Modifier.fillMaxSize()) {
                     val state by model.state.collectAsState()
-                    BackHandler { close() }
+                    BackHandler { if (!model.back()) finish() }
+                    pendingInput?.let { mode ->
+                        AlertDialog(onDismissRequest = { pendingInput = null },
+                            title = { com.sentinel.ai.ui.i18n.LocalizedText("Start a new input?") },
+                            text = { com.sentinel.ai.ui.i18n.LocalizedText("Your current review will be replaced when new content is accepted. Cancel the picker or capture prompt to keep it.") },
+                            confirmButton = { TextButton(onClick = { pendingInput = null; executeInput(mode) }) { com.sentinel.ai.ui.i18n.LocalizedText("Continue") } },
+                            dismissButton = { TextButton(onClick = { pendingInput = null }) { com.sentinel.ai.ui.i18n.LocalizedText("Keep review") } })
+                    }
                     LaunchedEffect(command) {
-                        model.open(command.first)
-                        if (command.first == "capture" && state.stage == FloatingStage.SETUP) capture()
-                        if (command.first == "import" && state.stage == FloatingStage.SETUP) imagePicker.launch(arrayOf("image/*"))
+                        if (!model.controller.matches(intent.getStringExtra("session_id"))) {
+                            model.open("setup")
+                            model.error("This private result is no longer available. Start a new scan.")
+                            return@LaunchedEffect
+                        }
+                        if (command.first in setOf("capture", "import", "paste")) {
+                            if (state.hasContent && !state.saved && !state.busy) pendingInput = command.first
+                            else executeInput(command.first)
+                        } else if (command.first == "resume") model.resume() else model.open(command.first)
                         if (command.first == "result" && state.result == null) model.error("This private result is no longer available. Start a new scan.")
                     }
                     FloatingAssistantScreen(state, model, onClose = ::close, onCapture = ::capture,
@@ -80,6 +94,9 @@ class FloatingAssistantActivity : ComponentActivity() {
     override fun onNewIntent(intent: Intent) {
         super.onNewIntent(intent); setIntent(intent)
         command = intent.getStringExtra("mode").orEmpty().ifBlank { "setup" } to command.second + 1
+    }
+    private fun executeInput(mode: String) {
+        when (mode) { "capture" -> capture(); "import" -> imagePicker.launch(arrayOf("image/*")); "paste" -> model.open("paste") }
     }
     private fun capture() {
         if (consentPending || model.state.value.stage == FloatingStage.WAITING) return
@@ -112,7 +129,8 @@ class FloatingAssistantActivity : ComponentActivity() {
     override fun onDestroy() { unregisterReceiver(screenOff); super.onDestroy() }
     private fun close() { model.reset(); finish() }
     companion object {
-        fun intent(context: Context, mode: String) = Intent(context, FloatingAssistantActivity::class.java)
-            .putExtra("mode", mode).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        fun intent(context: Context, mode: String, sessionId: String? = null) = Intent(context, FloatingAssistantActivity::class.java)
+            .putExtra("mode", mode).putExtra("session_id", sessionId)
+            .setData(sessionId?.let { android.net.Uri.parse("safex-private://session/$it/$mode") }).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
     }
 }

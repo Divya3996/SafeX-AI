@@ -1,40 +1,45 @@
 {
-  "version": "1.5.0",
-  "version_code": 6,
-  "verified_at_utc": "2026-10-08T21:31:39.679296+00:00",
+  "version": "1.6.0",
+  "version_code": 7,
+  "verified_at_utc": "2026-10-09T07:58:03.222839+00:00",
   "features": [
-    "User-enabled movable floating shield",
-    "Fresh authorized single-frame capture",
-    "Precise crop and zoom",
-    "Editable multilingual OCR and recognized-line selection",
-    "Individual link and QR selection",
-    "Private analysis and contextual reviews until explicit Save",
-    "Explicit Paste, image import and recovery states",
-    "Screen-lock cleanup and background expiry",
-    "Generic background risk warnings using existing sound channels"
+    "Canonical movable shield with safe menu dismissal",
+    "Fresh authorized full-display or individual-app single-frame capture",
+    "Full initial crop, retained original, zoom and precise edges",
+    "Independent Latin/Devanagari/Gujarati/QR extraction outcomes",
+    "Distinct All/Selected/Edited modes with retained drafts",
+    "Bounded link normalization with original-spelling confirmation",
+    "Typed QR payload coverage",
+    "Private analysis and context until explicit Save",
+    "Application-owned RAM session, stale-job guards and recovery",
+    "Lock/expiry cleanup and native bitmap leases",
+    "JPEG orientation and bounded imports",
+    "Fixed actions with English/Hindi/Gujarati at 150% text",
+    "Adjustable shield size, reduced motion and warning-channel settings",
+    "Persisted provenance, coverage and measured timings"
   ],
   "unit_tests": {
     "totals": {
-      "tests": 503,
+      "tests": 521,
       "failures": 0,
       "errors": 0,
       "skipped": 3,
-      "passed": 500
+      "passed": 518
     },
     "modules": {
       "app": {
-        "tests": 395,
+        "tests": 397,
         "failures": 0,
         "errors": 0,
         "skipped": 3,
-        "passed": 392
+        "passed": 394
       },
       "core": {
-        "tests": 83,
+        "tests": 99,
         "failures": 0,
         "errors": 0,
         "skipped": 0,
-        "passed": 83
+        "passed": 99
       },
       "ui": {
         "tests": 7,
@@ -54,30 +59,36 @@
     "skipped_reason": "Three opt-in URL research-export tests"
   },
   "native_tests": {
-    "passed": 35,
+    "passed": 51,
     "failures": 0,
-    "duration_seconds": 171.361,
+    "duration_seconds": 342.818,
     "device": "SentinelDemo Android 14/API 34 x86_64 emulator, 720x1600",
     "airplane_mode": true,
     "real_full_display_capture_consent_crop_ocr_and_save": true,
     "projection_stopped_before_crop": true,
     "real_camera_frame_decode": true,
     "camera_fixture_flag": "safexCameraFixture=true",
-    "camera_fixture_path": "/tmp/safex-camera-qr.png"
+    "camera_fixture_path": "/tmp/safex-camera-qr.png",
+    "single_app_capture_verified": false,
+    "missing_frame_surface_retries_bounded": 2,
+    "capture_scope_note": "This API 34 system image offers full-display consent only. Landscape and full-display capture passed; individual-app selection remains a physical-device check."
   },
   "lint": {
     "errors": 0,
-    "warnings": 51,
+    "warnings": 54,
     "issue_counts": {
+      "ExifInterface": 1,
       "UnusedAttribute": 1,
       "GradleDependency": 4,
+      "DiscouragedApi": 1,
       "LogNotTimber": 15,
       "PluralsCandidate": 1,
       "ObsoleteSdkInt": 2,
       "Overdraw": 1,
       "UnusedResources": 13,
       "ButtonStyle": 2,
-      "UseTomlInstead": 12
+      "UseTomlInstead": 12,
+      "ClickableViewAccessibility": 1
     }
   },
   "localization": {
@@ -86,7 +97,7 @@
       "Hindi",
       "Gujarati"
     ],
-    "catalog_strings": 715,
+    "catalog_strings": 787,
     "keys_and_placeholders": "matched by generator",
     "largest_native_ui_text_scale": 1.5
   },
@@ -100,12 +111,14 @@
     "explicit_save_only": true,
     "full_authorized_frame_temporarily_in_ram_before_crop": true,
     "unclaimed_frame_expiry_seconds": 60,
-    "background_private_review_expiry_seconds": 120
+    "background_private_review_expiry_seconds": 120,
+    "tracked_pixel_budget_mib": 72,
+    "memory_pressure_releases_pixels_preserves_review_text": true
   },
   "apk": {
-    "path": "android-app/app/build/outputs/apk/debug/SafeX-AI-1.5.0-debug.apk",
-    "bytes": 134569534,
-    "sha256": "2e0667b7815925f6cd554407a17d64d433fb9672eb3f6be1bde5015e61645309",
+    "path": "releases/SafeX-AI-1.6.0-debug.apk",
+    "bytes": 134779457,
+    "sha256": "48181f68f9f23546150a6760ec0a85a03a231f03e63a9aec4892daba9d09961f",
     "build_type": "debug"
   },
   "screenshots": [
@@ -116,6 +129,9 @@
     "docs/screenshots/floating-assistant/paste-gu-150.png",
     "docs/screenshots/floating-assistant/paste-hi-150.png",
     "docs/screenshots/floating-assistant/private-risk-result.png",
+    "docs/screenshots/floating-assistant/result-en-150.png",
+    "docs/screenshots/floating-assistant/result-gu-150.png",
+    "docs/screenshots/floating-assistant/result-hi-150.png",
     "docs/screenshots/floating-assistant/setup-en-150.png",
     "docs/screenshots/floating-assistant/setup-gu-150.png",
     "docs/screenshots/floating-assistant/setup-hi-150.png"
@@ -123,12 +139,23 @@
   "evidence": [
     "docs/test-results/floating-assistant-final-build.txt",
     "docs/test-results/floating-assistant-native.txt",
-    "docs/test-results/floating-assistant-capture-diagnostics.txt"
+    "docs/test-results/floating-assistant-capture-diagnostics.txt",
+    "docs/test-results/floating-review-native.json",
+    "docs/test-results/floating-review-summary.json",
+    "docs/test-results/floating-contrast.json"
   ],
   "fixed_regressions": [
-    "Crop canvas is clipped to its preview bounds.",
-    "Unchanged-size projection callbacks preserve the existing image reader and its static frame.",
-    "Older history snapshots cannot remove stronger displayed risk evidence or context answers."
+    "Empty selected lines cannot fall back to all text.",
+    "Edited drafts survive mode changes and activity recreation.",
+    "Failed engines preserve successful extraction.",
+    "QR scope does not inherit unrelated OCR failure.",
+    "Failed capture/import preserves the previous review.",
+    "Stale operations and notifications cannot replace a newer session.",
+    "Memory-pressure cleanup releases pixels while retaining review text.",
+    "Menu outside taps and Back do not activate the source.",
+    "Multilingual negated safety advice does not become a refund scam warning.",
+    "Coverage cannot weaken a stronger detector decision.",
+    "Private review is saved only deliberately."
   ],
   "limitations": [
     "Functional authored-fixture tests are not current-world detection-accuracy certification.",
@@ -136,6 +163,15 @@
     "Screenshots do not reveal hidden hyperlink targets; OCR must be reviewed.",
     "Physical-phone and manufacturer-specific behavior are not verified; only API 34 was exercised on a device.",
     "Physical speaker playback is unverified because emulator host audio is unavailable.",
-    "Play Store specialUse foreground-service approval has not been obtained."
-  ]
+    "Play Store specialUse foreground-service approval has not been obtained.",
+    "Individual-app chooser is unavailable on this emulator image and was not verified.",
+    "Text-model warnings require sensitive-action context; independent recall/false-warning evaluation is still needed.",
+    "No participant usability study or physical TalkBack validation was performed."
+  ],
+  "development_evaluation": {
+    "cases": 55,
+    "contract_mismatches": [],
+    "report": "docs/test-results/floating-review-summary.json",
+    "independent_real_world_accuracy": false
+  }
 }

@@ -26,6 +26,8 @@ class OneShotScreenCaptureService : Service() {
     private var reader: ImageReader? = null
     private var request = ""
     private var started = false
+    private var downsampled = false
+    private var surfaceRefreshes = 0
     private val done = AtomicBoolean(false)
     private val captureLock = Any()
     // Debug diagnostics contain only lifecycle/dimension information, never pixels, text or tokens.
@@ -71,8 +73,8 @@ class OneShotScreenCaptureService : Service() {
         done.set(true)
         releaseProjection()
         if (!CaptureSessionStore.fail(request, message)) return
-        runCatching { FloatingNotifications.failure(this, message) }
-        runCatching { startActivity(FloatingAssistantActivity.intent(this, "review")) }
+        runCatching { FloatingNotifications.failure(this, message, request) }
+        runCatching { startActivity(FloatingAssistantActivity.intent(this, "review", request)) }
     }
     private fun prepareDisplay() {
         if (done.get() || display != null) return
@@ -84,12 +86,14 @@ class OneShotScreenCaptureService : Service() {
             val metrics = resources.displayMetrics
             val bounds = if (Build.VERSION.SDK_INT >= 30) windows.maximumWindowMetrics.bounds else android.graphics.Rect(0, 0, metrics.widthPixels, metrics.heightPixels)
             val (width, height) = dimensions(bounds.width(), bounds.height())
+            downsampled = width < bounds.width() || height < bounds.height()
             synchronized(captureLock) {
                 reader = makeReader(width, height)
                 display = projection!!.createVirtualDisplay("SafeX-private-one-frame", width, height, metrics.densityDpi,
                     DisplayManager.VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR, reader!!.surface, null, main)
                 diagnostic("Display prepared: ${width}x${height}")
             }
+            main.postDelayed(::refreshMissingFrame, 1500)
         } catch (_: RuntimeException) {
             failCapture("Screen capture could not start. Please request a new capture.")
             stopSelf()
@@ -99,6 +103,33 @@ class OneShotScreenCaptureService : Service() {
         require(w > 0 && h > 0)
         val scale = min(1.0, min(4096.0 / max(w, h), sqrt(6_000_000.0 / (w.toLong() * h))))
         return max(1, (w * scale).toInt()) to max(1, (h * scale).toInt())
+    }
+    /** Retry a stalled producer on the same authorized display, never create a second display. */
+    private fun refreshMissingFrame() {
+        if (done.get() || surfaceRefreshes >= 2 || (CaptureSessionStore.state.value as? CaptureSessionStore.State.Waiting)?.id != request) return
+        try {
+            synchronized(captureLock) {
+                if (done.get()) return
+                val active = display ?: return
+                val old = reader ?: return
+                val replacement = makeReader(old.width, old.height)
+                try {
+                    active.surface = null
+                    active.surface = replacement.surface
+                    reader = replacement
+                    old.close()
+                } catch (failure: RuntimeException) {
+                    replacement.close()
+                    throw failure
+                }
+                surfaceRefreshes++
+                diagnostic("No frame yet; surface refreshed ($surfaceRefreshes/2): ${replacement.width}x${replacement.height}")
+            }
+            main.postDelayed(::refreshMissingFrame, 2000)
+        } catch (_: RuntimeException) {
+            failCapture("Capture unavailable or unreadable. Try again, Share, or Paste.")
+            stopSelf()
+        }
     }
     private fun makeReader(width: Int, height: Int): ImageReader = ImageReader.newInstance(width, height, PixelFormat.RGBA_8888, 2).apply {
         setOnImageAvailableListener({ source ->
@@ -122,9 +153,9 @@ class OneShotScreenCaptureService : Service() {
                             stopSelf()
                             return@post
                         }
-                        if (CaptureSessionStore.deliver(request, bitmap)) {
-                            FloatingNotifications.ready(this@OneShotScreenCaptureService)
-                            try { startActivity(FloatingAssistantActivity.intent(this@OneShotScreenCaptureService, "review")) } catch (_: RuntimeException) { /* status notification and bubble remain valid routes */ }
+                        if (CaptureSessionStore.deliver(request, bitmap, downsampled)) {
+                            FloatingNotifications.ready(this@OneShotScreenCaptureService, request)
+                            try { startActivity(FloatingAssistantActivity.intent(this@OneShotScreenCaptureService, "review", request)) } catch (_: RuntimeException) { /* status notification and bubble remain valid routes */ }
                             Handler(Looper.getMainLooper()).postDelayed({ CaptureSessionStore.expire(request) }, 60000)
                         }
                         stopSelf()
@@ -143,6 +174,7 @@ class OneShotScreenCaptureService : Service() {
             synchronized(captureLock) {
                 if (done.get()) return
                 val (w, h) = dimensions(width, height)
+                downsampled = w < width || h < height
                 // Android sends an initial resize callback even when size is unchanged.
                 // Replacing that reader can discard the only frame of a static screen.
                 if (reader?.width == w && reader?.height == h) { diagnostic("Same-size resize ignored: ${w}x${h}"); return }

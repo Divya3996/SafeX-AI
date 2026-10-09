@@ -1,0 +1,22 @@
+
+com.sentinel.ai.features.FloatingAssistantUiTest:.....
+com.sentinel.ai.features.FloatingCaptureEndToEndTest:s_glBindAttribLocation: bind attrib 0 name position
+s_glBindAttribLocation: bind attrib 1 name color
+s_glBindAttribLocation: bind attrib 2 name localCoord
+..
+com.sentinel.ai.features.FloatingPrivacyDeviceTest:...
+com.sentinel.ai.features.LargeHistoryConcurrencyTest:.
+com.sentinel.ai.features.LiveQrCameraTest:.
+com.sentinel.ai.features.LiveQrEndToEndTest:.
+com.sentinel.ai.features.PracticalFeaturesDeviceTest:....
+com.sentinel.ai.features.PracticalFeaturesUiTest:....
+com.sentinel.ai.i18n.MultilingualExperienceTest:..
+com.sentinel.ai.ml.InternalScanMlIntegrationTest:.
+com.sentinel.ai.ml.OfflinePipelineTest:.........
+com.sentinel.ai.ml.UrlFraudAuditTest:..
+
+Time: 171.361
+
+OK (35 tests)
+
+

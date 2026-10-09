@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1020" viewBox="0 0 1440 1020" role="img" aria-labelledby="title desc">
+<title id="title">SafeX AI floating assistant: proposed shared-logo treatment</title>
+<desc id="desc">Planning preview comparing the custom current button with the canonical SafeX shield and X logo, a compact action menu, and neutral assistant states. Paused assistant is hidden outside the app.</desc>
+<defs>
+<symbol id="brand" viewBox="0 0 64 64">
+<path fill="#35DEBC" d="M32,5 L55,14 V31 C55,46 45,56 32,61 C19,56 9,46 9,31 V14 Z"/>
+<path fill="#08151D" d="M32,10 L50,17 V31 C50,43 42,52 32,56 C22,52 14,43 14,31 V17 Z"/>
+<path fill="#EFF9F8" d="M21,24 L26,24 L32,32 L38,24 L43,24 L35,35 L43,46 L38,46 L32,38 L26,46 L21,46 L29,35 Z"/>
+<path fill="#35DEBC" d="M31,14 H33 V22 H31 Z M23,18 H32 V20 H23 Z M32,18 H41 V20 H32 Z"/>
+<g fill="#35DEBC"><circle cx="23" cy="19" r="2"/><circle cx="41" cy="19" r="2"/><circle cx="32" cy="15" r="2"/></g>
+</symbol>
+<symbol id="current" viewBox="0 0 64 64">
+<circle cx="32" cy="32" r="29.44" fill="#071B24"/>
+<path d="M32 9.6 L49.28 16 L46.72 35.84 Q42.88 48.64 32 54.4 Q21.12 48.64 17.28 35.84 L14.72 16 Z" fill="#27D3B6"/>
+<path d="M24.96 23.68 L39.04 38.4 M39.04 23.68 L24.96 38.4" fill="none" stroke="#071B24" stroke-width="4.16" stroke-linecap="round"/>
+</symbol>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#EFF9F8}
+.eyebrow{font-size:14px;letter-spacing:2px;fill:#35DEBC;font-weight:700}
+.h1{font-size:40px;font-weight:700}.h2{font-size:24px;font-weight:700}
+.body{font-size:18px;fill:#A5BFCA}.label{font-size:17px;font-weight:700}
+.small{font-size:15px;fill:#A5BFCA}.caption{font-size:16px;fill:#A5BFCA}
+</style>
+</defs>
+<rect width="1440" height="1020" fill="#08151D"/>
+<use href="#brand" x="56" y="42" width="62" height="62"/>
+<text x="140" y="65" class="eyebrow">SAFEX AI / FLOATING ASSISTANT</text>
+<text x="140" y="113" class="h1">One recognizable identity. Clear, quiet states.</text>
+<text x="56" y="155" class="body">Design proposal • uses the existing master logo • Android app changes are planned</text>
+<g fill="#122936" stroke="#345360"><rect x="56" y="193" width="412" height="423" rx="24"/><rect x="514" y="193" width="412" height="423" rx="24"/><rect x="972" y="193" width="412" height="423" rx="24"/></g>
+<text x="84" y="237" class="eyebrow">CURRENT BUTTON</text>
+<use href="#current" x="193" y="266" width="138" height="138"/>
+<text x="84" y="461" class="h2">A separate shield drawing</text>
+<text x="84" y="500" class="body">Filled teal shield, dark X.</text>
+<text x="84" y="530" class="body">Missing the main logo's AI nodes.</text>
+<text x="84" y="560" class="body">Does not match the screen header.</text>
+<text x="542" y="237" class="eyebrow">PROPOSED FLOATING BUTTON</text>
+<circle cx="720" cy="335" r="76" fill="#08151D" stroke="#345360" stroke-width="2"/>
+<use href="#brand" x="665" y="280" width="110" height="110"/>
+<text x="542" y="461" class="h2">The canonical SafeX mark</text>
+<text x="542" y="500" class="body">Teal shield outline, white X, AI nodes.</text>
+<text x="542" y="530" class="body">60 dp default, generous tap area.</text>
+<text x="542" y="560" class="body">Subtle edge docking; no idle pulse.</text>
+<text x="1000" y="237" class="eyebrow">COMPACT ACTION MENU</text>
+<use href="#brand" x="1001" y="260" width="52" height="52"/>
+<text x="1065" y="283" class="h2">SafeX AI</text>
+<text x="1065" y="307" class="small">Private • on device</text>
+<rect x="1000" y="335" width="356" height="64" rx="16" fill="#35DEBC"/>
+<text x="1022" y="374" style="font-size:19px;font-weight:700;fill:#08151D">Scan screen area</text>
+<rect x="1000" y="411" width="356" height="58" rx="15" fill="#1B3544"/>
+<text x="1022" y="447" class="label">Paste text or link</text>
+<rect x="1000" y="481" width="356" height="58" rx="15" fill="#1B3544"/>
+<text x="1022" y="517" class="label">Choose screenshot</text>
+<text x="1000" y="577" class="small">Move / Pause in a secondary menu</text>
+<text x="56" y="665" class="eyebrow">ASSISTANT STATES / BADGES DESCRIBE THE SESSION, NOT THE CURRENT APP</text>
+<g fill="#122936" stroke="#345360"><rect x="56" y="689" width="319" height="226" rx="22"/><rect x="392" y="689" width="319" height="226" rx="22"/><rect x="728" y="689" width="319" height="226" rx="22"/><rect x="1064" y="689" width="320" height="226" rx="22"/></g>
+<circle cx="110" cy="752" r="33" fill="#08151D" stroke="#345360"/>
+<use href="#brand" x="87" y="729" width="46" height="46"/>
+<text x="158" y="747" class="h2">Ready</text><text x="158" y="775" class="small">Tap to choose content</text>
+<text x="80" y="847" class="caption">No claim that this screen is safe.</text>
+<circle cx="446" cy="752" r="33" fill="#08151D" stroke="#345360"/>
+<use href="#brand" x="423" y="729" width="46" height="46"/>
+<path d="M416 738 A33 33 0 0 1 468 727" fill="none" stroke="#35DEBC" stroke-width="3" stroke-linecap="round"/>
+<text x="494" y="747" class="h2">Reading</text><text x="494" y="775" class="small">In the private helper</text>
+<text x="416" y="847" class="caption">Overlay hidden while capturing.</text>
+<circle cx="782" cy="752" r="33" fill="#08151D" stroke="#345360"/>
+<use href="#brand" x="759" y="729" width="46" height="46"/>
+<circle cx="806" cy="728" r="7" fill="#D2A451" stroke="#08151D" stroke-width="3"/>
+<text x="830" y="747" class="h2">Review ready</text><text x="830" y="775" class="small">Resume your private scan</text>
+<text x="752" y="847" class="caption">Generic state; content stays private.</text>
+<circle cx="1118" cy="752" r="33" fill="none" stroke="#345360" stroke-width="2" stroke-dasharray="5 5"/>
+<path d="M1110 740 V764 M1126 740 V764" stroke="#A5BFCA" stroke-width="4" stroke-linecap="round"/>
+<text x="1166" y="747" class="h2">Paused</text><text x="1166" y="775" class="small">Status inside settings</text>
+<text x="1088" y="847" class="caption">Floating button is removed.</text>
+<text x="56" y="971" class="body">Brand teal #35DEBC · Navy #08151D · Primary text #EFF9F8 · Warning #D2A451</text>
+</svg>

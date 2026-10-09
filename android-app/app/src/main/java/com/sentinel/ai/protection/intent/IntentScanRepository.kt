@@ -40,9 +40,9 @@ class IntentScanRepository internal constructor(
     private val textModel by lazy { runCatching { TextInferenceManager(checkNotNull(context)) } }
     private val images by lazy { ImageContentReader(checkNotNull(context)) }
 
-    override suspend fun analyzeLinkPrivately(link: String): ScanResult = withContext(Dispatchers.Default) { analyzeLink(link) }
+    override suspend fun analyzeLinkPrivately(link: String): ScanResult = withContext(Dispatchers.Default) { val start = System.nanoTime(); analyzeLink(link).copy(durationMs = elapsed(start)) }
     override suspend fun analyzeTextPrivately(text: String): ScanResult = withContext(Dispatchers.Default) { analyzeText(text) }
-    override suspend fun analyzeQrPrivately(content: String): ScanResult = withContext(Dispatchers.Default) { analyzeQrContent(content) }
+    override suspend fun analyzeQrPrivately(content: String): ScanResult = withContext(Dispatchers.Default) { val start = System.nanoTime(); analyzeQrContent(content).copy(durationMs = elapsed(start)) }
 
     override suspend fun scanLink(link: String): ScanResult = withContext(Dispatchers.Default) {
         val start = System.nanoTime()
@@ -99,7 +99,11 @@ class IntentScanRepository internal constructor(
         val parsed = UrlNormalizer.parse(content.trim())
         return if (!content.contains('\n') && parsed.isValid && parsed.scheme in listOf("http", "https") &&
             content.trim().startsWith("http", true)) analyzeLink(content.trim())
-        else analyzeText(content).copy(contentType = "qr")
+        else {
+            val result = analyzeText(content).copy(contentType = "qr")
+            if (QrPayloadClassifier.unsupported(content.trim())) CoveragePolicy.apply(result,
+                ScanCoverageDetails(AssessmentCoverage.UNSUPPORTED, selectedQr = true)) else result
+        }
     }
 
     override suspend fun scanImage(uri: Uri, qrOnly: Boolean): ScanResult = withContext(Dispatchers.Default) {
@@ -120,11 +124,14 @@ class IntentScanRepository internal constructor(
         require(text.length <= 12000) { "Message is too long (maximum 12,000 characters)." }
         val signals = MessageSignals.analyze(text)
         var invalidLinks = 0
-        val extractedLinks = MessageSignals.urls(text, limit = 9)
+        val candidates = ContentCandidateExtractor.extract(text, limit = 9)
+        val extractedLinks = candidates.map { it.inspectionValue }
         val linkResults = extractedLinks.take(8).mapNotNull { link ->
             try { analyzeLink(link) } catch (e: CancellationException) { throw e } catch (_: IllegalArgumentException) { invalidLinks++; null }
         }
         val reasons = signals.reasons.toMutableList()
+        if (candidates.any { it.needsConfirmation }) reasons += "A visible link was normalized for inspection. Verify its original spelling and destination."
+        if (candidates.any { CandidateChange.ASSUMED_HTTPS in it.changes }) reasons += "A visible domain without a scheme was inspected using assumed HTTPS; transport security was not verified."
         linkResults.filter { it.decision != ProtectionDecision.ALLOW }.forEach { link ->
             reasons += "Embedded link: ${link.reasons.firstOrNull { it.source != ScanReasonSource.PROVIDER_STATUS }?.message ?: link.summary}"
         }
@@ -143,9 +150,9 @@ class IntentScanRepository internal constructor(
         }
         var modelStatus = "Text classifier unavailable; local rules active"
         textModel.getOrNull()?.let { model ->
-            val probability = model.predict(text)
+            val probability = if (signals.classifierInput.isBlank()) 0f else model.predict(signals.classifierInput)
             modelStatus = "On-device text classifier • synthetic prototype"
-            if (probability >= 0.60f) {
+            if (probability >= 0.60f && signals.modelWarningEligible) {
                 score = max(score, 35f)
                 reasons += "Local text classifier detected patterns associated with scam requests"
             }
@@ -168,7 +175,9 @@ class IntentScanRepository internal constructor(
             durationMs = elapsed(start), modelStatus = modelStatus, guidance = signals.advice,
             coverage = "Local text and up to eight distinct links. No sender identity verification.",
             linkInspections = linkResults.flatMap { it.linkInspections.orEmpty() }.take(8),
-            paymentReviews = paymentReviews)
+            paymentReviews = paymentReviews,
+            coverageDetails = ScanCoverageDetails(if (invalidLinks > 0 || extractedLinks.size > 8) AssessmentCoverage.LIMITED else AssessmentCoverage.COMPLETE,
+                visibleLinks = extractedLinks.size, analyzedLinks = linkResults.size))
     }
 
     private fun applyMlScore(base: ScanResult, url: String): ScanResult {
