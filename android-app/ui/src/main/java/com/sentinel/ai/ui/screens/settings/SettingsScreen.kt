@@ -62,6 +62,13 @@ fun SettingsScreen(appVersion: String, selectedTheme: SentinelThemeMode, onTheme
         Text("Your content stays on your phone. This build has no internet permission, no account and no cloud inference.",
             style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
         com.sentinel.ai.ui.i18n.LanguageAndReadingSettings()
+        Section("Floating assistant") {
+            val floating by FloatingAssistantControl.running.collectAsState()
+            Text(if (floating) "Floating assistant is running" else "Floating assistant is paused", style = MaterialTheme.typography.titleSmall)
+            Text("Use a movable shield to crop a screen, review text or links, and analyze privately on your phone.", style = MaterialTheme.typography.bodySmall)
+            OutlinedButton(onClick = { FloatingAssistantControl.open(context) }) { Text("Set up floating assistant") }
+            if (floating) TextButton(onClick = { FloatingAssistantControl.stop(context) }) { Text("Pause assistant") }
+        }
         Section("Protection") {
             Toggle("Incoming-message protection", "Pause or resume supported notification checks", snapshot.protectionEnabled) {
                 ProtectionControl.setProtectionEnabled(context, it); snapshot = ProtectionControl.snapshot(context)

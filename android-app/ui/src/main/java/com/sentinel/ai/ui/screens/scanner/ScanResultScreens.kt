@@ -18,10 +18,12 @@ import com.sentinel.ai.core.model.*
 import com.sentinel.ai.ui.components.riskColor
 
 @Composable
-fun AnalysisResultContent(result: ScanResult, onClose: () -> Unit, onOpen: (() -> Unit)? = null, modifier: Modifier = Modifier) {
+fun AnalysisResultContent(result: ScanResult, onClose: () -> Unit, onOpen: (() -> Unit)? = null, modifier: Modifier = Modifier,
+    persistReviews: Boolean = true, onResultUpdated: (ScanResult) -> Unit = {}) {
     val journal by com.sentinel.ai.core.event.ThreatJournal.scanResults.collectAsState()
-    val latest = journal.firstOrNull { it.id == result.id && it.contextReview != null } ?: result
-    var displayed by remember(latest) { mutableStateOf(latest) }
+    val latest = if (persistReviews) journal.firstOrNull { it.id == result.id && it.contextReview != null } ?: result else result
+    var displayed by remember(result.id) { mutableStateOf(result) }
+    LaunchedEffect(latest) { displayed = ReviewDisplayState.reconcile(displayed, latest) }
     var help by remember { mutableStateOf(false) }
     var saving by remember { mutableStateOf(false) }
     val scope = rememberCoroutineScope()
@@ -52,8 +54,9 @@ fun AnalysisResultContent(result: ScanResult, onClose: () -> Unit, onOpen: (() -
             saving = true
             scope.launch {
                 try {
-                    com.sentinel.ai.core.event.ThreatJournal.recordDurably(com.sentinel.ai.core.event.ThreatEvent.LinkThreatDetected(updated))
+                    if (persistReviews) com.sentinel.ai.core.event.ThreatJournal.recordDurably(com.sentinel.ai.core.event.ThreatEvent.LinkThreatDetected(updated))
                     displayed = updated
+                    onResultUpdated(updated)
                 } catch (e: kotlinx.coroutines.CancellationException) { throw e }
                 catch (_: Exception) {
                     android.widget.Toast.makeText(context, com.sentinel.ai.core.i18n.I18n.translate(context, "Could not save this review. Try again."), android.widget.Toast.LENGTH_LONG).show()

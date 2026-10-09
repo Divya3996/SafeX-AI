@@ -11,6 +11,8 @@ Use synthetic content, not another person's private messages. Install SafeX AI a
 7. Enable Android notification access and warning permission in SafeX AI Settings. Open Demo Sender and tap Post synthetic scam. Show the actual Android warning, then open its saved evidence. Post safety advice and verify it does not create a scam warning.
 8. Show search, warnings filter, full evidence in History and deletion / retention settings. Explain per-app opt-in controls.
 
+9. Enable the floating assistant, leave SafeX AI, and display an authored suspicious message in another app. Use the shield to approve a fresh capture, crop the message, review OCR, and analyze privately. Show that history changes only after Save. Decline a second capture to demonstrate recovery. See [the full floating demo](floating-assistant.md).
+
 For repeatable emulator setup (debug build only):
 
 ```sh

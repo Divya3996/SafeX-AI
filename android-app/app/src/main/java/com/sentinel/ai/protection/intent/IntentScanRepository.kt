@@ -40,6 +40,10 @@ class IntentScanRepository internal constructor(
     private val textModel by lazy { runCatching { TextInferenceManager(checkNotNull(context)) } }
     private val images by lazy { ImageContentReader(checkNotNull(context)) }
 
+    override suspend fun analyzeLinkPrivately(link: String): ScanResult = withContext(Dispatchers.Default) { analyzeLink(link) }
+    override suspend fun analyzeTextPrivately(text: String): ScanResult = withContext(Dispatchers.Default) { analyzeText(text) }
+    override suspend fun analyzeQrPrivately(content: String): ScanResult = withContext(Dispatchers.Default) { analyzeQrContent(content) }
+
     override suspend fun scanLink(link: String): ScanResult = withContext(Dispatchers.Default) {
         val start = System.nanoTime()
         val result = analyzeLink(link).copy(durationMs = elapsed(start))

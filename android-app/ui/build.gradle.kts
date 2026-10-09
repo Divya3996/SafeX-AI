@@ -14,7 +14,7 @@ android {
         minSdk = 26
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
-        buildConfigField("String", "APP_VERSION", "\"1.4.0\"")
+        buildConfigField("String", "APP_VERSION", "\"1.5.0\"")
     }
 
     buildFeatures {

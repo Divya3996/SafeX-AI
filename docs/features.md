@@ -6,7 +6,8 @@
 | Link check | 26 rules, native URL classifier, imported threat snapshot | URL structure only; no web page download or redirect resolution |
 | Notification check | Supported messaging notification text uses the shared analyzer, deduplication and private warnings | Opt-in Android notification access; newest visible message; per-app switches |
 | Screenshot | Bundled Latin, Hindi and Gujarati OCR then message / link check | Clear readable screenshots; images not saved |
-| QR image | Bundled QR decoding then content check, including payment caution | Select an image; no live camera scanner |
+| QR image / camera | Bundled QR decoding then content check, including payment caution | Select an image or use the optional foreground camera scanner; nothing opens automatically |
+| Floating assistant | Movable shield, one-frame authorized capture, crop, editable OCR, text/link/QR selection and private results | Optional overlay permission; fresh consent each capture; no hidden link targets or protected-screen bypass |
 | File | Metadata, PDF / executable signatures, APK disguise, unsafe archive paths and script entries | 10 MB input; 100 entries; 2 MB per entry / 8 MB expansion; explicitly partial at limits |
 | History | Full saved results, reasons, search, warning filter, deletion | Private Room database; latest 1,000 records; configurable 7 / 30 / 90-day retention |
 | UI | Dark / neon / system theme, shared result UI, accessible controls, optional setup | No permission needed for manual text and link checks |
@@ -20,3 +21,7 @@ Language selection, translated guidance/notifications and a persistent 85–150%
 ## SafeX AI 1.4.0 additions
 
 Live camera QR scanning, detailed UPI instruction review, actual-domain explanations, saved contextual reviews, incident-help checklists and a warning notification tune are implemented. See [practical features, controls and limitations](practical-features.md).
+
+## SafeX AI 1.5.0 additions
+
+An optional floating shield launches screen cropping, selected-content review, Paste and screenshot import. Floating results and context edits remain private until explicit Save. See [floating assistant behavior, privacy and limits](floating-assistant.md).

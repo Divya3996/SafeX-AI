@@ -16,6 +16,15 @@ class SentinelApp : Application() {
     private val appScope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
     override fun onCreate() {
         super.onCreate()
+        // Application lifetime covers the interval when Android removes the capture gateway.
+        androidx.core.content.ContextCompat.registerReceiver(this, object : android.content.BroadcastReceiver() {
+            override fun onReceive(context: android.content.Context?, intent: android.content.Intent?) {
+                if (intent?.action == android.content.Intent.ACTION_SCREEN_OFF) {
+                    com.sentinel.ai.protection.floating.CaptureSessionStore.clear()
+                    stopService(android.content.Intent(this@SentinelApp, com.sentinel.ai.protection.floating.OneShotScreenCaptureService::class.java))
+                }
+            }
+        }, android.content.IntentFilter(android.content.Intent.ACTION_SCREEN_OFF), androidx.core.content.ContextCompat.RECEIVER_NOT_EXPORTED)
         FeatureManager.init(this)
         DisplayPreferences.init(this)
         PrivacyPreferences.init(this)

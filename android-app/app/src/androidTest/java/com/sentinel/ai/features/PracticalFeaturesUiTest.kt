@@ -33,7 +33,7 @@ class PracticalFeaturesUiTest {
         file.parentFile!!.mkdirs()
         file.outputStream().use { compose.onRoot().captureToImage().asAndroidBitmap().compress(android.graphics.Bitmap.CompressFormat.PNG, 100, it) }
     }
-    @Before fun resetLanguage() { compose.runOnUiThread { DisplayPreferences.setLanguage(context, AppLanguage.ENGLISH); DisplayPreferences.setTextScale(1f) } }
+    @Before fun resetLanguage() { runBlocking { ThreatJournal.delete(recordId) }; compose.runOnUiThread { DisplayPreferences.setLanguage(context, AppLanguage.ENGLISH); DisplayPreferences.setTextScale(1f) } }
     @After fun cleanup() = runBlocking {
         ThreatJournal.delete(recordId)
         compose.runOnUiThread { DisplayPreferences.setLanguage(context, AppLanguage.ENGLISH); DisplayPreferences.setTextScale(1f) }
@@ -49,6 +49,7 @@ class PracticalFeaturesUiTest {
         compose.waitUntil(5000) { ThreatJournal.scanResults.value.any { it.id == recordId && it.riskScore == 70f } }
         compose.onNodeWithText("Review before acting").performScrollTo().assertIsDisplayed()
         screenshot("context-review")
+        compose.waitUntil(5000) { compose.onAllNodesWithText("Review opening this link").fetchSemanticsNodes().size == 1 }
         compose.onNodeWithText("Review opening this link").performScrollTo().performClick()
         compose.onNodeWithText("Open a suspicious link?").assertExists()
         assertEquals(0, opens.get())

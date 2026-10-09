@@ -1,0 +1,4 @@
+--------- beginning of main
+10-09 02:58:28.201  3714  3714 D SafeXCapture: Display prepared: 720x1600
+10-09 02:58:28.211  3714  3714 D SafeXCapture: Same-size resize ignored: 720x1600
+10-09 02:58:28.258  3714  4067 D SafeXCapture: Frame received: 720x1600, rowStride=2880, pixelStride=4

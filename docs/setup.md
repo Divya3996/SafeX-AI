@@ -11,7 +11,7 @@ adb install -r demo-sender/build/outputs/apk/debug/demo-sender-debug.apk
 
 Open SafeX AI and continue past optional setup. Manual checks need no permissions. Enable notification warnings and notification access in Settings to demonstrate passive checks. If a physical Android device marks notification access as a restricted setting for sideloaded apps, allow restricted settings from its app-info menu before granting access.
 
-No backend, API key, network feed subscription, broad file-storage grant, SMS access, microphone or overlay permission is needed. Use the system picker for local images and files.
+No backend, API key, network feed subscription, broad file-storage grant, SMS access or microphone is needed. Use the system picker for local images and files. Manual scanning needs no overlay permission. The optional floating shield requires Android display-over-other-apps permission, and each screen capture needs fresh Android consent. See [floating assistant setup](floating-assistant.md).
 
 For testing:
 

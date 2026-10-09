@@ -11,4 +11,8 @@ interface ScanRepository {
     suspend fun analyzeMessage(text: String, source: String, sender: String?, identifier: String?, timestamp: Long, id: String): ScanResult = scanText(text)
     suspend fun scanQrContent(content: String): ScanResult = scanText(content)
     suspend fun scanImage(uri: Uri, qrOnly: Boolean = false): ScanResult = throw UnsupportedOperationException("Image scanning unavailable")
+    /** These paths must never emit an event or write history. Unsupported clients fail closed. */
+    suspend fun analyzeLinkPrivately(link: String): ScanResult = throw UnsupportedOperationException("Private analysis unavailable")
+    suspend fun analyzeTextPrivately(text: String): ScanResult = throw UnsupportedOperationException("Private analysis unavailable")
+    suspend fun analyzeQrPrivately(content: String): ScanResult = throw UnsupportedOperationException("Private analysis unavailable")
 }

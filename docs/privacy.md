@@ -9,3 +9,7 @@ Room stores scan content, explanations, evidence and timestamps privately. **Raw
 Cloud backup and device transfer are disabled for stored app data. Warning notifications use private visibility and a generic lock-screen public version. HTTP body logging is disabled and scan content is not logged by the active pipeline.
 
 The optional demo sender is a separate app that posts synthetic local notifications. It has no network permission. It is recognized only in debug builds, and its results are labeled demo data.
+
+## Floating assistant
+
+The optional floating shortcut captures one authorized screen only after a fresh Android consent prompt. Full-screen pixels are temporarily held in memory for cropping; selected pixels are processed by bundled OCR/QR models. Private results and contextual reviews are not stored until Save result. Screen lock, close/cancel and background expiry clear the private session. No clipboard polling, accessibility access, screen-image files or cloud processing are used. See [the floating assistant documentation](floating-assistant.md) for bounds and platform limitations.

@@ -1,0 +1,35 @@
+
+com.sentinel.ai.features.FloatingAssistantUiTest:.....
+com.sentinel.ai.features.FloatingCaptureEndToEndTest:s_glBindAttribLocation: bind attrib 0 name position
+s_glBindAttribLocation: bind attrib 1 name color
+s_glBindAttribLocation: bind attrib 2 name localCoord
+.
+Error in realScreenCaptureCropAndOcrReachThePrivateRiskResult(com.sentinel.ai.features.FloatingCaptureEndToEndTest):
+java.lang.AssertionError: Real captured image should reach the crop screen: stage=SETUP, error=Capture unavailable or unreadable. Try again, Share, or Paste., finishing=false, destroyed=false, sourceVisible=140645, store=Failed
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.realScreenCaptureCropAndOcrReachThePrivateRiskResult(FloatingCaptureEndToEndTest.kt:98)
+
+com.sentinel.ai.features.FloatingPrivacyDeviceTest:...
+com.sentinel.ai.features.LargeHistoryConcurrencyTest:.
+com.sentinel.ai.features.LiveQrCameraTest:.
+com.sentinel.ai.features.LiveQrEndToEndTest:.
+com.sentinel.ai.features.PracticalFeaturesDeviceTest:....
+com.sentinel.ai.features.PracticalFeaturesUiTest:....
+com.sentinel.ai.i18n.MultilingualExperienceTest:..
+com.sentinel.ai.ml.InternalScanMlIntegrationTest:.
+com.sentinel.ai.ml.OfflinePipelineTest:.........
+com.sentinel.ai.ml.UrlFraudAuditTest:..
+
+Time: 161.35
+There was 1 failure:
+1) realScreenCaptureCropAndOcrReachThePrivateRiskResult(com.sentinel.ai.features.FloatingCaptureEndToEndTest)
+java.lang.AssertionError: Real captured image should reach the crop screen: stage=SETUP, error=Capture unavailable or unreadable. Try again, Share, or Paste., finishing=false, destroyed=false, sourceVisible=140645, store=Failed
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.realScreenCaptureCropAndOcrReachThePrivateRiskResult(FloatingCaptureEndToEndTest.kt:98)
+
+FAILURES!!!
+Tests run: 35,  Failures: 1
+
+

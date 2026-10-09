@@ -608,4 +608,111 @@
     <string name="sx_this_image_has_more_than_eight_qr_codes_use__22d4c566" formatted="false">"इस चित्र में आठ से अधिक QR कोड हैं। एक कोड चुनने के लिए कैमरा स्कैनर इस्तेमाल करें।"</string>
     <string name="sx_camera_ready_713b3228" formatted="false">"कैमरा तैयार है"</string>
     <string name="sx_currency_3ac1a9ec" formatted="false">"मुद्रा"</string>
+    <string name="sx_floating_assistant_971f50f2" formatted="false">"फ़्लोटिंग सहायक"</string>
+    <string name="sx_set_up_floating_assistant_a656a5d2" formatted="false">"फ़्लोटिंग सहायक सेट करें"</string>
+    <string name="sx_floating_assistant_is_running_707db351" formatted="false">"फ़्लोटिंग सहायक चालू है"</string>
+    <string name="sx_floating_assistant_is_paused_8a25f234" formatted="false">"फ़्लोटिंग सहायक रुका हुआ है"</string>
+    <string name="sx_use_a_movable_shield_to_crop_a_screen_review_c0fed1c3" formatted="false">"स्क्रीन का हिस्सा चुनने, टेक्स्ट या लिंक की समीक्षा करने और फ़ोन पर निजी जाँच के लिए चलने वाला शील्ड बटन इस्तेमाल करें।"</string>
+    <string name="sx_scan_screen_area_abbf0bf7" formatted="false">"स्क्रीन का हिस्सा जाँचें"</string>
+    <string name="sx_paste_link_or_message_def4f8e2" formatted="false">"लिंक या संदेश पेस्ट करें"</string>
+    <string name="sx_pause_assistant_fcf33ec8" formatted="false">"सहायक रोकें"</string>
+    <string name="sx_choose_screenshot_59811ea6" formatted="false">"स्क्रीनशॉट चुनें"</string>
+    <string name="sx_review_captured_screen_04ae864b" formatted="false">"कैप्चर की गई स्क्रीन देखें"</string>
+    <string name="sx_move_to_other_edge_d67b4a62" formatted="false">"दूसरे किनारे पर ले जाएँ"</string>
+    <string name="sx_safex_ai_floating_assistant_tap_for_scan_act_9f33ce3e" formatted="false">"SafeX AI फ़्लोटिंग सहायक। जाँच के विकल्पों के लिए टैप करें।"</string>
+    <string name="sx_floating_assistant_could_not_start_open_safe_3484112c" formatted="false">"फ़्लोटिंग सहायक शुरू नहीं हो सका। SafeX AI खोलकर फिर कोशिश करें।"</string>
+    <string name="sx_floating_assistant_status_0a5d23aa" formatted="false">"फ़्लोटिंग सहायक की स्थिति"</string>
+    <string name="sx_safex_ai_floating_assistant_332d019c" formatted="false">"SafeX AI • फ़्लोटिंग सहायक"</string>
+    <string name="sx_safex_ai_capturing_one_screen_db8b4c58" formatted="false">"SafeX AI • एक स्क्रीन कैप्चर हो रही है"</string>
+    <string name="sx_capture_stops_after_one_frame_tap_stop_to_ca_b38d0bdc" formatted="false">"एक फ़्रेम के बाद कैप्चर रुक जाएगा। रद्द करने के लिए रोकें पर टैप करें।"</string>
+    <string name="sx_ready_when_you_choose_to_scan_no_screen_reco_7b8fce7d" formatted="false">"आपके जाँच चुनने पर तैयार है। स्क्रीन रिकॉर्डिंग चालू नहीं है।"</string>
+    <string name="sx_stop_cae7d57b" formatted="false">"रोकें"</string>
+    <string name="sx_captured_screen_ready_b2c6d366" formatted="false">"कैप्चर की गई स्क्रीन तैयार है"</string>
+    <string name="sx_tap_to_crop_and_review_privately_f3390182" formatted="false">"हिस्सा चुनने और निजी समीक्षा के लिए टैप करें।"</string>
+    <string name="sx_safex_ai_review_your_scan_8830f54d" formatted="false">"SafeX AI • अपनी जाँच देखें"</string>
+    <string name="sx_your_private_scan_found_risk_signals_tap_to__2127db32" formatted="false">"आपकी निजी जाँच में जोखिम के संकेत मिले हैं। समीक्षा के लिए टैप करें।"</string>
+    <string name="sx_screen_capture_stopped_choose_a_new_capture__51ed9bc2" formatted="false">"स्क्रीन कैप्चर रुक गया। नई स्क्रीन कैप्चर करें या सामग्री पेस्ट करें।"</string>
+    <string name="sx_capture_unavailable_or_unreadable_try_again__91fb96b2" formatted="false">"कैप्चर उपलब्ध नहीं है या पढ़ा नहीं जा सकता। फिर कोशिश करें, साझा करें या पेस्ट करें।"</string>
+    <string name="sx_screen_capture_could_not_start_please_reques_c95d08ed" formatted="false">"स्क्रीन कैप्चर शुरू नहीं हो सका। कृपया नया कैप्चर अनुरोध करें।"</string>
+    <string name="sx_not_enough_memory_for_this_capture_choose_a__51ecb59c" formatted="false">"इस कैप्चर के लिए पर्याप्त मेमोरी नहीं है। छोटी ऐप विंडो चुनें या सामग्री पेस्ट करें।"</string>
+    <string name="sx_screen_size_changed_during_capture_please_ca_23de9ffe" formatted="false">"कैप्चर के दौरान स्क्रीन का आकार बदल गया। कृपया फिर कैप्चर करें।"</string>
+    <string name="sx_screen_capture_was_not_allowed_you_can_choos_5b5dce38" formatted="false">"स्क्रीन कैप्चर की अनुमति नहीं मिली। आप स्क्रीनशॉट चुन सकते हैं या सामग्री पेस्ट कर सकते हैं।"</string>
+    <string name="sx_display_permission_was_not_granted_manual_sc_edde86f8" formatted="false">"दूसरे ऐप पर दिखाने की अनुमति नहीं मिली। मैन्युअल जाँच अब भी काम करती है।"</string>
+    <string name="sx_display_over_apps_settings_are_unavailable_o_d6f88d89" formatted="false">"इस डिवाइस पर दूसरे ऐप पर दिखाने की सेटिंग उपलब्ध नहीं है। साझा करें या पेस्ट करें।"</string>
+    <string name="sx_this_private_result_is_no_longer_available_s_8d16a98d" formatted="false">"यह निजी परिणाम अब उपलब्ध नहीं है। नई जाँच शुरू करें।"</string>
+    <string name="sx_image_loading_timed_out_choose_a_smaller_scr_ccb16915" formatted="false">"चित्र खोलने का समय समाप्त हो गया। छोटा स्क्रीनशॉट चुनें।"</string>
+    <string name="sx_this_screenshot_could_not_be_opened_choose_a_8d0e5e28" formatted="false">"यह स्क्रीनशॉट खुल नहीं सका। दूसरा चित्र चुनें।"</string>
+    <string name="sx_select_a_larger_area_so_the_text_can_be_read_9ec86119" formatted="false">"टेक्स्ट पढ़ने के लिए बड़ा हिस्सा चुनें।"</string>
+    <string name="sx_select_an_area_of_the_captured_image_b56485c9" formatted="false">"कैप्चर किए चित्र का हिस्सा चुनें।"</string>
+    <string name="sx_no_readable_content_found_try_a_larger_crop__6d98befe" formatted="false">"पढ़ने योग्य सामग्री नहीं मिली। बड़ा हिस्सा चुनें, साझा करें या पेस्ट करें।"</string>
+    <string name="sx_text_recognition_timed_out_try_a_smaller_cro_1456230c" formatted="false">"टेक्स्ट पहचानने का समय समाप्त हो गया। छोटा हिस्सा चुनें या मूल टेक्स्ट पेस्ट करें।"</string>
+    <string name="sx_not_enough_memory_for_this_image_choose_a_sm_a81204f4" formatted="false">"इस चित्र के लिए पर्याप्त मेमोरी नहीं है। छोटा स्क्रीनशॉट चुनें या सामग्री पेस्ट करें।"</string>
+    <string name="sx_text_recognition_could_not_finish_try_again__9cbd94ce" formatted="false">"टेक्स्ट की पहचान पूरी नहीं हुई। फिर कोशिश करें या मूल टेक्स्ट पेस्ट करें।"</string>
+    <string name="sx_choose_readable_content_of_at_most_12_000_ch_ebf227c4" formatted="false">"अधिकतम 12,000 अक्षरों की पढ़ने योग्य सामग्री चुनें।"</string>
+    <string name="sx_floating_screen_crop_3a40cdce" formatted="false">"फ़्लोटिंग स्क्रीन चयन"</string>
+    <string name="sx_floating_pasted_content_1b3ca476" formatted="false">"फ़्लोटिंग पेस्ट सामग्री"</string>
+    <string name="sx_selected_visible_content_only_ocr_can_change_acd78b1d" formatted="false">"केवल चुनी हुई दिखाई देने वाली सामग्री। OCR टेक्स्ट बदल सकता है; लिंक के छिपे पते कैप्चर नहीं हुए।"</string>
+    <string name="sx_user_pasted_content_only_aef27d2e" formatted="false">"केवल उपयोगकर्ता की पेस्ट की गई सामग्री।"</string>
+    <string name="sx_extraction_coverage_73126cf4" formatted="false">"निकाली गई सामग्री का दायरा"</string>
+    <string name="sx_only_part_of_the_captured_content_was_extrac_7b713aa6" formatted="false">"कैप्चर की गई सामग्री का केवल कुछ हिस्सा निकला है। छोटा हिस्सा चुनें या मूल टेक्स्ट जाँचें।"</string>
+    <string name="sx_analysis_timed_out_try_a_shorter_selection_8454bd0a" formatted="false">"जाँच का समय समाप्त हो गया। छोटी सामग्री चुनें।"</string>
+    <string name="sx_this_content_could_not_be_analyzed_review_th_756b025a" formatted="false">"इस सामग्री की जाँच नहीं हो सकी। टेक्स्ट देखकर फिर कोशिश करें।"</string>
+    <string name="sx_private_review_not_saved_830b5442" formatted="false">"निजी समीक्षा • सहेजी नहीं गई"</string>
+    <string name="sx_saved_to_local_history_a2961722" formatted="false">"स्थानीय इतिहास में सहेजा गया"</string>
+    <string name="sx_saving_23e39291" formatted="false">"सहेजा जा रहा है…"</string>
+    <string name="sx_saved_b5c120b3" formatted="false">"सहेजा गया"</string>
+    <string name="sx_save_result_a6fdf772" formatted="false">"परिणाम सहेजें"</string>
+    <string name="sx_new_scan_de2b814a" formatted="false">"नई जाँच"</string>
+    <string name="sx_check_suspicious_content_wherever_you_encoun_7f890f0f" formatted="false">"संदिग्ध सामग्री जहाँ मिले, वहीं जाँचें"</string>
+    <string name="sx_a_movable_shield_opens_a_private_screen_crop_ec36c18a" formatted="false">"चलने वाला शील्ड बटन स्क्रीन का हिस्सा चुनने या पेस्ट सामग्री की निजी समीक्षा खोलता है। आपके चुनने और Android की अनुमति देने पर ही कैप्चर शुरू होता है।"</string>
+    <string name="sx_your_choice_your_phone_bc092406" formatted="false">"आपकी पसंद। आपका फ़ोन।"</string>
+    <string name="sx_one_captured_screen_is_held_temporarily_in_m_5a3e22c0" formatted="false">"हिस्सा चुनने के लिए एक कैप्चर की गई स्क्रीन अस्थायी रूप से मेमोरी में रहती है। केवल चुनी सामग्री की स्थानीय जाँच होती है। चित्र सहेजे या अपलोड नहीं होते। परिणाम सहेजें पर टैप करने तक परिणाम निजी रहते हैं।"</string>
+    <string name="sx_some_apps_hide_floating_buttons_or_protect_t_17a69acc" formatted="false">"कुछ ऐप फ़्लोटिंग बटन छिपाते हैं या स्क्रीनशॉट सुरक्षित रखते हैं। कैप्चर उपलब्ध न हो तो मूल संदेश साझा करें या पेस्ट करें।"</string>
+    <string name="sx_display_permission_is_enabled_8071af1f" formatted="false">"दूसरे ऐप पर दिखाने की अनुमति चालू है"</string>
+    <string name="sx_display_permission_is_needed_for_the_shield__a4559a9f" formatted="false">"शील्ड बटन के लिए दूसरे ऐप पर दिखाने की अनुमति चाहिए"</string>
+    <string name="sx_enable_floating_assistant_699c7557" formatted="false">"फ़्लोटिंग सहायक चालू करें"</string>
+    <string name="sx_status_and_warning_notifications_are_availab_7ab6ec80" formatted="false">"स्थिति और चेतावनी सूचनाएँ उपलब्ध हैं"</string>
+    <string name="sx_notifications_are_disabled_enable_them_for_s_42f60af7" formatted="false">"सूचनाएँ बंद हैं। स्थिति और पृष्ठभूमि चेतावनियों के लिए उन्हें चालू करें।"</string>
+    <string name="sx_review_a_link_or_message_cba25582" formatted="false">"लिंक या संदेश की समीक्षा करें"</string>
+    <string name="sx_copy_content_in_the_other_app_then_tap_paste_245347df" formatted="false">"दूसरे ऐप से सामग्री कॉपी करें, फिर यहाँ पेस्ट करें। SafeX AI आपके क्लिपबोर्ड की निगरानी नहीं करता।"</string>
+    <string name="sx_paste_f3380f7b" formatted="false">"पेस्ट करें"</string>
+    <string name="sx_clipboard_is_empty_or_unavailable_paste_or_t_b21b8626" formatted="false">"क्लिपबोर्ड खाली या अनुपलब्ध है। मूल सामग्री पेस्ट करें या लिखें।"</string>
+    <string name="sx_capturing_one_frame_840575fc" formatted="false">"एक फ़्रेम कैप्चर हो रहा है…"</string>
+    <string name="sx_reading_selected_content_offline_173e7a90" formatted="false">"चुनी सामग्री ऑफ़लाइन पढ़ी जा रही है…"</string>
+    <string name="sx_analyzing_selected_content_ba9a3b85" formatted="false">"चुनी सामग्री की जाँच हो रही है…"</string>
+    <string name="sx_no_screen_images_are_saved_you_can_cancel_at_097cb742" formatted="false">"स्क्रीन के चित्र सहेजे नहीं जाते। आप कभी भी रद्द कर सकते हैं।"</string>
+    <string name="sx_crop_the_captured_screen_a59e356f" formatted="false">"कैप्चर की गई स्क्रीन का हिस्सा चुनें"</string>
+    <string name="sx_drag_the_corners_or_move_the_selection_this__b895d983" formatted="false">"कोने खींचें या चयन खिसकाएँ। यह स्थिर चित्र है; स्क्रीन कैप्चर पहले ही रुक चुका है।"</string>
+    <string name="sx_captured_image_adjust_the_selection_using_th_74951ea7" formatted="false">"कैप्चर किया चित्र। हैंडल या सटीक चयन नियंत्रणों से हिस्सा चुनें।"</string>
+    <string name="sx_zoom_in_0e47f09a" formatted="false">"बड़ा करें"</string>
+    <string name="sx_zoom_out_bc7b631a" formatted="false">"छोटा करें"</string>
+    <string name="sx_use_captured_image_415353e6" formatted="false">"कैप्चर किया पूरा चित्र चुनें"</string>
+    <string name="sx_adjust_crop_precisely_ce299328" formatted="false">"सटीक हिस्सा चुनें"</string>
+    <string name="sx_left_edge_992e445c" formatted="false">"बायाँ किनारा"</string>
+    <string name="sx_top_edge_2f87ee23" formatted="false">"ऊपरी किनारा"</string>
+    <string name="sx_right_edge_9c8b5958" formatted="false">"दायाँ किनारा"</string>
+    <string name="sx_bottom_edge_3049c374" formatted="false">"निचला किनारा"</string>
+    <string name="sx_read_selected_area_2ce0e27b" formatted="false">"चुना हिस्सा पढ़ें"</string>
+    <string name="sx_cancel_capture_c0f60371" formatted="false">"कैप्चर रद्द करें"</string>
+    <string name="sx_review_extracted_content_9ad08667" formatted="false">"निकाली गई सामग्री देखें"</string>
+    <string name="sx_check_the_spelling_before_analysis_ocr_can_c_67970363" formatted="false">"जाँच से पहले अक्षर जाँचें। OCR लिंक बदल सकता है; स्क्रीनशॉट उसका छिपा पता नहीं दिखाता।"</string>
+    <string name="sx_extraction_is_incomplete_choose_a_smaller_ar_caf8dfef" formatted="false">"सामग्री पूरी नहीं निकली है। छोटा हिस्सा चुनें या चुने टेक्स्ट को ध्यान से देखें।"</string>
+    <string name="sx_selected_image_tap_a_recognized_line_or_use__17c2c19d" formatted="false">"चुना चित्र। पहचानी गई पंक्ति पर टैप करें या नीचे की टेक्स्ट सूची इस्तेमाल करें।"</string>
+    <string name="sx_select_recognized_lines_1d813b3c" formatted="false">"पहचानी गई पंक्तियाँ चुनें"</string>
+    <string name="sx_use_all_extracted_text_1463dd4e" formatted="false">"निकाला गया पूरा टेक्स्ट चुनें"</string>
+    <string name="sx_analyze_reviewed_message_9160881d" formatted="false">"समीक्षा किए संदेश की जाँच करें"</string>
+    <string name="sx_qr_content_found_bcd660c9" formatted="false">"QR सामग्री मिली"</string>
+    <string name="sx_analyze_this_qr_content_a4bc9238" formatted="false">"इस QR सामग्री की जाँच करें"</string>
+    <string name="sx_only_the_content_you_choose_is_analyzed_noth_d81c949a" formatted="false">"केवल आपकी चुनी सामग्री की जाँच होगी। कुछ भी अपने आप नहीं खुलेगा।"</string>
+    <string name="sx_text_to_analyze_167c0f8b" formatted="false">"जाँच के लिए टेक्स्ट"</string>
+    <string name="sx_choose_a_detected_link_85d7ff42" formatted="false">"मिला हुआ लिंक चुनें"</string>
+    <string name="sx_this_checks_the_selected_link_surrounding_me_1ade109e" formatted="false">"यह चुने लिंक की जाँच करता है। आसपास के संदेश का टेक्स्ट शामिल नहीं है।"</string>
+    <string name="sx_more_than_eight_links_were_found_select_or_p_e8d8c8b7" formatted="false">"आठ से अधिक लिंक मिले हैं। बाकी लिंक अलग चुनें या पेस्ट करें।"</string>
+    <string name="sx_extracted_content_is_too_long_select_a_small_73ae4b3c" formatted="false">"निकाली गई सामग्री बहुत लंबी है। छोटा हिस्सा या एक QR कोड चुनें।"</string>
+    <string name="sx_select_a_smaller_area_of_the_captured_image_4b42cb27" formatted="false">"कैप्चर किए चित्र का छोटा हिस्सा चुनें।"</string>
+    <string name="sx_resume_private_review_f8447ee2" formatted="false">"निजी समीक्षा जारी रखें"</string>
+    <string name="sx_private_review_expired_while_safex_ai_was_in_94573662" formatted="false">"SafeX AI बैकग्राउंड में रहने के दौरान निजी समीक्षा समाप्त हो गई। नई जाँच शुरू करें।"</string>
+    <string name="sx_selected_link_only_surrounding_message_text__59bd2436" formatted="false">"केवल चुना गया लिंक। आसपास के संदेश की जाँच नहीं की गई।"</string>
+    <string name="sx_selected_qr_payload_only_surrounding_image_t_2ba0bbbe" formatted="false">"केवल चुना गया QR डेटा। आसपास के चित्र के पाठ की जाँच नहीं की गई।"</string>
+    <string name="sx_tap_the_shield_to_choose_content_screen_capt_aa297a34" formatted="false">"सामग्री चुनने के लिए ढाल पर टैप करें। स्क्रीन कैप्चर के लिए आपकी अनुमति चाहिए।"</string>
 </resources>

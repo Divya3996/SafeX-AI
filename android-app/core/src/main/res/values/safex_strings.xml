@@ -608,4 +608,111 @@
     <string name="sx_this_image_has_more_than_eight_qr_codes_use__22d4c566" formatted="false">"This image has more than eight QR codes. Use the camera scanner to choose one code."</string>
     <string name="sx_camera_ready_713b3228" formatted="false">"Camera ready"</string>
     <string name="sx_currency_3ac1a9ec" formatted="false">"Currency"</string>
+    <string name="sx_floating_assistant_971f50f2" formatted="false">"Floating assistant"</string>
+    <string name="sx_set_up_floating_assistant_a656a5d2" formatted="false">"Set up floating assistant"</string>
+    <string name="sx_floating_assistant_is_running_707db351" formatted="false">"Floating assistant is running"</string>
+    <string name="sx_floating_assistant_is_paused_8a25f234" formatted="false">"Floating assistant is paused"</string>
+    <string name="sx_use_a_movable_shield_to_crop_a_screen_review_c0fed1c3" formatted="false">"Use a movable shield to crop a screen, review text or links, and analyze privately on your phone."</string>
+    <string name="sx_scan_screen_area_abbf0bf7" formatted="false">"Scan screen area"</string>
+    <string name="sx_paste_link_or_message_def4f8e2" formatted="false">"Paste link or message"</string>
+    <string name="sx_pause_assistant_fcf33ec8" formatted="false">"Pause assistant"</string>
+    <string name="sx_choose_screenshot_59811ea6" formatted="false">"Choose screenshot"</string>
+    <string name="sx_review_captured_screen_04ae864b" formatted="false">"Review captured screen"</string>
+    <string name="sx_move_to_other_edge_d67b4a62" formatted="false">"Move to other edge"</string>
+    <string name="sx_safex_ai_floating_assistant_tap_for_scan_act_9f33ce3e" formatted="false">"SafeX AI floating assistant. Tap for scan actions."</string>
+    <string name="sx_floating_assistant_could_not_start_open_safe_3484112c" formatted="false">"Floating assistant could not start. Open SafeX AI and try again."</string>
+    <string name="sx_floating_assistant_status_0a5d23aa" formatted="false">"Floating assistant status"</string>
+    <string name="sx_safex_ai_floating_assistant_332d019c" formatted="false">"SafeX AI • floating assistant"</string>
+    <string name="sx_safex_ai_capturing_one_screen_db8b4c58" formatted="false">"SafeX AI • capturing one screen"</string>
+    <string name="sx_capture_stops_after_one_frame_tap_stop_to_ca_b38d0bdc" formatted="false">"Capture stops after one frame. Tap Stop to cancel."</string>
+    <string name="sx_ready_when_you_choose_to_scan_no_screen_reco_7b8fce7d" formatted="false">"Ready when you choose to scan. No screen recording is active."</string>
+    <string name="sx_stop_cae7d57b" formatted="false">"Stop"</string>
+    <string name="sx_captured_screen_ready_b2c6d366" formatted="false">"Captured screen ready"</string>
+    <string name="sx_tap_to_crop_and_review_privately_f3390182" formatted="false">"Tap to crop and review privately."</string>
+    <string name="sx_safex_ai_review_your_scan_8830f54d" formatted="false">"SafeX AI • review your scan"</string>
+    <string name="sx_your_private_scan_found_risk_signals_tap_to__2127db32" formatted="false">"Your private scan found risk signals. Tap to review."</string>
+    <string name="sx_screen_capture_stopped_choose_a_new_capture__51ed9bc2" formatted="false">"Screen capture stopped. Choose a new capture or paste the content."</string>
+    <string name="sx_capture_unavailable_or_unreadable_try_again__91fb96b2" formatted="false">"Capture unavailable or unreadable. Try again, Share, or Paste."</string>
+    <string name="sx_screen_capture_could_not_start_please_reques_c95d08ed" formatted="false">"Screen capture could not start. Please request a new capture."</string>
+    <string name="sx_not_enough_memory_for_this_capture_choose_a__51ecb59c" formatted="false">"Not enough memory for this capture. Choose a smaller app window or paste the content."</string>
+    <string name="sx_screen_size_changed_during_capture_please_ca_23de9ffe" formatted="false">"Screen size changed during capture. Please capture again."</string>
+    <string name="sx_screen_capture_was_not_allowed_you_can_choos_5b5dce38" formatted="false">"Screen capture was not allowed. You can choose a screenshot or paste content instead."</string>
+    <string name="sx_display_permission_was_not_granted_manual_sc_edde86f8" formatted="false">"Display permission was not granted. Manual scanning still works."</string>
+    <string name="sx_display_over_apps_settings_are_unavailable_o_d6f88d89" formatted="false">"Display-over-apps settings are unavailable on this device. Use Share or Paste instead."</string>
+    <string name="sx_this_private_result_is_no_longer_available_s_8d16a98d" formatted="false">"This private result is no longer available. Start a new scan."</string>
+    <string name="sx_image_loading_timed_out_choose_a_smaller_scr_ccb16915" formatted="false">"Image loading timed out. Choose a smaller screenshot."</string>
+    <string name="sx_this_screenshot_could_not_be_opened_choose_a_8d0e5e28" formatted="false">"This screenshot could not be opened. Choose another image."</string>
+    <string name="sx_select_a_larger_area_so_the_text_can_be_read_9ec86119" formatted="false">"Select a larger area so the text can be read."</string>
+    <string name="sx_select_an_area_of_the_captured_image_b56485c9" formatted="false">"Select an area of the captured image."</string>
+    <string name="sx_no_readable_content_found_try_a_larger_crop__6d98befe" formatted="false">"No readable content found. Try a larger crop, Share, or Paste."</string>
+    <string name="sx_text_recognition_timed_out_try_a_smaller_cro_1456230c" formatted="false">"Text recognition timed out. Try a smaller crop or paste the original text."</string>
+    <string name="sx_not_enough_memory_for_this_image_choose_a_sm_a81204f4" formatted="false">"Not enough memory for this image. Choose a smaller screenshot or paste content."</string>
+    <string name="sx_text_recognition_could_not_finish_try_again__9cbd94ce" formatted="false">"Text recognition could not finish. Try again or paste the original text."</string>
+    <string name="sx_choose_readable_content_of_at_most_12_000_ch_ebf227c4" formatted="false">"Choose readable content of at most 12,000 characters."</string>
+    <string name="sx_floating_screen_crop_3a40cdce" formatted="false">"Floating screen crop"</string>
+    <string name="sx_floating_pasted_content_1b3ca476" formatted="false">"Floating pasted content"</string>
+    <string name="sx_selected_visible_content_only_ocr_can_change_acd78b1d" formatted="false">"Selected visible content only. OCR can change text; hidden link destinations were not captured."</string>
+    <string name="sx_user_pasted_content_only_aef27d2e" formatted="false">"User-pasted content only."</string>
+    <string name="sx_extraction_coverage_73126cf4" formatted="false">"Extraction coverage"</string>
+    <string name="sx_only_part_of_the_captured_content_was_extrac_7b713aa6" formatted="false">"Only part of the captured content was extracted. Choose a smaller area or verify the original text."</string>
+    <string name="sx_analysis_timed_out_try_a_shorter_selection_8454bd0a" formatted="false">"Analysis timed out. Try a shorter selection."</string>
+    <string name="sx_this_content_could_not_be_analyzed_review_th_756b025a" formatted="false">"This content could not be analyzed. Review the text and try again."</string>
+    <string name="sx_private_review_not_saved_830b5442" formatted="false">"Private review • not saved"</string>
+    <string name="sx_saved_to_local_history_a2961722" formatted="false">"Saved to local history"</string>
+    <string name="sx_saving_23e39291" formatted="false">"Saving…"</string>
+    <string name="sx_saved_b5c120b3" formatted="false">"Saved"</string>
+    <string name="sx_save_result_a6fdf772" formatted="false">"Save result"</string>
+    <string name="sx_new_scan_de2b814a" formatted="false">"New scan"</string>
+    <string name="sx_check_suspicious_content_wherever_you_encoun_7f890f0f" formatted="false">"Check suspicious content wherever you encounter it"</string>
+    <string name="sx_a_movable_shield_opens_a_private_screen_crop_ec36c18a" formatted="false">"A movable shield opens a private screen crop or pasted-content review. Capturing starts only when you choose it and approve Android\'s prompt."</string>
+    <string name="sx_your_choice_your_phone_bc092406" formatted="false">"Your choice. Your phone."</string>
+    <string name="sx_one_captured_screen_is_held_temporarily_in_m_5a3e22c0" formatted="false">"One captured screen is held temporarily in memory so you can crop it. Only selected content is analyzed locally. Images are not saved or uploaded. Results stay private until you tap Save result."</string>
+    <string name="sx_some_apps_hide_floating_buttons_or_protect_t_17a69acc" formatted="false">"Some apps hide floating buttons or protect their screenshots. Use the original message\'s Share action or Paste when capture is unavailable."</string>
+    <string name="sx_display_permission_is_enabled_8071af1f" formatted="false">"Display permission is enabled"</string>
+    <string name="sx_display_permission_is_needed_for_the_shield__a4559a9f" formatted="false">"Display permission is needed for the shield button"</string>
+    <string name="sx_enable_floating_assistant_699c7557" formatted="false">"Enable floating assistant"</string>
+    <string name="sx_status_and_warning_notifications_are_availab_7ab6ec80" formatted="false">"Status and warning notifications are available"</string>
+    <string name="sx_notifications_are_disabled_enable_them_for_s_42f60af7" formatted="false">"Notifications are disabled. Enable them for status and background warnings."</string>
+    <string name="sx_review_a_link_or_message_cba25582" formatted="false">"Review a link or message"</string>
+    <string name="sx_copy_content_in_the_other_app_then_tap_paste_245347df" formatted="false">"Copy content in the other app, then tap Paste here. SafeX AI never monitors your clipboard."</string>
+    <string name="sx_paste_f3380f7b" formatted="false">"Paste"</string>
+    <string name="sx_clipboard_is_empty_or_unavailable_paste_or_t_b21b8626" formatted="false">"Clipboard is empty or unavailable. Paste or type the original content."</string>
+    <string name="sx_capturing_one_frame_840575fc" formatted="false">"Capturing one frame…"</string>
+    <string name="sx_reading_selected_content_offline_173e7a90" formatted="false">"Reading selected content offline…"</string>
+    <string name="sx_analyzing_selected_content_ba9a3b85" formatted="false">"Analyzing selected content…"</string>
+    <string name="sx_no_screen_images_are_saved_you_can_cancel_at_097cb742" formatted="false">"No screen images are saved. You can cancel at any time."</string>
+    <string name="sx_crop_the_captured_screen_a59e356f" formatted="false">"Crop the captured screen"</string>
+    <string name="sx_drag_the_corners_or_move_the_selection_this__b895d983" formatted="false">"Drag the corners or move the selection. This is a frozen image; screen capture has already stopped."</string>
+    <string name="sx_captured_image_adjust_the_selection_using_th_74951ea7" formatted="false">"Captured image. Adjust the selection using the handles or precise crop controls."</string>
+    <string name="sx_zoom_in_0e47f09a" formatted="false">"Zoom in"</string>
+    <string name="sx_zoom_out_bc7b631a" formatted="false">"Zoom out"</string>
+    <string name="sx_use_captured_image_415353e6" formatted="false">"Use captured image"</string>
+    <string name="sx_adjust_crop_precisely_ce299328" formatted="false">"Adjust crop precisely"</string>
+    <string name="sx_left_edge_992e445c" formatted="false">"Left edge"</string>
+    <string name="sx_top_edge_2f87ee23" formatted="false">"Top edge"</string>
+    <string name="sx_right_edge_9c8b5958" formatted="false">"Right edge"</string>
+    <string name="sx_bottom_edge_3049c374" formatted="false">"Bottom edge"</string>
+    <string name="sx_read_selected_area_2ce0e27b" formatted="false">"Read selected area"</string>
+    <string name="sx_cancel_capture_c0f60371" formatted="false">"Cancel capture"</string>
+    <string name="sx_review_extracted_content_9ad08667" formatted="false">"Review extracted content"</string>
+    <string name="sx_check_the_spelling_before_analysis_ocr_can_c_67970363" formatted="false">"Check the spelling before analysis. OCR can change a link; a screenshot does not reveal its hidden destination."</string>
+    <string name="sx_extraction_is_incomplete_choose_a_smaller_ar_caf8dfef" formatted="false">"Extraction is incomplete. Choose a smaller area or review the selected text carefully."</string>
+    <string name="sx_selected_image_tap_a_recognized_line_or_use__17c2c19d" formatted="false">"Selected image. Tap a recognized line or use the text selection list below."</string>
+    <string name="sx_select_recognized_lines_1d813b3c" formatted="false">"Select recognized lines"</string>
+    <string name="sx_use_all_extracted_text_1463dd4e" formatted="false">"Use all extracted text"</string>
+    <string name="sx_analyze_reviewed_message_9160881d" formatted="false">"Analyze reviewed message"</string>
+    <string name="sx_qr_content_found_bcd660c9" formatted="false">"QR content found"</string>
+    <string name="sx_analyze_this_qr_content_a4bc9238" formatted="false">"Analyze this QR content"</string>
+    <string name="sx_only_the_content_you_choose_is_analyzed_noth_d81c949a" formatted="false">"Only the content you choose is analyzed. Nothing opens automatically."</string>
+    <string name="sx_text_to_analyze_167c0f8b" formatted="false">"Text to analyze"</string>
+    <string name="sx_choose_a_detected_link_85d7ff42" formatted="false">"Choose a detected link"</string>
+    <string name="sx_this_checks_the_selected_link_surrounding_me_1ade109e" formatted="false">"This checks the selected link. Surrounding message text is not included."</string>
+    <string name="sx_more_than_eight_links_were_found_select_or_p_e8d8c8b7" formatted="false">"More than eight links were found. Select or paste additional links separately."</string>
+    <string name="sx_extracted_content_is_too_long_select_a_small_73ae4b3c" formatted="false">"Extracted content is too long. Select a smaller area or choose one QR code."</string>
+    <string name="sx_select_a_smaller_area_of_the_captured_image_4b42cb27" formatted="false">"Select a smaller area of the captured image."</string>
+    <string name="sx_resume_private_review_f8447ee2" formatted="false">"Resume private review"</string>
+    <string name="sx_private_review_expired_while_safex_ai_was_in_94573662" formatted="false">"Private review expired while SafeX AI was in the background. Start a new scan."</string>
+    <string name="sx_selected_link_only_surrounding_message_text__59bd2436" formatted="false">"Selected link only. Surrounding message text was not analyzed."</string>
+    <string name="sx_selected_qr_payload_only_surrounding_image_t_2ba0bbbe" formatted="false">"Selected QR payload only. Surrounding image text was not analyzed."</string>
+    <string name="sx_tap_the_shield_to_choose_content_screen_capt_aa297a34" formatted="false">"Tap the shield to choose content. Screen capture requires your approval."</string>
 </resources>

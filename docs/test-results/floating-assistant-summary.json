@@ -1,0 +1,141 @@
+{
+  "version": "1.5.0",
+  "version_code": 6,
+  "verified_at_utc": "2026-10-08T21:31:39.679296+00:00",
+  "features": [
+    "User-enabled movable floating shield",
+    "Fresh authorized single-frame capture",
+    "Precise crop and zoom",
+    "Editable multilingual OCR and recognized-line selection",
+    "Individual link and QR selection",
+    "Private analysis and contextual reviews until explicit Save",
+    "Explicit Paste, image import and recovery states",
+    "Screen-lock cleanup and background expiry",
+    "Generic background risk warnings using existing sound channels"
+  ],
+  "unit_tests": {
+    "totals": {
+      "tests": 503,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 3,
+      "passed": 500
+    },
+    "modules": {
+      "app": {
+        "tests": 395,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 3,
+        "passed": 392
+      },
+      "core": {
+        "tests": 83,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 83
+      },
+      "ui": {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 7
+      },
+      "agents": {
+        "tests": 18,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 18
+      }
+    },
+    "skipped_reason": "Three opt-in URL research-export tests"
+  },
+  "native_tests": {
+    "passed": 35,
+    "failures": 0,
+    "duration_seconds": 171.361,
+    "device": "SentinelDemo Android 14/API 34 x86_64 emulator, 720x1600",
+    "airplane_mode": true,
+    "real_full_display_capture_consent_crop_ocr_and_save": true,
+    "projection_stopped_before_crop": true,
+    "real_camera_frame_decode": true,
+    "camera_fixture_flag": "safexCameraFixture=true",
+    "camera_fixture_path": "/tmp/safex-camera-qr.png"
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 51,
+    "issue_counts": {
+      "UnusedAttribute": 1,
+      "GradleDependency": 4,
+      "LogNotTimber": 15,
+      "PluralsCandidate": 1,
+      "ObsoleteSdkInt": 2,
+      "Overdraw": 1,
+      "UnusedResources": 13,
+      "ButtonStyle": 2,
+      "UseTomlInstead": 12
+    }
+  },
+  "localization": {
+    "languages": [
+      "English",
+      "Hindi",
+      "Gujarati"
+    ],
+    "catalog_strings": 715,
+    "keys_and_placeholders": "matched by generator",
+    "largest_native_ui_text_scale": 1.5
+  },
+  "privacy": {
+    "internet_permission": false,
+    "accessibility_reader": false,
+    "clipboard_polling": false,
+    "screen_images_saved_or_uploaded": false,
+    "projection_authorization_persisted": false,
+    "private_context_saved_automatically": false,
+    "explicit_save_only": true,
+    "full_authorized_frame_temporarily_in_ram_before_crop": true,
+    "unclaimed_frame_expiry_seconds": 60,
+    "background_private_review_expiry_seconds": 120
+  },
+  "apk": {
+    "path": "android-app/app/build/outputs/apk/debug/SafeX-AI-1.5.0-debug.apk",
+    "bytes": 134569534,
+    "sha256": "2e0667b7815925f6cd554407a17d64d433fb9672eb3f6be1bde5015e61645309",
+    "build_type": "debug"
+  },
+  "screenshots": [
+    "docs/screenshots/floating-assistant/captured-crop.png",
+    "docs/screenshots/floating-assistant/extracted-review.png",
+    "docs/screenshots/floating-assistant/floating-menu.png",
+    "docs/screenshots/floating-assistant/paste-en-150.png",
+    "docs/screenshots/floating-assistant/paste-gu-150.png",
+    "docs/screenshots/floating-assistant/paste-hi-150.png",
+    "docs/screenshots/floating-assistant/private-risk-result.png",
+    "docs/screenshots/floating-assistant/setup-en-150.png",
+    "docs/screenshots/floating-assistant/setup-gu-150.png",
+    "docs/screenshots/floating-assistant/setup-hi-150.png"
+  ],
+  "evidence": [
+    "docs/test-results/floating-assistant-final-build.txt",
+    "docs/test-results/floating-assistant-native.txt",
+    "docs/test-results/floating-assistant-capture-diagnostics.txt"
+  ],
+  "fixed_regressions": [
+    "Crop canvas is clipped to its preview bounds.",
+    "Unchanged-size projection callbacks preserve the existing image reader and its static frame.",
+    "Older history snapshots cannot remove stronger displayed risk evidence or context answers."
+  ],
+  "limitations": [
+    "Functional authored-fixture tests are not current-world detection-accuracy certification.",
+    "URL and text model artifacts are unchanged; the text model remains a synthetic-data prototype.",
+    "Screenshots do not reveal hidden hyperlink targets; OCR must be reviewed.",
+    "Physical-phone and manufacturer-specific behavior are not verified; only API 34 was exercised on a device.",
+    "Physical speaker playback is unverified because emulator host audio is unavailable.",
+    "Play Store specialUse foreground-service approval has not been obtained."
+  ]
+}

@@ -1,5 +1,11 @@
 # Verification report
 
+The latest release, [SafeX AI 1.5.0](floating-assistant.md), passed **500 active unit tests and 35 Android device tests in airplane mode**, with **zero lint errors and 51 warnings**. Of 503 discovered unit tests, three optional research-export tests were skipped. The native suite ran on Android 14/API 34 in 171.361 seconds. Its [verification record](test-results/floating-assistant-summary.json), [device output](test-results/floating-assistant-native.txt) and [build output](test-results/floating-assistant-final-build.txt) preserve the exact APK checksum and results.
+
+New verification covers real Android screen-capture consent, a static screen frame, crop/OCR/private analysis and explicit saving; denial recovery; private link/text/UPI analysis without history writes; one-time pixel handoff; blank-image rejection; screen-lock cleanup; explicit clipboard access; all three languages at 150% text scale; and stale-history warning regressions. Capture diagnostics contain only lifecycle and dimensions. During validation, an unchanged-size callback unnecessarily replaced the frame reader and caused a timeout; the final build keeps that reader, and the complete suite passed after the fix.
+
+Functional fixtures do not establish current-world detection accuracy. Physical-phone and manufacturer-specific behavior, physical speaker playback and Play Store foreground-service review remain unverified. Model artifacts are unchanged by 1.5.0. Historical checks below describe their labeled release versions.
+
 The **1.3.0 fraud-link update** passed 452 JVM and 14 offline Android tests, with zero lint errors. It has a separate [research and verification record](fraud-link-audit.md). The record below preserves the previous 1.2.0 release checks.
 
 Verified on 2026-10-08 with Java 17, Gradle 8.7, Android SDK 34 and an Android 14 / API 34 Google APIs x86_64 emulator. Build version: 1.2.0, version code 3. APK is signed with the development debug key.

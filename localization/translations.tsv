@@ -606,3 +606,111 @@ QR content is empty or too long to analyze.|QR की सामग्री ख�
 This image has more than eight QR codes. Use the camera scanner to choose one code.|इस चित्र में आठ से अधिक QR कोड हैं। एक कोड चुनने के लिए कैमरा स्कैनर इस्तेमाल करें।|આ ચિત્રમાં આઠથી વધુ QR કોડ છે. એક કોડ પસંદ કરવા કેમેરા સ્કેનર વાપરો.
 Camera ready|कैमरा तैयार है|કેમેરો તૈયાર છે
 Currency|मुद्रा|ચલણ
+# Floating assistant 1.5.0
+Floating assistant|फ़्लोटिंग सहायक|ફ્લોટિંગ સહાયક
+Set up floating assistant|फ़्लोटिंग सहायक सेट करें|ફ્લોટિંગ સહાયક સેટ કરો
+Floating assistant is running|फ़्लोटिंग सहायक चालू है|ફ્લોટિંગ સહાયક ચાલુ છે
+Floating assistant is paused|फ़्लोटिंग सहायक रुका हुआ है|ફ્લોટિંગ સહાયક થોભાવેલો છે
+Use a movable shield to crop a screen, review text or links, and analyze privately on your phone.|स्क्रीन का हिस्सा चुनने, टेक्स्ट या लिंक की समीक्षा करने और फ़ोन पर निजी जाँच के लिए चलने वाला शील्ड बटन इस्तेमाल करें।|સ્ક્રીનનો ભાગ પસંદ કરવા, લખાણ કે લિંકની સમીક્ષા કરવા અને ફોન પર ખાનગી તપાસ માટે ખસેડી શકાય તેવું શીલ્ડ બટન વાપરો.
+Scan screen area|स्क्रीन का हिस्सा जाँचें|સ્ક્રીનનો ભાગ તપાસો
+Paste link or message|लिंक या संदेश पेस्ट करें|લિંક અથવા સંદેશ પેસ્ટ કરો
+Pause assistant|सहायक रोकें|સહાયક થોભાવો
+Choose screenshot|स्क्रीनशॉट चुनें|સ્ક્રીનશૉટ પસંદ કરો
+Review captured screen|कैप्चर की गई स्क्रीन देखें|કૅપ્ચર કરેલી સ્ક્રીન જુઓ
+Move to other edge|दूसरे किनारे पर ले जाएँ|બીજા કિનારે ખસેડો
+SafeX AI floating assistant. Tap for scan actions.|SafeX AI फ़्लोटिंग सहायक। जाँच के विकल्पों के लिए टैप करें।|SafeX AI ફ્લોટિંગ સહાયક. તપાસના વિકલ્પો માટે ટૅપ કરો.
+Floating assistant could not start. Open SafeX AI and try again.|फ़्लोटिंग सहायक शुरू नहीं हो सका। SafeX AI खोलकर फिर कोशिश करें।|ફ્લોટિંગ સહાયક શરૂ થઈ શક્યો નથી. SafeX AI ખોલીને ફરી પ્રયાસ કરો.
+Floating assistant status|फ़्लोटिंग सहायक की स्थिति|ફ્લોટિંગ સહાયકની સ્થિતિ
+SafeX AI • floating assistant|SafeX AI • फ़्लोटिंग सहायक|SafeX AI • ફ્લોટિંગ સહાયક
+SafeX AI • capturing one screen|SafeX AI • एक स्क्रीन कैप्चर हो रही है|SafeX AI • એક સ્ક્રીન કૅપ્ચર થઈ રહી છે
+Capture stops after one frame. Tap Stop to cancel.|एक फ़्रेम के बाद कैप्चर रुक जाएगा। रद्द करने के लिए रोकें पर टैप करें।|એક ફ્રેમ પછી કૅપ્ચર બંધ થશે. રદ કરવા થોભાવો પર ટૅપ કરો.
+Ready when you choose to scan. No screen recording is active.|आपके जाँच चुनने पर तैयार है। स्क्रीन रिकॉर्डिंग चालू नहीं है।|તમે તપાસ પસંદ કરો ત્યારે તૈયાર છે. સ્ક્રીન રેકૉર્ડિંગ ચાલુ નથી.
+Stop|रोकें|થોભાવો
+Captured screen ready|कैप्चर की गई स्क्रीन तैयार है|કૅપ્ચર કરેલી સ્ક્રીન તૈયાર છે
+Tap to crop and review privately.|हिस्सा चुनने और निजी समीक्षा के लिए टैप करें।|ભાગ પસંદ કરવા અને ખાનગી સમીક્ષા માટે ટૅપ કરો.
+SafeX AI • review your scan|SafeX AI • अपनी जाँच देखें|SafeX AI • તમારી તપાસ જુઓ
+Your private scan found risk signals. Tap to review.|आपकी निजी जाँच में जोखिम के संकेत मिले हैं। समीक्षा के लिए टैप करें।|તમારી ખાનગી તપાસમાં જોખમના સંકેતો મળ્યા છે. સમીક્ષા માટે ટૅપ કરો.
+Screen capture stopped. Choose a new capture or paste the content.|स्क्रीन कैप्चर रुक गया। नई स्क्रीन कैप्चर करें या सामग्री पेस्ट करें।|સ્ક્રીન કૅપ્ચર બંધ થયું. નવી સ્ક્રીન કૅપ્ચર કરો અથવા સામગ્રી પેસ્ટ કરો.
+Capture unavailable or unreadable. Try again, Share, or Paste.|कैप्चर उपलब्ध नहीं है या पढ़ा नहीं जा सकता। फिर कोशिश करें, साझा करें या पेस्ट करें।|કૅપ્ચર ઉપલબ્ધ નથી અથવા વાંચી શકાતું નથી. ફરી પ્રયાસ કરો, શેર કરો અથવા પેસ્ટ કરો.
+Screen capture could not start. Please request a new capture.|स्क्रीन कैप्चर शुरू नहीं हो सका। कृपया नया कैप्चर अनुरोध करें।|સ્ક્રીન કૅપ્ચર શરૂ થઈ શક્યું નથી. કૃપા કરીને નવું કૅપ્ચર માંગો.
+Not enough memory for this capture. Choose a smaller app window or paste the content.|इस कैप्चर के लिए पर्याप्त मेमोरी नहीं है। छोटी ऐप विंडो चुनें या सामग्री पेस्ट करें।|આ કૅપ્ચર માટે પૂરતી મેમરી નથી. નાની ઍપ વિન્ડો પસંદ કરો અથવા સામગ્રી પેસ્ટ કરો.
+Screen size changed during capture. Please capture again.|कैप्चर के दौरान स्क्रीन का आकार बदल गया। कृपया फिर कैप्चर करें।|કૅપ્ચર દરમિયાન સ્ક્રીનનું કદ બદલાયું. કૃપા કરીને ફરી કૅપ્ચર કરો.
+Screen capture was not allowed. You can choose a screenshot or paste content instead.|स्क्रीन कैप्चर की अनुमति नहीं मिली। आप स्क्रीनशॉट चुन सकते हैं या सामग्री पेस्ट कर सकते हैं।|સ્ક્રીન કૅપ્ચરની મંજૂરી મળી નથી. તમે સ્ક્રીનશૉટ પસંદ કરી શકો છો અથવા સામગ્રી પેસ્ટ કરી શકો છો.
+Display permission was not granted. Manual scanning still works.|दूसरे ऐप पर दिखाने की अनुमति नहीं मिली। मैन्युअल जाँच अब भी काम करती है।|બીજી ઍપ ઉપર દર્શાવવાની મંજૂરી મળી નથી. હાથેથી તપાસ હજી કાર્ય કરે છે.
+Display-over-apps settings are unavailable on this device. Use Share or Paste instead.|इस डिवाइस पर दूसरे ऐप पर दिखाने की सेटिंग उपलब्ध नहीं है। साझा करें या पेस्ट करें।|આ ઉપકરણમાં બીજી ઍપ ઉપર દર્શાવવાની સેટિંગ ઉપલબ્ધ નથી. શેર કરો અથવા પેસ્ટ કરો.
+This private result is no longer available. Start a new scan.|यह निजी परिणाम अब उपलब्ध नहीं है। नई जाँच शुरू करें।|આ ખાનગી પરિણામ હવે ઉપલબ્ધ નથી. નવી તપાસ શરૂ કરો.
+Image loading timed out. Choose a smaller screenshot.|चित्र खोलने का समय समाप्त हो गया। छोटा स्क्रीनशॉट चुनें।|ચિત્ર ખોલવાનો સમય પૂરો થયો. નાનો સ્ક્રીનશૉટ પસંદ કરો.
+This screenshot could not be opened. Choose another image.|यह स्क्रीनशॉट खुल नहीं सका। दूसरा चित्र चुनें।|આ સ્ક્રીનશૉટ ખોલી શકાયો નથી. બીજું ચિત્ર પસંદ કરો.
+Select a larger area so the text can be read.|टेक्स्ट पढ़ने के लिए बड़ा हिस्सा चुनें।|લખાણ વાંચી શકાય તે માટે મોટો ભાગ પસંદ કરો.
+Select an area of the captured image.|कैप्चर किए चित्र का हिस्सा चुनें।|કૅપ્ચર કરેલા ચિત્રનો ભાગ પસંદ કરો.
+No readable content found. Try a larger crop, Share, or Paste.|पढ़ने योग्य सामग्री नहीं मिली। बड़ा हिस्सा चुनें, साझा करें या पेस्ट करें।|વાંચી શકાય તેવી સામગ્રી મળી નથી. મોટો ભાગ પસંદ કરો, શેર કરો અથવા પેસ્ટ કરો.
+Text recognition timed out. Try a smaller crop or paste the original text.|टेक्स्ट पहचानने का समय समाप्त हो गया। छोटा हिस्सा चुनें या मूल टेक्स्ट पेस्ट करें।|લખાણ ઓળખવાનો સમય પૂરો થયો. નાનો ભાગ પસંદ કરો અથવા મૂળ લખાણ પેસ્ટ કરો.
+Not enough memory for this image. Choose a smaller screenshot or paste content.|इस चित्र के लिए पर्याप्त मेमोरी नहीं है। छोटा स्क्रीनशॉट चुनें या सामग्री पेस्ट करें।|આ ચિત્ર માટે પૂરતી મેમરી નથી. નાનો સ્ક્રીનશૉટ પસંદ કરો અથવા સામગ્રી પેસ્ટ કરો.
+Text recognition could not finish. Try again or paste the original text.|टेक्स्ट की पहचान पूरी नहीं हुई। फिर कोशिश करें या मूल टेक्स्ट पेस्ट करें।|લખાણની ઓળખ પૂરી થઈ નથી. ફરી પ્રયાસ કરો અથવા મૂળ લખાણ પેસ્ટ કરો.
+Choose readable content of at most 12,000 characters.|अधिकतम 12,000 अक्षरों की पढ़ने योग्य सामग्री चुनें।|વધુમાં વધુ 12,000 અક્ષરોની વાંચી શકાય તેવી સામગ્રી પસંદ કરો.
+Floating screen crop|फ़्लोटिंग स्क्रीन चयन|ફ્લોટિંગ સ્ક્રીન પસંદગી
+Floating pasted content|फ़्लोटिंग पेस्ट सामग्री|ફ્લોટિંગ પેસ્ટ સામગ્રી
+Selected visible content only. OCR can change text; hidden link destinations were not captured.|केवल चुनी हुई दिखाई देने वाली सामग्री। OCR टेक्स्ट बदल सकता है; लिंक के छिपे पते कैप्चर नहीं हुए।|માત્ર પસંદ કરેલી દેખાતી સામગ્રી. OCR લખાણ બદલી શકે છે; લિંકના છુપાયેલા સરનામાં કૅપ્ચર થયા નથી.
+User-pasted content only.|केवल उपयोगकर्ता की पेस्ट की गई सामग्री।|માત્ર વપરાશકર્તાએ પેસ્ટ કરેલી સામગ્રી.
+Extraction coverage|निकाली गई सामग्री का दायरा|કાઢેલી સામગ્રીનો વ્યાપ
+Only part of the captured content was extracted. Choose a smaller area or verify the original text.|कैप्चर की गई सामग्री का केवल कुछ हिस्सा निकला है। छोटा हिस्सा चुनें या मूल टेक्स्ट जाँचें।|કૅપ્ચર કરેલી સામગ્રીનો માત્ર થોડો ભાગ કાઢ્યો છે. નાનો ભાગ પસંદ કરો અથવા મૂળ લખાણ તપાસો.
+Analysis timed out. Try a shorter selection.|जाँच का समय समाप्त हो गया। छोटी सामग्री चुनें।|તપાસનો સમય પૂરો થયો. ટૂંકી સામગ્રી પસંદ કરો.
+This content could not be analyzed. Review the text and try again.|इस सामग्री की जाँच नहीं हो सकी। टेक्स्ट देखकर फिर कोशिश करें।|આ સામગ્રીની તપાસ થઈ શકી નથી. લખાણ જોઈને ફરી પ્રયાસ કરો.
+Private review • not saved|निजी समीक्षा • सहेजी नहीं गई|ખાનગી સમીક્ષા • સાચવેલી નથી
+Saved to local history|स्थानीय इतिहास में सहेजा गया|સ્થાનિક ઇતિહાસમાં સાચવ્યું
+Saving…|सहेजा जा रहा है…|સાચવી રહ્યું છે…
+Saved|सहेजा गया|સાચવ્યું
+Save result|परिणाम सहेजें|પરિણામ સાચવો
+New scan|नई जाँच|નવી તપાસ
+Check suspicious content wherever you encounter it|संदिग्ध सामग्री जहाँ मिले, वहीं जाँचें|શંકાસ્પદ સામગ્રી જ્યાં મળે ત્યાં તપાસો
+A movable shield opens a private screen crop or pasted-content review. Capturing starts only when you choose it and approve Android's prompt.|चलने वाला शील्ड बटन स्क्रीन का हिस्सा चुनने या पेस्ट सामग्री की निजी समीक्षा खोलता है। आपके चुनने और Android की अनुमति देने पर ही कैप्चर शुरू होता है।|ખસેડી શકાય તેવું શીલ્ડ બટન સ્ક્રીનનો ભાગ પસંદ કરવા અથવા પેસ્ટ સામગ્રીની ખાનગી સમીક્ષા ખોલે છે. તમે પસંદ કરો અને Androidની મંજૂરી આપો ત્યારે જ કૅપ્ચર શરૂ થાય છે.
+Your choice. Your phone.|आपकी पसंद। आपका फ़ोन।|તમારી પસંદગી. તમારો ફોન.
+One captured screen is held temporarily in memory so you can crop it. Only selected content is analyzed locally. Images are not saved or uploaded. Results stay private until you tap Save result.|हिस्सा चुनने के लिए एक कैप्चर की गई स्क्रीन अस्थायी रूप से मेमोरी में रहती है। केवल चुनी सामग्री की स्थानीय जाँच होती है। चित्र सहेजे या अपलोड नहीं होते। परिणाम सहेजें पर टैप करने तक परिणाम निजी रहते हैं।|ભાગ પસંદ કરવા એક કૅપ્ચર કરેલી સ્ક્રીન કામચલાઉ રીતે મેમરીમાં રહે છે. માત્ર પસંદ કરેલી સામગ્રીની સ્થાનિક તપાસ થાય છે. ચિત્રો સાચવાતા કે અપલોડ થતા નથી. પરિણામ સાચવો પર ટૅપ કરો ત્યાં સુધી પરિણામ ખાનગી રહે છે.
+Some apps hide floating buttons or protect their screenshots. Use the original message's Share action or Paste when capture is unavailable.|कुछ ऐप फ़्लोटिंग बटन छिपाते हैं या स्क्रीनशॉट सुरक्षित रखते हैं। कैप्चर उपलब्ध न हो तो मूल संदेश साझा करें या पेस्ट करें।|કેટલીક ઍપ ફ્લોટિંગ બટન છુપાવે છે અથવા સ્ક્રીનશૉટનું રક્ષણ કરે છે. કૅપ્ચર ઉપલબ્ધ ન હોય તો મૂળ સંદેશ શેર કરો અથવા પેસ્ટ કરો.
+Display permission is enabled|दूसरे ऐप पर दिखाने की अनुमति चालू है|બીજી ઍપ ઉપર દર્શાવવાની મંજૂરી ચાલુ છે
+Display permission is needed for the shield button|शील्ड बटन के लिए दूसरे ऐप पर दिखाने की अनुमति चाहिए|શીલ્ડ બટન માટે બીજી ઍપ ઉપર દર્શાવવાની મંજૂરી જોઈએ
+Enable floating assistant|फ़्लोटिंग सहायक चालू करें|ફ્લોટિંગ સહાયક ચાલુ કરો
+Status and warning notifications are available|स्थिति और चेतावनी सूचनाएँ उपलब्ध हैं|સ્થિતિ અને ચેતવણી સૂચનાઓ ઉપલબ્ધ છે
+Notifications are disabled. Enable them for status and background warnings.|सूचनाएँ बंद हैं। स्थिति और पृष्ठभूमि चेतावनियों के लिए उन्हें चालू करें।|સૂચનાઓ બંધ છે. સ્થિતિ અને પૃષ્ઠભૂમિ ચેતવણીઓ માટે તે ચાલુ કરો.
+Review a link or message|लिंक या संदेश की समीक्षा करें|લિંક અથવા સંદેશની સમીક્ષા કરો
+Copy content in the other app, then tap Paste here. SafeX AI never monitors your clipboard.|दूसरे ऐप से सामग्री कॉपी करें, फिर यहाँ पेस्ट करें। SafeX AI आपके क्लिपबोर्ड की निगरानी नहीं करता।|બીજી ઍપમાંથી સામગ્રી કૉપી કરો, પછી અહીં પેસ્ટ કરો. SafeX AI તમારા ક્લિપબોર્ડનું નિરીક્ષણ કરતું નથી.
+Paste|पेस्ट करें|પેસ્ટ કરો
+Clipboard is empty or unavailable. Paste or type the original content.|क्लिपबोर्ड खाली या अनुपलब्ध है। मूल सामग्री पेस्ट करें या लिखें।|ક્લિપબોર્ડ ખાલી અથવા અનુપલબ્ધ છે. મૂળ સામગ્રી પેસ્ટ કરો અથવા લખો.
+Capturing one frame…|एक फ़्रेम कैप्चर हो रहा है…|એક ફ્રેમ કૅપ્ચર થઈ રહી છે…
+Reading selected content offline…|चुनी सामग्री ऑफ़लाइन पढ़ी जा रही है…|પસંદ કરેલી સામગ્રી ઑફલાઇન વાંચી રહ્યું છે…
+Analyzing selected content…|चुनी सामग्री की जाँच हो रही है…|પસંદ કરેલી સામગ્રીની તપાસ થઈ રહી છે…
+No screen images are saved. You can cancel at any time.|स्क्रीन के चित्र सहेजे नहीं जाते। आप कभी भी रद्द कर सकते हैं।|સ્ક્રીનનાં ચિત્રો સાચવાતા નથી. તમે ગમે ત્યારે રદ કરી શકો છો.
+Crop the captured screen|कैप्चर की गई स्क्रीन का हिस्सा चुनें|કૅપ્ચર કરેલી સ્ક્રીનનો ભાગ પસંદ કરો
+Drag the corners or move the selection. This is a frozen image; screen capture has already stopped.|कोने खींचें या चयन खिसकाएँ। यह स्थिर चित्र है; स्क्रीन कैप्चर पहले ही रुक चुका है।|ખૂણા ખેંચો અથવા પસંદગી ખસેડો. આ સ્થિર ચિત્ર છે; સ્ક્રીન કૅપ્ચર પહેલેથી બંધ થયું છે.
+Captured image. Adjust the selection using the handles or precise crop controls.|कैप्चर किया चित्र। हैंडल या सटीक चयन नियंत्रणों से हिस्सा चुनें।|કૅપ્ચર કરેલું ચિત્ર. હૅન્ડલ અથવા ચોક્કસ પસંદગીનાં નિયંત્રણોથી ભાગ પસંદ કરો.
+Zoom in|बड़ा करें|મોટું કરો
+Zoom out|छोटा करें|નાનું કરો
+Use captured image|कैप्चर किया पूरा चित्र चुनें|કૅપ્ચર કરેલું આખું ચિત્ર પસંદ કરો
+Adjust crop precisely|सटीक हिस्सा चुनें|ચોક્કસ ભાગ પસંદ કરો
+Left edge|बायाँ किनारा|ડાબો કિનારો
+Top edge|ऊपरी किनारा|ઉપરનો કિનારો
+Right edge|दायाँ किनारा|જમણો કિનારો
+Bottom edge|निचला किनारा|નીચેનો કિનારો
+Read selected area|चुना हिस्सा पढ़ें|પસંદ કરેલો ભાગ વાંચો
+Cancel capture|कैप्चर रद्द करें|કૅપ્ચર રદ કરો
+Review extracted content|निकाली गई सामग्री देखें|કાઢેલી સામગ્રી જુઓ
+Check the spelling before analysis. OCR can change a link; a screenshot does not reveal its hidden destination.|जाँच से पहले अक्षर जाँचें। OCR लिंक बदल सकता है; स्क्रीनशॉट उसका छिपा पता नहीं दिखाता।|તપાસ પહેલાં અક્ષરો તપાસો. OCR લિંક બદલી શકે છે; સ્ક્રીનશૉટ તેનું છુપાયેલું સરનામું બતાવતો નથી.
+Extraction is incomplete. Choose a smaller area or review the selected text carefully.|सामग्री पूरी नहीं निकली है। छोटा हिस्सा चुनें या चुने टेक्स्ट को ध्यान से देखें।|સામગ્રી સંપૂર્ણ કાઢી નથી. નાનો ભાગ પસંદ કરો અથવા પસંદ કરેલું લખાણ ધ્યાનથી જુઓ.
+Selected image. Tap a recognized line or use the text selection list below.|चुना चित्र। पहचानी गई पंक्ति पर टैप करें या नीचे की टेक्स्ट सूची इस्तेमाल करें।|પસંદ કરેલું ચિત્ર. ઓળખેલી પંક્તિ પર ટૅપ કરો અથવા નીચેની લખાણની યાદી વાપરો.
+Select recognized lines|पहचानी गई पंक्तियाँ चुनें|ઓળખેલી પંક્તિઓ પસંદ કરો
+Use all extracted text|निकाला गया पूरा टेक्स्ट चुनें|કાઢેલું આખું લખાણ પસંદ કરો
+Analyze reviewed message|समीक्षा किए संदेश की जाँच करें|સમીક્ષા કરેલા સંદેશની તપાસ કરો
+QR content found|QR सामग्री मिली|QR સામગ્રી મળી
+Analyze this QR content|इस QR सामग्री की जाँच करें|આ QR સામગ્રીની તપાસ કરો
+Only the content you choose is analyzed. Nothing opens automatically.|केवल आपकी चुनी सामग्री की जाँच होगी। कुछ भी अपने आप नहीं खुलेगा।|માત્ર તમે પસંદ કરેલી સામગ્રીની તપાસ થશે. કંઈ પણ આપમેળે ખુલશે નહીં.
+Text to analyze|जाँच के लिए टेक्स्ट|તપાસ માટે લખાણ
+Choose a detected link|मिला हुआ लिंक चुनें|મળેલી લિંક પસંદ કરો
+This checks the selected link. Surrounding message text is not included.|यह चुने लिंक की जाँच करता है। आसपास के संदेश का टेक्स्ट शामिल नहीं है।|આ પસંદ કરેલી લિંકની તપાસ કરે છે. આસપાસના સંદેશનું લખાણ સામેલ નથી.
+More than eight links were found. Select or paste additional links separately.|आठ से अधिक लिंक मिले हैं। बाकी लिंक अलग चुनें या पेस्ट करें।|આઠથી વધુ લિંક મળી છે. વધારાની લિંક અલગ પસંદ કરો અથવા પેસ્ટ કરો.
+Extracted content is too long. Select a smaller area or choose one QR code.|निकाली गई सामग्री बहुत लंबी है। छोटा हिस्सा या एक QR कोड चुनें।|કાઢેલી સામગ્રી ઘણી લાંબી છે. નાનો ભાગ અથવા એક QR કોડ પસંદ કરો.
+Select a smaller area of the captured image.|कैप्चर किए चित्र का छोटा हिस्सा चुनें।|કૅપ્ચર કરેલા ચિત્રનો નાનો ભાગ પસંદ કરો.
+Resume private review|निजी समीक्षा जारी रखें|ખાનગી સમીક્ષા ચાલુ રાખો
+Private review expired while SafeX AI was in the background. Start a new scan.|SafeX AI बैकग्राउंड में रहने के दौरान निजी समीक्षा समाप्त हो गई। नई जाँच शुरू करें।|SafeX AI પૃષ્ઠભૂમિમાં હતું ત્યારે ખાનગી સમીક્ષાનો સમય પૂરો થયો. નવું સ્કેન શરૂ કરો.
+Selected link only. Surrounding message text was not analyzed.|केवल चुना गया लिंक। आसपास के संदेश की जाँच नहीं की गई।|ફક્ત પસંદ કરેલી લિંક. આસપાસના સંદેશની તપાસ કરવામાં આવી નથી.
+Selected QR payload only. Surrounding image text was not analyzed.|केवल चुना गया QR डेटा। आसपास के चित्र के पाठ की जाँच नहीं की गई।|ફક્ત પસંદ કરેલો QR ડેટા. આસપાસના ચિત્રના લખાણની તપાસ કરવામાં આવી નથી.
+Tap the shield to choose content. Screen capture requires your approval.|सामग्री चुनने के लिए ढाल पर टैप करें। स्क्रीन कैप्चर के लिए आपकी अनुमति चाहिए।|સામગ્રી પસંદ કરવા ઢાલ પર ટેપ કરો. સ્ક્રીન કૅપ્ચર માટે તમારી મંજૂરી જરૂરી છે.

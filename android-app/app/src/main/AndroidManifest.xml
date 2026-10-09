@@ -18,6 +18,10 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
     <uses-feature android:name="android.hardware.camera" android:required="false" />
     <uses-feature android:name="android.hardware.camera.any" android:required="false" />
 
@@ -39,6 +43,17 @@
         android:theme="@style/Theme.SentinelAI">
 
         <activity android:configChanges="locale|layoutDirection" android:name=".protection.qr.LiveQrActivity" android:exported="false" android:theme="@style/Theme.SentinelAI" />
+        <activity android:name=".protection.floating.FloatingAssistantActivity"
+            android:configChanges="locale|layoutDirection" android:exported="false"
+            android:launchMode="singleTop" android:taskAffinity="com.sentinel.ai.floating"
+            android:excludeFromRecents="true" android:theme="@style/Theme.SentinelAI" />
+        <service android:name=".protection.floating.FloatingAssistantService"
+            android:exported="false" android:foregroundServiceType="specialUse">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="User-enabled floating security shortcut to launch explicit offline analysis of user-selected screen content; idle service never captures screens or reads other apps." />
+        </service>
+        <service android:name=".protection.floating.OneShotScreenCaptureService"
+            android:exported="false" android:foregroundServiceType="mediaProjection" />
         <activity
             android:configChanges="locale|layoutDirection"
             android:name="com.sentinel.ai.ui.MainActivity"
