@@ -2,7 +2,7 @@
 
 | Feature | Working behavior | Scope |
 | --- | --- | --- |
-| Message check | Credential requests, authority impersonation, urgency, reward scams, job / loan fees, UPI and coercion signals plus local text classifier | English, Hindi and Gujarati rules; synthetic multilingual model prototype |
+| Message check | Credential requests, authority impersonation, urgency, reward scams, job / loan fees, UPI and coercion signals plus local text classifier | English/Hindi/Gujarati rules; historical observed English research model with authored multilingual augmentation |
 | Link check | 26 rules, native URL classifier, imported threat snapshot | URL structure only; no web page download or redirect resolution |
 | Notification check | Supported messaging notification text uses the shared analyzer, deduplication and private warnings | Opt-in Android notification access; newest visible message; per-app switches |
 | Screenshot | Bundled Latin, Hindi and Gujarati OCR then message / link check | Clear readable screenshots; images not saved |
@@ -25,3 +25,7 @@ Live camera QR scanning, detailed UPI instruction review, actual-domain explanat
 ## SafeX AI 1.5.0 additions
 
 An optional floating shield launches screen cropping, selected-content review, Paste and screenshot import. Floating results and context edits remain private until explicit Save. See [floating assistant behavior, privacy and limits](floating-assistant.md).
+
+## SafeX AI 1.7.0 research update
+
+The message and URL classifiers are retrained from licensed sources with deduplication, campaign/domain grouping, validation-selected thresholds and explicit promotion gates. The app includes a higher-threshold vocabulary guard for learned English scam lures without explicit action requests, expanded native-script credential/payment cues and protective-advice handling. Twenty authored fraud categories are checked in English, Hindi and Gujarati. See [the dated research report](fraud-research-2026-10-09.md) for collected data, actual results and remaining coverage gaps.

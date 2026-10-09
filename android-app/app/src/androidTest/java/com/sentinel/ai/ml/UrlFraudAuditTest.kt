@@ -58,7 +58,7 @@ class UrlFraudAuditTest {
             .put("pipeline_tp", tp).put("pipeline_fp", fp).put("pipeline_fn", fn).put("pipeline_tn", tn)
             .put("duration_ms_p50", durations[durations.size / 2])
             .put("duration_ms_p95", durations[(durations.size * .95).toInt()])
-            .put("duration_ms_max", durations.last()).put("model_version", "url-phiusiil-augmented-v2")
+            .put("duration_ms_max", durations.last()).put("model_version", asset("native-url-evaluation.json").optString("model_version", "url-phiusiil-augmented-v2"))
         File(context.filesDir, "url-native-parity.json").writeText(report.toString(2))
     }
 

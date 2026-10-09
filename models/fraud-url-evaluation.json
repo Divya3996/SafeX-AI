@@ -1,0 +1,175 @@
+{
+  "version": "url-phiusiil-reported-feed-v3",
+  "trained_at": "2026-10-09T10:07:49.440414+00:00",
+  "epochs": [
+    {
+      "epoch": 1,
+      "validation_loss": 0.20618935428726942
+    },
+    {
+      "epoch": 2,
+      "validation_loss": 0.19926773478022283
+    },
+    {
+      "epoch": 3,
+      "validation_loss": 0.19999699232470486
+    },
+    {
+      "epoch": 4,
+      "validation_loss": 0.1957853967825207
+    },
+    {
+      "epoch": 5,
+      "validation_loss": 0.19537336589251558
+    },
+    {
+      "epoch": 6,
+      "validation_loss": 0.1949173639560413
+    },
+    {
+      "epoch": 7,
+      "validation_loss": 0.19413531761022645
+    },
+    {
+      "epoch": 8,
+      "validation_loss": 0.1912808034064561
+    },
+    {
+      "epoch": 9,
+      "validation_loss": 0.19459537780096658
+    },
+    {
+      "epoch": 10,
+      "validation_loss": 0.19357087128516065
+    },
+    {
+      "epoch": 11,
+      "validation_loss": 0.18860228483156674
+    },
+    {
+      "epoch": 12,
+      "validation_loss": 0.18950436337942606
+    }
+  ],
+  "threshold": 0.9001042105263158,
+  "threshold_selection": "Validation only, <=1% model false warnings on historical and augmented controls; maximize source-weighted recall",
+  "scaler_policy": "Frozen baseline scaler learned on original training groups, never current evaluation data",
+  "source_manifest_sha256": "2064274f06bf1017516c891555f1c604ab29b88952d823995040a33a4d71ffe9",
+  "splits": {
+    "train": {
+      "rows": 101388,
+      "groups": 78927
+    },
+    "validation": {
+      "rows": 48680,
+      "groups": 33947
+    },
+    "test": {
+      "rows": 48310,
+      "groups": 33936
+    }
+  },
+  "excluded_invalid_feed_rows": 55,
+  "candidate_sha256": "8c720f68db2fb79bf2ccc36920d92dba08aa3fb260456026c5d6eb8279985414",
+  "historical": {
+    "baseline": {
+      "tp": 14435,
+      "fp": 47,
+      "fn": 844,
+      "tn": 20018,
+      "recall": 0.9447607827737418,
+      "precision": 0.9967545919071952,
+      "false_positive_rate": 0.002342387241465238,
+      "accuracy": 0.9747906292440018
+    },
+    "candidate": {
+      "tp": 14257,
+      "fp": 80,
+      "fn": 1022,
+      "tn": 19985,
+      "recall": 0.933110805681,
+      "precision": 0.9944200320848156,
+      "false_positive_rate": 0.00398704211313232,
+      "accuracy": 0.9688207333635129
+    }
+  },
+  "augmented": {
+    "baseline": {
+      "tp": 1888,
+      "fp": 48,
+      "fn": 59,
+      "tn": 4930,
+      "recall": 0.9696969696969697,
+      "precision": 0.9752066115702479,
+      "false_positive_rate": 0.009642426677380474,
+      "accuracy": 0.9845487364620938
+    },
+    "candidate": {
+      "tp": 1855,
+      "fp": 33,
+      "fn": 92,
+      "tn": 4945,
+      "recall": 0.9527478171545968,
+      "precision": 0.982521186440678,
+      "false_positive_rate": 0.006629168340699076,
+      "accuracy": 0.9819494584837545
+    }
+  },
+  "reported_feed": {
+    "baseline": {
+      "tp": 4045,
+      "fp": 0,
+      "fn": 1996,
+      "tn": 0,
+      "recall": 0.6695911272968051,
+      "precision": null,
+      "false_positive_rate": null,
+      "accuracy": null
+    },
+    "candidate": {
+      "tp": 4191,
+      "fp": 0,
+      "fn": 1850,
+      "tn": 0,
+      "recall": 0.6937593113722894,
+      "precision": null,
+      "false_positive_rate": null,
+      "accuracy": null
+    },
+    "scope": "Positive reported URLs only; precision, false-positive rate and general accuracy cannot be estimated"
+  },
+  "novel_reported_feed": {
+    "baseline": {
+      "tp": 3209,
+      "fp": 0,
+      "fn": 1675,
+      "tn": 0,
+      "recall": 0.657043407043407,
+      "precision": null,
+      "false_positive_rate": null,
+      "accuracy": null
+    },
+    "candidate": {
+      "tp": 3322,
+      "fp": 0,
+      "fn": 1562,
+      "tn": 0,
+      "recall": 0.6801801801801802,
+      "precision": null,
+      "false_positive_rate": null,
+      "accuracy": null
+    },
+    "scope": "Positive reported URLs only; precision, false-positive rate and general accuracy cannot be estimated"
+  },
+  "promotion_gate_passed": true,
+  "promoted": true,
+  "limitations": [
+    "Feed snapshot labels are maintainer reports; sites were not visited or independently confirmed.",
+    "Fresh feed contains positives only; contemporary independently verified benign URLs are unavailable.",
+    "Historical evaluation partition was inspected during prior development; it is a regression comparison.",
+    "New-domain reported-feed holdout was not used for fitting/checkpoint/threshold selection.",
+    "Model-only figures exclude runtime abstention, URL rules and imported snapshot evidence.",
+    "Opaque redirects, compromised pages, consent phishing and website contents cannot be inferred reliably from URL text alone."
+  ],
+  "promotion_method": "Copy checksum-verified first candidate; no refit or new threshold selection"
+}

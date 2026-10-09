@@ -1,0 +1,44 @@
+
+com.sentinel.ai.features.FloatingAssistantUiTest:
+Error in privatePasteAndContextStayUnsavedUntilExplicitSave(com.sentinel.ai.features.FloatingAssistantUiTest):
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (Text + EditableText contains 'Does it ask you to share an OTP, PIN or password?' (ignoreCase: false))
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:75)
+	at com.sentinel.ai.features.FloatingAssistantUiTest.privatePasteAndContextStayUnsavedUntilExplicitSave(FloatingAssistantUiTest.kt:38)
+....
+com.sentinel.ai.features.FloatingCaptureEndToEndTest:.....
+com.sentinel.ai.features.FloatingImageImportTest:..
+com.sentinel.ai.features.FloatingPrivacyDeviceTest:...
+com.sentinel.ai.features.FloatingReviewEvaluationTest:.
+com.sentinel.ai.features.FloatingSessionRecoveryTest:..........
+com.sentinel.ai.features.LargeHistoryConcurrencyTest:.
+com.sentinel.ai.features.LiveQrCameraTest:.
+com.sentinel.ai.features.LiveQrEndToEndTest:.
+com.sentinel.ai.features.PracticalFeaturesDeviceTest:....
+com.sentinel.ai.features.PracticalFeaturesUiTest:....
+com.sentinel.ai.i18n.MultilingualExperienceTest:..
+com.sentinel.ai.ml.FraudRetrainingDeviceTest:....
+com.sentinel.ai.ml.InternalScanMlIntegrationTest:.
+com.sentinel.ai.ml.OfflinePipelineTest:.........
+com.sentinel.ai.ml.UrlFraudAuditTest:..
+
+Time: 297.267
+There was 1 failure:
+1) privatePasteAndContextStayUnsavedUntilExplicitSave(com.sentinel.ai.features.FloatingAssistantUiTest)
+java.lang.AssertionError: Action performScrollTo() failed.
+Reason: Expected exactly '1' node but could not find any node that satisfies: (Text + EditableText contains 'Does it ask you to share an OTP, PIN or password?' (ignoreCase: false))
+
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+	at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+	at androidx.compose.ui.test.ActionsKt.performScrollTo(Actions.kt:75)
+	at com.sentinel.ai.features.FloatingAssistantUiTest.privatePasteAndContextStayUnsavedUntilExplicitSave(FloatingAssistantUiTest.kt:38)
+
+FAILURES!!!
+Tests run: 55,  Failures: 1
+
+

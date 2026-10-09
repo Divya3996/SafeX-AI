@@ -77,4 +77,31 @@ class MessageSignalsTest {
             assertTrue(text, MessageSignals.analyze(text).modelWarningEligible)
         }
     }
+    @Test fun `phishing web actions and gift codes are eligible without warning by rules alone`() {
+        for (text in listOf("Update your delivery address at https://example.com/form", "यह लिंक खोलें https://example.com/update", "આ લિંક ખોલો https://example.com/update", "Buy gift cards and send the redemption codes")) {
+            assertTrue(text, MessageSignals.analyze(text).modelWarningEligible)
+        }
+        assertEquals(0f, MessageSignals.analyze("Visit https://example.com/docs").score, 0f)
+    }
+    @Test fun `protective clicking advice remains ineligible`() {
+        for (text in listOf("Do not click https://example.com/update", "यह लिंक मत खोलें https://example.com/update", "આ લિંક પર ક્લિક ન કરો https://example.com/update")) {
+            assertFalse(text, MessageSignals.analyze(text).modelWarningEligible)
+        }
+        assertTrue(MessageSignals.analyze("Do not click unknown links. But update your bank details at https://example.com/update now.").modelWarningEligible)
+    }
+    @Test fun `submit and native pin negation remain protective`() {
+        for (text in listOf("Never submit a password on an unexpected page.", "रिफंड पाने के लिए यूपीआई पिन न डालें।", "પાસવર્ડ કોઈને ન મોકલો।", "કોલરને ઓટીપી ન જણાવો।", "રિફંડ મેળવવા યુપીઆઈ પિન ન નાખો।", "કાર્ડનો સુરક્ષા કોડ ન આપો।")) {
+            assertEquals(text, 0f, MessageSignals.analyze(text).score, 0f)
+            assertFalse(text, MessageSignals.analyze(text).modelWarningEligible)
+        }
+    }
+    @Test fun `native verification and card code requests are sensitive`() {
+        for (text in listOf("सत्यापन कोड मुझे भेजें", "ચકાસણી કોડ મને મોકલો", "कार्ड नंबर और सीवीवी डालें", "કાર્ડ નંબર અને સીવીવી દાખલ કરો")) {
+            assertTrue(text, MessageSignals.analyze(text).score >= 70f)
+        }
+    }
+    @Test fun `investment guarantee needs a financial action`() {
+        assertTrue(MessageSignals.analyze("Guaranteed daily profit transfer funds to my crypto wallet now").score >= 30f)
+        assertEquals(0f, MessageSignals.analyze("Investments carry risk. Read about guaranteed returns and crypto fraud.").score, 0f)
+    }
 }

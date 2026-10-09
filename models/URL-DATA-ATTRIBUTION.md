@@ -1,5 +1,7 @@
 # URL model research data
 
+SafeX AI **1.7** adds a bounded, explicitly reported URL feed sample to this historical foundation. The source feed is [Phishing.Database](https://github.com/Phishing-Database/Phishing.Database), MIT licensed, retrieved on 9 October 2026. See [full fraud attribution](FRAUD-DATA-ATTRIBUTION.md), [the collection manifest](fraud-data-manifest.json) and [the new candidate comparison](fraud-url-evaluation.json). Feed reports and retrieval time do not establish current page-level safety or confirmed incident dates. The sections below describe the original PhiUSIIL foundation and its limitations.
+
 The SafeX AI URL classifier is trained from **PhiUSIIL Phishing URL (Website)** by Arvind Prasad and Shalini Chandra (2024), distributed by the UCI Machine Learning Repository as dataset 967.
 
 - Dataset: https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset

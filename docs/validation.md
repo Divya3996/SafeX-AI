@@ -1,6 +1,29 @@
 # Verification report
 
-The latest release, [SafeX AI 1.6.0](floating-assistant-1.6.md), passed **518 active unit tests and 51 Android device tests in airplane mode**, with **zero lint errors and 54 warnings**. Of 521 discovered unit tests, three optional research-export tests were skipped. The native suite ran on Android 14/API 34 in 342.818 seconds. Its [verification record](test-results/floating-assistant-summary.json), [device output](test-results/floating-assistant-native.txt) and [build output](test-results/floating-assistant-final-build.txt) preserve the APK checksum and results.
+## Current SafeX AI 1.7.0 research update — 9 October 2026
+
+The final release passed **535 active unit tests and all 55 offline Android tests**, with **zero lint errors and 54 warnings**. Of 539 discovered unit tests, four optional research-export checks were skipped. The full native suite passed on Android 14/API 34 in **335.11 seconds**, in airplane mode with Wi-Fi disabled. [Release record](test-results/fraud-training-summary.json) · [Final build](test-results/fraud-final-build.txt) · [Native output](test-results/fraud-native-final.txt) · [Debug APK](../releases/SafeX-AI-1.7.0-debug.apk).
+
+Verification covers the trained text/URL models, absence of Internet permission, private inference, real capture consent/crop/OCR, live camera QR decoding, explicit clipboard access, private-context/save behavior, session recovery, history, warning audio decoding and all three interface languages at 150% text. Every one of the 120 authored multilingual fraud/legitimate contracts and 55 floating-review contracts matched. The authored examples include training and development content and establish functional behavior, not independent accuracy. Kotlin/Python features and vocabulary-guard decisions match on all 5,606 prepared message rows. The 256-case native URL parity comparison had a maximum scorer difference of 0.0000011921. [Authored fraud results](test-results/fraud-native-contracts.json) · [Floating results](test-results/fraud-floating-summary.json) · [Native URL parity](test-results/fraud-url-native-parity.json).
+
+The complete installed private scan pipeline used the same 847-message historical development input in both versions:
+
+| Result | SafeX AI 1.6.0 | SafeX AI 1.7.0 |
+| --- | --- | --- |
+| Labeled scam messages detected | 13 / 78 | **71 / 78** |
+| Labeled scams missed | 65 | **7** |
+| Warnings on legitimate controls | 1 / 769 | 1 / 769 |
+| Analysis errors | 0 | 0 |
+
+This is an inspected historical English development comparison, including rules, links and model eligibility. It is not current-world accuracy, an independent final test or Hindi/Gujarati detection accuracy. Current analysis-only timings were p50 12 ms and p95 45 ms on the emulator; they exclude capture, OCR and user editing and do not establish physical-phone latency. [Baseline decisions](test-results/fraud-native-baseline-evaluation.json) · [Current decisions](test-results/fraud-native-evaluation.json) · [Research, source attribution and data gaps](fraud-research-2026-10-09.md).
+
+Earlier cold attempts encountered a blocking Android System UI keyguard-service ANR. A UI query also needed a bounded wait for the expanded context question. After environment recovery and test synchronization, the complete suite passed. These attempts are preserved in the labeled `fraud-*-failure.txt` reports; an interrupted recovery run is not an application crash diagnosis. [Focused UI retest](test-results/fraud-context-retest.txt) · [Test rebuild](test-results/fraud-test-sync-build.txt).
+
+The final debug APK is 134,714,579 bytes, version code 8, SHA-256 `fa8344d03f55624a281d8e45b7e6e40db919ee36fa27586050749867ae505d08`. ARM64 TensorFlow Lite and Tesseract libraries, model metadata and source attribution are included. Raw message collections and the phishing feed are excluded. Neither a physical Samsung Galaxy S24 nor A36 was connected; their Android/One UI behavior and speaker playback still need a phone rehearsal. Individual-app capture selection was not offered by the emulator, and API 26 compatibility was checked by lint rather than a second device.
+
+## Historical SafeX AI 1.6.0 verification
+
+The [SafeX AI 1.6.0](floating-assistant-1.6.md) release passed **518 active unit tests and 51 Android device tests in airplane mode**, with **zero lint errors and 54 warnings**. Of 521 discovered unit tests, three optional research-export tests were skipped. The native suite ran on Android 14/API 34 in 342.818 seconds. Its [verification record](test-results/floating-assistant-summary.json), [device output](test-results/floating-assistant-native.txt) and [build output](test-results/floating-assistant-final-build.txt) preserve the APK checksum and results.
 
 Verification covers real full-display consent, repeated capture, projection stopped before cropping, landscape bounds, crop/OCR/private analysis and explicit saving; denial recovery; outside/Back menu dismissal without activating the source; independent extraction/coverage; explicit selection and retained edited drafts; recreation and stale-operation rejection; memory-pressure pixel release with text retained; JPEG orientation and sampling; lock cleanup; explicit clipboard access; new/old history JSON; and all three interface languages at 150% with actual tap-to-result actions and translated coverage.
 

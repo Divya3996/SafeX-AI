@@ -123,6 +123,10 @@
     <string name="sx_local_heuristic_analysis_62324bf5" formatted="false">"સ્થાનિક નિયમોથી તપાસ"</string>
     <string name="sx_on_device_url_model_2e7d68e2" formatted="false">"ઉપકરણ પર લિંક મૉડલ"</string>
     <string name="sx_on_device_text_classifier_synthetic_prototyp_9b1eec51" formatted="false">"ઉપકરણ પર સંદેશ વર્ગીકરણ • કૃત્રિમ ડેટાનું પ્રાયોગિક મૉડલ"</string>
+    <string name="sx_on_device_text_classifier_limited_research_c_7e58180a" formatted="false">"ઉપકરણ પર સંદેશ વર્ગીકરણ • મર્યાદિત સંશોધન આવરણ"</string>
+    <string name="sx_promises_guaranteed_returns_while_requesting_2ac1ed95" formatted="false">"રકમ મોકલવાનું કહીને નફાની ગેરંટી આપે છે"</string>
+    <string name="sx_investment_crypto_request_533a9889" formatted="false">"રોકાણ / ક્રિપ્ટોની વિનંતી"</string>
+    <string name="sx_verify_investment_claims_and_the_recipient_i_3cdce364" formatted="false">"પૈસા મોકલતા પહેલા રોકાણના દાવા અને પ્રાપ્તકર્તાની સ્વતંત્ર તપાસ કરો।"</string>
     <string name="sx_text_classifier_unavailable_local_rules_acti_1ecb52b8" formatted="false">"સંદેશ મૉડલ ઉપલબ્ધ નથી; સ્થાનિક નિયમો ચાલુ છે"</string>
     <string name="sx_url_model_unavailable_local_rules_active_d1a2d940" formatted="false">"લિંક મૉડલ ઉપલબ્ધ નથી; સ્થાનિક નિયમો ચાલુ છે"</string>
     <string name="sx_not_used_dccafe55" formatted="false">"ઉપયોગ થયો નથી"</string>

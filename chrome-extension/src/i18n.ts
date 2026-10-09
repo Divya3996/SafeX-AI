@@ -1,0 +1,876 @@
+import type { Language } from "../../shared/security-engine/src/contracts";
+export const COPY: Record<string, [string, string, string]> = {
+  chooseWebsite: [
+    "Open a website to inspect it",
+    "जाँचने के लिए वेबसाइट खोलें",
+    "તપાસવા માટે વેબસાઇટ ખોલો",
+  ],
+  private_messages: [
+    "Private inbox/chat contents were excluded. Select a message and use the SafeX right-click menu, or paste it into the panel.",
+    "निजी इनबॉक्स/चैट सामग्री शामिल नहीं की गई। संदेश चुनकर SafeX राइट-क्लिक मेनू उपयोग करें या पैनल में पेस्ट करें।",
+    "ખાનગી ઇનબૉક્સ/ચૅટની સામગ્રી સામેલ કરી નથી. સંદેશ પસંદ કરી SafeX રાઇટ-ક્લિક મેનુ વાપરો અથવા પેનલમાં પેસ્ટ કરો.",
+  ],
+  contextTitle: [
+    "Add context (optional)",
+    "संदर्भ जोड़ें (वैकल्पिक)",
+    "સંદર્ભ ઉમેરો (વૈકલ્પિક)",
+  ],
+  contextHint: [
+    "Tell us what the request asks you to do. Your answers add labeled caution; they do not authenticate the sender.",
+    "बताएँ कि अनुरोध आपसे क्या करवाना चाहता है। आपके उत्तर चिन्हित सावधानी जोड़ते हैं; वे प्रेषक की पहचान की पुष्टि नहीं करते।",
+    "વિનંતી તમને શું કરવા કહે છે તે જણાવો. તમારા જવાબ ચિહ્નિત સાવચેતી ઉમેરે છે; તે મોકલનારની ઓળખની ખાતરી કરતા નથી.",
+  ],
+  contextOptional: [
+    "Select only if this request asks for it.",
+    "केवल तभी चुनें जब अनुरोध में यह माँगा गया हो।",
+    "વિનંતીમાં આ માંગ્યું હોય તો જ પસંદ કરો.",
+  ],
+  question_remoteAccess: [
+    "Install remote-control or screen-sharing software?",
+    "रिमोट कंट्रोल या स्क्रीन शेयरिंग सॉफ़्टवेयर इंस्टॉल करना?",
+    "રિમોટ કંટ્રોલ અથવા સ્ક્રીન શેરિંગ સૉફ્ટવેર ઇન્સ્ટૉલ કરવું?",
+  ],
+  question_giftCards: [
+    "Buy gift cards or share redemption codes?",
+    "गिफ्ट कार्ड खरीदना या रिडेम्पशन कोड साझा करना?",
+    "ગિફ્ટ કાર્ડ ખરીદવા કે રિડેમ્પશન કોડ શેર કરવા?",
+  ],
+  question_walletConnection: [
+    "Connect a wallet or reveal its recovery phrase?",
+    "वॉलेट जोड़ना या उसकी रिकवरी फ़्रेज़ बताना?",
+    "વૉલેટ જોડવું કે તેનો રિકવરી શબ્દસમૂહ જણાવવો?",
+  ],
+  question_advanceFee: [
+    "Pay a fee before receiving a job, loan or prize?",
+    "नौकरी, ऋण या इनाम पाने से पहले शुल्क देना?",
+    "નોકરી, લોન કે ઇનામ મેળવતાં પહેલાં ફી ચૂકવવી?",
+  ],
+  question_secrecy: [
+    "Keep the request secret from family or your bank?",
+    "अनुरोध को परिवार या बैंक से छिपाना?",
+    "વિનંતી પરિવાર કે બેંકથી ગુપ્ત રાખવી?",
+  ],
+  reported_context: [
+    "You reported a sensitive request. Verify it independently.",
+    "आपने संवेदनशील अनुरोध बताया। स्वतंत्र रूप से पुष्टि करें।",
+    "તમે સંવેદનશીલ વિનંતી જણાવી. સ્વતંત્ર રીતે ખાતરી કરો.",
+  ],
+  context_remoteAccess: [
+    "You reported a remote-access request.",
+    "आपने रिमोट एक्सेस का अनुरोध बताया।",
+    "તમે રિમોટ ઍક્સેસની વિનંતી જણાવી.",
+  ],
+  context_giftCards: [
+    "You reported a gift-card or redemption-code request.",
+    "आपने गिफ्ट कार्ड या रिडेम्पशन कोड का अनुरोध बताया।",
+    "તમે ગિફ્ટ કાર્ડ કે રિડેમ્પશન કોડની વિનંતી જણાવી.",
+  ],
+  context_walletConnection: [
+    "You reported a wallet or recovery-phrase request.",
+    "आपने वॉलेट या रिकवरी फ़्रेज़ का अनुरोध बताया।",
+    "તમે વૉલેટ કે રિકવરી શબ્દસમૂહની વિનંતી જણાવી.",
+  ],
+  context_advanceFee: [
+    "You reported an upfront-fee request.",
+    "आपने पहले शुल्क देने का अनुरोध बताया।",
+    "તમે પહેલાં ફી ચૂકવવાની વિનંતી જણાવી.",
+  ],
+  context_secrecy: [
+    "You reported a secrecy request.",
+    "आपने गोपनीयता का अनुरोध बताया।",
+    "તમે ગુપ્તતા રાખવાની વિનંતી જણાવી.",
+  ],
+  context_coverage: [
+    "Optional answers were supplied by you, not detected in page content.",
+    "वैकल्पिक उत्तर आपने दिए हैं; पेज सामग्री में नहीं मिले।",
+    "વૈકલ્પિક જવાબ તમે આપ્યા છે; પેજની સામગ્રીમાં શોધાયા નથી.",
+  ],
+  nextSteps: ["What to do next", "आगे क्या करें", "આગળ શું કરવું"],
+  step_verify: [
+    "Contact the organization through an app or number you already know.",
+    "पहले से परिचित ऐप या नंबर से संस्था से संपर्क करें।",
+    "તમે પહેલેથી જાણતા ઍપ કે નંબર દ્વારા સંસ્થાનો સંપર્ક કરો.",
+  ],
+  step_secrets: [
+    "Keep passwords, OTPs and wallet recovery phrases private.",
+    "पासवर्ड, ओटीपी और वॉलेट रिकवरी फ़्रेज़ निजी रखें।",
+    "પાસવર્ડ, ઓટીપી અને વૉલેટનો રિકવરી શબ્દસમૂહ ખાનગી રાખો.",
+  ],
+  step_access: [
+    "Pause unexpected remote-access or screen-sharing requests.",
+    "अनपेक्षित रिमोट एक्सेस या स्क्रीन शेयरिंग अनुरोध पर रुकें।",
+    "અણધારી રિમોટ ઍક્સેસ કે સ્ક્રીન શેરિંગની વિનંતી પર રોકાઓ.",
+  ],
+  step_payment: [
+    "Check the recipient and amount in your payment app before paying.",
+    "भुगतान से पहले भुगतान ऐप में प्राप्तकर्ता और राशि जाँचें।",
+    "ચુકવણી પહેલાં ચુકવણી ઍપમાં પ્રાપ્તકર્તા અને રકમ તપાસો.",
+  ],
+  extensionDescription: [
+    "Private, offline checks for suspicious links, messages and webpages.",
+    "संदिग्ध लिंक, संदेश और वेबपेज की निजी, ऑफ़लाइन जाँच।",
+    "શંકાસ્પદ લિંક, સંદેશ અને વેબપેજની ખાનગી, ઑફલાઇન તપાસ.",
+  ],
+  scan: ["Scan", "जाँच", "તપાસ"],
+  history: ["History", "इतिहास", "ઇતિહાસ"],
+  settings: ["Settings", "सेटिंग्स", "સેટિંગ્સ"],
+  tagline: [
+    "Private browser assistant",
+    "निजी ब्राउज़र सहायक",
+    "ખાનગી બ્રાઉઝર સહાયક",
+  ],
+  hero: [
+    "Check before you click.",
+    "क्लिक करने से पहले जाँचें।",
+    "ક્લિક કરતાં પહેલાં તપાસો.",
+  ],
+  heroBody: [
+    "A second look at links, messages and requests. Everything is analyzed on this device.",
+    "लिंक, संदेश और अनुरोध को ध्यान से जाँचें। पूरा विश्लेषण इसी डिवाइस पर होता है।",
+    "લિંક, સંદેશ અને વિનંતીને ધ્યાનથી તપાસો. બધું વિશ્લેષણ આ ઉપકરણ પર થાય છે.",
+  ],
+  local: ["On-device analysis", "डिवाइस पर विश्लेषण", "ઉપકરણ પર વિશ્લેષણ"],
+  private: [
+    "Unsaved by default",
+    "डिफ़ॉल्ट रूप से सहेजा नहीं जाता",
+    "મૂળભૂત રીતે સાચવવામાં આવતું નથી",
+  ],
+  scanPage: ["Scan this page", "इस पेज की जाँच करें", "આ પેજ તપાસો"],
+  capture: [
+    "Capture an area",
+    "एक क्षेत्र कैप्चर करें",
+    "એક વિસ્તાર કૅપ્ચર કરો",
+  ],
+  pasteTitle: [
+    "Check a message or link",
+    "संदेश या लिंक जाँचें",
+    "સંદેશ અથવા લિંક તપાસો",
+  ],
+  pasteHint: [
+    "Paste something suspicious. You choose what to check.",
+    "संदिग्ध सामग्री पेस्ट करें। क्या जाँचना है, आप चुनते हैं।",
+    "શંકાસ્પદ સામગ્રી પેસ્ટ કરો. શું તપાસવું તે તમે પસંદ કરો.",
+  ],
+  inputLabel: [
+    "Message, link or QR content",
+    "संदेश, लिंक या QR सामग्री",
+    "સંદેશ, લિંક અથવા QR સામગ્રી",
+  ],
+  inputPlaceholder: [
+    "Paste a message, https:// link or upi:// payment request…",
+    "संदेश, https:// लिंक या upi:// भुगतान अनुरोध पेस्ट करें…",
+    "સંદેશ, https:// લિંક અથવા upi:// ચુકવણી વિનંતી પેસ્ટ કરો…",
+  ],
+  analyze: [
+    "Analyze privately",
+    "निजी रूप से विश्लेषण करें",
+    "ખાનગી રીતે વિશ્લેષણ કરો",
+  ],
+  image: ["Choose an image", "चित्र चुनें", "છબી પસંદ કરો"],
+  samples: ["Try an example", "उदाहरण आज़माएँ", "ઉદાહરણ અજમાવો"],
+  scamExample: ["Scam example", "धोखाधड़ी का उदाहरण", "ઠગાઈનું ઉદાહરણ"],
+  legitimateExample: [
+    "Legitimate example",
+    "सामान्य संदेश का उदाहरण",
+    "સામાન્ય સંદેશનું ઉદાહરણ",
+  ],
+  synthetic: [
+    "Synthetic demonstration",
+    "कृत्रिम प्रदर्शन",
+    "કૃત્રિમ પ્રદર્શન",
+  ],
+  loading: [
+    "Checking locally…",
+    "स्थानीय जाँच जारी है…",
+    "સ્થાનિક તપાસ ચાલુ છે…",
+  ],
+  ready: ["Ready to check", "जाँच के लिए तैयार", "તપાસ માટે તૈયાર"],
+  protection: ["Site protection", "साइट सुरक्षा", "સાઇટ સુરક્ષા"],
+  protectSite: [
+    "Protect this site",
+    "इस साइट की सुरक्षा करें",
+    "આ સાઇટની સુરક્ષા કરો",
+  ],
+  pause: ["Pause this site", "इस साइट पर रोकें", "આ સાઇટ પર રોકો"],
+  resume: ["Resume protection", "सुरक्षा फिर शुरू करें", "સુરક્ષા ફરી શરૂ કરો"],
+  revoke: [
+    "Remove site access",
+    "साइट की अनुमति हटाएँ",
+    "સાઇટની પરવાનગી દૂર કરો",
+  ],
+  active: ["Protection active", "सुरक्षा सक्रिय है", "સુરક્ષા સક્રિય છે"],
+  paused: ["Protection paused", "सुरक्षा रोकी गई है", "સુરક્ષા રોકેલી છે"],
+  manual: [
+    "Manual checks available",
+    "मैनुअल जाँच उपलब्ध है",
+    "જાતે તપાસ ઉપલબ્ધ છે",
+  ],
+  siteHint: [
+    "Automatic checks read visible page text, links and form metadata on this site. Entered values are excluded.",
+    "स्वचालित जाँच इस साइट का दिखने वाला पाठ, लिंक और फ़ॉर्म की जानकारी पढ़ती है। भरे गए मान शामिल नहीं होते।",
+    "આપમેળે તપાસ આ સાઇટનું દેખાતું લખાણ, લિંક અને ફૉર્મની માહિતી વાંચે છે. ભરેલા મૂલ્યો સામેલ થતા નથી.",
+  ],
+  clear: [
+    "No strong warning signs found",
+    "कोई प्रबल चेतावनी संकेत नहीं मिला",
+    "કોઈ મજબૂત ચેતવણી સંકેત મળ્યો નથી",
+  ],
+  caution: ["Needs checking", "ध्यान से जाँचें", "ધ્યાનથી તપાસો"],
+  high: ["High-risk evidence", "उच्च जोखिम के संकेत", "ઊંચા જોખમના સંકેત"],
+  unknown: ["Unable to assess", "आकलन नहीं हो सका", "મૂલ્યાંકન થઈ શક્યું નથી"],
+  clearBody: [
+    "Available checks found no strong evidence. This does not establish safety.",
+    "उपलब्ध जाँच में प्रबल संकेत नहीं मिला। इससे सुरक्षा की पुष्टि नहीं होती।",
+    "ઉપલબ્ધ તપાસમાં મજબૂત સંકેત મળ્યો નથી. આથી સુરક્ષાની ખાતરી થતી નથી.",
+  ],
+  cautionBody: [
+    "Verify this request through a contact or app you already trust before acting.",
+    "कदम उठाने से पहले अपने विश्वसनीय संपर्क या ऐप से अनुरोध की पुष्टि करें।",
+    "આગળ વધતાં પહેલાં તમારા વિશ્વસનીય સંપર્ક અથવા ઍપ દ્વારા વિનંતીની ખાતરી કરો.",
+  ],
+  highBody: [
+    "Stop and verify independently. Avoid sharing codes, installing software or paying under pressure.",
+    "रुकें और स्वतंत्र रूप से पुष्टि करें। दबाव में कोड साझा करना, सॉफ़्टवेयर इंस्टॉल करना या भुगतान करना टालें।",
+    "રોકાઓ અને સ્વતંત્ર રીતે ખાતરી કરો. દબાણમાં કોડ શેર કરવા, સૉફ્ટવેર ઇન્સ્ટૉલ કરવા કે ચુકવણી કરવાનું ટાળો.",
+  ],
+  unknownBody: [
+    "Use selected text, paste a link, or try another supported page.",
+    "चुना हुआ पाठ, पेस्ट किया लिंक या कोई समर्थित पेज आज़माएँ।",
+    "પસંદ કરેલું લખાણ, પેસ્ટ કરેલી લિંક અથવા સમર્થિત પેજ અજમાવો.",
+  ],
+  evidence: ["Why this result", "यह परिणाम क्यों मिला", "આ પરિણામ શા માટે"],
+  coverage: ["What was checked", "क्या जाँचा गया", "શું તપાસવામાં આવ્યું"],
+  destinations: ["Actual destinations", "वास्तविक गंतव्य", "વાસ્તવિક ગંતવ્ય"],
+  save: [
+    "Save redacted report",
+    "संपादित रिपोर्ट सहेजें",
+    "સંવેદનશીલ વિગતો વિનાનો અહેવાલ સાચવો",
+  ],
+  saved: [
+    "Report saved locally",
+    "रिपोर्ट स्थानीय रूप से सहेजी गई",
+    "અહેવાલ સ્થાનિક રીતે સાચવાયો",
+  ],
+  export: [
+    "Export redacted report",
+    "संपादित रिपोर्ट निर्यात करें",
+    "સંવેદનશીલ વિગતો વિનાનો અહેવાલ નિકાસ કરો",
+  ],
+  leave: ["Leave page", "पेज छोड़ें", "પેજ છોડો"],
+  more: ["More details", "अधिक जानकारी", "વધુ વિગતો"],
+  delete: ["Delete", "हटाएँ", "કાઢી નાખો"],
+  deleteAll: [
+    "Delete all reports",
+    "सभी रिपोर्ट हटाएँ",
+    "બધા અહેવાલ કાઢી નાખો",
+  ],
+  deleteConfirm: [
+    "Delete all saved reports?",
+    "सभी सहेजी गई रिपोर्ट हटाएँ?",
+    "બધા સાચવેલા અહેવાલ કાઢી નાખવા છે?",
+  ],
+  cancel: ["Cancel", "रद्द करें", "રદ કરો"],
+  confirm: ["Confirm", "पुष्टि करें", "ખાતરી કરો"],
+  historyEmpty: [
+    "Your checks stay private. Save a report when you need it.",
+    "आपकी जाँच निजी रहती है। ज़रूरत होने पर रिपोर्ट सहेजें।",
+    "તમારી તપાસ ખાનગી રહે છે. જરૂર હોય ત્યારે અહેવાલ સાચવો.",
+  ],
+  redacted: [
+    "Saved reports exclude original messages, screenshots, payment identity and URL query values.",
+    "सहेजी गई रिपोर्ट में मूल संदेश, स्क्रीनशॉट, भुगतान पहचान और URL क्वेरी मान शामिल नहीं होते।",
+    "સાચવેલા અહેવાલમાં મૂળ સંદેશ, સ્ક્રીનશૉટ, ચુકવણીની ઓળખ અને URL ક્વેરી મૂલ્યો સામેલ નથી.",
+  ],
+  feedback: [
+    "Mark as incorrect",
+    "गलत परिणाम चिह्नित करें",
+    "ખોટા પરિણામ તરીકે ચિહ્નિત કરો",
+  ],
+  feedbackSaved: [
+    "Feedback saved on this device. Nothing was uploaded.",
+    "प्रतिक्रिया इस डिवाइस पर सहेजी गई। कुछ अपलोड नहीं हुआ।",
+    "પ્રતિસાદ આ ઉપકરણ પર સાચવાયો. કંઈ અપલોડ થયું નથી.",
+  ],
+  appearance: ["Language & appearance", "भाषा और रूप", "ભાષા અને દેખાવ"],
+  language: ["Language", "भाषा", "ભાષા"],
+  fontSize: ["Text size", "पाठ का आकार", "લખાણનું કદ"],
+  theme: ["Appearance", "रूप", "દેખાવ"],
+  system: ["System", "सिस्टम", "સિસ્ટમ"],
+  light: ["Light", "हल्का", "હળવો"],
+  dark: ["Dark", "गहरा", "ઘેરો"],
+  sound: ["Warning sound", "चेतावनी ध्वनि", "ચેતવણીનો અવાજ"],
+  soundHint: [
+    "Optional short sound for new warnings. Repeated warnings are quiet.",
+    "नई चेतावनी के लिए वैकल्पिक छोटी ध्वनि। दोहराई गई चेतावनियाँ शांत रहती हैं।",
+    "નવી ચેતવણી માટે વૈકલ્પિક ટૂંકો અવાજ. વારંવાર આવતી ચેતવણીઓ શાંત રહે છે.",
+  ],
+  testSound: ["Test sound", "ध्वनि जाँचें", "અવાજ તપાસો"],
+  soundFailed: [
+    "Sound could not play. Check Chrome and device audio settings.",
+    "ध्वनि नहीं बज सकी। Chrome और डिवाइस की ऑडियो सेटिंग्स जाँचें।",
+    "અવાજ વાગી શક્યો નથી. Chrome અને ઉપકરણની ઑડિયો સેટિંગ્સ તપાસો.",
+  ],
+  shield: ["Floating shield", "फ़्लोटिंग शील्ड", "ફ્લોટિંગ શીલ્ડ"],
+  shieldHint: [
+    "Show the movable SafeX control on authorized pages.",
+    "अनुमति वाले पेज पर खिसकाने योग्य SafeX नियंत्रण दिखाएँ।",
+    "પરવાનગીવાળા પેજ પર ખસેડી શકાય તેવું SafeX નિયંત્રણ બતાવો.",
+  ],
+  retention: [
+    "Saved-report retention",
+    "सहेजी रिपोर्ट की अवधि",
+    "સાચવેલા અહેવાલની અવધિ",
+  ],
+  days: ["{0} days", "{0} दिन", "{0} દિવસ"],
+  threatData: [
+    "Offline threat list",
+    "ऑफ़लाइन खतरे की सूची",
+    "ઑફલાઇન જોખમ યાદી",
+  ],
+  importList: ["Import a list", "सूची आयात करें", "યાદી આયાત કરો"],
+  clearList: ["Remove list", "सूची हटाएँ", "યાદી દૂર કરો"],
+  noList: [
+    "No imported list. Unmatched links are unverified.",
+    "कोई सूची आयात नहीं हुई। सूची से न मिलने वाले लिंक अपुष्ट हैं।",
+    "કોઈ યાદી આયાત કરેલી નથી. યાદીમાં ન મળતી લિંકની ખાતરી થયેલી નથી.",
+  ],
+  listHint: [
+    "Import up to 2,000 exact HTTP(S) URLs as text or JSON. Reports warn; only entries explicitly labeled “block” can be blocked. Lists expire after 7 days.",
+    "टेक्स्ट या JSON में अधिकतम 2,000 सटीक HTTP(S) URL आयात करें। रिपोर्ट किए लिंक चेतावनी देते हैं; केवल “block” लेबल वाले लिंक रोके जा सकते हैं। सूची 7 दिन बाद समाप्त होती है।",
+    "ટેક્સ્ટ અથવા JSON માં વધુમાં વધુ 2,000 ચોક્કસ HTTP(S) URL આયાત કરો. નોંધાયેલી લિંક ચેતવણી આપે છે; માત્ર “block” લેબલવાળી લિંક રોકી શકાય છે. યાદી 7 દિવસ પછી સમાપ્ત થાય છે.",
+  ],
+  blocking: [
+    "Block listed destinations",
+    "सूची वाले गंतव्य रोकें",
+    "યાદીમાંના ગંતવ્ય રોકો",
+  ],
+  blockingHint: [
+    "Off by default. Applies only to exact, unexpired URLs you deliberately label “block”; not every AI warning.",
+    "डिफ़ॉल्ट रूप से बंद। केवल आपके चुने हुए “block” लेबल वाले, अवधि के भीतर के सटीक URL पर लागू; हर AI चेतावनी पर नहीं।",
+    "મૂળભૂત રીતે બંધ. માત્ર તમે પસંદ કરેલા “block” લેબલવાળા, સમયમર્યાદામાંના ચોક્કસ URL પર લાગુ પડે છે; દરેક AI ચેતવણી પર નહીં.",
+  ],
+  listStatus: [
+    "{0} entries · imported {1}",
+    "{0} प्रविष्टियाँ · आयात {1}",
+    "{0} નોંધો · આયાત {1}",
+  ],
+  expired: [
+    "Expired — refresh the local list",
+    "समाप्त — स्थानीय सूची अपडेट करें",
+    "સમાપ્ત — સ્થાનિક યાદી અપડેટ કરો",
+  ],
+  privacyTitle: [
+    "Your data stays on your device",
+    "आपका डेटा आपके डिवाइस पर रहता है",
+    "તમારો ડેટા તમારા ઉપકરણ પર રહે છે",
+  ],
+  privacyBody: [
+    "No account, cloud scanning or automatic feedback upload. Models and recognition files are bundled. Private reviews expire after 15 minutes.",
+    "कोई खाता, क्लाउड जाँच या स्वचालित प्रतिक्रिया अपलोड नहीं। मॉडल और पहचान फ़ाइलें साथ हैं। निजी समीक्षा 15 मिनट बाद समाप्त होती है।",
+    "કોઈ ખાતું, ક્લાઉડ તપાસ કે આપમેળે પ્રતિસાદ અપલોડ નથી. મૉડેલ અને ઓળખ ફાઇલો સાથે છે. ખાનગી સમીક્ષા 15 મિનિટ પછી સમાપ્ત થાય છે.",
+  ],
+  about: ["About & licenses", "परिचय और लाइसेंस", "વિશે અને લાઇસન્સ"],
+  aboutBody: [
+    "SafeX AI 1.0 · Local models with limited research coverage. Independent browser accuracy has not yet been established.",
+    "SafeX AI 1.0 · सीमित शोध कवरेज वाले स्थानीय मॉडल। स्वतंत्र ब्राउज़र सटीकता अभी स्थापित नहीं हुई है।",
+    "SafeX AI 1.0 · મર્યાદિત સંશોધન આવરણવાળા સ્થાનિક મૉડેલ. સ્વતંત્ર બ્રાઉઝર ચોકસાઈ હજી સ્થાપિત થઈ નથી.",
+  ],
+  imageTitle: [
+    "Review your capture",
+    "कैप्चर की समीक्षा करें",
+    "તમારા કૅપ્ચરની સમીક્ષા કરો",
+  ],
+  cropHint: [
+    "Drag a rectangle to choose an area. The full visible frame is temporarily held locally until you crop or cancel.",
+    "क्षेत्र चुनने के लिए आयत खींचें। काटने या रद्द करने तक पूरा दिखता फ़्रेम अस्थायी रूप से स्थानीय रहता है।",
+    "વિસ્તાર પસંદ કરવા લંબચોરસ ખેંચો. કાપો અથવા રદ કરો ત્યાં સુધી આખો દેખાતો ફ્રેમ અસ્થાયી રીતે સ્થાનિક રહે છે.",
+  ],
+  crop: [
+    "Use this crop",
+    "इस कटे क्षेत्र का उपयोग करें",
+    "આ કાપેલા વિસ્તારનો ઉપયોગ કરો",
+  ],
+  fullImage: [
+    "Use full image",
+    "पूरे चित्र का उपयोग करें",
+    "આખી છબીનો ઉપયોગ કરો",
+  ],
+  recrop: [
+    "Choose another crop",
+    "दूसरा क्षेत्र चुनें",
+    "બીજો વિસ્તાર પસંદ કરો",
+  ],
+  recognize: [
+    "Read text & QR locally",
+    "पाठ और QR स्थानीय रूप से पढ़ें",
+    "લખાણ અને QR સ્થાનિક રીતે વાંચો",
+  ],
+  ocrLanguage: [
+    "Text recognition language",
+    "पाठ पहचान की भाषा",
+    "લખાણ ઓળખવાની ભાષા",
+  ],
+  ocrLoading: [
+    "Reading locally… {0}%",
+    "स्थानीय पहचान जारी… {0}%",
+    "સ્થાનિક ઓળખ ચાલુ… {0}%",
+  ],
+  recognized: [
+    "Review and edit before scanning",
+    "जाँच से पहले समीक्षा और संपादन करें",
+    "તપાસ પહેલાં સમીક્ષા અને ફેરફાર કરો",
+  ],
+  noText: [
+    "No readable text found. Try a clearer crop or paste the message.",
+    "पढ़ने योग्य पाठ नहीं मिला। साफ़ क्षेत्र चुनें या संदेश पेस्ट करें।",
+    "વાંચી શકાય તેવું લખાણ મળ્યું નથી. સ્પષ્ટ વિસ્તાર પસંદ કરો અથવા સંદેશ પેસ્ટ કરો.",
+  ],
+  noQr: [
+    "No QR code found in this area.",
+    "इस क्षेत्र में QR कोड नहीं मिला।",
+    "આ વિસ્તારમાં QR કોડ મળ્યો નથી.",
+  ],
+  qrFound: ["QR code found", "QR कोड मिला", "QR કોડ મળ્યો"],
+  checkQr: ["Check QR content", "QR सामग्री जाँचें", "QR સામગ્રી તપાસો"],
+  payee: [
+    "UPI address (unverified)",
+    "UPI पता (अपुष्ट)",
+    "UPI સરનામું (અપુષ્ટ)",
+  ],
+  payeeName: [
+    "Displayed recipient name",
+    "दिखाया गया प्राप्तकर्ता नाम",
+    "દેખાતું પ્રાપ્તકર્તાનું નામ",
+  ],
+  amount: ["Requested amount", "माँगी गई राशि", "માંગેલી રકમ"],
+  expectedPayee: [
+    "Expected UPI address",
+    "अपेक्षित UPI पता",
+    "અપેક્ષિત UPI સરનામું",
+  ],
+  expectedAmount: ["Expected amount", "अपेक्षित राशि", "અપેક્ષિત રકમ"],
+  compare: [
+    "Compare payment details",
+    "भुगतान विवरण मिलाएँ",
+    "ચુકવણીની વિગતો સરખાવો",
+  ],
+  matches: [
+    "Matches your entries; identity is still unverified.",
+    "आपकी प्रविष्टियों से मेल है; पहचान फिर भी अपुष्ट है।",
+    "તમારી નોંધો સાથે મેળ છે; ઓળખ હજી અપુષ્ટ છે.",
+  ],
+  dismiss: ["Dismiss", "बंद करें", "બંધ કરો"],
+  showDetails: ["Review details", "जानकारी देखें", "વિગતો જુઓ"],
+  continueOnce: [
+    "Continue this click",
+    "इस क्लिक को जारी रखें",
+    "આ ક્લિક ચાલુ રાખો",
+  ],
+  clickHint: [
+    "This warning applies to the selected action. Other navigation methods may not be covered.",
+    "यह चेतावनी चुने हुए कदम पर लागू है। अन्य नेविगेशन तरीकों की जाँच नहीं हो सकती।",
+    "આ ચેતવણી પસંદ કરેલા પગલા માટે છે. અન્ય નેવિગેશન પદ્ધતિઓની તપાસ ન થઈ શકે.",
+  ],
+  emptyInput: [
+    "Paste a message or link first.",
+    "पहले संदेश या लिंक पेस्ट करें।",
+    "પહેલાં સંદેશ અથવા લિંક પેસ્ટ કરો.",
+  ],
+  pageUnavailable: [
+    "Page access is unavailable. Paste a link or selected text instead.",
+    "पेज की अनुमति उपलब्ध नहीं है। लिंक या चुना हुआ पाठ पेस्ट करें।",
+    "પેજની પરવાનગી ઉપલબ્ધ નથી. લિંક અથવા પસંદ કરેલું લખાણ પેસ્ટ કરો.",
+  ],
+  permissionDenied: [
+    "Permission was not granted. Manual checks still work.",
+    "अनुमति नहीं मिली। मैनुअल जाँच फिर भी उपलब्ध है।",
+    "પરવાનગી મળી નથી. જાતે તપાસ હજી ઉપલબ્ધ છે.",
+  ],
+  scanFailed: [
+    "The check could not finish. Try again or paste the content.",
+    "जाँच पूरी नहीं हुई। फिर प्रयास करें या सामग्री पेस्ट करें।",
+    "તપાસ પૂરી થઈ નથી. ફરી પ્રયાસ કરો અથવા સામગ્રી પેસ્ટ કરો.",
+  ],
+  captureChanged: [
+    "The active tab changed. Return to the page and capture again.",
+    "सक्रिय टैब बदल गया। पेज पर लौटकर फिर कैप्चर करें।",
+    "સક્રિય ટૅબ બદલાઈ ગઈ. પેજ પર પાછા જઈ ફરી કૅપ્ચર કરો.",
+  ],
+  imageTooLarge: [
+    "Choose an image under 10 MB and 16 million pixels.",
+    "10 MB और 1.6 करोड़ पिक्सेल से छोटा चित्र चुनें।",
+    "10 MB અને 1.6 કરોડ પિક્સેલથી નાની છબી પસંદ કરો.",
+  ],
+  imageInvalid: [
+    "Choose a valid PNG, JPEG or WebP image.",
+    "मान्य PNG, JPEG या WebP चित्र चुनें।",
+    "માન્ય PNG, JPEG અથવા WebP છબી પસંદ કરો.",
+  ],
+  recognitionFailed: [
+    "Recognition could not finish. Retry with a smaller, clearer crop.",
+    "पहचान पूरी नहीं हुई। छोटे और साफ़ क्षेत्र से फिर प्रयास करें।",
+    "ઓળખ પૂરી થઈ નથી. નાના અને સ્પષ્ટ વિસ્તારથી ફરી પ્રયાસ કરો.",
+  ],
+  importInvalid: [
+    "The list contains invalid URLs or exceeds 2,000 entries.",
+    "सूची में अमान्य URL हैं या 2,000 से अधिक प्रविष्टियाँ हैं।",
+    "યાદીમાં અમાન્ય URL છે અથવા 2,000 કરતાં વધુ નોંધો છે.",
+  ],
+  importTooLarge: [
+    "Use a list under 1 MB with at most 500 blocking entries.",
+    "1 MB से छोटी सूची और अधिकतम 500 रोकने वाली प्रविष्टियाँ उपयोग करें।",
+    "1 MB થી નાની યાદી અને વધુમાં વધુ 500 રોકવાની નોંધો વાપરો.",
+  ],
+  importSensitive: [
+    "Blocking entries cannot contain credentials, secret query values or fragments.",
+    "रोकने वाली प्रविष्टियों में क्रेडेंशियल, गुप्त क्वेरी मान या फ़्रैगमेंट नहीं हो सकते।",
+    "રોકવાની નોંધોમાં ઓળખ માહિતી, ગુપ્ત ક્વેરી મૂલ્યો અથવા ફ્રૅગમેન્ટ ન હોઈ શકે.",
+  ],
+  updateFailed: [
+    "The change could not be saved. Try again.",
+    "बदलाव सहेजा नहीं जा सका। फिर प्रयास करें।",
+    "ફેરફાર સાચવી શકાયો નથી. ફરી પ્રયાસ કરો.",
+  ],
+  text_coverage: [
+    "Selected text and up to eight visible links; no sender authentication.",
+    "चुना हुआ पाठ और अधिकतम आठ दिखते लिंक; प्रेषक की पहचान की पुष्टि नहीं।",
+    "પસંદ કરેલું લખાણ અને વધુમાં વધુ આઠ દેખાતી લિંક; મોકલનારની ઓળખની ખાતરી નથી.",
+  ],
+  url_coverage: [
+    "URL structure and local list; no webpage fetch or redirect following.",
+    "URL संरचना और स्थानीय सूची; वेबपेज डाउनलोड या रीडायरेक्ट का पीछा नहीं।",
+    "URL રચના અને સ્થાનિક યાદી; વેબપેજ ડાઉનલોડ કે રીડાયરેક્ટનું અનુસરણ નથી.",
+  ],
+  page_coverage: [
+    "Bounded visible page text and actual link destinations.",
+    "सीमित दिखता पेज पाठ और वास्तविक लिंक गंतव्य।",
+    "મર્યાદિત દેખાતું પેજ લખાણ અને વાસ્તવિક લિંક ગંતવ્ય.",
+  ],
+  forms_metadata: [
+    "Form destinations and field types; entered values are excluded.",
+    "फ़ॉर्म गंतव्य और फ़ील्ड प्रकार; भरे गए मान शामिल नहीं।",
+    "ફૉર્મ ગંતવ્ય અને ફીલ્ડના પ્રકાર; ભરેલા મૂલ્યો સામેલ નથી.",
+  ],
+  model_limited: [
+    "Local models have limited research coverage.",
+    "स्थानीय मॉडल का शोध कवरेज सीमित है।",
+    "સ્થાનિક મૉડેલનું સંશોધન આવરણ મર્યાદિત છે.",
+  ],
+  model_unavailable: [
+    "Model unavailable; local rules remain active.",
+    "मॉडल उपलब्ध नहीं; स्थानीय नियम सक्रिय हैं।",
+    "મૉડેલ ઉપલબ્ધ નથી; સ્થાનિક નિયમો સક્રિય છે.",
+  ],
+  identity_unverified: [
+    "Identity and legitimacy are not verified.",
+    "पहचान और वैधता की पुष्टि नहीं हुई।",
+    "ઓળખ અને વિશ્વસનીયતાની ખાતરી થયેલી નથી.",
+  ],
+  partial_coverage: [
+    "Some content exceeded limits or was unavailable.",
+    "कुछ सामग्री सीमा से अधिक थी या उपलब्ध नहीं थी।",
+    "કેટલીક સામગ્રી મર્યાદાથી વધુ હતી અથવા ઉપલબ્ધ નહોતી.",
+  ],
+  frames_unavailable: [
+    "Embedded frames were not inspected.",
+    "एम्बेड किए गए फ़्रेम नहीं जाँचे गए।",
+    "એમ્બેડ કરેલા ફ્રેમ તપાસવામાં આવ્યા નથી.",
+  ],
+  empty_input: [
+    "No content was submitted.",
+    "कोई सामग्री नहीं दी गई।",
+    "કોઈ સામગ્રી આપવામાં આવી નથી.",
+  ],
+  page_unavailable: [
+    "This page could not be inspected.",
+    "यह पेज जाँचा नहीं जा सका।",
+    "આ પેજ તપાસી શકાયો નથી.",
+  ],
+  payment_coverage: [
+    "QR fields only; verify the recipient in your payment app.",
+    "केवल QR फ़ील्ड; भुगतान ऐप में प्राप्तकर्ता की पुष्टि करें।",
+    "માત્ર QR ફીલ્ડ; તમારી ચુકવણી ઍપમાં પ્રાપ્તકર્તાની ખાતરી કરો.",
+  ],
+  credential_request: [
+    "Requests a password, PIN, code or sensitive account details.",
+    "पासवर्ड, पिन, कोड या संवेदनशील खाते की जानकारी माँगता है।",
+    "પાસવર્ડ, પિન, કોડ અથવા સંવેદનશીલ ખાતાની વિગતો માંગે છે.",
+  ],
+  urgency: [
+    "Uses urgency or threatens loss of access.",
+    "जल्दबाज़ी कराता है या पहुँच बंद होने की धमकी देता है।",
+    "ઉતાવળ કરાવે છે અથવા પ્રવેશ બંધ થવાની ધમકી આપે છે.",
+  ],
+  authority: [
+    "Claims trusted authority while requesting sensitive action.",
+    "संवेदनशील कदम के साथ विश्वसनीय संस्था होने का दावा करता है।",
+    "સંવેદનશીલ પગલા સાથે વિશ્વસનીય સંસ્થા હોવાનો દાવો કરે છે.",
+  ],
+  prize: [
+    "Unexpected reward with an action or payment request.",
+    "अप्रत्याशित इनाम के साथ कार्रवाई या भुगतान का अनुरोध।",
+    "અણધાર્યા ઇનામ સાથે પગલા કે ચુકવણીની વિનંતી.",
+  ],
+  upfront_fee: [
+    "Requests an upfront fee for a job or loan.",
+    "नौकरी या ऋण के लिए पहले शुल्क माँगता है।",
+    "નોકરી અથવા લોન માટે પહેલાં ફી માંગે છે.",
+  ],
+  investment: [
+    "Promises guaranteed returns while requesting money.",
+    "पैसे माँगते हुए मुनाफ़े की गारंटी देता है।",
+    "પૈસા માંગતાં નફાની ગેરંટી આપે છે.",
+  ],
+  upi_receive: [
+    "Asks for a QR scan or UPI PIN to receive money.",
+    "पैसे पाने के लिए QR स्कैन या UPI पिन माँगता है।",
+    "પૈસા મેળવવા QR સ્કૅન અથવા UPI પિન માંગે છે.",
+  ],
+  coercion: [
+    "Uses secrecy, coercion or remote-access requests.",
+    "गोपनीयता, दबाव या रिमोट एक्सेस का अनुरोध करता है।",
+    "ગુપ્તતા, દબાણ અથવા રિમોટ ઍક્સેસની વિનંતી કરે છે.",
+  ],
+  financial_pressure: [
+    "Pressures you to act on a financial request.",
+    "वित्तीय अनुरोध पर कदम उठाने का दबाव देता है।",
+    "નાણાકીય વિનંતી પર પગલું લેવાનું દબાણ કરે છે.",
+  ],
+  urgent_link: [
+    "Combines a link with pressure to act quickly.",
+    "लिंक के साथ जल्द कदम उठाने का दबाव देता है।",
+    "લિંક સાથે ઝડપથી પગલું લેવાનું દબાણ કરે છે.",
+  ],
+  text_model: [
+    "Local text model found patterns associated with scam requests.",
+    "स्थानीय पाठ मॉडल को धोखाधड़ी अनुरोध जैसे पैटर्न मिले।",
+    "સ્થાનિક લખાણ મૉડેલને ઠગાઈની વિનંતી જેવા પેટર્ન મળ્યા.",
+  ],
+  embedded_link: [
+    "A visible link needs checking.",
+    "एक दिखते लिंक की जाँच ज़रूरी है।",
+    "દેખાતી લિંકની તપાસ જરૂરી છે.",
+  ],
+  unsafe_scheme: [
+    "Requests an executable payload or app handoff.",
+    "चलने योग्य सामग्री या ऐप हैंडऑफ़ का अनुरोध।",
+    "ચલાવી શકાય તેવી સામગ્રી અથવા ઍપ હૅન્ડઑફની વિનંતી.",
+  ],
+  invalid_url: [
+    "A destination is malformed or unsupported.",
+    "गंतव्य गलत प्रारूप में है या समर्थित नहीं है।",
+    "ગંતવ્ય ખોટા સ્વરૂપમાં છે અથવા સમર્થિત નથી.",
+  ],
+  suspicious_tld: [
+    "Domain ending is a weak risk signal, not proof of fraud.",
+    "डोमेन का अंत कमजोर जोखिम संकेत है, धोखाधड़ी का प्रमाण नहीं।",
+    "ડોમેનનો અંત નબળો જોખમ સંકેત છે, ઠગાઈનો પુરાવો નથી.",
+  ],
+  ip_address: [
+    "Uses an IP address rather than a named domain.",
+    "नाम वाले डोमेन के बजाय IP पता उपयोग करता है।",
+    "નામવાળા ડોમેનને બદલે IP સરનામું વાપરે છે.",
+  ],
+  excessive_subdomains: [
+    "Domain has unusually deep subdomains.",
+    "डोमेन में असामान्य रूप से कई स्तर हैं।",
+    "ડોમેનમાં અસામાન્ય રીતે ઘણા સ્તર છે.",
+  ],
+  random_hostname: [
+    "Hostname has an unusual random-looking structure.",
+    "होस्टनाम की संरचना असामान्य और यादृच्छिक लगती है।",
+    "હોસ્ટનામની રચના અસામાન્ય અને અનિયમિત લાગે છે.",
+  ],
+  repeated_hyphens: [
+    "Domain contains repeated hyphens.",
+    "डोमेन में बार-बार हाइफ़न हैं।",
+    "ડોમેનમાં વારંવાર હાઇફન છે.",
+  ],
+  excessive_digits: [
+    "Domain contains an unusually high digit ratio.",
+    "डोमेन में अंकों का अनुपात अधिक है।",
+    "ડોમેનમાં અંકોનું પ્રમાણ અસામાન્ય રીતે વધુ છે.",
+  ],
+  punycode: [
+    "Internationalized domain; inspect its actual spelling.",
+    "अंतरराष्ट्रीय डोमेन; उसकी वास्तविक वर्तनी देखें।",
+    "આંતરરાષ્ટ્રીય ડોમેન; તેનું સાચું લખાણ તપાસો.",
+  ],
+  excessive_length: [
+    "URL is unusually long.",
+    "URL असामान्य रूप से लंबा है।",
+    "URL અસામાન્ય રીતે લાંબો છે.",
+  ],
+  deep_nesting: [
+    "URL has many path levels.",
+    "URL में पाथ के कई स्तर हैं।",
+    "URL માં પાથના ઘણા સ્તર છે.",
+  ],
+  long_filename: [
+    "URL ends in an unusually long filename.",
+    "URL का फ़ाइल नाम असामान्य रूप से लंबा है।",
+    "URL નું ફાઇલ નામ અસામાન્ય રીતે લાંબું છે.",
+  ],
+  excessive_query: [
+    "URL contains many query parameters.",
+    "URL में कई क्वेरी पैरामीटर हैं।",
+    "URL માં ઘણા ક્વેરી પરિમાણ છે.",
+  ],
+  encoded_chars: [
+    "URL contains substantial encoded content.",
+    "URL में काफी एन्कोड की गई सामग्री है।",
+    "URL માં નોંધપાત્ર એન્કોડ કરેલી સામગ્રી છે.",
+  ],
+  tracking_parameters: [
+    "Tracking parameters present; this is not fraud evidence.",
+    "ट्रैकिंग पैरामीटर हैं; यह धोखाधड़ी का संकेत नहीं है।",
+    "ટ્રૅકિંગ પરિમાણ છે; આ ઠગાઈનો પુરાવો નથી.",
+  ],
+  suspicious_redirect: [
+    "Contains a visible redirect to another destination.",
+    "दूसरे गंतव्य पर दिखता रीडायरेक्ट है।",
+    "બીજા ગંતવ્ય તરફ દેખાતો રીડાયરેક્ટ છે.",
+  ],
+  brand_impersonation: [
+    "Domain may imitate a trusted brand.",
+    "डोमेन किसी विश्वसनीय ब्रांड की नकल कर सकता है।",
+    "ડોમેન વિશ્વસનીય બ્રાન્ડની નકલ કરી શકે છે.",
+  ],
+  social_engineering: [
+    "URL contains action-oriented wording.",
+    "URL में कदम उठाने को कहने वाले शब्द हैं।",
+    "URL માં પગલું લેવા કહેતા શબ્દો છે.",
+  ],
+  insecure_http: [
+    "HTTP does not encrypt this connection.",
+    "HTTP इस कनेक्शन को एन्क्रिप्ट नहीं करता।",
+    "HTTP આ જોડાણને એન્ક્રિપ્ટ કરતું નથી.",
+  ],
+  non_standard_port: [
+    "URL uses an unusual network port.",
+    "URL असामान्य नेटवर्क पोर्ट उपयोग करता है।",
+    "URL અસામાન્ય નેટવર્ક પોર્ટ વાપરે છે.",
+  ],
+  userinfo_deception: [
+    "Text before @ is not the actual destination host.",
+    "@ से पहले का पाठ वास्तविक गंतव्य होस्ट नहीं है।",
+    "@ પહેલાંનું લખાણ વાસ્તવિક ગંતવ્ય હોસ્ટ નથી.",
+  ],
+  embedded_url: [
+    "A different destination appears inside the URL path.",
+    "URL पाथ में दूसरा गंतव्य दिखाई देता है।",
+    "URL પાથમાં બીજું ગંતવ્ય દેખાય છે.",
+  ],
+  shortened_destination: [
+    "Short link hides the final destination; it was not followed.",
+    "छोटा लिंक अंतिम गंतव्य छिपाता है; उसे खोला नहीं गया।",
+    "ટૂંકી લિંક અંતિમ ગંતવ્ય છુપાવે છે; તેને ખોલવામાં આવી નથી.",
+  ],
+  numeric_host_encoding: [
+    "Host uses an unusual numeric address encoding.",
+    "होस्ट का पता असामान्य संख्यात्मक एन्कोडिंग में है।",
+    "હોસ્ટનું સરનામું અસામાન્ય આંકડાકીય એન્કોડિંગમાં છે.",
+  ],
+  layered_destination: [
+    "Destination is deeply encoded or requests an unsafe handoff.",
+    "गंतव्य गहराई से एन्कोड है या असुरक्षित हैंडऑफ़ माँगता है।",
+    "ગંતવ્ય ઊંડે એન્કોડ છે અથવા અસુરક્ષિત હૅન્ડઑફ માંગે છે.",
+  ],
+  executable_download: [
+    "Link points to executable content; file contents were not inspected.",
+    "लिंक चलने योग्य सामग्री पर है; फ़ाइल की सामग्री नहीं जाँची गई।",
+    "લિંક ચલાવી શકાય તેવી સામગ્રી તરફ છે; ફાઇલની સામગ્રી તપાસી નથી.",
+  ],
+  sensitive_host_cues: [
+    "Domain combines multiple sensitive-action cues.",
+    "डोमेन में संवेदनशील कार्रवाई के कई संकेत हैं।",
+    "ડોમેનમાં સંવેદનશીલ પગલાના ઘણા સંકેત છે.",
+  ],
+  brand_camouflage: [
+    "Trusted brand text appears outside the actual host.",
+    "विश्वसनीय ब्रांड का पाठ वास्तविक होस्ट के बाहर है।",
+    "વિશ્વસનીય બ્રાન્ડનું લખાણ વાસ્તવિક હોસ્ટની બહાર છે.",
+  ],
+  inferred_scheme: [
+    "HTTPS was assumed for inspection; transport was not verified.",
+    "जाँच के लिए HTTPS माना गया; ट्रांसपोर्ट की पुष्टि नहीं हुई।",
+    "તપાસ માટે HTTPS ધાર્યું છે; ટ્રાન્સપોર્ટની ખાતરી થઈ નથી.",
+  ],
+  url_model: [
+    "Local URL model found phishing-like structural patterns.",
+    "स्थानीय URL मॉडल को फ़िशिंग जैसी संरचना मिली।",
+    "સ્થાનિક URL મૉડેલને ફિશિંગ જેવી રચના મળી.",
+  ],
+  reputation_reported: [
+    "Matches an imported reported-threat entry.",
+    "आयातित रिपोर्ट किए खतरे से मेल है।",
+    "આયાત કરેલી નોંધાયેલ જોખમની નોંધ સાથે મેળ છે.",
+  ],
+  reputation_stale: [
+    "Matches an expired list entry; current status is unknown.",
+    "समाप्त सूची प्रविष्टि से मेल है; वर्तमान स्थिति अज्ञात है।",
+    "સમાપ્ત યાદીની નોંધ સાથે મેળ છે; હાલની સ્થિતિ અજ્ઞાત છે.",
+  ],
+  user_block: [
+    "Matches a destination you explicitly labeled for blocking.",
+    "आपके स्पष्ट रूप से रोकने के लिए चुने गंतव्य से मेल है।",
+    "તમે સ્પષ્ટ રીતે રોકવા પસંદ કરેલા ગંતવ્ય સાથે મેળ છે.",
+  ],
+  display_mismatch: [
+    "Displayed link address differs from its actual destination.",
+    "दिखाया लिंक पता वास्तविक गंतव्य से अलग है।",
+    "દેખાતું લિંક સરનામું વાસ્તવિક ગંતવ્યથી જુદું છે.",
+  ],
+  brand_context: [
+    "Brand claim and account-action destination do not match.",
+    "ब्रांड का दावा और खाते की कार्रवाई का गंतव्य मेल नहीं खाते।",
+    "બ્રાન્ડનો દાવો અને ખાતાના પગલાનું ગંતવ્ય મેળ ખાતાં નથી.",
+  ],
+  insecure_form: [
+    "Sensitive form submits over unencrypted HTTP.",
+    "संवेदनशील फ़ॉर्म एन्क्रिप्शन के बिना HTTP पर जाता है।",
+    "સંવેદનશીલ ફૉર્મ એન્ક્રિપ્શન વગરના HTTP પર જાય છે.",
+  ],
+  external_form: [
+    "Form points to another domain; external providers may be legitimate.",
+    "फ़ॉर्म दूसरे डोमेन पर है; बाहरी प्रदाता वैध भी हो सकता है।",
+    "ફૉર્મ બીજા ડોમેન પર છે; બહારનો પ્રદાતા વિશ્વસનીય પણ હોઈ શકે છે.",
+  ],
+  login_impersonation: [
+    "Sensitive form claims a brand on an unrelated domain.",
+    "संवेदनशील फ़ॉर्म असंबंधित डोमेन पर ब्रांड होने का दावा करता है।",
+    "સંવેદનશીલ ફૉર્મ અસંબંધિત ડોમેન પર બ્રાન્ડ હોવાનો દાવો કરે છે.",
+  ],
+  risky_form: [
+    "Sensitive form destination has additional warning signs.",
+    "संवेदनशील फ़ॉर्म गंतव्य में अतिरिक्त चेतावनी संकेत हैं।",
+    "સંવેદનશીલ ફૉર્મ ગંતવ્યમાં વધારાના ચેતવણી સંકેત છે.",
+  ],
+  payment_unverified: [
+    "Payment recipient identity is not verified.",
+    "भुगतान प्राप्तकर्ता की पहचान अपुष्ट है।",
+    "ચુકવણી પ્રાપ્તકર્તાની ઓળખ અપુષ્ટ છે.",
+  ],
+  payment_invalid: [
+    "Payment QR fields are malformed, duplicated or unsupported.",
+    "भुगतान QR फ़ील्ड गलत, दोहराए हुए या असमर्थित हैं।",
+    "ચુકવણી QR ફીલ્ડ ખોટાં, પુનરાવર્તિત અથવા અસમર્થિત છે.",
+  ],
+  payment_mismatch: [
+    "Payment address or amount differs from your expectation.",
+    "भुगतान पता या राशि आपकी अपेक्षा से अलग है।",
+    "ચુકવણીનું સરનામું અથવા રકમ તમારી અપેક્ષા કરતાં જુદી છે.",
+  ],
+};
+export function t(
+  key: string,
+  language: Language = "en",
+  ...values: (string | number)[]
+): string {
+  const row = COPY[key];
+  if (!row) return key;
+  return row[language === "hi" ? 1 : language === "gu" ? 2 : 0].replace(
+    /\{(\d+)\}/g,
+    (_, i) => String(values[Number(i)] ?? ""),
+  );
+}

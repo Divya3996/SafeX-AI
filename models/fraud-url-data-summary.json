@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "feed_lines": 789054,
+    "unsupported_or_oversized": 2,
+    "distinct_http_hosts": 436839,
+    "repeated_host": 352213
+  },
+  "sample_rows": 40000,
+  "label_scope": "Maintainer-reported phishing, not independently confirmed",
+  "sample_method": "Lowest SHA256 host hashes; first reported URL per exact host. Kotlin export then groups public-suffix-aware registrable domains.",
+  "scope": "Feed snapshot is an archive of reported links; retrieval today does not establish that each incident occurred today."
+}

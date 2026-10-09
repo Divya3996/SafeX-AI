@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SafeX AI — synthetic browser demo</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font: 16px/1.7 system-ui;
+        background: #08151d;
+        color: #eff9f8;
+      }
+      body {
+        max-width: 1080px;
+        margin: auto;
+        padding: 36px 24px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      img {
+        width: 60px;
+      }
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+      header p,
+      .muted {
+        color: #a5bfca;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      h2 {
+        font-size: 19px;
+        margin-bottom: 12px;
+      }
+      .badge {
+        display: inline-block;
+        color: #ffd182;
+        border: 1px solid #ffd18255;
+        border-radius: 30px;
+        padding: 5px 12px;
+        font-size: 13px;
+        margin: 25px 0;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 18px;
+      }
+      .card {
+        padding: 25px;
+        border: 1px solid #254554;
+        background: #122936;
+        border-radius: 20px;
+      }
+      .message {
+        padding: 16px;
+        background: #08151d;
+        border-radius: 12px;
+        margin: 14px 0;
+        user-select: text;
+      }
+      a {
+        color: #35debc;
+      }
+      a:focus-visible {
+        outline: 3px solid #35debc;
+        outline-offset: 4px;
+      }
+      ol {
+        padding-left: 22px;
+      }
+      .bottom {
+        margin-top: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="/logo.svg" alt="SafeX AI" />
+      <div>
+        <h1>SafeX AI browser lab</h1>
+        <p>Private checks. Clear explanations. Your choice.</p>
+      </div>
+    </header>
+    <p class="badge">
+      Synthetic demonstration · no live threats or payment requests
+    </p>
+    <div class="grid">
+      <section class="card">
+        <h2>1. Check a suspicious request</h2>
+        <p class="muted">
+          Select the message, right-click and choose SafeX AI. You can also
+          paste it into the side panel.
+        </p>
+        <p class="message">
+          KYC expires now. Urgently send your bank password and OTP to this
+          support agent.
+        </p>
+        <p class="muted">
+          Expected: a warning about the credential request and pressure.
+        </p>
+      </section>
+      <section class="card">
+        <h2>2. Check legitimate advice</h2>
+        <p class="message">
+          Your parcel is scheduled to arrive this evening. Never share your
+          password or OTP.
+        </p>
+        <p class="muted">
+          Expected: no strong warning signs. This result still does not
+          authenticate a sender.
+        </p>
+      </section>
+      <section class="card">
+        <h2>3. Inspect a fake login</h2>
+        <p class="muted">
+          Open the fixture, click the SafeX toolbar icon and choose Scan this
+          page. Protect this site to demonstrate warnings before supported form
+          submissions.
+        </p>
+        <p class="bottom">
+          <a href="/fake-login">Open the synthetic login page →</a>
+        </p>
+      </section>
+      <section class="card">
+        <h2>4. See the actual destination</h2>
+        <p class="muted">
+          This deliberately misleading label points to a local demo page. Scan
+          the page, then protect this site and click the link.
+        </p>
+        <p class="message"><a href="/destination">https://paypal.com</a></p>
+        <p class="muted">
+          Expected: displayed-address mismatch. The real destination stays on
+          localhost.
+        </p>
+      </section>
+      <section class="card" lang="hi">
+        <h2>5. हिन्दी में जाँच</h2>
+        <p class="message">अभी बैंक का पासवर्ड और ओटीपी एजेंट को भेजें।</p>
+        <p class="muted">
+          SafeX सेटिंग्स में हिन्दी चुनें। संदेश चुनकर जाँचें। यह कृत्रिम उदाहरण
+          है।
+        </p>
+      </section>
+      <section class="card" lang="gu">
+        <h2>6. ગુજરાતીમાં તપાસ</h2>
+        <p class="message">હમણાં બેંકનો પાસવર્ડ અને ઓટીપી એજન્ટને મોકલો.</p>
+        <p class="muted">
+          SafeX સેટિંગ્સમાં ગુજરાતી પસંદ કરો. સંદેશ પસંદ કરી તપાસો. આ કૃત્રિમ
+          ઉદાહરણ છે.
+        </p>
+      </section>
+    </div>
+    <section class="card bottom">
+      <h2>Complete the demonstration</h2>
+      <ol>
+        <li>Change text size to 150% and try both themes.</li>
+        <li>
+          Use Capture an area, crop deliberately, read text locally and review
+          it before scanning.
+        </li>
+        <li>
+          Try the synthetic PNG/QR images in the project's demo-assets folder.
+        </li>
+        <li>
+          Test the optional warning sound. Save and export a redacted report.
+        </li>
+        <li>
+          Disconnect the network after loading this local page. Repeat a
+          pasted-message check.
+        </li>
+      </ol>
+      <p class="muted">
+        These are functional scenarios, not a measured real-world accuracy
+        benchmark. This local HTTP address can itself produce structural
+        cautions.
+      </p>
+    </section>
+  </body>
+</html>

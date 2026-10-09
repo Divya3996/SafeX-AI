@@ -1,0 +1,92 @@
+{
+  "browser": "Playwright Chromium 156",
+  "productionManifest": true,
+  "findings": [
+    {
+      "name": "production package installs and side panel renders",
+      "passed": true,
+      "durationMs": 362
+    },
+    {
+      "name": "offline text inference completes with real bundled models",
+      "passed": true,
+      "durationMs": 265
+    },
+    {
+      "name": "explicit save and history omit raw input and credentials",
+      "passed": true,
+      "durationMs": 261
+    },
+    {
+      "name": "settings, Gujarati text size and persistence",
+      "passed": true,
+      "durationMs": 715
+    },
+    {
+      "name": "legitimate advice does not produce a scam warning",
+      "passed": true,
+      "durationMs": 231
+    },
+    {
+      "name": "optional context adds labeled caution and resets for the next message",
+      "passed": true,
+      "durationMs": 322
+    },
+    {
+      "name": "redacted export downloads a real JSON report",
+      "passed": true,
+      "durationMs": 460
+    },
+    {
+      "name": "English, Hindi and Gujarati user-selected scan UI",
+      "passed": true,
+      "durationMs": 1133
+    },
+    {
+      "name": "imported image, crop and English recognition work offline",
+      "passed": true,
+      "durationMs": 1557
+    },
+    {
+      "name": "a real pointer crop and cancelled recognition recover into a fresh job",
+      "passed": true,
+      "durationMs": 2271
+    },
+    {
+      "name": "native Hindi recognition uses packaged offline assets",
+      "passed": true,
+      "durationMs": 2002
+    },
+    {
+      "name": "native Gujarati recognition uses packaged offline assets",
+      "passed": true,
+      "durationMs": 2006
+    },
+    {
+      "name": "QR extraction is separate and content can be scanned",
+      "passed": true,
+      "durationMs": 1430
+    },
+    {
+      "name": "scan state and fonts reflow at narrow panel width",
+      "passed": true,
+      "durationMs": 514
+    },
+    {
+      "name": "actual extension requests stay local",
+      "passed": true,
+      "durationMs": 3
+    },
+    {
+      "name": "runtime has no page or CSP errors",
+      "passed": true,
+      "durationMs": 1
+    }
+  ],
+  "consoleErrors": [],
+  "recognitionLibraryWarnings": [
+    "Warning: Parameter not found: classify_misfit_junk_penalty",
+    "Warning: Parameter not found: merge_fragments_in_matrix"
+  ],
+  "unexpectedRequests": []
+}

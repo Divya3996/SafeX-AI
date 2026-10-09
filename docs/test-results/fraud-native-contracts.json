@@ -1,0 +1,846 @@
+{
+  "scope": "120 authored contracts, including training examples; not independent accuracy evidence",
+  "cases": [
+    {
+      "id": "bank_kyc:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 10
+    },
+    {
+      "id": "bank_kyc:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 8
+    },
+    {
+      "id": "bank_kyc:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "BLOCK",
+      "duration_ms": 7
+    },
+    {
+      "id": "bank_kyc:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 10
+    },
+    {
+      "id": "bank_kyc:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "BLOCK",
+      "duration_ms": 9
+    },
+    {
+      "id": "bank_kyc:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 10
+    },
+    {
+      "id": "delivery_redelivery:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 15
+    },
+    {
+      "id": "delivery_redelivery:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 12
+    },
+    {
+      "id": "delivery_redelivery:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 10
+    },
+    {
+      "id": "delivery_redelivery:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "delivery_redelivery:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 11
+    },
+    {
+      "id": "delivery_redelivery:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "traffic_toll:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 8
+    },
+    {
+      "id": "traffic_toll:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 8
+    },
+    {
+      "id": "traffic_toll:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 10
+    },
+    {
+      "id": "traffic_toll:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 8
+    },
+    {
+      "id": "traffic_toll:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 9
+    },
+    {
+      "id": "traffic_toll:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 8
+    },
+    {
+      "id": "reward_expiry:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "BLOCK",
+      "duration_ms": 14
+    },
+    {
+      "id": "reward_expiry:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 12
+    },
+    {
+      "id": "reward_expiry:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 7
+    },
+    {
+      "id": "reward_expiry:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "reward_expiry:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 9
+    },
+    {
+      "id": "reward_expiry:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "digital_arrest:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 9
+    },
+    {
+      "id": "digital_arrest:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "digital_arrest:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 11
+    },
+    {
+      "id": "digital_arrest:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 9
+    },
+    {
+      "id": "digital_arrest:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 14
+    },
+    {
+      "id": "digital_arrest:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 6
+    },
+    {
+      "id": "task_job:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 11
+    },
+    {
+      "id": "task_job:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 8
+    },
+    {
+      "id": "task_job:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 8
+    },
+    {
+      "id": "task_job:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "task_job:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 13
+    },
+    {
+      "id": "task_job:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "investment_crypto:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 12
+    },
+    {
+      "id": "investment_crypto:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "investment_crypto:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 8
+    },
+    {
+      "id": "investment_crypto:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 8
+    },
+    {
+      "id": "investment_crypto:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 9
+    },
+    {
+      "id": "investment_crypto:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 12
+    },
+    {
+      "id": "loan_advance:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 9
+    },
+    {
+      "id": "loan_advance:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 9
+    },
+    {
+      "id": "loan_advance:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 9
+    },
+    {
+      "id": "loan_advance:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "loan_advance:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 6
+    },
+    {
+      "id": "loan_advance:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 8
+    },
+    {
+      "id": "upi_refund:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "BLOCK",
+      "duration_ms": 7
+    },
+    {
+      "id": "upi_refund:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 8
+    },
+    {
+      "id": "upi_refund:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "BLOCK",
+      "duration_ms": 7
+    },
+    {
+      "id": "upi_refund:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "upi_refund:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "BLOCK",
+      "duration_ms": 8
+    },
+    {
+      "id": "upi_refund:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 6
+    },
+    {
+      "id": "boss_gift_card:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 9
+    },
+    {
+      "id": "boss_gift_card:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 10
+    },
+    {
+      "id": "boss_gift_card:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 9
+    },
+    {
+      "id": "boss_gift_card:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 11
+    },
+    {
+      "id": "boss_gift_card:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 8
+    },
+    {
+      "id": "boss_gift_card:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "remote_support:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 7
+    },
+    {
+      "id": "remote_support:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "remote_support:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 10
+    },
+    {
+      "id": "remote_support:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "remote_support:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 10
+    },
+    {
+      "id": "remote_support:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 6
+    },
+    {
+      "id": "malicious_apk:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 10
+    },
+    {
+      "id": "malicious_apk:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 12
+    },
+    {
+      "id": "malicious_apk:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 7
+    },
+    {
+      "id": "malicious_apk:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 11
+    },
+    {
+      "id": "malicious_apk:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 9
+    },
+    {
+      "id": "malicious_apk:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "account_takeover:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 8
+    },
+    {
+      "id": "account_takeover:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 6
+    },
+    {
+      "id": "account_takeover:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 7
+    },
+    {
+      "id": "account_takeover:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 9
+    },
+    {
+      "id": "account_takeover:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 8
+    },
+    {
+      "id": "account_takeover:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "romance_emergency:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 9
+    },
+    {
+      "id": "romance_emergency:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 8
+    },
+    {
+      "id": "romance_emergency:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 10
+    },
+    {
+      "id": "romance_emergency:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "romance_emergency:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 9
+    },
+    {
+      "id": "romance_emergency:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 6
+    },
+    {
+      "id": "recovery_agent:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 8
+    },
+    {
+      "id": "recovery_agent:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "recovery_agent:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 8
+    },
+    {
+      "id": "recovery_agent:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 9
+    },
+    {
+      "id": "recovery_agent:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 10
+    },
+    {
+      "id": "recovery_agent:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 9
+    },
+    {
+      "id": "tax_unclaimed_funds:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 9
+    },
+    {
+      "id": "tax_unclaimed_funds:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 8
+    },
+    {
+      "id": "tax_unclaimed_funds:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 8
+    },
+    {
+      "id": "tax_unclaimed_funds:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 10
+    },
+    {
+      "id": "tax_unclaimed_funds:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 7
+    },
+    {
+      "id": "tax_unclaimed_funds:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 10
+    },
+    {
+      "id": "marketplace_collect:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 11
+    },
+    {
+      "id": "marketplace_collect:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 8
+    },
+    {
+      "id": "marketplace_collect:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 11
+    },
+    {
+      "id": "marketplace_collect:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 6
+    },
+    {
+      "id": "marketplace_collect:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 9
+    },
+    {
+      "id": "marketplace_collect:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 6
+    },
+    {
+      "id": "sim_telecom:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 9
+    },
+    {
+      "id": "sim_telecom:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 8
+    },
+    {
+      "id": "sim_telecom:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 8
+    },
+    {
+      "id": "sim_telecom:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 6
+    },
+    {
+      "id": "sim_telecom:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 7
+    },
+    {
+      "id": "sim_telecom:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 6
+    },
+    {
+      "id": "charity_impersonation:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 11
+    },
+    {
+      "id": "charity_impersonation:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 9
+    },
+    {
+      "id": "charity_impersonation:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 9
+    },
+    {
+      "id": "charity_impersonation:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "charity_impersonation:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 7
+    },
+    {
+      "id": "charity_impersonation:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 7
+    },
+    {
+      "id": "qr_credential_phishing:en:1",
+      "language": "en",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 7
+    },
+    {
+      "id": "qr_credential_phishing:en:0",
+      "language": "en",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 8
+    },
+    {
+      "id": "qr_credential_phishing:hi:1",
+      "language": "hi",
+      "expected": "WARN",
+      "decision": "BLOCK",
+      "duration_ms": 12
+    },
+    {
+      "id": "qr_credential_phishing:hi:0",
+      "language": "hi",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 8
+    },
+    {
+      "id": "qr_credential_phishing:gu:1",
+      "language": "gu",
+      "expected": "WARN",
+      "decision": "WARN",
+      "duration_ms": 10
+    },
+    {
+      "id": "qr_credential_phishing:gu:0",
+      "language": "gu",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "duration_ms": 11
+    }
+  ],
+  "mismatches": []
+}

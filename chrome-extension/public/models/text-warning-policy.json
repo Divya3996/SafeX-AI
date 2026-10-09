@@ -1,0 +1,23 @@
+{
+  "guard_version": "latin_vocabulary_v1",
+  "model_sha256": "ec31e6e51b727f0f971f23afa7a1347496c7f9bb090d9d9c6f1ac498f10671c6",
+  "minimum_distinct_words": 4,
+  "minimum_latin_letter_fraction": 0.95,
+  "minimum_vocabulary_fraction": 0.6,
+  "threshold": 0.915,
+  "threshold_selection": "Validation only: grid .900-.995 in .005 increments; maximum recall with zero false warnings on all validation controls; ties choose the lower threshold",
+  "validation": {
+    "rows": 810,
+    "tp": 47,
+    "fp": 0,
+    "fn": 22,
+    "tn": 741,
+    "recall": 0.6811594202898551,
+    "precision": 1.0,
+    "false_positive_rate": 0.0,
+    "accuracy": 0.9728395061728395
+  },
+  "parity_rows": 5606,
+  "policy_export_sha256": "e445f9d7a1395f7f757c018c5b7071c284cc4278b90bd581c913d5bad3db500f",
+  "scope": "Additional WARN only. Latin-script vocabulary guard is a heuristic, not verified language identification or broad real-world coverage. Native-script inputs retain action-context gating."
+}

@@ -1,0 +1,186 @@
+{
+  "model_version": "fraud-text-research-v3",
+  "threshold": 0.545,
+  "cases": [
+    {
+      "text": "To prevent suspension urgently send your bank password to support",
+      "label": 1,
+      "predicted": 0.98794144912605
+    },
+    {
+      "text": "You are the lucky winner deposit a fee and claim your lottery reward",
+      "label": 1,
+      "predicted": 0.9558403791336748
+    },
+    {
+      "text": "Guaranteed employment available pay the joining fee first",
+      "label": 1,
+      "predicted": 0.5867828672829124
+    },
+    {
+      "text": "A refund is pending enter your UPI PIN and scan to receive money",
+      "label": 1,
+      "predicted": 0.8425931743532924
+    },
+    {
+      "text": "Customs police require an immediate transfer keep this secret",
+      "label": 1,
+      "predicted": 0.922152408366782
+    },
+    {
+      "text": "Provide the verification code to recover your locked account",
+      "label": 1,
+      "predicted": 0.971728964038487
+    },
+    {
+      "text": "Send your CVV and card details for an income tax refund",
+      "label": 1,
+      "predicted": 0.729386837322907
+    },
+    {
+      "text": "Loan offer confirmed pay processing charges in advance",
+      "label": 1,
+      "predicted": 0.5706825460260492
+    },
+    {
+      "text": "Enter your bank login at https://secure-verify.example immediately",
+      "label": 1,
+      "predicted": 0.9521194637887895
+    },
+    {
+      "text": "To claim a free gift submit your account password",
+      "label": 1,
+      "predicted": 0.9835088853093428
+    },
+    {
+      "text": "Please send the OTP immediately for KYC approval",
+      "label": 1,
+      "predicted": 0.36876049838522096
+    },
+    {
+      "text": "Install remote access software and reveal your banking PIN",
+      "label": 1,
+      "predicted": 0.3699176889078223
+    },
+    {
+      "text": "Never give anyone your bank password or OTP",
+      "label": 0,
+      "predicted": 0.40435719535101255
+    },
+    {
+      "text": "Your payment has been received and refund credited",
+      "label": 0,
+      "predicted": 0.7300043389484561
+    },
+    {
+      "text": "The next job interview will take place on Friday",
+      "label": 0,
+      "predicted": 0.008513865054495678
+    },
+    {
+      "text": "The official banking app contains your monthly statement",
+      "label": 0,
+      "predicted": 0.1387718948176846
+    },
+    {
+      "text": "Please share the meeting notes after the office call",
+      "label": 0,
+      "predicted": 0.03651689914691917
+    },
+    {
+      "text": "Our security team says do not reveal your verification code",
+      "label": 0,
+      "predicted": 0.760776675695295
+    },
+    {
+      "text": "School prize winners are invited to the ceremony",
+      "label": 0,
+      "predicted": 0.13023722258087725
+    },
+    {
+      "text": "Your parcel is scheduled to arrive this evening",
+      "label": 0,
+      "predicted": 0.09833570433233343
+    },
+    {
+      "text": "We do not charge a registration fee for this workshop",
+      "label": 0,
+      "predicted": 0.4209579617715416
+    },
+    {
+      "text": "UPI payment completed successfully thank you",
+      "label": 0,
+      "predicted": 0.1979692468044312
+    },
+    {
+      "text": "There is an urgent issue with the project report",
+      "label": 0,
+      "predicted": 0.15286250860155748
+    },
+    {
+      "text": "Beware of anyone asking you to send an OTP for a refund",
+      "label": 0,
+      "predicted": 0.06563422150191264
+    },
+    {
+      "text": "खाता निलंबित होगा अभी अपना ओटीपी बताइए",
+      "label": 1,
+      "predicted": 0.8757492910448735
+    },
+    {
+      "text": "इनाम प्राप्त करने से पहले पैसे जमा करें",
+      "label": 1,
+      "predicted": 0.745411275825886
+    },
+    {
+      "text": "लोन के लिए पहले पंजीकरण शुल्क भुगतान करें",
+      "label": 1,
+      "predicted": 0.9170160673558843
+    },
+    {
+      "text": "कभी अपना पासवर्ड साझा न करें",
+      "label": 0,
+      "predicted": 0.7914887541450598
+    },
+    {
+      "text": "आपका बैंक भुगतान पूरा हुआ",
+      "label": 0,
+      "predicted": 0.049399429170478834
+    },
+    {
+      "text": "कल नौकरी का इंटरव्यू है",
+      "label": 0,
+      "predicted": 0.03838845999800539
+    },
+    {
+      "text": "ખાતું બંધ થશે હમણાં તમારો ઓટીપી શેર કરો",
+      "label": 1,
+      "predicted": 0.97766179550927
+    },
+    {
+      "text": "લોટરીનું ઇનામ લેવા પહેલા પૈસા ચૂકવો",
+      "label": 1,
+      "predicted": 0.10391814149829304
+    },
+    {
+      "text": "નોકરી માટે પહેલા ફી મોકલો",
+      "label": 1,
+      "predicted": 0.696290398118117
+    },
+    {
+      "text": "ઓટીપી ક્યારેય શેર ન કરો",
+      "label": 0,
+      "predicted": 0.10299314675100762
+    },
+    {
+      "text": "બેંકમાં તમારી ચુકવણી પૂર્ણ થઈ",
+      "label": 0,
+      "predicted": 0.29419477320976317
+    },
+    {
+      "text": "નોકરીનો ઇન્ટરવ્યૂ કાલે છે",
+      "label": 0,
+      "predicted": 0.03350239032170777
+    }
+  ]
+}

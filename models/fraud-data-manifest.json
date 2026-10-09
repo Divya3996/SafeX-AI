@@ -1,0 +1,56 @@
+{
+  "research_as_of": "2026-10-09",
+  "generated_at": "2026-10-09T10:01:07.340227+00:00",
+  "sources": [
+    {
+      "url": "https://data.mendeley.com/public-files/datasets/f45bkkt8pr/files/edb361de-918d-469f-9106-e84823830665/file_downloaded",
+      "retrieved_at": "2026-10-09T09:56:19.598874+00:00",
+      "bytes": 244698,
+      "sha256": "9bbf3188fdad81495d8e82825648b9b63b53fc86841a3d26c02629990b233cc3",
+      "source_last_modified": "Mon, 20 Jun 2022 07:15:06 GMT",
+      "etag": "\"17775bb941f62da0153eeda16f0f388a\"",
+      "id": "mishra-soni-2022",
+      "license": "CC BY 4.0",
+      "published_at": "2022-06-20",
+      "citation": "Mishra, Sandhya; Soni, Devpriya (2022), DOI 10.17632/f45bkkt8pr.1",
+      "raw_label_counts": {
+        "ham": 4844,
+        "smishing": 638,
+        "spam": 489
+      },
+      "excluded_spam": 489
+    },
+    {
+      "url": "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip",
+      "retrieved_at": "2026-10-09T09:56:21.697227+00:00",
+      "bytes": 203415,
+      "sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+      "source_last_modified": null,
+      "etag": null,
+      "id": "uci-sms-2011",
+      "license": "CC BY 4.0",
+      "published_at": "2012-06-21",
+      "citation": "Almeida, T.; Hidalgo, J. (2011), DOI 10.24432/C5CC84",
+      "raw_label_counts": {
+        "ham": 4827,
+        "spam": 747
+      },
+      "excluded_spam": 747
+    },
+    {
+      "url": "https://raw.githubusercontent.com/Phishing-Database/Phishing.Database/master/phishing-links-ACTIVE.txt",
+      "retrieved_at": "2026-10-09T09:57:13.913371+00:00",
+      "bytes": 65823890,
+      "sha256": "be4a179b3ac92b7135595b459c2c9867fe681c12209489dd99517db8407a67c6",
+      "source_last_modified": null,
+      "etag": "\"bf8119d7d9bd5ce9e219b641e286c2ff6c174370cd5268a193ec65b5ba194d9c\"",
+      "id": "phishing-database-active",
+      "license": "MIT",
+      "license_sha256": "15b88ef6f0adab34f352be63895135d56f1e1b39832eb2f1944c701961c36491",
+      "note": "Maintainer-reported phishing links. Active means reachability, not independently confirmed fraud. No destinations visited."
+    }
+  ],
+  "observed_message_rows_before_deduplication": 10309,
+  "collection_scope": "Named sources only; not all fraud. Current retrieval does not make historical SMS current.",
+  "privacy": "Local ignored research cache; identifiers masked in model features; no raw messages or threat URLs bundled into the APK"
+}

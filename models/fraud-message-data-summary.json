@@ -1,0 +1,29 @@
+{
+  "input_rows": 10769,
+  "unique_rows": 5606,
+  "removed_duplicate_rows": 5157,
+  "quarantined_conflicting_template_rows": 0,
+  "campaign_groups": 5377,
+  "split_method": "SHA256 campaign groups 70/15/15; exact masked templates + deterministic minhash Jaccard >=0.80; authored translations share category group",
+  "limitations": [
+    "Near-duplicate grouping is heuristic, not complete campaign attribution.",
+    "Observed SMS is historical English. Hindi/Gujarati augmentation is authored, not an independent language benchmark."
+  ],
+  "splits": {
+    "train": {
+      "rows": 3910,
+      "smishing": 380,
+      "observed": 3760
+    },
+    "validation": {
+      "rows": 810,
+      "smishing": 69,
+      "observed": 780
+    },
+    "evaluation": {
+      "rows": 886,
+      "smishing": 99,
+      "observed": 847
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "version": "1.7.0",
+  "version_code": 8,
+  "verified_at_utc": "2026-10-09T11:41:53.931467+00:00",
+  "research_as_of": "2026-10-09",
+  "apk": {
+    "path": "releases/SafeX-AI-1.7.0-debug.apk",
+    "bytes": 134714579,
+    "sha256": "fa8344d03f55624a281d8e45b7e6e40db919ee36fa27586050749867ae505d08",
+    "build_type": "debug"
+  },
+  "unit_tests": {
+    "totals": {
+      "tests": 539,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 4
+    },
+    "active": 535,
+    "modules": {
+      "app": {
+        "tests": 402,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 4
+      },
+      "core": {
+        "tests": 112,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "agents": {
+        "tests": 18,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "ui": {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    }
+  },
+  "native_tests": {
+    "passed": 55,
+    "failures": 0,
+    "duration_seconds": 335.11,
+    "device": "Android 14/API 34 Google APIs x86_64 emulator; 720x1600; airplane mode",
+    "camera_fixture": "imagefile:/tmp/safex-camera-qr.png; safexCameraFixture=true"
+  },
+  "lint": {
+    "errors": 0,
+    "warnings": 54,
+    "issues": {
+      "ExifInterface": 1,
+      "UnusedAttribute": 1,
+      "GradleDependency": 4,
+      "DiscouragedApi": 1,
+      "LogNotTimber": 15,
+      "PluralsCandidate": 1,
+      "ObsoleteSdkInt": 2,
+      "Overdraw": 1,
+      "UnusedResources": 13,
+      "ButtonStyle": 2,
+      "UseTomlInstead": 12,
+      "ClickableViewAccessibility": 1
+    }
+  },
+  "localization": {
+    "languages": [
+      "English",
+      "Hindi",
+      "Gujarati"
+    ],
+    "strings_per_language": 791
+  },
+  "models": {
+    "sha256": {
+      "text-model.json": "ec31e6e51b727f0f971f23afa7a1347496c7f9bb090d9d9c6f1ac498f10671c6",
+      "model.tflite": "8c720f68db2fb79bf2ccc36920d92dba08aa3fb260456026c5d6eb8279985414"
+    },
+    "warning_policy": "models/fraud-text-warning-policy.json"
+  },
+  "native_model_parity": {
+    "text_authored_cases": 36,
+    "url_historical_cases": 256,
+    "maximum_url_score_difference": 1.1920929e-06
+  },
+  "observed_pipeline": {
+    "scope": "Installed private text pipeline; inspected historical development evaluation, not independent current-world accuracy",
+    "rows": 847,
+    "positives": 78,
+    "legitimate_controls": 769,
+    "input_sha256": "4cc23e0d2d73d0eeeb5e8c1e5b46f9ebdeab7d453df6d7a8584a47a90d9b226f",
+    "baseline": {
+      "app_version": "1.6.0",
+      "tp": 13,
+      "fp": 1,
+      "fn": 65,
+      "tn": 768,
+      "errors": 0,
+      "recall": 0.16666666666666666,
+      "false_positive_rate": 0.0013003901170351106,
+      "duration_ms_p50": 20,
+      "duration_ms_p95": 154
+    },
+    "current": {
+      "app_version": "1.7.0",
+      "tp": 71,
+      "fp": 1,
+      "fn": 7,
+      "tn": 768,
+      "errors": 0,
+      "recall": 0.9102564102564102,
+      "false_positive_rate": 0.0013003901170351106,
+      "duration_ms_p50": 12,
+      "duration_ms_p95": 45
+    }
+  },
+  "authored_contracts": {
+    "fraud": 120,
+    "floating": 55,
+    "mismatches": 0,
+    "scope": "Authored development fixtures, including training examples; functional contracts only"
+  },
+  "privacy": {
+    "internet_permission": false,
+    "raw_research_data_in_apk": false,
+    "on_device_inference": true
+  },
+  "evidence": [
+    "docs/test-results/fraud-final-build.txt",
+    "docs/test-results/fraud-native-final.txt",
+    "docs/test-results/fraud-test-sync-build.txt",
+    "docs/test-results/fraud-context-retest.txt",
+    "models/fraud-url-weight-integrity.json"
+  ],
+  "test_environment_recovery": "Earlier cold boots had a System UI keyguard-service ANR; the final complete warm run passed after System UI recovery and bounded test rendering synchronization.",
+  "limitations": [
+    "Historical English development evaluation was inspected during implementation; this is not independent contemporary accuracy.",
+    "Reported URL-feed labels were not independently adjudicated; fresh representative benign URL controls are missing.",
+    "Hindi/Gujarati detection contracts use authored examples; observed native-language evaluation is missing.",
+    "No physical Galaxy S24 or A36 was connected; emulator timings exclude capture/OCR and physical-phone performance.",
+    "Voice/deepfake authenticity, hidden redirects, remote page behavior and malware binary classification are outside this training update."
+  ]
+}

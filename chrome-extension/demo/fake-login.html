@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>PayPal account sign in — synthetic fixture</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font: 16px/1.7 system-ui;
+        background: #08151d;
+        color: #eff9f8;
+      }
+      body {
+        max-width: 580px;
+        margin: 60px auto;
+        padding: 24px;
+      }
+      main {
+        background: #122936;
+        border: 1px solid #254554;
+        border-radius: 24px;
+        padding: 32px;
+      }
+      h1 {
+        font-size: 28px;
+      }
+      .label {
+        color: #ffd182;
+      }
+      input,
+      button {
+        font: inherit;
+        padding: 12px;
+        border-radius: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 10px 0 16px;
+        border: 1px solid #254554;
+      }
+      input {
+        background: #08151d;
+        color: #eff9f8;
+      }
+      button {
+        background: #35debc;
+        color: #08151d;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      a {
+        color: #35debc;
+      }
+      :focus-visible {
+        outline: 3px solid #35debc;
+        outline-offset: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="label">Synthetic test page · enter no real credentials</p>
+      <h1>PayPal account sign in</h1>
+      <p>
+        This fixture claims a brand on an unrelated localhost address and uses
+        an HTTP password form. It intentionally exercises the login warning.
+      </p>
+      <form action="/demo-session" method="post">
+        <label for="demo-password">Demo password</label
+        ><input
+          id="demo-password"
+          type="password"
+          autocomplete="off"
+          placeholder="Use a made-up value"
+        /><button type="submit">Sign in (synthetic)</button>
+      </form>
+      <p id="outcome" role="status"></p>
+      <a href="/">← Return to the SafeX demo</a>
+    </main>
+    <script>
+      document.querySelector("form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        document.getElementById("outcome").textContent =
+          "The demo prevented submission. No data was sent.";
+      });
+    </script>
+  </body>
+</html>

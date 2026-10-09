@@ -1,6 +1,20 @@
 # Model card
 
-## URL classifier
+## Current 1.7 research update
+
+The bundled message model is now `fraud-text-research-v3`, trained on **3,910 examples** from a deduplicated historical English smishing/ham collection and authored English/Hindi/Gujarati augmentation. Validation contains 810 examples and the campaign-grouped evaluation contains 886. Feature extraction masks numeric/address identifiers and adds bounded character trigrams to word/bigram features. All 5,606 prepared rows passed Kotlin/Python feature parity. The first candidate's checkpoint and **0.545 warning threshold** were chosen on validation only. Its observed-English evaluation has 847 messages (78 smishing, 769 ham): **76 true warnings, zero false warnings, two misses** at model-only level, versus six true warnings and five false warnings from the old synthetic model. These are results on that named historical corpus, not all current fraud or native-language accuracy. [Text report](../models/fraud-text-evaluation.json).
+
+The bundled URL model is `url-phiusiil-reported-feed-v3`, adding a bounded sample of 40,000 reported links to the existing historical and authored URL examples. Its **0.9001042 warning threshold** uses validation controls. Model-only recall on 4,884 held-out reported URLs from domains absent from the historical dataset improved from **65.70% to 68.02%**. Historical recall decreased from 94.48% to 93.31%; historical false-warning rate increased from 0.23% to 0.40%. Both historical and augmented false-warning rates remain under the declared 1% limit, but these controls are historical. The reported feed contains positives only, so it cannot measure contemporary precision or false-warning rate. [URL report](../models/fraud-url-evaluation.json).
+
+The first trained candidates were promoted by copying their checked artifacts, without refitting their weights or changing their original thresholds after evaluation. Follow-up Android eligibility and protective-advice fixes use already-inspected development evaluation data and authored contracts; their [runtime comparison](../models/fraud-text-runtime-comparison.json) is a regression diagnostic, not a fresh independent test. Full pipeline performance differs from raw classifier scores because rules, links, payments and model eligibility also contribute. Model scores remain uncalibrated. Hindi/Gujarati examples are authored; representative observed native-language evaluation remains missing.
+
+The app retains the **0.545 threshold with action context** and adds a **0.915 threshold** for familiar Latin-script text without action context. The second threshold uses validation only and produced zero false warnings on its 741 validation negatives. Its guard requires at least four distinct non-identifier words, 95% ASCII Latin letters and 60% unigram vocabulary coverage. This heuristic does not prove English language identity or representative model coverage. All 5,606 Kotlin/Python guard decisions match. Native-script inputs continue using action-context eligibility; the research path raises WARN only. [Versioned warning policy](../models/fraud-text-warning-policy.json).
+
+The installed app's complete private text pipeline was compared on the same 847 historical observed messages: **1.6.0 detected 13/78 scams; 1.7.0 detected 71/78**, with **one warning on 769 legitimate controls in both versions**. The current pipeline therefore still misses seven labeled scam messages and warns on one legitimate control. This inspected development comparison includes rules, links and model eligibility; it is distinct from the model-only result above. [Baseline](test-results/fraud-native-baseline-evaluation.json) and [current outputs](test-results/fraud-native-evaluation.json) contain hashed case IDs and decisions, without raw message text. It is not contemporary, independent or native-language accuracy evidence.
+
+Runtime loading checks finite coefficients, bounded vocabulary, supported feature version, configured threshold and model checksum. Failure leaves local rules available. Source licenses and modifications are in [fraud data attribution](../models/FRAUD-DATA-ATTRIBUTION.md), [the collection manifest](../models/fraud-data-manifest.json) and [the dated research report](fraud-research-2026-10-09.md). The following sections preserve the 1.3–1.6 historical model context.
+
+## Historical 1.3–1.6 URL classifier
 
 The original unverifiable URL model has been replaced by `url-phiusiil-augmented-v2`: a 15→24→12→1 neural network exported as native TensorFlow Lite. Its inputs come from the exact production Kotlin feature extractor. Training uses the [licensed UCI PhiUSIIL dataset](https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset) plus explicitly synthetic host/path/query variants. No HTML, title, dataset probability columns or remote reputation is used. See [data attribution](../models/URL-DATA-ATTRIBUTION.md).
 
@@ -12,7 +26,7 @@ For underrepresented IDN, exact official-brand and structured email-query contex
 
 The configured model threshold raises the risk index to at least 35 (WARN). It cannot independently BLOCK, lower established local evidence or weaken an existing BLOCK decision. Native loading checks model metadata hash, float tensor shapes, scaler feature order and positive finite scales. Loading failure retains rules and is disclosed. Neither the risk index nor the classifier output is a calibrated probability of fraud. Rebuild instructions and pinned dependencies are in the fraud-link audit.
 
-## Text classifier
+## Historical 1.2–1.6 text classifier
 
 `text-model.json` is a binary logistic classifier using unique Unicode word unigrams and bigrams. Unicode combining marks are preserved in Hindi and Gujarati words. NFKC normalization and lowercase preprocessing are shared with text rules. Training uses deterministic gradient descent with L2 regularization.
 

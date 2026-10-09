@@ -1,0 +1,107 @@
+{
+  "kind": "Development runtime-policy regression; first model weights and original threshold unchanged; additional context-free threshold selected on validation only; already-inspected evaluation data",
+  "excludes": "Embedded URL model, other rules and payment QR decisions; not full-app accuracy",
+  "observed_english": {
+    "baseline_text_branch": {
+      "rows": 847,
+      "tp": 4,
+      "fp": 0,
+      "fn": 74,
+      "tn": 769,
+      "recall": 0.05128205128205128,
+      "precision": 1.0,
+      "false_positive_rate": 0.0,
+      "accuracy": 0.9126328217237308
+    },
+    "candidate_text_branch": {
+      "rows": 847,
+      "tp": 70,
+      "fp": 0,
+      "fn": 8,
+      "tn": 769,
+      "recall": 0.8974358974358975,
+      "precision": 1.0,
+      "false_positive_rate": 0.0,
+      "accuracy": 0.9905548996458088
+    }
+  },
+  "authored_languages": {
+    "en": {
+      "baseline_text_branch": {
+        "rows": 95,
+        "tp": 24,
+        "fp": 0,
+        "fn": 23,
+        "tn": 48,
+        "recall": 0.5106382978723404,
+        "precision": 1.0,
+        "false_positive_rate": 0.0,
+        "accuracy": 0.7578947368421053
+      },
+      "candidate_text_branch": {
+        "rows": 95,
+        "tp": 45,
+        "fp": 0,
+        "fn": 2,
+        "tn": 48,
+        "recall": 0.9574468085106383,
+        "precision": 1.0,
+        "false_positive_rate": 0.0,
+        "accuracy": 0.9789473684210527
+      }
+    },
+    "hi": {
+      "baseline_text_branch": {
+        "rows": 64,
+        "tp": 17,
+        "fp": 1,
+        "fn": 16,
+        "tn": 30,
+        "recall": 0.5151515151515151,
+        "precision": 0.9444444444444444,
+        "false_positive_rate": 0.03225806451612903,
+        "accuracy": 0.734375
+      },
+      "candidate_text_branch": {
+        "rows": 64,
+        "tp": 31,
+        "fp": 0,
+        "fn": 2,
+        "tn": 31,
+        "recall": 0.9393939393939394,
+        "precision": 1.0,
+        "false_positive_rate": 0.0,
+        "accuracy": 0.96875
+      }
+    },
+    "gu": {
+      "baseline_text_branch": {
+        "rows": 60,
+        "tp": 14,
+        "fp": 0,
+        "fn": 16,
+        "tn": 30,
+        "recall": 0.4666666666666667,
+        "precision": 1.0,
+        "false_positive_rate": 0.0,
+        "accuracy": 0.7333333333333333
+      },
+      "candidate_text_branch": {
+        "rows": 60,
+        "tp": 24,
+        "fp": 0,
+        "fn": 6,
+        "tn": 30,
+        "recall": 0.8,
+        "precision": 1.0,
+        "false_positive_rate": 0.0,
+        "accuracy": 0.9
+      }
+    }
+  },
+  "warning_policy": {
+    "action_context_threshold": 0.545,
+    "context_free_threshold": 0.915,
+    "guard_version": "latin_vocabulary_v1"
+  }
+}

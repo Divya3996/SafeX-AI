@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0",
+  "validatedAt": "2026-10-09T13:39:05.103Z",
+  "scope": "Functional development validation; no independent browser accuracy claim",
+  "unit": {
+    "passed": 431,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browser": {
+    "passed": 32,
+    "failed": 0,
+    "environments": [
+      "Playwright Chromium 156",
+      "Installed Google Chrome 154.0.8037.57"
+    ],
+    "productionManifest": true,
+    "unexpectedExtensionRequests": 0,
+    "runtimeErrors": 0,
+    "knownRecognitionLibraryWarnings": [
+      "Warning: Parameter not found: classify_misfit_junk_penalty",
+      "Warning: Parameter not found: merge_fragments_in_matrix"
+    ]
+  },
+  "dependencyVulnerabilities": 0,
+  "artifact": {
+    "file": "SafeX-AI-Chrome-1.0.0.zip",
+    "bytes": 20964989,
+    "sha256": "dc94c3f249dadce80c0495942158d2c159fe0d8e180601440285fe865965ffc3"
+  },
+  "buildManifestSha256": "69b6bff9e026861a36b002c8d68a0e37145411d57f48eb58e8b3f9906d3c9e79",
+  "modelAssets": {
+    "security-model-attribution.txt": "b53b18fd94782e72d63968db7049b187f0935b6fa2d35f5b305efb02bc2bc154",
+    "text-model-card.json": "cd4b687797a108b6e9734acd06f75af874e81ff7849c3d0848a3c6693d7ab50f",
+    "text-model.json": "ec31e6e51b727f0f971f23afa7a1347496c7f9bb090d9d9c6f1ac498f10671c6",
+    "text-warning-policy.json": "d42dd1b97d7e9d9f98c20db9c276667bd0e5d06624c25c509b304c9b8f745bde",
+    "url-model-card.json": "fb582ad68c5b71fcf0c28f5b4675cab0ba88abc1eed3154c2dd1ee3f6678895e",
+    "url-model.json": "25777e6ce143648ca773ac9f9c032d1b09f9d67c33a9ba84f2a3f20e9bfcd189"
+  },
+  "independentBrowserAccuracy": null,
+  "distribution": "Unpacked release ZIP; Chrome Web Store publication pending",
+  "limitations": [
+    "Authored/reference fixtures do not establish fresh-world or native-language accuracy.",
+    "Optional site grant was preapproved in an isolated test profile; human permission dialog interaction was not automated.",
+    "No independent OS/device matrix or manual assistive-technology audit.",
+    "No layout-specific webmail adapters, remote signed publisher updates or automatic retraining."
+  ]
+}

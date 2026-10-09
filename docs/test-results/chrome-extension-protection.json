@@ -1,0 +1,87 @@
+{
+  "browser": "Installed Google Chrome 154.0.8037.57",
+  "productionManifest": true,
+  "findings": [
+    {
+      "name": "installed Chrome 154 loads production manifest and toolbar action",
+      "passed": true,
+      "durationMs": 135
+    },
+    {
+      "name": "real activeTab grant enables bounded page scan",
+      "passed": true,
+      "durationMs": 154
+    },
+    {
+      "name": "actual DOM extraction excludes passwords, textarea and editors",
+      "passed": true,
+      "durationMs": 10
+    },
+    {
+      "name": "screenshot capture is user-scoped and supports safe local crop",
+      "passed": true,
+      "durationMs": 132
+    },
+    {
+      "name": "untrusted webpage cannot call privileged report/capture commands",
+      "passed": true,
+      "durationMs": 12
+    },
+    {
+      "name": "optional site monitoring requires persistent site authorization",
+      "passed": true,
+      "durationMs": 8
+    },
+    {
+      "name": "service-worker termination preserves session result and preferences",
+      "passed": true,
+      "durationMs": 190
+    },
+    {
+      "name": "warning audio uses packaged offscreen playback",
+      "passed": true,
+      "durationMs": 172
+    },
+    {
+      "name": "selected-site protection starts after an actual Chrome profile grant",
+      "passed": true,
+      "durationMs": 1428
+    },
+    {
+      "name": "sensitive form submission is paused without reading the typed value",
+      "passed": true,
+      "durationMs": 79
+    },
+    {
+      "name": "click guard retains displayed-address evidence and a usable choice",
+      "passed": true,
+      "durationMs": 124
+    },
+    {
+      "name": "pause, resume and revoke stop and restore automatic checks",
+      "passed": true,
+      "durationMs": 3024
+    },
+    {
+      "name": "exact imported blocking rules work and reported-only entries do not block",
+      "passed": true,
+      "durationMs": 312
+    },
+    {
+      "name": "navigation invalidates the previous tab result",
+      "passed": true,
+      "durationMs": 9
+    },
+    {
+      "name": "restricted pages return usable fallback, never clear",
+      "passed": true,
+      "durationMs": 433
+    },
+    {
+      "name": "page extraction and warning code have no runtime exceptions",
+      "passed": true,
+      "durationMs": 1
+    }
+  ],
+  "runtimeErrors": []
+}

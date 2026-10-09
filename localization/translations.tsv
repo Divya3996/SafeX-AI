@@ -120,6 +120,10 @@ Local analysis|स्थानीय जाँच|સ્થાનિક તપ�
 Local heuristic analysis|स्थानीय नियमों से जाँच|સ્થાનિક નિયમોથી તપાસ
 On-device URL model|डिवाइस पर लिंक मॉडल|ઉપકરણ પર લિંક મૉડલ
 On-device text classifier • synthetic prototype|डिवाइस पर संदेश वर्गीकरण • कृत्रिम डेटा का नमूना मॉडल|ઉપકરણ પર સંદેશ વર્ગીકરણ • કૃત્રિમ ડેટાનું પ્રાયોગિક મૉડલ
+On-device text classifier • limited research coverage|डिवाइस पर संदेश वर्गीकरण • सीमित शोध कवरेज|ઉપકરણ પર સંદેશ વર્ગીકરણ • મર્યાદિત સંશોધન આવરણ
+Promises guaranteed returns while requesting a transfer|रकम भेजने को कहकर सुनिश्चित मुनाफे का वादा करता है|રકમ મોકલવાનું કહીને નફાની ગેરંટી આપે છે
+Investment / crypto request|निवेश / क्रिप्टो अनुरोध|રોકાણ / ક્રિપ્ટોની વિનંતી
+Verify investment claims and the recipient independently before transferring money.|पैसे भेजने से पहले निवेश के दावे और प्राप्तकर्ता की स्वतंत्र जांच करें।|પૈસા મોકલતા પહેલા રોકાણના દાવા અને પ્રાપ્તકર્તાની સ્વતંત્ર તપાસ કરો।
 Text classifier unavailable; local rules active|संदेश मॉडल उपलब्ध नहीं; स्थानीय नियम चालू हैं|સંદેશ મૉડલ ઉપલબ્ધ નથી; સ્થાનિક નિયમો ચાલુ છે
 URL model unavailable; local rules active|लिंक मॉडल उपलब्ध नहीं; स्थानीय नियम चालू हैं|લિંક મૉડલ ઉપલબ્ધ નથી; સ્થાનિક નિયમો ચાલુ છે
 Not used|इस्तेमाल नहीं हुआ|ઉપયોગ થયો નથી

@@ -123,6 +123,10 @@
     <string name="sx_local_heuristic_analysis_62324bf5" formatted="false">"स्थानीय नियमों से जाँच"</string>
     <string name="sx_on_device_url_model_2e7d68e2" formatted="false">"डिवाइस पर लिंक मॉडल"</string>
     <string name="sx_on_device_text_classifier_synthetic_prototyp_9b1eec51" formatted="false">"डिवाइस पर संदेश वर्गीकरण • कृत्रिम डेटा का नमूना मॉडल"</string>
+    <string name="sx_on_device_text_classifier_limited_research_c_7e58180a" formatted="false">"डिवाइस पर संदेश वर्गीकरण • सीमित शोध कवरेज"</string>
+    <string name="sx_promises_guaranteed_returns_while_requesting_2ac1ed95" formatted="false">"रकम भेजने को कहकर सुनिश्चित मुनाफे का वादा करता है"</string>
+    <string name="sx_investment_crypto_request_533a9889" formatted="false">"निवेश / क्रिप्टो अनुरोध"</string>
+    <string name="sx_verify_investment_claims_and_the_recipient_i_3cdce364" formatted="false">"पैसे भेजने से पहले निवेश के दावे और प्राप्तकर्ता की स्वतंत्र जांच करें।"</string>
     <string name="sx_text_classifier_unavailable_local_rules_acti_1ecb52b8" formatted="false">"संदेश मॉडल उपलब्ध नहीं; स्थानीय नियम चालू हैं"</string>
     <string name="sx_url_model_unavailable_local_rules_active_d1a2d940" formatted="false">"लिंक मॉडल उपलब्ध नहीं; स्थानीय नियम चालू हैं"</string>
     <string name="sx_not_used_dccafe55" formatted="false">"इस्तेमाल नहीं हुआ"</string>

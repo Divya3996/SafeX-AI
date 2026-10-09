@@ -1,0 +1,12 @@
+{
+  "baseline-model.tflite": {
+    "parameter_export_sha256": "79c67a5bfd775d36141a345d5e3b49a253215c3d484fe3dc3eb4ddbd54f1aba1",
+    "artifact_sha256": "79c67a5bfd775d36141a345d5e3b49a253215c3d484fe3dc3eb4ddbd54f1aba1",
+    "matched": true
+  },
+  "candidate-url-model.tflite": {
+    "parameter_export_sha256": "8c720f68db2fb79bf2ccc36920d92dba08aa3fb260456026c5d6eb8279985414",
+    "artifact_sha256": "8c720f68db2fb79bf2ccc36920d92dba08aa3fb260456026c5d6eb8279985414",
+    "matched": true
+  }
+}

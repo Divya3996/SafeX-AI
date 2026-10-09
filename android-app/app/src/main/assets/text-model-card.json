@@ -1,0 +1,6 @@
+{
+  "version": "fraud-text-research-v3",
+  "sha256": "ec31e6e51b727f0f971f23afa7a1347496c7f9bb090d9d9c6f1ac498f10671c6",
+  "training_scope": "Historical observed English + authored English/Hindi/Gujarati; not all current fraud",
+  "provenance_manifest_sha256": "2064274f06bf1017516c891555f1c604ab29b88952d823995040a33a4d71ffe9"
+}

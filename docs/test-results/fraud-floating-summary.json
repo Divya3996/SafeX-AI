@@ -1,0 +1,484 @@
+{
+  "kind": "Authored development functional corpus; not independent accuracy evidence",
+  "device": "sdk_gphone64_x86_64; API 34",
+  "models_retrained": true,
+  "limitations": [
+    "Authored cases were used during development; results are not independent real-world accuracy estimates.",
+    "Wilson intervals are descriptive calculations on grouped authored fixtures, not population accuracy confidence.",
+    "Timings exclude Android consent and user editing.",
+    "OCR accuracy and physical Samsung S24/A36 behavior require separate validation."
+  ],
+  "overall": {
+    "cases": 55,
+    "evaluable": 49,
+    "tp": 28,
+    "fp": 0,
+    "fn": 0,
+    "tn": 21,
+    "precision": 1.0,
+    "recall": 1.0,
+    "false_warning_rate": 0.0,
+    "recall_95pct_interval": [
+      0.8793527963418923,
+      1
+    ],
+    "false_warning_95pct_interval": [
+      0,
+      0.15464382326420195
+    ],
+    "limited_assessments": 6,
+    "analysis_duration_ms": {
+      "p50": 14,
+      "p95": 45,
+      "maximum": 49
+    },
+    "contract_mismatches": []
+  },
+  "by_language": {
+    "en": {
+      "cases": 25,
+      "evaluable": 19,
+      "tp": 12,
+      "fp": 0,
+      "fn": 0,
+      "tn": 7,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_warning_rate": 0.0,
+      "recall_95pct_interval": [
+        0.7574992425007574,
+        1
+      ],
+      "false_warning_95pct_interval": [
+        0,
+        0.35433884297520657
+      ],
+      "limited_assessments": 6,
+      "analysis_duration_ms": {
+        "p50": 14,
+        "p95": 41,
+        "maximum": 49
+      },
+      "contract_mismatches": []
+    },
+    "hi": {
+      "cases": 15,
+      "evaluable": 15,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0,
+      "tn": 7,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_warning_rate": 0.0,
+      "recall_95pct_interval": [
+        0.6755843804891231,
+        1
+      ],
+      "false_warning_95pct_interval": [
+        0,
+        0.35433884297520657
+      ],
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 15,
+        "p95": 47,
+        "maximum": 47
+      },
+      "contract_mismatches": []
+    },
+    "gu": {
+      "cases": 15,
+      "evaluable": 15,
+      "tp": 8,
+      "fp": 0,
+      "fn": 0,
+      "tn": 7,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_warning_rate": 0.0,
+      "recall_95pct_interval": [
+        0.6755843804891231,
+        1
+      ],
+      "false_warning_95pct_interval": [
+        0,
+        0.35433884297520657
+      ],
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 17,
+        "p95": 45,
+        "maximum": 45
+      },
+      "contract_mismatches": []
+    }
+  },
+  "by_category": {
+    "credentials": {
+      "cases": 3,
+      "evaluable": 3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_warning_rate": null,
+      "recall_95pct_interval": [
+        0.43849391955098227,
+        1
+      ],
+      "false_warning_95pct_interval": null,
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 19,
+        "p95": 27,
+        "maximum": 27
+      },
+      "contract_mismatches": []
+    },
+    "reward": {
+      "cases": 3,
+      "evaluable": 3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_warning_rate": null,
+      "recall_95pct_interval": [
+        0.43849391955098227,
+        1
+      ],
+      "false_warning_95pct_interval": null,
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 17,
+        "p95": 18,
+        "maximum": 18
+      },
+      "contract_mismatches": []
+    },
+    "job": {
+      "cases": 3,
+      "evaluable": 3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_warning_rate": null,
+      "recall_95pct_interval": [
+        0.43849391955098227,
+        1
+      ],
+      "false_warning_95pct_interval": null,
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 18,
+        "p95": 20,
+        "maximum": 20
+      },
+      "contract_mismatches": []
+    },
+    "loan": {
+      "cases": 3,
+      "evaluable": 3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_warning_rate": null,
+      "recall_95pct_interval": [
+        0.43849391955098227,
+        1
+      ],
+      "false_warning_95pct_interval": null,
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 20,
+        "p95": 28,
+        "maximum": 28
+      },
+      "contract_mismatches": []
+    },
+    "upi": {
+      "cases": 3,
+      "evaluable": 3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_warning_rate": null,
+      "recall_95pct_interval": [
+        0.43849391955098227,
+        1
+      ],
+      "false_warning_95pct_interval": null,
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 18,
+        "p95": 25,
+        "maximum": 25
+      },
+      "contract_mismatches": []
+    },
+    "coercion": {
+      "cases": 3,
+      "evaluable": 3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_warning_rate": null,
+      "recall_95pct_interval": [
+        0.43849391955098227,
+        1
+      ],
+      "false_warning_95pct_interval": null,
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 19,
+        "p95": 20,
+        "maximum": 20
+      },
+      "contract_mismatches": []
+    },
+    "remote_access": {
+      "cases": 3,
+      "evaluable": 3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_warning_rate": null,
+      "recall_95pct_interval": [
+        0.43849391955098227,
+        1
+      ],
+      "false_warning_95pct_interval": null,
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 15,
+        "p95": 16,
+        "maximum": 16
+      },
+      "contract_mismatches": []
+    },
+    "courier": {
+      "cases": 3,
+      "evaluable": 3,
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_warning_rate": null,
+      "recall_95pct_interval": [
+        0.43849391955098227,
+        1
+      ],
+      "false_warning_95pct_interval": null,
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 14,
+        "p95": 19,
+        "maximum": 19
+      },
+      "contract_mismatches": []
+    },
+    "safety_advice": {
+      "cases": 6,
+      "evaluable": 6,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 6,
+      "precision": null,
+      "recall": null,
+      "false_warning_rate": 0.0,
+      "recall_95pct_interval": null,
+      "false_warning_95pct_interval": [
+        0,
+        0.3903430336530645
+      ],
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 9,
+        "p95": 12,
+        "maximum": 12
+      },
+      "contract_mismatches": []
+    },
+    "everyday": {
+      "cases": 3,
+      "evaluable": 3,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 3,
+      "precision": null,
+      "recall": null,
+      "false_warning_rate": 0.0,
+      "recall_95pct_interval": null,
+      "false_warning_95pct_interval": [
+        0,
+        0.5615060804490177
+      ],
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 11,
+        "p95": 15,
+        "maximum": 15
+      },
+      "contract_mismatches": []
+    },
+    "receipt": {
+      "cases": 3,
+      "evaluable": 3,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 3,
+      "precision": null,
+      "recall": null,
+      "false_warning_rate": 0.0,
+      "recall_95pct_interval": null,
+      "false_warning_95pct_interval": [
+        0,
+        0.5615060804490177
+      ],
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 12,
+        "p95": 13,
+        "maximum": 13
+      },
+      "contract_mismatches": []
+    },
+    "education": {
+      "cases": 3,
+      "evaluable": 3,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 3,
+      "precision": null,
+      "recall": null,
+      "false_warning_rate": 0.0,
+      "recall_95pct_interval": null,
+      "false_warning_95pct_interval": [
+        0,
+        0.5615060804490177
+      ],
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 47,
+        "p95": 49,
+        "maximum": 49
+      },
+      "contract_mismatches": []
+    },
+    "personal": {
+      "cases": 3,
+      "evaluable": 3,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 3,
+      "precision": null,
+      "recall": null,
+      "false_warning_rate": 0.0,
+      "recall_95pct_interval": null,
+      "false_warning_95pct_interval": [
+        0,
+        0.5615060804490177
+      ],
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 10,
+        "p95": 10,
+        "maximum": 10
+      },
+      "contract_mismatches": []
+    },
+    "bank_reminder": {
+      "cases": 3,
+      "evaluable": 3,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 3,
+      "precision": null,
+      "recall": null,
+      "false_warning_rate": 0.0,
+      "recall_95pct_interval": null,
+      "false_warning_95pct_interval": [
+        0,
+        0.5615060804490177
+      ],
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 12,
+        "p95": 14,
+        "maximum": 14
+      },
+      "contract_mismatches": []
+    },
+    "action_qr": {
+      "cases": 6,
+      "evaluable": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": null,
+      "recall": null,
+      "false_warning_rate": null,
+      "recall_95pct_interval": null,
+      "false_warning_95pct_interval": null,
+      "limited_assessments": 6,
+      "analysis_duration_ms": {
+        "p50": 6,
+        "p95": 14,
+        "maximum": 14
+      },
+      "contract_mismatches": []
+    },
+    "link_normalization": {
+      "cases": 4,
+      "evaluable": 4,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "tn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "false_warning_rate": null,
+      "recall_95pct_interval": [
+        0.5100999795960008,
+        1
+      ],
+      "false_warning_95pct_interval": null,
+      "limited_assessments": 0,
+      "analysis_duration_ms": {
+        "p50": 27,
+        "p95": 41,
+        "maximum": 41
+      },
+      "contract_mismatches": []
+    }
+  }
+}

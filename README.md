@@ -1,6 +1,6 @@
 # SafeX AI
 
-An Android security assistant for checking suspicious messages, links, screenshots, live or selected-image QR codes and files on the device. Built for a privacy-focused hackathon demonstration.
+An Android security assistant and desktop Chrome companion for checking suspicious messages, links, screenshots and QR requests on the device. The Android app also reviews files. Built for a privacy-focused hackathon demonstration.
 
 ## What works
 
@@ -39,6 +39,8 @@ See [the 1.6.0 floating assistant](docs/floating-assistant-1.6.md), [the 1.4.0 p
 
 Design rationale: [floating assistant implementation plan](docs/floating-assistant-plan.md) · [Enhancement audit: UX, detection and logo](docs/floating-assistant-enhancement-plan.md).
 
+Desktop companion: [Chrome extension installation, features and demo](chrome-extension/README.md) · [Browser release and validation](docs/chrome-extension-release.md) · [Product and implementation plan](docs/chrome-extension-plan.md).
+
 ## Screenshots
 
 | Home | Scanner | Result |
@@ -51,9 +53,9 @@ Design rationale: [floating assistant implementation plan](docs/floating-assista
 
 ## Validation
 
-SafeX AI **1.6.0**: **518 active unit tests and 51 offline device tests passed**, with zero lint errors (54 warnings). Three optional research-export tests were skipped. All 55 authored detection contracts matched; these are development fixtures, not independent accuracy evidence.
+SafeX AI **1.7.0**: **535 active unit tests and 55 offline device tests passed**, with zero lint errors (54 warnings). Four optional research-export checks were skipped. All 120 multilingual fraud contracts and 55 floating-review contracts matched; these are authored development fixtures, not independent accuracy evidence.
 
-[Debug APK](releases/SafeX-AI-1.6.0-debug.apk) · [Release verification](docs/test-results/floating-assistant-summary.json) · [Verification report and limits](docs/validation.md)
+[Debug APK](releases/SafeX-AI-1.7.0-debug.apk) · [Release verification](docs/test-results/fraud-training-summary.json) · [Verification report and limits](docs/validation.md)
 
 ```sh
 cd android-app
@@ -65,7 +67,7 @@ Device tests exercise native URL inference, the real local analysis pipeline, OC
 
 ## Model honesty
 
-The URL classifier now has reproducible training using the licensed UCI PhiUSIIL historical dataset, domain-disjoint splits and explicitly synthetic URL variants that reduce dataset source bias. Held-out historical results and authored robustness checks are reported separately; neither proves current-world accuracy. The text classifier remains a prototype trained on 100 authored synthetic multilingual examples with 36 validation examples. Models can raise warnings and cannot independently block content or certify safety. See the [model card](docs/ml-model.md) and [fraud-link pattern list, gaps and verification](docs/fraud-link-audit.md).
+The 1.7 research update trains the text classifier on historical observed English smishing/ham and authored English/Hindi/Gujarati examples, and adds a bounded reported-phishing snapshot to the URL model. Source overlap and campaign/domain grouping are checked before splitting; validation selects checkpoints and thresholds. Observed model evaluation, inspected runtime diagnostics and authored contracts have separate reports. The installed private scan pipeline improved from **13/78 to 71/78 scam detections**, with one warning on 769 legitimate controls in both versions. The model-only result was 76/78 detections and zero false warnings; the stricter app policy still misses seven scams. These historical development results do not establish current-world or native-language accuracy. Models can raise warnings and cannot independently block content or certify safety. See the [model card](docs/ml-model.md), [dated research and access limits](docs/fraud-research-2026-10-09.md), [source attribution](models/FRAUD-DATA-ATTRIBUTION.md) and [fraud-link pattern audit](docs/fraud-link-audit.md).
 
 ## Stack
 

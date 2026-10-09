@@ -123,6 +123,10 @@
     <string name="sx_local_heuristic_analysis_62324bf5" formatted="false">"Local heuristic analysis"</string>
     <string name="sx_on_device_url_model_2e7d68e2" formatted="false">"On-device URL model"</string>
     <string name="sx_on_device_text_classifier_synthetic_prototyp_9b1eec51" formatted="false">"On-device text classifier • synthetic prototype"</string>
+    <string name="sx_on_device_text_classifier_limited_research_c_7e58180a" formatted="false">"On-device text classifier • limited research coverage"</string>
+    <string name="sx_promises_guaranteed_returns_while_requesting_2ac1ed95" formatted="false">"Promises guaranteed returns while requesting a transfer"</string>
+    <string name="sx_investment_crypto_request_533a9889" formatted="false">"Investment / crypto request"</string>
+    <string name="sx_verify_investment_claims_and_the_recipient_i_3cdce364" formatted="false">"Verify investment claims and the recipient independently before transferring money."</string>
     <string name="sx_text_classifier_unavailable_local_rules_acti_1ecb52b8" formatted="false">"Text classifier unavailable; local rules active"</string>
     <string name="sx_url_model_unavailable_local_rules_active_d1a2d940" formatted="false">"URL model unavailable; local rules active"</string>
     <string name="sx_not_used_dccafe55" formatted="false">"Not used"</string>

@@ -97,10 +97,10 @@ class OfflinePipelineTest {
         assertEquals(ProtectionDecision.BLOCK, result.decision)
     }
 
-    @Test fun prototypeModelMatchesPublishedValidationScores() {
+    @Test fun trainedModelReadsThresholdAndDistinguishesAuthoredControls() {
         val model = TextInferenceManager(context)
-        assertEquals(0.6022f, model.predict("To prevent suspension urgently send your bank password to support"), 0.01f)
-        assertTrue(model.predict("Never give anyone your bank password or OTP") < 0.60f)
+        assertTrue(model.predict("To prevent suspension urgently send your bank password to support") >= model.warningThreshold)
+        assertTrue(model.predict("Never give anyone your bank password or OTP") < model.warningThreshold)
     }
 
     @Test fun nativeHindiAndGujaratiScamsAndAdviceWorkOffline() = runBlocking {

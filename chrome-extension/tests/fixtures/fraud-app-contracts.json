@@ -1,0 +1,725 @@
+{
+  "scope": "Authored behavioral examples informed by advisories; synthetic training augmentation, not observed incidents or independent accuracy evidence.",
+  "cases": [
+    {
+      "id": "bank_kyc:en:1",
+      "language": "en",
+      "text": "KYC expires now send your bank password to this support agent",
+      "expected": "WARN"
+    },
+    {
+      "id": "bank_kyc:en:0",
+      "language": "en",
+      "text": "Your KYC status is available in the banking app. Never share a password.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "bank_kyc:hi:1",
+      "language": "hi",
+      "text": "केवाईसी बंद होगी अभी बैंक का पासवर्ड एजेंट को भेजें",
+      "expected": "WARN"
+    },
+    {
+      "id": "bank_kyc:hi:0",
+      "language": "hi",
+      "text": "केवाईसी की स्थिति बैंक ऐप में देखें। पासवर्ड किसी को न भेजें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "bank_kyc:gu:1",
+      "language": "gu",
+      "text": "કેવાયસી બંધ થશે હમણાં બેંકનો પાસવર્ડ એજન્ટને મોકલો",
+      "expected": "WARN"
+    },
+    {
+      "id": "bank_kyc:gu:0",
+      "language": "gu",
+      "text": "કેવાયસીની સ્થિતિ બેંક એપમાં જુઓ। પાસવર્ડ કોઈને ન મોકલો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "delivery_redelivery:en:1",
+      "language": "en",
+      "text": "Parcel held pay a redelivery fee immediately and submit your card details",
+      "expected": "WARN"
+    },
+    {
+      "id": "delivery_redelivery:en:0",
+      "language": "en",
+      "text": "Your parcel is scheduled for delivery. Check tracking in the official app.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "delivery_redelivery:hi:1",
+      "language": "hi",
+      "text": "पार्सल रोक दिया गया तुरंत दोबारा डिलीवरी शुल्क दें और कार्ड विवरण भेजें",
+      "expected": "WARN"
+    },
+    {
+      "id": "delivery_redelivery:hi:0",
+      "language": "hi",
+      "text": "पार्सल की जानकारी आधिकारिक ऐप में देखें। कल डिलीवरी होगी।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "delivery_redelivery:gu:1",
+      "language": "gu",
+      "text": "પાર્સલ અટક્યું છે તરત ફરી ડિલિવરીની ફી આપો અને કાર્ડની વિગતો મોકલો",
+      "expected": "WARN"
+    },
+    {
+      "id": "delivery_redelivery:gu:0",
+      "language": "gu",
+      "text": "પાર્સલની માહિતી સત્તાવાર એપમાં જુઓ। કાલે ડિલિવરી થશે।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "traffic_toll:en:1",
+      "language": "en",
+      "text": "Traffic court notice pay this fine using the QR now or face arrest",
+      "expected": "WARN"
+    },
+    {
+      "id": "traffic_toll:en:0",
+      "language": "en",
+      "text": "Check any traffic fine through the official portal. Do not pay unknown callers.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "traffic_toll:hi:1",
+      "language": "hi",
+      "text": "ट्रैफिक अदालत का नोटिस अभी क्यूआर से जुर्माना भरें वरना गिरफ्तारी होगी",
+      "expected": "WARN"
+    },
+    {
+      "id": "traffic_toll:hi:0",
+      "language": "hi",
+      "text": "जुर्माना आधिकारिक पोर्टल पर जांचें। अनजान कॉलर को भुगतान न करें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "traffic_toll:gu:1",
+      "language": "gu",
+      "text": "ટ્રાફિક કોર્ટની નોટિસ હમણાં ક્યુઆરથી દંડ ભરો નહિતર ધરપકડ થશે",
+      "expected": "WARN"
+    },
+    {
+      "id": "traffic_toll:gu:0",
+      "language": "gu",
+      "text": "દંડ સત્તાવાર પોર્ટલ પર તપાસો। અજાણ્યા કોલરને ચુકવણી ન કરો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "reward_expiry:en:1",
+      "language": "en",
+      "text": "Reward points expire today enter your card number and CVV to redeem now",
+      "expected": "WARN"
+    },
+    {
+      "id": "reward_expiry:en:0",
+      "language": "en",
+      "text": "Check reward points in the official app. Never send your card security code.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "reward_expiry:hi:1",
+      "language": "hi",
+      "text": "रिवॉर्ड पॉइंट आज खत्म होंगे अभी कार्ड नंबर और सीवीवी डालें",
+      "expected": "WARN"
+    },
+    {
+      "id": "reward_expiry:hi:0",
+      "language": "hi",
+      "text": "रिवॉर्ड पॉइंट आधिकारिक ऐप में देखें। कार्ड का सुरक्षा कोड न दें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "reward_expiry:gu:1",
+      "language": "gu",
+      "text": "રિવોર્ડ પોઇન્ટ આજે પૂરા થશે હમણાં કાર્ડ નંબર અને સીવીવી દાખલ કરો",
+      "expected": "WARN"
+    },
+    {
+      "id": "reward_expiry:gu:0",
+      "language": "gu",
+      "text": "રિવોર્ડ પોઇન્ટ સત્તાવાર એપમાં જુઓ। કાર્ડનો સુરક્ષા કોડ ન આપો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "digital_arrest:en:1",
+      "language": "en",
+      "text": "Police investigation transfer your savings to our safe account and keep this secret",
+      "expected": "WARN"
+    },
+    {
+      "id": "digital_arrest:en:0",
+      "language": "en",
+      "text": "Never transfer money to callers claiming police authority. Verify independently.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "digital_arrest:hi:1",
+      "language": "hi",
+      "text": "पुलिस जांच है अपनी बचत सुरक्षित खाते में भेजें किसी को मत बताना",
+      "expected": "WARN"
+    },
+    {
+      "id": "digital_arrest:hi:0",
+      "language": "hi",
+      "text": "पुलिस बनकर कॉल करने वालों को पैसे न भेजें। स्वतंत्र रूप से जांचें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "digital_arrest:gu:1",
+      "language": "gu",
+      "text": "પોલીસ તપાસ છે તમારી બચત સુરક્ષિત ખાતામાં મોકલો કોઈને કહેશો નહીં",
+      "expected": "WARN"
+    },
+    {
+      "id": "digital_arrest:gu:0",
+      "language": "gu",
+      "text": "પોલીસ બનીને કોલ કરનારને પૈસા ન મોકલો। સ્વતંત્ર રીતે તપાસો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "task_job:en:1",
+      "language": "en",
+      "text": "Earn by liking videos deposit money first to unlock your salary withdrawal",
+      "expected": "WARN"
+    },
+    {
+      "id": "task_job:en:0",
+      "language": "en",
+      "text": "Your interview is confirmed. No registration fee is required.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "task_job:hi:1",
+      "language": "hi",
+      "text": "वीडियो लाइक करके कमाएं वेतन निकालने के लिए पहले पैसे जमा करें",
+      "expected": "WARN"
+    },
+    {
+      "id": "task_job:hi:0",
+      "language": "hi",
+      "text": "आपका इंटरव्यू तय है। कोई पंजीकरण शुल्क नहीं है।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "task_job:gu:1",
+      "language": "gu",
+      "text": "વીડિયો લાઇક કરીને કમાવો પગાર કાઢવા માટે પહેલા પૈસા જમા કરો",
+      "expected": "WARN"
+    },
+    {
+      "id": "task_job:gu:0",
+      "language": "gu",
+      "text": "તમારો ઇન્ટરવ્યૂ નક્કી છે। કોઈ રજિસ્ટ્રેશન ફી નથી।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "investment_crypto:en:1",
+      "language": "en",
+      "text": "Guaranteed daily profit transfer funds to my crypto wallet now",
+      "expected": "WARN"
+    },
+    {
+      "id": "investment_crypto:en:0",
+      "language": "en",
+      "text": "Investments carry risk. Review disclosures and consult a registered adviser.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "investment_crypto:hi:1",
+      "language": "hi",
+      "text": "रोज मुनाफे की गारंटी अभी मेरे क्रिप्टो वॉलेट में पैसे भेजें",
+      "expected": "WARN"
+    },
+    {
+      "id": "investment_crypto:hi:0",
+      "language": "hi",
+      "text": "निवेश में जोखिम है। जानकारी पढ़ें और पंजीकृत सलाहकार से बात करें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "investment_crypto:gu:1",
+      "language": "gu",
+      "text": "રોજ નફાની ગેરંટી હમણાં મારા ક્રિપ્ટો વોલેટમાં પૈસા મોકલો",
+      "expected": "WARN"
+    },
+    {
+      "id": "investment_crypto:gu:0",
+      "language": "gu",
+      "text": "રોકાણમાં જોખમ છે। માહિતી વાંચો અને નોંધાયેલા સલાહકાર સાથે વાત કરો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "loan_advance:en:1",
+      "language": "en",
+      "text": "Your loan is guaranteed pay the advance insurance fee before disbursement",
+      "expected": "WARN"
+    },
+    {
+      "id": "loan_advance:en:0",
+      "language": "en",
+      "text": "Your loan statement is ready in the bank app. Review the agreed repayment schedule.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "loan_advance:hi:1",
+      "language": "hi",
+      "text": "लोन की गारंटी है रकम मिलने से पहले बीमा शुल्क जमा करें",
+      "expected": "WARN"
+    },
+    {
+      "id": "loan_advance:hi:0",
+      "language": "hi",
+      "text": "लोन विवरण बैंक ऐप में उपलब्ध है। भुगतान की तय समयसारिणी देखें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "loan_advance:gu:1",
+      "language": "gu",
+      "text": "લોનની ગેરંટી છે રકમ મળતા પહેલા વીમાની ફી જમા કરો",
+      "expected": "WARN"
+    },
+    {
+      "id": "loan_advance:gu:0",
+      "language": "gu",
+      "text": "લોનનું સ્ટેટમેન્ટ બેંક એપમાં ઉપલબ્ધ છે। ચુકવણીની નક્કી તારીખો જુઓ।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "upi_refund:en:1",
+      "language": "en",
+      "text": "Receive your refund scan the QR and enter your UPI PIN immediately",
+      "expected": "WARN"
+    },
+    {
+      "id": "upi_refund:en:0",
+      "language": "en",
+      "text": "Refund credited. Never enter a UPI PIN to receive a refund.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "upi_refund:hi:1",
+      "language": "hi",
+      "text": "रिफंड पाने के लिए तुरंत क्यूआर स्कैन करें और यूपीआई पिन डालें",
+      "expected": "WARN"
+    },
+    {
+      "id": "upi_refund:hi:0",
+      "language": "hi",
+      "text": "रिफंड जमा हुआ। रिफंड पाने के लिए यूपीआई पिन न डालें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "upi_refund:gu:1",
+      "language": "gu",
+      "text": "રિફંડ મેળવવા તરત ક્યુઆર સ્કેન કરો અને યુપીઆઈ પિન દાખલ કરો",
+      "expected": "WARN"
+    },
+    {
+      "id": "upi_refund:gu:0",
+      "language": "gu",
+      "text": "રિફંડ જમા થયો। રિફંડ મેળવવા યુપીઆઈ પિન ન નાખો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "boss_gift_card:en:1",
+      "language": "en",
+      "text": "I am your boss urgently buy gift cards and send the redemption codes privately",
+      "expected": "WARN"
+    },
+    {
+      "id": "boss_gift_card:en:0",
+      "language": "en",
+      "text": "Gift cards for the team are in the office. Keep the receipt and do not share codes.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "boss_gift_card:hi:1",
+      "language": "hi",
+      "text": "मैं आपका बॉस हूं तुरंत गिफ्ट कार्ड खरीदें और गुप्त रूप से उनके कोड भेजें",
+      "expected": "WARN"
+    },
+    {
+      "id": "boss_gift_card:hi:0",
+      "language": "hi",
+      "text": "टीम के गिफ्ट कार्ड कार्यालय में हैं। रसीद रखें और कोड साझा न करें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "boss_gift_card:gu:1",
+      "language": "gu",
+      "text": "હું તમારો બોસ છું તરત ગિફ્ટ કાર્ડ ખરીદો અને ખાનગી રીતે તેના કોડ મોકલો",
+      "expected": "WARN"
+    },
+    {
+      "id": "boss_gift_card:gu:0",
+      "language": "gu",
+      "text": "ટીમના ગિફ્ટ કાર્ડ ઓફિસમાં છે। રસીદ રાખો અને કોડ શેર ન કરો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "remote_support:en:1",
+      "language": "en",
+      "text": "Bank security install AnyDesk now and give us remote access to your phone",
+      "expected": "WARN"
+    },
+    {
+      "id": "remote_support:en:0",
+      "language": "en",
+      "text": "Never install remote access software at the request of an unknown bank caller.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "remote_support:hi:1",
+      "language": "hi",
+      "text": "बैंक सुरक्षा के लिए अभी एनीडेस्क इंस्टॉल करें और फोन का रिमोट एक्सेस दें",
+      "expected": "WARN"
+    },
+    {
+      "id": "remote_support:hi:0",
+      "language": "hi",
+      "text": "अनजान बैंक कॉलर के कहने पर रिमोट एक्सेस सॉफ्टवेयर इंस्टॉल न करें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "remote_support:gu:1",
+      "language": "gu",
+      "text": "બેંક સુરક્ષા માટે હમણાં એનીડેસ્ક ઇન્સ્ટોલ કરો અને ફોનનો રિમોટ એક્સેસ આપો",
+      "expected": "WARN"
+    },
+    {
+      "id": "remote_support:gu:0",
+      "language": "gu",
+      "text": "અજાણ્યા બેંક કોલરના કહેવાથી રિમોટ એક્સેસ સોફ્ટવેર ઇન્સ્ટોલ ન કરો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "malicious_apk:en:1",
+      "language": "en",
+      "text": "Urgent electricity disconnection install this APK to pay your overdue bill",
+      "expected": "WARN"
+    },
+    {
+      "id": "malicious_apk:en:0",
+      "language": "en",
+      "text": "Pay electricity bills through the official utility app. Avoid APK files sent by strangers.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "malicious_apk:hi:1",
+      "language": "hi",
+      "text": "बिजली तुरंत कटेगी बकाया बिल भरने के लिए यह एपीके इंस्टॉल करें",
+      "expected": "WARN"
+    },
+    {
+      "id": "malicious_apk:hi:0",
+      "language": "hi",
+      "text": "बिजली बिल आधिकारिक ऐप से भरें। अनजान एपीके फाइल से बचें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "malicious_apk:gu:1",
+      "language": "gu",
+      "text": "બિજળી તરત કપાશે બાકી બિલ ભરવા માટે આ એપીકે ઇન્સ્ટોલ કરો",
+      "expected": "WARN"
+    },
+    {
+      "id": "malicious_apk:gu:0",
+      "language": "gu",
+      "text": "બિજળીનું બિલ સત્તાવાર એપથી ભરો। અજાણી એપીકે ફાઇલથી બચો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "account_takeover:en:1",
+      "language": "en",
+      "text": "Send me the verification code to recover your WhatsApp account now",
+      "expected": "WARN"
+    },
+    {
+      "id": "account_takeover:en:0",
+      "language": "en",
+      "text": "Your verification code is private. Never share it with anyone.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "account_takeover:hi:1",
+      "language": "hi",
+      "text": "व्हाट्सऐप खाता वापस पाने के लिए अभी सत्यापन कोड मुझे भेजें",
+      "expected": "WARN"
+    },
+    {
+      "id": "account_takeover:hi:0",
+      "language": "hi",
+      "text": "आपका सत्यापन कोड निजी है। इसे किसी को न बताएं।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "account_takeover:gu:1",
+      "language": "gu",
+      "text": "વોટ્સએપ ખાતું પાછું મેળવવા હમણાં ચકાસણી કોડ મને મોકલો",
+      "expected": "WARN"
+    },
+    {
+      "id": "account_takeover:gu:0",
+      "language": "gu",
+      "text": "તમારો ચકાસણી કોડ ખાનગી છે। તે કોઈને ન આપો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "romance_emergency:en:1",
+      "language": "en",
+      "text": "Keep our relationship secret transfer money for my emergency visa fee today",
+      "expected": "WARN"
+    },
+    {
+      "id": "romance_emergency:en:0",
+      "language": "en",
+      "text": "Be cautious about online relationships. Never send money to someone you have not met.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "romance_emergency:hi:1",
+      "language": "hi",
+      "text": "हमारा रिश्ता गुप्त रखें आज मेरी आपातकालीन वीजा फीस के लिए पैसे भेजें",
+      "expected": "WARN"
+    },
+    {
+      "id": "romance_emergency:hi:0",
+      "language": "hi",
+      "text": "ऑनलाइन रिश्तों में सावधान रहें। अनजान व्यक्ति को पैसे न भेजें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "romance_emergency:gu:1",
+      "language": "gu",
+      "text": "આપણો સંબંધ ગુપ્ત રાખો આજે મારી તાત્કાલિક વિઝા ફી માટે પૈસા મોકલો",
+      "expected": "WARN"
+    },
+    {
+      "id": "romance_emergency:gu:0",
+      "language": "gu",
+      "text": "ઓનલાઇન સંબંધમાં સાવધાન રહો। અજાણ્યા વ્યક્તિને પૈસા ન મોકલો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "recovery_agent:en:1",
+      "language": "en",
+      "text": "Recover your stolen investment pay our recovery fee upfront and send bank details",
+      "expected": "WARN"
+    },
+    {
+      "id": "recovery_agent:en:0",
+      "language": "en",
+      "text": "Report a scam through official channels. Never pay unknown recovery agents.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "recovery_agent:hi:1",
+      "language": "hi",
+      "text": "चोरी हुआ निवेश वापस लें पहले रिकवरी फीस दें और बैंक विवरण भेजें",
+      "expected": "WARN"
+    },
+    {
+      "id": "recovery_agent:hi:0",
+      "language": "hi",
+      "text": "धोखाधड़ी की रिपोर्ट आधिकारिक माध्यम से करें। अनजान रिकवरी एजेंट को पैसे न दें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "recovery_agent:gu:1",
+      "language": "gu",
+      "text": "ચોરાયેલું રોકાણ પાછું મેળવો પહેલા રિકવરી ફી આપો અને બેંકની વિગતો મોકલો",
+      "expected": "WARN"
+    },
+    {
+      "id": "recovery_agent:gu:0",
+      "language": "gu",
+      "text": "છેતરપિંડીની ફરિયાદ સત્તાવાર માધ્યમથી કરો। અજાણ્યા રિકવરી એજન્ટને પૈસા ન આપો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "tax_unclaimed_funds:en:1",
+      "language": "en",
+      "text": "Government unclaimed funds waiting send your account password to release payment",
+      "expected": "WARN"
+    },
+    {
+      "id": "tax_unclaimed_funds:en:0",
+      "language": "en",
+      "text": "Check tax refunds in the official portal. Never send account passwords.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "tax_unclaimed_funds:hi:1",
+      "language": "hi",
+      "text": "सरकारी रकम बाकी है भुगतान पाने के लिए खाते का पासवर्ड भेजें",
+      "expected": "WARN"
+    },
+    {
+      "id": "tax_unclaimed_funds:hi:0",
+      "language": "hi",
+      "text": "टैक्स रिफंड आधिकारिक पोर्टल पर देखें। खाते का पासवर्ड कभी न भेजें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "tax_unclaimed_funds:gu:1",
+      "language": "gu",
+      "text": "સરકારી રકમ બાકી છે ચુકવણી મેળવવા ખાતાનો પાસવર્ડ મોકલો",
+      "expected": "WARN"
+    },
+    {
+      "id": "tax_unclaimed_funds:gu:0",
+      "language": "gu",
+      "text": "ટેક્સ રિફંડ સત્તાવાર પોર્ટલ પર જુઓ। ખાતાનો પાસવર્ડ ક્યારેય ન મોકલો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "marketplace_collect:en:1",
+      "language": "en",
+      "text": "I will buy your item accept the UPI collect request and enter your PIN to receive payment",
+      "expected": "WARN"
+    },
+    {
+      "id": "marketplace_collect:en:0",
+      "language": "en",
+      "text": "Check the amount received in your bank app before handing over the item.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "marketplace_collect:hi:1",
+      "language": "hi",
+      "text": "सामान खरीदूंगा भुगतान पाने के लिए यूपीआई कलेक्ट अनुरोध स्वीकार करें और पिन डालें",
+      "expected": "WARN"
+    },
+    {
+      "id": "marketplace_collect:hi:0",
+      "language": "hi",
+      "text": "सामान देने से पहले बैंक ऐप में मिली रकम जांचें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "marketplace_collect:gu:1",
+      "language": "gu",
+      "text": "સામાન ખરીદીશ ચુકવણી મેળવવા યુપીઆઈ કલેક્ટ વિનંતી સ્વીકારો અને પિન નાખો",
+      "expected": "WARN"
+    },
+    {
+      "id": "marketplace_collect:gu:0",
+      "language": "gu",
+      "text": "સામાન આપતા પહેલા બેંક એપમાં મળેલી રકમ તપાસો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "sim_telecom:en:1",
+      "language": "en",
+      "text": "SIM will be blocked within minutes share your OTP for telecom verification",
+      "expected": "WARN"
+    },
+    {
+      "id": "sim_telecom:en:0",
+      "language": "en",
+      "text": "Check your telecom account in the official app. Never share an OTP with a caller.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "sim_telecom:hi:1",
+      "language": "hi",
+      "text": "सिम कुछ मिनटों में बंद होगा टेलीकॉम सत्यापन के लिए ओटीपी भेजें",
+      "expected": "WARN"
+    },
+    {
+      "id": "sim_telecom:hi:0",
+      "language": "hi",
+      "text": "टेलीकॉम खाता आधिकारिक ऐप में देखें। कॉलर को ओटीपी न बताएं।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "sim_telecom:gu:1",
+      "language": "gu",
+      "text": "સિમ થોડી મિનિટમાં બંધ થશે ટેલિકોમ ચકાસણી માટે ઓટીપી મોકલો",
+      "expected": "WARN"
+    },
+    {
+      "id": "sim_telecom:gu:0",
+      "language": "gu",
+      "text": "ટેલિકોમ ખાતું સત્તાવાર એપમાં જુઓ। કોલરને ઓટીપી ન જણાવો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "charity_impersonation:en:1",
+      "language": "en",
+      "text": "Government disaster relief urgently transfer donations to my personal wallet",
+      "expected": "WARN"
+    },
+    {
+      "id": "charity_impersonation:en:0",
+      "language": "en",
+      "text": "Verify a charity independently before donating. Use its official donation page.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "charity_impersonation:hi:1",
+      "language": "hi",
+      "text": "सरकारी आपदा राहत के लिए तुरंत मेरे निजी वॉलेट में दान भेजें",
+      "expected": "WARN"
+    },
+    {
+      "id": "charity_impersonation:hi:0",
+      "language": "hi",
+      "text": "दान देने से पहले संस्था की स्वतंत्र जांच करें। आधिकारिक माध्यम चुनें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "charity_impersonation:gu:1",
+      "language": "gu",
+      "text": "સરકારી આપત્તિ રાહત માટે તરત મારા ખાનગી વોલેટમાં દાન મોકલો",
+      "expected": "WARN"
+    },
+    {
+      "id": "charity_impersonation:gu:0",
+      "language": "gu",
+      "text": "દાન કરતા પહેલા સંસ્થાની સ્વતંત્ર તપાસ કરો। સત્તાવાર માધ્યમ પસંદ કરો।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "qr_credential_phishing:en:1",
+      "language": "en",
+      "text": "Scan this QR now and submit your password to prevent bank account suspension",
+      "expected": "WARN"
+    },
+    {
+      "id": "qr_credential_phishing:en:0",
+      "language": "en",
+      "text": "Verify QR destinations before signing in. Never submit a password on an unexpected page.",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "qr_credential_phishing:hi:1",
+      "language": "hi",
+      "text": "बैंक खाता बंद होने से बचाने के लिए अभी क्यूआर स्कैन करें और पासवर्ड डालें",
+      "expected": "WARN"
+    },
+    {
+      "id": "qr_credential_phishing:hi:0",
+      "language": "hi",
+      "text": "लॉगिन से पहले क्यूआर का पता जांचें। अनजान पेज पर पासवर्ड न डालें।",
+      "expected": "ALLOW"
+    },
+    {
+      "id": "qr_credential_phishing:gu:1",
+      "language": "gu",
+      "text": "બેંક ખાતું બંધ થતું અટકાવવા હમણાં ક્યુઆર સ્કેન કરો અને પાસવર્ડ નાખો",
+      "expected": "WARN"
+    },
+    {
+      "id": "qr_credential_phishing:gu:0",
+      "language": "gu",
+      "text": "લોગિન પહેલા ક્યુઆરનું સરનામું તપાસો। અજાણ્યા પેજ પર પાસવર્ડ ન નાખો।",
+      "expected": "ALLOW"
+    }
+  ]
+}

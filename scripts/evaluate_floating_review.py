@@ -30,17 +30,17 @@ def metrics(rows):
         analysis_duration_ms=dict(p50=q(.5),p95=q(.95),maximum=max(durations) if durations else None),
         contract_mismatches=[r['id'] for r in rows if (r['expected']=='WARN' and r['decision']=='ALLOW') or
             (r['expected']=='ALLOW' and r['decision']!='ALLOW') or (r['expected']=='UNSUPPORTED' and r.get('coverage')!='UNSUPPORTED')])
-def summarize(data):
+def summarize(data, models_retrained=False):
     groups=defaultdict(list)
     for row in data['results']:groups[row['language']].append(row)
     categories=defaultdict(list)
     for row in data['results']:categories[row['category']].append(row)
-    return dict(kind=data['kind'],device=data['device'],models_retrained=False,
+    return dict(kind=data['kind'],device=data['device'],models_retrained=models_retrained,
         limitations=['Authored cases were used during development; results are not independent real-world accuracy estimates.',
-            'Wilson intervals are descriptive calculations on grouped authored fixtures, not population accuracy confidence.', 'Timings exclude Android consent and user editing.', 'OCR accuracy and physical Samsung S24 behavior require separate validation.'],
+            'Wilson intervals are descriptive calculations on grouped authored fixtures, not population accuracy confidence.', 'Timings exclude Android consent and user editing.', 'OCR accuracy and physical Samsung S24/A36 behavior require separate validation.'],
         overall=metrics(data['results']),by_language={k:metrics(v) for k,v in groups.items()},
         by_category={k:metrics(v) for k,v in categories.items()})
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('input',type=Path);parser.add_argument('--output',type=Path,required=True);args=parser.parse_args()
-    args.output.write_text(json.dumps(summarize(json.loads(args.input.read_text())),ensure_ascii=False,indent=2)+'\n')
+    parser=argparse.ArgumentParser();parser.add_argument('input',type=Path);parser.add_argument('--output',type=Path,required=True);parser.add_argument('--models-retrained',action='store_true');args=parser.parse_args()
+    args.output.write_text(json.dumps(summarize(json.loads(args.input.read_text()),args.models_retrained),ensure_ascii=False,indent=2)+'\n')
     print(args.output.read_text())

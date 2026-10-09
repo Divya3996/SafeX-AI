@@ -151,8 +151,8 @@ class IntentScanRepository internal constructor(
         var modelStatus = "Text classifier unavailable; local rules active"
         textModel.getOrNull()?.let { model ->
             val probability = if (signals.classifierInput.isBlank()) 0f else model.predict(signals.classifierInput)
-            modelStatus = "On-device text classifier • synthetic prototype"
-            if (probability >= 0.60f && signals.modelWarningEligible) {
+            modelStatus = if (model.usesResearchFeatures) "On-device text classifier • limited research coverage" else "On-device text classifier • synthetic prototype"
+            if ((probability >= model.warningThreshold && signals.modelWarningEligible) || model.canWarnWithoutAction(signals.classifierInput, probability)) {
                 score = max(score, 35f)
                 reasons += "Local text classifier detected patterns associated with scam requests"
             }

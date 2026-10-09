@@ -1,0 +1,37 @@
+SafeX AI 1.7 research model data attribution
+
+Mishra, Sandhya; Soni, Devpriya (2022). SMS PHISHING DATASET FOR MACHINE LEARNING AND PATTERN RECOGNITION. Mendeley Data V1. DOI: 10.17632/f45bkkt8pr.1. https://data.mendeley.com/datasets/f45bkkt8pr/1
+
+Almeida, T.; Hidalgo, J. (2011). SMS Spam Collection. UCI Machine Learning Repository. DOI: 10.24432/C5CC84. https://archive.ics.uci.edu/dataset/228/sms+spam+collection
+
+Prasad, A.; Chandra, S. (2024). PhiUSIIL Phishing URL Dataset. UCI Machine Learning Repository. DOI: 10.1016/j.cose.2023.103545. https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset
+
+The above datasets are licensed CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Changes: extracted local model features, masked text identifiers, deduplicated/grouped partitions, selected ham/smishing labels, bounded URL sample, trained model weights, synthetic multilingual augmentation. Source authors do not endorse SafeX AI. This is limited research coverage, not all current fraud or certified accuracy.
+
+Phishing.Database reported URL snapshot, retrieved 2026-10-09. https://github.com/Phishing-Database/Phishing.Database
+The following license notice is included for the feed-derived URL candidate:
+
+MIT License
+
+Copyright (c) 2018-2025 Mitchell Krog - github.com/mitchellkrogza
+Copyright (c) 2018-2025 Nissar Chababy - github.com/funilrys
+Copyright (c) 2018-2025 Phishing.Database Contributors - github.com/Phishing-Database
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

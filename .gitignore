@@ -33,3 +33,10 @@ Thumbs.db
 models/cache/
 .url-training-venv/
 android-app/app/src/androidTest/assets/native-url-evaluation.json
+
+# Chrome extension dependencies, generated packages and private browser profiles
+chrome-extension/node_modules/
+chrome-extension/dist/
+chrome-extension/release/
+chrome-extension/test-results/
+chrome-extension/.browser-profile/

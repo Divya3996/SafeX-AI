@@ -1,0 +1,360 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.7/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+> Task :agents:preBuild UP-TO-DATE
+> Task :agents:preDebugBuild UP-TO-DATE
+> Task :agents:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :agents:generateDebugBuildConfig UP-TO-DATE
+> Task :agents:generateDebugResValues UP-TO-DATE
+> Task :agents:generateDebugResources UP-TO-DATE
+> Task :agents:packageDebugResources UP-TO-DATE
+> Task :agents:parseDebugLocalResources UP-TO-DATE
+> Task :agents:generateDebugRFile UP-TO-DATE
+> Task :core:preBuild UP-TO-DATE
+> Task :core:preDebugBuild UP-TO-DATE
+> Task :core:generateDebugResValues UP-TO-DATE
+> Task :core:generateDebugResources UP-TO-DATE
+> Task :core:packageDebugResources UP-TO-DATE
+> Task :core:parseDebugLocalResources UP-TO-DATE
+> Task :core:generateDebugRFile UP-TO-DATE
+> Task :core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:kspDebugKotlin
+> Task :core:compileDebugKotlin
+> Task :core:javaPreCompileDebug UP-TO-DATE
+> Task :core:compileDebugJavaWithJavac UP-TO-DATE
+> Task :core:transformDebugClassesWithAsm UP-TO-DATE
+> Task :core:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :agents:kspDebugKotlin UP-TO-DATE
+> Task :agents:compileDebugKotlin UP-TO-DATE
+> Task :agents:javaPreCompileDebug UP-TO-DATE
+> Task :agents:compileDebugJavaWithJavac UP-TO-DATE
+> Task :core:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :agents:transformDebugClassesWithAsm UP-TO-DATE
+> Task :agents:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :agents:processDebugJavaRes UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :agents:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :agents:compileDebugLibraryResources UP-TO-DATE
+> Task :agents:writeDebugAarMetadata UP-TO-DATE
+> Task :core:writeDebugAarMetadata UP-TO-DATE
+> Task :services:preBuild UP-TO-DATE
+> Task :services:preDebugBuild UP-TO-DATE
+> Task :services:writeDebugAarMetadata UP-TO-DATE
+> Task :ui:preBuild UP-TO-DATE
+> Task :ui:preDebugBuild UP-TO-DATE
+> Task :ui:writeDebugAarMetadata UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :services:generateDebugResValues UP-TO-DATE
+> Task :services:generateDebugResources UP-TO-DATE
+> Task :services:packageDebugResources UP-TO-DATE
+> Task :ui:generateDebugResValues UP-TO-DATE
+> Task :ui:generateDebugResources UP-TO-DATE
+> Task :ui:packageDebugResources UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :agents:extractDeepLinksDebug UP-TO-DATE
+> Task :agents:processDebugManifest UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :core:extractDeepLinksDebug UP-TO-DATE
+> Task :core:processDebugManifest UP-TO-DATE
+> Task :services:extractDeepLinksDebug UP-TO-DATE
+> Task :services:processDebugManifest UP-TO-DATE
+> Task :ui:extractDeepLinksDebug UP-TO-DATE
+> Task :ui:processDebugManifest UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :core:compileDebugLibraryResources UP-TO-DATE
+> Task :services:compileDebugLibraryResources UP-TO-DATE
+> Task :services:parseDebugLocalResources UP-TO-DATE
+> Task :services:generateDebugRFile UP-TO-DATE
+> Task :ui:compileDebugLibraryResources UP-TO-DATE
+> Task :ui:parseDebugLocalResources UP-TO-DATE
+> Task :ui:generateDebugRFile UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :services:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :services:kspDebugKotlin UP-TO-DATE
+> Task :services:compileDebugKotlin UP-TO-DATE
+> Task :services:javaPreCompileDebug UP-TO-DATE
+> Task :services:compileDebugJavaWithJavac UP-TO-DATE
+> Task :services:transformDebugClassesWithAsm UP-TO-DATE
+> Task :services:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :ui:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :ui:generateDebugBuildConfig UP-TO-DATE
+> Task :ui:kspDebugKotlin UP-TO-DATE
+> Task :ui:compileDebugKotlin UP-TO-DATE
+> Task :ui:javaPreCompileDebug UP-TO-DATE
+> Task :ui:compileDebugJavaWithJavac UP-TO-DATE
+> Task :ui:transformDebugClassesWithAsm UP-TO-DATE
+> Task :ui:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :app:kspDebugKotlin UP-TO-DATE
+> Task :app:compileDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :services:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :ui:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :app:hiltAggregateDepsDebug UP-TO-DATE
+> Task :app:hiltJavaCompileDebug UP-TO-DATE
+> Task :app:transformDebugClassesWithAsm UP-TO-DATE
+> Task :app:bundleDebugClassesToRuntimeJar UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:processDebugJavaRes UP-TO-DATE
+> Task :app:bundleDebugClassesToCompileJar UP-TO-DATE
+> Task :app:kspDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:hiltAggregateDepsDebugUnitTest UP-TO-DATE
+> Task :app:hiltJavaCompileDebugUnitTest NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes UP-TO-DATE
+> Task :app:transformDebugUnitTestClassesWithAsm
+> Task :core:processDebugJavaRes UP-TO-DATE
+> Task :services:processDebugJavaRes UP-TO-DATE
+> Task :ui:processDebugJavaRes UP-TO-DATE
+> Task :app:testDebugUnitTest
+> Task :core:preDebugUnitTestBuild UP-TO-DATE
+> Task :core:generateDebugUnitTestStubRFile UP-TO-DATE
+> Task :core:kspDebugUnitTestKotlin
+> Task :core:compileDebugUnitTestKotlin
+> Task :core:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :core:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :core:hiltAggregateDepsDebugUnitTest UP-TO-DATE
+> Task :core:hiltJavaCompileDebugUnitTest NO-SOURCE
+> Task :core:processDebugUnitTestJavaRes UP-TO-DATE
+> Task :core:transformDebugUnitTestClassesWithAsm
+> Task :core:testDebugUnitTest
+> Task :agents:preDebugUnitTestBuild UP-TO-DATE
+> Task :agents:generateDebugUnitTestStubRFile UP-TO-DATE
+> Task :agents:kspDebugUnitTestKotlin
+
+> Task :agents:compileDebugUnitTestKotlin
+w: file:///home/viyat/Downloads/SafeX%20AI/android-app/agents/src/test/java/com/sentinel/ai/agents/whatsapp/WhatsAppAgentCoordinatorTest.kt:92:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+w: file:///home/viyat/Downloads/SafeX%20AI/android-app/agents/src/test/java/com/sentinel/ai/agents/whatsapp/WhatsAppAgentCoordinatorTest.kt:121:9 This declaration needs opt-in. Its usage should be marked with '@kotlinx.coroutines.ExperimentalCoroutinesApi' or '@OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)'
+
+> Task :agents:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :agents:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :agents:hiltAggregateDepsDebugUnitTest UP-TO-DATE
+> Task :agents:hiltJavaCompileDebugUnitTest NO-SOURCE
+> Task :agents:processDebugUnitTestJavaRes UP-TO-DATE
+> Task :agents:transformDebugUnitTestClassesWithAsm
+> Task :agents:testDebugUnitTest
+> Task :ui:preDebugUnitTestBuild UP-TO-DATE
+> Task :ui:generateDebugUnitTestStubRFile UP-TO-DATE
+> Task :ui:kspDebugUnitTestKotlin
+> Task :ui:compileDebugUnitTestKotlin
+> Task :ui:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :ui:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :ui:hiltAggregateDepsDebugUnitTest UP-TO-DATE
+> Task :ui:hiltJavaCompileDebugUnitTest NO-SOURCE
+> Task :ui:processDebugUnitTestJavaRes UP-TO-DATE
+> Task :ui:transformDebugUnitTestClassesWithAsm
+> Task :ui:testDebugUnitTest
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :agents:mergeDebugShaders UP-TO-DATE
+> Task :agents:compileDebugShaders NO-SOURCE
+> Task :agents:generateDebugAssets UP-TO-DATE
+> Task :agents:packageDebugAssets UP-TO-DATE
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :core:mergeDebugShaders UP-TO-DATE
+> Task :core:compileDebugShaders NO-SOURCE
+> Task :core:generateDebugAssets UP-TO-DATE
+> Task :core:packageDebugAssets UP-TO-DATE
+> Task :services:mergeDebugShaders UP-TO-DATE
+> Task :services:compileDebugShaders NO-SOURCE
+> Task :services:generateDebugAssets UP-TO-DATE
+> Task :services:packageDebugAssets UP-TO-DATE
+> Task :ui:mergeDebugShaders UP-TO-DATE
+> Task :ui:compileDebugShaders NO-SOURCE
+> Task :ui:generateDebugAssets UP-TO-DATE
+> Task :ui:packageDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :app:desugarDebugFileDependencies FROM-CACHE
+> Task :app:dexBuilderDebug
+> Task :app:mergeDebugGlobalSynthetics FROM-CACHE
+> Task :app:mergeDebugJavaResource
+> Task :app:checkDebugDuplicateClasses
+> Task :app:mergeDebugStartupProfile UP-TO-DATE
+> Task :app:mergeExtDexDebug FROM-CACHE
+> Task :services:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :agents:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :ui:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :core:bundleLibRuntimeToDirDebug
+> Task :app:mergeLibDexDebug
+> Task :app:mergeProjectDexDebug
+> Task :agents:mergeDebugJniLibFolders UP-TO-DATE
+> Task :agents:mergeDebugNativeLibs NO-SOURCE
+> Task :agents:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders
+> Task :core:mergeDebugJniLibFolders UP-TO-DATE
+> Task :core:mergeDebugNativeLibs NO-SOURCE
+> Task :core:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :services:mergeDebugJniLibFolders UP-TO-DATE
+> Task :services:mergeDebugNativeLibs NO-SOURCE
+> Task :services:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :ui:mergeDebugJniLibFolders UP-TO-DATE
+> Task :ui:mergeDebugNativeLibs NO-SOURCE
+> Task :ui:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :app:mergeDebugNativeLibs
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libbarhopper_v3.so, libdatastore_shared_counter.so, libimage_processing_util_jni.so, libjpeg.so, libleptonica.so, libmlkit_google_ocr_pipeline.so, libpngx.so, libtensorflowlite_jni.so, libtesseract.so.
+
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect
+> Task :app:assembleDebug
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:processDebugAndroidTestManifest
+> Task :app:generateDebugAndroidTestBuildConfig UP-TO-DATE
+> Task :app:checkDebugAndroidTestAarMetadata
+> Task :app:generateDebugAndroidTestResValues UP-TO-DATE
+> Task :app:mapDebugAndroidTestSourceSetPaths
+> Task :app:generateDebugAndroidTestResources FROM-CACHE
+> Task :app:mergeDebugAndroidTestResources FROM-CACHE
+> Task :app:processDebugAndroidTestResources FROM-CACHE
+> Task :app:kspDebugAndroidTestKotlin
+> Task :app:compileDebugAndroidTestKotlin
+> Task :app:javaPreCompileDebugAndroidTest FROM-CACHE
+> Task :app:compileDebugAndroidTestJavaWithJavac
+> Task :app:mergeDebugAndroidTestShaders
+> Task :app:compileDebugAndroidTestShaders NO-SOURCE
+> Task :app:generateDebugAndroidTestAssets UP-TO-DATE
+> Task :app:mergeDebugAndroidTestAssets
+> Task :app:compressDebugAndroidTestAssets FROM-CACHE
+> Task :app:desugarDebugAndroidTestFileDependencies FROM-CACHE
+> Task :app:hiltAggregateDepsDebugAndroidTest UP-TO-DATE
+> Task :app:hiltJavaCompileDebugAndroidTest NO-SOURCE
+> Task :app:transformDebugAndroidTestClassesWithAsm
+> Task :app:dexBuilderDebugAndroidTest FROM-CACHE
+> Task :app:mergeDebugAndroidTestGlobalSynthetics FROM-CACHE
+> Task :app:processDebugAndroidTestJavaRes
+> Task :app:mergeDebugAndroidTestJavaResource
+> Task :app:checkDebugAndroidTestDuplicateClasses
+> Task :app:mergeExtDexDebugAndroidTest FROM-CACHE
+> Task :app:mergeLibDexDebugAndroidTest FROM-CACHE
+> Task :app:mergeProjectDexDebugAndroidTest FROM-CACHE
+> Task :app:mergeDebugAndroidTestJniLibFolders
+> Task :app:mergeDebugAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripDebugAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningDebugAndroidTest
+> Task :app:writeDebugAndroidTestSigningConfigVersions
+> Task :app:packageDebugAndroidTest
+> Task :app:createDebugAndroidTestApkListingFileRedirect
+> Task :app:assembleDebugAndroidTest
+> Task :agents:stripDebugDebugSymbols NO-SOURCE
+> Task :agents:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :agents:extractDebugAnnotations
+> Task :agents:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :agents:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :agents:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :agents:prepareDebugArtProfile UP-TO-DATE
+> Task :agents:prepareLintJarForPublish UP-TO-DATE
+> Task :agents:mergeDebugJavaResource UP-TO-DATE
+> Task :agents:syncDebugLibJars UP-TO-DATE
+> Task :agents:bundleDebugLocalLintAar UP-TO-DATE
+> Task :core:stripDebugDebugSymbols NO-SOURCE
+> Task :core:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :core:extractDebugAnnotations
+> Task :core:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :core:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :core:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :core:prepareDebugArtProfile UP-TO-DATE
+> Task :core:prepareLintJarForPublish UP-TO-DATE
+> Task :core:mergeDebugJavaResource UP-TO-DATE
+> Task :core:syncDebugLibJars
+> Task :core:bundleDebugLocalLintAar
+> Task :agents:createFullJarDebug UP-TO-DATE
+> Task :agents:preDebugAndroidTestBuild UP-TO-DATE
+> Task :agents:generateDebugAndroidTestResValues UP-TO-DATE
+> Task :agents:writeDebugLintModelMetadata UP-TO-DATE
+> Task :core:createFullJarDebug
+> Task :core:writeDebugLintModelMetadata UP-TO-DATE
+> Task :agents:generateDebugAndroidTestLintModel
+> Task :agents:extractProguardFiles UP-TO-DATE
+> Task :core:extractProguardFiles UP-TO-DATE
+> Task :core:generateDebugLintModel
+> Task :agents:generateDebugLintModel
+> Task :agents:generateDebugUnitTestLintModel
+> Task :core:lintAnalyzeDebug
+> Task :agents:lintAnalyzeDebug
+> Task :agents:lintAnalyzeDebugAndroidTest
+> Task :agents:lintAnalyzeDebugUnitTest
+> Task :services:stripDebugDebugSymbols NO-SOURCE
+> Task :services:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :services:extractDebugAnnotations
+> Task :services:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :services:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :services:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :services:prepareDebugArtProfile UP-TO-DATE
+> Task :services:prepareLintJarForPublish UP-TO-DATE
+> Task :services:mergeDebugJavaResource UP-TO-DATE
+> Task :services:syncDebugLibJars UP-TO-DATE
+> Task :services:bundleDebugLocalLintAar UP-TO-DATE
+> Task :ui:stripDebugDebugSymbols NO-SOURCE
+> Task :ui:copyDebugJniLibsProjectAndLocalJars UP-TO-DATE
+> Task :ui:extractDebugAnnotations
+> Task :ui:extractDeepLinksForAarDebug UP-TO-DATE
+> Task :ui:mergeDebugGeneratedProguardFiles UP-TO-DATE
+> Task :ui:mergeDebugConsumerProguardFiles UP-TO-DATE
+> Task :ui:prepareDebugArtProfile UP-TO-DATE
+> Task :ui:prepareLintJarForPublish UP-TO-DATE
+> Task :ui:mergeDebugJavaResource UP-TO-DATE
+> Task :ui:syncDebugLibJars UP-TO-DATE
+> Task :ui:bundleDebugLocalLintAar UP-TO-DATE
+> Task :services:createFullJarDebug UP-TO-DATE
+> Task :services:writeDebugLintModelMetadata UP-TO-DATE
+> Task :ui:createFullJarDebug UP-TO-DATE
+> Task :ui:writeDebugLintModelMetadata UP-TO-DATE
+> Task :app:generateDebugAndroidTestLintModel
+> Task :app:extractProguardFiles
+> Task :services:extractProguardFiles UP-TO-DATE
+> Task :services:generateDebugLintModel
+> Task :ui:extractProguardFiles UP-TO-DATE
+> Task :ui:generateDebugLintModel
+> Task :app:generateDebugLintReportModel
+> Task :app:generateDebugUnitTestLintModel
+> Task :services:lintAnalyzeDebug
+> Task :ui:lintAnalyzeDebug
+> Task :app:lintAnalyzeDebug
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:lintAnalyzeDebugUnitTest
+> Task :core:preDebugAndroidTestBuild UP-TO-DATE
+> Task :core:generateDebugAndroidTestResValues UP-TO-DATE
+> Task :core:generateDebugAndroidTestLintModel
+> Task :core:generateDebugUnitTestLintModel
+> Task :core:lintAnalyzeDebugAndroidTest
+> Task :core:lintAnalyzeDebugUnitTest
+> Task :services:preDebugAndroidTestBuild UP-TO-DATE
+> Task :services:generateDebugAndroidTestResValues UP-TO-DATE
+> Task :services:generateDebugAndroidTestLintModel
+> Task :services:preDebugUnitTestBuild UP-TO-DATE
+> Task :services:generateDebugUnitTestLintModel
+> Task :services:lintAnalyzeDebugAndroidTest
+> Task :services:lintAnalyzeDebugUnitTest
+> Task :ui:preDebugAndroidTestBuild UP-TO-DATE
+> Task :ui:generateDebugAndroidTestResValues UP-TO-DATE
+> Task :ui:generateDebugAndroidTestLintModel
+> Task :ui:generateDebugUnitTestLintModel
+> Task :ui:lintAnalyzeDebugAndroidTest
+> Task :ui:lintAnalyzeDebugUnitTest
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///home/viyat/Downloads/SafeX%20AI/android-app/app/build/reports/lint-results-debug.html
+
+> Task :app:lintDebug
+
+BUILD SUCCESSFUL in 7m 21s
+285 actionable tasks: 92 executed, 14 from cache, 179 up-to-date

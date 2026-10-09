@@ -1,0 +1,89 @@
+
+com.sentinel.ai.features.FloatingAssistantUiTest:..
+Error in clipboardIsReadOnlyWhenTheUserChoosesPaste(com.sentinel.ai.features.FloatingAssistantUiTest):
+androidx.compose.ui.test.ComposeTimeoutException: Condition still not satisfied after 5000 ms
+	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitUntil(ComposeUiTest.android.kt:441)
+	at androidx.compose.ui.test.junit4.AndroidComposeTestRule.waitUntil(AndroidComposeTestRule.android.kt:306)
+	at com.sentinel.ai.features.FloatingAssistantUiTest.clipboardIsReadOnlyWhenTheUserChoosesPaste(FloatingAssistantUiTest.kt:85)
+..
+com.sentinel.ai.features.FloatingCaptureEndToEndTest:
+Error in availableCaptureScopeReachesPrivateCropAndRecognizedText(com.sentinel.ai.features.FloatingCaptureEndToEndTest):
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.openCapture(FloatingCaptureEndToEndTest.kt:86)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.availableCaptureScopeReachesPrivateCropAndRecognizedText(FloatingCaptureEndToEndTest.kt:142)
+
+Error in declinedSystemCaptureReturnsToSetupWithoutSaving(com.sentinel.ai.features.FloatingCaptureEndToEndTest):
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.openCapture(FloatingCaptureEndToEndTest.kt:86)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.declinedSystemCaptureReturnsToSetupWithoutSaving(FloatingCaptureEndToEndTest.kt:131)
+
+Error in realScreenCaptureCropAndOcrReachThePrivateRiskResult(com.sentinel.ai.features.FloatingCaptureEndToEndTest):
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.openCapture(FloatingCaptureEndToEndTest.kt:86)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.realScreenCaptureCropAndOcrReachThePrivateRiskResult(FloatingCaptureEndToEndTest.kt:93)
+
+Error in outsideTapAndBackDismissTheMenuWithoutActivatingTheSource(com.sentinel.ai.features.FloatingCaptureEndToEndTest):
+java.lang.NullPointerException
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.outsideTapAndBackDismissTheMenuWithoutActivatingTheSource(FloatingCaptureEndToEndTest.kt:185)
+
+Error in landscapeCaptureUsesRotatedBoundsAndKeepsPrimaryActionVisible(com.sentinel.ai.features.FloatingCaptureEndToEndTest):
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.openCapture(FloatingCaptureEndToEndTest.kt:86)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.landscapeCaptureUsesRotatedBoundsAndKeepsPrimaryActionVisible(FloatingCaptureEndToEndTest.kt:168)
+
+
+Time: 86.051
+There were 6 failures:
+1) clipboardIsReadOnlyWhenTheUserChoosesPaste(com.sentinel.ai.features.FloatingAssistantUiTest)
+androidx.compose.ui.test.ComposeTimeoutException: Condition still not satisfied after 5000 ms
+	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitUntil(ComposeUiTest.android.kt:441)
+	at androidx.compose.ui.test.junit4.AndroidComposeTestRule.waitUntil(AndroidComposeTestRule.android.kt:306)
+	at com.sentinel.ai.features.FloatingAssistantUiTest.clipboardIsReadOnlyWhenTheUserChoosesPaste(FloatingAssistantUiTest.kt:85)
+2) availableCaptureScopeReachesPrivateCropAndRecognizedText(com.sentinel.ai.features.FloatingCaptureEndToEndTest)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.openCapture(FloatingCaptureEndToEndTest.kt:86)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.availableCaptureScopeReachesPrivateCropAndRecognizedText(FloatingCaptureEndToEndTest.kt:142)
+3) declinedSystemCaptureReturnsToSetupWithoutSaving(com.sentinel.ai.features.FloatingCaptureEndToEndTest)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.openCapture(FloatingCaptureEndToEndTest.kt:86)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.declinedSystemCaptureReturnsToSetupWithoutSaving(FloatingCaptureEndToEndTest.kt:131)
+4) realScreenCaptureCropAndOcrReachThePrivateRiskResult(com.sentinel.ai.features.FloatingCaptureEndToEndTest)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.openCapture(FloatingCaptureEndToEndTest.kt:86)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.realScreenCaptureCropAndOcrReachThePrivateRiskResult(FloatingCaptureEndToEndTest.kt:93)
+5) outsideTapAndBackDismissTheMenuWithoutActivatingTheSource(com.sentinel.ai.features.FloatingCaptureEndToEndTest)
+java.lang.NullPointerException
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.outsideTapAndBackDismissTheMenuWithoutActivatingTheSource(FloatingCaptureEndToEndTest.kt:185)
+6) landscapeCaptureUsesRotatedBoundsAndKeepsPrimaryActionVisible(com.sentinel.ai.features.FloatingCaptureEndToEndTest)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.openCapture(FloatingCaptureEndToEndTest.kt:86)
+	at com.sentinel.ai.features.FloatingCaptureEndToEndTest.landscapeCaptureUsesRotatedBoundsAndKeepsPrimaryActionVisible(FloatingCaptureEndToEndTest.kt:168)
+
+FAILURES!!!
+Tests run: 10,  Failures: 6
+
+

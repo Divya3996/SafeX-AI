@@ -35,6 +35,7 @@ class FloatingAssistantUiTest {
         try {
             assertFalse(ThreatJournal.scanResults.value.any { it.id == id })
             compose.onNodeWithText("Add context").performScrollTo().performClick()
+            compose.waitUntil(5000) { compose.onAllNodesWithText("Does it ask you to share an OTP, PIN or password?").fetchSemanticsNodes().isNotEmpty() }
             compose.onNodeWithText("Does it ask you to share an OTP, PIN or password?").performScrollTo().performClick()
             compose.onNodeWithText("Update risk review").performScrollTo().performClick()
             compose.waitUntil(5000) { model.state.value.result?.contextReview?.asksForSecret == true }
