@@ -69,6 +69,7 @@ fun DashboardScreen(
     onNavigateToScanner: () -> Unit = {},
     onIncidentHelp: () -> Unit = {},
     onFeatureGuide: () -> Unit = {},
+    onStory: () -> Unit = {},
     viewModel: DashboardViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
@@ -86,6 +87,7 @@ fun DashboardScreen(
     }
 
     DashboardContent(
+        onStory = onStory,
         onFeatureGuide = onFeatureGuide,
         onIncidentHelp = onIncidentHelp,
         uiState = uiState,
@@ -114,7 +116,8 @@ fun DashboardContent(
     senderPresentationResolver: (String?, String?) -> SenderPresentation,
     modifier: Modifier = Modifier,
     onIncidentHelp: () -> Unit = {},
-    onFeatureGuide: () -> Unit = {}
+    onFeatureGuide: () -> Unit = {},
+    onStory: () -> Unit = {}
 ) {
     val status = dashboardStatus(uiState.protection)
     val display by com.sentinel.ai.core.feature.DisplayPreferences.settings.collectAsState()
@@ -179,6 +182,11 @@ fun DashboardContent(
 
         Column {
             PremiumPanel {
+                DashboardActionRow(
+                    title = "Review the whole situation", description = "Connect messages, screenshots, links and QR clues privately",
+                    icon = Icons.Filled.Shield, onClick = onStory
+                )
+                HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
                 DashboardActionRow(
                     title = "Analyze content",
                     description = "Check a message, link, screenshot or QR code",

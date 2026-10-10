@@ -896,3 +896,127 @@ Find and review saved checks|सहेजी जाँच खोजें और
 Search local history or filter warnings. Open a record to review reasons, destinations and context questions. Delete all asks for confirmation. Reviewing a record never opens its link automatically.|डिवाइस के इतिहास में खोजें या केवल चेतावनियाँ देखें। रिकॉर्ड खोलकर कारण, गंतव्य और अतिरिक्त जानकारी के प्रश्न पढ़ें। सब मिटाने से पहले पुष्टि माँगी जाती है। रिकॉर्ड देखने से उसका लिंक खुद नहीं खुलता।|ઉપકરણના ઇતિહાસમાં શોધો કે ફક્ત ચેતવણીઓ જુઓ. રેકોર્ડ ખોલીને કારણો, ગંતવ્ય અને વધારાની માહિતીના પ્રશ્નો વાંચો. બધું કાઢતાં પહેલાં પુષ્ટિ માગવામાં આવે છે. રેકોર્ડ જોવાથી તેની લિંક જાતે ખૂલતી નથી.
 Review incoming-message alerts|नए संदेशों की चेतावनियाँ देखें|આવતા સંદેશોની ચેતવણીઓ જુઓ
 Supported notification checks appear here when protection and Android access are enabled. Open an alert to read the explanation and full details. An empty list does not prove that every message was checked.|सुरक्षा और Android पहुँच चालू होने पर समर्थित सूचनाओं की जाँच यहाँ दिखती है। चेतावनी खोलकर कारण और पूरा विवरण पढ़ें। खाली सूची यह प्रमाणित नहीं करती कि हर संदेश जाँचा गया था।|સુરક્ષા અને Android પરવાનગી ચાલુ હોય ત્યારે સમર્થિત સૂચનાઓની તપાસ અહીં દેખાય છે. ચેતવણી ખોલીને કારણ અને સંપૂર્ણ વિગતો વાંચો. ખાલી યાદી એ પુરાવો નથી કે દરેક સંદેશ તપાસાયો હતો.
+
+# Scam Story Mode — version 1.9
+Scam Story Mode|स्कैम स्टोरी मोड|સ્કેમ સ્ટોરી મોડ
+Review the whole situation|पूरी स्थिति की समीक्षा करें|આખી પરિસ્થિતિની સમીક્ષા કરો
+Connect messages, screenshots, links and QR clues privately|संदेश, स्क्रीनशॉट, लिंक और QR संकेत निजी रूप से जोड़ें|સંદેશ, સ્ક્રીનશૉટ, લિંક અને QR સંકેતો ખાનગી રીતે જોડો
+Connect the whole situation|पूरी स्थिति के संकेत जोड़ें|આખી પરિસ્થિતિના સંકેતો જોડો
+Add reviewed messages, screenshots, links or QR content to a private case. Arrange their order and tap a finding to see supporting evidence. Save explicitly for encrypted storage; use Help after a scam for next steps.|समीक्षित संदेश, स्क्रीनशॉट, लिंक या QR सामग्री निजी केस में जोड़ें। क्रम तय करें और प्रमाण देखने के लिए निष्कर्ष पर टैप करें। एन्क्रिप्टेड संग्रह के लिए खुद सेव करें; अगले कदमों के लिए स्कैम के बाद सहायता खोलें।|સમીક્ષા કરેલા સંદેશ, સ્ક્રીનશૉટ, લિંક અથવા QR સામગ્રી ખાનગી કેસમાં ઉમેરો. ક્રમ ગોઠવો અને આધારભૂત પુરાવો જોવા તારણ પર ટૅપ કરો. એન્ક્રિપ્ટેડ સંગ્રહ માટે જાતે સાચવો; આગળના પગલાં માટે છેતરપિંડી પછીની મદદ ખોલો.
+Connect the clues|संकेतों को जोड़ें|સંકેતો જોડો
+Add only items from the same situation. Review extracted content, arrange the order, then inspect the linked reasons. A low-concern result is not a safety guarantee.|एक ही स्थिति से जुड़ी सामग्री जोड़ें। निकाली गई सामग्री की समीक्षा करें, क्रम तय करें और जुड़े कारण देखें। कम चिंता वाला परिणाम सुरक्षा की गारंटी नहीं है।|એક જ પરિસ્થિતિની સામગ્રી ઉમેરો. કાઢેલી સામગ્રીની સમીક્ષા કરો, ક્રમ ગોઠવો અને જોડાયેલા કારણો તપાસો. ઓછી ચિંતાનું પરિણામ સલામતીની ખાતરી નથી.
+Your draft stays in memory. Leaving this screen for two minutes or locking the phone clears it. Save explicitly to keep an encrypted case.|ड्राफ्ट मेमोरी में रहता है। इस स्क्रीन से दो मिनट दूर रहने या फोन लॉक करने पर यह मिट जाता है। एन्क्रिप्टेड केस रखने के लिए खुद सेव करें।|ડ્રાફ્ટ મેમરીમાં રહે છે. આ સ્ક્રીનથી બે મિનિટ દૂર રહેતાં અથવા ફોન લૉક કરતાં તે સાફ થાય છે. એન્ક્રિપ્ટેડ કેસ રાખવા જાતે સાચવો.
+Private situation|निजी स्थिति|ખાનગી પરિસ્થિતિ
+More context needed|और संदर्भ चाहिए|વધુ સંદર્ભ જરૂરી છે
+Review this situation|इस स्थिति की समीक्षा करें|આ પરિસ્થિતિની સમીક્ષા કરો
+High concern|गंभीर चिंता|ગંભીર ચિંતા
+On device • Private draft|डिवाइस पर • निजी ड्राफ्ट|ઉપકરણ પર • ખાનગી ડ્રાફ્ટ
+Saved with on-device encryption|डिवाइस पर एन्क्रिप्ट करके सेव किया गया|ઉપકરણ પર એન્ક્રિપ્ટ કરીને સાચવ્યું
+Synthetic example|काल्पनिक उदाहरण|કૃત્રિમ ઉદાહરણ
+Synthetic example • Actual detector|काल्पनिक उदाहरण • वास्तविक डिटेक्टर|કૃત્રિમ ઉદાહરણ • વાસ્તવિક ડિટેક્ટર
+Name this case|इस केस का नाम रखें|આ કેસનું નામ આપો
+Case name|केस का नाम|કેસનું નામ
+Start a new private case|नया निजी केस शुरू करें|નવો ખાનગી કેસ શરૂ કરો
+No supported story pattern yet. Add relevant evidence and verify independently.|अभी कोई समर्थित क्रमिक स्कैम पैटर्न नहीं मिला। संबंधित प्रमाण जोड़ें और स्वतंत्र रूप से सत्यापित करें।|હજુ કોઈ આધારભૂત ક્રમિક સ્કેમ પેટર્ન મળ્યું નથી. સંબંધિત પુરાવો ઉમેરો અને સ્વતંત્ર રીતે ચકાસો.
+Tap a finding to see the exact supporting evidence.|सटीक सहायक प्रमाण देखने के लिए निष्कर्ष पर टैप करें।|ચોક્કસ આધારભૂત પુરાવો જોવા તારણ પર ટૅપ કરો.
+Some checks have limited coverage. Missing evidence remains unknown.|कुछ जाँचों की कवरेज सीमित है। अनुपलब्ध प्रमाण अज्ञात रहता है।|કેટલીક તપાસની આવરી લેવાની ક્ષમતા મર્યાદિત છે. ગેરહાજર પુરાવો અજ્ઞાત રહે છે.
+Add reviewed evidence|समीक्षित प्रमाण जोड़ें|સમીક્ષા કરેલો પુરાવો ઉમેરો
+Edit and recheck evidence|प्रमाण संपादित करके फिर जाँचें|પુરાવો સુધારીને ફરી તપાસો
+Review text or decoded content|टेक्स्ट या डिकोड सामग्री की समीक्षा करें|લખાણ અથવા ડિકોડ કરેલી સામગ્રીની સમીક્ષા કરો
+QR content|QR सामग्री|QR સામગ્રી
+Floating review|फ्लोटिंग समीक्षा|ફ્લોટિંગ સમીક્ષા
+Scan result|जाँच परिणाम|તપાસનું પરિણામ
+Choose QR image|QR की तस्वीर चुनें|QR ચિત્ર પસંદ કરો
+Use floating capture|फ्लोटिंग कैप्चर इस्तेमाल करें|ફ્લોટિંગ કૅપ્ચર વાપરો
+Screenshot text cannot reveal a hidden HTML destination. OCR edits are marked in the timeline.|स्क्रीनशॉट का टेक्स्ट छिपा HTML गंतव्य नहीं दिखा सकता। OCR संपादन टाइमलाइन में चिह्नित होते हैं।|સ્ક્રીનશૉટનું લખાણ છુપાયેલું HTML ગંતવ્ય બતાવી શકતું નથી. OCR સુધારા સમયરેખામાં ચિહ્નિત થાય છે.
+Review the extracted content before adding it. Hidden link destinations are not visible in a screenshot.|जोड़ने से पहले निकाली गई सामग्री की समीक्षा करें। स्क्रीनशॉट में छिपे लिंक गंतव्य नहीं दिखते।|ઉમેરતાં પહેલાં કાઢેલી સામગ્રીની સમીક્ષા કરો. સ્ક્રીનશૉટમાં છુપાયેલા લિંક ગંતવ્યો દેખાતા નથી.
+Recognition may be incomplete. Check spelling, missing words and decoded QR content.|पहचान अधूरी हो सकती है। वर्तनी, छूटे शब्द और डिकोड QR सामग्री जाँचें।|ઓળખ અધૂરી હોઈ શકે છે. જોડણી, છૂટેલા શબ્દો અને ડિકોડ QR સામગ્રી તપાસો.
+Extracted on this device. Review text and QR content before adding it.|इस डिवाइस पर निकाला गया। जोड़ने से पहले टेक्स्ट और QR सामग्री की समीक्षा करें।|આ ઉપકરણ પર કાઢવામાં આવ્યું. ઉમેરતાં પહેલાં લખાણ અને QR સામગ્રીની સમીક્ષા કરો.
+Demo step %1$s of %2$s|डेमो चरण %1$s / %2$s|ડેમો પગલું %1$s / %2$s
+Next example message|उदाहरण का अगला संदेश|ઉદાહરણનો આગળનો સંદેશ
+Try a harmless story|हानिरहित क्रमिक उदाहरण आज़माएँ|હાનિરહિત ક્રમિક ઉદાહરણ અજમાવો
+Each example uses the actual private detector. No link or payment needs to be opened.|हर उदाहरण वास्तविक निजी डिटेक्टर इस्तेमाल करता है। कोई लिंक या भुगतान खोलने की जरूरत नहीं है।|દરેક ઉદાહરણ વાસ્તવિક ખાનગી ડિટેક્ટર વાપરે છે. કોઈ લિંક કે ચુકવણી ખોલવાની જરૂર નથી.
+Task-scam example|टास्क स्कैम का उदाहरण|ટાસ્ક સ્કેમનું ઉદાહરણ
+Legitimate comparison|वैध स्थिति से तुलना|વૈધ પરિસ્થિતિ સાથે સરખામણી
+Connected findings|जुड़े हुए निष्कर्ष|જોડાયેલાં તારણો
+View supporting evidence|सहायक प्रमाण देखें|આધારભૂત પુરાવો જુઓ
+Evidence timeline|प्रमाण की टाइमलाइन|પુરાવાની સમયરેખા
+Order is chosen by you. Times below show when items were added, not when a sender sent them.|क्रम आपने तय किया है। नीचे का समय सामग्री जोड़ने का है, भेजने वाले के भेजने का नहीं।|ક્રમ તમે નક્કી કર્યો છે. નીચેનો સમય સામગ્રી ઉમેરવાનો છે, મોકલનારે મોકલ્યાનો નથી.
+Reviewed text was edited|समीक्षित टेक्स्ट संपादित किया गया|સમીક્ષા કરેલું લખાણ સુધારાયું
+View full evidence|पूरा प्रमाण देखें|સંપૂર્ણ પુરાવો જુઓ
+Move earlier|पहले रखें|પહેલાં મૂકો
+Move later|बाद में रखें|પછી મૂકો
+Reviewed evidence|समीक्षित प्रमाण|સમીક્ષા કરેલો પુરાવો
+Individual check|अलग सामग्री की जाँच|અલગ સામગ્રીની તપાસ
+Unverified payment details|असत्यापित भुगतान विवरण|ચકાસ્યા વિનાની ચુકવણીની વિગતો
+Save encrypted case|एन्क्रिप्टेड केस सेव करें|એન્ક્રિપ્ટેડ કેસ સાચવો
+Preview redacted summary|निजी विवरण हटाए सारांश का पूर्वावलोकन|ખાનગી વિગતો દૂર કરેલા સારાંશનું પૂર્વાવલોકન
+Offline checks cannot verify identity, follow hidden redirects or guarantee recovery. Use an independent trusted channel before acting.|ऑफलाइन जाँच पहचान सत्यापित नहीं कर सकती, छिपे रीडायरेक्ट नहीं खोल सकती और रिकवरी की गारंटी नहीं दे सकती। कदम उठाने से पहले स्वतंत्र विश्वसनीय माध्यम इस्तेमाल करें।|ઑફલાઇન તપાસ ઓળખ ચકાસી શકતી નથી, છુપાયેલા રીડાયરેક્ટ ખોલી શકતી નથી અને રકમ પાછી મળવાની ખાતરી આપી શકતી નથી. પગલું લેતાં પહેલાં સ્વતંત્ર વિશ્વસનીય માધ્યમ વાપરો.
+Show story guide|क्रमिक समीक्षा की गाइड दिखाएँ|ક્રમિક સમીક્ષાની માર્ગદર્શિકા બતાવો
+Checking on this device…|इस डिवाइस पर जाँच जारी…|આ ઉપકરણ પર તપાસ ચાલુ…
+Saving securely…|सुरक्षित रूप से सेव हो रहा है…|સુરક્ષિત રીતે સાચવાઈ રહ્યું છે…
+Update evidence|प्रमाण अपडेट करें|પુરાવો અપડેટ કરો
+Saved cases|सेव किए गए केस|સાચવેલા કેસ
+Cases are encrypted on this device and follow your history-retention setting.|केस इस डिवाइस पर एन्क्रिप्ट हैं और आपकी इतिहास रखने की सेटिंग का पालन करते हैं।|કેસ આ ઉપકરણ પર એન્ક્રિપ્ટેડ છે અને તમારી ઇતિહાસ રાખવાની સેટિંગ અનુસરે છે.
+No saved cases|कोई सेव किया गया केस नहीं|કોઈ સાચવેલો કેસ નથી
+Some saved cases cannot be opened. You can delete saved cases to remove damaged or inaccessible data.|कुछ सेव किए केस नहीं खुल सकते। खराब या अनुपलब्ध डेटा हटाने के लिए सेव किए केस मिटा सकते हैं।|કેટલાક સાચવેલા કેસ ખોલી શકાતા નથી. ખરાબ અથવા અપ્રાપ્ય ડેટા દૂર કરવા સાચવેલા કેસ કાઢી શકો છો.
+Open case|केस खोलें|કેસ ખોલો
+Share redacted summary|निजी विवरण हटाया सारांश साझा करें|ખાનગી વિગતો દૂર કરેલો સારાંશ શેર કરો
+No sharing app is available.|साझा करने वाला कोई ऐप उपलब्ध नहीं है।|શેર કરવા માટે કોઈ ઍપ ઉપલબ્ધ નથી.
+Confirm your choice|अपनी पसंद की पुष्टि करें|તમારી પસંદની પુષ્ટિ કરો
+Replace the open private case? Unsaved changes and reviewed input will be discarded. Saved cases remain on this device.|खुला निजी केस बदलें? बिना सेव किए बदलाव और समीक्षित इनपुट हट जाएँगे। सेव किए केस डिवाइस पर रहेंगे।|ખુલ્લો ખાનગી કેસ બદલો? સાચવ્યા વિનાના ફેરફાર અને સમીક્ષા કરેલું ઇનપુટ દૂર થશે. સાચવેલા કેસ ઉપકરણ પર રહેશે.
+Replace the reviewed input with a chosen image? Your added evidence stays in the case.|समीक्षित इनपुट चुनी तस्वीर से बदलें? जोड़ा गया प्रमाण केस में रहेगा।|સમીક્ષા કરેલું ઇનપુટ પસંદ કરેલા ચિત્રથી બદલો? ઉમેરેલો પુરાવો કેસમાં રહેશે.
+Remove this evidence and recompute the case? A previously saved snapshot is unchanged until you save again.|यह प्रमाण हटाकर केस फिर जाँचें? पहले सेव की प्रति आपके फिर सेव करने तक नहीं बदलेगी।|આ પુરાવો દૂર કરીને કેસ ફરી તપાસો? પહેલાં સાચવેલી નકલ તમે ફરી સાચવો ત્યાં સુધી બદલાશે નહીં.
+Delete this encrypted saved case? The open private draft is separate.|यह एन्क्रिप्टेड सेव किया केस मिटाएँ? खुला निजी ड्राफ्ट अलग है।|આ એન્ક્રિપ્ટેડ સાચવેલો કેસ કાઢો? ખુલ્લો ખાનગી ડ્રાફ્ટ અલગ છે.
+Delete all encrypted saved cases? This cannot be undone.|सभी एन्क्रिप्टेड सेव किए केस मिटाएँ? इसे वापस नहीं लिया जा सकता।|બધા એન્ક્રિપ્ટેડ સાચવેલા કેસ કાઢો? આ પાછું ફેરવી શકાતું નથી.
+Evidence %1$s|प्रमाण %1$s|પુરાવો %1$s
+SafeX AI situation summary|SafeX AI स्थिति का सारांश|SafeX AI પરિસ્થિતિનો સારાંશ
+User-prepared guidance, not a submitted complaint or verified identity.|उपयोगकर्ता द्वारा तैयार मार्गदर्शन; जमा की गई शिकायत या सत्यापित पहचान नहीं।|વપરાશકર્તાએ તૈયાર કરેલું માર્ગદર્શન; દાખલ કરેલી ફરિયાદ અથવા ચકાસેલી ઓળખ નથી.
+Evidence count: %1$s|प्रमाण की संख्या: %1$s|પુરાવાની સંખ્યા: %1$s
+Supporting items: %1$s|सहायक सामग्री: %1$s|આધારભૂત સામગ્રી: %1$s
+Raw messages, screenshots, links, payment details and secrets are excluded.|मूल संदेश, स्क्रीनशॉट, लिंक, भुगतान विवरण और निजी रहस्य शामिल नहीं हैं।|મૂળ સંદેશ, સ્ક્રીનશૉટ, લિંક, ચુકવણીની વિગતો અને ગુપ્ત માહિતી સામેલ નથી.
+A low-concern result is not a safety guarantee. Verify through a trusted independent channel.|कम चिंता वाला परिणाम सुरक्षा की गारंटी नहीं है। विश्वसनीय स्वतंत्र माध्यम से सत्यापित करें।|ઓછી ચિંતાનું પરિણામ સલામતીની ખાતરી નથી. વિશ્વસનીય સ્વતંત્ર માધ્યમથી ચકાસો.
+Payment to unlock promised work or earnings|वादा किए काम या कमाई पाने के लिए भुगतान|વચન આપેલા કામ અથવા કમાણી મેળવવા ચુકવણી
+An earlier item describes work or earnings. A later item requires payment to unlock them. Together, these match an advance-fee or task-scam pattern.|पहली सामग्री काम या कमाई बताती है। बाद की सामग्री उसे पाने के लिए भुगतान माँगती है। मिलकर ये अग्रिम फीस या टास्क स्कैम के पैटर्न से मेल खाते हैं।|પહેલી સામગ્રી કામ અથવા કમાણી જણાવે છે. પછીની સામગ્રી તે મેળવવા ચુકવણી માંગે છે. સાથે મળીને તે આગોતરી ફી અથવા ટાસ્ક સ્કેમના પેટર્ન સાથે મેળ ખાય છે.
+Pause the payment. Verify the employer through contact details you obtained independently.|भुगतान रोकें। स्वतंत्र रूप से मिले संपर्क विवरण से नियोक्ता सत्यापित करें।|ચુકવણી રોકો. સ્વતંત્ર રીતે મેળવેલી સંપર્ક વિગતો દ્વારા નોકરીદાતાને ચકાસો.
+This pattern can be followed by another fee request. More payments do not verify the promised earnings.|इस पैटर्न के बाद दूसरी फीस माँगी जा सकती है। और भुगतान करने से वादा की कमाई सत्यापित नहीं होती।|આ પેટર્ન પછી બીજી ફી માંગવામાં આવી શકે છે. વધુ ચુકવણીથી વચન આપેલી કમાણી ચકાસાતી નથી.
+Authority claim followed by pressure and a demand|अधिकारी होने का दावा, फिर दबाव और माँग|અધિકારી હોવાનો દાવો, પછી દબાણ અને માંગ
+The case combines a claimed bank or government identity, a threat, and a later request for money, a secret or remote access. The claimed identity is not verified.|केस में बैंक या सरकार की पहचान का दावा, धमकी और बाद में पैसे, निजी रहस्य या रिमोट एक्सेस की माँग जुड़ी है। दावे की पहचान सत्यापित नहीं है।|કેસમાં બેંક અથવા સરકારની ઓળખનો દાવો, ધમકી અને પછી પૈસા, ગુપ્ત માહિતી અથવા રિમોટ ઍક્સેસની માંગ જોડાય છે. દાવો કરેલી ઓળખ ચકાસેલી નથી.
+Stop and contact the institution through its official app or an independently obtained number.|रुकें और संस्था के आधिकारिक ऐप या स्वतंत्र रूप से मिले नंबर से संपर्क करें।|રોકાઓ અને સંસ્થાની સત્તાવાર ઍપ અથવા સ્વતંત્ર રીતે મેળવેલા નંબરથી સંપર્ક કરો.
+Requests for secrecy or another transfer can follow this pattern. Verify outside this conversation.|इस पैटर्न के बाद गोपनीयता या दूसरे ट्रांसफर की माँग हो सकती है। इस बातचीत से बाहर सत्यापित करें।|આ પેટર્ન પછી ગુપ્તતા અથવા બીજા ટ્રાન્સફરની માંગ થઈ શકે છે. આ વાતચીતની બહાર ચકાસો.
+Support claim followed by remote access and a demand|सपोर्ट का दावा, फिर रिमोट एक्सेस और माँग|સપોર્ટનો દાવો, પછી રિમોટ ઍક્સેસ અને માંગ
+An earlier item claims to provide support. Later evidence asks for remote access and money or a secret. This combination needs independent verification.|पहली सामग्री सपोर्ट देने का दावा करती है। बाद का प्रमाण रिमोट एक्सेस और पैसे या निजी रहस्य माँगता है। इस संयोजन को स्वतंत्र रूप से सत्यापित करें।|પહેલી સામગ્રી સપોર્ટ આપવાનો દાવો કરે છે. પછીનો પુરાવો રિમોટ ઍક્સેસ અને પૈસા અથવા ગુપ્ત માહિતી માંગે છે. આ સંયોજન સ્વતંત્ર રીતે ચકાસવું જરૂરી છે.
+Do not grant more access. Use official support; if access was granted, open Help after a scam.|और एक्सेस न दें। आधिकारिक सपोर्ट इस्तेमाल करें; एक्सेस दिया हो तो स्कैम के बाद सहायता खोलें।|વધુ ઍક્સેસ ન આપો. સત્તાવાર સપોર્ટ વાપરો; ઍક્સેસ આપ્યો હોય તો છેતરપિંડી પછીની મદદ ખોલો.
+A request to open banking or share an OTP can follow this pattern. Do not treat remote access as identity verification.|इस पैटर्न के बाद बैंकिंग खोलने या ओटीपी साझा करने की माँग हो सकती है। रिमोट एक्सेस को पहचान का सत्यापन न मानें।|આ પેટર્ન પછી બેંકિંગ ખોલવા અથવા ઓટીપી શેર કરવાની માંગ થઈ શકે છે. રિમોટ ઍક્સેસને ઓળખની ચકાસણી ન માનો.
+Different payment addresses in this case|इस केस में अलग भुगतान पते|આ કેસમાં અલગ ચુકવણીનાં સરનામાં
+The submitted items contain different UPI addresses. This can be legitimate; confirm which recipient you intended before paying. QR labels do not verify ownership.|दी गई सामग्री में अलग UPI पते हैं। यह वैध हो सकता है; भुगतान से पहले इच्छित प्राप्तकर्ता की पुष्टि करें। QR लेबल मालिकाना हक सत्यापित नहीं करते।|આપેલી સામગ્રીમાં અલગ UPI સરનામાં છે. તે વૈધ હોઈ શકે છે; ચુકવણી પહેલાં ઇચ્છિત પ્રાપ્તકર્તાની ખાતરી કરો. QR લેબલ માલિકી ચકાસતા નથી.
+Compare the payment address with details from a trusted source.|भुगतान पता विश्वसनीय स्रोत के विवरण से मिलाएँ।|ચુકવણીનું સરનામું વિશ્વસનીય સ્ત્રોતની વિગતો સાથે સરખાવો.
+An individual check found a warning|अलग सामग्री की जाँच में चेतावनी मिली|અલગ સામગ્રીની તપાસમાં ચેતવણી મળી
+This item already raised a warning in the existing detector. Its result remains visible even when no story pattern matches.|इस सामग्री पर मौजूदा डिटेक्टर ने पहले ही चेतावनी दी। क्रमिक पैटर्न न मिलने पर भी उसका परिणाम दिखता है।|આ સામગ્રી માટે હાલના ડિટેક્ટરે પહેલેથી ચેતવણી આપી છે. ક્રમિક પેટર્ન ન મળે ત્યારે પણ તેનું પરિણામ દેખાય છે.
+Read the individual reasons before acting.|कदम उठाने से पहले अलग सामग्री के कारण पढ़ें।|પગલું લેતાં પહેલાં અલગ સામગ્રીનાં કારણો વાંચો.
+Private case expired. Saved cases remain encrypted on this device.|निजी केस की अवधि समाप्त हुई। सेव किए केस डिवाइस पर एन्क्रिप्टेड रहते हैं।|ખાનગી કેસની અવધિ પૂરી થઈ. સાચવેલા કેસ ઉપકરણ પર એન્ક્રિપ્ટેડ રહે છે.
+Private case cleared when the screen locked. Saved cases remain encrypted.|स्क्रीन लॉक होने पर निजी केस मिट गया। सेव किए केस एन्क्रिप्टेड रहते हैं।|સ્ક્રીન લૉક થતાં ખાનગી કેસ સાફ થયો. સાચવેલા કેસ એન્ક્રિપ્ટેડ રહે છે.
+Analysis cancelled. Your reviewed input is still available.|जाँच रद्द की गई। आपका समीक्षित इनपुट अभी उपलब्ध है।|તપાસ રદ થઈ. તમારું સમીક્ષા કરેલું ઇનપુટ હજી ઉપલબ્ધ છે.
+Order updated. This is your chosen order, not a verified message timestamp.|क्रम अपडेट हुआ। यह आपका चुना क्रम है, सत्यापित संदेश समय नहीं।|ક્રમ અપડેટ થયો. આ તમારો પસંદ કરેલો ક્રમ છે, ચકાસેલો સંદેશ સમય નથી.
+Analysis timed out. Try a smaller item or paste the original text.|जाँच का समय समाप्त हुआ। छोटी सामग्री आज़माएँ या मूल टेक्स्ट पेस्ट करें।|તપાસનો સમય પૂરો થયો. નાની સામગ્રી અજમાવો અથવા મૂળ લખાણ પેસ્ટ કરો.
+This image could not be read. Try a clearer screenshot or paste the original text.|यह तस्वीर पढ़ी नहीं जा सकी। साफ स्क्रीनशॉट आज़माएँ या मूल टेक्स्ट पेस्ट करें।|આ ચિત્ર વાંચી શકાયું નથી. વધુ સ્પષ્ટ સ્ક્રીનશૉટ અજમાવો અથવા મૂળ લખાણ પેસ્ટ કરો.
+No readable content found. Try a clearer image or paste text.|पढ़ने योग्य सामग्री नहीं मिली। साफ तस्वीर आज़माएँ या टेक्स्ट पेस्ट करें।|વાંચી શકાય તેવી સામગ્રી મળી નથી. વધુ સ્પષ્ટ ચિત્ર અજમાવો અથવા લખાણ પેસ્ટ કરો.
+Add reviewed content first.|पहले समीक्षित सामग्री जोड़ें।|પહેલાં સમીક્ષા કરેલી સામગ્રી ઉમેરો.
+A case can contain eight items. Remove an item or start another case.|केस में आठ सामग्री तक हो सकती हैं। एक हटाएँ या दूसरा केस शुरू करें।|કેસમાં આઠ સામગ્રી સુધી હોઈ શકે છે. એક દૂર કરો અથવા બીજો કેસ શરૂ કરો.
+This case exceeds 48,000 characters. Shorten an item or start another case.|यह केस 48,000 अक्षरों से बड़ा है। सामग्री छोटी करें या दूसरा केस शुरू करें।|આ કેસ 48,000 અક્ષરથી મોટો છે. સામગ્રી ટૂંકી કરો અથવા બીજો કેસ શરૂ કરો.
+This content is already in the case. Duplicate evidence does not increase concern.|यह सामग्री केस में पहले से है। दोहराए प्रमाण से चिंता नहीं बढ़ती।|આ સામગ્રી કેસમાં પહેલેથી છે. પુનરાવર્તિત પુરાવાથી ચિંતા વધતી નથી.
+This item could not be analyzed. Your reviewed input is still available.|यह सामग्री जाँची नहीं जा सकी। आपका समीक्षित इनपुट अभी उपलब्ध है।|આ સામગ્રી તપાસી શકાયી નથી. તમારું સમીક્ષા કરેલું ઇનપુટ હજી ઉપલબ્ધ છે.
+Evidence added. Review the linked explanation below.|प्रमाण जोड़ा गया। नीचे जुड़ा स्पष्टीकरण देखें।|પુરાવો ઉમેરાયો. નીચે જોડાયેલી સમજૂતી જુઓ.
+Check that this belongs to the same situation, then add the reviewed evidence.|देखें कि यह उसी स्थिति से जुड़ा है, फिर समीक्षित प्रमाण जोड़ें।|આ એ જ પરિસ્થિતિનું છે તે તપાસો, પછી સમીક્ષા કરેલો પુરાવો ઉમેરો.
+Saved cases could not be read. Try again or delete saved cases.|सेव किए केस पढ़े नहीं जा सके। फिर कोशिश करें या सेव किए केस मिटाएँ।|સાચવેલા કેસ વાંચી શકાયા નથી. ફરી પ્રયાસ કરો અથવા સાચવેલા કેસ કાઢો.
+Finish reviewing your input before saving this case.|इस केस को सेव करने से पहले इनपुट की समीक्षा पूरी करें।|આ કેસ સાચવતાં પહેલાં ઇનપુટની સમીક્ષા પૂરી કરો.
+This case could not be saved securely. The private draft is still available.|केस सुरक्षित रूप से सेव नहीं हुआ। निजी ड्राफ्ट अभी उपलब्ध है।|કેસ સુરક્ષિત રીતે સાચવી શકાયો નથી. ખાનગી ડ્રાફ્ટ હજી ઉપલબ્ધ છે.
+Case saved with on-device encryption.|केस डिवाइस पर एन्क्रिप्ट करके सेव किया गया।|કેસ ઉપકરણ પર એન્ક્રિપ્ટ કરીને સાચવ્યો.
+This saved case could not be opened. It may be damaged or its encryption key may be unavailable.|यह सेव किया केस नहीं खुला। यह खराब हो सकता है या एन्क्रिप्शन कुंजी अनुपलब्ध हो सकती है।|આ સાચવેલો કેસ ખોલી શકાયો નથી. તે ખરાબ હોઈ શકે છે અથવા એન્ક્રિપ્શન કી ઉપલબ્ધ ન હોઈ શકે.
+Saved cases could not be deleted. Try again.|सेव किए केस मिटाए नहीं जा सके। फिर कोशिश करें।|સાચવેલા કેસ કાઢી શકાયા નથી. ફરી પ્રયાસ કરો.
+Saved case data deleted. The open private draft is separate.|सेव किए केस का डेटा मिट गया। खुला निजी ड्राफ्ट अलग है।|સાચવેલા કેસનો ડેટા કાઢ્યો. ખુલ્લો ખાનગી ડ્રાફ્ટ અલગ છે.
+Added from a reviewed floating scan. Confirm that it belongs to this situation.|समीक्षित फ्लोटिंग जाँच से जोड़ा गया। पुष्टि करें कि यह इसी स्थिति का है।|સમીક્ષા કરેલી ફ્લોટિંગ તપાસમાંથી ઉમેર્યું. આ એ જ પરિસ્થિતિનું છે તેની ખાતરી કરો.
+Added from a scan result. Confirm that it belongs to this situation.|जाँच परिणाम से जोड़ा गया। पुष्टि करें कि यह इसी स्थिति का है।|તપાસના પરિણામમાંથી ઉમેર્યું. આ એ જ પરિસ્થિતિનું છે તેની ખાતરી કરો.
+Finish the current reviewed input before adding another scan. Your existing draft was kept.|दूसरी जाँच जोड़ने से पहले मौजूदा इनपुट की समीक्षा पूरी करें। आपका ड्राफ्ट सुरक्षित रखा गया।|બીજી તપાસ ઉમેરતાં પહેલાં હાલના ઇનપુટની સમીક્ષા પૂરી કરો. તમારો હાલનો ડ્રાફ્ટ રાખવામાં આવ્યો.
+Add to a private case|निजी केस में जोड़ें|ખાનગી કેસમાં ઉમેરો
+Replace the current reviewed input? Added evidence stays in the case.|क्या आप मौजूदा समीक्षा किए गए इनपुट को बदलना चाहते हैं? जोड़े गए सबूत केस में बने रहेंगे।|હાલની સમીક્ષા કરેલી સામગ્રી બદલવી છે? ઉમેરેલા પુરાવા કેસમાં રહેશે.

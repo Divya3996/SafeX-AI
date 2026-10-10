@@ -1,6 +1,6 @@
 # SafeX AI: onboarding, feature guidance and scam help
 
-Android 1.8.0 / Chrome 1.1.0. Updated 10 October 2026.
+Android 1.9.0 / Chrome 1.1.0. Updated 10 October 2026.
 
 ## First use
 
@@ -10,11 +10,13 @@ Chrome opens a four-page introduction the first time its panel is opened. It off
 
 ## Highlighted tours
 
-The Android tour has 18 steps covering protection status; message, link, screenshot, QR and file modes; synthetic examples; floating-assistant setup; protection switches; notification access; warning sound; reading settings; local history and saved-record review; incoming alerts; and scam help. The browser tour has 12 steps covering page checks, pasted messages, context questions, capture/crop, image and QR import, examples, reports, reading, sound, imported lists and official help.
+The Android tour has 19 steps covering protection status; message, link, screenshot, QR and file modes; synthetic examples; Scam Story Mode; floating-assistant setup; protection switches; notification access; warning sound; reading settings; local history and saved-record review; incoming alerts; and scam help. The browser tour has 12 steps covering page checks, pasted messages, context questions, capture/crop, image and QR import, examples, reports, reading, sound, imported lists and official help.
 
 Each step highlights the actual control and brings it into view. Next, Back and Close are available. The guide never grants permissions or starts a scan. Both products provide **Learn SafeX AI**, a readable feature reference, a full replay button and individual feature shortcuts. Android also exposes this from Home, Settings and the navigation drawer. Chrome exposes it in the panel footer.
 
 Urgent help remains reachable during the introduction and the tour. Closing the guide leaves the highlighted screen available for normal use.
+
+Scam Story Mode also provides a first-use guide beside the case and a replay link. Add reviewed messages, screenshot text, links or decoded QR content to a private timeline; inspect the connected reasons, then explicitly save an encrypted snapshot or preview a redacted summary. [Complete usage and jury demonstration](scam-story-mode.md).
 
 ## When someone has been scammed
 
@@ -34,7 +36,7 @@ The report button opens [India's official cybercrime reporting website](https://
 
 ## Release preparation
 
-Current artifacts: [Android 1.8.0 development APK](../releases/SafeX-AI-1.8.0-debug.apk), [Android 1.8.0 unsigned release bundle](../releases/SafeX-AI-1.8.0-release-unsigned.aab), and [Chrome 1.1.0 ZIP](../chrome-extension/release/SafeX-AI-Chrome-1.1.0.zip). The APK is installable for a demonstration. The bundle needs publisher signing; the extension ZIP is loaded through **Load unpacked**.
+Current artifacts: [Android 1.9.0 development APK](../releases/SafeX-AI-1.9.0-debug.apk), [Android 1.9.0 unsigned release bundle](../releases/SafeX-AI-1.9.0-release-unsigned.aab), and [Chrome 1.1.0 ZIP](../chrome-extension/release/SafeX-AI-Chrome-1.1.0.zip). The APK is installable for a demonstration. The bundle needs publisher signing; the extension ZIP is loaded through **Load unpacked**.
 
 The Android project compiles and targets API 36 using AGP 8.11.1, Gradle 8.13 and JDK 17. The private model uses LiteRT 1.4.0 with its API pinned to the same version. CameraX uses 1.4.2. Both updates address the previous native memory-page alignment gaps; packaged binaries are checked separately. The app keeps its existing application ID so a compatible signed update can retain user settings and records. Internet permission remains removed and device backup remains disabled.
 
@@ -55,11 +57,13 @@ For Chrome, run `npm run verify`, `npm run package` and `npm run record:validati
 
 ## Verified results
 
-The final Android build produced the development APK, release APK, release bundle and instrumentation APK successfully. **535 active unit tests and 58 active offline Android tests passed**. Four optional unit research-export checks and one optional native research-input check were skipped. The native runner's 59 discovered checks completed in 303.75 seconds on Android 14/API 34 with airplane mode and Wi-Fi off. The four new experience tests cover introductory screens, all 18 guide targets, replay, all three languages at 150% text and confirmed dial intents. No emergency service was called during testing.
+The final Android build produced the development APK, unsigned release APK, unsigned release bundle and instrumentation APK successfully. **593 active unit tests and 73 active offline Android tests passed**. Four optional unit research-export checks and one optional native research-input check were skipped. The native runner's 74 discovered checks completed in 379.654 seconds on Android 14/API 34 with airplane mode and Wi-Fi off. Installed checks cover first use, all 19 guide targets, English/Hindi/Gujarati at 150% text, real camera QR, capture consent/crop/OCR, Story Mode review/import/edit/reorder/save/export, clipboard recovery, and screen-lock cleanup. Confirmed dial intents are intercepted; no emergency service was called.
 
-Chrome passed **431 unit/privacy checks and 43 browser scenarios**, including all 12 real tour targets and the five help checklists. The recorded dependency audit found zero known vulnerabilities. Android lint reported zero errors and 108 warnings. Static ELF/ZIP checks passed for all 22 packaged 64-bit libraries in each Android APK; a 16 KB runtime was not tested.
+The 20 authored story contracts matched. Individual detector warnings, connected findings and timings are recorded separately. Encrypted-save device checks cover plaintext exclusion, authentication failures, retention and the 20-case cap. These are functional development checks, not independent fraud accuracy.
 
-[Machine-readable release record and artifact checksums](test-results/onboarding-release-summary.json) · [Complete verification report, skips and emulator recovery](validation.md) · [Android test output](test-results/onboarding-native-final.log) · [Chrome guidance test output](test-results/chrome-extension-guidance.json).
+Chrome's unchanged 1.1.0 baseline previously passed **431 unit/privacy checks and 43 browser scenarios**, including its 12-step tour, with zero known dependency vulnerabilities in that recorded audit. Chrome was not rebuilt or retested for this Android feature. Android lint reported zero errors and 108 warnings. Static ELF/ZIP checks passed for all 22 packaged 64-bit libraries in each Android APK; a 16 KB runtime was not tested.
+
+[Machine-readable release record and checksums](test-results/story-release-summary.json) · [Installed story evaluation](test-results/story-evaluation.json) · [Complete verification report](validation.md) · [Android test output](test-results/story-native-final.log) · [Previous Chrome release record](test-results/chrome-extension-summary.json).
 
 ## Presentation and remaining release checks
 

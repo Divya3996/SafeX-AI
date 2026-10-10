@@ -4,6 +4,7 @@ An Android security assistant and desktop Chrome companion for checking suspicio
 
 ## What works
 
+- Scam Story Mode connects reviewed evidence into a private timeline, links findings to exact passages, saves encrypted snapshots and previews redacted exports.
 - Branded floating shield supports fresh consented capture, crop/zoom, independent OCR outcomes and private text/link/QR review.
 - Explicit All/Selected/Edited modes retain drafts; Back, recrop and cancellation preserve intended input.
 - Visible fixed actions, coverage explanations, link-normalization confirmation and typed QR payloads keep the review clear.
@@ -26,7 +27,7 @@ The installed app has **no INTERNET permission**. Inference works offline; there
 
 ## Run
 
-Open `android-app` in Android Studio with Java 17 and Android SDK 34, or run:
+Open `android-app` in Android Studio with Java 17 and Android SDK 36, or run:
 
 ```sh
 cd android-app
@@ -43,6 +44,8 @@ Desktop companion: [Chrome extension installation, features and demo](chrome-ext
 
 New-user setup: [Onboarding, highlighted feature tours, official scam help and release instructions](docs/onboarding-and-release.md).
 
+Whole-situation review: [Scam Story Mode usage, jury demonstration, privacy and detection limits](docs/scam-story-mode.md).
+
 ## Screenshots
 
 | Home | Scanner | Result |
@@ -55,9 +58,9 @@ New-user setup: [Onboarding, highlighted feature tours, official scam help and r
 
 ## Validation
 
-SafeX AI **1.8.0** adds four introduction screens, an 18-step highlighted app tour, translated feature guides and confirmed scam-help dialer actions. **535 active unit tests and 58 active offline device tests passed**, with zero lint errors (108 warnings). Four optional unit research-export checks and one optional native research-input check were skipped. The Chrome **1.1.0** companion passed **431 unit checks and 43 browser scenarios**, including its 12-step tour. These establish functional behavior, not independent fraud accuracy.
+SafeX AI **1.9.0** adds Scam Story Mode: a private evidence timeline, three sequence playbooks, exact supporting passages, encrypted case snapshots and redacted sharing. The Android tour now contains 19 steps. **593 active unit tests and 73 active offline Android tests passed**, with zero lint errors (108 warnings). Four optional unit research-export checks and one optional native research-input check were skipped. The 20 authored story contracts matched; they establish functional behavior, not independent fraud accuracy. Chrome **1.1.0** is unchanged; its previously recorded baseline passed 431 unit checks and 43 browser scenarios.
 
-[Android development APK](releases/SafeX-AI-1.8.0-debug.apk) · [Unsigned Android release bundle](releases/SafeX-AI-1.8.0-release-unsigned.aab) · [Chrome ZIP](chrome-extension/release/SafeX-AI-Chrome-1.1.0.zip) · [Release verification](docs/test-results/onboarding-release-summary.json) · [Verification report and limits](docs/validation.md)
+[Android development APK](releases/SafeX-AI-1.9.0-debug.apk) · [Unsigned Android release bundle](releases/SafeX-AI-1.9.0-release-unsigned.aab) · [Chrome ZIP](chrome-extension/release/SafeX-AI-Chrome-1.1.0.zip) · [Story demo and usage](docs/scam-story-mode.md) · [Release verification](docs/test-results/story-release-summary.json) · [Verification report and limits](docs/validation.md)
 
 ```sh
 cd android-app
@@ -73,4 +76,4 @@ The 1.7 research update trains the text classifier on historical observed Englis
 
 ## Stack
 
-Kotlin 2, Jetpack Compose / Material 3, Hilt, Room, coroutines, WorkManager, TensorFlow Lite, bundled ML Kit Latin/Devanagari OCR, Tesseract Gujarati OCR and ML Kit QR models. Minimum Android 8 / API 26; target and compile API 34. Modules: `app`, `core`, `agents`, `services`, `ui`, and optional `demo-sender`.
+Kotlin 2, Jetpack Compose / Material 3, Hilt, Room, coroutines, WorkManager, LiteRT 1.4.0, CameraX 1.4.2, bundled ML Kit Latin/Devanagari OCR, Tesseract Gujarati OCR and ML Kit QR models. Minimum Android 8 / API 26; target and compile API 36. Modules: `app`, `core`, `agents`, `services`, `ui`, and optional `demo-sender`.

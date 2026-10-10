@@ -7,6 +7,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.selection.toggleable
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.platform.LocalContext
@@ -269,6 +270,11 @@ fun FloatingAssistantScreen(state: FloatingSession, model: FloatingSessionViewMo
                 }
                 FloatingStage.RESULT -> {
                     Button(onClick = model::save, enabled = !state.saved && !state.saving, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp)) { Text(if (state.saving) "Saving…" else if (state.saved) "Saved" else "Save result") }
+                    if (com.sentinel.ai.ui.screens.story.StoryNavigation.canOffer(state.result!!)) {
+                        OutlinedButton(onClick = { com.sentinel.ai.ui.screens.story.StoryNavigation.offer(context, state.result, floating = true) }, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp).testTag("floating_add_story")) {
+                            Text("Add to a private case")
+                        }
+                    }
                     Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         OutlinedButton(onClick = { model.back() }, modifier = Modifier.weight(1f)) { Text("Edit and rescan") }
                         TextButton(onClick = onClose, modifier = Modifier.weight(1f)) { Text("Done") }

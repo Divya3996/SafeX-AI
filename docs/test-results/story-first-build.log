@@ -1,0 +1,186 @@
+Starting a Gradle Daemon (subsequent builds will be faster)
+Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+> Task :core:preBuild UP-TO-DATE
+> Task :core:preDebugBuild UP-TO-DATE
+> Task :core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:generateDebugResValues UP-TO-DATE
+> Task :core:generateDebugResources UP-TO-DATE
+> Task :core:packageDebugResources UP-TO-DATE
+> Task :core:parseDebugLocalResources UP-TO-DATE
+> Task :core:generateDebugRFile UP-TO-DATE
+> Task :core:javaPreCompileDebug UP-TO-DATE
+> Task :core:preDebugUnitTestBuild UP-TO-DATE
+> Task :core:generateDebugUnitTestStubRFile UP-TO-DATE
+> Task :core:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :agents:preBuild UP-TO-DATE
+> Task :agents:preDebugBuild UP-TO-DATE
+> Task :agents:generateDebugResValues UP-TO-DATE
+> Task :agents:generateDebugResources UP-TO-DATE
+> Task :agents:packageDebugResources UP-TO-DATE
+> Task :agents:parseDebugLocalResources UP-TO-DATE
+> Task :agents:generateDebugRFile UP-TO-DATE
+> Task :agents:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :agents:generateDebugBuildConfig UP-TO-DATE
+> Task :agents:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:generateDebugBuildConfig
+> Task :agents:compileDebugLibraryResources UP-TO-DATE
+> Task :agents:writeDebugAarMetadata UP-TO-DATE
+> Task :core:writeDebugAarMetadata UP-TO-DATE
+> Task :services:preBuild UP-TO-DATE
+> Task :services:preDebugBuild UP-TO-DATE
+> Task :services:writeDebugAarMetadata UP-TO-DATE
+> Task :ui:preBuild UP-TO-DATE
+> Task :ui:preDebugBuild UP-TO-DATE
+> Task :ui:writeDebugAarMetadata UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :services:generateDebugResValues UP-TO-DATE
+> Task :services:generateDebugResources UP-TO-DATE
+> Task :services:packageDebugResources UP-TO-DATE
+> Task :ui:generateDebugResValues UP-TO-DATE
+> Task :ui:generateDebugResources UP-TO-DATE
+> Task :ui:packageDebugResources UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests
+> Task :agents:extractDeepLinksDebug UP-TO-DATE
+> Task :agents:processDebugManifest UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :core:extractDeepLinksDebug UP-TO-DATE
+> Task :core:processDebugManifest UP-TO-DATE
+> Task :services:extractDeepLinksDebug UP-TO-DATE
+> Task :services:processDebugManifest UP-TO-DATE
+> Task :ui:extractDeepLinksDebug UP-TO-DATE
+> Task :ui:processDebugManifest UP-TO-DATE
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:processDebugManifestForPackage
+> Task :core:compileDebugLibraryResources UP-TO-DATE
+> Task :services:compileDebugLibraryResources UP-TO-DATE
+> Task :services:parseDebugLocalResources UP-TO-DATE
+> Task :services:generateDebugRFile UP-TO-DATE
+> Task :ui:compileDebugLibraryResources UP-TO-DATE
+> Task :ui:parseDebugLocalResources UP-TO-DATE
+> Task :ui:generateDebugRFile UP-TO-DATE
+> Task :app:processDebugResources
+> Task :services:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :services:javaPreCompileDebug UP-TO-DATE
+> Task :ui:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :ui:generateDebugBuildConfig
+> Task :ui:javaPreCompileDebug UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :agents:mergeDebugShaders UP-TO-DATE
+> Task :agents:compileDebugShaders NO-SOURCE
+> Task :agents:generateDebugAssets UP-TO-DATE
+> Task :agents:mergeDebugAssets UP-TO-DATE
+> Task :app:mergeDebugShaders UP-TO-DATE
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :core:mergeDebugShaders UP-TO-DATE
+> Task :core:compileDebugShaders NO-SOURCE
+> Task :core:generateDebugAssets UP-TO-DATE
+> Task :core:mergeDebugAssets UP-TO-DATE
+> Task :services:mergeDebugShaders UP-TO-DATE
+> Task :services:compileDebugShaders NO-SOURCE
+> Task :services:generateDebugAssets UP-TO-DATE
+> Task :services:mergeDebugAssets UP-TO-DATE
+> Task :ui:mergeDebugShaders UP-TO-DATE
+> Task :ui:compileDebugShaders NO-SOURCE
+> Task :ui:generateDebugAssets UP-TO-DATE
+> Task :ui:mergeDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :agents:mergeDebugJniLibFolders UP-TO-DATE
+> Task :agents:mergeDebugNativeLibs NO-SOURCE
+> Task :agents:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :core:mergeDebugJniLibFolders UP-TO-DATE
+> Task :core:mergeDebugNativeLibs NO-SOURCE
+> Task :core:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :services:mergeDebugJniLibFolders UP-TO-DATE
+> Task :services:mergeDebugNativeLibs NO-SOURCE
+> Task :services:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :ui:mergeDebugJniLibFolders UP-TO-DATE
+> Task :ui:mergeDebugNativeLibs NO-SOURCE
+> Task :ui:copyDebugJniLibsProjectOnly UP-TO-DATE
+> Task :app:mergeDebugNativeLibs UP-TO-DATE
+> Task :app:stripDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :core:kspDebugKotlin
+> Task :core:compileDebugKotlin
+> Task :core:compileDebugJavaWithJavac
+> Task :core:processDebugJavaRes
+> Task :core:transformDebugClassesWithAsm
+> Task :core:bundleLibRuntimeToJarDebug
+> Task :core:bundleLibCompileToJarDebug
+> Task :core:kspDebugUnitTestKotlin
+> Task :agents:kspDebugKotlin
+> Task :core:compileDebugUnitTestKotlin
+> Task :core:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :core:hiltAggregateDepsDebugUnitTest UP-TO-DATE
+> Task :core:hiltJavaCompileDebugUnitTest NO-SOURCE
+> Task :core:processDebugUnitTestJavaRes UP-TO-DATE
+> Task :core:transformDebugUnitTestClassesWithAsm
+> Task :core:testDebugUnitTest
+> Task :agents:compileDebugKotlin
+> Task :agents:compileDebugJavaWithJavac UP-TO-DATE
+> Task :agents:transformDebugClassesWithAsm
+> Task :agents:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :agents:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :services:kspDebugKotlin
+> Task :ui:kspDebugKotlin
+> Task :services:compileDebugKotlin
+> Task :services:compileDebugJavaWithJavac UP-TO-DATE
+> Task :services:transformDebugClassesWithAsm
+> Task :services:bundleLibCompileToJarDebug UP-TO-DATE
+> Task :services:bundleLibRuntimeToJarDebug UP-TO-DATE
+> Task :agents:processDebugJavaRes UP-TO-DATE
+> Task :services:processDebugJavaRes UP-TO-DATE
+> Task :services:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :agents:bundleLibRuntimeToDirDebug UP-TO-DATE
+> Task :core:bundleLibRuntimeToDirDebug
+> Task :ui:compileDebugKotlin
+w: file:///home/viyat/Downloads/SafeX%20AI/android-app/ui/src/main/java/com/sentinel/ai/ui/screens/threat/ThreatDetailsScreen.kt:125:52 'val Icons.Filled.ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack.
+w: file:///home/viyat/Downloads/SafeX%20AI/android-app/ui/src/main/java/com/sentinel/ai/ui/util/SenderPresentationResolver.kt:75:42 'class Im : Any, ContactsContract.CommonDataKinds.CommonColumns, ContactsContract.DataColumnsWithJoins' is deprecated. Deprecated in Java.
+w: file:///home/viyat/Downloads/SafeX%20AI/android-app/ui/src/main/java/com/sentinel/ai/ui/util/SenderPresentationResolver.kt:75:45 'static field CONTENT_ITEM_TYPE: String' is deprecated. Deprecated in Java.
+
+> Task :ui:compileDebugJavaWithJavac
+> Task :ui:processDebugJavaRes
+> Task :ui:transformDebugClassesWithAsm
+> Task :ui:bundleLibCompileToJarDebug
+> Task :ui:bundleLibRuntimeToJarDebug
+> Task :ui:bundleLibRuntimeToDirDebug
+> Task :app:kspDebugKotlin
+> Task :app:mergeLibDexDebug
+> Task :app:compileDebugKotlin
+e: file:///home/viyat/Downloads/SafeX%20AI/android-app/app/src/main/java/com/sentinel/ai/protection/floating/FloatingAssistantScreen.kt:273:207 Unresolved reference 'testTag'.
+
+> Task :app:compileDebugKotlin FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 4m 28s
+128 actionable tasks: 36 executed, 92 up-to-date

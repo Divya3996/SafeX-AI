@@ -11,6 +11,9 @@ import android.provider.Settings
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 import androidx.navigation.compose.rememberNavController
 import com.sentinel.ai.ui.BuildConfig
 import com.sentinel.ai.core.feature.FeatureManager
@@ -23,6 +26,11 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+    private var storyRequest by mutableIntStateOf(0)
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent); setIntent(intent)
+        if (intent.getBooleanExtra(com.sentinel.ai.ui.screens.story.StoryNavigation.REQUEST, false)) storyRequest++
+    }
 
     override fun onResume() {
         super.onResume()
@@ -31,6 +39,7 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        if (intent.getBooleanExtra(com.sentinel.ai.ui.screens.story.StoryNavigation.REQUEST, false)) storyRequest = 1
 
         val preferences = getSharedPreferences(ONBOARDING_PREFERENCES, MODE_PRIVATE)
         val firstLaunch = preferences.getBoolean(KEY_FIRST_LAUNCH, true)
@@ -57,7 +66,8 @@ class MainActivity : ComponentActivity() {
                     themeMode = themeMode.value,
                     onThemeModeSelected = { ThemePreferences.set(this, it) },
                     onPermissionOnboardingComplete = ::completePermissionOnboarding,
-                    appVersion = BuildConfig.APP_VERSION
+                    appVersion = BuildConfig.APP_VERSION,
+                    openStoryRequest = storyRequest
                 )
             }
         }

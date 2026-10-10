@@ -1,0 +1,27 @@
+
+com.sentinel.ai.features.StoryExperienceTest:
+Error in screenshotRecognitionStaysEditableUntilReviewedAndAdded(com.sentinel.ai.features.StoryExperienceTest):
+androidx.compose.ui.test.ComposeTimeoutException: Condition still not satisfied after 15000 ms
+	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitUntil(ComposeUiTest.android.kt:441)
+	at androidx.compose.ui.test.junit4.AndroidComposeTestRule.waitUntil(AndroidComposeTestRule.android.kt:306)
+	at com.sentinel.ai.features.StoryExperienceTest.launch(StoryExperienceTest.kt:56)
+
+Error in recreationKeepsRamDraftAndHelpIsReachable(com.sentinel.ai.features.StoryExperienceTest):
+androidx.compose.ui.test.ComposeTimeoutException: Condition still not satisfied after 15000 ms
+	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitUntil(ComposeUiTest.android.kt:441)
+	at androidx.compose.ui.test.junit4.AndroidComposeTestRule.waitUntil(AndroidComposeTestRule.android.kt:306)
+	at com.sentinel.ai.features.StoryExperienceTest.launch(StoryExperienceTest.kt:56)
+
+Error in legitimateComparisonsRemainFreeOfInventedSequenceFindingsAndPrivateHistoryWrites(com.sentinel.ai.features.StoryExperienceTest):
+androidx.compose.ui.test.ComposeTimeoutException: Condition still not satisfied after 15000 ms
+	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitUntil(ComposeUiTest.android.kt:441)
+	at androidx.compose.ui.test.junit4.AndroidComposeTestRule.waitUntil(AndroidComposeTestRule.android.kt:306)
+	at com.sentinel.ai.features.StoryExperienceTest.launch(StoryExperienceTest.kt:56)
+
+Error in homeEntryAndKeyboardKeepThePrimaryActionUsable(com.sentinel.ai.features.StoryExperienceTest):
+androidx.compose.ui.test.ComposeTimeoutException: Condition still not satisfied after 15000 ms
+	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitUntil(ComposeUiTest.android.kt:441)
+	at androidx.compose.ui.test.junit4.AndroidComposeTestRule.waitUntil(AndroidComposeTestRule.android.kt:306)
+	at com.sentinel.ai.features.StoryExperienceTest.launch(StoryExperienceTest.kt:56)
+INSTRUMENTATION_RESULT: shortMsg=Process crashed.
+INSTRUMENTATION_CODE: 0

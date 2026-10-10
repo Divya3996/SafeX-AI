@@ -14,6 +14,7 @@ import javax.inject.Inject
 class SentinelApp : Application() {
     @Inject lateinit var events: ThreatEventBus
     @Inject lateinit var floatingSessions: com.sentinel.ai.protection.floating.FloatingSessionController
+    @Inject lateinit var storyCases: com.sentinel.ai.core.story.StoryController
     private val appScope = CoroutineScope(SupervisorJob() + Dispatchers.Main.immediate)
     override fun onTrimMemory(level: Int) {
         super.onTrimMemory(level)
@@ -27,6 +28,7 @@ class SentinelApp : Application() {
             override fun onReceive(context: android.content.Context?, intent: android.content.Intent?) {
                 if (intent?.action == android.content.Intent.ACTION_SCREEN_OFF) {
                     floatingSessions.reset()
+                    storyCases.lock()
                     stopService(android.content.Intent(this@SentinelApp, com.sentinel.ai.protection.floating.OneShotScreenCaptureService::class.java))
                 }
             }

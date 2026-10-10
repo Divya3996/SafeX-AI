@@ -1,6 +1,7 @@
 package com.sentinel.ai.ui.navigation
 
 import androidx.compose.material.icons.filled.HealthAndSafety
+import androidx.compose.material.icons.filled.Shield
 
 import com.sentinel.ai.ui.i18n.LocalizedText as Text
 
@@ -97,6 +98,7 @@ private val primaryDestinations = listOf(
 // Secondary destinations were previously only reachable via deep links; surfacing them in the
 // drawer improves discoverability without altering any route or navigation logic.
 private val secondaryDestinations = listOf(
+    SentinelNavDestination(Screen.Story, "Scam Story Mode", Icons.Filled.Shield, NavGroup.Secondary),
     SentinelNavDestination(Screen.FeatureGuide, "Learn SafeX AI", Icons.Filled.Info, NavGroup.Secondary),
     SentinelNavDestination(Screen.Alerts, "Alerts", Icons.Filled.Notifications, NavGroup.Secondary),
     SentinelNavDestination(Screen.IncidentHelp, "Help after a scam", Icons.Filled.HealthAndSafety, NavGroup.Secondary)
@@ -123,7 +125,7 @@ private fun variantForRoute(route: String?): TopAppBarVariant {
 
 /** True when the bottom navigation bar should be hidden (e.g. on detail screens). */
 private fun shouldHideBottomBar(route: String?): Boolean =
-    (route?.startsWith("threat_details") == true || route == Screen.IncidentHelp.route)
+    (route?.startsWith("threat_details") == true || route == Screen.IncidentHelp.route || route == Screen.Story.route)
 
 // ---------------------------------------------------------------------------------------------
 // Material Motion transitions

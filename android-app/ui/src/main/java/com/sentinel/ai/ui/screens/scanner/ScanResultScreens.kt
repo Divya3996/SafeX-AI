@@ -72,6 +72,7 @@ fun AnalysisResultContent(result: ScanResult, onClose: () -> Unit, onOpen: (() -
 @Composable
 private fun ResultBody(result: ScanResult, onClose: () -> Unit, onOpen: () -> Unit, modifier: Modifier,
     saving: Boolean, showChrome: Boolean, compactReasons: Boolean, onContext: (ContextAnswers) -> Unit, onHelp: () -> Unit) {
+    val storyContext = androidx.compose.ui.platform.LocalContext.current
     val color = riskColor(result.riskLevel)
     val scroll = rememberScrollState()
     LaunchedEffect(result.contextReview) { if (result.contextReview != null) scroll.scrollTo(0) }
@@ -123,6 +124,11 @@ private fun ResultBody(result: ScanResult, onClose: () -> Unit, onOpen: () -> Un
         result.linkInspections.orEmpty().take(8).forEach { LinkIdentityCard(it) }
         result.paymentReviews.orEmpty().take(8).forEach { PaymentReviewCard(it, onContext, saving) }
         if (result.contentType != "file") ContextReviewCard(result, onContext, saving)
+        if (showChrome && com.sentinel.ai.ui.screens.story.StoryNavigation.canOffer(result)) {
+            OutlinedButton(onClick = { com.sentinel.ai.ui.screens.story.StoryNavigation.offer(context = storyContext, result = result) }, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp)) {
+                Text("Review the whole situation")
+            }
+        }
         OutlinedButton(onClick = onHelp, modifier = Modifier.fillMaxWidth().heightIn(min = 52.dp)) {
             Icon(Icons.Default.HealthAndSafety, null); Spacer(Modifier.width(8.dp)); Text("I already clicked or shared information")
         }

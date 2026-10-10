@@ -897,4 +897,126 @@
     <string name="sx_search_local_history_or_filter_warnings_open_fcb74128" formatted="false">"Search local history or filter warnings. Open a record to review reasons, destinations and context questions. Delete all asks for confirmation. Reviewing a record never opens its link automatically."</string>
     <string name="sx_review_incoming_message_alerts_d8482783" formatted="false">"Review incoming-message alerts"</string>
     <string name="sx_supported_notification_checks_appear_here_wh_d79f1801" formatted="false">"Supported notification checks appear here when protection and Android access are enabled. Open an alert to read the explanation and full details. An empty list does not prove that every message was checked."</string>
+    <string name="sx_scam_story_mode_8310cb54" formatted="false">"Scam Story Mode"</string>
+    <string name="sx_review_the_whole_situation_be220927" formatted="false">"Review the whole situation"</string>
+    <string name="sx_connect_messages_screenshots_links_and_qr_cl_9713b54c" formatted="false">"Connect messages, screenshots, links and QR clues privately"</string>
+    <string name="sx_connect_the_whole_situation_7786f364" formatted="false">"Connect the whole situation"</string>
+    <string name="sx_add_reviewed_messages_screenshots_links_or_q_c455fa1e" formatted="false">"Add reviewed messages, screenshots, links or QR content to a private case. Arrange their order and tap a finding to see supporting evidence. Save explicitly for encrypted storage; use Help after a scam for next steps."</string>
+    <string name="sx_connect_the_clues_70b064a5" formatted="false">"Connect the clues"</string>
+    <string name="sx_add_only_items_from_the_same_situation_revie_0f60b88f" formatted="false">"Add only items from the same situation. Review extracted content, arrange the order, then inspect the linked reasons. A low-concern result is not a safety guarantee."</string>
+    <string name="sx_your_draft_stays_in_memory_leaving_this_scre_dfe28c4b" formatted="false">"Your draft stays in memory. Leaving this screen for two minutes or locking the phone clears it. Save explicitly to keep an encrypted case."</string>
+    <string name="sx_private_situation_d7193692" formatted="false">"Private situation"</string>
+    <string name="sx_more_context_needed_9b33e61e" formatted="false">"More context needed"</string>
+    <string name="sx_review_this_situation_8b9146ef" formatted="false">"Review this situation"</string>
+    <string name="sx_high_concern_aec79797" formatted="false">"High concern"</string>
+    <string name="sx_on_device_private_draft_6e9b7707" formatted="false">"On device • Private draft"</string>
+    <string name="sx_saved_with_on_device_encryption_287f0eea" formatted="false">"Saved with on-device encryption"</string>
+    <string name="sx_synthetic_example_5adc195d" formatted="false">"Synthetic example"</string>
+    <string name="sx_synthetic_example_actual_detector_473496a3" formatted="false">"Synthetic example • Actual detector"</string>
+    <string name="sx_name_this_case_0ed5f84c" formatted="false">"Name this case"</string>
+    <string name="sx_case_name_fb29b46d" formatted="false">"Case name"</string>
+    <string name="sx_start_a_new_private_case_edef424c" formatted="false">"Start a new private case"</string>
+    <string name="sx_no_supported_story_pattern_yet_add_relevant__1dad8078" formatted="false">"No supported story pattern yet. Add relevant evidence and verify independently."</string>
+    <string name="sx_tap_a_finding_to_see_the_exact_supporting_ev_1106f5c3" formatted="false">"Tap a finding to see the exact supporting evidence."</string>
+    <string name="sx_some_checks_have_limited_coverage_missing_ev_44e9b239" formatted="false">"Some checks have limited coverage. Missing evidence remains unknown."</string>
+    <string name="sx_add_reviewed_evidence_f8a385d7" formatted="false">"Add reviewed evidence"</string>
+    <string name="sx_edit_and_recheck_evidence_ae773316" formatted="false">"Edit and recheck evidence"</string>
+    <string name="sx_review_text_or_decoded_content_d5410af3" formatted="false">"Review text or decoded content"</string>
+    <string name="sx_qr_content_8ad53490" formatted="false">"QR content"</string>
+    <string name="sx_floating_review_328b8807" formatted="false">"Floating review"</string>
+    <string name="sx_scan_result_3eaa3b0a" formatted="false">"Scan result"</string>
+    <string name="sx_choose_qr_image_9918aaf8" formatted="false">"Choose QR image"</string>
+    <string name="sx_use_floating_capture_368c7c0a" formatted="false">"Use floating capture"</string>
+    <string name="sx_screenshot_text_cannot_reveal_a_hidden_html__88e3da4e" formatted="false">"Screenshot text cannot reveal a hidden HTML destination. OCR edits are marked in the timeline."</string>
+    <string name="sx_review_the_extracted_content_before_adding_i_52d9a383" formatted="false">"Review the extracted content before adding it. Hidden link destinations are not visible in a screenshot."</string>
+    <string name="sx_recognition_may_be_incomplete_check_spelling_52adc7f5" formatted="false">"Recognition may be incomplete. Check spelling, missing words and decoded QR content."</string>
+    <string name="sx_extracted_on_this_device_review_text_and_qr__1d4721b3" formatted="false">"Extracted on this device. Review text and QR content before adding it."</string>
+    <string name="sx_demo_step_1_1_s_of_2_2_s_1f428108" formatted="false">"Demo step %1%1$s of %2%2$s"</string>
+    <string name="sx_next_example_message_234a6f2c" formatted="false">"Next example message"</string>
+    <string name="sx_try_a_harmless_story_afd7a4ff" formatted="false">"Try a harmless story"</string>
+    <string name="sx_each_example_uses_the_actual_private_detecto_ac9b23e0" formatted="false">"Each example uses the actual private detector. No link or payment needs to be opened."</string>
+    <string name="sx_task_scam_example_20e6fba3" formatted="false">"Task-scam example"</string>
+    <string name="sx_legitimate_comparison_1e816571" formatted="false">"Legitimate comparison"</string>
+    <string name="sx_connected_findings_23571ab6" formatted="false">"Connected findings"</string>
+    <string name="sx_view_supporting_evidence_95e9189d" formatted="false">"View supporting evidence"</string>
+    <string name="sx_evidence_timeline_0498bd67" formatted="false">"Evidence timeline"</string>
+    <string name="sx_order_is_chosen_by_you_times_below_show_when_2ba1374c" formatted="false">"Order is chosen by you. Times below show when items were added, not when a sender sent them."</string>
+    <string name="sx_reviewed_text_was_edited_2ea5da53" formatted="false">"Reviewed text was edited"</string>
+    <string name="sx_view_full_evidence_285a3bc5" formatted="false">"View full evidence"</string>
+    <string name="sx_move_earlier_736612d4" formatted="false">"Move earlier"</string>
+    <string name="sx_move_later_d6e85608" formatted="false">"Move later"</string>
+    <string name="sx_reviewed_evidence_1076c88a" formatted="false">"Reviewed evidence"</string>
+    <string name="sx_individual_check_9315da74" formatted="false">"Individual check"</string>
+    <string name="sx_unverified_payment_details_c212ba62" formatted="false">"Unverified payment details"</string>
+    <string name="sx_save_encrypted_case_0963bb9c" formatted="false">"Save encrypted case"</string>
+    <string name="sx_preview_redacted_summary_cdcefe71" formatted="false">"Preview redacted summary"</string>
+    <string name="sx_offline_checks_cannot_verify_identity_follow_700dc330" formatted="false">"Offline checks cannot verify identity, follow hidden redirects or guarantee recovery. Use an independent trusted channel before acting."</string>
+    <string name="sx_show_story_guide_06a10f92" formatted="false">"Show story guide"</string>
+    <string name="sx_checking_on_this_device_987f2e5d" formatted="false">"Checking on this device…"</string>
+    <string name="sx_saving_securely_f9a4e6b4" formatted="false">"Saving securely…"</string>
+    <string name="sx_update_evidence_24c3983f" formatted="false">"Update evidence"</string>
+    <string name="sx_saved_cases_6bb0d70b" formatted="false">"Saved cases"</string>
+    <string name="sx_cases_are_encrypted_on_this_device_and_follo_dcb9df7f" formatted="false">"Cases are encrypted on this device and follow your history-retention setting."</string>
+    <string name="sx_no_saved_cases_bc48b16a" formatted="false">"No saved cases"</string>
+    <string name="sx_some_saved_cases_cannot_be_opened_you_can_de_67fe7fa4" formatted="false">"Some saved cases cannot be opened. You can delete saved cases to remove damaged or inaccessible data."</string>
+    <string name="sx_open_case_c9479e04" formatted="false">"Open case"</string>
+    <string name="sx_share_redacted_summary_eb4c9f3b" formatted="false">"Share redacted summary"</string>
+    <string name="sx_no_sharing_app_is_available_20b59441" formatted="false">"No sharing app is available."</string>
+    <string name="sx_confirm_your_choice_18e85a9e" formatted="false">"Confirm your choice"</string>
+    <string name="sx_replace_the_open_private_case_unsaved_change_a0c0b472" formatted="false">"Replace the open private case? Unsaved changes and reviewed input will be discarded. Saved cases remain on this device."</string>
+    <string name="sx_replace_the_reviewed_input_with_a_chosen_ima_da8c73cf" formatted="false">"Replace the reviewed input with a chosen image? Your added evidence stays in the case."</string>
+    <string name="sx_remove_this_evidence_and_recompute_the_case__3d9c86e3" formatted="false">"Remove this evidence and recompute the case? A previously saved snapshot is unchanged until you save again."</string>
+    <string name="sx_delete_this_encrypted_saved_case_the_open_pr_fde11e15" formatted="false">"Delete this encrypted saved case? The open private draft is separate."</string>
+    <string name="sx_delete_all_encrypted_saved_cases_this_cannot_d7ecaab6" formatted="false">"Delete all encrypted saved cases? This cannot be undone."</string>
+    <string name="sx_evidence_1_1_s_583c478c" formatted="false">"Evidence %1%1$s"</string>
+    <string name="sx_safex_ai_situation_summary_b4696c3b" formatted="false">"SafeX AI situation summary"</string>
+    <string name="sx_user_prepared_guidance_not_a_submitted_compl_a7036bb0" formatted="false">"User-prepared guidance, not a submitted complaint or verified identity."</string>
+    <string name="sx_evidence_count_1_1_s_2916a7d1" formatted="false">"Evidence count: %1%1$s"</string>
+    <string name="sx_supporting_items_1_1_s_61933581" formatted="false">"Supporting items: %1%1$s"</string>
+    <string name="sx_raw_messages_screenshots_links_payment_detai_0d292c0d" formatted="false">"Raw messages, screenshots, links, payment details and secrets are excluded."</string>
+    <string name="sx_a_low_concern_result_is_not_a_safety_guarant_947a4043" formatted="false">"A low-concern result is not a safety guarantee. Verify through a trusted independent channel."</string>
+    <string name="sx_payment_to_unlock_promised_work_or_earnings_c5e61c6d" formatted="false">"Payment to unlock promised work or earnings"</string>
+    <string name="sx_an_earlier_item_describes_work_or_earnings_a_df7a5eb9" formatted="false">"An earlier item describes work or earnings. A later item requires payment to unlock them. Together, these match an advance-fee or task-scam pattern."</string>
+    <string name="sx_pause_the_payment_verify_the_employer_throug_c5dff109" formatted="false">"Pause the payment. Verify the employer through contact details you obtained independently."</string>
+    <string name="sx_this_pattern_can_be_followed_by_another_fee__42ecdb80" formatted="false">"This pattern can be followed by another fee request. More payments do not verify the promised earnings."</string>
+    <string name="sx_authority_claim_followed_by_pressure_and_a_d_dfaf24f7" formatted="false">"Authority claim followed by pressure and a demand"</string>
+    <string name="sx_the_case_combines_a_claimed_bank_or_governme_020fa91b" formatted="false">"The case combines a claimed bank or government identity, a threat, and a later request for money, a secret or remote access. The claimed identity is not verified."</string>
+    <string name="sx_stop_and_contact_the_institution_through_its_5addd6b6" formatted="false">"Stop and contact the institution through its official app or an independently obtained number."</string>
+    <string name="sx_requests_for_secrecy_or_another_transfer_can_6aa5574f" formatted="false">"Requests for secrecy or another transfer can follow this pattern. Verify outside this conversation."</string>
+    <string name="sx_support_claim_followed_by_remote_access_and__481bb980" formatted="false">"Support claim followed by remote access and a demand"</string>
+    <string name="sx_an_earlier_item_claims_to_provide_support_la_40b93162" formatted="false">"An earlier item claims to provide support. Later evidence asks for remote access and money or a secret. This combination needs independent verification."</string>
+    <string name="sx_do_not_grant_more_access_use_official_suppor_24c3ba8a" formatted="false">"Do not grant more access. Use official support; if access was granted, open Help after a scam."</string>
+    <string name="sx_a_request_to_open_banking_or_share_an_otp_ca_b58c4f05" formatted="false">"A request to open banking or share an OTP can follow this pattern. Do not treat remote access as identity verification."</string>
+    <string name="sx_different_payment_addresses_in_this_case_fc36f63b" formatted="false">"Different payment addresses in this case"</string>
+    <string name="sx_the_submitted_items_contain_different_upi_ad_54ebd045" formatted="false">"The submitted items contain different UPI addresses. This can be legitimate; confirm which recipient you intended before paying. QR labels do not verify ownership."</string>
+    <string name="sx_compare_the_payment_address_with_details_fro_efc338fe" formatted="false">"Compare the payment address with details from a trusted source."</string>
+    <string name="sx_an_individual_check_found_a_warning_5b73c1f8" formatted="false">"An individual check found a warning"</string>
+    <string name="sx_this_item_already_raised_a_warning_in_the_ex_0e7d8f01" formatted="false">"This item already raised a warning in the existing detector. Its result remains visible even when no story pattern matches."</string>
+    <string name="sx_read_the_individual_reasons_before_acting_2b2dad47" formatted="false">"Read the individual reasons before acting."</string>
+    <string name="sx_private_case_expired_saved_cases_remain_encr_dcda6f46" formatted="false">"Private case expired. Saved cases remain encrypted on this device."</string>
+    <string name="sx_private_case_cleared_when_the_screen_locked__02e946e7" formatted="false">"Private case cleared when the screen locked. Saved cases remain encrypted."</string>
+    <string name="sx_analysis_cancelled_your_reviewed_input_is_st_9e8a47d0" formatted="false">"Analysis cancelled. Your reviewed input is still available."</string>
+    <string name="sx_order_updated_this_is_your_chosen_order_not__238398c4" formatted="false">"Order updated. This is your chosen order, not a verified message timestamp."</string>
+    <string name="sx_analysis_timed_out_try_a_smaller_item_or_pas_d2cd1215" formatted="false">"Analysis timed out. Try a smaller item or paste the original text."</string>
+    <string name="sx_this_image_could_not_be_read_try_a_clearer_s_4c44dd6e" formatted="false">"This image could not be read. Try a clearer screenshot or paste the original text."</string>
+    <string name="sx_no_readable_content_found_try_a_clearer_imag_3b268733" formatted="false">"No readable content found. Try a clearer image or paste text."</string>
+    <string name="sx_add_reviewed_content_first_f1c64066" formatted="false">"Add reviewed content first."</string>
+    <string name="sx_a_case_can_contain_eight_items_remove_an_ite_ba07fc2f" formatted="false">"A case can contain eight items. Remove an item or start another case."</string>
+    <string name="sx_this_case_exceeds_48_000_characters_shorten__845a3d17" formatted="false">"This case exceeds 48,000 characters. Shorten an item or start another case."</string>
+    <string name="sx_this_content_is_already_in_the_case_duplicat_6c431019" formatted="false">"This content is already in the case. Duplicate evidence does not increase concern."</string>
+    <string name="sx_this_item_could_not_be_analyzed_your_reviewe_ee5fab9d" formatted="false">"This item could not be analyzed. Your reviewed input is still available."</string>
+    <string name="sx_evidence_added_review_the_linked_explanation_a9fdec63" formatted="false">"Evidence added. Review the linked explanation below."</string>
+    <string name="sx_check_that_this_belongs_to_the_same_situatio_643f7f40" formatted="false">"Check that this belongs to the same situation, then add the reviewed evidence."</string>
+    <string name="sx_saved_cases_could_not_be_read_try_again_or_d_3ab68690" formatted="false">"Saved cases could not be read. Try again or delete saved cases."</string>
+    <string name="sx_finish_reviewing_your_input_before_saving_th_947c92eb" formatted="false">"Finish reviewing your input before saving this case."</string>
+    <string name="sx_this_case_could_not_be_saved_securely_the_pr_a8cdbeae" formatted="false">"This case could not be saved securely. The private draft is still available."</string>
+    <string name="sx_case_saved_with_on_device_encryption_b7f59deb" formatted="false">"Case saved with on-device encryption."</string>
+    <string name="sx_this_saved_case_could_not_be_opened_it_may_b_b4967080" formatted="false">"This saved case could not be opened. It may be damaged or its encryption key may be unavailable."</string>
+    <string name="sx_saved_cases_could_not_be_deleted_try_again_3a36649f" formatted="false">"Saved cases could not be deleted. Try again."</string>
+    <string name="sx_saved_case_data_deleted_the_open_private_dra_c825dc90" formatted="false">"Saved case data deleted. The open private draft is separate."</string>
+    <string name="sx_added_from_a_reviewed_floating_scan_confirm__435a9516" formatted="false">"Added from a reviewed floating scan. Confirm that it belongs to this situation."</string>
+    <string name="sx_added_from_a_scan_result_confirm_that_it_bel_3e656a05" formatted="false">"Added from a scan result. Confirm that it belongs to this situation."</string>
+    <string name="sx_finish_the_current_reviewed_input_before_add_70ed8524" formatted="false">"Finish the current reviewed input before adding another scan. Your existing draft was kept."</string>
+    <string name="sx_add_to_a_private_case_07e307ec" formatted="false">"Add to a private case"</string>
+    <string name="sx_replace_the_current_reviewed_input_added_evi_b36e7590" formatted="false">"Replace the current reviewed input? Added evidence stays in the case."</string>
 </resources>

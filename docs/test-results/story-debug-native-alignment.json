@@ -1,0 +1,221 @@
+{
+  "apk": "app-debug.apk",
+  "sha256": "e356ce597f26f207fc8475366471d8d82d823375dfda73897ae7dabd799daa38",
+  "libraries": [
+    {
+      "library": "lib/arm64-v8a/libandroidx.graphics.path.so",
+      "elfLoadAlignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/arm64-v8a/libbarhopper_v3.so",
+      "elfLoadAlignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/arm64-v8a/libdatastore_shared_counter.so",
+      "elfLoadAlignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/arm64-v8a/libimage_processing_util_jni.so",
+      "elfLoadAlignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/arm64-v8a/libjpeg.so",
+      "elfLoadAlignment": [
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/arm64-v8a/libleptonica.so",
+      "elfLoadAlignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/arm64-v8a/libmlkit_google_ocr_pipeline.so",
+      "elfLoadAlignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/arm64-v8a/libpngx.so",
+      "elfLoadAlignment": [
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/arm64-v8a/libsurface_util_jni.so",
+      "elfLoadAlignment": [
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/arm64-v8a/libtensorflowlite_jni.so",
+      "elfLoadAlignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/arm64-v8a/libtesseract.so",
+      "elfLoadAlignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/x86_64/libandroidx.graphics.path.so",
+      "elfLoadAlignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/x86_64/libbarhopper_v3.so",
+      "elfLoadAlignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/x86_64/libdatastore_shared_counter.so",
+      "elfLoadAlignment": [
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/x86_64/libimage_processing_util_jni.so",
+      "elfLoadAlignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/x86_64/libjpeg.so",
+      "elfLoadAlignment": [
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/x86_64/libleptonica.so",
+      "elfLoadAlignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/x86_64/libmlkit_google_ocr_pipeline.so",
+      "elfLoadAlignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/x86_64/libpngx.so",
+      "elfLoadAlignment": [
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/x86_64/libsurface_util_jni.so",
+      "elfLoadAlignment": [
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/x86_64/libtensorflowlite_jni.so",
+      "elfLoadAlignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    },
+    {
+      "library": "lib/x86_64/libtesseract.so",
+      "elfLoadAlignment": [
+        16384,
+        16384,
+        16384
+      ],
+      "elf16KB": true,
+      "zip16KB": true
+    }
+  ],
+  "passed": true,
+  "scope": "Static packaged ELF/ZIP checks; not a 16 KB runtime test."
+}

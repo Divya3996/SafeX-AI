@@ -1,0 +1,478 @@
+{
+  "kind": "Authored development contracts; not an independent accuracy benchmark",
+  "rule_version": 1,
+  "device": "sdk_gphone64_x86_64; API 34",
+  "results": [
+    {
+      "id": "task-en",
+      "language": "en",
+      "label": "suspicious",
+      "expected_pattern": "task_fee",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [
+        "task_fee"
+      ],
+      "overall_concern": "HIGH",
+      "correlation_us": 12160,
+      "total_ms": 59
+    },
+    {
+      "id": "task-hi",
+      "language": "hi",
+      "label": "suspicious",
+      "expected_pattern": "task_fee",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [
+        "task_fee"
+      ],
+      "overall_concern": "HIGH",
+      "correlation_us": 7630,
+      "total_ms": 35
+    },
+    {
+      "id": "task-gu",
+      "language": "gu",
+      "label": "suspicious",
+      "expected_pattern": "task_fee",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [
+        "task_fee"
+      ],
+      "overall_concern": "HIGH",
+      "correlation_us": 8598,
+      "total_ms": 31
+    },
+    {
+      "id": "advance-fee-en",
+      "language": "en",
+      "label": "suspicious",
+      "expected_pattern": "task_fee",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [
+        "task_fee"
+      ],
+      "overall_concern": "HIGH",
+      "correlation_us": 5131,
+      "total_ms": 22
+    },
+    {
+      "id": "withdrawal-en",
+      "language": "en",
+      "label": "suspicious",
+      "expected_pattern": "task_fee",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [
+        "task_fee"
+      ],
+      "overall_concern": "HIGH",
+      "correlation_us": 4270,
+      "total_ms": 20
+    },
+    {
+      "id": "bank-en",
+      "language": "en",
+      "label": "suspicious",
+      "expected_pattern": "authority_pressure",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [
+        "authority_pressure"
+      ],
+      "overall_concern": "HIGH",
+      "correlation_us": 5177,
+      "total_ms": 26
+    },
+    {
+      "id": "bank-hi",
+      "language": "hi",
+      "label": "suspicious",
+      "expected_pattern": "authority_pressure",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [
+        "authority_pressure"
+      ],
+      "overall_concern": "HIGH",
+      "correlation_us": 6116,
+      "total_ms": 28
+    },
+    {
+      "id": "bank-gu",
+      "language": "gu",
+      "label": "suspicious",
+      "expected_pattern": "authority_pressure",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [
+        "authority_pressure"
+      ],
+      "overall_concern": "HIGH",
+      "correlation_us": 5798,
+      "total_ms": 31
+    },
+    {
+      "id": "support-en",
+      "language": "en",
+      "label": "suspicious",
+      "expected_pattern": "support_remote",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [
+        "support_remote"
+      ],
+      "overall_concern": "HIGH",
+      "correlation_us": 5209,
+      "total_ms": 29
+    },
+    {
+      "id": "support-hi",
+      "language": "hi",
+      "label": "suspicious",
+      "expected_pattern": "support_remote",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [
+        "support_remote"
+      ],
+      "overall_concern": "HIGH",
+      "correlation_us": 5062,
+      "total_ms": 22
+    },
+    {
+      "id": "job-en",
+      "language": "en",
+      "label": "legitimate_comparison",
+      "expected_pattern": "",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [],
+      "overall_concern": "REVIEW",
+      "correlation_us": 6587,
+      "total_ms": 31
+    },
+    {
+      "id": "job-hi",
+      "language": "hi",
+      "label": "legitimate_comparison",
+      "expected_pattern": "",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [],
+      "overall_concern": "REVIEW",
+      "correlation_us": 7898,
+      "total_ms": 38
+    },
+    {
+      "id": "job-gu",
+      "language": "gu",
+      "label": "legitimate_comparison",
+      "expected_pattern": "",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [],
+      "overall_concern": "REVIEW",
+      "correlation_us": 6462,
+      "total_ms": 29
+    },
+    {
+      "id": "bank-hours",
+      "language": "en",
+      "label": "legitimate_comparison",
+      "expected_pattern": "",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [],
+      "overall_concern": "CONTEXT",
+      "correlation_us": 4519,
+      "total_ms": 17
+    },
+    {
+      "id": "bank-safety",
+      "language": "en",
+      "label": "legitimate_comparison",
+      "expected_pattern": "",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [],
+      "overall_concern": "CONTEXT",
+      "correlation_us": 3333,
+      "total_ms": 13
+    },
+    {
+      "id": "remote-documentation",
+      "language": "en",
+      "label": "legitimate_comparison",
+      "expected_pattern": "",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [],
+      "overall_concern": "CONTEXT",
+      "correlation_us": 4126,
+      "total_ms": 22
+    },
+    {
+      "id": "paid-remote-support",
+      "language": "en",
+      "label": "legitimate_comparison",
+      "expected_pattern": "support_remote",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [
+        "support_remote"
+      ],
+      "overall_concern": "REVIEW",
+      "correlation_us": 3817,
+      "total_ms": 17
+    },
+    {
+      "id": "single-qr",
+      "language": "en",
+      "label": "legitimate_comparison",
+      "expected_pattern": "",
+      "item_checks": [
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [],
+      "overall_concern": "REVIEW",
+      "correlation_us": 2244,
+      "total_ms": 8
+    },
+    {
+      "id": "matching-qr",
+      "language": "en",
+      "label": "legitimate_comparison",
+      "expected_pattern": "",
+      "item_checks": [
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [],
+      "overall_concern": "REVIEW",
+      "correlation_us": 3446,
+      "total_ms": 18
+    },
+    {
+      "id": "college-invoice",
+      "language": "en",
+      "label": "legitimate_comparison",
+      "expected_pattern": "",
+      "item_checks": [
+        {
+          "decision": "ALLOW",
+          "coverage": "COMPLETE"
+        },
+        {
+          "decision": "WARN",
+          "coverage": "COMPLETE"
+        }
+      ],
+      "story_patterns": [],
+      "overall_concern": "REVIEW",
+      "correlation_us": 5373,
+      "total_ms": 25
+    }
+  ],
+  "contract_mismatches": []
+}

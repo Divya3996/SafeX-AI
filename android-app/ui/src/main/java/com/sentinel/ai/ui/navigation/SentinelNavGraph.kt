@@ -62,7 +62,8 @@ fun SentinelNavGraph(
     themeMode: SentinelThemeMode = SentinelThemeMode.Dark,
     onThemeModeSelected: (SentinelThemeMode) -> Unit = {},
     onPermissionOnboardingComplete: () -> Unit = {},
-    appVersion: String = "1.0.0"
+    appVersion: String = "1.0.0",
+    openStoryRequest: Int = 0
 ) {
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = backStackEntry?.destination?.route
@@ -70,11 +71,15 @@ fun SentinelNavGraph(
     val context = LocalContext.current
     val tourProgress = rememberSaveable { mutableIntStateOf(-1) }
     val guide = remember { GuideController(context.applicationContext, tourProgress) }
+    val graphReady = backStackEntry != null
+    LaunchedEffect(openStoryRequest, graphReady) {
+        if (openStoryRequest > 0 && graphReady) { guide.stop(); navController.navigate(Screen.Story.route) { launchSingleTop = true } }
+    }
     LaunchedEffect(currentRoute) {
         if (currentRoute == Screen.Dashboard.route && GuidancePreferences.consumePendingTour(context)) guide.start()
     }
-    LaunchedEffect(guide.index) {
-        guide.current?.let { step ->
+    LaunchedEffect(guide.index, graphReady) {
+        if (graphReady) guide.current?.let { step ->
             if (currentRoute != step.route) navController.navigate(step.route) { launchSingleTop = true }
         }
     }
@@ -140,7 +145,7 @@ fun SentinelNavGraph(
                     }
                 },
                 bottomBar = {
-                    if (isCompact && !isPermissionSetup && currentRoute?.startsWith("threat_details") != true && currentRoute != Screen.IncidentHelp.route) {
+                    if (isCompact && !isPermissionSetup && currentRoute?.startsWith("threat_details") != true && currentRoute != Screen.IncidentHelp.route && currentRoute != Screen.Story.route) {
                         SentinelBottomNav(
                             currentRoute = currentRoute,
                             onDestinationSelected = onDestinationSelected
@@ -209,6 +214,7 @@ private fun SentinelNavHost(
             popExitTransition = { SentinelNavPopExitTransition }
         ) {
             DashboardScreen(
+                onStory = { navController.navigate(Screen.Story.route) },
                 onFeatureGuide = { navController.navigate(Screen.FeatureGuide.route) },
                 onIncidentHelp = { navController.navigate(Screen.IncidentHelp.route) },
                 onThreatSelected = { threatId ->
@@ -301,6 +307,13 @@ private fun SentinelNavHost(
         }
         composable(Screen.IncidentHelp.route) {
             com.sentinel.ai.ui.screens.help.IncidentHelpScreen { navController.popBackStack() }
+        }
+        composable(Screen.Story.route) {
+            val context = LocalContext.current
+            com.sentinel.ai.ui.screens.story.StoryScreen(
+                onHelp = { navController.navigate(Screen.IncidentHelp.route) },
+                onCapture = { com.sentinel.ai.core.feature.FloatingAssistantControl.open(context) }
+            )
         }
         composable(
             route = Screen.Scanner.route,

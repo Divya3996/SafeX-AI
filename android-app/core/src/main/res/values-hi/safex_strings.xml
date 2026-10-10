@@ -897,4 +897,126 @@
     <string name="sx_search_local_history_or_filter_warnings_open_fcb74128" formatted="false">"डिवाइस के इतिहास में खोजें या केवल चेतावनियाँ देखें। रिकॉर्ड खोलकर कारण, गंतव्य और अतिरिक्त जानकारी के प्रश्न पढ़ें। सब मिटाने से पहले पुष्टि माँगी जाती है। रिकॉर्ड देखने से उसका लिंक खुद नहीं खुलता।"</string>
     <string name="sx_review_incoming_message_alerts_d8482783" formatted="false">"नए संदेशों की चेतावनियाँ देखें"</string>
     <string name="sx_supported_notification_checks_appear_here_wh_d79f1801" formatted="false">"सुरक्षा और Android पहुँच चालू होने पर समर्थित सूचनाओं की जाँच यहाँ दिखती है। चेतावनी खोलकर कारण और पूरा विवरण पढ़ें। खाली सूची यह प्रमाणित नहीं करती कि हर संदेश जाँचा गया था।"</string>
+    <string name="sx_scam_story_mode_8310cb54" formatted="false">"स्कैम स्टोरी मोड"</string>
+    <string name="sx_review_the_whole_situation_be220927" formatted="false">"पूरी स्थिति की समीक्षा करें"</string>
+    <string name="sx_connect_messages_screenshots_links_and_qr_cl_9713b54c" formatted="false">"संदेश, स्क्रीनशॉट, लिंक और QR संकेत निजी रूप से जोड़ें"</string>
+    <string name="sx_connect_the_whole_situation_7786f364" formatted="false">"पूरी स्थिति के संकेत जोड़ें"</string>
+    <string name="sx_add_reviewed_messages_screenshots_links_or_q_c455fa1e" formatted="false">"समीक्षित संदेश, स्क्रीनशॉट, लिंक या QR सामग्री निजी केस में जोड़ें। क्रम तय करें और प्रमाण देखने के लिए निष्कर्ष पर टैप करें। एन्क्रिप्टेड संग्रह के लिए खुद सेव करें; अगले कदमों के लिए स्कैम के बाद सहायता खोलें।"</string>
+    <string name="sx_connect_the_clues_70b064a5" formatted="false">"संकेतों को जोड़ें"</string>
+    <string name="sx_add_only_items_from_the_same_situation_revie_0f60b88f" formatted="false">"एक ही स्थिति से जुड़ी सामग्री जोड़ें। निकाली गई सामग्री की समीक्षा करें, क्रम तय करें और जुड़े कारण देखें। कम चिंता वाला परिणाम सुरक्षा की गारंटी नहीं है।"</string>
+    <string name="sx_your_draft_stays_in_memory_leaving_this_scre_dfe28c4b" formatted="false">"ड्राफ्ट मेमोरी में रहता है। इस स्क्रीन से दो मिनट दूर रहने या फोन लॉक करने पर यह मिट जाता है। एन्क्रिप्टेड केस रखने के लिए खुद सेव करें।"</string>
+    <string name="sx_private_situation_d7193692" formatted="false">"निजी स्थिति"</string>
+    <string name="sx_more_context_needed_9b33e61e" formatted="false">"और संदर्भ चाहिए"</string>
+    <string name="sx_review_this_situation_8b9146ef" formatted="false">"इस स्थिति की समीक्षा करें"</string>
+    <string name="sx_high_concern_aec79797" formatted="false">"गंभीर चिंता"</string>
+    <string name="sx_on_device_private_draft_6e9b7707" formatted="false">"डिवाइस पर • निजी ड्राफ्ट"</string>
+    <string name="sx_saved_with_on_device_encryption_287f0eea" formatted="false">"डिवाइस पर एन्क्रिप्ट करके सेव किया गया"</string>
+    <string name="sx_synthetic_example_5adc195d" formatted="false">"काल्पनिक उदाहरण"</string>
+    <string name="sx_synthetic_example_actual_detector_473496a3" formatted="false">"काल्पनिक उदाहरण • वास्तविक डिटेक्टर"</string>
+    <string name="sx_name_this_case_0ed5f84c" formatted="false">"इस केस का नाम रखें"</string>
+    <string name="sx_case_name_fb29b46d" formatted="false">"केस का नाम"</string>
+    <string name="sx_start_a_new_private_case_edef424c" formatted="false">"नया निजी केस शुरू करें"</string>
+    <string name="sx_no_supported_story_pattern_yet_add_relevant__1dad8078" formatted="false">"अभी कोई समर्थित क्रमिक स्कैम पैटर्न नहीं मिला। संबंधित प्रमाण जोड़ें और स्वतंत्र रूप से सत्यापित करें।"</string>
+    <string name="sx_tap_a_finding_to_see_the_exact_supporting_ev_1106f5c3" formatted="false">"सटीक सहायक प्रमाण देखने के लिए निष्कर्ष पर टैप करें।"</string>
+    <string name="sx_some_checks_have_limited_coverage_missing_ev_44e9b239" formatted="false">"कुछ जाँचों की कवरेज सीमित है। अनुपलब्ध प्रमाण अज्ञात रहता है।"</string>
+    <string name="sx_add_reviewed_evidence_f8a385d7" formatted="false">"समीक्षित प्रमाण जोड़ें"</string>
+    <string name="sx_edit_and_recheck_evidence_ae773316" formatted="false">"प्रमाण संपादित करके फिर जाँचें"</string>
+    <string name="sx_review_text_or_decoded_content_d5410af3" formatted="false">"टेक्स्ट या डिकोड सामग्री की समीक्षा करें"</string>
+    <string name="sx_qr_content_8ad53490" formatted="false">"QR सामग्री"</string>
+    <string name="sx_floating_review_328b8807" formatted="false">"फ्लोटिंग समीक्षा"</string>
+    <string name="sx_scan_result_3eaa3b0a" formatted="false">"जाँच परिणाम"</string>
+    <string name="sx_choose_qr_image_9918aaf8" formatted="false">"QR की तस्वीर चुनें"</string>
+    <string name="sx_use_floating_capture_368c7c0a" formatted="false">"फ्लोटिंग कैप्चर इस्तेमाल करें"</string>
+    <string name="sx_screenshot_text_cannot_reveal_a_hidden_html__88e3da4e" formatted="false">"स्क्रीनशॉट का टेक्स्ट छिपा HTML गंतव्य नहीं दिखा सकता। OCR संपादन टाइमलाइन में चिह्नित होते हैं।"</string>
+    <string name="sx_review_the_extracted_content_before_adding_i_52d9a383" formatted="false">"जोड़ने से पहले निकाली गई सामग्री की समीक्षा करें। स्क्रीनशॉट में छिपे लिंक गंतव्य नहीं दिखते।"</string>
+    <string name="sx_recognition_may_be_incomplete_check_spelling_52adc7f5" formatted="false">"पहचान अधूरी हो सकती है। वर्तनी, छूटे शब्द और डिकोड QR सामग्री जाँचें।"</string>
+    <string name="sx_extracted_on_this_device_review_text_and_qr__1d4721b3" formatted="false">"इस डिवाइस पर निकाला गया। जोड़ने से पहले टेक्स्ट और QR सामग्री की समीक्षा करें।"</string>
+    <string name="sx_demo_step_1_1_s_of_2_2_s_1f428108" formatted="false">"डेमो चरण %1$s / %2$s"</string>
+    <string name="sx_next_example_message_234a6f2c" formatted="false">"उदाहरण का अगला संदेश"</string>
+    <string name="sx_try_a_harmless_story_afd7a4ff" formatted="false">"हानिरहित क्रमिक उदाहरण आज़माएँ"</string>
+    <string name="sx_each_example_uses_the_actual_private_detecto_ac9b23e0" formatted="false">"हर उदाहरण वास्तविक निजी डिटेक्टर इस्तेमाल करता है। कोई लिंक या भुगतान खोलने की जरूरत नहीं है।"</string>
+    <string name="sx_task_scam_example_20e6fba3" formatted="false">"टास्क स्कैम का उदाहरण"</string>
+    <string name="sx_legitimate_comparison_1e816571" formatted="false">"वैध स्थिति से तुलना"</string>
+    <string name="sx_connected_findings_23571ab6" formatted="false">"जुड़े हुए निष्कर्ष"</string>
+    <string name="sx_view_supporting_evidence_95e9189d" formatted="false">"सहायक प्रमाण देखें"</string>
+    <string name="sx_evidence_timeline_0498bd67" formatted="false">"प्रमाण की टाइमलाइन"</string>
+    <string name="sx_order_is_chosen_by_you_times_below_show_when_2ba1374c" formatted="false">"क्रम आपने तय किया है। नीचे का समय सामग्री जोड़ने का है, भेजने वाले के भेजने का नहीं।"</string>
+    <string name="sx_reviewed_text_was_edited_2ea5da53" formatted="false">"समीक्षित टेक्स्ट संपादित किया गया"</string>
+    <string name="sx_view_full_evidence_285a3bc5" formatted="false">"पूरा प्रमाण देखें"</string>
+    <string name="sx_move_earlier_736612d4" formatted="false">"पहले रखें"</string>
+    <string name="sx_move_later_d6e85608" formatted="false">"बाद में रखें"</string>
+    <string name="sx_reviewed_evidence_1076c88a" formatted="false">"समीक्षित प्रमाण"</string>
+    <string name="sx_individual_check_9315da74" formatted="false">"अलग सामग्री की जाँच"</string>
+    <string name="sx_unverified_payment_details_c212ba62" formatted="false">"असत्यापित भुगतान विवरण"</string>
+    <string name="sx_save_encrypted_case_0963bb9c" formatted="false">"एन्क्रिप्टेड केस सेव करें"</string>
+    <string name="sx_preview_redacted_summary_cdcefe71" formatted="false">"निजी विवरण हटाए सारांश का पूर्वावलोकन"</string>
+    <string name="sx_offline_checks_cannot_verify_identity_follow_700dc330" formatted="false">"ऑफलाइन जाँच पहचान सत्यापित नहीं कर सकती, छिपे रीडायरेक्ट नहीं खोल सकती और रिकवरी की गारंटी नहीं दे सकती। कदम उठाने से पहले स्वतंत्र विश्वसनीय माध्यम इस्तेमाल करें।"</string>
+    <string name="sx_show_story_guide_06a10f92" formatted="false">"क्रमिक समीक्षा की गाइड दिखाएँ"</string>
+    <string name="sx_checking_on_this_device_987f2e5d" formatted="false">"इस डिवाइस पर जाँच जारी…"</string>
+    <string name="sx_saving_securely_f9a4e6b4" formatted="false">"सुरक्षित रूप से सेव हो रहा है…"</string>
+    <string name="sx_update_evidence_24c3983f" formatted="false">"प्रमाण अपडेट करें"</string>
+    <string name="sx_saved_cases_6bb0d70b" formatted="false">"सेव किए गए केस"</string>
+    <string name="sx_cases_are_encrypted_on_this_device_and_follo_dcb9df7f" formatted="false">"केस इस डिवाइस पर एन्क्रिप्ट हैं और आपकी इतिहास रखने की सेटिंग का पालन करते हैं।"</string>
+    <string name="sx_no_saved_cases_bc48b16a" formatted="false">"कोई सेव किया गया केस नहीं"</string>
+    <string name="sx_some_saved_cases_cannot_be_opened_you_can_de_67fe7fa4" formatted="false">"कुछ सेव किए केस नहीं खुल सकते। खराब या अनुपलब्ध डेटा हटाने के लिए सेव किए केस मिटा सकते हैं।"</string>
+    <string name="sx_open_case_c9479e04" formatted="false">"केस खोलें"</string>
+    <string name="sx_share_redacted_summary_eb4c9f3b" formatted="false">"निजी विवरण हटाया सारांश साझा करें"</string>
+    <string name="sx_no_sharing_app_is_available_20b59441" formatted="false">"साझा करने वाला कोई ऐप उपलब्ध नहीं है।"</string>
+    <string name="sx_confirm_your_choice_18e85a9e" formatted="false">"अपनी पसंद की पुष्टि करें"</string>
+    <string name="sx_replace_the_open_private_case_unsaved_change_a0c0b472" formatted="false">"खुला निजी केस बदलें? बिना सेव किए बदलाव और समीक्षित इनपुट हट जाएँगे। सेव किए केस डिवाइस पर रहेंगे।"</string>
+    <string name="sx_replace_the_reviewed_input_with_a_chosen_ima_da8c73cf" formatted="false">"समीक्षित इनपुट चुनी तस्वीर से बदलें? जोड़ा गया प्रमाण केस में रहेगा।"</string>
+    <string name="sx_remove_this_evidence_and_recompute_the_case__3d9c86e3" formatted="false">"यह प्रमाण हटाकर केस फिर जाँचें? पहले सेव की प्रति आपके फिर सेव करने तक नहीं बदलेगी।"</string>
+    <string name="sx_delete_this_encrypted_saved_case_the_open_pr_fde11e15" formatted="false">"यह एन्क्रिप्टेड सेव किया केस मिटाएँ? खुला निजी ड्राफ्ट अलग है।"</string>
+    <string name="sx_delete_all_encrypted_saved_cases_this_cannot_d7ecaab6" formatted="false">"सभी एन्क्रिप्टेड सेव किए केस मिटाएँ? इसे वापस नहीं लिया जा सकता।"</string>
+    <string name="sx_evidence_1_1_s_583c478c" formatted="false">"प्रमाण %1$s"</string>
+    <string name="sx_safex_ai_situation_summary_b4696c3b" formatted="false">"SafeX AI स्थिति का सारांश"</string>
+    <string name="sx_user_prepared_guidance_not_a_submitted_compl_a7036bb0" formatted="false">"उपयोगकर्ता द्वारा तैयार मार्गदर्शन; जमा की गई शिकायत या सत्यापित पहचान नहीं।"</string>
+    <string name="sx_evidence_count_1_1_s_2916a7d1" formatted="false">"प्रमाण की संख्या: %1$s"</string>
+    <string name="sx_supporting_items_1_1_s_61933581" formatted="false">"सहायक सामग्री: %1$s"</string>
+    <string name="sx_raw_messages_screenshots_links_payment_detai_0d292c0d" formatted="false">"मूल संदेश, स्क्रीनशॉट, लिंक, भुगतान विवरण और निजी रहस्य शामिल नहीं हैं।"</string>
+    <string name="sx_a_low_concern_result_is_not_a_safety_guarant_947a4043" formatted="false">"कम चिंता वाला परिणाम सुरक्षा की गारंटी नहीं है। विश्वसनीय स्वतंत्र माध्यम से सत्यापित करें।"</string>
+    <string name="sx_payment_to_unlock_promised_work_or_earnings_c5e61c6d" formatted="false">"वादा किए काम या कमाई पाने के लिए भुगतान"</string>
+    <string name="sx_an_earlier_item_describes_work_or_earnings_a_df7a5eb9" formatted="false">"पहली सामग्री काम या कमाई बताती है। बाद की सामग्री उसे पाने के लिए भुगतान माँगती है। मिलकर ये अग्रिम फीस या टास्क स्कैम के पैटर्न से मेल खाते हैं।"</string>
+    <string name="sx_pause_the_payment_verify_the_employer_throug_c5dff109" formatted="false">"भुगतान रोकें। स्वतंत्र रूप से मिले संपर्क विवरण से नियोक्ता सत्यापित करें।"</string>
+    <string name="sx_this_pattern_can_be_followed_by_another_fee__42ecdb80" formatted="false">"इस पैटर्न के बाद दूसरी फीस माँगी जा सकती है। और भुगतान करने से वादा की कमाई सत्यापित नहीं होती।"</string>
+    <string name="sx_authority_claim_followed_by_pressure_and_a_d_dfaf24f7" formatted="false">"अधिकारी होने का दावा, फिर दबाव और माँग"</string>
+    <string name="sx_the_case_combines_a_claimed_bank_or_governme_020fa91b" formatted="false">"केस में बैंक या सरकार की पहचान का दावा, धमकी और बाद में पैसे, निजी रहस्य या रिमोट एक्सेस की माँग जुड़ी है। दावे की पहचान सत्यापित नहीं है।"</string>
+    <string name="sx_stop_and_contact_the_institution_through_its_5addd6b6" formatted="false">"रुकें और संस्था के आधिकारिक ऐप या स्वतंत्र रूप से मिले नंबर से संपर्क करें।"</string>
+    <string name="sx_requests_for_secrecy_or_another_transfer_can_6aa5574f" formatted="false">"इस पैटर्न के बाद गोपनीयता या दूसरे ट्रांसफर की माँग हो सकती है। इस बातचीत से बाहर सत्यापित करें।"</string>
+    <string name="sx_support_claim_followed_by_remote_access_and__481bb980" formatted="false">"सपोर्ट का दावा, फिर रिमोट एक्सेस और माँग"</string>
+    <string name="sx_an_earlier_item_claims_to_provide_support_la_40b93162" formatted="false">"पहली सामग्री सपोर्ट देने का दावा करती है। बाद का प्रमाण रिमोट एक्सेस और पैसे या निजी रहस्य माँगता है। इस संयोजन को स्वतंत्र रूप से सत्यापित करें।"</string>
+    <string name="sx_do_not_grant_more_access_use_official_suppor_24c3ba8a" formatted="false">"और एक्सेस न दें। आधिकारिक सपोर्ट इस्तेमाल करें; एक्सेस दिया हो तो स्कैम के बाद सहायता खोलें।"</string>
+    <string name="sx_a_request_to_open_banking_or_share_an_otp_ca_b58c4f05" formatted="false">"इस पैटर्न के बाद बैंकिंग खोलने या ओटीपी साझा करने की माँग हो सकती है। रिमोट एक्सेस को पहचान का सत्यापन न मानें।"</string>
+    <string name="sx_different_payment_addresses_in_this_case_fc36f63b" formatted="false">"इस केस में अलग भुगतान पते"</string>
+    <string name="sx_the_submitted_items_contain_different_upi_ad_54ebd045" formatted="false">"दी गई सामग्री में अलग UPI पते हैं। यह वैध हो सकता है; भुगतान से पहले इच्छित प्राप्तकर्ता की पुष्टि करें। QR लेबल मालिकाना हक सत्यापित नहीं करते।"</string>
+    <string name="sx_compare_the_payment_address_with_details_fro_efc338fe" formatted="false">"भुगतान पता विश्वसनीय स्रोत के विवरण से मिलाएँ।"</string>
+    <string name="sx_an_individual_check_found_a_warning_5b73c1f8" formatted="false">"अलग सामग्री की जाँच में चेतावनी मिली"</string>
+    <string name="sx_this_item_already_raised_a_warning_in_the_ex_0e7d8f01" formatted="false">"इस सामग्री पर मौजूदा डिटेक्टर ने पहले ही चेतावनी दी। क्रमिक पैटर्न न मिलने पर भी उसका परिणाम दिखता है।"</string>
+    <string name="sx_read_the_individual_reasons_before_acting_2b2dad47" formatted="false">"कदम उठाने से पहले अलग सामग्री के कारण पढ़ें।"</string>
+    <string name="sx_private_case_expired_saved_cases_remain_encr_dcda6f46" formatted="false">"निजी केस की अवधि समाप्त हुई। सेव किए केस डिवाइस पर एन्क्रिप्टेड रहते हैं।"</string>
+    <string name="sx_private_case_cleared_when_the_screen_locked__02e946e7" formatted="false">"स्क्रीन लॉक होने पर निजी केस मिट गया। सेव किए केस एन्क्रिप्टेड रहते हैं।"</string>
+    <string name="sx_analysis_cancelled_your_reviewed_input_is_st_9e8a47d0" formatted="false">"जाँच रद्द की गई। आपका समीक्षित इनपुट अभी उपलब्ध है।"</string>
+    <string name="sx_order_updated_this_is_your_chosen_order_not__238398c4" formatted="false">"क्रम अपडेट हुआ। यह आपका चुना क्रम है, सत्यापित संदेश समय नहीं।"</string>
+    <string name="sx_analysis_timed_out_try_a_smaller_item_or_pas_d2cd1215" formatted="false">"जाँच का समय समाप्त हुआ। छोटी सामग्री आज़माएँ या मूल टेक्स्ट पेस्ट करें।"</string>
+    <string name="sx_this_image_could_not_be_read_try_a_clearer_s_4c44dd6e" formatted="false">"यह तस्वीर पढ़ी नहीं जा सकी। साफ स्क्रीनशॉट आज़माएँ या मूल टेक्स्ट पेस्ट करें।"</string>
+    <string name="sx_no_readable_content_found_try_a_clearer_imag_3b268733" formatted="false">"पढ़ने योग्य सामग्री नहीं मिली। साफ तस्वीर आज़माएँ या टेक्स्ट पेस्ट करें।"</string>
+    <string name="sx_add_reviewed_content_first_f1c64066" formatted="false">"पहले समीक्षित सामग्री जोड़ें।"</string>
+    <string name="sx_a_case_can_contain_eight_items_remove_an_ite_ba07fc2f" formatted="false">"केस में आठ सामग्री तक हो सकती हैं। एक हटाएँ या दूसरा केस शुरू करें।"</string>
+    <string name="sx_this_case_exceeds_48_000_characters_shorten__845a3d17" formatted="false">"यह केस 48,000 अक्षरों से बड़ा है। सामग्री छोटी करें या दूसरा केस शुरू करें।"</string>
+    <string name="sx_this_content_is_already_in_the_case_duplicat_6c431019" formatted="false">"यह सामग्री केस में पहले से है। दोहराए प्रमाण से चिंता नहीं बढ़ती।"</string>
+    <string name="sx_this_item_could_not_be_analyzed_your_reviewe_ee5fab9d" formatted="false">"यह सामग्री जाँची नहीं जा सकी। आपका समीक्षित इनपुट अभी उपलब्ध है।"</string>
+    <string name="sx_evidence_added_review_the_linked_explanation_a9fdec63" formatted="false">"प्रमाण जोड़ा गया। नीचे जुड़ा स्पष्टीकरण देखें।"</string>
+    <string name="sx_check_that_this_belongs_to_the_same_situatio_643f7f40" formatted="false">"देखें कि यह उसी स्थिति से जुड़ा है, फिर समीक्षित प्रमाण जोड़ें।"</string>
+    <string name="sx_saved_cases_could_not_be_read_try_again_or_d_3ab68690" formatted="false">"सेव किए केस पढ़े नहीं जा सके। फिर कोशिश करें या सेव किए केस मिटाएँ।"</string>
+    <string name="sx_finish_reviewing_your_input_before_saving_th_947c92eb" formatted="false">"इस केस को सेव करने से पहले इनपुट की समीक्षा पूरी करें।"</string>
+    <string name="sx_this_case_could_not_be_saved_securely_the_pr_a8cdbeae" formatted="false">"केस सुरक्षित रूप से सेव नहीं हुआ। निजी ड्राफ्ट अभी उपलब्ध है।"</string>
+    <string name="sx_case_saved_with_on_device_encryption_b7f59deb" formatted="false">"केस डिवाइस पर एन्क्रिप्ट करके सेव किया गया।"</string>
+    <string name="sx_this_saved_case_could_not_be_opened_it_may_b_b4967080" formatted="false">"यह सेव किया केस नहीं खुला। यह खराब हो सकता है या एन्क्रिप्शन कुंजी अनुपलब्ध हो सकती है।"</string>
+    <string name="sx_saved_cases_could_not_be_deleted_try_again_3a36649f" formatted="false">"सेव किए केस मिटाए नहीं जा सके। फिर कोशिश करें।"</string>
+    <string name="sx_saved_case_data_deleted_the_open_private_dra_c825dc90" formatted="false">"सेव किए केस का डेटा मिट गया। खुला निजी ड्राफ्ट अलग है।"</string>
+    <string name="sx_added_from_a_reviewed_floating_scan_confirm__435a9516" formatted="false">"समीक्षित फ्लोटिंग जाँच से जोड़ा गया। पुष्टि करें कि यह इसी स्थिति का है।"</string>
+    <string name="sx_added_from_a_scan_result_confirm_that_it_bel_3e656a05" formatted="false">"जाँच परिणाम से जोड़ा गया। पुष्टि करें कि यह इसी स्थिति का है।"</string>
+    <string name="sx_finish_the_current_reviewed_input_before_add_70ed8524" formatted="false">"दूसरी जाँच जोड़ने से पहले मौजूदा इनपुट की समीक्षा पूरी करें। आपका ड्राफ्ट सुरक्षित रखा गया।"</string>
+    <string name="sx_add_to_a_private_case_07e307ec" formatted="false">"निजी केस में जोड़ें"</string>
+    <string name="sx_replace_the_current_reviewed_input_added_evi_b36e7590" formatted="false">"क्या आप मौजूदा समीक्षा किए गए इनपुट को बदलना चाहते हैं? जोड़े गए सबूत केस में बने रहेंगे।"</string>
 </resources>

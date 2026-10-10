@@ -1,0 +1,13 @@
+{
+  "recordedAt": "2026-10-10T08:49:01.949444+00:00",
+  "version": "1.9.0",
+  "versionCode": 10,
+  "debugApkSha256": "54684700ad81ec2d240804c5ba2d3f70cf46b4ed3ce130789d9ee75f9bbde665",
+  "instrumentationApkSha256": "7302643318a951d97ebd9947a4688788e0f413be5f41b1186d0e326ee36fbc81",
+  "androidVersion": "14",
+  "api": "34",
+  "model": "sdk_gphone64_x86_64",
+  "airplaneMode": "1",
+  "wifiOn": "0",
+  "cameraFixtureSha256": "621057b2e1cb68b59b6b8cca1b7fe9c514c3b0c159bdb0efd1e848589e3a9ec6"
+}

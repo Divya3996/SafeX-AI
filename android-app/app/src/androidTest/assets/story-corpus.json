@@ -1,0 +1,25 @@
+{
+  "kind": "Authored development contracts; not an independent accuracy benchmark",
+  "cases": [
+    {"id":"task-en","language":"en","label":"suspicious","pattern":"task_fee","concern":"HIGH","items":["Would you like details about evening work?","Your earned commission is ₹800.","Deposit ₹500 to unlock your ₹800 earnings."]},
+    {"id":"task-hi","language":"hi","label":"suspicious","pattern":"task_fee","concern":"HIGH","items":["क्या आप शाम के काम की जानकारी चाहते हैं?","आपकी कमाई ₹800 है।","अपनी कमाई निकालने के लिए पहले ₹500 जमा करें।"]},
+    {"id":"task-gu","language":"gu","label":"suspicious","pattern":"task_fee","concern":"HIGH","items":["શું તમને સાંજના કામની માહિતી જોઈએ છે?","તમારી કમાણી ₹800 છે.","તમારી કમાણી ઉપાડવા માટે પહેલાં ₹500 જમા કરો."]},
+    {"id":"advance-fee-en","language":"en","label":"suspicious","pattern":"task_fee","concern":"HIGH","items":["Your job offer is ready.","Pay ₹500 before you start work."]},
+    {"id":"withdrawal-en","language":"en","label":"suspicious","pattern":"task_fee","concern":"HIGH","items":["Your commission balance is ₹5000.","Transfer ₹1000 to release the balance."]},
+    {"id":"bank-en","language":"en","label":"suspicious","pattern":"authority_pressure","concern":"HIGH","items":["This is bank support.","Your account will be frozen.","Share your OTP immediately."]},
+    {"id":"bank-hi","language":"hi","label":"suspicious","pattern":"authority_pressure","concern":"HIGH","items":["हम बैंक से बोल रहे हैं।","आपका खाता बंद हो जाएगा।","अपना ओटीपी हमें बताएं।"]},
+    {"id":"bank-gu","language":"gu","label":"suspicious","pattern":"authority_pressure","concern":"HIGH","items":["અમે બેંકમાંથી બોલીએ છીએ.","તમારું ખાતું બંધ થઈ જશે.","તમારો ઓટીપી અમને આપો."]},
+    {"id":"support-en","language":"en","label":"suspicious","pattern":"support_remote","concern":"HIGH","items":["This is technical support.","Install AnyDesk and grant remote access.","Share your bank OTP."]},
+    {"id":"support-hi","language":"hi","label":"suspicious","pattern":"support_remote","concern":"HIGH","items":["यह तकनीकी सपोर्ट है।","AnyDesk इंस्टॉल करें।","अपना ओटीपी बताएं।"]},
+    {"id":"job-en","language":"en","label":"legitimate_comparison","pattern":"","items":["Your job interview is on Tuesday.","There is no fee for this job.","Never share your OTP or pay to get a job."]},
+    {"id":"job-hi","language":"hi","label":"legitimate_comparison","pattern":"","items":["आपका नौकरी का इंटरव्यू मंगलवार को है।","इस नौकरी के लिए कोई फीस नहीं है।","कभी भी ओटीपी साझा न करें और नौकरी पाने के लिए पैसे न दें।"]},
+    {"id":"job-gu","language":"gu","label":"legitimate_comparison","pattern":"","items":["તમારો નોકરીનો ઇન્ટરવ્યુ મંગળવારે છે.","આ નોકરી માટે કોઈ ફી નથી.","ક્યારેય ઓટીપી શેર ન કરો અને નોકરી મેળવવા પૈસા ન આપો."]},
+    {"id":"bank-hours","language":"en","label":"legitimate_comparison","pattern":"","items":["Bank support hours are 10 to 5.","Your statement is ready."]},
+    {"id":"bank-safety","language":"en","label":"legitimate_comparison","pattern":"","items":["Bank account frozen warning.","Never share your OTP with callers."]},
+    {"id":"remote-documentation","language":"en","label":"legitimate_comparison","pattern":"","items":["Technical support documentation.","Our software supports TeamViewer.","The annual fee is ₹500."]},
+    {"id":"paid-remote-support","language":"en","label":"legitimate_comparison","pattern":"support_remote","concern":"REVIEW","items":["Technical support appointment.","Install TeamViewer.","Pay the service fee."]},
+    {"id":"single-qr","language":"en","label":"legitimate_comparison","pattern":"","items":["upi://pay?pa=shop@invalid&am=50&cu=INR"]},
+    {"id":"matching-qr","language":"en","label":"legitimate_comparison","pattern":"","items":["upi://pay?pa=shop@invalid&am=50&cu=INR","upi://pay?pa=shop@invalid&am=100&cu=INR"]},
+    {"id":"college-invoice","language":"en","label":"legitimate_comparison","pattern":"","items":["Your work-study timetable is ready.","Pay your college tuition invoice to release enrollment."]}
+  ]
+}

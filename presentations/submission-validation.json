@@ -1,0 +1,51 @@
+{
+  "deck": "M87V_Doclock_CC3.pptx",
+  "pdf": "M87V_Doclock_CC3.pdf",
+  "team": "Doclock",
+  "teamId": "M87V",
+  "leader": "Divya Gohil",
+  "member": "Krupa",
+  "slides": 9,
+  "durationSeconds": 600,
+  "slideTitles": [
+    "CODE CARNIVAL 3.0",
+    "PROBLEM STATEMENT & UNDERSTANDING",
+    "PROPOSED SOLUTION",
+    "KEY FEATURES / FUNCTIONALITY",
+    "HOW THE SOLUTION WILL WORK",
+    "TECHNOLOGY / TECH STACK",
+    "CURRENT PROGRESS / WORK DONE",
+    "FUTURE PLAN / NEXT STEPS",
+    "GITHUB REPOSITORY LINK"
+  ],
+  "timings": [
+    35,
+    55,
+    55,
+    90,
+    100,
+    60,
+    75,
+    65,
+    65
+  ],
+  "templateSha256": "e91b343a99545a09b0d249561bed08bf5a0513b22053dcdbed555925149f1289",
+  "templateBrandPicturesPreserved": 31,
+  "instructionSlideRemoved": true,
+  "unfilledVisiblePlaceholders": 0,
+  "repository": "https://github.com/Divya3996/SafeX-AI",
+  "repositoryPublicVerified": true,
+  "demo": "https://safex-ai-jury-demo.cuddlyrobin1.chatgpt.site",
+  "demoHttp200Verified": true,
+  "sourceSyncPending": true,
+  "allMemberCommitsVerified": false,
+  "themeLabel": "On-device AI Security (descriptive, based on selected problem)",
+  "originalSectionTitlesPreserved": true,
+  "credits": {
+    "template": "ADSC / Atmiya University, supplied by the user",
+    "logo": "Original SafeX AI SVG from branding/safex-logo.svg",
+    "screenshots": "Existing project screenshots; prior-release captures, cropped",
+    "fonts": "Public Sans and Oswald, SIL OFL; licenses in assets/fonts",
+    "models": "Attribution in models/FRAUD-DATA-ATTRIBUTION.md"
+  }
+}

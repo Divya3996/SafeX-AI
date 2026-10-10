@@ -67,11 +67,12 @@ class ImageContentReader(private val context: Context) {
     }
 
     /** Cancellation clears the UI immediately; native consumers finish before their pixel lease ends. */
-    suspend fun extract(bitmap: Bitmap, qrOnly: Boolean = false, includeQr: Boolean = true): ExtractionResult {
-        val caller = currentCoroutineContext().job
+    suspend fun extract(bitmap: Bitmap, qrOnly: Boolean = false, includeQr: Boolean = true, cancellation: Job? = null): ExtractionResult {
+        val caller = cancellation ?: currentCoroutineContext().job
         return withContext(Dispatchers.IO + NonCancellable) {
             require(!bitmap.isRecycled && bitmap.width.toLong() * bitmap.height <= 6_000_000)
             extractionMutex.withLock {
+                caller.ensureActive()
                 val image = InputImage.fromBitmap(bitmap, 0)
                 val readers = mutableListOf<Pair<ExtractionEngine, suspend () -> EngineContent>>()
                 if (includeQr) readers += ExtractionEngine.QR to {

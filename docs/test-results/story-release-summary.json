@@ -1,0 +1,246 @@
+{
+  "validatedAt": "2026-10-10T09:22:23.381782+00:00",
+  "scope": "Android Scam Story Mode functional release validation; authored development fixtures are not independent fraud accuracy.",
+  "android": {
+    "version": "1.9.0",
+    "versionCode": 10,
+    "applicationId": "com.sentinel.ai",
+    "minSdk": 26,
+    "compileSdk": 36,
+    "targetSdk": 36,
+    "unit": {
+      "tests": 597,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 4,
+      "passed": 593
+    },
+    "unitModules": {
+      "core": {
+        "tests": 170,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 170
+      },
+      "agents": {
+        "tests": 18,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 18
+      },
+      "ui": {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 7
+      },
+      "app": {
+        "tests": 402,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 4,
+        "passed": 398
+      }
+    },
+    "newStoryUnitTests": 58,
+    "native": {
+      "discovered": 74,
+      "passed": 73,
+      "failed": 0,
+      "skipped": 1,
+      "skippedTests": [
+        "evaluateTransientObservedMessagesThroughInstalledPrivatePipeline(com.sentinel.ai.ml.FraudRetrainingDeviceTest)"
+      ],
+      "seconds": 379.654,
+      "androidVersion": "14",
+      "api": 34,
+      "device": "SentinelDemo x86_64 emulator, 720x1600, density 280",
+      "airplaneMode": true,
+      "wifiEnabled": false,
+      "cameraFixture": true,
+      "newStoryChecks": 15,
+      "output": "story-native-final.log",
+      "runnerOutput": "story-native-final-runner.log",
+      "installedBuild": {
+        "recordedAt": "2026-10-10T09:12:33.999846+00:00",
+        "version": "1.9.0",
+        "versionCode": 10,
+        "debugApkSha256": "e356ce597f26f207fc8475366471d8d82d823375dfda73897ae7dabd799daa38",
+        "instrumentationApkSha256": "6cd4681d25b6dec8f30e54424e931a93c48281e86b44afd2bf257e1ee7b9b195",
+        "androidVersion": "14",
+        "api": "34",
+        "model": "sdk_gphone64_x86_64",
+        "airplaneMode": "1",
+        "wifiOn": "0",
+        "cameraFixtureSha256": "621057b2e1cb68b59b6b8cca1b7fe9c514c3b0c159bdb0efd1e848589e3a9ec6"
+      }
+    },
+    "lint": {
+      "errors": 0,
+      "warnings": 108,
+      "issueCounts": {
+        "ExifInterface": 2,
+        "UnusedAttribute": 1,
+        "AndroidGradlePluginVersion": 3,
+        "GradleDependency": 23,
+        "NewerVersionAvailable": 14,
+        "DiscouragedApi": 1,
+        "LogNotTimber": 15,
+        "PluralsCandidate": 1,
+        "ObsoleteSdkInt": 2,
+        "Overdraw": 1,
+        "UnusedResources": 13,
+        "ButtonStyle": 2,
+        "UseKtx": 17,
+        "UseTomlInstead": 12,
+        "ClickableViewAccessibility": 1
+      }
+    },
+    "nativeAlignment": {
+      "debugPassed": true,
+      "releasePassed": true,
+      "librariesPerApk": 22,
+      "scope": "Packaged ELF/ZIP static checks; 16 KB runtime not tested."
+    },
+    "permissions": {
+      "internetRequested": false,
+      "callPhoneRequested": false,
+      "deviceBackupEnabled": false
+    },
+    "introPages": 4,
+    "tourSteps": 19,
+    "languages": [
+      "en",
+      "hi",
+      "gu"
+    ],
+    "textScaleRange": [
+      0.85,
+      1.5
+    ],
+    "catalogStrings": 1018,
+    "buildOutput": "story-release-final-build.log"
+  },
+  "story": {
+    "ruleVersion": 1,
+    "playbooks": [
+      "task_fee",
+      "authority_pressure",
+      "support_remote"
+    ],
+    "additionalReview": "different UPI payment addresses; unverified ownership",
+    "caps": {
+      "items": 8,
+      "itemChars": 12000,
+      "totalChars": 48000,
+      "savedCases": 20,
+      "serializedBytes": 1048576,
+      "awayExpirySeconds": 120
+    },
+    "privacy": {
+      "draft": "application-owned RAM; explicit reviewed inputs only",
+      "saved": "AES-256-GCM, authenticated case UUID, Android Keystore key, no-backup directory",
+      "export": "preview then share; raw content, links, payment details, custom titles, case UUIDs and secrets excluded",
+      "historyWrites": "none for private case analysis",
+      "lock": "clears RAM draft and dialogs; encrypted saved snapshots remain"
+    },
+    "developmentEvaluation": {
+      "report": "story-evaluation.json",
+      "kind": "Authored development contracts; not an independent accuracy benchmark",
+      "cases": 20,
+      "suspicious": 10,
+      "legitimateComparisons": 10,
+      "contractMismatches": [],
+      "suspiciousWithIndividualWarning": 9,
+      "suspiciousWithConnectedPattern": 10,
+      "legitimateWithIndividualWarning": 6,
+      "legitimateWithConnectedReview": 1,
+      "legitimateWithOverallHighConcern": 0,
+      "note": "Paid remote support intentionally receives a review connection. Existing individual warnings on legitimate controls remain visible. Counts describe authored development contracts, not general accuracy.",
+      "correlationMicroseconds": {
+        "p50": 5193.0,
+        "p95": 8598,
+        "max": 12160
+      },
+      "privateItemAndCorrelationMilliseconds": {
+        "p50": 25.5,
+        "p95": 38,
+        "max": 59
+      },
+      "timingScope": "Analysis-only emulator timings; excludes OCR, capture, editing, UI time and physical-phone performance."
+    }
+  },
+  "chrome": {
+    "version": "1.1.0",
+    "changed": false,
+    "retestedThisUpdate": false,
+    "previousReleaseRecord": "onboarding-release-summary.json",
+    "storyModeShipped": false
+  },
+  "artifacts": [
+    {
+      "file": "releases/SafeX-AI-1.9.0-debug.apk",
+      "bytes": 140647461,
+      "sha256": "e356ce597f26f207fc8475366471d8d82d823375dfda73897ae7dabd799daa38",
+      "distribution": "Android development installation; debug-signed"
+    },
+    {
+      "file": "releases/SafeX-AI-1.9.0-release-unsigned.aab",
+      "bytes": 65901476,
+      "sha256": "ec604db8b77f8d52964ebe8722f648db78fef968e0acb23448deb63b6c1f94d4",
+      "distribution": "Android release bundle; owner upload signing required"
+    }
+  ],
+  "screenshots": [],
+  "visualCapture": {
+    "available": false,
+    "note": "The final secure-window captures were black and excluded. Multilingual layout and supporting evidence were checked by installed UI assertions; manual physical-phone visual review remains."
+  },
+  "models": {
+    "retrainedForThisFeature": false,
+    "assets": {
+      "text-model.json": "ec31e6e51b727f0f971f23afa7a1347496c7f9bb090d9d9c6f1ac498f10671c6",
+      "model.tflite": "8c720f68db2fb79bf2ccc36920d92dba08aa3fb260456026c5d6eb8279985414",
+      "scaler.json": "c539135aec4e6ecc9433d490a74638a497a78b450b750a9ebfa13365604d0003",
+      "url-model-card.json": "fb582ad68c5b71fcf0c28f5b4675cab0ba88abc1eed3154c2dd1ee3f6678895e",
+      "text-model-card.json": "cd4b687797a108b6e9734acd06f75af874e81ff7849c3d0848a3c6693d7ab50f",
+      "text-warning-policy.json": "d42dd1b97d7e9d9f98c20db9c276667bd0e5d06624c25c509b304c9b8f745bde"
+    }
+  },
+  "developmentCorrections": [
+    {
+      "issue": "Empty clipboard and unchanged input/source interactions could discard a pending handoff warning.",
+      "fix": "Empty or unavailable Paste keeps the reviewed draft and shows feedback; unchanged input/source retains the original result.",
+      "evidence": "StoryControllerTest and floatingResultHandoffRequiresReviewAndKeepsExistingVerdict"
+    },
+    {
+      "issue": "Cold-launch navigation ran before the graph was attached.",
+      "fix": "Story handoff and tour routing wait for an initialized back stack.",
+      "evidence": "story-native-development.log"
+    },
+    {
+      "issue": "Two semantics test tags on the summary masked one another.",
+      "fix": "Story tests use the real guidance target.",
+      "evidence": "story-native-ui-retest.log"
+    },
+    {
+      "issue": "Tests read history before restoration, queried the old screen during a Back transition, or matched both dialog and timeline text.",
+      "fix": "Bounded restoration/transition waits and dialog-specific evidence assertions, without weakening privacy checks.",
+      "evidence": "story-native-ui-synchronization-development.log"
+    },
+    {
+      "issue": "Repeated title consumed space at large reading size.",
+      "fix": "One screen title and a shorter purpose label, verified in three language screenshots."
+    }
+  ],
+  "remainingReleaseGates": [
+    "Physical Samsung S24/A36, Android 16 and 16 KB runtime validation.",
+    "Manual assistive-technology and physical warning-speaker checks.",
+    "Publisher upload signing and store reviews.",
+    "Independent representative multilingual fraud evaluation."
+  ],
+  "independentFraudAccuracy": null
+}
