@@ -1,0 +1,163 @@
+{
+  "validatedAt": "2026-10-10T04:40:56.786763+00:00",
+  "scope": "Functional release validation; not independent fraud accuracy or accessibility certification.",
+  "android": {
+    "version": "1.8.0",
+    "versionCode": 9,
+    "applicationId": "com.sentinel.ai",
+    "minSdk": 26,
+    "compileSdk": 36,
+    "targetSdk": 36,
+    "unit": {
+      "tests": 539,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 4,
+      "passed": 535
+    },
+    "unitModules": {
+      "core": {
+        "tests": 112,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 112
+      },
+      "agents": {
+        "tests": 18,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 18
+      },
+      "ui": {
+        "tests": 7,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 7
+      },
+      "app": {
+        "tests": 402,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 4,
+        "passed": 398
+      }
+    },
+    "native": {
+      "discovered": 59,
+      "passed": 58,
+      "failed": 0,
+      "skipped": 1,
+      "skippedTests": [
+        "evaluateTransientObservedMessagesThroughInstalledPrivatePipeline(com.sentinel.ai.ml.FraudRetrainingDeviceTest)"
+      ],
+      "seconds": 303.75,
+      "androidVersion": "14",
+      "api": 34,
+      "device": "SentinelDemo x86_64 emulator",
+      "airplaneMode": true,
+      "wifiEnabled": false,
+      "cameraFixture": true,
+      "newGuidanceExperienceTests": 4,
+      "output": "onboarding-native-final.log",
+      "runnerOutput": "onboarding-native-runner.log"
+    },
+    "lint": {
+      "errors": 0,
+      "warnings": 108
+    },
+    "nativeAlignment": {
+      "debugPassed": true,
+      "releasePassed": true,
+      "librariesPerApk": 22,
+      "abis": [
+        "arm64-v8a",
+        "x86_64"
+      ],
+      "scope": "Packaged ELF/ZIP static checks; 16 KB runtime not tested."
+    },
+    "permissions": {
+      "internetRequested": false,
+      "callPhoneRequested": false,
+      "deviceBackupEnabled": false
+    },
+    "introPages": 4,
+    "tourSteps": 18,
+    "languages": [
+      "en",
+      "hi",
+      "gu"
+    ],
+    "textScaleRange": [
+      0.85,
+      1.5
+    ],
+    "buildOutput": "onboarding-release-build.log"
+  },
+  "chrome": {
+    "version": "1.1.0",
+    "unit": {
+      "passed": 431,
+      "failed": 0,
+      "skipped": 0
+    },
+    "browser": {
+      "passed": 32,
+      "failed": 0,
+      "environments": [
+        "Playwright Chromium 156",
+        "Installed Google Chrome 154.0.8037.57"
+      ],
+      "productionManifest": true,
+      "unexpectedExtensionRequests": 0,
+      "runtimeErrors": 0,
+      "knownRecognitionLibraryWarnings": [
+        "Warning: Parameter not found: classify_misfit_junk_penalty",
+        "Warning: Parameter not found: merge_fragments_in_matrix"
+      ]
+    },
+    "guidance": {
+      "passed": 11,
+      "failed": 0,
+      "offline": true
+    },
+    "totalBrowserScenarios": 43,
+    "introPages": 4,
+    "tourSteps": 12,
+    "dependencyVulnerabilities": 0,
+    "output": "chrome-extension-summary.json"
+  },
+  "artifacts": [
+    {
+      "file": "releases/SafeX-AI-1.8.0-debug.apk",
+      "bytes": 143059591,
+      "sha256": "6794092efe29d980922806f1361dd3c8f5efa623d7a80531ad60dfacaea817bd",
+      "distribution": "Android development installation; debug-signed"
+    },
+    {
+      "file": "releases/SafeX-AI-1.8.0-release-unsigned.aab",
+      "bytes": 65792826,
+      "sha256": "5761e7013907542fecf7df005f9cd6af54fc99fa2e9ff154abf8bbcc83457ff8",
+      "distribution": "Android release bundle; publisher signing required"
+    },
+    {
+      "file": "chrome-extension/release/SafeX-AI-Chrome-1.1.0.zip",
+      "bytes": 20981203,
+      "sha256": "0d704a1dbb05ee7281e2ec76b3495bd319392fb849b9847a7ac2daa9cd0426b5",
+      "distribution": "Chrome unpacked extension; store publication pending"
+    }
+  ],
+  "environmentRecovery": {
+    "initialAttempt": "onboarding-native-cold-environment-failure.log",
+    "initialFailures": 6,
+    "evidence": "Emulator launcher ANR dialog held focus; Android denied clipboard access. Launcher was stopped, keyguard dismissed and app focus verified before the complete successful rerun. No production source changed between runs."
+  },
+  "remainingReleaseGates": [
+    "Publisher signing/upload credentials and store reviews.",
+    "Physical Samsung S24/A36, Android 16 and 16 KB runtime validation.",
+    "Manual assistive-technology and device speaker checks."
+  ],
+  "independentFraudAccuracy": null
+}

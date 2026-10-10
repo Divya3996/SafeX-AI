@@ -1,0 +1,33 @@
+Starting a Gradle Daemon, 1 busy Daemon could not be reused, use --status for details
+Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+> Task :agents:preBuild UP-TO-DATE
+> Task :agents:preDebugBuild UP-TO-DATE
+> Task :agents:generateDebugResValues UP-TO-DATE
+> Task :agents:generateDebugResources UP-TO-DATE
+> Task :agents:packageDebugResources UP-TO-DATE
+> Task :agents:parseDebugLocalResources UP-TO-DATE
+> Task :agents:generateDebugRFile UP-TO-DATE
+> Task :agents:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :agents:generateDebugBuildConfig UP-TO-DATE
+> Task :core:preBuild UP-TO-DATE
+> Task :core:preDebugBuild UP-TO-DATE
+> Task :core:generateDebugResValues UP-TO-DATE
+> Task :core:generateDebugResources
+> Task :core:packageDebugResources
+> Task :core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :core:javaPreCompileDebug UP-TO-DATE
+> Task :agents:javaPreCompileDebug UP-TO-DATE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :agents:compileDebugLibraryResources UP-TO-DATE
+> Task :agents:writeDebugAarMetadata UP-TO-DATE
+> Task :core:writeDebugAarMetadata UP-TO-DATE
+> Task :services:preBuild UP-TO-DATE
+> Task :services:preDebugBuild UP-TO-DATE
+> Task :services:writeDebugAarMetadata UP-TO-DATE
+> Task :ui:preBuild UP-TO-DATE
+> Task :ui:preDebugBuild UP-TO-DATE
+> Task :ui:writeDebugAarMetadata UP-TO-DATE
+> Task :core:parseDebugLocalResources

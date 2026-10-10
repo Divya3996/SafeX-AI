@@ -1,6 +1,7 @@
 package com.sentinel.ai.ui.screens.history
 
 import com.sentinel.ai.ui.i18n.LocalizedText as Text
+import com.sentinel.ai.ui.guidance.guidanceTarget
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -102,7 +103,7 @@ fun HistoryScreen(
         )
         Spacer(modifier = Modifier.height(SentinelSpacing.MD))
         androidx.compose.material3.OutlinedTextField(value = query, onValueChange = { query = it },
-            label = { Text("Search local history") }, singleLine = true, modifier = Modifier.fillMaxWidth())
+            label = { Text("Search local history") }, singleLine = true, modifier = Modifier.fillMaxWidth().guidanceTarget("history.search"))
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.SpaceBetween) {
             androidx.compose.material3.FilterChip(selected = warningsOnly, onClick = { warningsOnly = !warningsOnly }, label = { Text("Warnings only") })
             androidx.compose.material3.TextButton(onClick = { confirmDelete = true }, enabled = sortedItems.isNotEmpty()) { Text("Delete all") }

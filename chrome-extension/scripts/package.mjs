@@ -1,6 +1,8 @@
 import { execFileSync } from "node:child_process";
 import fs from "node:fs/promises";
 import { createHash } from "node:crypto";
+const { version } = JSON.parse(await fs.readFile("manifest.json", "utf8"));
+const artifact = `SafeX-AI-Chrome-${version}.zip`;
 await fs.mkdir("release", { recursive: true });
 execFileSync(
   "python3",
@@ -8,16 +10,16 @@ execFileSync(
     "-c",
     `from pathlib import Path
 import zipfile
-with zipfile.ZipFile('release/SafeX-AI-Chrome-1.0.0.zip','w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
+with zipfile.ZipFile('release/${artifact}','w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
  for p in sorted(Path('dist').rglob('*')):
   if p.is_file(): z.write(p,p.relative_to('dist'))
 `,
   ],
   { stdio: "inherit" },
 );
-const data = await fs.readFile("release/SafeX-AI-Chrome-1.0.0.zip");
+const data = await fs.readFile(`release/${artifact}`);
 const result = {
-  file: "SafeX-AI-Chrome-1.0.0.zip",
+  file: artifact,
   bytes: data.length,
   sha256: createHash("sha256").update(data).digest("hex"),
 };

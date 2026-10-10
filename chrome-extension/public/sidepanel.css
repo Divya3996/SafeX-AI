@@ -629,3 +629,143 @@ details p {
     display: none;
   }
 }
+:root {
+  scroll-padding-top: 16px;
+}
+.guide-intro {
+  border: 1px solid var(--border, #36515d);
+  border-radius: 18px;
+  padding: 0;
+  background: var(--surface, #122936);
+  color: var(--text, #eff9f8);
+  width: min(520px, calc(100vw - 24px));
+  max-height: calc(100dvh - 24px);
+}
+.guide-intro::backdrop {
+  background: #010c14d9;
+}
+.guide-card {
+  background: var(--surface, #122936);
+  color: var(--text, #eff9f8);
+  padding: 22px;
+  border: 1px solid var(--border, #36515d);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow: auto;
+  max-height: calc(100dvh - 30px);
+}
+.guide-card p,
+.guide-card h2 {
+  margin: 0;
+}
+.guide-card h2 {
+  font-size: 1.3em;
+  line-height: 1.35;
+}
+.guide-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.guide-head .logo {
+  width: 38px;
+  height: 38px;
+}
+.guide-body {
+  overflow: auto;
+  line-height: 1.65;
+  min-height: 0;
+}
+.guide-body label {
+  display: block;
+  margin-top: 14px;
+}
+.guide-body select {
+  margin-top: 5px;
+  width: 100%;
+}
+.guide-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.guide-actions .button {
+  flex: 1;
+  min-width: 70px;
+}
+.guide-tour {
+  position: fixed;
+  inset: 0;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  background: transparent;
+  border: 0;
+  overflow: hidden;
+}
+.guide-tour::backdrop {
+  background: transparent;
+}
+.guide-tour .guide-card {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  max-height: 55dvh;
+  z-index: 2;
+}
+.guide-ring {
+  position: fixed;
+  pointer-events: none;
+  border: 3px solid #35debc;
+  border-radius: 10px;
+  box-shadow: 0 0 0 9999px #010c14c9;
+}
+.guide-topic {
+  padding: 20px 0;
+  border-top: 1px solid var(--border, #36515d);
+}
+.guide-topic h3 {
+  margin-bottom: 10px;
+}
+.incident-checklist {
+  margin: 22px 0;
+}
+.incident-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border, #36515d);
+  font-size: 0.9em;
+}
+.incident-step input {
+  margin-top: 6px;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  accent-color: #35debc;
+}
+.official-contact {
+  margin-top: 22px;
+}
+.official-contact h3 {
+  margin-bottom: 12px;
+}
+.footer {
+  flex-wrap: wrap;
+}
+.nav button {
+  min-width: 0;
+}
+.nav {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.nav button {
+  padding-inline: 6px;
+  font-size: 0.85em;
+}

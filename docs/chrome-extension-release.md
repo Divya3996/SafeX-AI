@@ -1,4 +1,14 @@
-# SafeX AI Chrome 1.0.0 — implementation and validation
+# SafeX AI Chrome — implementation and validation
+
+## Current version 1.1.0 — 10 October 2026
+
+Added a four-page first-use introduction, a 12-step tour that highlights real controls, individual feature guides, and local checklists for five scam situations. All new guidance has English, Hindi and Gujarati translations. Help distinguishes India's 1930 financial-fraud helpline from 112 emergency help and requires explicit actions for copying, opening a calling app or visiting the reporting website. The introduction and guide stay available offline; users can skip or replay them.
+
+Validation passed **431 unit/privacy checks, 32 existing browser scenarios and 11 onboarding/help scenarios**, with no runtime errors, no unexpected requests in the offline guide, and zero known dependency vulnerabilities in the recorded npm audit. The narrow-panel guide was checked in Hindi and Gujarati at 150% text. The tests intercept or cancel calling actions; they do not contact emergency services. These are functional checks, not an independent detection-accuracy claim.
+
+[Chrome 1.1.0 ZIP](../chrome-extension/release/SafeX-AI-Chrome-1.1.0.zip) · [Guide test results](test-results/chrome-extension-guidance.json) · [Onboarding, scam help and release instructions](onboarding-and-release.md)
+
+## Original 1.0.0 implementation
 
 **9 October 2026.** The desktop companion is implemented in `chrome-extension/`, with a reusable TypeScript security engine in `shared/security-engine/`. It builds into a Manifest V3 extension using the original SafeX shield/X and teal/navy branding.
 

@@ -13,11 +13,11 @@ import kotlin.math.roundToInt
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-fun LanguageAndReadingSettings() {
+fun LanguageAndReadingSettings(modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val settings by DisplayPreferences.settings.collectAsState()
     var readingScale by remember(settings.textScale) { mutableFloatStateOf(settings.textScale) }
-    OutlinedCard(Modifier.fillMaxWidth()) {
+    OutlinedCard(modifier.fillMaxWidth()) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
             Text("Language & reading", style = MaterialTheme.typography.titleLarge)
             Text("Choose the language for menus, explanations and warnings.", style = MaterialTheme.typography.bodyMedium,

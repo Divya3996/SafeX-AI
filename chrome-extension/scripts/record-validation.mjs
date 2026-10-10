@@ -8,6 +8,7 @@ process.chdir(root);
 const read = async (file) => JSON.parse(await fs.readFile(file, "utf8"));
 const ui = await read("test-results/browser-summary.json"),
   protection = await read("test-results/protection-summary.json"),
+  guidance = await read("test-results/guidance-browser.json"),
   audit = await read("test-results/dependency-audit.json"),
   artifact = await read("release/checksum.json");
 const unit = await fs.readFile("test-results/unit.txt", "utf8"),
@@ -16,7 +17,11 @@ const unit = await fs.readFile("test-results/unit.txt", "utf8"),
 if (
   !passed ||
   failed !== 0 ||
-  [...ui.findings, ...protection.findings].some((f) => !f.passed) ||
+  [...ui.findings, ...protection.findings, ...guidance.findings].some(
+    (f) => !f.passed,
+  ) ||
+  guidance.errors.length ||
+  guidance.requests.length ||
   ui.consoleErrors.length ||
   ui.unexpectedRequests.length ||
   protection.runtimeErrors.length ||
@@ -34,7 +39,7 @@ for (const [file, expected] of Object.entries(build.files))
   if (sha(await fs.readFile(path.join("dist", file))) !== expected)
     throw Error("Build file checksum differs: " + file);
 const summary = {
-  version: "1.0.0",
+  version: build.version,
   validatedAt: new Date().toISOString(),
   scope:
     "Functional development validation; no independent browser accuracy claim",
@@ -53,6 +58,7 @@ const summary = {
     knownRecognitionLibraryWarnings: ui.recognitionLibraryWarnings,
   },
   dependencyVulnerabilities: audit.metadata.vulnerabilities.total,
+  guidance: { passed: guidance.findings.length, failed: 0, offline: true },
   artifact,
   buildManifestSha256: sha(await fs.readFile("dist/build-manifest.json")),
   modelAssets: await read("public/models/manifest.json"),
@@ -76,6 +82,7 @@ await fs.writeFile(
 for (const [source, destination] of [
   ["browser-summary.json", "chrome-extension-ui.json"],
   ["protection-summary.json", "chrome-extension-protection.json"],
+  ["guidance-browser.json", "chrome-extension-guidance.json"],
   ["dependency-audit.json", "chrome-extension-dependencies.json"],
   ["unit.txt", "chrome-extension-unit.txt"],
 ])

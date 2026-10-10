@@ -48,6 +48,7 @@ try {
   });
   const panel = await ctx.newPage();
   await panel.goto(`chrome-extension://${id}/sidepanel.html`);
+  await panel.locator("#guide-skip").click();
   await expect(panel.locator("#scan-input")).toBeVisible();
   await panel.evaluate(() => chrome.runtime.sendMessage({ type: "GET_STATE" }));
   const website = await ctx.newPage();

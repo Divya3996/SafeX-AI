@@ -1,6 +1,8 @@
 package com.sentinel.ai.ui.navigation
 
 sealed class Screen(val route: String) {
+    data object Welcome : Screen("welcome")
+    data object FeatureGuide : Screen("feature_guide")
     data object Dashboard : Screen("dashboard")
     data object History : Screen("history")
     data object Settings : Screen("settings")

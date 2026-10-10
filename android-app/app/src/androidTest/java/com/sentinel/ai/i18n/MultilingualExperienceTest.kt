@@ -8,11 +8,24 @@ import com.sentinel.ai.core.i18n.I18n
 import com.sentinel.ai.ui.MainActivity
 import org.junit.Assert.*
 import org.junit.Rule
+import org.junit.Before
 import org.junit.Test
 
 /** Tests visible selection/recreation and the same translations used by notification warnings. */
 class MultilingualExperienceTest {
     @get:Rule val compose = createAndroidComposeRule<MainActivity>()
+
+    @Before fun enterApp() {
+        val context = ApplicationProvider.getApplicationContext<android.content.Context>()
+        compose.runOnUiThread { DisplayPreferences.setLanguage(context, AppLanguage.ENGLISH); DisplayPreferences.setTextScale(1f) }
+        compose.waitForIdle()
+        if (compose.onAllNodesWithTag("welcome_skip").fetchSemanticsNodes().isNotEmpty()) {
+            compose.onNodeWithTag("welcome_skip").performClick()
+        }
+        if (compose.onAllNodesWithText("Continue to SafeX AI").fetchSemanticsNodes().isNotEmpty()) {
+            compose.onNodeWithText("Continue to SafeX AI").performScrollTo().performClick()
+        }
+    }
 
     @Test fun languagesAndReadingSizeUpdateAndSurviveActivityRecreation() {
         val context = ApplicationProvider.getApplicationContext<android.content.Context>()

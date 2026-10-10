@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-10T03:44:27.458Z",
+  "findings": [
+    {
+      "name": "first launch shows a branded skippable introduction offline",
+      "passed": true
+    },
+    {
+      "name": "Hindi and Gujarati introduction update immediately at 150% reading size",
+      "passed": true
+    },
+    {
+      "name": "all 12 tour steps highlight actual controls and support Back",
+      "passed": true
+    },
+    {
+      "name": "dismissed introduction persists and feature tour can be replayed and escaped",
+      "passed": true
+    },
+    {
+      "name": "all five scam checklists and their checkboxes work offline",
+      "passed": true
+    },
+    {
+      "name": "helpline number copy works without placing a call",
+      "passed": true
+    },
+    {
+      "name": "1930 and 112 require deliberate confirmation without making any call",
+      "passed": true
+    },
+    {
+      "name": "help and replay guidance stay translated in Hindi and Gujarati",
+      "passed": true
+    },
+    {
+      "name": "guidance update rejects permission fields and wrong types",
+      "passed": true
+    },
+    {
+      "name": "urgent help can bypass onboarding and Skip persists after reopening",
+      "passed": true
+    },
+    {
+      "name": "no runtime errors or network requests during offline onboarding and help",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "requests": []
+}

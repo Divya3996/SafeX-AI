@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.sentinel.ai.agents"
-    compileSdk = 34
+    compileSdk = 36
     buildFeatures { buildConfig = true }
 
     defaultConfig {

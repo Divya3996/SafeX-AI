@@ -8,13 +8,13 @@ plugins {
 
 android {
     namespace = "com.sentinel.ai.ui"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 26
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
-        buildConfigField("String", "APP_VERSION", "\"1.6.0\"")
+        buildConfigField("String", "APP_VERSION", "\"1.8.0\"")
     }
 
     buildFeatures {

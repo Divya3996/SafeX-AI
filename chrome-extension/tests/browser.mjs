@@ -76,6 +76,7 @@ try {
     "production package installs and side panel renders",
     async () => {
       await panel.goto(`chrome-extension://${id}/sidepanel.html`);
+      await panel.locator("#guide-skip").click();
       await expect(
         panel.getByRole("heading", { name: "Check before you click." }),
       ).toBeVisible();

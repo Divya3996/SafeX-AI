@@ -21,6 +21,16 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.sentinel.ai.ui.i18n.LocalizedText as Text
 import com.sentinel.ai.ui.screens.scanner.ReviewPanel
+import com.sentinel.ai.ui.guidance.guidanceTarget
+import androidx.compose.ui.platform.testTag
+
+object OfficialIncidentHelp {
+    const val REPORT_URL = "https://cybercrime.gov.in/"
+    fun dialIntent(number: String): Intent {
+        require(number == "1930" || number == "112")
+        return Intent(Intent.ACTION_DIAL, Uri.parse("tel:$number"))
+    }
+}
 
 enum class IncidentType(val label: String, val steps: List<String>) {
     CLICKED("I opened a link", listOf(
@@ -54,14 +64,23 @@ fun IncidentHelpScreen(onBack: () -> Unit) {
     var chosen by rememberSaveable { mutableStateOf(IncidentType.CLICKED.name) }
     val incident = IncidentType.valueOf(chosen)
     var completed by rememberSaveable { mutableStateOf(listOf<String>()) }
+    var india by rememberSaveable { mutableStateOf(true) }
+    var dialNumber by rememberSaveable { mutableStateOf<String?>(null) }
     fun launch(intent: Intent) {
         if (runCatching { context.startActivity(intent) }.isFailure)
             Toast.makeText(context, com.sentinel.ai.core.i18n.I18n.translate(context, "No app is available for this action."), Toast.LENGTH_LONG).show()
     }
+    dialNumber?.let { number ->
+        AlertDialog(onDismissRequest = { dialNumber = null },
+            title = { Text(if (number == "1930") "Financial cyber fraud • 1930" else "Immediate danger • 112") },
+            text = { Text("This opens your phone dialer. Review the number and press Call yourself. SafeX AI does not place a call. These numbers are for India.") },
+            confirmButton = { Button(onClick = { dialNumber = null; launch(OfficialIncidentHelp.dialIntent(number)) }, modifier = Modifier.testTag("confirm_help_dial")) { Text("Open phone dialer") } },
+            dismissButton = { TextButton(onClick = { dialNumber = null }) { Text("Cancel") } })
+    }
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(20.dp), verticalArrangement = Arrangement.spacedBy(20.dp)) {
         Text("Take the next safe step", style = MaterialTheme.typography.headlineLarge)
         Text("Choose what happened. These checklists work offline; calls and official websites open only when you choose them.", color = MaterialTheme.colorScheme.onSurfaceVariant)
-        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        FlowRow(modifier = Modifier.guidanceTarget("help.situation"), horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
             IncidentType.entries.forEach { type -> FilterChip(chosen == type.name, { chosen = type.name }, label = { Text(type.label) }) }
         }
         ReviewPanel(incident.label, Icons.Default.HealthAndSafety) {
@@ -74,11 +93,19 @@ fun IncidentHelpScreen(onBack: () -> Unit) {
                 }
             }
         }
-        ReviewPanel("Official help in India", Icons.Default.SupportAgent) {
+        Column(Modifier.guidanceTarget("help.contact"), verticalArrangement = Arrangement.spacedBy(12.dp)) {
+        Text("Where do you need help?", style = MaterialTheme.typography.titleMedium)
+        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            FilterChip(india, { india = true }, label = { Text("India") }, modifier = Modifier.testTag("help_india"))
+            FilterChip(!india, { india = false }, label = { Text("Another country") }, modifier = Modifier.testTag("help_other_country"))
+        }
+        if (india) ReviewPanel("Official help in India", Icons.Default.SupportAgent) {
             Text("1930 • financial cyber fraud helpline", style = MaterialTheme.typography.titleSmall)
-            Button(onClick = { launch(Intent(Intent.ACTION_DIAL, Uri.parse("tel:1930"))) }, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp)) { Text("Open dialer • 1930") }
+            Button(onClick = { dialNumber = "1930" }, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp).testTag("help_dial_1930")) { Text("Open dialer • 1930") }
+            Text("112 • immediate danger or emergency", style = MaterialTheme.typography.titleSmall)
+            OutlinedButton(onClick = { dialNumber = "112" }, modifier = Modifier.fillMaxWidth().heightIn(min = 48.dp).testTag("help_dial_112")) { Text("Open dialer • 112") }
             OutlinedButton(onClick = {
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://cybercrime.gov.in/"))
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(OfficialIncidentHelp.REPORT_URL))
                 val handlers = context.packageManager.queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY).filter { it.activityInfo.packageName != context.packageName }
                 if (handlers.isEmpty()) launch(intent.setPackage("com.android.chrome"))
                 else {
@@ -88,7 +115,11 @@ fun IncidentHelpScreen(onBack: () -> Unit) {
                 }
             }, modifier = Modifier.fillMaxWidth()) { Text("Open official reporting website") }
             Text("SafeX AI does not submit reports or call anyone automatically. Website access needs an internet connection in your browser.", style = MaterialTheme.typography.bodySmall)
-            Text("Sources: National Cybercrime Reporting Portal, NPCI and Google Account Help.", style = MaterialTheme.typography.labelSmall)
+            Text("Verified 10 October 2026: cybercrime.gov.in and 112.gov.in. These actions are not a completed complaint and do not guarantee recovery.", style = MaterialTheme.typography.labelSmall)
+        }
+        else ReviewPanel("Use your local official services", Icons.Default.Public) {
+            Text("Contact your bank through its official app or a number printed on your card. For immediate danger, use your country's emergency service. India's 1930 and 112 actions are hidden for this selection.")
+        }
         }
         OutlinedButton(onClick = onBack, modifier = Modifier.fillMaxWidth()) { Text("Back") }
     }

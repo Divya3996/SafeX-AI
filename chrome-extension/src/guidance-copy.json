@@ -1,0 +1,370 @@
+{
+  "Add the context you know": [
+    "अपने पास की अतिरिक्त जानकारी जोड़ें",
+    "તમારી પાસેની વધારાની માહિતી ઉમેરો"
+  ],
+  "Another country": [
+    "दूसरा देश",
+    "બીજો દેશ"
+  ],
+  "Ask about securing the account and stopping unauthorized transactions. Change an exposed PIN through the official service.": [
+    "खाते को सुरक्षित करने और अनधिकृत लेनदेन रोकने के बारे में पूछें। आधिकारिक सेवा के जरिए उजागर हुआ पिन बदलें।",
+    "ખાતું સુરક્ષિત કરવા અને અનધિકૃત વ્યવહારો રોકવા વિશે પૂછો. સત્તાવાર સેવા દ્વારા જાહેર થયેલો PIN બદલો."
+  ],
+  "Back": [
+    "वापस",
+    "પાછા"
+  ],
+  "Cancel": [
+    "रद्द करें",
+    "રદ કરો"
+  ],
+  "Capture only what you choose": [
+    "सिर्फ़ चुना हुआ हिस्सा कैप्चर करें",
+    "ફક્ત પસંદ કરેલો ભાગ કેપ્ચર કરો"
+  ],
+  "Capture the current visible tab, crop a region and review it. Choose an image to import instead. OCR and QR decoding run locally; check the recognized text before scanning.": [
+    "मौजूदा टैब का दिख रहा हिस्सा कैप्चर करें, क्षेत्र काटें और देखें। चाहें तो तस्वीर आयात करें। OCR और QR पढ़ना डिवाइस पर होता है; जाँच से पहले पहचाना पाठ देखें।",
+    "હાલની ટૅબનો દેખાતો ભાગ કેપ્ચર કરો, વિસ્તાર કાપો અને જુઓ. ઇચ્છો તો ચિત્ર આયાત કરો. OCR અને QR વાંચવું ઉપકરણ પર થાય છે; તપાસ પહેલાં ઓળખાયેલું લખાણ જુઓ."
+  ],
+  "Change that password anywhere else you reused it. Review active sessions and sign out unknown devices.": [
+    "जहाँ भी वही पासवर्ड दोबारा इस्तेमाल किया है, उसे बदलें। सक्रिय सत्र जाँचें और अनजान डिवाइस से साइन आउट करें।",
+    "જ્યાં પણ એ જ પાસવર્ડ ફરી વાપર્યો હોય ત્યાં બદલો. સક્રિય સત્રો તપાસો અને અજાણ્યાં ઉપકરણોમાંથી સાઇન આઉટ કરો."
+  ],
+  "Check an unexpected message": [
+    "अनपेक्षित संदेश जाँचें",
+    "અણધાર્યો સંદેશ તપાસો"
+  ],
+  "Check recent transactions. If money was lost, use the payment incident steps and report promptly.": [
+    "हाल के लेनदेन जाँचें। यदि पैसे खोए हैं, तो भुगतान वाले चरणों का पालन करें और तुरंत रिपोर्ट करें।",
+    "તાજેતરના વ્યવહારો તપાસો. પૈસા ગુમાવ્યા હોય તો ચુકવણી સંબંધિત પગલાં અનુસરો અને તરત જાણ કરો."
+  ],
+  "Check the current page": [
+    "मौजूदा पेज जाँचें",
+    "હાલનું પેજ તપાસો"
+  ],
+  "Choose English, Hindi or Gujarati and a comfortable reading size. You can change both later in Settings.": [
+    "अंग्रेज़ी, हिंदी या गुजराती और पढ़ने के लिए सुविधाजनक अक्षर आकार चुनें। दोनों बाद में सेटिंग्स में बदल सकते हैं।",
+    "અંગ્રેજી, હિન્દી કે ગુજરાતી અને વાંચવા માટે અનુકૂળ અક્ષરનું કદ પસંદ કરો. બંને પછી સેટિંગ્સમાં બદલી શકો છો."
+  ],
+  "Choose English, Hindi or Gujarati and adjust text size. Menus, warnings and this guide follow your choice immediately.": [
+    "अंग्रेज़ी, हिंदी या गुजराती चुनें और अक्षर आकार बदलें। मेनू, चेतावनियाँ और यह मार्गदर्शन तुरंत आपके चुनाव के अनुसार बदलते हैं।",
+    "અંગ્રેજી, હિન્દી કે ગુજરાતી પસંદ કરો અને અક્ષરનું કદ બદલો. મેનૂ, ચેતવણીઓ અને આ માર્ગદર્શન તરત તમારી પસંદગી મુજબ બદલાય છે."
+  ],
+  "Choose a clear PNG, JPEG or WebP image. Select English, Hindi or Gujarati OCR. Review a decoded payment address and amount, then compare with expected details. Matching does not verify bank ownership.": [
+    "साफ़ PNG, JPEG या WebP तस्वीर चुनें। अंग्रेज़ी, हिंदी या गुजराती OCR चुनें। मिले भुगतान पते और राशि को अपेक्षित विवरण से मिलाएँ। मेल खाना बैंक खाते के मालिक की पुष्टि नहीं करता।",
+    "સ્પષ્ટ PNG, JPEG કે WebP ચિત્ર પસંદ કરો. અંગ્રેજી, હિન્દી કે ગુજરાતી OCR પસંદ કરો. મળેલા ચુકવણીના સરનામા અને રકમને અપેક્ષિત વિગતો સાથે સરખાવો. સરખું હોવું બેંક ખાતાના માલિકની પુષ્ટિ કરતું નથી."
+  ],
+  "Choose a feature to see its real control highlighted. Close the tour anytime, then try it yourself. No scan or permission is triggered by the tour.": [
+    "सुविधा चुनें और उसका असली बटन हाइलाइट होते देखें। मार्गदर्शन कभी भी बंद करके खुद आज़माएँ। मार्गदर्शन कोई जाँच या अनुमति शुरू नहीं करता।",
+    "સુવિધા પસંદ કરો અને તેનું ખરું નિયંત્રણ હાઇલાઇટ થતું જુઓ. માર્ગદર્શન ગમે ત્યારે બંધ કરીને જાતે અજમાવો. માર્ગદર્શન કોઈ તપાસ કે પરવાનગી શરૂ કરતું નથી."
+  ],
+  "Choose what happened": [
+    "चुनें क्या हुआ",
+    "શું થયું તે પસંદ કરો"
+  ],
+  "Choose what happened. These checklists work offline; calls and official websites open only when you choose them.": [
+    "चुनें कि क्या हुआ। ये सूचियाँ ऑफलाइन काम करती हैं; कॉल और आधिकारिक वेबसाइट केवल आपके चुनने पर खुलती हैं।",
+    "શું થયું તે પસંદ કરો. આ યાદીઓ ઑફલાઇન કામ કરે છે; કૉલ અને સત્તાવાર વેબસાઇટ તમે પસંદ કરો ત્યારે જ ખૂલે છે."
+  ],
+  "Choose whether you opened a link, shared a password or OTP, installed an app or sent money. The checklist is local and does not submit a complaint.": [
+    "चुनें कि आपने लिंक खोला, पासवर्ड या OTP साझा किया, ऐप इंस्टॉल किया या पैसे भेजे। सूची स्थानीय है और शिकायत दर्ज नहीं करती।",
+    "પસંદ કરો કે તમે લિંક ખોલી, પાસવર્ડ કે OTP આપ્યો, એપ ઇન્સ્ટોલ કરી કે પૈસા મોકલ્યા. યાદી સ્થાનિક છે અને ફરિયાદ નોંધાવતી નથી."
+  ],
+  "Close the page. Do not enter information, download files or grant permissions.": [
+    "पेज बंद करें। जानकारी दर्ज न करें, फ़ाइलें डाउनलोड न करें और अनुमतियाँ न दें।",
+    "પાનું બંધ કરો. માહિતી દાખલ ન કરો, ફાઇલો ડાઉનલોડ ન કરો કે પરવાનગીઓ ન આપો."
+  ],
+  "Close tour": [
+    "मार्गदर्शन बंद करें",
+    "માર્ગદર્શન બંધ કરો"
+  ],
+  "Contact official help in India": [
+    "भारत में आधिकारिक सहायता लें",
+    "ભારતમાં સત્તાવાર સહાય મેળવો"
+  ],
+  "Contact the affected bank or service immediately through its official app or a number you already trust.": [
+    "प्रभावित बैंक या सेवा से उसके आधिकारिक ऐप या पहले से भरोसेमंद नंबर द्वारा तुरंत संपर्क करें।",
+    "અસરગ્રસ્ત બેંક કે સેવાનો તેની સત્તાવાર ઍપ અથવા પહેલેથી વિશ્વસનીય નંબર દ્વારા તરત સંપર્ક કરો."
+  ],
+  "Contact your bank or payment provider immediately using official contact details. Report the transaction and ask what actions are available.": [
+    "आधिकारिक संपर्क विवरण से बैंक या भुगतान प्रदाता से तुरंत संपर्क करें। लेनदेन की रिपोर्ट करें और उपलब्ध कदमों के बारे में पूछें।",
+    "સત્તાવાર સંપર્ક વિગતો દ્વારા બેંક કે ચુકવણી પ્રદાતાનો તરત સંપર્ક કરો. વ્યવહારની જાણ કરો અને ઉપલબ્ધ પગલાં વિશે પૂછો."
+  ],
+  "Contact your bank through its official app or a number printed on your card. For immediate danger, use your country's emergency service. India's 1930 and 112 actions are hidden for this selection.": [
+    "अपने बैंक के आधिकारिक ऐप या कार्ड पर दिए नंबर से संपर्क करें। तत्काल खतरे में अपने देश की आपातकालीन सेवा लें। इस चुनाव में भारत के 1930 और 112 वाले बटन छिपे हैं।",
+    "તમારી બેંકની સત્તાવાર એપ કે કાર્ડ પરના નંબરથી સંપર્ક કરો. તાત્કાલિક જોખમમાં તમારા દેશની કટોકટી સેવા વાપરો. આ પસંદગીમાં ભારતના 1930 અને 112 માટેનાં બટન છુપાયેલાં છે."
+  ],
+  "Control saved reports": [
+    "सहेजी रिपोर्ट नियंत्रित करें",
+    "સાચવેલા રિપોર્ટ નિયંત્રિત કરો"
+  ],
+  "Copy number": [
+    "नंबर कॉपी करें",
+    "નંબર કૉપિ કરો"
+  ],
+  "Copy unavailable. Dial the shown number on your phone.": [
+    "कॉपी उपलब्ध नहीं। दिखाया नंबर अपने फ़ोन पर डायल करें।",
+    "કૉપિ ઉપલબ્ધ નથી. બતાવેલો નંબર તમારા ફોન પર ડાયલ કરો."
+  ],
+  "Do not pay anyone who promises to recover your money. Reporting does not guarantee recovery.": [
+    "पैसे वापस दिलाने का वादा करने वाले को भुगतान न करें। रिपोर्ट करने से वापसी की गारंटी नहीं मिलती।",
+    "પૈસા પાછા અપાવવાનું વચન આપનારને ચુકવણી ન કરો. જાણ કરવાથી પૈસા પાછા મળવાની ખાતરી નથી."
+  ],
+  "Enable multi-factor authentication and check recovery email, phone number and recent account activity.": [
+    "बहु-कारक प्रमाणीकरण चालू करें और रिकवरी ईमेल, फोन नंबर तथा हाल की खाता गतिविधि जाँचें।",
+    "બહુ-પરિબળ પ્રમાણીકરણ ચાલુ કરો અને પુનઃપ્રાપ્તિ ઇમેઇલ, ફોન નંબર તથા ખાતાની તાજેતરની પ્રવૃત્તિ તપાસો."
+  ],
+  "Enable warning sound and use Test sound. Automatic alerts have a 60-second cooldown. Browser and device audio settings still control playback.": [
+    "चेतावनी की आवाज़ चालू करें और आवाज़ जाँचें इस्तेमाल करें। स्वचालित चेतावनियों के बीच 60 सेकंड का अंतर है। ब्राउज़र और डिवाइस की ऑडियो सेटिंग आवाज़ नियंत्रित करती हैं।",
+    "ચેતવણીનો અવાજ ચાલુ કરો અને અવાજ તપાસો વાપરો. આપમેળે ચેતવણીઓ વચ્ચે 60 સેકન્ડનું અંતર છે. બ્રાઉઝર અને ઉપકરણની ઑડિયો સેટિંગ અવાજ નિયંત્રિત કરે છે."
+  ],
+  "Feature tour": [
+    "सुविधाओं का मार्गदर्शन",
+    "સુવિધાઓનું માર્ગદર્શન"
+  ],
+  "Financial cyber fraud • 1930": [
+    "आर्थिक साइबर धोखाधड़ी • 1930",
+    "આર્થિક સાયબર છેતરપિંડી • 1930"
+  ],
+  "Finish": [
+    "पूरा करें",
+    "પૂર્ણ કરો"
+  ],
+  "For financial cyber fraud, use 1930. For immediate danger, use 112. Copy the number to your phone or deliberately open a calling app. Desktop Chrome cannot guarantee that a calling app is installed.": [
+    "आर्थिक साइबर धोखाधड़ी के लिए 1930 और तत्काल खतरे के लिए 112 इस्तेमाल करें। नंबर अपने फ़ोन में कॉपी करें या कॉलिंग ऐप खोलें। डेस्कटॉप Chrome कॉलिंग ऐप मौजूद होने की गारंटी नहीं दे सकता।",
+    "આર્થિક સાયબર છેતરપિંડી માટે 1930 અને તાત્કાલિક જોખમ માટે 112 વાપરો. નંબર તમારા ફોનમાં કૉપિ કરો કે કૉલિંગ એપ ખોલો. ડેસ્કટૉપ Chrome કૉલિંગ એપ હાજર હોવાની ખાતરી આપી શકતું નથી."
+  ],
+  "From a device you trust, open the service's official app or type its website address yourself. Change the exposed password.": [
+    "भरोसेमंद डिवाइस से सेवा का आधिकारिक ऐप खोलें या वेबसाइट का पता स्वयं लिखें। उजागर हुआ पासवर्ड बदलें।",
+    "વિશ્વસનીય ઉપકરણથી સેવાની સત્તાવાર ઍપ ખોલો અથવા તેનું વેબસાઇટ સરનામું જાતે લખો. જાહેર થયેલો પાસવર્ડ બદલો."
+  ],
+  "Get help for what happened": [
+    "अपनी स्थिति के अनुसार मदद लें",
+    "તમારી સ્થિતિ મુજબ મદદ મેળવો"
+  ],
+  "Getting started": [
+    "शुरुआत करें",
+    "શરૂઆત કરો"
+  ],
+  "Help": [
+    "मदद",
+    "મદદ"
+  ],
+  "I installed an app": [
+    "मैंने ऐप इंस्टॉल किया",
+    "મેં ઍપ ઇન્સ્ટોલ કરી"
+  ],
+  "I opened a link": [
+    "मैंने लिंक खोला",
+    "મેં લિંક ખોલી"
+  ],
+  "I sent money": [
+    "मैंने पैसे भेजे",
+    "મેં પૈસા મોકલ્યા"
+  ],
+  "I shared a password": [
+    "मैंने पासवर्ड साझा किया",
+    "મેં પાસવર્ડ આપ્યો"
+  ],
+  "I shared an OTP or PIN": [
+    "मैंने ओटीपी या पिन साझा किया",
+    "મેં OTP કે PIN આપ્યો"
+  ],
+  "If you only opened the page, that alone does not prove your device is compromised. Check for unexpected downloads and permission changes.": [
+    "केवल पेज खोलना आपके डिवाइस के संक्रमित होने का प्रमाण नहीं है। अनपेक्षित डाउनलोड और अनुमति में बदलाव जाँचें।",
+    "માત્ર પાનું ખોલવું તમારા ઉપકરણ સાથે ચેડાં થયાનો પુરાવો નથી. અનપેક્ષિત ડાઉનલોડ અને પરવાનગીમાં ફેરફાર તપાસો."
+  ],
+  "If you shared information, installed an app or paid, choose that situation below for additional steps.": [
+    "यदि आपने जानकारी साझा की, ऐप इंस्टॉल किया या भुगतान किया, तो आगे के चरणों के लिए वह परिस्थिति चुनें।",
+    "જો તમે માહિતી આપી, ઍપ ઇન્સ્ટોલ કરી કે ચુકવણી કરી હોય, તો વધુ પગલાં માટે તે પરિસ્થિતિ પસંદ કરો."
+  ],
+  "Immediate danger • 112": [
+    "तत्काल खतरा • 112",
+    "તાત્કાલિક જોખમ • 112"
+  ],
+  "Imported reported entries warn; only explicitly labelled block entries can be blocked after you enable blocking. Lists expire after seven days. The model does not automatically create navigation blocks.": [
+    "आयात की रिपोर्ट वाली प्रविष्टियाँ चेतावनी देती हैं; ब्लॉक चिह्न वाली प्रविष्टियाँ ही ब्लॉकिंग चालू करने के बाद रोकी जा सकती हैं। सूचियाँ सात दिन में समाप्त होती हैं। मॉडल खुद पेज खोलने पर रोक नहीं बनाता।",
+    "આયાત કરેલી નોંધાયેલી એન્ટ્રીઓ ચેતવણી આપે છે; બ્લૉક ચિહ્નવાળી એન્ટ્રીઓ જ બ્લૉકિંગ ચાલુ કર્યા પછી રોકી શકાય છે. યાદીઓ સાત દિવસમાં સમાપ્ત થાય છે. મોડેલ જાતે પેજ ખોલવા પર રોક બનાવતું નથી."
+  ],
+  "In India, call 1930 for financial cyber fraud and submit a complaint at cybercrime.gov.in.": [
+    "भारत में वित्तीय साइबर धोखाधड़ी के लिए 1930 पर कॉल करें और cybercrime.gov.in पर शिकायत दर्ज करें।",
+    "ભારતમાં નાણાકીય સાયબર છેતરપિંડી માટે 1930 પર કૉલ કરો અને cybercrime.gov.in પર ફરિયાદ નોંધાવો."
+  ],
+  "India": [
+    "भारत",
+    "ભારત"
+  ],
+  "Keep the transaction reference, date, amount and relevant messages. Never include passwords, PINs or OTPs in shared evidence.": [
+    "लेनदेन संदर्भ, तारीख, राशि और संबंधित संदेश रखें। साझा किए गए साक्ष्य में पासवर्ड, पिन या ओटीपी कभी शामिल न करें।",
+    "વ્યવહારનો સંદર્ભ, તારીખ, રકમ અને સંબંધિત સંદેશા સાચવો. શેર કરેલા પુરાવામાં પાસવર્ડ, PIN કે OTP ક્યારેય સામેલ ન કરો."
+  ],
+  "Language": [
+    "भाषा",
+    "ભાષા"
+  ],
+  "Learn SafeX AI": [
+    "SafeX AI का उपयोग सीखें",
+    "SafeX AI નો ઉપયોગ શીખો"
+  ],
+  "Make guidance easy to read": [
+    "मार्गदर्शन पढ़ना आसान बनाएँ",
+    "માર્ગદર્શન વાંચવું સરળ બનાવો"
+  ],
+  "Need help after a scam?": [
+    "धोखाधड़ी के बाद मदद चाहिए?",
+    "છેતરપિંડી પછી મદદ જોઈએ છે?"
+  ],
+  "Next": [
+    "आगे",
+    "આગળ"
+  ],
+  "Number copied. Dial it on your phone.": [
+    "नंबर कॉपी हुआ। अपने फ़ोन पर डायल करें।",
+    "નંબર કૉપિ થયો. તમારા ફોન પર ડાયલ કરો."
+  ],
+  "Official help in India": [
+    "भारत में आधिकारिक सहायता",
+    "ભારતમાં સત્તાવાર મદદ"
+  ],
+  "Open calling app": [
+    "कॉलिंग ऐप खोलें",
+    "કૉલિંગ એપ ખોલો"
+  ],
+  "Open official reporting website": [
+    "आधिकारिक रिपोर्टिंग वेबसाइट खोलें",
+    "સત્તાવાર જાણ કરવાની વેબસાઇટ ખોલો"
+  ],
+  "Open phone dialer": [
+    "फ़ोन डायलर खोलें",
+    "ફોન ડાયલર ખોલો"
+  ],
+  "Paste the complete message or link, then choose Analyze privately. Read the actual reason and coverage; clear does not mean verified safe.": [
+    "पूरा संदेश या लिंक पेस्ट करें और निजी जाँच चुनें। असली कारण और जाँच का दायरा पढ़ें; साफ़ नतीजे का मतलब प्रमाणित सुरक्षित नहीं है।",
+    "આખો સંદેશ કે લિંક પેસ્ટ કરો અને ખાનગી તપાસ પસંદ કરો. ખરું કારણ અને તપાસનો વ્યાપ વાંચો; સ્વચ્છ પરિણામનો અર્થ પ્રમાણિત સુરક્ષિત નથી."
+  ],
+  "Preserve the app name and relevant evidence. SafeX AI cannot confirm or remove a device infection.": [
+    "ऐप का नाम और संबंधित साक्ष्य सुरक्षित रखें। SafeX AI डिवाइस के संक्रमण की पुष्टि या उसे हटा नहीं सकता।",
+    "ઍપનું નામ અને સંબંધિત પુરાવા સાચવો. SafeX AI ઉપકરણના ચેપની ખાતરી કરી કે તેને દૂર કરી શકતું નથી."
+  ],
+  "Private checks, honest limits": [
+    "निजी जाँच, स्पष्ट सीमाएँ",
+    "ખાનગી તપાસ, સ્પષ્ટ મર્યાદાઓ"
+  ],
+  "Private security checks for messages, links, screenshots and QR content, right in your browser. Start with a quick introduction or skip to a manual scan.": [
+    "अपने ब्राउज़र में संदेशों, लिंक, स्क्रीनशॉट और QR सामग्री की निजी सुरक्षा जाँच। छोटा परिचय देखें या छोड़कर सीधे खुद जाँच शुरू करें।",
+    "તમારા બ્રાઉઝરમાં સંદેશો, લિંક્સ, સ્ક્રીનશૉટ્સ અને QR સામગ્રીની ખાનગી સુરક્ષા તપાસ. ટૂંકો પરિચય જુઓ કે છોડીને સીધી જાતે તપાસ શરૂ કરો."
+  ],
+  "Remove remote-access permissions and uninstall the suspicious application. Use the security tools supplied with your operating system.": [
+    "रिमोट पहुँच की अनुमति हटाएँ और संदिग्ध ऐप अनइंस्टॉल करें। ऑपरेटिंग सिस्टम के सुरक्षा साधन इस्तेमाल करें।",
+    "રિમોટ ઍક્સેસની પરવાનગી દૂર કરો અને શંકાસ્પદ એપ અનઇન્સ્ટોલ કરો. ઑપરેટિંગ સિસ્ટમનાં સુરક્ષા સાધનો વાપરો."
+  ],
+  "Review imported threat lists": [
+    "आयात की खतरा सूचियाँ देखें",
+    "આયાત કરેલી જોખમ યાદીઓ જુઓ"
+  ],
+  "Review screenshot and QR content": [
+    "स्क्रीनशॉट और QR सामग्री देखें",
+    "સ્ક્રીનશૉટ અને QR સામગ્રી જુઓ"
+  ],
+  "Review the number and make the call yourself. If no calling app opens, dial this number on your phone. These numbers are for India.": [
+    "नंबर जाँचें और कॉल खुद करें। कॉलिंग ऐप न खुले तो अपने फ़ोन पर नंबर डायल करें। ये नंबर भारत के लिए हैं।",
+    "નંબર તપાસો અને કૉલ જાતે કરો. કૉલિંગ એપ ન ખૂલે તો તમારા ફોન પર નંબર ડાયલ કરો. આ નંબરો ભારત માટે છે."
+  ],
+  "SafeX AI": [
+    "SafeX AI",
+    "SafeX AI"
+  ],
+  "SafeX AI does not submit reports or call anyone automatically. Website access needs an internet connection in your browser.": [
+    "SafeX AI अपने आप रिपोर्ट या कॉल नहीं करता। वेबसाइट खोलने के लिए ब्राउज़र में इंटरनेट कनेक्शन चाहिए।",
+    "SafeX AI આપમેળે જાણ કે કોઈને કૉલ કરતું નથી. વેબસાઇટ ખોલવા બ્રાઉઝરમાં ઇન્ટરનેટ જોડાણ જરૂરી છે."
+  ],
+  "Save is an explicit choice. History contains redacted local reports; unsaved session content expires after 15 minutes. Export and delete reports here. Local storage is not encrypted.": [
+    "सहेजना आपका चुनाव है। इतिहास में गोपनीय अंश हटाई स्थानीय रिपोर्ट रहती हैं; बिना सहेजी सत्र सामग्री 15 मिनट में समाप्त होती है। यहाँ रिपोर्ट निर्यात या मिटाएँ। स्थानीय भंडारण एन्क्रिप्टेड नहीं है।",
+    "સાચવવું તમારી પસંદગી છે. ઇતિહાસમાં ગુપ્ત અંશો દૂર કરેલા સ્થાનિક રિપોર્ટ હોય છે; સાચવ્યા વિનાની સત્ર સામગ્રી 15 મિનિટમાં સમાપ્ત થાય છે. અહીં રિપોર્ટ નિકાસ કરો કે કાઢો. સ્થાનિક સંગ્રહ એન્ક્રિપ્ટેડ નથી."
+  ],
+  "Scan this page after using the toolbar action. Optional site protection enables supported automatic checks. Private mail/chat and restricted pages use selected-text or paste fallback.": [
+    "टूलबार बटन इस्तेमाल करने के बाद यह पेज जाँचें। वैकल्पिक साइट सुरक्षा समर्थित स्वचालित जाँच चालू करती है। निजी मेल/चैट और प्रतिबंधित पेजों में चुना पाठ या पेस्ट करके जाँचें।",
+    "ટૂલબાર બટન વાપર્યા પછી આ પેજ તપાસો. વૈકલ્પિક સાઇટ સુરક્ષા સમર્થિત આપમેળે તપાસ ચાલુ કરે છે. ખાનગી મેઇલ/ચેટ અને પ્રતિબંધિત પેજમાં પસંદ કરેલું લખાણ કે પેસ્ટ કરીને તપાસો."
+  ],
+  "Show me this feature": [
+    "यह सुविधा दिखाएँ",
+    "આ સુવિધા બતાવો"
+  ],
+  "Skip introduction": [
+    "परिचय छोड़ें",
+    "પરિચય છોડો"
+  ],
+  "Stop using the suspicious app. If someone is remotely controlling your device, disconnect it from the internet.": [
+    "संदिग्ध ऐप का उपयोग रोकें। कोई आपके डिवाइस को दूर से नियंत्रित कर रहा हो तो इंटरनेट से अलग करें।",
+    "શંકાસ્પદ એપનો ઉપયોગ રોકો. કોઈ તમારા ઉપકરણને દૂરથી નિયંત્રિત કરતું હોય તો ઇન્ટરનેટથી અલગ કરો."
+  ],
+  "Synthetic samples run through the actual local detector. Compare a credential request and ordinary advice. No sample link needs to be opened.": [
+    "बनाए गए उदाहरण असली स्थानीय डिटेक्टर से जाँचे जाते हैं। गोपनीय जानकारी माँगने वाले अनुरोध और सामान्य सलाह की तुलना करें। कोई उदाहरण लिंक खोलना ज़रूरी नहीं।",
+    "બનાવેલાં ઉદાહરણો સાચા સ્થાનિક ડિટેક્ટરથી તપાસાય છે. ગુપ્ત માહિતી માગતી વિનંતી અને સામાન્ય સલાહની સરખામણી કરો. કોઈ ઉદાહરણની લિંક ખોલવી જરૂરી નથી."
+  ],
+  "Take the feature tour": [
+    "सुविधाओं का मार्गदर्शन लें",
+    "સુવિધાઓનું માર્ગદર્શન લો"
+  ],
+  "Take the full feature tour": [
+    "सभी सुविधाओं का मार्गदर्शन देखें",
+    "બધી સુવિધાઓનું માર્ગદર્શન જુઓ"
+  ],
+  "Take the next safe step": [
+    "अगला सुरक्षित कदम उठाएँ",
+    "આગળનું સુરક્ષિત પગલું લો"
+  ],
+  "Test the warning tune": [
+    "चेतावनी की धुन जाँचें",
+    "ચેતવણીનો અવાજ તપાસો"
+  ],
+  "Text size": [
+    "अक्षर का आकार",
+    "અક્ષરનું કદ"
+  ],
+  "The tour highlights real controls. It does not scan, read your inbox, grant site access, enable sound, place a call or submit a report. You can close it and replay it anytime.": [
+    "मार्गदर्शन असली बटन हाइलाइट करता है। यह खुद जाँच, इनबॉक्स पढ़ना, साइट अनुमति, आवाज़ चालू करना, कॉल या शिकायत नहीं करता। इसे कभी भी बंद करें या दोबारा देखें।",
+    "માર્ગદર્શન ખરાં નિયંત્રણો હાઇલાઇટ કરે છે. તે જાતે તપાસ, ઇનબૉક્સ વાંચવું, સાઇટ પરવાનગી, અવાજ ચાલુ કરવો, કૉલ કે ફરિયાદ કરતું નથી. તેને ગમે ત્યારે બંધ કરો કે ફરી જુઓ."
+  ],
+  "Try a harmless example": [
+    "सुरक्षित उदाहरण आज़माएँ",
+    "સુરક્ષિત ઉદાહરણ અજમાવો"
+  ],
+  "Use Add context when a request involves remote access, gift cards, a wallet phrase, an advance fee or secrecy. The extra caution is based on your report, not verified identity.": [
+    "रिमोट पहुँच, गिफ्ट कार्ड, वॉलेट सीक्रेट शब्द, अग्रिम शुल्क या गोपनीयता के अनुरोध में अतिरिक्त जानकारी जोड़ें इस्तेमाल करें। अतिरिक्त सावधानी आपकी जानकारी पर आधारित है, सत्यापित पहचान पर नहीं।",
+    "રિમોટ ઍક્સેસ, ગિફ્ટ કાર્ડ, વૉલેટના ગુપ્ત શબ્દો, આગોતરી ફી કે ગુપ્તતા માગતી વિનંતીમાં વધારાની માહિતી ઉમેરો વાપરો. વધારાની સાવચેતી તમારી માહિતી પર આધારિત છે, ચકાસેલી ઓળખ પર નહીં."
+  ],
+  "Use a different trusted device to contact your bank and secure affected accounts.": [
+    "बैंक से संपर्क और प्रभावित खाते सुरक्षित करने के लिए दूसरा भरोसेमंद डिवाइस इस्तेमाल करें।",
+    "બેંકનો સંપર્ક કરવા અને અસરગ્રસ્ત ખાતાં સુરક્ષિત કરવા બીજું વિશ્વસનીય ઉપકરણ વાપરો."
+  ],
+  "Use your local official services": [
+    "स्थानीय आधिकारिक सेवाएँ इस्तेमाल करें",
+    "સ્થાનિક સત્તાવાર સેવાઓ વાપરો"
+  ],
+  "Verified 10 October 2026: cybercrime.gov.in and 112.gov.in. These actions are not a completed complaint and do not guarantee recovery.": [
+    "10 अक्टूबर 2026 को सत्यापित: cybercrime.gov.in और 112.gov.in। ये क्रियाएँ पूरी हुई शिकायत नहीं हैं और पैसे लौटने की गारंटी नहीं देतीं।",
+    "10 ઑક્ટોબર 2026 ના રોજ ચકાસેલું: cybercrime.gov.in અને 112.gov.in. આ ક્રિયાઓ પૂર્ણ થયેલી ફરિયાદ નથી અને પૈસા પાછા મળવાની ખાતરી આપતી નથી."
+  ],
+  "Welcome to SafeX AI": [
+    "SafeX AI में आपका स्वागत है",
+    "SafeX AI માં આપનું સ્વાગત છે"
+  ],
+  "Where do you need help?": [
+    "आपको कहाँ सहायता चाहिए?",
+    "તમને ક્યાં સહાય જોઈએ છે?"
+  ],
+  "You stay in control": [
+    "नियंत्रण आपके हाथ में है",
+    "નિયંત્રણ તમારા હાથમાં છે"
+  ],
+  "Your language. Your reading size.": [
+    "आपकी भाषा। आपकी सुविधा का अक्षर आकार।",
+    "તમારી ભાષા. તમને અનુકૂળ અક્ષરનું કદ."
+  ],
+  "Your scan content is processed locally. OCR and model files are packaged for offline use. A clear result is not a safety guarantee. Site monitoring requires your consent.": [
+    "जाँच की सामग्री डिवाइस पर संसाधित होती है। OCR और मॉडल फ़ाइलें ऑफ़लाइन उपयोग के लिए शामिल हैं। साफ़ नतीजा सुरक्षा की गारंटी नहीं है। साइट की निगरानी के लिए आपकी सहमति चाहिए।",
+    "તપાસની સામગ્રી ઉપકરણ પર પ્રક્રિયા થાય છે. OCR અને મોડેલ ફાઇલો ઑફલાઇન ઉપયોગ માટે સામેલ છે. સ્વચ્છ પરિણામ સુરક્ષાની ખાતરી નથી. સાઇટની દેખરેખ માટે તમારી સંમતિ જોઈએ છે."
+  ]
+}

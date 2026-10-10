@@ -47,7 +47,9 @@ class MainActivity : ComponentActivity() {
 
                 SentinelNavGraph(
                     navController = navController,
-                    startDestination = if (isPermissionOnboardingLaunch) {
+                    startDestination = if (com.sentinel.ai.ui.guidance.GuidancePreferences.needsIntro(this)) {
+                        Screen.Welcome.route
+                    } else if (isPermissionOnboardingLaunch) {
                         Screen.PermissionSetup.route
                     } else {
                         Screen.Dashboard.route

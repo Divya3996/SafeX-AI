@@ -5,27 +5,27 @@
     {
       "name": "installed Chrome 154 loads production manifest and toolbar action",
       "passed": true,
-      "durationMs": 135
+      "durationMs": 122
     },
     {
       "name": "real activeTab grant enables bounded page scan",
       "passed": true,
-      "durationMs": 154
+      "durationMs": 150
     },
     {
       "name": "actual DOM extraction excludes passwords, textarea and editors",
       "passed": true,
-      "durationMs": 10
+      "durationMs": 17
     },
     {
       "name": "screenshot capture is user-scoped and supports safe local crop",
       "passed": true,
-      "durationMs": 132
+      "durationMs": 118
     },
     {
       "name": "untrusted webpage cannot call privileged report/capture commands",
       "passed": true,
-      "durationMs": 12
+      "durationMs": 13
     },
     {
       "name": "optional site monitoring requires persistent site authorization",
@@ -35,47 +35,47 @@
     {
       "name": "service-worker termination preserves session result and preferences",
       "passed": true,
-      "durationMs": 190
+      "durationMs": 193
     },
     {
       "name": "warning audio uses packaged offscreen playback",
       "passed": true,
-      "durationMs": 172
+      "durationMs": 261
     },
     {
       "name": "selected-site protection starts after an actual Chrome profile grant",
       "passed": true,
-      "durationMs": 1428
+      "durationMs": 1370
     },
     {
       "name": "sensitive form submission is paused without reading the typed value",
       "passed": true,
-      "durationMs": 79
+      "durationMs": 59
     },
     {
       "name": "click guard retains displayed-address evidence and a usable choice",
       "passed": true,
-      "durationMs": 124
+      "durationMs": 93
     },
     {
       "name": "pause, resume and revoke stop and restore automatic checks",
       "passed": true,
-      "durationMs": 3024
+      "durationMs": 3075
     },
     {
       "name": "exact imported blocking rules work and reported-only entries do not block",
       "passed": true,
-      "durationMs": 312
+      "durationMs": 429
     },
     {
       "name": "navigation invalidates the previous tab result",
       "passed": true,
-      "durationMs": 9
+      "durationMs": 11
     },
     {
       "name": "restricted pages return usable fallback, never clear",
       "passed": true,
-      "durationMs": 433
+      "durationMs": 518
     },
     {
       "name": "page extraction and warning code have no runtime exceptions",

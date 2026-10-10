@@ -41,6 +41,8 @@ Design rationale: [floating assistant implementation plan](docs/floating-assista
 
 Desktop companion: [Chrome extension installation, features and demo](chrome-extension/README.md) · [Browser release and validation](docs/chrome-extension-release.md) · [Product and implementation plan](docs/chrome-extension-plan.md).
 
+New-user setup: [Onboarding, highlighted feature tours, official scam help and release instructions](docs/onboarding-and-release.md).
+
 ## Screenshots
 
 | Home | Scanner | Result |
@@ -53,9 +55,9 @@ Desktop companion: [Chrome extension installation, features and demo](chrome-ext
 
 ## Validation
 
-SafeX AI **1.7.0**: **535 active unit tests and 55 offline device tests passed**, with zero lint errors (54 warnings). Four optional research-export checks were skipped. All 120 multilingual fraud contracts and 55 floating-review contracts matched; these are authored development fixtures, not independent accuracy evidence.
+SafeX AI **1.8.0** adds four introduction screens, an 18-step highlighted app tour, translated feature guides and confirmed scam-help dialer actions. **535 active unit tests and 58 active offline device tests passed**, with zero lint errors (108 warnings). Four optional unit research-export checks and one optional native research-input check were skipped. The Chrome **1.1.0** companion passed **431 unit checks and 43 browser scenarios**, including its 12-step tour. These establish functional behavior, not independent fraud accuracy.
 
-[Debug APK](releases/SafeX-AI-1.7.0-debug.apk) · [Release verification](docs/test-results/fraud-training-summary.json) · [Verification report and limits](docs/validation.md)
+[Android development APK](releases/SafeX-AI-1.8.0-debug.apk) · [Unsigned Android release bundle](releases/SafeX-AI-1.8.0-release-unsigned.aab) · [Chrome ZIP](chrome-extension/release/SafeX-AI-Chrome-1.1.0.zip) · [Release verification](docs/test-results/onboarding-release-summary.json) · [Verification report and limits](docs/validation.md)
 
 ```sh
 cd android-app

@@ -1,5 +1,15 @@
+@file:OptIn(androidx.compose.ui.ExperimentalComposeUiApi::class)
+
 package com.sentinel.ai.ui.navigation
 
+import com.sentinel.ai.ui.guidance.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.semantics.invisibleToUser
+import androidx.compose.ui.focus.focusProperties
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
@@ -56,7 +66,18 @@ fun SentinelNavGraph(
 ) {
     val backStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = backStackEntry?.destination?.route
-    val isPermissionSetup = currentRoute == Screen.PermissionSetup.route
+    val isPermissionSetup = currentRoute == Screen.PermissionSetup.route || currentRoute == Screen.Welcome.route
+    val context = LocalContext.current
+    val tourProgress = rememberSaveable { mutableIntStateOf(-1) }
+    val guide = remember { GuideController(context.applicationContext, tourProgress) }
+    LaunchedEffect(currentRoute) {
+        if (currentRoute == Screen.Dashboard.route && GuidancePreferences.consumePendingTour(context)) guide.start()
+    }
+    LaunchedEffect(guide.index) {
+        guide.current?.let { step ->
+            if (currentRoute != step.route) navController.navigate(step.route) { launchSingleTop = true }
+        }
+    }
 
     val windowWidth = rememberWindowWidthClass()
     val isCompact = windowWidth.isCompact
@@ -79,7 +100,11 @@ fun SentinelNavGraph(
         }
     }
 
+    CompositionLocalProvider(LocalGuideController provides guide) {
+    Box(Modifier.fillMaxSize()) {
     ModalNavigationDrawer(
+        modifier = Modifier.focusProperties { canFocus = !guide.active }
+            .then(if (guide.active) Modifier.semantics { invisibleToUser() } else Modifier),
         drawerState = drawerState,
         drawerContent = {
             ModalDrawerSheet(
@@ -136,6 +161,11 @@ fun SentinelNavGraph(
             }
         }
     }
+    if (guide.active) key(guide.index) {
+        GuideOverlay(guide) { navController.navigate(Screen.IncidentHelp.route) { launchSingleTop = true } }
+    }
+    }
+    }
 }
 
 /**
@@ -157,6 +187,20 @@ private fun SentinelNavHost(
         startDestination = startDestination,
         modifier = Modifier.padding(paddingValues)
     ) {
+        composable(Screen.Welcome.route) {
+            val context = LocalContext.current
+            WelcomeScreen(onIncidentHelp = { navController.navigate(Screen.IncidentHelp.route) }) { tour ->
+                GuidancePreferences.finishIntro(context, tour)
+                navController.navigate(Screen.PermissionSetup.route) {
+                    popUpTo(Screen.Welcome.route) { inclusive = true }
+                    launchSingleTop = true
+                }
+            }
+        }
+        composable(Screen.FeatureGuide.route) {
+            val guide = LocalGuideController.current
+            FeatureGuideScreen { index -> guide?.start(index) }
+        }
         composable(
             route = Screen.Dashboard.route,
             enterTransition = { SentinelNavEnterTransition },
@@ -165,6 +209,7 @@ private fun SentinelNavHost(
             popExitTransition = { SentinelNavPopExitTransition }
         ) {
             DashboardScreen(
+                onFeatureGuide = { navController.navigate(Screen.FeatureGuide.route) },
                 onIncidentHelp = { navController.navigate(Screen.IncidentHelp.route) },
                 onThreatSelected = { threatId ->
                     navController.navigate(Screen.ThreatDetails.createRoute(threatId))
@@ -204,6 +249,7 @@ private fun SentinelNavHost(
             popExitTransition = { SentinelNavPopExitTransition }
         ) {
             SettingsScreen(
+                onFeatureGuide = { navController.navigate(Screen.FeatureGuide.route) },
                 appVersion = appVersion,
                 selectedTheme = themeMode,
                 onThemeSelected = onThemeModeSelected,

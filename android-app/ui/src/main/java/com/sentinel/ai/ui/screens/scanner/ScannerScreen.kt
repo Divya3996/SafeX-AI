@@ -15,6 +15,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import com.sentinel.ai.ui.guidance.guidanceTarget
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.platform.LocalContext
@@ -104,9 +105,9 @@ internal fun ScanInputContent(scanType: ScanType, scanInput: String, onInputChan
         }
         Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
             Column(Modifier.fillMaxWidth().padding(20.dp), verticalArrangement = Arrangement.spacedBy(16.dp)) {
-                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                FlowRow(modifier = Modifier.guidanceTarget("scan.modes"), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     ScanType.entries.forEach { type ->
-                        FilterChip(selected = scanType == type, onClick = { onTypeChange(type) }, label = { Text(label(type)) })
+                        FilterChip(modifier = Modifier.guidanceTarget("scan." + when(type) { ScanType.TEXT -> "message"; ScanType.LINK -> "link"; ScanType.IMAGE -> "screenshot"; ScanType.QR -> "qr"; ScanType.FILE -> "file" }), selected = scanType == type, onClick = { onTypeChange(type) }, label = { Text(label(type)) })
                     }
                 }
                 if (isDocument) {
@@ -144,7 +145,7 @@ internal fun ScanInputContent(scanType: ScanType, scanInput: String, onInputChan
         Text("Try a sample", style = MaterialTheme.typography.titleMedium)
         Text("Synthetic examples run through the real detector. No link needs to be opened.", style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant)
-        FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+        FlowRow(modifier = Modifier.guidanceTarget("scan.samples"), horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
             SuggestionChip(onClick = { onSample(scamSample, ScanType.TEXT) }, label = { Text("OTP scam") })
             SuggestionChip(onClick = { onSample(safetySample, ScanType.TEXT) }, label = { Text("Safety advice") })
             SuggestionChip(onClick = { onSample("https://paypal-secure.example/verify?redirect=https://example.com", ScanType.LINK) }, label = { Text("Suspicious link") })

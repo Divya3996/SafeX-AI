@@ -5,82 +5,82 @@
     {
       "name": "production package installs and side panel renders",
       "passed": true,
-      "durationMs": 362
+      "durationMs": 516
     },
     {
       "name": "offline text inference completes with real bundled models",
       "passed": true,
-      "durationMs": 265
+      "durationMs": 278
     },
     {
       "name": "explicit save and history omit raw input and credentials",
       "passed": true,
-      "durationMs": 261
+      "durationMs": 146
     },
     {
       "name": "settings, Gujarati text size and persistence",
       "passed": true,
-      "durationMs": 715
+      "durationMs": 656
     },
     {
       "name": "legitimate advice does not produce a scam warning",
       "passed": true,
-      "durationMs": 231
+      "durationMs": 204
     },
     {
       "name": "optional context adds labeled caution and resets for the next message",
       "passed": true,
-      "durationMs": 322
+      "durationMs": 310
     },
     {
       "name": "redacted export downloads a real JSON report",
       "passed": true,
-      "durationMs": 460
+      "durationMs": 392
     },
     {
       "name": "English, Hindi and Gujarati user-selected scan UI",
       "passed": true,
-      "durationMs": 1133
+      "durationMs": 1012
     },
     {
       "name": "imported image, crop and English recognition work offline",
       "passed": true,
-      "durationMs": 1557
+      "durationMs": 1407
     },
     {
       "name": "a real pointer crop and cancelled recognition recover into a fresh job",
       "passed": true,
-      "durationMs": 2271
+      "durationMs": 2162
     },
     {
       "name": "native Hindi recognition uses packaged offline assets",
       "passed": true,
-      "durationMs": 2002
+      "durationMs": 1541
     },
     {
       "name": "native Gujarati recognition uses packaged offline assets",
       "passed": true,
-      "durationMs": 2006
+      "durationMs": 1958
     },
     {
       "name": "QR extraction is separate and content can be scanned",
       "passed": true,
-      "durationMs": 1430
+      "durationMs": 1465
     },
     {
       "name": "scan state and fonts reflow at narrow panel width",
       "passed": true,
-      "durationMs": 514
+      "durationMs": 469
     },
     {
       "name": "actual extension requests stay local",
       "passed": true,
-      "durationMs": 3
+      "durationMs": 2
     },
     {
       "name": "runtime has no page or CSP errors",
       "passed": true,
-      "durationMs": 1
+      "durationMs": 0
     }
   ],
   "consoleErrors": [],

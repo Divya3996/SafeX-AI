@@ -1,6 +1,7 @@
 package com.sentinel.ai.ui.screens.alert
 
 import com.sentinel.ai.ui.i18n.LocalizedText as Text
+import com.sentinel.ai.ui.guidance.guidanceTarget
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -95,10 +96,12 @@ fun AlertContent(
         contentPadding = androidx.compose.foundation.layout.PaddingValues(bottom = SentinelSpacing.XXL)
     ) {
         item {
+            Box(Modifier.guidanceTarget("alerts.header")) {
             SentinelSectionHeader(
                 title = "Notifications",
                 subtitle = "Scanned messages and recent alerts"
             )
+            }
         }
 
         if (alerts.isEmpty()) {

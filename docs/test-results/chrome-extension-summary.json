@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "validatedAt": "2026-10-09T13:39:05.103Z",
+  "version": "1.1.0",
+  "validatedAt": "2026-10-10T03:49:45.121Z",
   "scope": "Functional development validation; no independent browser accuracy claim",
   "unit": {
     "passed": 431,
@@ -23,12 +23,17 @@
     ]
   },
   "dependencyVulnerabilities": 0,
-  "artifact": {
-    "file": "SafeX-AI-Chrome-1.0.0.zip",
-    "bytes": 20964989,
-    "sha256": "dc94c3f249dadce80c0495942158d2c159fe0d8e180601440285fe865965ffc3"
+  "guidance": {
+    "passed": 11,
+    "failed": 0,
+    "offline": true
   },
-  "buildManifestSha256": "69b6bff9e026861a36b002c8d68a0e37145411d57f48eb58e8b3f9906d3c9e79",
+  "artifact": {
+    "file": "SafeX-AI-Chrome-1.1.0.zip",
+    "bytes": 20981203,
+    "sha256": "0d704a1dbb05ee7281e2ec76b3495bd319392fb849b9847a7ac2daa9cd0426b5"
+  },
+  "buildManifestSha256": "c60dfddf5c305494257285203358da17d2715c8fad28db9677565612f640eb43",
   "modelAssets": {
     "security-model-attribution.txt": "b53b18fd94782e72d63968db7049b187f0935b6fa2d35f5b305efb02bc2bc154",
     "text-model-card.json": "cd4b687797a108b6e9734acd06f75af874e81ff7849c3d0848a3c6693d7ab50f",

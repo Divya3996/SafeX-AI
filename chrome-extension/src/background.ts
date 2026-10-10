@@ -20,6 +20,7 @@ import {
   savedReport,
 } from "../../shared/security-engine/src/privacy";
 import { t } from "./i18n";
+import type { GuidanceState } from "./guidance";
 
 const trusted = (sender: chrome.runtime.MessageSender) =>
   sender.id === chrome.runtime.id &&
@@ -35,6 +36,7 @@ const web = (url?: string) => {
 const domain = (host: string) =>
   getDomain(host, { allowPrivateDomains: true }) ?? host;
 interface LocalData {
+  guidance?: GuidanceState;
   preferences?: Preferences;
   reputation?: Reputation;
   reports?: ScanResult[];
@@ -528,11 +530,17 @@ async function panelMessage(m: Record<string, unknown>) {
       p = await preferences(),
       u = web(tab?.url),
       local = await chrome.storage.local.get<LocalData>([
+        "guidance",
         "reports",
         "feedback",
         "reputation",
       ]);
     return {
+      guidance: local.guidance ?? {
+        version: 1,
+        introComplete: false,
+        tourComplete: false,
+      },
       preferences: p,
       tab:
         u && tab?.id !== undefined
@@ -622,6 +630,30 @@ async function panelMessage(m: Record<string, unknown>) {
       throw Error("captureChanged");
     return { data };
   }
+  if (type === "GUIDANCE")
+    return mutate(async () => {
+      const patch = m.patch as Partial<GuidanceState>;
+      if (
+        !patch ||
+        typeof patch !== "object" ||
+        Array.isArray(patch) ||
+        Object.keys(patch).some(
+          (k) => !["introComplete", "tourComplete"].includes(k),
+        ) ||
+        Object.values(patch).some((v) => typeof v !== "boolean")
+      )
+        throw Error("updateFailed");
+      const prior = (await chrome.storage.local.get<LocalData>("guidance"))
+        .guidance;
+      const guidance = {
+        version: 1,
+        introComplete: prior?.introComplete ?? false,
+        tourComplete: prior?.tourComplete ?? false,
+        ...patch,
+      };
+      await chrome.storage.local.set({ guidance });
+      return { guidance };
+    });
   if (type === "PREFERENCES")
     return mutate(async () => {
       const p = await preferences(),

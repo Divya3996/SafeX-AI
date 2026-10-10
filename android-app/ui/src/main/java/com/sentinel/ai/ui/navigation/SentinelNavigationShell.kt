@@ -20,6 +20,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.History
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Info
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.QrCodeScanner
@@ -96,6 +97,7 @@ private val primaryDestinations = listOf(
 // Secondary destinations were previously only reachable via deep links; surfacing them in the
 // drawer improves discoverability without altering any route or navigation logic.
 private val secondaryDestinations = listOf(
+    SentinelNavDestination(Screen.FeatureGuide, "Learn SafeX AI", Icons.Filled.Info, NavGroup.Secondary),
     SentinelNavDestination(Screen.Alerts, "Alerts", Icons.Filled.Notifications, NavGroup.Secondary),
     SentinelNavDestination(Screen.IncidentHelp, "Help after a scam", Icons.Filled.HealthAndSafety, NavGroup.Secondary)
 )

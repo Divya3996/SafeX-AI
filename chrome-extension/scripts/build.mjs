@@ -6,6 +6,13 @@ import { createHash } from "node:crypto";
 import sharp from "sharp";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), ".."),
   dist = path.join(root, "dist");
+const guidanceCopy = JSON.parse(
+  await fs.readFile(path.join(root, "src/guidance-copy.json"), "utf8"),
+);
+for (const [key, row] of Object.entries(guidanceCopy)) {
+  if (row.length !== 2 || row.some((s) => !s.trim()))
+    throw Error(`Incomplete guidance translation: ${key}`);
+}
 await fs.rm(dist, { recursive: true, force: true });
 await fs.mkdir(dist, { recursive: true });
 await fs.cp(path.join(root, "public"), dist, { recursive: true });
@@ -158,7 +165,16 @@ async function visit(dir) {
 await visit(dist);
 await fs.writeFile(
   path.join(dist, "build-manifest.json"),
-  JSON.stringify({ version: "1.0.0", files: hashes }, null, 2),
+  JSON.stringify(
+    {
+      version: JSON.parse(
+        await fs.readFile(path.join(root, "manifest.json"), "utf8"),
+      ).version,
+      files: hashes,
+    },
+    null,
+    2,
+  ),
 );
 console.log(
   `SafeX AI built: ${Object.keys(hashes).length} packaged files, ${Object.keys(COPY).length} strings per language.`,

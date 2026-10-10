@@ -1,6 +1,20 @@
 # Verification report
 
-## Current SafeX AI 1.7.0 research update — 9 October 2026
+## Current SafeX AI 1.8.0 onboarding release — 10 October 2026
+
+Android passed **535 active unit tests and 58 active offline device tests**, with **zero lint errors and 108 warnings**. Four of 539 discovered unit checks were optional research-export skips. The native runner reported `OK (59 tests)` in **303.75 seconds**; its event log identifies one assumption skip because the optional transient research dataset was absent. The other 58 checks passed. Testing used Android 14/API 34, airplane mode, Wi-Fi disabled and the authored image-file camera fixture. [Release record](test-results/onboarding-release-summary.json) · [Final build](test-results/onboarding-release-build.log) · [Native output](test-results/onboarding-native-final.log) · [Runner events, including the optional skip](test-results/onboarding-native-runner.log).
+
+The four new installed-app experience tests verify first-use persistence, all 18 highlighted controls, Back/Close/replay, English/Hindi/Gujarati at 150% text, urgent help before finishing setup, country selection and confirmed `ACTION_DIAL` actions. Dial intents are intercepted in tests; no emergency call is placed. Existing tests verify the native models, authored fraud controls, private storage, clipboard access, actual capture consent/crop/OCR, live camera QR and recovery. [Gujarati introduction](screenshots/onboarding/introduction-gu-150.png) · [Gujarati tour](screenshots/onboarding/tour-gu-150.png).
+
+Chrome 1.1.0 passed **431 unit/privacy checks, 32 existing browser scenarios and 11 new guidance/help scenarios**. The guide and checklists work offline, and the recorded dependency audit found zero known vulnerabilities. [Browser release record](test-results/chrome-extension-summary.json) · [Guidance checks](test-results/chrome-extension-guidance.json) · [Chrome release details](chrome-extension-release.md).
+
+Both Android development and unsigned release APKs passed static ELF/ZIP alignment checks for all **22 packaged 64-bit native libraries**. These checks do not establish behavior on a 16 KB runtime. The project now targets API 36 with AGP 8.11.1/Gradle 8.13/JDK 17, LiteRT 1.4.0 and CameraX 1.4.2. Internet and calling permissions are absent, and device backup is disabled. [Development alignment report](test-results/onboarding-native-alignment.json) · [Release alignment report](test-results/onboarding-release-native-alignment.json).
+
+The initial cold emulator attempt had six failures while a launcher ANR dialog held focus; Android also denied the clipboard read because the application lacked focus. After stopping the emulator launcher, dismissing keyguard and verifying app focus, the complete suite passed without production-source changes. [Preserved initial output](test-results/onboarding-native-cold-environment-failure.log).
+
+The installable APK is debug-signed; the release bundle is unsigned. Physical Samsung S24/A36, Android 16, a 16 KB runtime, manual assistive-technology checks, publisher signing and store reviews remain release gates. Current checks do not establish independent real-world detection accuracy. [APK](../releases/SafeX-AI-1.8.0-debug.apk) · [Unsigned bundle](../releases/SafeX-AI-1.8.0-release-unsigned.aab) · [Chrome ZIP](../chrome-extension/release/SafeX-AI-Chrome-1.1.0.zip) · [First-use, scam-help and signing instructions](onboarding-and-release.md).
+
+## Historical SafeX AI 1.7.0 research update — 9 October 2026
 
 The final release passed **535 active unit tests and all 55 offline Android tests**, with **zero lint errors and 54 warnings**. Of 539 discovered unit tests, four optional research-export checks were skipped. The full native suite passed on Android 14/API 34 in **335.11 seconds**, in airplane mode with Wi-Fi disabled. [Release record](test-results/fraud-training-summary.json) · [Final build](test-results/fraud-final-build.txt) · [Native output](test-results/fraud-native-final.txt) · [Debug APK](../releases/SafeX-AI-1.7.0-debug.apk).
 

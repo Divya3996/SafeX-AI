@@ -2,6 +2,9 @@ package com.sentinel.ai.ui.screens.dashboard
 
 import com.sentinel.ai.ui.i18n.LocalizedText as Text
 
+import com.sentinel.ai.ui.guidance.guidanceTarget
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -65,6 +68,7 @@ fun DashboardScreen(
     onThreatSelected: (String) -> Unit,
     onNavigateToScanner: () -> Unit = {},
     onIncidentHelp: () -> Unit = {},
+    onFeatureGuide: () -> Unit = {},
     viewModel: DashboardViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
@@ -82,6 +86,7 @@ fun DashboardScreen(
     }
 
     DashboardContent(
+        onFeatureGuide = onFeatureGuide,
         onIncidentHelp = onIncidentHelp,
         uiState = uiState,
         onAction = viewModel::onAction,
@@ -108,27 +113,25 @@ fun DashboardContent(
     appLabelResolver: (String) -> String,
     senderPresentationResolver: (String?, String?) -> SenderPresentation,
     modifier: Modifier = Modifier,
-    onIncidentHelp: () -> Unit = {}
+    onIncidentHelp: () -> Unit = {},
+    onFeatureGuide: () -> Unit = {}
 ) {
     val status = dashboardStatus(uiState.protection)
     val display by com.sentinel.ai.core.feature.DisplayPreferences.settings.collectAsState()
     val timeFormatter = remember(display.language) { SimpleDateFormat("h:mm a", Locale.forLanguageTag(display.language.tag)) }
 
-    LazyColumn(
+    Column(
         modifier = modifier
-            .fillMaxSize()
-            .padding(horizontal = 20.dp),
-        verticalArrangement = Arrangement.spacedBy(SentinelSpacing.LG),
-        contentPadding = androidx.compose.foundation.layout.PaddingValues(
-            top = SentinelSpacing.MD,
-            bottom = SentinelSpacing.XXL
-        )
+            .fillMaxSize().verticalScroll(rememberScrollState())
+            .padding(horizontal = 20.dp).padding(top = SentinelSpacing.MD, bottom = SentinelSpacing.XXL),
+        verticalArrangement = Arrangement.spacedBy(SentinelSpacing.LG)
+
     ) {
-        item {
+        Column {
             DashboardHeader(status = status)
         }
 
-        item {
+        Column {
             ProtectionCard(
                 status = status,
                 enabled = uiState.protection.protectionEnabled,
@@ -136,11 +139,11 @@ fun DashboardContent(
             )
         }
 
-        item {
+        Column {
             PremiumSectionTitle(text = "Recent Activity")
         }
 
-        item {
+        Column {
             PremiumPanel {
                 if (uiState.recentScans.isEmpty()) {
                     Column(verticalArrangement = Arrangement.spacedBy(2.dp)) {
@@ -170,11 +173,11 @@ fun DashboardContent(
             }
         }
 
-        item {
+        Column {
             PremiumSectionTitle(text = "Quick actions")
         }
 
-        item {
+        Column {
             PremiumPanel {
                 DashboardActionRow(
                     title = "Analyze content",
@@ -187,11 +190,14 @@ fun DashboardContent(
                     title = "Help after a scam", description = "Steps for clicks, shared secrets and payments",
                     icon = Icons.Filled.Shield, onClick = onIncidentHelp
                 )
+                HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
+                DashboardActionRow(title = "Learn SafeX AI", description = "Replay the feature tour or read step-by-step guidance anytime.",
+                    icon = Icons.Filled.Shield, onClick = onFeatureGuide)
             }
         }
 
         uiState.error?.let { message ->
-            item {
+            Column {
                 Text(
                     text = message,
                     style = MaterialTheme.typography.bodySmall,
@@ -289,6 +295,7 @@ private fun ProtectionCard(
                 com.sentinel.ai.ui.components.SafeXLogo(Modifier.size(52.dp))
             }
             Spacer(modifier = Modifier.height(SentinelSpacing.MD))
+            Column(Modifier.fillMaxWidth().guidanceTarget("home.protection"), horizontalAlignment = Alignment.CenterHorizontally) {
             Text(
                 text = status.mainLabel,
                 style = MaterialTheme.typography.displaySmall,
@@ -302,6 +309,7 @@ private fun ProtectionCard(
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 textAlign = TextAlign.Center
             )
+            }
             Spacer(modifier = Modifier.height(SentinelSpacing.LG))
             HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
             Row(

@@ -12,6 +12,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import com.sentinel.ai.ui.guidance.guidanceTarget
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.platform.LocalContext
@@ -29,7 +30,7 @@ import kotlinx.coroutines.launch
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun SettingsScreen(appVersion: String, selectedTheme: SentinelThemeMode, onThemeSelected: (SentinelThemeMode) -> Unit,
-    onNavigateToAbout: () -> Unit, viewModel: SettingsViewModel = hiltViewModel()) {
+    onNavigateToAbout: () -> Unit, onFeatureGuide: () -> Unit = {}, viewModel: SettingsViewModel = hiltViewModel()) {
     val context = LocalContext.current
     val lifecycle = LocalLifecycleOwner.current
     val scope = rememberCoroutineScope()
@@ -61,15 +62,19 @@ fun SettingsScreen(appVersion: String, selectedTheme: SentinelThemeMode, onTheme
         Text("Protection, your way", style = MaterialTheme.typography.headlineLarge)
         Text("Your content stays on your phone. This build has no internet permission, no account and no cloud inference.",
             style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurfaceVariant)
-        com.sentinel.ai.ui.i18n.LanguageAndReadingSettings()
-        Section("Floating assistant") {
+        Section("Learn SafeX AI") {
+            Text("Replay the feature tour or read step-by-step guidance anytime.")
+            OutlinedButton(onClick = onFeatureGuide) { Text("Open feature guide") }
+        }
+        com.sentinel.ai.ui.i18n.LanguageAndReadingSettings(Modifier.guidanceTarget("settings.reading"))
+        Section("Floating assistant", Modifier.guidanceTarget("settings.floating")) {
             val floating by FloatingAssistantControl.running.collectAsState()
             Text(if (floating) "Floating assistant is running" else "Floating assistant is paused", style = MaterialTheme.typography.titleSmall)
             Text("Use a movable shield to crop a screen, review text or links, and analyze privately on your phone.", style = MaterialTheme.typography.bodySmall)
             OutlinedButton(onClick = { FloatingAssistantControl.open(context) }) { Text("Set up floating assistant") }
             if (floating) TextButton(onClick = { FloatingAssistantControl.stop(context) }) { Text("Pause assistant") }
         }
-        Section("Protection") {
+        Section("Protection", Modifier.guidanceTarget("settings.protection")) {
             Toggle("Incoming-message protection", "Pause or resume supported notification checks", snapshot.protectionEnabled) {
                 ProtectionControl.setProtectionEnabled(context, it); snapshot = ProtectionControl.snapshot(context)
             }
@@ -77,7 +82,7 @@ fun SettingsScreen(appVersion: String, selectedTheme: SentinelThemeMode, onTheme
             Toggle("Link handoff checks", "Analyze links routed through SafeX AI", clickChecks) { clickChecks = it; FeatureManager.setClickEnabled(it) }
             Toggle("Selected-text analysis", "Analyze a message from Android's selection menu", selectionChecks) { selectionChecks = it; FeatureManager.setTextEnabled(it) }
         }
-        Section("Notification access") {
+        Section("Notification access", Modifier.guidanceTarget("settings.notifications")) {
             Text(if (snapshot.notificationListenerEnabled) "Access enabled" else "Access not enabled", style = MaterialTheme.typography.titleSmall)
             Text("Only supported notifications are checked. Hidden previews and protected OTP notifications may not expose readable content.", style = MaterialTheme.typography.bodySmall)
             OutlinedButton(onClick = { context.startActivity(Intent(Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS)) }) { Text("Manage notification access") }
@@ -86,7 +91,7 @@ fun SettingsScreen(appVersion: String, selectedTheme: SentinelThemeMode, onTheme
                 else context.startActivity(Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).putExtra(Settings.EXTRA_APP_PACKAGE, context.packageName))
             }) { Text("Manage warning notifications") }
         }
-        Section("Warning sound") {
+        Section("Warning sound", Modifier.guidanceTarget("settings.sound")) {
             Text("Threat notifications use the SafeX AI warning tune. Android notification volume, channel settings and Do Not Disturb control playback.", style = MaterialTheme.typography.bodySmall)
             OutlinedButton(onClick = {
                 status = if (WarningChannels.test(context)) "Test notification sent. If silent, check the channel sound and notification volume."
@@ -110,7 +115,7 @@ fun SettingsScreen(appVersion: String, selectedTheme: SentinelThemeMode, onTheme
                 Toggle(name, "Notification content only", enabled) { enabled = it; PrivacyPreferences.setAppEnabled(pkg, it) }
             }
         }
-        Section("Local history") {
+        Section("Local history", Modifier.guidanceTarget("settings.history")) {
             Text("Automatically remove records older than", style = MaterialTheme.typography.bodyMedium)
             FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 listOf(7, 30, 90).forEach { days -> FilterChip(selected = retention == days, onClick = {
@@ -136,8 +141,8 @@ fun SettingsScreen(appVersion: String, selectedTheme: SentinelThemeMode, onTheme
         TextButton(onClick = onNavigateToAbout) { Text("About SafeX AI • $appVersion") }
     }
 }
-@Composable private fun Section(title: String, content: @Composable ColumnScope.() -> Unit) {
-    Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+@Composable private fun Section(title: String, modifier: Modifier = Modifier, content: @Composable ColumnScope.() -> Unit) {
+    Column(modifier = modifier, verticalArrangement = Arrangement.spacedBy(12.dp)) {
         Text(title, style = MaterialTheme.typography.titleMedium)
         Card(colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)) {
             Column(Modifier.fillMaxWidth().padding(20.dp), verticalArrangement = Arrangement.spacedBy(12.dp), content = content)

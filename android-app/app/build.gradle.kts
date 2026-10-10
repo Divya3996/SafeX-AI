@@ -8,14 +8,14 @@ plugins {
 
 android {
     namespace = "com.sentinel.ai"
-    compileSdk = 34
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.sentinel.ai"
         minSdk = 26
-        targetSdk = 34
-        versionCode = 8
-        versionName = "1.7.0"
+        targetSdk = 36
+        versionCode = 9
+        versionName = "1.8.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
@@ -25,6 +25,26 @@ android {
         buildConfigField("String", "VIRUSTOTAL_API_KEY", "\"\"")
         buildConfigField("String", "VIRUSTOTAL_LOOKUP_URL", "\"https://www.virustotal.com/api/v3/\"")
         buildConfigField("String", "REPUTATION_LOOKUP_TIMEOUT_MS", "\"10000\"")
+    }
+
+    val releaseKeys = listOf("SAFEX_KEYSTORE_PATH", "SAFEX_KEYSTORE_PASSWORD", "SAFEX_KEY_ALIAS", "SAFEX_KEY_PASSWORD")
+        .map { providers.environmentVariable(it).orNull }
+    require(releaseKeys.none { !it.isNullOrBlank() } || releaseKeys.all { !it.isNullOrBlank() }) {
+        "Provide all four SAFEX release-signing environment variables, or leave all unset for an unsigned bundle."
+    }
+    if (releaseKeys.all { !it.isNullOrBlank() }) {
+        signingConfigs.create("publisher") {
+            storeFile = file(releaseKeys[0]!!)
+            storePassword = releaseKeys[1]
+            keyAlias = releaseKeys[2]
+            keyPassword = releaseKeys[3]
+        }
+    }
+    buildTypes {
+        getByName("release") {
+            isDebuggable = false
+            if (releaseKeys.all { !it.isNullOrBlank() }) signingConfig = signingConfigs.getByName("publisher")
+        }
     }
 
     buildFeatures {
@@ -46,6 +66,12 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+}
+
+// LiteRT declares its API dependency as a Maven version range. Keep native and Java
+// artifacts on the same reviewed version without repository metadata discovery.
+configurations.configureEach {
+    resolutionStrategy.force("com.google.ai.edge.litert:litert-api:1.4.0")
 }
 
 dependencies {
@@ -83,13 +109,13 @@ dependencies {
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
 
-    implementation("org.tensorflow:tensorflow-lite:2.14.0")
+    implementation("com.google.ai.edge.litert:litert:1.4.0")
     implementation("com.google.mlkit:text-recognition:16.0.1")
     implementation("com.google.mlkit:text-recognition-devanagari:16.0.1")
     implementation("cz.adaptech.tesseract4android:tesseract4android:4.9.0")
     implementation("com.google.mlkit:barcode-scanning:17.3.0")
-    implementation("androidx.camera:camera-camera2:1.3.4")
-    implementation("androidx.camera:camera-lifecycle:1.3.4")
-    implementation("androidx.camera:camera-view:1.3.4")
+    implementation("androidx.camera:camera-camera2:1.4.2")
+    implementation("androidx.camera:camera-lifecycle:1.4.2")
+    implementation("androidx.camera:camera-view:1.4.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.8.1")
 }

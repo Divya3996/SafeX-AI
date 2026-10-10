@@ -792,4 +792,109 @@
     <string name="sx_user_provided_text_only_3ed4d0b6" formatted="false">"ફક્ત વપરાશકર્તાએ આપેલું લખાણ."</string>
     <string name="sx_some_warning_channels_are_disabled_review_an_f2101eb8" formatted="false">"કેટલીક ચેતવણી ચેનલો બંધ છે. Android ની સૂચના સેટિંગ તપાસો."</string>
     <string name="sx_private_image_was_released_to_free_memory_re_9712f574" formatted="false">"મેમરી ખાલી કરવા માટે ખાનગી ચિત્ર દૂર કર્યું છે. સમીક્ષાનું લખાણ ઉપલબ્ધ છે."</string>
+    <string name="sx_welcome_to_safex_ai_96d197b8" formatted="false">"SafeX AI માં આપનું સ્વાગત છે"</string>
+    <string name="sx_your_language_your_reading_size_88604a75" formatted="false">"તમારી ભાષા. તમને અનુકૂળ અક્ષરનું કદ."</string>
+    <string name="sx_private_checks_honest_limits_7b1d5cdc" formatted="false">"ખાનગી તપાસ, સ્પષ્ટ મર્યાદાઓ"</string>
+    <string name="sx_start_with_the_features_you_need_ca278c2b" formatted="false">"તમને જરૂરી સુવિધાઓથી શરૂ કરો"</string>
+    <string name="sx_private_security_checks_for_messages_links_s_7e7dc25a" formatted="false">"સંદેશો, લિંક્સ, સ્ક્રીનશૉટ્સ, QR કોડ અને ફાઇલોની ખાનગી સુરક્ષા તપાસ. કોઈ પગલું લેતા પહેલાં દરેક પરિણામનો અર્થ સમજો."</string>
+    <string name="sx_choose_the_language_and_text_size_that_feels_21c3fea6" formatted="false">"તમને અનુકૂળ ભાષા અને અક્ષરનું કદ પસંદ કરો. બંને પછી સેટિંગ્સમાં બદલી શકો છો."</string>
+    <string name="sx_scanning_runs_on_your_device_without_uploadi_1e357c33" formatted="false">"તપાસ તમારા ઉપકરણ પર થાય છે; સામગ્રી અપલોડ થતી નથી. ચેતવણીઓ મળેલા સંકેતો જણાવે છે; સ્વચ્છ પરિણામ સુરક્ષાનો પુરાવો નથી. ઓળખાયેલું લખાણ તપાસો અને અણધાર્યા વિનંતીની સ્વતંત્ર પુષ્ટિ કરો."</string>
+    <string name="sx_manual_scans_need_no_notification_or_overlay_203ad4f8" formatted="false">"જાતે શરૂ કરેલી તપાસ માટે સૂચના કે અન્ય એપ ઉપર દેખાવાની પરવાનગી જરૂરી નથી. વૈકલ્પિક પરવાનગીઓ આવતા સંદેશોની તપાસ અને તરતી શીલ્ડ ચાલુ કરે છે. આગળ પરવાનગીઓ સમજો અને સુવિધાઓનું માર્ગદર્શન જુઓ."</string>
+    <string name="sx_you_stay_in_control_the_tour_does_not_scan_g_a924bb49" formatted="false">"નિયંત્રણ તમારા હાથમાં છે. માર્ગદર્શન જાતે તપાસ, પરવાનગી, કૉલ કે રિપોર્ટ કરતું નથી."</string>
+    <string name="sx_skip_introduction_a866de68" formatted="false">"પરિચય છોડો"</string>
+    <string name="sx_review_setup_and_take_tour_89330968" formatted="false">"સેટઅપ જુઓ અને માર્ગદર્શન લો"</string>
+    <string name="sx_next_1ff57a29" formatted="false">"આગળ"</string>
+    <string name="sx_finish_a6c7a84b" formatted="false">"પૂર્ણ કરો"</string>
+    <string name="sx_need_help_after_a_scam_1bf74615" formatted="false">"છેતરપિંડી પછી મદદ જોઈએ છે?"</string>
+    <string name="sx_learn_safex_ai_627fa733" formatted="false">"SafeX AI નો ઉપયોગ શીખો"</string>
+    <string name="sx_choose_a_feature_to_see_its_real_control_hig_2370968f" formatted="false">"સુવિધા પસંદ કરો અને તેનું ખરું નિયંત્રણ હાઇલાઇટ થતું જુઓ. માર્ગદર્શન ગમે ત્યારે બંધ કરીને જાતે અજમાવો. માર્ગદર્શન કોઈ તપાસ કે પરવાનગી શરૂ કરતું નથી."</string>
+    <string name="sx_take_the_full_feature_tour_166710fb" formatted="false">"બધી સુવિધાઓનું માર્ગદર્શન જુઓ"</string>
+    <string name="sx_show_me_this_feature_2c4bc6ae" formatted="false">"આ સુવિધા બતાવો"</string>
+    <string name="sx_feature_tour_93b24605" formatted="false">"સુવિધાઓનું માર્ગદર્શન"</string>
+    <string name="sx_close_tour_2cf3aea7" formatted="false">"માર્ગદર્શન બંધ કરો"</string>
+    <string name="sx_this_control_appears_when_its_screen_is_read_0e892e66" formatted="false">"સ્ક્રીન તૈયાર થતાં આ નિયંત્રણ દેખાશે. માર્ગદર્શન આગળ વધારશો અથવા બંધ કરીને સુવિધા અજમાવશો."</string>
+    <string name="sx_your_protection_status_477b7dd7" formatted="false">"તમારી સુરક્ષાની સ્થિતિ"</string>
+    <string name="sx_this_status_shows_whether_notification_check_aa51b34e" formatted="false">"આ જણાવે છે કે સૂચનાઓની તપાસ તૈયાર છે, રોકાયેલી છે કે પરવાનગી જોઈએ છે. જાતે શરૂ કરેલી તપાસ સૂચનાની પરવાનગી વગર પણ ચાલે છે."</string>
+    <string name="sx_choose_what_to_check_b1778883" formatted="false">"શું તપાસવું તે પસંદ કરો"</string>
+    <string name="sx_select_message_link_screenshot_qr_code_or_fi_c14ee769" formatted="false">"સંદેશ, લિંક, સ્ક્રીનશૉટ, QR કોડ કે ફાઇલ પસંદ કરો. દરેક રીત જુદી સામગ્રી તપાસે છે; ઓછા જોખમનું પરિણામ સુરક્ષાની ખાતરી નથી."</string>
+    <string name="sx_check_an_unexpected_message_0d94289a" formatted="false">"અણધાર્યો સંદેશ તપાસો"</string>
+    <string name="sx_choose_message_paste_the_complete_request_an_9669a634" formatted="false">"સંદેશ પસંદ કરો, આખી વિનંતી પેસ્ટ કરો અને ખાનગી તપાસ દબાવો. કારણો વાંચો, ખાસ કરીને પાસવર્ડ, OTP કે પૈસા માગતી વિનંતીઓમાં."</string>
+    <string name="sx_check_the_real_destination_4b5c4130" formatted="false">"ખરું ગંતવ્ય તપાસો"</string>
+    <string name="sx_choose_link_and_paste_an_address_before_open_af3773ec" formatted="false">"લિંક ખોલતાં પહેલાં લિંક મોડમાં સરનામું પેસ્ટ કરો. ખરો હોસ્ટ અને રચનાની ચેતવણી વાંચો. ઑફલાઇન તપાસ ટૂંકી લિંકનું છુપાયેલું ગંતવ્ય કે વેબસાઇટની હાલની સામગ્રી જોઈ શકતી નથી."</string>
+    <string name="sx_read_a_screenshot_privately_819a9048" formatted="false">"સ્ક્રીનશૉટ ખાનગી રીતે વાંચો"</string>
+    <string name="sx_choose_screenshot_and_import_a_clear_image_r_49da10e5" formatted="false">"સ્ક્રીનશૉટ પસંદ કરો અને સ્પષ્ટ ચિત્ર આયાત કરો. ઓળખ ઉપકરણ પર થાય છે. જોડણી અને છૂટી ગયેલા શબ્દો તપાસો; ચિત્ર HTML લિંકનું છુપાયેલું ગંતવ્ય જણાવતું નથી."</string>
+    <string name="sx_decode_a_qr_before_acting_5801bab1" formatted="false">"પગલું લેતાં પહેલાં QR વાંચો"</string>
+    <string name="sx_choose_qr_code_to_scan_with_the_camera_or_im_dcd859ca" formatted="false">"QR કોડ પસંદ કરીને કેમેરાથી તપાસો કે ચિત્ર આયાત કરો. મળેલી લિંક અથવા ચુકવણીની વિગતો તપાસો. UPI વિગતો મળવી બેંક ખાતાના માલિકની પુષ્ટિ કરતી નથી; ચેતવણીની સ્ક્રીન પરથી ચુકવણી ન કરો."</string>
+    <string name="sx_inspect_a_file_without_running_it_d24c1fc4" formatted="false">"ફાઇલ ચલાવ્યા વગર તપાસો"</string>
+    <string name="sx_choose_file_and_select_a_document_or_archive_443b23f7" formatted="false">"ફાઇલ પસંદ કરીને દસ્તાવેજ કે આર્કાઇવ પસંદ કરો. SafeX AI નામ, પ્રકાર અને મર્યાદિત સામગ્રી તપાસે છે. તે ફાઇલ ચલાવતું નથી અને દરેક ફાઇલને માલવેરમુક્ત પ્રમાણિત કરતું નથી."</string>
+    <string name="sx_try_a_harmless_example_58dd4fa7" formatted="false">"સુરક્ષિત ઉદાહરણ અજમાવો"</string>
+    <string name="sx_these_synthetic_examples_use_the_real_detect_821563b2" formatted="false">"આ બનાવેલાં ઉદાહરણો સાચા ડિટેક્ટરથી તપાસાય છે. OTP માગતા સંદેશની સામાન્ય સુરક્ષા સલાહ સાથે સરખામણી કરો. ઉદાહરણની લિંક ખોલવી જરૂરી નથી."</string>
+    <string name="sx_use_the_floating_shield_6596ec0c" formatted="false">"તરતી શીલ્ડ વાપરો"</string>
+    <string name="sx_set_up_the_floating_assistant_and_grant_disp_19598e08" formatted="false">"જરૂર હોય તો જ તરતો સહાયક સેટ કરો અને અન્ય એપ ઉપર દેખાવાની પરવાનગી આપો. એપ બહાર શીલ્ડ દબાવો, સ્ક્રીનનો ભાગ પસંદ કરો, એક કેપ્ચરની મંજૂરી આપો, કાપો અને તપાસ પહેલાં સામગ્રી જુઓ."</string>
+    <string name="sx_choose_your_protection_720df3ab" formatted="false">"તમારી સુરક્ષા સુવિધાઓ પસંદ કરો"</string>
+    <string name="sx_enable_only_the_checks_you_want_notification_acbade03" formatted="false">"જરૂરી તપાસ જ ચાલુ કરો. સૂચના સુરક્ષા માટે Android ની સૂચના પરવાનગી અને તમારો સુરક્ષા સ્વિચ બંને જરૂરી છે. પસંદ કરેલા લખાણ અને મોકલેલી લિંકની તપાસ અલગ વિકલ્પો છે."</string>
+    <string name="sx_allow_readable_notification_checks_00e3dc7d" formatted="false">"વાંચી શકાય તેવી સૂચનાઓની તપાસ ચાલુ કરો"</string>
+    <string name="sx_use_manage_notification_access_to_grant_andr_4c8d1bdd" formatted="false">"સૂચના પરવાનગી સંચાલિત કરો દ્વારા Android પરવાનગી આપો, પછી ચેતવણીની સૂચનાઓ ચાલુ કરો. છુપાયેલા પ્રીવ્યૂ અને સુરક્ષિત OTP સૂચનાઓનું લખાણ ઉપલબ્ધ ન હોઈ શકે. જાતે લખાણ તપાસવા આ પરવાનગી જરૂરી નથી."</string>
+    <string name="sx_test_the_warning_tune_9dd5cdaf" formatted="false">"ચેતવણીનો અવાજ તપાસો"</string>
+    <string name="sx_send_a_test_warning_here_android_notificatio_a9a9898d" formatted="false">"અહીં પરીક્ષણ ચેતવણી મોકલો. Android ની સૂચના અવાજની માત્રા, ચેનલનો અવાજ અને ખલેલ ન પહોંચાડો સેટિંગ અવાજ નિયંત્રિત કરે છે. અવાજ ન આવવાનો અર્થ સુરક્ષા બંધ હોવી નથી."</string>
+    <string name="sx_make_guidance_easy_to_read_fd9239b3" formatted="false">"માર્ગદર્શન વાંચવું સરળ બનાવો"</string>
+    <string name="sx_choose_english_hindi_or_gujarati_and_adjust__0701fda7" formatted="false">"અંગ્રેજી, હિન્દી કે ગુજરાતી પસંદ કરો અને અક્ષરનું કદ બદલો. મેનૂ, ચેતવણીઓ અને આ માર્ગદર્શન તરત તમારી પસંદગી મુજબ બદલાય છે."</string>
+    <string name="sx_control_local_history_bce55a29" formatted="false">"ઉપકરણ પરનો ઇતિહાસ નિયંત્રિત કરો"</string>
+    <string name="sx_choose_the_retention_period_and_delete_recor_84976387" formatted="false">"રેકોર્ડ રાખવાની અવધિ પસંદ કરો અને જરૂર પડે ત્યારે કાઢો. સાચવેલો રેકોર્ડ નોંધાયેલી પોલીસ ફરિયાદ નથી. તરતા સહાયકમાં સાચવો અને પૂર્ણ અલગ ક્રિયાઓ છે."</string>
+    <string name="sx_get_help_for_what_happened_9a2b1b1c" formatted="false">"તમારી સ્થિતિ મુજબ મદદ મેળવો"</string>
+    <string name="sx_choose_whether_you_opened_a_link_shared_a_se_4fec903b" formatted="false">"પસંદ કરો કે તમે લિંક ખોલી, ગુપ્ત માહિતી આપી, એપ ઇન્સ્ટોલ કરી કે પૈસા મોકલ્યા. સંબંધિત યાદીનાં પગલાં અનુસરો; SafeX AI પૈસા પાછા મળવાની પુષ્ટિ કરતું નથી અને તમારી બેંકનો વિકલ્પ નથી."</string>
+    <string name="sx_contact_official_help_in_india_f0b246cb" formatted="false">"ભારતમાં સત્તાવાર સહાય મેળવો"</string>
+    <string name="sx_for_financial_cyber_fraud_open_the_dialer_wi_7e65488f" formatted="false">"આર્થિક સાયબર છેતરપિંડી માટે 1930 સાથે ડાયલર ખોલો. તાત્કાલિક જોખમમાં 112 વાપરો. ફોન એપમાં કૉલ તમે શરૂ કરો છો. ફરિયાદ માટે સત્તાવાર વેબસાઇટ વાપરો; આ એપ જાતે કૉલ કે ફરિયાદ કરતી નથી."</string>
+    <string name="sx_financial_cyber_fraud_1930_5167f122" formatted="false">"આર્થિક સાયબર છેતરપિંડી • 1930"</string>
+    <string name="sx_immediate_danger_112_042d516d" formatted="false">"તાત્કાલિક જોખમ • 112"</string>
+    <string name="sx_this_opens_your_phone_dialer_review_the_numb_e9969b96" formatted="false">"આ તમારા ફોનનું ડાયલર ખોલે છે. નંબર તપાસો અને કૉલ જાતે દબાવો. SafeX AI કૉલ કરતું નથી. આ નંબરો ભારત માટે છે."</string>
+    <string name="sx_open_phone_dialer_d44c4e17" formatted="false">"ફોન ડાયલર ખોલો"</string>
+    <string name="sx_where_do_you_need_help_a4647ac3" formatted="false">"તમને ક્યાં સહાય જોઈએ છે?"</string>
+    <string name="sx_india_abd14921" formatted="false">"ભારત"</string>
+    <string name="sx_another_country_eea65de9" formatted="false">"બીજો દેશ"</string>
+    <string name="sx_open_dialer_112_59205ca4" formatted="false">"ડાયલર ખોલો • 112"</string>
+    <string name="sx_112_immediate_danger_or_emergency_22a7bc13" formatted="false">"112 • તાત્કાલિક જોખમ કે કટોકટી"</string>
+    <string name="sx_verified_10_october_2026_cybercrime_gov_in_a_e5cdb834" formatted="false">"10 ઑક્ટોબર 2026 ના રોજ ચકાસેલું: cybercrime.gov.in અને 112.gov.in. આ ક્રિયાઓ પૂર્ણ થયેલી ફરિયાદ નથી અને પૈસા પાછા મળવાની ખાતરી આપતી નથી."</string>
+    <string name="sx_use_your_local_official_services_422081d6" formatted="false">"સ્થાનિક સત્તાવાર સેવાઓ વાપરો"</string>
+    <string name="sx_contact_your_bank_through_its_official_app_o_0ec80767" formatted="false">"તમારી બેંકની સત્તાવાર એપ કે કાર્ડ પરના નંબરથી સંપર્ક કરો. તાત્કાલિક જોખમમાં તમારા દેશની કટોકટી સેવા વાપરો. આ પસંદગીમાં ભારતના 1930 અને 112 માટેનાં બટન છુપાયેલાં છે."</string>
+    <string name="sx_getting_started_831d0f72" formatted="false">"શરૂઆત કરો"</string>
+    <string name="sx_private_security_checks_for_messages_links_s_d0859d53" formatted="false">"તમારા બ્રાઉઝરમાં સંદેશો, લિંક્સ, સ્ક્રીનશૉટ્સ અને QR સામગ્રીની ખાનગી સુરક્ષા તપાસ. ટૂંકો પરિચય જુઓ કે છોડીને સીધી જાતે તપાસ શરૂ કરો."</string>
+    <string name="sx_choose_english_hindi_or_gujarati_and_a_comfo_84558cbd" formatted="false">"અંગ્રેજી, હિન્દી કે ગુજરાતી અને વાંચવા માટે અનુકૂળ અક્ષરનું કદ પસંદ કરો. બંને પછી સેટિંગ્સમાં બદલી શકો છો."</string>
+    <string name="sx_your_scan_content_is_processed_locally_ocr_a_c7e3d2d6" formatted="false">"તપાસની સામગ્રી ઉપકરણ પર પ્રક્રિયા થાય છે. OCR અને મોડેલ ફાઇલો ઑફલાઇન ઉપયોગ માટે સામેલ છે. સ્વચ્છ પરિણામ સુરક્ષાની ખાતરી નથી. સાઇટની દેખરેખ માટે તમારી સંમતિ જોઈએ છે."</string>
+    <string name="sx_you_stay_in_control_faa17184" formatted="false">"નિયંત્રણ તમારા હાથમાં છે"</string>
+    <string name="sx_the_tour_highlights_real_controls_it_does_no_30ccf1ec" formatted="false">"માર્ગદર્શન ખરાં નિયંત્રણો હાઇલાઇટ કરે છે. તે જાતે તપાસ, ઇનબૉક્સ વાંચવું, સાઇટ પરવાનગી, અવાજ ચાલુ કરવો, કૉલ કે ફરિયાદ કરતું નથી. તેને ગમે ત્યારે બંધ કરો કે ફરી જુઓ."</string>
+    <string name="sx_take_the_feature_tour_d9d93c06" formatted="false">"સુવિધાઓનું માર્ગદર્શન લો"</string>
+    <string name="sx_check_the_current_page_ea802623" formatted="false">"હાલનું પેજ તપાસો"</string>
+    <string name="sx_scan_this_page_after_using_the_toolbar_actio_75af0764" formatted="false">"ટૂલબાર બટન વાપર્યા પછી આ પેજ તપાસો. વૈકલ્પિક સાઇટ સુરક્ષા સમર્થિત આપમેળે તપાસ ચાલુ કરે છે. ખાનગી મેઇલ/ચેટ અને પ્રતિબંધિત પેજમાં પસંદ કરેલું લખાણ કે પેસ્ટ કરીને તપાસો."</string>
+    <string name="sx_paste_the_complete_message_or_link_then_choo_39075243" formatted="false">"આખો સંદેશ કે લિંક પેસ્ટ કરો અને ખાનગી તપાસ પસંદ કરો. ખરું કારણ અને તપાસનો વ્યાપ વાંચો; સ્વચ્છ પરિણામનો અર્થ પ્રમાણિત સુરક્ષિત નથી."</string>
+    <string name="sx_add_the_context_you_know_e047761d" formatted="false">"તમારી પાસેની વધારાની માહિતી ઉમેરો"</string>
+    <string name="sx_use_add_context_when_a_request_involves_remo_b1f8b895" formatted="false">"રિમોટ ઍક્સેસ, ગિફ્ટ કાર્ડ, વૉલેટના ગુપ્ત શબ્દો, આગોતરી ફી કે ગુપ્તતા માગતી વિનંતીમાં વધારાની માહિતી ઉમેરો વાપરો. વધારાની સાવચેતી તમારી માહિતી પર આધારિત છે, ચકાસેલી ઓળખ પર નહીં."</string>
+    <string name="sx_capture_only_what_you_choose_10bbe81f" formatted="false">"ફક્ત પસંદ કરેલો ભાગ કેપ્ચર કરો"</string>
+    <string name="sx_capture_the_current_visible_tab_crop_a_regio_6922d468" formatted="false">"હાલની ટૅબનો દેખાતો ભાગ કેપ્ચર કરો, વિસ્તાર કાપો અને જુઓ. ઇચ્છો તો ચિત્ર આયાત કરો. OCR અને QR વાંચવું ઉપકરણ પર થાય છે; તપાસ પહેલાં ઓળખાયેલું લખાણ જુઓ."</string>
+    <string name="sx_review_screenshot_and_qr_content_90e0547c" formatted="false">"સ્ક્રીનશૉટ અને QR સામગ્રી જુઓ"</string>
+    <string name="sx_choose_a_clear_png_jpeg_or_webp_image_select_18453063" formatted="false">"સ્પષ્ટ PNG, JPEG કે WebP ચિત્ર પસંદ કરો. અંગ્રેજી, હિન્દી કે ગુજરાતી OCR પસંદ કરો. મળેલા ચુકવણીના સરનામા અને રકમને અપેક્ષિત વિગતો સાથે સરખાવો. સરખું હોવું બેંક ખાતાના માલિકની પુષ્ટિ કરતું નથી."</string>
+    <string name="sx_synthetic_samples_run_through_the_actual_loc_4e2a6ce0" formatted="false">"બનાવેલાં ઉદાહરણો સાચા સ્થાનિક ડિટેક્ટરથી તપાસાય છે. ગુપ્ત માહિતી માગતી વિનંતી અને સામાન્ય સલાહની સરખામણી કરો. કોઈ ઉદાહરણની લિંક ખોલવી જરૂરી નથી."</string>
+    <string name="sx_control_saved_reports_82e03b59" formatted="false">"સાચવેલા રિપોર્ટ નિયંત્રિત કરો"</string>
+    <string name="sx_save_is_an_explicit_choice_history_contains__eb1429a0" formatted="false">"સાચવવું તમારી પસંદગી છે. ઇતિહાસમાં ગુપ્ત અંશો દૂર કરેલા સ્થાનિક રિપોર્ટ હોય છે; સાચવ્યા વિનાની સત્ર સામગ્રી 15 મિનિટમાં સમાપ્ત થાય છે. અહીં રિપોર્ટ નિકાસ કરો કે કાઢો. સ્થાનિક સંગ્રહ એન્ક્રિપ્ટેડ નથી."</string>
+    <string name="sx_enable_warning_sound_and_use_test_sound_auto_1297017b" formatted="false">"ચેતવણીનો અવાજ ચાલુ કરો અને અવાજ તપાસો વાપરો. આપમેળે ચેતવણીઓ વચ્ચે 60 સેકન્ડનું અંતર છે. બ્રાઉઝર અને ઉપકરણની ઑડિયો સેટિંગ અવાજ નિયંત્રિત કરે છે."</string>
+    <string name="sx_review_imported_threat_lists_1453dc41" formatted="false">"આયાત કરેલી જોખમ યાદીઓ જુઓ"</string>
+    <string name="sx_imported_reported_entries_warn_only_explicit_ecbdeb64" formatted="false">"આયાત કરેલી નોંધાયેલી એન્ટ્રીઓ ચેતવણી આપે છે; બ્લૉક ચિહ્નવાળી એન્ટ્રીઓ જ બ્લૉકિંગ ચાલુ કર્યા પછી રોકી શકાય છે. યાદીઓ સાત દિવસમાં સમાપ્ત થાય છે. મોડેલ જાતે પેજ ખોલવા પર રોક બનાવતું નથી."</string>
+    <string name="sx_choose_whether_you_opened_a_link_shared_a_pa_dc7ea6a8" formatted="false">"પસંદ કરો કે તમે લિંક ખોલી, પાસવર્ડ કે OTP આપ્યો, એપ ઇન્સ્ટોલ કરી કે પૈસા મોકલ્યા. યાદી સ્થાનિક છે અને ફરિયાદ નોંધાવતી નથી."</string>
+    <string name="sx_for_financial_cyber_fraud_use_1930_for_immed_afb96a38" formatted="false">"આર્થિક સાયબર છેતરપિંડી માટે 1930 અને તાત્કાલિક જોખમ માટે 112 વાપરો. નંબર તમારા ફોનમાં કૉપિ કરો કે કૉલિંગ એપ ખોલો. ડેસ્કટૉપ Chrome કૉલિંગ એપ હાજર હોવાની ખાતરી આપી શકતું નથી."</string>
+    <string name="sx_stop_using_the_suspicious_app_if_someone_is__1a3488fe" formatted="false">"શંકાસ્પદ એપનો ઉપયોગ રોકો. કોઈ તમારા ઉપકરણને દૂરથી નિયંત્રિત કરતું હોય તો ઇન્ટરનેટથી અલગ કરો."</string>
+    <string name="sx_remove_remote_access_permissions_and_uninsta_05c2eba3" formatted="false">"રિમોટ ઍક્સેસની પરવાનગી દૂર કરો અને શંકાસ્પદ એપ અનઇન્સ્ટોલ કરો. ઑપરેટિંગ સિસ્ટમનાં સુરક્ષા સાધનો વાપરો."</string>
+    <string name="sx_choose_what_happened_afb91857" formatted="false">"શું થયું તે પસંદ કરો"</string>
+    <string name="sx_copy_number_f35c40de" formatted="false">"નંબર કૉપિ કરો"</string>
+    <string name="sx_number_copied_dial_it_on_your_phone_9984076f" formatted="false">"નંબર કૉપિ થયો. તમારા ફોન પર ડાયલ કરો."</string>
+    <string name="sx_copy_unavailable_dial_the_shown_number_on_yo_e71d458d" formatted="false">"કૉપિ ઉપલબ્ધ નથી. બતાવેલો નંબર તમારા ફોન પર ડાયલ કરો."</string>
+    <string name="sx_review_the_number_and_make_the_call_yourself_2d56dd08" formatted="false">"નંબર તપાસો અને કૉલ જાતે કરો. કૉલિંગ એપ ન ખૂલે તો તમારા ફોન પર નંબર ડાયલ કરો. આ નંબરો ભારત માટે છે."</string>
+    <string name="sx_open_calling_app_6d1023c3" formatted="false">"કૉલિંગ એપ ખોલો"</string>
+    <string name="sx_help_b79cac92" formatted="false">"મદદ"</string>
+    <string name="sx_language_a4fe6526" formatted="false">"ભાષા"</string>
+    <string name="sx_replay_the_feature_tour_or_read_step_by_step_e66a50a0" formatted="false">"સુવિધાઓનું માર્ગદર્શન ફરી જુઓ અથવા ગમે ત્યારે પગલાં મુજબ ઉપયોગ શીખો."</string>
+    <string name="sx_open_feature_guide_ad1b9e18" formatted="false">"સુવિધાઓનું માર્ગદર્શન ખોલો"</string>
+    <string name="sx_find_and_review_saved_checks_6c4a874c" formatted="false">"સાચવેલી તપાસ શોધો અને જુઓ"</string>
+    <string name="sx_search_local_history_or_filter_warnings_open_fcb74128" formatted="false">"ઉપકરણના ઇતિહાસમાં શોધો કે ફક્ત ચેતવણીઓ જુઓ. રેકોર્ડ ખોલીને કારણો, ગંતવ્ય અને વધારાની માહિતીના પ્રશ્નો વાંચો. બધું કાઢતાં પહેલાં પુષ્ટિ માગવામાં આવે છે. રેકોર્ડ જોવાથી તેની લિંક જાતે ખૂલતી નથી."</string>
+    <string name="sx_review_incoming_message_alerts_d8482783" formatted="false">"આવતા સંદેશોની ચેતવણીઓ જુઓ"</string>
+    <string name="sx_supported_notification_checks_appear_here_wh_d79f1801" formatted="false">"સુરક્ષા અને Android પરવાનગી ચાલુ હોય ત્યારે સમર્થિત સૂચનાઓની તપાસ અહીં દેખાય છે. ચેતવણી ખોલીને કારણ અને સંપૂર્ણ વિગતો વાંચો. ખાલી યાદી એ પુરાવો નથી કે દરેક સંદેશ તપાસાયો હતો."</string>
 </resources>

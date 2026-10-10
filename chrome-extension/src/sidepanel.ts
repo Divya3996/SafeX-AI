@@ -9,12 +9,21 @@ import {
 import { COPY, t } from "./i18n";
 import { el, icon, button, card } from "./ui";
 import {
+  Guidance,
+  DEFAULT_GUIDANCE,
+  EXTENSION_STEPS,
+  guidanceText,
+  type GuidanceState,
+} from "./guidance";
+import { renderIncidentHelp } from "./incident-help";
+import {
   decodeImage,
   dataUrlBlob,
   recognize,
   cancelRecognition,
 } from "./recognition";
 interface State {
+  guidance?: GuidanceState;
   preferences: Preferences;
   tab: { id: number; origin: string; domain: string } | null;
   result?: ScanResult;
@@ -35,7 +44,7 @@ let state: State = {
   feedback: [],
   reputation: null,
 };
-let view = ["#settings", "#history"].includes(location.hash)
+let view = ["#settings", "#history", "#help", "#learn"].includes(location.hash)
     ? location.hash.slice(1)
     : "scan",
   draft = "",
@@ -95,6 +104,7 @@ async function work(task: () => Promise<void>) {
 async function refresh() {
   const response = await request("GET_STATE");
   state = response;
+  guidance.boot(state.guidance ?? DEFAULT_GUIDANCE);
   render();
 }
 function applyAppearance() {
@@ -132,9 +142,9 @@ function render() {
   header.append(logo, brand, badge);
   const nav = el("nav", "nav");
   nav.setAttribute("aria-label", text("scan"));
-  for (const name of ["scan", "history", "settings"]) {
+  for (const name of ["scan", "history", "settings", "help"]) {
     const b = button(
-      text(name),
+      name === "help" ? g("Help") : text(name),
       () => {
         view = name;
         history.replaceState(null, "", `#${name}`);
@@ -150,10 +160,19 @@ function render() {
   const main = el("main");
   if (view === "scan") renderScan(main);
   else if (view === "history") renderHistory(main);
+  else if (view === "help") renderIncidentHelp(main, g);
+  else if (view === "learn") renderLearning(main);
   else renderSettings(main);
   const footer = el("footer", "footer");
   footer.append(icon("lock"), el("span", "", text("privacyTitle")));
   app.append(header, nav, main, footer);
+  const learning = button(
+    g("Learn SafeX AI"),
+    () => navigate("learn"),
+    "button ghost full",
+  );
+  learning.id = "feature-guide";
+  footer.append(learning);
   app
     .querySelectorAll<HTMLDetailsElement>("details[data-detail]")
     .forEach((d) => (d.open = openDetails.has(d.dataset.detail)));
@@ -170,6 +189,7 @@ function render() {
     if (selection !== null && next && ["text", "textarea"].includes(next.type))
       next.setSelectionRange(selection, selection);
   }
+  guidance.render();
 }
 function field(
   label: string,
@@ -264,6 +284,7 @@ function renderScan(main: HTMLElement) {
   hero.append(chips);
   main.append(hero);
   const site = card(text("protection"));
+  site.dataset.guide = "site";
   site.append(el("p", "domain", state.tab?.domain ?? text("chooseWebsite")));
   const active =
       state.tab &&
@@ -305,6 +326,7 @@ function renderScan(main: HTMLElement) {
       .querySelectorAll<HTMLButtonElement>("button")
       .forEach((b) => (b.disabled = true));
   site.append(actions);
+  actions.querySelectorAll("button")[1]?.setAttribute("data-guide", "capture");
   if (state.tab) {
     if (active) {
       const row = el("div", "actions");
@@ -367,6 +389,7 @@ function renderScan(main: HTMLElement) {
     ),
   );
   const questions = el("details");
+  questions.dataset.guide = "context";
   questions.dataset.detail = "context";
   questions.append(
     el("summary", "", text("contextTitle")),
@@ -412,7 +435,9 @@ function renderScan(main: HTMLElement) {
     ),
   );
   check.append(second);
+  second.dataset.guide = "images";
   const examples = el("details");
+  examples.dataset.guide = "samples";
   examples.dataset.detail = "samples";
   examples.append(el("summary", "", text("samples")));
   const options = el("div", "actions");
@@ -481,6 +506,15 @@ function resultCard(result: ScanResult) {
   );
   header.append(symbol, title);
   c.append(header, el("p", "muted", text(result.verdict + "Body")));
+  if (result.verdict === "high" || result.verdict === "caution") {
+    c.append(
+      button(
+        g("Need help after a scam?"),
+        () => navigate("help"),
+        "button full",
+      ),
+    );
+  }
   if (result.synthetic) c.append(el("p", "synthetic", text("synthetic")));
   const reasons = [...result.reasons].sort((a, b) => b.weight - a.weight);
   if (reasons.length) {
@@ -714,6 +748,7 @@ function toggle(
 }
 function renderSettings(main: HTMLElement) {
   const appearance = card(text("appearance"));
+  appearance.dataset.guide = "reading";
   appearance.append(
     select(
       "language",
@@ -762,6 +797,7 @@ function renderSettings(main: HTMLElement) {
   );
   main.append(appearance);
   const protection = card(text("protection"));
+  protection.dataset.guide = "sound";
   protection.append(
     toggle(
       "sound",
@@ -799,6 +835,7 @@ function renderSettings(main: HTMLElement) {
   );
   main.append(protection);
   const list = card(text("threatData"), text("listHint"));
+  list.dataset.guide = "lists";
   if (state.reputation) {
     list.append(
       el("p", "domain", state.reputation.name),
@@ -1150,6 +1187,51 @@ chrome.tabs.onActivated.addListener(() => {
 window.addEventListener("pagehide", () => {
   void cancelRecognition();
   image?.close();
+});
+const g = (value: string) => guidanceText(value, state.preferences.language);
+function navigate(name: string) {
+  view = name;
+  history.replaceState(null, "", `#${name}`);
+  render();
+}
+function renderLearning(main: HTMLElement) {
+  const c = card(
+    g("Learn SafeX AI"),
+    g(
+      "Choose a feature to see its real control highlighted. Close the tour anytime, then try it yourself. No scan or permission is triggered by the tour.",
+    ),
+  );
+  const replay = button(
+    g("Take the full feature tour"),
+    () => guidance.start(),
+    "button primary full",
+  );
+  replay.id = "replay-tour";
+  c.append(replay);
+  EXTENSION_STEPS.forEach((step, index) => {
+    const row = el("section", "guide-topic");
+    row.append(
+      el("h3", "", g(step[2])),
+      el("p", "muted", g(step[3])),
+      button(
+        g("Show me this feature"),
+        () => guidance.start(index),
+        "button ghost compact",
+      ),
+    );
+    c.append(row);
+  });
+  main.append(c);
+}
+const guidance = new Guidance({
+  preferences: () => state.preferences,
+  preference,
+  persist: async (patch) => {
+    const response = await request("GUIDANCE", { patch });
+    state.guidance = response.guidance;
+  },
+  navigate,
+  announce: () => announce("updateFailed"),
 });
 render();
 void refresh().catch(() => announce("scanFailed"));
